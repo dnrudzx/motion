@@ -1,0 +1,8 @@
+<map id="cl::Context::makeDefault" name="cl::Context::makeDefault">
+<area shape="rect" id="node1" title="Create the default context from the default device type in the default platform." alt="" coords="5,56,173,83"/>
+<area shape="rect" id="node2" href="$classcl_1_1_platform.html#a01bea413d721189214cc59cfbc5d092d" title=" " alt="" coords="221,31,379,57"/>
+<area shape="rect" id="node6" href="$classcl_1_1_context.html#a8f7e1c72445ca6e249bc7a6c9278984d" title="Default constructor &#45; initializes to NULL." alt="" coords="230,81,370,108"/>
+<area shape="rect" id="node3" href="$classcl_1_1_platform.html#a6b6a335f96885f91f89acf0c27cd3e03" title="Create the default context." alt="" coords="427,5,597,32"/>
+<area shape="rect" id="node5" href="$namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="443,56,581,83"/>
+<area shape="rect" id="node4" href="$classcl_1_1_platform.html#a616344e02c3723347c752c02b7015212" title="Default constructor &#45; initializes to NULL." alt="" coords="645,5,792,32"/>
+</map>

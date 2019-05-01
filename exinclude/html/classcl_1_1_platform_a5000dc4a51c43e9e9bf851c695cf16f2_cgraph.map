@@ -1,0 +1,6 @@
+<map id="cl::Platform::getInfo" name="cl::Platform::getInfo">
+<area shape="rect" id="node1" title="Wrapper for clGetPlatformInfo()." alt="" coords="5,31,143,57"/>
+<area shape="rect" id="node2" href="$namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="191,5,329,32"/>
+<area shape="rect" id="node3" href="$namespacecl_1_1detail.html#a5954b0e110a023571c1bed2be1efb480" title=" " alt="" coords="201,56,319,83"/>
+<area shape="rect" id="node4" href="$namespacecl_1_1detail.html#a5fa0595cfd70a34a662283c683f58bb1" title=" " alt="" coords="377,56,535,83"/>
+</map>

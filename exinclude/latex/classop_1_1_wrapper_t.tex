@@ -1,0 +1,1282 @@
+\hypertarget{classop_1_1_wrapper_t}{}\doxysection{op\+::WrapperT$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$ 클래스 템플릿 참조}
+\label{classop_1_1_wrapper_t}\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+
+
+{\ttfamily \#include $<$wrapper.\+hpp$>$}
+
+
+
+op\+::WrapperT$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classop_1_1_wrapper_t__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_wrapper_t_a94151754dddc2a37044aea26b9dac6c7}{WrapperT}} (const \mbox{\hyperlink{namespaceop_a3593e2d53bec533f0048ef3973eebd36}{Thread\+Manager\+Mode}} thread\+Manager\+Mode=\mbox{\hyperlink{namespaceop_a3593e2d53bec533f0048ef3973eebd36a2fe4167817733fec8e6ba1afddf78f1b}{Thread\+Manager\+Mode\+::\+Synchronous}})
+\item 
+virtual \mbox{\hyperlink{classop_1_1_wrapper_t_a65e310384f3b898c4c3621e0e1ee6883}{$\sim$\+WrapperT}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_wrapper_t_a6ba81304df06fbec71103973ce0041c5}{disable\+Multi\+Threading}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_wrapper_t_a0b502ef38ee46749733ae3dda7e5fd31}{set\+Worker}} (const \mbox{\hyperlink{namespaceop_a970a2a768a2ace81605b1558c9fdec18}{Worker\+Type}} worker\+Type, const T\+Worker \&worker, const bool worker\+On\+New\+Thread=true)
+\item 
+void \mbox{\hyperlink{classop_1_1_wrapper_t_a7508886116ccfbbb8567a1921591751e}{configure}} (const \mbox{\hyperlink{structop_1_1_wrapper_struct_pose}{Wrapper\+Struct\+Pose}} \&wrapper\+Struct\+Pose)
+\item 
+void \mbox{\hyperlink{classop_1_1_wrapper_t_a3ce073fb177c316aaeab406c1f4808db}{configure}} (const \mbox{\hyperlink{structop_1_1_wrapper_struct_face}{Wrapper\+Struct\+Face}} \&wrapper\+Struct\+Face)
+\item 
+void \mbox{\hyperlink{classop_1_1_wrapper_t_aaa18264f99da260efb8fa12dd293ee75}{configure}} (const \mbox{\hyperlink{structop_1_1_wrapper_struct_hand}{Wrapper\+Struct\+Hand}} \&wrapper\+Struct\+Hand)
+\item 
+void \mbox{\hyperlink{classop_1_1_wrapper_t_ad9d83f0332c27aa64cde22c66755deec}{configure}} (const \mbox{\hyperlink{structop_1_1_wrapper_struct_extra}{Wrapper\+Struct\+Extra}} \&wrapper\+Struct\+Extra)
+\item 
+void \mbox{\hyperlink{classop_1_1_wrapper_t_af3d5d56e63b8c6faee0d7954db95c69d}{configure}} (const \mbox{\hyperlink{structop_1_1_wrapper_struct_input}{Wrapper\+Struct\+Input}} \&wrapper\+Struct\+Input)
+\item 
+void \mbox{\hyperlink{classop_1_1_wrapper_t_a98a7310bc4062fb72f5d26e37d6d7c70}{configure}} (const \mbox{\hyperlink{structop_1_1_wrapper_struct_output}{Wrapper\+Struct\+Output}} \&wrapper\+Struct\+Output)
+\item 
+void \mbox{\hyperlink{classop_1_1_wrapper_t_a7a37b4a945171fd42d1ab16b0b7e8205}{configure}} (const \mbox{\hyperlink{structop_1_1_wrapper_struct_gui}{Wrapper\+Struct\+Gui}} \&wrapper\+Struct\+Gui)
+\item 
+void \mbox{\hyperlink{classop_1_1_wrapper_t_a478b8bd7deb43322f220593552fe683d}{exec}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_wrapper_t_a8111d8cdb984e996410ace159a896992}{start}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_wrapper_t_a061ea09aac902a8a44438feffd18998f}{stop}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_wrapper_t_a0577721c5e714861b27ad4ff356980bc}{is\+Running}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_wrapper_t_aa89055f5cf4e762071479f5fec8d2faf}{set\+Default\+Max\+Size\+Queues}} (const long long default\+Max\+Size\+Queues=-\/1)
+\item 
+bool \mbox{\hyperlink{classop_1_1_wrapper_t_a79fa1a518495e1e3684f05943d1c04f8}{try\+Emplace}} (T\+Datums\+SP \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_wrapper_t_a442ff1e4fec93ec28457f7c7c4b4bfbb}{wait\+And\+Emplace}} (T\+Datums\+SP \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_wrapper_t_a4c56d34e6e113d5b230b34c8a557b78b}{wait\+And\+Emplace}} (cv\+::\+Mat \&cv\+Mat)
+\item 
+bool \mbox{\hyperlink{classop_1_1_wrapper_t_a4d9396d4490b90f32a45d4a80d2cd5c7}{try\+Push}} (const T\+Datums\+SP \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_wrapper_t_a0e0aea3f8bf81458c0662c46f4d345d5}{wait\+And\+Push}} (const T\+Datums\+SP \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_wrapper_t_a48af7e8982f2da14125f5f564765f17b}{wait\+And\+Push}} (const cv\+::\+Mat \&cv\+Mat)
+\item 
+bool \mbox{\hyperlink{classop_1_1_wrapper_t_a55af0ab1f0ea4329f2c0bb3feb92b835}{try\+Pop}} (T\+Datums\+SP \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_wrapper_t_a3c3b605e0787b55ffd00725c09a1cd53}{wait\+And\+Pop}} (T\+Datums\+SP \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_wrapper_t_a3818c026e33cc573ba8b5722daa003a7}{emplace\+And\+Pop}} (T\+Datums\+SP \&t\+Datums)
+\item 
+T\+Datums\+SP \mbox{\hyperlink{classop_1_1_wrapper_t_a0ffe3a62f33256937cb3a406d5e5fd2d}{emplace\+And\+Pop}} (const cv\+::\+Mat \&cv\+Mat)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_wrapper_t_a0145f1a2c8fec708e3fa8d9da95ea915}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{namespaceop_a3593e2d53bec533f0048ef3973eebd36}{Thread\+Manager\+Mode}} \mbox{\hyperlink{classop_1_1_wrapper_t_a838c55912c7164412eedddc40043ca92}{m\+Thread\+Manager\+Mode}}
+\item 
+\mbox{\hyperlink{classop_1_1_thread_manager}{Thread\+Manager}}$<$ T\+Datums\+SP $>$ \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{m\+Thread\+Manager}}
+\item 
+bool \mbox{\hyperlink{classop_1_1_wrapper_t_a3b8a15a7fda2fb5ca3417c4431a1928d}{m\+Multi\+Thread\+Enabled}}
+\item 
+\mbox{\hyperlink{structop_1_1_wrapper_struct_pose}{Wrapper\+Struct\+Pose}} \mbox{\hyperlink{classop_1_1_wrapper_t_a7800195cd87bea79f9b26422b67a97f8}{m\+Wrapper\+Struct\+Pose}}
+\item 
+\mbox{\hyperlink{structop_1_1_wrapper_struct_face}{Wrapper\+Struct\+Face}} \mbox{\hyperlink{classop_1_1_wrapper_t_a438af70d3d2abbeeb5c0e791882cc8fc}{m\+Wrapper\+Struct\+Face}}
+\item 
+\mbox{\hyperlink{structop_1_1_wrapper_struct_hand}{Wrapper\+Struct\+Hand}} \mbox{\hyperlink{classop_1_1_wrapper_t_a3124a320170abf596c2fe5beeae31634}{m\+Wrapper\+Struct\+Hand}}
+\item 
+\mbox{\hyperlink{structop_1_1_wrapper_struct_extra}{Wrapper\+Struct\+Extra}} \mbox{\hyperlink{classop_1_1_wrapper_t_a8c88d67db134e7ca8a0deb1c1d2d542b}{m\+Wrapper\+Struct\+Extra}}
+\item 
+\mbox{\hyperlink{structop_1_1_wrapper_struct_input}{Wrapper\+Struct\+Input}} \mbox{\hyperlink{classop_1_1_wrapper_t_a0f992378624b7f40c660c5f1b7b5f008}{m\+Wrapper\+Struct\+Input}}
+\item 
+\mbox{\hyperlink{structop_1_1_wrapper_struct_output}{Wrapper\+Struct\+Output}} \mbox{\hyperlink{classop_1_1_wrapper_t_aaaa8275cf2fc6a7d29539e8702db88b6}{m\+Wrapper\+Struct\+Output}}
+\item 
+\mbox{\hyperlink{structop_1_1_wrapper_struct_gui}{Wrapper\+Struct\+Gui}} \mbox{\hyperlink{classop_1_1_wrapper_t_af477c5c9d3cc1867540028852531919d}{m\+Wrapper\+Struct\+Gui}}
+\item 
+std\+::array$<$ bool, int(\mbox{\hyperlink{namespaceop_a970a2a768a2ace81605b1558c9fdec18a6f6cb72d544962fa333e2e34ce64f719}{Worker\+Type\+::\+Size}})$>$ \mbox{\hyperlink{classop_1_1_wrapper_t_a0a614b91def46b746e29737356129e79}{m\+User\+Ws\+On\+New\+Thread}}
+\item 
+std\+::array$<$ std\+::vector$<$ T\+Worker $>$, int(\mbox{\hyperlink{namespaceop_a970a2a768a2ace81605b1558c9fdec18a6f6cb72d544962fa333e2e34ce64f719}{Worker\+Type\+::\+Size}})$>$ \mbox{\hyperlink{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}{m\+User\+Ws}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T\+Datum = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$\newline
+class op\+::\+Wrapper\+T$<$ T\+Datum, T\+Datums, T\+Datums\+S\+P, T\+Worker $>$}
+
+\mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}}\+: Open\+Pose all-\/in-\/one wrapper template class. Simplified into Wrapper for \mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}}$<$std\+::vector$<$\+Datum$>$$>$ \mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}} allows the user to set up the input (video, webcam, custom input, etc.), pose, face and/or hands estimation and rendering, and output (integrated small G\+UI, custom output, etc.).
+
+This function can be used in 2 ways\+:
+\begin{DoxyItemize}
+\item Synchronous mode\+: call the full constructor with your desired input and output workers.
+\item Asynchronous mode\+: call the empty constructor \mbox{\hyperlink{classop_1_1_wrapper_t_a94151754dddc2a37044aea26b9dac6c7}{Wrapper\+T()}} + use the emplace and pop functions to push the original frames and retrieve the processed ones.
+\item Mix of them\+:
+\begin{DoxyItemize}
+\item Synchronous input + asynchronous output\+: call the constructor \mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}}(\mbox{\hyperlink{namespaceop_a3593e2d53bec533f0048ef3973eebd36a2fe4167817733fec8e6ba1afddf78f1b}{Thread\+Manager\+Mode\+::\+Synchronous}}, workers\+Input, \{\}, true)
+\item Asynchronous input + synchronous output\+: call the constructor Wrapper\+T(\+Thread\+Manager\+Mode\+::\+Synchronous, nullptr, workers\+Output, irrelevant\+Boolean, true) 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+wrapper.\+hpp 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a94151754dddc2a37044aea26b9dac6c7}\label{classop_1_1_wrapper_t_a94151754dddc2a37044aea26b9dac6c7}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!WrapperT@{WrapperT}}
+\index{WrapperT@{WrapperT}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{WrapperT()}{WrapperT()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+\mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::\mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_a3593e2d53bec533f0048ef3973eebd36}{Thread\+Manager\+Mode}}}]{thread\+Manager\+Mode = {\ttfamily \mbox{\hyperlink{namespaceop_a3593e2d53bec533f0048ef3973eebd36a2fe4167817733fec8e6ba1afddf78f1b}{Thread\+Manager\+Mode\+::\+Synchronous}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor. 
+\begin{DoxyParams}{매개변수}
+{\em thread\+Manager\+Mode} & \mbox{\hyperlink{classop_1_1_thread}{Thread}} syncronization mode. If set to \mbox{\hyperlink{namespaceop_a3593e2d53bec533f0048ef3973eebd36a2fe4167817733fec8e6ba1afddf78f1b}{Thread\+Manager\+Mode\+::\+Synchronous}}, everything will run inside the \mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}}. If \mbox{\hyperlink{namespaceop_a3593e2d53bec533f0048ef3973eebd36a2fe4167817733fec8e6ba1afddf78f1b}{Thread\+Manager\+Mode\+::\+Synchronous}}(In/\+Out), then input (frames producer) and/or output (G\+UI, writing results, etc.) will be controlled outside the \mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}} class by the user. See Thread\+Manager\+Mode for a detailed explanation of when to use each one. \\
+\hline
+\end{DoxyParams}
+
+
+wrapper.\+hpp 파일의 261 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{261                                                                                                      :}
+\DoxyCodeLine{262         \mbox{\hyperlink{classop_1_1_wrapper_t_a838c55912c7164412eedddc40043ca92}{mThreadManagerMode}}\{threadManagerMode\},}
+\DoxyCodeLine{263         \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}\{threadManagerMode\},}
+\DoxyCodeLine{264         \mbox{\hyperlink{classop_1_1_wrapper_t_a3b8a15a7fda2fb5ca3417c4431a1928d}{mMultiThreadEnabled}}\{\textcolor{keyword}{true}\}}
+\DoxyCodeLine{265     \{}
+\DoxyCodeLine{266     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a65e310384f3b898c4c3621e0e1ee6883}\label{classop_1_1_wrapper_t_a65e310384f3b898c4c3621e0e1ee6883}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!````~WrapperT@{$\sim$WrapperT}}
+\index{````~WrapperT@{$\sim$WrapperT}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$WrapperT()}{~WrapperT()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+\mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::$\sim$\mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor. It automatically frees resources. 
+
+wrapper.\+hpp 파일의 269 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{270     \{}
+\DoxyCodeLine{271         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{272         \{}
+\DoxyCodeLine{273             \mbox{\hyperlink{classop_1_1_wrapper_t_a061ea09aac902a8a44438feffd18998f}{stop}}();}
+\DoxyCodeLine{274             \textcolor{comment}{// Reset mThreadManager}}
+\DoxyCodeLine{275             \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}.\mbox{\hyperlink{classop_1_1_thread_manager_a5b7c5ea46c360496e261094c5e1397a7}{reset}}();}
+\DoxyCodeLine{276             \textcolor{comment}{// Reset user workers}}
+\DoxyCodeLine{277             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}\& userW : \mbox{\hyperlink{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}{mUserWs}})}
+\DoxyCodeLine{278                 userW.clear();}
+\DoxyCodeLine{279         \}}
+\DoxyCodeLine{280         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{281         \{}
+\DoxyCodeLine{282             \mbox{\hyperlink{namespaceop_a825f15fdf9dc9cb7473c20f970f15b60}{errorDestructor}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{283         \}}
+\DoxyCodeLine{284     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classop_1_1_wrapper_t_a65e310384f3b898c4c3621e0e1ee6883_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_ad9d83f0332c27aa64cde22c66755deec}\label{classop_1_1_wrapper_t_ad9d83f0332c27aa64cde22c66755deec}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!configure@{configure}}
+\index{configure@{configure}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::configure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_wrapper_struct_extra}{Wrapper\+Struct\+Extra}} \&}]{wrapper\+Struct\+Extra }\end{DoxyParamCaption})}
+
+Analogous to \mbox{\hyperlink{classop_1_1_wrapper_t_a7508886116ccfbbb8567a1921591751e}{configure()}} but applied to the extra options (\mbox{\hyperlink{structop_1_1_wrapper_struct_extra}{Wrapper\+Struct\+Extra}}) 
+
+wrapper.\+hpp 파일의 359 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{360     \{}
+\DoxyCodeLine{361         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{362         \{}
+\DoxyCodeLine{363             \mbox{\hyperlink{classop_1_1_wrapper_t_a8c88d67db134e7ca8a0deb1c1d2d542b}{mWrapperStructExtra}} = wrapperStructExtra;}
+\DoxyCodeLine{364         \}}
+\DoxyCodeLine{365         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{366         \{}
+\DoxyCodeLine{367             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{368         \}}
+\DoxyCodeLine{369     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classop_1_1_wrapper_t_ad9d83f0332c27aa64cde22c66755deec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a3ce073fb177c316aaeab406c1f4808db}\label{classop_1_1_wrapper_t_a3ce073fb177c316aaeab406c1f4808db}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!configure@{configure}}
+\index{configure@{configure}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::configure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_wrapper_struct_face}{Wrapper\+Struct\+Face}} \&}]{wrapper\+Struct\+Face }\end{DoxyParamCaption})}
+
+Analogous to configure(\+Wrapper\+Struct\+Pose) but applied to face (\mbox{\hyperlink{structop_1_1_wrapper_struct_face}{Wrapper\+Struct\+Face}}) 
+
+wrapper.\+hpp 파일의 333 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{334     \{}
+\DoxyCodeLine{335         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{336         \{}
+\DoxyCodeLine{337             \mbox{\hyperlink{classop_1_1_wrapper_t_a438af70d3d2abbeeb5c0e791882cc8fc}{mWrapperStructFace}} = wrapperStructFace;}
+\DoxyCodeLine{338         \}}
+\DoxyCodeLine{339         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{340         \{}
+\DoxyCodeLine{341             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{342         \}}
+\DoxyCodeLine{343     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classop_1_1_wrapper_t_a3ce073fb177c316aaeab406c1f4808db_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a7a37b4a945171fd42d1ab16b0b7e8205}\label{classop_1_1_wrapper_t_a7a37b4a945171fd42d1ab16b0b7e8205}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!configure@{configure}}
+\index{configure@{configure}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::configure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_wrapper_struct_gui}{Wrapper\+Struct\+Gui}} \&}]{wrapper\+Struct\+Gui }\end{DoxyParamCaption})}
+
+Analogous to \mbox{\hyperlink{classop_1_1_wrapper_t_a7508886116ccfbbb8567a1921591751e}{configure()}} but applied to the G\+UI (\mbox{\hyperlink{structop_1_1_wrapper_struct_gui}{Wrapper\+Struct\+Gui}}) 
+
+wrapper.\+hpp 파일의 398 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{399     \{}
+\DoxyCodeLine{400         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{401         \{}
+\DoxyCodeLine{402             \mbox{\hyperlink{classop_1_1_wrapper_t_af477c5c9d3cc1867540028852531919d}{mWrapperStructGui}} = wrapperStructGui;}
+\DoxyCodeLine{403         \}}
+\DoxyCodeLine{404         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{405         \{}
+\DoxyCodeLine{406             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{407         \}}
+\DoxyCodeLine{408     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classop_1_1_wrapper_t_a7a37b4a945171fd42d1ab16b0b7e8205_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_aaa18264f99da260efb8fa12dd293ee75}\label{classop_1_1_wrapper_t_aaa18264f99da260efb8fa12dd293ee75}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!configure@{configure}}
+\index{configure@{configure}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::configure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_wrapper_struct_hand}{Wrapper\+Struct\+Hand}} \&}]{wrapper\+Struct\+Hand }\end{DoxyParamCaption})}
+
+Analogous to \mbox{\hyperlink{classop_1_1_wrapper_t_a7508886116ccfbbb8567a1921591751e}{configure()}} but applied to hand (\mbox{\hyperlink{structop_1_1_wrapper_struct_hand}{Wrapper\+Struct\+Hand}}) 
+
+wrapper.\+hpp 파일의 346 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{347     \{}
+\DoxyCodeLine{348         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{349         \{}
+\DoxyCodeLine{350             \mbox{\hyperlink{classop_1_1_wrapper_t_a3124a320170abf596c2fe5beeae31634}{mWrapperStructHand}} = wrapperStructHand;}
+\DoxyCodeLine{351         \}}
+\DoxyCodeLine{352         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{353         \{}
+\DoxyCodeLine{354             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{355         \}}
+\DoxyCodeLine{356     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classop_1_1_wrapper_t_aaa18264f99da260efb8fa12dd293ee75_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_af3d5d56e63b8c6faee0d7954db95c69d}\label{classop_1_1_wrapper_t_af3d5d56e63b8c6faee0d7954db95c69d}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!configure@{configure}}
+\index{configure@{configure}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::configure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_wrapper_struct_input}{Wrapper\+Struct\+Input}} \&}]{wrapper\+Struct\+Input }\end{DoxyParamCaption})}
+
+Analogous to \mbox{\hyperlink{classop_1_1_wrapper_t_a7508886116ccfbbb8567a1921591751e}{configure()}} but applied to the input (\mbox{\hyperlink{structop_1_1_wrapper_struct_input}{Wrapper\+Struct\+Input}}) 
+
+wrapper.\+hpp 파일의 372 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{373     \{}
+\DoxyCodeLine{374         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{375         \{}
+\DoxyCodeLine{376             \mbox{\hyperlink{classop_1_1_wrapper_t_a0f992378624b7f40c660c5f1b7b5f008}{mWrapperStructInput}} = wrapperStructInput;}
+\DoxyCodeLine{377         \}}
+\DoxyCodeLine{378         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{379         \{}
+\DoxyCodeLine{380             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{381         \}}
+\DoxyCodeLine{382     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classop_1_1_wrapper_t_af3d5d56e63b8c6faee0d7954db95c69d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a98a7310bc4062fb72f5d26e37d6d7c70}\label{classop_1_1_wrapper_t_a98a7310bc4062fb72f5d26e37d6d7c70}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!configure@{configure}}
+\index{configure@{configure}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::configure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_wrapper_struct_output}{Wrapper\+Struct\+Output}} \&}]{wrapper\+Struct\+Output }\end{DoxyParamCaption})}
+
+Analogous to \mbox{\hyperlink{classop_1_1_wrapper_t_a7508886116ccfbbb8567a1921591751e}{configure()}} but applied to the output (\mbox{\hyperlink{structop_1_1_wrapper_struct_output}{Wrapper\+Struct\+Output}}) 
+
+wrapper.\+hpp 파일의 385 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{386     \{}
+\DoxyCodeLine{387         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{388         \{}
+\DoxyCodeLine{389             \mbox{\hyperlink{classop_1_1_wrapper_t_aaaa8275cf2fc6a7d29539e8702db88b6}{mWrapperStructOutput}} = wrapperStructOutput;}
+\DoxyCodeLine{390         \}}
+\DoxyCodeLine{391         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{392         \{}
+\DoxyCodeLine{393             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{394         \}}
+\DoxyCodeLine{395     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classop_1_1_wrapper_t_a98a7310bc4062fb72f5d26e37d6d7c70_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a7508886116ccfbbb8567a1921591751e}\label{classop_1_1_wrapper_t_a7508886116ccfbbb8567a1921591751e}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!configure@{configure}}
+\index{configure@{configure}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::configure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_wrapper_struct_pose}{Wrapper\+Struct\+Pose}} \&}]{wrapper\+Struct\+Pose }\end{DoxyParamCaption})}
+
+It configures the pose parameters. Do not call for default values. 
+
+wrapper.\+hpp 파일의 320 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{321     \{}
+\DoxyCodeLine{322         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{323         \{}
+\DoxyCodeLine{324             \mbox{\hyperlink{classop_1_1_wrapper_t_a7800195cd87bea79f9b26422b67a97f8}{mWrapperStructPose}} = wrapperStructPose;}
+\DoxyCodeLine{325         \}}
+\DoxyCodeLine{326         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{327         \{}
+\DoxyCodeLine{328             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{329         \}}
+\DoxyCodeLine{330     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classop_1_1_wrapper_t_a7508886116ccfbbb8567a1921591751e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a0145f1a2c8fec708e3fa8d9da95ea915}\label{classop_1_1_wrapper_t_a0145f1a2c8fec708e3fa8d9da95ea915}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum  = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums  = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP  = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$ \\
+\mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a6ba81304df06fbec71103973ce0041c5}\label{classop_1_1_wrapper_t_a6ba81304df06fbec71103973ce0041c5}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!disableMultiThreading@{disableMultiThreading}}
+\index{disableMultiThreading@{disableMultiThreading}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{disableMultiThreading()}{disableMultiThreading()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::disable\+Multi\+Threading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Disable multi-\/threading. Useful for debugging and logging, all the Workers will run in the same thread. Note that worker\+On\+New\+Thread (argument for set\+Worker function) will not make any effect. 
+
+wrapper.\+hpp 파일의 287 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{288     \{}
+\DoxyCodeLine{289         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{290         \{}
+\DoxyCodeLine{291             \mbox{\hyperlink{classop_1_1_wrapper_t_a3b8a15a7fda2fb5ca3417c4431a1928d}{mMultiThreadEnabled}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{292         \}}
+\DoxyCodeLine{293         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{294         \{}
+\DoxyCodeLine{295             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{296         \}}
+\DoxyCodeLine{297     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classop_1_1_wrapper_t_a6ba81304df06fbec71103973ce0041c5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a0ffe3a62f33256937cb3a406d5e5fd2d}\label{classop_1_1_wrapper_t_a0ffe3a62f33256937cb3a406d5e5fd2d}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!emplaceAndPop@{emplaceAndPop}}
+\index{emplaceAndPop@{emplaceAndPop}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{emplaceAndPop()}{emplaceAndPop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+T\+Datums\+SP \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::emplace\+And\+Pop (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{cv\+Mat }\end{DoxyParamCaption})}
+
+Similar to \mbox{\hyperlink{classop_1_1_wrapper_t_a3818c026e33cc573ba8b5722daa003a7}{emplace\+And\+Pop(\+T\+Datums\+S\+P\& t\+Datums)}}, but it takes a cv\+::\+Mat as input. 
+\begin{DoxyParams}{매개변수}
+{\em cv\+Mat} & cv\+::\+Mat with the image to be processed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+T\+Datums\+SP element where the processed information will be placed. 
+\end{DoxyReturn}
+
+
+wrapper.\+hpp 파일의 650 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{651     \{}
+\DoxyCodeLine{652         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{653         \{}
+\DoxyCodeLine{654             \textcolor{comment}{// Create new datum}}
+\DoxyCodeLine{655             \textcolor{keyword}{auto} datumsPtr = std::make\_shared<std::vector<std::shared\_ptr<TDatum>>>();}
+\DoxyCodeLine{656             datumsPtr-\/>emplace\_back();}
+\DoxyCodeLine{657             \textcolor{keyword}{auto}\& tDatumPtr = datumsPtr-\/>at(0);}
+\DoxyCodeLine{658             tDatumPtr = std::make\_shared<TDatum>();}
+\DoxyCodeLine{659             \textcolor{comment}{// Fill datum}}
+\DoxyCodeLine{660             tDatumPtr-\/>cvInputData = cvMat;}
+\DoxyCodeLine{661             \textcolor{comment}{// Emplace and pop}}
+\DoxyCodeLine{662             \mbox{\hyperlink{classop_1_1_wrapper_t_a3818c026e33cc573ba8b5722daa003a7}{emplaceAndPop}}(datumsPtr);}
+\DoxyCodeLine{663             \textcolor{comment}{// Return result}}
+\DoxyCodeLine{664             \textcolor{keywordflow}{return} datumsPtr;}
+\DoxyCodeLine{665         \}}
+\DoxyCodeLine{666         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{667         \{}
+\DoxyCodeLine{668             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{669             \textcolor{keywordflow}{return} TDatumsSP\{\};}
+\DoxyCodeLine{670         \}}
+\DoxyCodeLine{671     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classop_1_1_wrapper_t_a0ffe3a62f33256937cb3a406d5e5fd2d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a3818c026e33cc573ba8b5722daa003a7}\label{classop_1_1_wrapper_t_a3818c026e33cc573ba8b5722daa003a7}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!emplaceAndPop@{emplaceAndPop}}
+\index{emplaceAndPop@{emplaceAndPop}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{emplaceAndPop()}{emplaceAndPop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+bool \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::emplace\+And\+Pop (\begin{DoxyParamCaption}\item[{T\+Datums\+SP \&}]{t\+Datums }\end{DoxyParamCaption})}
+
+Runs both wait\+And\+Emplace and wait\+And\+Pop. 
+\begin{DoxyParams}{매개변수}
+{\em t\+Datums} & T\+Datums\+SP element where the retrieved element will be placed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Boolean specifying whether the t\+Datums could be retrieved. 
+\end{DoxyReturn}
+
+
+wrapper.\+hpp 파일의 633 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{634     \{}
+\DoxyCodeLine{635         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{636         \{}
+\DoxyCodeLine{637             \textcolor{comment}{// Run waitAndEmplace + waitAndPop}}
+\DoxyCodeLine{638             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_wrapper_t_a442ff1e4fec93ec28457f7c7c4b4bfbb}{waitAndEmplace}}(tDatums))}
+\DoxyCodeLine{639                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_wrapper_t_a3c3b605e0787b55ffd00725c09a1cd53}{waitAndPop}}(tDatums);}
+\DoxyCodeLine{640             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{641         \}}
+\DoxyCodeLine{642         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{643         \{}
+\DoxyCodeLine{644             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{645             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{646         \}}
+\DoxyCodeLine{647     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classop_1_1_wrapper_t_a3818c026e33cc573ba8b5722daa003a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a478b8bd7deb43322f220593552fe683d}\label{classop_1_1_wrapper_t_a478b8bd7deb43322f220593552fe683d}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!exec@{exec}}
+\index{exec@{exec}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{exec()}{exec()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::exec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function to start multi-\/threading. Similar to \mbox{\hyperlink{classop_1_1_wrapper_t_a8111d8cdb984e996410ace159a896992}{start()}}, but \mbox{\hyperlink{classop_1_1_wrapper_t_a478b8bd7deb43322f220593552fe683d}{exec()}} blocks the thread that calls the function (it saves 1 thread). Use \mbox{\hyperlink{classop_1_1_wrapper_t_a478b8bd7deb43322f220593552fe683d}{exec()}} instead of \mbox{\hyperlink{classop_1_1_wrapper_t_a8111d8cdb984e996410ace159a896992}{start()}} if the calling thread will otherwise be waiting for the \mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}} to end. 
+
+wrapper.\+hpp 파일의 411 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{412     \{}
+\DoxyCodeLine{413         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{414         \{}
+\DoxyCodeLine{415             configureThreadManager<TDatum, TDatums, TDatumsSP, TWorker>(}
+\DoxyCodeLine{416                 \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a3b8a15a7fda2fb5ca3417c4431a1928d}{mMultiThreadEnabled}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a838c55912c7164412eedddc40043ca92}{mThreadManagerMode}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a7800195cd87bea79f9b26422b67a97f8}{mWrapperStructPose}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a438af70d3d2abbeeb5c0e791882cc8fc}{mWrapperStructFace}},}
+\DoxyCodeLine{417                 \mbox{\hyperlink{classop_1_1_wrapper_t_a3124a320170abf596c2fe5beeae31634}{mWrapperStructHand}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a8c88d67db134e7ca8a0deb1c1d2d542b}{mWrapperStructExtra}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a0f992378624b7f40c660c5f1b7b5f008}{mWrapperStructInput}}, \mbox{\hyperlink{classop_1_1_wrapper_t_aaaa8275cf2fc6a7d29539e8702db88b6}{mWrapperStructOutput}}, \mbox{\hyperlink{classop_1_1_wrapper_t_af477c5c9d3cc1867540028852531919d}{mWrapperStructGui}},}
+\DoxyCodeLine{418                 \mbox{\hyperlink{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}{mUserWs}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a0a614b91def46b746e29737356129e79}{mUserWsOnNewThread}});}
+\DoxyCodeLine{419             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{420             \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}.\mbox{\hyperlink{classop_1_1_thread_manager_a67a2d7cecc749be414e6896a88ec268d}{exec}}();}
+\DoxyCodeLine{421         \}}
+\DoxyCodeLine{422         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{423         \{}
+\DoxyCodeLine{424             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{425         \}}
+\DoxyCodeLine{426     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classop_1_1_wrapper_t_a478b8bd7deb43322f220593552fe683d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a0577721c5e714861b27ad4ff356980bc}\label{classop_1_1_wrapper_t_a0577721c5e714861b27ad4ff356980bc}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+bool \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Whether the \mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}} is running. It will return true after \mbox{\hyperlink{classop_1_1_wrapper_t_a478b8bd7deb43322f220593552fe683d}{exec()}} or \mbox{\hyperlink{classop_1_1_wrapper_t_a8111d8cdb984e996410ace159a896992}{start()}} and before \mbox{\hyperlink{classop_1_1_wrapper_t_a061ea09aac902a8a44438feffd18998f}{stop()}}, and false otherwise. \begin{DoxyReturn}{반환값}
+Boolean specifying whether the \mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}} is running. 
+\end{DoxyReturn}
+
+
+wrapper.\+hpp 파일의 460 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{461     \{}
+\DoxyCodeLine{462         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{463         \{}
+\DoxyCodeLine{464             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}.\mbox{\hyperlink{classop_1_1_thread_manager_a7bad63adddf7a35a436911ada2a1c519}{isRunning}}();}
+\DoxyCodeLine{465         \}}
+\DoxyCodeLine{466         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{467         \{}
+\DoxyCodeLine{468             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{469             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{470         \}}
+\DoxyCodeLine{471     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classop_1_1_wrapper_t_a0577721c5e714861b27ad4ff356980bc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_aa89055f5cf4e762071479f5fec8d2faf}\label{classop_1_1_wrapper_t_aa89055f5cf4e762071479f5fec8d2faf}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!setDefaultMaxSizeQueues@{setDefaultMaxSizeQueues}}
+\index{setDefaultMaxSizeQueues@{setDefaultMaxSizeQueues}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{setDefaultMaxSizeQueues()}{setDefaultMaxSizeQueues()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::set\+Default\+Max\+Size\+Queues (\begin{DoxyParamCaption}\item[{const long long}]{default\+Max\+Size\+Queues = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+It sets the maximum number of elements in the queue. For maximum speed, set to a very large number, but the trade-\/off would be\+:
+\begin{DoxyItemize}
+\item Latency will hugely increase.
+\item The program might go out of R\+AM memory (so the computer might freeze). For minimum latency while keeping an optimal speed, set to -\/1, that will automatically detect the ideal number based on how many elements are connected to that queue. 
+\begin{DoxyParams}{매개변수}
+{\em default\+Max\+Size\+Queues} & long long element with the maximum number of elements on the queue. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+wrapper.\+hpp 파일의 474 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{475     \{}
+\DoxyCodeLine{476         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{477         \{}
+\DoxyCodeLine{478             \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}.\mbox{\hyperlink{classop_1_1_thread_manager_ace408d1d281193a9f3d3d6561181ef56}{setDefaultMaxSizeQueues}}(defaultMaxSizeQueues);}
+\DoxyCodeLine{479         \}}
+\DoxyCodeLine{480         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{481         \{}
+\DoxyCodeLine{482             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{483         \}}
+\DoxyCodeLine{484     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classop_1_1_wrapper_t_aa89055f5cf4e762071479f5fec8d2faf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a0b502ef38ee46749733ae3dda7e5fd31}\label{classop_1_1_wrapper_t_a0b502ef38ee46749733ae3dda7e5fd31}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!setWorker@{setWorker}}
+\index{setWorker@{setWorker}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{setWorker()}{setWorker()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::set\+Worker (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_a970a2a768a2ace81605b1558c9fdec18}{Worker\+Type}}}]{worker\+Type,  }\item[{const T\+Worker \&}]{worker,  }\item[{const bool}]{worker\+On\+New\+Thread = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Add an user-\/defined extra \mbox{\hyperlink{classop_1_1_worker}{Worker}} for a desired task (input, output, ...). 
+\begin{DoxyParams}{매개변수}
+{\em worker\+Type} & Worker\+Type to configure (e.\+g., Input, Pre\+Processing, Post\+Processing, Output). \\
+\hline
+{\em worker} & T\+Worker to be added. \\
+\hline
+{\em worker\+On\+New\+Thread} & Whether to add this T\+Worker on a new thread (if it is computationally demanding) or simply reuse existing threads (for light functions). Set to true if the performance time is unknown. \\
+\hline
+\end{DoxyParams}
+
+
+wrapper.\+hpp 파일의 300 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{302     \{}
+\DoxyCodeLine{303         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{304         \{}
+\DoxyCodeLine{305             \textcolor{comment}{// Sanity check}}
+\DoxyCodeLine{306             \textcolor{keywordflow}{if} (worker == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{307                 \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(\textcolor{stringliteral}{"Your worker is a nullptr."}, \_\_LINE\_\_, \_\_FILE\_\_, \_\_FUNCTION\_\_);}
+\DoxyCodeLine{308             \textcolor{comment}{// Add worker}}
+\DoxyCodeLine{309             \mbox{\hyperlink{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}{mUserWs}}[int(workerType)].clear();}
+\DoxyCodeLine{310             \mbox{\hyperlink{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}{mUserWs}}[int(workerType)].emplace\_back(worker);}
+\DoxyCodeLine{311             \mbox{\hyperlink{classop_1_1_wrapper_t_a0a614b91def46b746e29737356129e79}{mUserWsOnNewThread}}[int(workerType)] = workerOnNewThread;}
+\DoxyCodeLine{312         \}}
+\DoxyCodeLine{313         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{314         \{}
+\DoxyCodeLine{315             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{316         \}}
+\DoxyCodeLine{317     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classop_1_1_wrapper_t_a0b502ef38ee46749733ae3dda7e5fd31_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a8111d8cdb984e996410ace159a896992}\label{classop_1_1_wrapper_t_a8111d8cdb984e996410ace159a896992}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!start@{start}}
+\index{start@{start}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function to start multi-\/threading. Similar to \mbox{\hyperlink{classop_1_1_wrapper_t_a478b8bd7deb43322f220593552fe683d}{exec()}}, but \mbox{\hyperlink{classop_1_1_wrapper_t_a8111d8cdb984e996410ace159a896992}{start()}} does not block the thread that calls the function. It just opens new threads, so it lets the user perform other tasks meanwhile on the calling thread. V\+E\+RY I\+M\+P\+O\+R\+T\+A\+NT N\+O\+TE\+: if the G\+UI is selected and Open\+CV is compiled with Qt support, this option will not work. Qt needs the main thread to plot visual results, so the final G\+UI (which uses Open\+CV) would return an exception similar to\+: {\ttfamily Q\+Meta\+Method\+::invoke\+: Unable to invoke methods with return values in queued connections}. Use \mbox{\hyperlink{classop_1_1_wrapper_t_a478b8bd7deb43322f220593552fe683d}{exec()}} in that case. 
+
+wrapper.\+hpp 파일의 429 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{430     \{}
+\DoxyCodeLine{431         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{432         \{}
+\DoxyCodeLine{433             configureThreadManager<TDatum, TDatums, TDatumsSP, TWorker>(}
+\DoxyCodeLine{434                 \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a3b8a15a7fda2fb5ca3417c4431a1928d}{mMultiThreadEnabled}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a838c55912c7164412eedddc40043ca92}{mThreadManagerMode}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a7800195cd87bea79f9b26422b67a97f8}{mWrapperStructPose}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a438af70d3d2abbeeb5c0e791882cc8fc}{mWrapperStructFace}},}
+\DoxyCodeLine{435                 \mbox{\hyperlink{classop_1_1_wrapper_t_a3124a320170abf596c2fe5beeae31634}{mWrapperStructHand}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a8c88d67db134e7ca8a0deb1c1d2d542b}{mWrapperStructExtra}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a0f992378624b7f40c660c5f1b7b5f008}{mWrapperStructInput}}, \mbox{\hyperlink{classop_1_1_wrapper_t_aaaa8275cf2fc6a7d29539e8702db88b6}{mWrapperStructOutput}}, \mbox{\hyperlink{classop_1_1_wrapper_t_af477c5c9d3cc1867540028852531919d}{mWrapperStructGui}},}
+\DoxyCodeLine{436                 \mbox{\hyperlink{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}{mUserWs}}, \mbox{\hyperlink{classop_1_1_wrapper_t_a0a614b91def46b746e29737356129e79}{mUserWsOnNewThread}});}
+\DoxyCodeLine{437             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{438             \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}.\mbox{\hyperlink{classop_1_1_thread_manager_a01c2d62e539896e36564457ab9cac25c}{start}}();}
+\DoxyCodeLine{439         \}}
+\DoxyCodeLine{440         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{441         \{}
+\DoxyCodeLine{442             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{443         \}}
+\DoxyCodeLine{444     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classop_1_1_wrapper_t_a8111d8cdb984e996410ace159a896992_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a061ea09aac902a8a44438feffd18998f}\label{classop_1_1_wrapper_t_a061ea09aac902a8a44438feffd18998f}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!stop@{stop}}
+\index{stop@{stop}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function to stop multi-\/threading. It can be called internally or externally. 
+
+wrapper.\+hpp 파일의 447 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{448     \{}
+\DoxyCodeLine{449         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{450         \{}
+\DoxyCodeLine{451             \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}.\mbox{\hyperlink{classop_1_1_thread_manager_a472a1ebee700c3449bac4d6d2bb0c3a8}{stop}}();}
+\DoxyCodeLine{452         \}}
+\DoxyCodeLine{453         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{454         \{}
+\DoxyCodeLine{455             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{456         \}}
+\DoxyCodeLine{457     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classop_1_1_wrapper_t_a061ea09aac902a8a44438feffd18998f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a79fa1a518495e1e3684f05943d1c04f8}\label{classop_1_1_wrapper_t_a79fa1a518495e1e3684f05943d1c04f8}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!tryEmplace@{tryEmplace}}
+\index{tryEmplace@{tryEmplace}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{tryEmplace()}{tryEmplace()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+bool \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::try\+Emplace (\begin{DoxyParamCaption}\item[{T\+Datums\+SP \&}]{t\+Datums }\end{DoxyParamCaption})}
+
+Emplace (move) an element on the first (input) queue. Only valid if \mbox{\hyperlink{namespaceop_a3593e2d53bec533f0048ef3973eebd36a288aae25bc408055f50c21c991903a44}{Thread\+Manager\+Mode\+::\+Asynchronous}} or \mbox{\hyperlink{namespaceop_a3593e2d53bec533f0048ef3973eebd36a435b3ab344c03bfc0e4530a2e75f5e44}{Thread\+Manager\+Mode\+::\+Asynchronous\+In}}. If the input queue is full or the \mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}} was stopped, it will return false and not emplace it. 
+\begin{DoxyParams}{매개변수}
+{\em t\+Datums} & T\+Datums\+SP element to be emplaced. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Boolean specifying whether the t\+Datums could be emplaced. 
+\end{DoxyReturn}
+
+
+wrapper.\+hpp 파일의 487 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{488     \{}
+\DoxyCodeLine{489         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{490         \{}
+\DoxyCodeLine{491             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}{mUserWs}}[\textcolor{keywordtype}{int}(\mbox{\hyperlink{namespaceop_a970a2a768a2ace81605b1558c9fdec18a324118a6721dd6b8a9b9f4e327df2bf5}{WorkerType::Input}})].empty())}
+\DoxyCodeLine{492                 \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(\textcolor{stringliteral}{"Emplace cannot be called if an input worker was already selected."},}
+\DoxyCodeLine{493                       \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{494             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}.\mbox{\hyperlink{classop_1_1_thread_manager_a8d5ffd9473557ff0f90ac1c6a1bae3ad}{tryEmplace}}(tDatums);}
+\DoxyCodeLine{495         \}}
+\DoxyCodeLine{496         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{497         \{}
+\DoxyCodeLine{498             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{499             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{500         \}}
+\DoxyCodeLine{501     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classop_1_1_wrapper_t_a79fa1a518495e1e3684f05943d1c04f8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a55af0ab1f0ea4329f2c0bb3feb92b835}\label{classop_1_1_wrapper_t_a55af0ab1f0ea4329f2c0bb3feb92b835}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!tryPop@{tryPop}}
+\index{tryPop@{tryPop}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{tryPop()}{tryPop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+bool \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::try\+Pop (\begin{DoxyParamCaption}\item[{T\+Datums\+SP \&}]{t\+Datums }\end{DoxyParamCaption})}
+
+Pop (retrieve) an element from the last (output) queue. Only valid if \mbox{\hyperlink{namespaceop_a3593e2d53bec533f0048ef3973eebd36a288aae25bc408055f50c21c991903a44}{Thread\+Manager\+Mode\+::\+Asynchronous}} or \mbox{\hyperlink{namespaceop_a3593e2d53bec533f0048ef3973eebd36ac68f8680ccf3a65dfcfc63356112c9f9}{Thread\+Manager\+Mode\+::\+Asynchronous\+Out}}. If the output queue is empty or the \mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}} was stopped, it will return false and not retrieve it. 
+\begin{DoxyParams}{매개변수}
+{\em t\+Datums} & T\+Datums\+SP element where the retrieved element will be placed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Boolean specifying whether the t\+Datums could be retrieved. 
+\end{DoxyReturn}
+
+
+wrapper.\+hpp 파일의 599 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{600     \{}
+\DoxyCodeLine{601         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{602         \{}
+\DoxyCodeLine{603             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}{mUserWs}}[\textcolor{keywordtype}{int}(\mbox{\hyperlink{namespaceop_a970a2a768a2ace81605b1558c9fdec18a29c2c02a361c9d7028472e5d92cd4a54}{WorkerType::Output}})].empty())}
+\DoxyCodeLine{604                 \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(\textcolor{stringliteral}{"Pop cannot be called if an output worker was already selected."},}
+\DoxyCodeLine{605                       \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{606             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}.\mbox{\hyperlink{classop_1_1_thread_manager_a59916fc3428aaf5c487e1dd373d437cd}{tryPop}}(tDatums);}
+\DoxyCodeLine{607         \}}
+\DoxyCodeLine{608         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{609         \{}
+\DoxyCodeLine{610             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{611             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{612         \}}
+\DoxyCodeLine{613     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{classop_1_1_wrapper_t_a55af0ab1f0ea4329f2c0bb3feb92b835_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a4d9396d4490b90f32a45d4a80d2cd5c7}\label{classop_1_1_wrapper_t_a4d9396d4490b90f32a45d4a80d2cd5c7}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!tryPush@{tryPush}}
+\index{tryPush@{tryPush}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{tryPush()}{tryPush()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+bool \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::try\+Push (\begin{DoxyParamCaption}\item[{const T\+Datums\+SP \&}]{t\+Datums }\end{DoxyParamCaption})}
+
+Push (copy) an element on the first (input) queue. Same as try\+Emplace, but it copies the data instead of moving it. 
+\begin{DoxyParams}{매개변수}
+{\em t\+Datums} & T\+Datums\+SP element to be pushed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Boolean specifying whether the t\+Datums could be pushed. 
+\end{DoxyReturn}
+
+
+wrapper.\+hpp 파일의 543 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{544     \{}
+\DoxyCodeLine{545         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{546         \{}
+\DoxyCodeLine{547             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}{mUserWs}}[\textcolor{keywordtype}{int}(\mbox{\hyperlink{namespaceop_a970a2a768a2ace81605b1558c9fdec18a324118a6721dd6b8a9b9f4e327df2bf5}{WorkerType::Input}})].empty())}
+\DoxyCodeLine{548                 \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(\textcolor{stringliteral}{"Push cannot be called if an input worker was already selected."},}
+\DoxyCodeLine{549                       \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{550             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}.\mbox{\hyperlink{classop_1_1_thread_manager_a7a24fd902ebd4b5fd81166547a5654d9}{tryPush}}(tDatums);}
+\DoxyCodeLine{551         \}}
+\DoxyCodeLine{552         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{553         \{}
+\DoxyCodeLine{554             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{555             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{556         \}}
+\DoxyCodeLine{557     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classop_1_1_wrapper_t_a4d9396d4490b90f32a45d4a80d2cd5c7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a4c56d34e6e113d5b230b34c8a557b78b}\label{classop_1_1_wrapper_t_a4c56d34e6e113d5b230b34c8a557b78b}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!waitAndEmplace@{waitAndEmplace}}
+\index{waitAndEmplace@{waitAndEmplace}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{waitAndEmplace()}{waitAndEmplace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+bool \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::wait\+And\+Emplace (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{cv\+Mat }\end{DoxyParamCaption})}
+
+Similar to wait\+And\+Emplace(const T\+Datums\+S\+P\& t\+Datums), but it takes a cv\+::\+Mat as input. 
+\begin{DoxyParams}{매개변수}
+{\em cv\+Mat} & cv\+::\+Mat with the image to be processed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Boolean specifying whether the t\+Datums could be emplaced. 
+\end{DoxyReturn}
+
+
+wrapper.\+hpp 파일의 521 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{522     \{}
+\DoxyCodeLine{523         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{524         \{}
+\DoxyCodeLine{525             \textcolor{comment}{// Create new datum}}
+\DoxyCodeLine{526             \textcolor{keyword}{auto} datumsPtr = std::make\_shared<std::vector<std::shared\_ptr<TDatum>>>();}
+\DoxyCodeLine{527             datumsPtr-\/>emplace\_back();}
+\DoxyCodeLine{528             \textcolor{keyword}{auto}\& tDatumPtr = datumsPtr-\/>at(0);}
+\DoxyCodeLine{529             tDatumPtr = std::make\_shared<TDatum>();}
+\DoxyCodeLine{530             \textcolor{comment}{// Fill datum}}
+\DoxyCodeLine{531             std::swap(tDatumPtr-\/>cvInputData, cvMat);}
+\DoxyCodeLine{532             \textcolor{comment}{// Return result}}
+\DoxyCodeLine{533             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_wrapper_t_a442ff1e4fec93ec28457f7c7c4b4bfbb}{waitAndEmplace}}(datumsPtr);}
+\DoxyCodeLine{534         \}}
+\DoxyCodeLine{535         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{536         \{}
+\DoxyCodeLine{537             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{538             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{539         \}}
+\DoxyCodeLine{540     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classop_1_1_wrapper_t_a4c56d34e6e113d5b230b34c8a557b78b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a442ff1e4fec93ec28457f7c7c4b4bfbb}\label{classop_1_1_wrapper_t_a442ff1e4fec93ec28457f7c7c4b4bfbb}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!waitAndEmplace@{waitAndEmplace}}
+\index{waitAndEmplace@{waitAndEmplace}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{waitAndEmplace()}{waitAndEmplace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+bool \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::wait\+And\+Emplace (\begin{DoxyParamCaption}\item[{T\+Datums\+SP \&}]{t\+Datums }\end{DoxyParamCaption})}
+
+Emplace (move) an element on the first (input) queue. Similar to try\+Emplace. However, if the input queue is full, it will wait until it can emplace it. If the \mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}} class is stopped before adding the element, it will return false and not emplace it. 
+\begin{DoxyParams}{매개변수}
+{\em t\+Datums} & T\+Datums\+SP element to be emplaced. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Boolean specifying whether the t\+Datums could be emplaced. 
+\end{DoxyReturn}
+
+
+wrapper.\+hpp 파일의 504 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{505     \{}
+\DoxyCodeLine{506         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{507         \{}
+\DoxyCodeLine{508             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}{mUserWs}}[\textcolor{keywordtype}{int}(\mbox{\hyperlink{namespaceop_a970a2a768a2ace81605b1558c9fdec18a324118a6721dd6b8a9b9f4e327df2bf5}{WorkerType::Input}})].empty())}
+\DoxyCodeLine{509                 \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(\textcolor{stringliteral}{"Emplace cannot be called if an input worker was already selected."},}
+\DoxyCodeLine{510                       \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{511             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}.\mbox{\hyperlink{classop_1_1_thread_manager_a36bd8060a4f7f449a8aa35d9a166270d}{waitAndEmplace}}(tDatums);}
+\DoxyCodeLine{512         \}}
+\DoxyCodeLine{513         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{514         \{}
+\DoxyCodeLine{515             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{516             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{517         \}}
+\DoxyCodeLine{518     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classop_1_1_wrapper_t_a442ff1e4fec93ec28457f7c7c4b4bfbb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a3c3b605e0787b55ffd00725c09a1cd53}\label{classop_1_1_wrapper_t_a3c3b605e0787b55ffd00725c09a1cd53}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!waitAndPop@{waitAndPop}}
+\index{waitAndPop@{waitAndPop}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{waitAndPop()}{waitAndPop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+bool \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::wait\+And\+Pop (\begin{DoxyParamCaption}\item[{T\+Datums\+SP \&}]{t\+Datums }\end{DoxyParamCaption})}
+
+Pop (retrieve) an element from the last (output) queue. Similar to try\+Pop. However, if the output queue is empty, it will wait until it can pop an element. If the \mbox{\hyperlink{classop_1_1_wrapper_t}{WrapperT}} class is stopped before popping the element, it will return false and not retrieve it. 
+\begin{DoxyParams}{매개변수}
+{\em t\+Datums} & T\+Datums\+SP element where the retrieved element will be placed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Boolean specifying whether the t\+Datums could be retrieved. 
+\end{DoxyReturn}
+
+
+wrapper.\+hpp 파일의 616 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{617     \{}
+\DoxyCodeLine{618         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{619         \{}
+\DoxyCodeLine{620             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}{mUserWs}}[\textcolor{keywordtype}{int}(\mbox{\hyperlink{namespaceop_a970a2a768a2ace81605b1558c9fdec18a29c2c02a361c9d7028472e5d92cd4a54}{WorkerType::Output}})].empty())}
+\DoxyCodeLine{621                 \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(\textcolor{stringliteral}{"Pop cannot be called if an output worker was already selected."},}
+\DoxyCodeLine{622                       \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{623             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}.\mbox{\hyperlink{classop_1_1_thread_manager_a393a9f04c70a002f5ceb5e301eea5cff}{waitAndPop}}(tDatums);}
+\DoxyCodeLine{624         \}}
+\DoxyCodeLine{625         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{626         \{}
+\DoxyCodeLine{627             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{628             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{629         \}}
+\DoxyCodeLine{630     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classop_1_1_wrapper_t_a3c3b605e0787b55ffd00725c09a1cd53_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a48af7e8982f2da14125f5f564765f17b}\label{classop_1_1_wrapper_t_a48af7e8982f2da14125f5f564765f17b}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!waitAndPush@{waitAndPush}}
+\index{waitAndPush@{waitAndPush}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{waitAndPush()}{waitAndPush()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+bool \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::wait\+And\+Push (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{cv\+Mat }\end{DoxyParamCaption})}
+
+Similar to \mbox{\hyperlink{classop_1_1_wrapper_t_a0e0aea3f8bf81458c0662c46f4d345d5}{wait\+And\+Push(const T\+Datums\+S\+P\& t\+Datums)}}, but it takes a cv\+::\+Mat as input. 
+\begin{DoxyParams}{매개변수}
+{\em cv\+Mat} & cv\+::\+Mat with the image to be processed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Boolean specifying whether the t\+Datums could be pushed. 
+\end{DoxyReturn}
+
+
+wrapper.\+hpp 파일의 577 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{578     \{}
+\DoxyCodeLine{579         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{580         \{}
+\DoxyCodeLine{581             \textcolor{comment}{// Create new datum}}
+\DoxyCodeLine{582             \textcolor{keyword}{auto} datumsPtr = std::make\_shared<std::vector<std::shared\_ptr<TDatum>>>();}
+\DoxyCodeLine{583             datumsPtr-\/>emplace\_back();}
+\DoxyCodeLine{584             \textcolor{keyword}{auto}\& tDatumPtr = datumsPtr-\/>at(0);}
+\DoxyCodeLine{585             tDatumPtr = std::make\_shared<TDatum>();}
+\DoxyCodeLine{586             \textcolor{comment}{// Fill datum}}
+\DoxyCodeLine{587             tDatumPtr-\/>cvInputData = cvMat.clone();}
+\DoxyCodeLine{588             \textcolor{comment}{// Return result}}
+\DoxyCodeLine{589             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_wrapper_t_a442ff1e4fec93ec28457f7c7c4b4bfbb}{waitAndEmplace}}(datumsPtr);}
+\DoxyCodeLine{590         \}}
+\DoxyCodeLine{591         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{592         \{}
+\DoxyCodeLine{593             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{594             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{595         \}}
+\DoxyCodeLine{596     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classop_1_1_wrapper_t_a48af7e8982f2da14125f5f564765f17b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a0e0aea3f8bf81458c0662c46f4d345d5}\label{classop_1_1_wrapper_t_a0e0aea3f8bf81458c0662c46f4d345d5}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!waitAndPush@{waitAndPush}}
+\index{waitAndPush@{waitAndPush}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{waitAndPush()}{waitAndPush()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datum , typename T\+Datums , typename T\+Datums\+SP , typename T\+Worker $>$ \\
+bool \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::wait\+And\+Push (\begin{DoxyParamCaption}\item[{const T\+Datums\+SP \&}]{t\+Datums }\end{DoxyParamCaption})}
+
+Push (copy) an element on the first (input) queue. Same as wait\+And\+Emplace, but it copies the data instead of moving it. 
+\begin{DoxyParams}{매개변수}
+{\em t\+Datums} & T\+Datums\+SP element to be pushed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Boolean specifying whether the t\+Datums could be pushed. 
+\end{DoxyReturn}
+
+
+wrapper.\+hpp 파일의 560 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{561     \{}
+\DoxyCodeLine{562         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{563         \{}
+\DoxyCodeLine{564             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}{mUserWs}}[\textcolor{keywordtype}{int}(\mbox{\hyperlink{namespaceop_a970a2a768a2ace81605b1558c9fdec18a324118a6721dd6b8a9b9f4e327df2bf5}{WorkerType::Input}})].empty())}
+\DoxyCodeLine{565                 \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(\textcolor{stringliteral}{"Push cannot be called if an input worker was already selected."},}
+\DoxyCodeLine{566                       \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{567             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}{mThreadManager}}.\mbox{\hyperlink{classop_1_1_thread_manager_abfa315257b3e8cd022573f439b4936ec}{waitAndPush}}(tDatums);}
+\DoxyCodeLine{568         \}}
+\DoxyCodeLine{569         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{570         \{}
+\DoxyCodeLine{571             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{572             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{573         \}}
+\DoxyCodeLine{574     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classop_1_1_wrapper_t_a0e0aea3f8bf81458c0662c46f4d345d5_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a3b8a15a7fda2fb5ca3417c4431a1928d}\label{classop_1_1_wrapper_t_a3b8a15a7fda2fb5ca3417c4431a1928d}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!mMultiThreadEnabled@{mMultiThreadEnabled}}
+\index{mMultiThreadEnabled@{mMultiThreadEnabled}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mMultiThreadEnabled}{mMultiThreadEnabled}}
+{\footnotesize\ttfamily template$<$typename T\+Datum  = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums  = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP  = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$ \\
+bool \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::m\+Multi\+Thread\+Enabled\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wrapper.\+hpp 파일의 232 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}\label{classop_1_1_wrapper_t_a20b5f1e7cc43c385c134c1df06ecda51}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!mThreadManager@{mThreadManager}}
+\index{mThreadManager@{mThreadManager}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mThreadManager}{mThreadManager}}
+{\footnotesize\ttfamily template$<$typename T\+Datum  = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums  = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP  = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$ \\
+\mbox{\hyperlink{classop_1_1_thread_manager}{Thread\+Manager}}$<$T\+Datums\+SP$>$ \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::m\+Thread\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wrapper.\+hpp 파일의 231 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a838c55912c7164412eedddc40043ca92}\label{classop_1_1_wrapper_t_a838c55912c7164412eedddc40043ca92}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!mThreadManagerMode@{mThreadManagerMode}}
+\index{mThreadManagerMode@{mThreadManagerMode}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mThreadManagerMode}{mThreadManagerMode}}
+{\footnotesize\ttfamily template$<$typename T\+Datum  = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums  = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP  = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$ \\
+const \mbox{\hyperlink{namespaceop_a3593e2d53bec533f0048ef3973eebd36}{Thread\+Manager\+Mode}} \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::m\+Thread\+Manager\+Mode\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wrapper.\+hpp 파일의 230 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}\label{classop_1_1_wrapper_t_a45d18cb01aca4c33422b59b20d113e2e}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!mUserWs@{mUserWs}}
+\index{mUserWs@{mUserWs}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mUserWs}{mUserWs}}
+{\footnotesize\ttfamily template$<$typename T\+Datum  = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums  = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP  = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$ \\
+std\+::array$<$std\+::vector$<$T\+Worker$>$, int(\mbox{\hyperlink{namespaceop_a970a2a768a2ace81605b1558c9fdec18a6f6cb72d544962fa333e2e34ce64f719}{Worker\+Type\+::\+Size}})$>$ \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::m\+User\+Ws\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wrapper.\+hpp 파일의 243 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a0a614b91def46b746e29737356129e79}\label{classop_1_1_wrapper_t_a0a614b91def46b746e29737356129e79}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!mUserWsOnNewThread@{mUserWsOnNewThread}}
+\index{mUserWsOnNewThread@{mUserWsOnNewThread}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mUserWsOnNewThread}{mUserWsOnNewThread}}
+{\footnotesize\ttfamily template$<$typename T\+Datum  = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums  = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP  = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$ \\
+std\+::array$<$bool, int(\mbox{\hyperlink{namespaceop_a970a2a768a2ace81605b1558c9fdec18a6f6cb72d544962fa333e2e34ce64f719}{Worker\+Type\+::\+Size}})$>$ \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::m\+User\+Ws\+On\+New\+Thread\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wrapper.\+hpp 파일의 242 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a8c88d67db134e7ca8a0deb1c1d2d542b}\label{classop_1_1_wrapper_t_a8c88d67db134e7ca8a0deb1c1d2d542b}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!mWrapperStructExtra@{mWrapperStructExtra}}
+\index{mWrapperStructExtra@{mWrapperStructExtra}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mWrapperStructExtra}{mWrapperStructExtra}}
+{\footnotesize\ttfamily template$<$typename T\+Datum  = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums  = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP  = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$ \\
+\mbox{\hyperlink{structop_1_1_wrapper_struct_extra}{Wrapper\+Struct\+Extra}} \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::m\+Wrapper\+Struct\+Extra\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wrapper.\+hpp 파일의 237 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a438af70d3d2abbeeb5c0e791882cc8fc}\label{classop_1_1_wrapper_t_a438af70d3d2abbeeb5c0e791882cc8fc}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!mWrapperStructFace@{mWrapperStructFace}}
+\index{mWrapperStructFace@{mWrapperStructFace}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mWrapperStructFace}{mWrapperStructFace}}
+{\footnotesize\ttfamily template$<$typename T\+Datum  = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums  = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP  = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$ \\
+\mbox{\hyperlink{structop_1_1_wrapper_struct_face}{Wrapper\+Struct\+Face}} \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::m\+Wrapper\+Struct\+Face\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wrapper.\+hpp 파일의 235 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_wrapper_t_af477c5c9d3cc1867540028852531919d}\label{classop_1_1_wrapper_t_af477c5c9d3cc1867540028852531919d}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!mWrapperStructGui@{mWrapperStructGui}}
+\index{mWrapperStructGui@{mWrapperStructGui}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mWrapperStructGui}{mWrapperStructGui}}
+{\footnotesize\ttfamily template$<$typename T\+Datum  = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums  = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP  = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$ \\
+\mbox{\hyperlink{structop_1_1_wrapper_struct_gui}{Wrapper\+Struct\+Gui}} \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::m\+Wrapper\+Struct\+Gui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wrapper.\+hpp 파일의 240 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a3124a320170abf596c2fe5beeae31634}\label{classop_1_1_wrapper_t_a3124a320170abf596c2fe5beeae31634}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!mWrapperStructHand@{mWrapperStructHand}}
+\index{mWrapperStructHand@{mWrapperStructHand}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mWrapperStructHand}{mWrapperStructHand}}
+{\footnotesize\ttfamily template$<$typename T\+Datum  = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums  = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP  = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$ \\
+\mbox{\hyperlink{structop_1_1_wrapper_struct_hand}{Wrapper\+Struct\+Hand}} \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::m\+Wrapper\+Struct\+Hand\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wrapper.\+hpp 파일의 236 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a0f992378624b7f40c660c5f1b7b5f008}\label{classop_1_1_wrapper_t_a0f992378624b7f40c660c5f1b7b5f008}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!mWrapperStructInput@{mWrapperStructInput}}
+\index{mWrapperStructInput@{mWrapperStructInput}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mWrapperStructInput}{mWrapperStructInput}}
+{\footnotesize\ttfamily template$<$typename T\+Datum  = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums  = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP  = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$ \\
+\mbox{\hyperlink{structop_1_1_wrapper_struct_input}{Wrapper\+Struct\+Input}} \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::m\+Wrapper\+Struct\+Input\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wrapper.\+hpp 파일의 238 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_wrapper_t_aaaa8275cf2fc6a7d29539e8702db88b6}\label{classop_1_1_wrapper_t_aaaa8275cf2fc6a7d29539e8702db88b6}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!mWrapperStructOutput@{mWrapperStructOutput}}
+\index{mWrapperStructOutput@{mWrapperStructOutput}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mWrapperStructOutput}{mWrapperStructOutput}}
+{\footnotesize\ttfamily template$<$typename T\+Datum  = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums  = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP  = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$ \\
+\mbox{\hyperlink{structop_1_1_wrapper_struct_output}{Wrapper\+Struct\+Output}} \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::m\+Wrapper\+Struct\+Output\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wrapper.\+hpp 파일의 239 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_wrapper_t_a7800195cd87bea79f9b26422b67a97f8}\label{classop_1_1_wrapper_t_a7800195cd87bea79f9b26422b67a97f8}} 
+\index{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}!mWrapperStructPose@{mWrapperStructPose}}
+\index{mWrapperStructPose@{mWrapperStructPose}!op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$@{op::WrapperT$<$ TDatum, TDatums, TDatumsSP, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mWrapperStructPose}{mWrapperStructPose}}
+{\footnotesize\ttfamily template$<$typename T\+Datum  = B\+A\+S\+E\+\_\+\+D\+A\+T\+UM, typename T\+Datums  = std\+::vector$<$std\+::shared\+\_\+ptr$<$\+T\+Datum$>$$>$, typename T\+Datums\+SP  = std\+::shared\+\_\+ptr$<$\+T\+Datums$>$, typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums\+S\+P$>$$>$$>$ \\
+\mbox{\hyperlink{structop_1_1_wrapper_struct_pose}{Wrapper\+Struct\+Pose}} \mbox{\hyperlink{classop_1_1_wrapper_t}{op\+::\+WrapperT}}$<$ T\+Datum, T\+Datums, T\+Datums\+SP, T\+Worker $>$\+::m\+Wrapper\+Struct\+Pose\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wrapper.\+hpp 파일의 234 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/wrapper/\mbox{\hyperlink{wrapper_8hpp}{wrapper.\+hpp}}\end{DoxyCompactItemize}

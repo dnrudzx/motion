@@ -1,0 +1,909 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: cl::SVMAllocator&lt; T, SVMTrait &gt; 클래스 템플릿 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classcl_1_1_s_v_m_allocator.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">클래스</a> &#124;
+<a href="#pub-types">Public 타입</a> &#124;
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pri-attribs">Private 속성</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="classcl_1_1_s_v_m_allocator-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">cl::SVMAllocator&lt; T, SVMTrait &gt; 클래스 템플릿 참조</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="cl2_8hpp_source.html">cl2.hpp</a>&gt;</code></p>
+<div class="dynheader">
+cl::SVMAllocator&lt; T, SVMTrait &gt;에 대한 협력 다이어그램:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_s_v_m_allocator__coll__graph.png" border="0" usemap="#cl_1_1_s_v_m_allocator_3_01_t_00_01_s_v_m_trait_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="cl_1_1_s_v_m_allocator_3_01_t_00_01_s_v_m_trait_01_4_coll__map" id="cl_1_1_s_v_m_allocator_3_01_t_00_01_s_v_m_trait_01_4_coll__map">
+<area shape="rect" title=" " alt="" coords="35,727,179,1009"/>
+<area shape="rect" href="$classcl_1_1_context.html" title="Class interface for cl_context." alt="" coords="5,337,208,664"/>
+<area shape="rect" href="$classcl_1_1detail_1_1_wrapper.html" title=" " alt="" coords="43,5,171,288"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+클래스</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcl_1_1_s_v_m_allocator_1_1rebind.html">rebind</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 타입</h2></td></tr>
+<tr class="memitem:a80bd529e576d0ff30cc55ee9f0ec3f8c"><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a80bd529e576d0ff30cc55ee9f0ec3f8c">value_type</a></td></tr>
+<tr class="separator:a80bd529e576d0ff30cc55ee9f0ec3f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6222e5ff48358bc0f826885bb2a4a4ec"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classcl_1_1_s_v_m_allocator.html#a80bd529e576d0ff30cc55ee9f0ec3f8c">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a6222e5ff48358bc0f826885bb2a4a4ec">pointer</a></td></tr>
+<tr class="separator:a6222e5ff48358bc0f826885bb2a4a4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5daf4a4173794758e399e45a2f028a9"><td class="memItemLeft" align="right" valign="top">typedef const <a class="el" href="classcl_1_1_s_v_m_allocator.html#a80bd529e576d0ff30cc55ee9f0ec3f8c">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#af5daf4a4173794758e399e45a2f028a9">const_pointer</a></td></tr>
+<tr class="separator:af5daf4a4173794758e399e45a2f028a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a3870b226f6286dbf1917ff1d8e03b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classcl_1_1_s_v_m_allocator.html#a80bd529e576d0ff30cc55ee9f0ec3f8c">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#aa9a3870b226f6286dbf1917ff1d8e03b">reference</a></td></tr>
+<tr class="separator:aa9a3870b226f6286dbf1917ff1d8e03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a4984f03ddff3a757f200b4c4fb357"><td class="memItemLeft" align="right" valign="top">typedef const <a class="el" href="classcl_1_1_s_v_m_allocator.html#a80bd529e576d0ff30cc55ee9f0ec3f8c">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a64a4984f03ddff3a757f200b4c4fb357">const_reference</a></td></tr>
+<tr class="separator:a64a4984f03ddff3a757f200b4c4fb357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe51e51ed34089444241a43aab0950ef"><td class="memItemLeft" align="right" valign="top">typedef std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#afe51e51ed34089444241a43aab0950ef">size_type</a></td></tr>
+<tr class="separator:afe51e51ed34089444241a43aab0950ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0caac86c149d127e6d686a764e2073"><td class="memItemLeft" align="right" valign="top">typedef std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#aed0caac86c149d127e6d686a764e2073">difference_type</a></td></tr>
+<tr class="separator:aed0caac86c149d127e6d686a764e2073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a5851b239299b64a55bc63fa9af1bdd28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a5851b239299b64a55bc63fa9af1bdd28">SVMAllocator</a> ()</td></tr>
+<tr class="separator:a5851b239299b64a55bc63fa9af1bdd28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532a5219ffd5c855070a1e4f22832711"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a532a5219ffd5c855070a1e4f22832711">SVMAllocator</a> (<a class="el" href="classcl_1_1_context.html">cl::Context</a> context)</td></tr>
+<tr class="separator:a532a5219ffd5c855070a1e4f22832711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927ffbac7ec2a7cb0aee2d24a9f986b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a927ffbac7ec2a7cb0aee2d24a9f986b1">SVMAllocator</a> (const <a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a> &amp;other)</td></tr>
+<tr class="separator:a927ffbac7ec2a7cb0aee2d24a9f986b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af103176d8c51fc469fb0b7d85a597a9f"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:af103176d8c51fc469fb0b7d85a597a9f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#af103176d8c51fc469fb0b7d85a597a9f">SVMAllocator</a> (const <a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a>&lt; U, SVMTrait &gt; &amp;other)</td></tr>
+<tr class="separator:af103176d8c51fc469fb0b7d85a597a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cfe945d163dbdd580451adbd2974dfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a4cfe945d163dbdd580451adbd2974dfc">~SVMAllocator</a> ()</td></tr>
+<tr class="separator:a4cfe945d163dbdd580451adbd2974dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ae2172078bf1aa987a0e3ace96cbb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a6222e5ff48358bc0f826885bb2a4a4ec">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a10ae2172078bf1aa987a0e3ace96cbb7">address</a> (<a class="el" href="classcl_1_1_s_v_m_allocator.html#aa9a3870b226f6286dbf1917ff1d8e03b">reference</a> r) <a class="el" href="cl2_8hpp.html#a7fcfde26c9e031daf0c6fbb637ed7ac0">CL_HPP_NOEXCEPT_</a></td></tr>
+<tr class="separator:a10ae2172078bf1aa987a0e3ace96cbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc4bd8a99bc004c286f49a7f3e84766"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcl_1_1_s_v_m_allocator.html#af5daf4a4173794758e399e45a2f028a9">const_pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#afcc4bd8a99bc004c286f49a7f3e84766">address</a> (<a class="el" href="classcl_1_1_s_v_m_allocator.html#a64a4984f03ddff3a757f200b4c4fb357">const_reference</a> r) <a class="el" href="cl2_8hpp.html#a7fcfde26c9e031daf0c6fbb637ed7ac0">CL_HPP_NOEXCEPT_</a></td></tr>
+<tr class="separator:afcc4bd8a99bc004c286f49a7f3e84766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44858d70971c7801aa62d7a64d18df00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a6222e5ff48358bc0f826885bb2a4a4ec">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a44858d70971c7801aa62d7a64d18df00">allocate</a> (<a class="el" href="classcl_1_1_s_v_m_allocator.html#afe51e51ed34089444241a43aab0950ef">size_type</a> size, typename <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; void, SVMTrait &gt;::<a class="el" href="classcl_1_1_s_v_m_allocator.html#af5daf4a4173794758e399e45a2f028a9">const_pointer</a>=0)</td></tr>
+<tr class="separator:a44858d70971c7801aa62d7a64d18df00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a695f4693c4245c66285e7f4a0405cf84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a695f4693c4245c66285e7f4a0405cf84">deallocate</a> (<a class="el" href="classcl_1_1_s_v_m_allocator.html#a6222e5ff48358bc0f826885bb2a4a4ec">pointer</a> p, <a class="el" href="classcl_1_1_s_v_m_allocator.html#afe51e51ed34089444241a43aab0950ef">size_type</a>)</td></tr>
+<tr class="separator:a695f4693c4245c66285e7f4a0405cf84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec263261a88fb1ec64a3e5f9a4ef41a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcl_1_1_s_v_m_allocator.html#afe51e51ed34089444241a43aab0950ef">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#aec263261a88fb1ec64a3e5f9a4ef41a7">max_size</a> () const <a class="el" href="cl2_8hpp.html#a7fcfde26c9e031daf0c6fbb637ed7ac0">CL_HPP_NOEXCEPT_</a></td></tr>
+<tr class="separator:aec263261a88fb1ec64a3e5f9a4ef41a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e823e939f67e1209450d996556c080"><td class="memTemplParams" colspan="2">template&lt;class U , class... Args&gt; </td></tr>
+<tr class="memitem:a57e823e939f67e1209450d996556c080"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a57e823e939f67e1209450d996556c080">construct</a> (U *p, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a57e823e939f67e1209450d996556c080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86498cce5cce2d8ac1c509862eb28977"><td class="memTemplParams" colspan="2">template&lt;class U &gt; </td></tr>
+<tr class="memitem:a86498cce5cce2d8ac1c509862eb28977"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a86498cce5cce2d8ac1c509862eb28977">destroy</a> (U *p)</td></tr>
+<tr class="separator:a86498cce5cce2d8ac1c509862eb28977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa89b1232891a728d3530dbd71e7cb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#abaa89b1232891a728d3530dbd71e7cb6">operator==</a> (<a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a> const &amp;rhs)</td></tr>
+<tr class="separator:abaa89b1232891a728d3530dbd71e7cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72088f264071b2648aa80e20594d6398"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a72088f264071b2648aa80e20594d6398">operator!=</a> (<a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a> const &amp;a)</td></tr>
+<tr class="separator:a72088f264071b2648aa80e20594d6398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 속성</h2></td></tr>
+<tr class="memitem:a324a1c36b10fa39d7c07bd1a4310b7be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcl_1_1_context.html">Context</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a324a1c36b10fa39d7c07bd1a4310b7be">context_</a></td></tr>
+<tr class="separator:a324a1c36b10fa39d7c07bd1a4310b7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a0146b33b7681b60e7678780ae05fb43f"><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
+<tr class="memitem:a0146b33b7681b60e7678780ae05fb43f"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a0146b33b7681b60e7678780ae05fb43f">SVMAllocator</a></td></tr>
+<tr class="separator:a0146b33b7681b60e7678780ae05fb43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock"><h3>template&lt;typename T, class SVMTrait&gt;<br />
+class cl::SVMAllocator&lt; T, SVMTrait &gt;</h3>
+
+<p>STL-like allocator class for managing SVM objects provided for convenience.</p>
+<p>Note that while this behaves like an allocator for the purposes of constructing vectors and similar objects, care must be taken when using with smart pointers. The allocator should not be used to construct a unique_ptr if we are using coarse-grained SVM mode because the coarse-grained management behaviour would behave incorrectly with respect to reference counting.</p>
+<p>Instead the allocator embeds a Deleter which may be used with unique_ptr and is used with the allocate_shared and allocate_ptr supplied operations. </p>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03387">3387</a> 번째 라인에서 정의되었습니다.</p>
+</div><h2 class="groupheader">멤버 타입정의 문서화</h2>
+<a id="af5daf4a4173794758e399e45a2f028a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5daf4a4173794758e399e45a2f028a9">&#9670;&nbsp;</a></span>const_pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef const <a class="el" href="classcl_1_1_s_v_m_allocator.html#a80bd529e576d0ff30cc55ee9f0ec3f8c">value_type</a>* <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::<a class="el" href="classcl_1_1_s_v_m_allocator.html#af5daf4a4173794758e399e45a2f028a9">const_pointer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03394">3394</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a64a4984f03ddff3a757f200b4c4fb357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a4984f03ddff3a757f200b4c4fb357">&#9670;&nbsp;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef const <a class="el" href="classcl_1_1_s_v_m_allocator.html#a80bd529e576d0ff30cc55ee9f0ec3f8c">value_type</a>&amp; <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::<a class="el" href="classcl_1_1_s_v_m_allocator.html#a64a4984f03ddff3a757f200b4c4fb357">const_reference</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03396">3396</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="aed0caac86c149d127e6d686a764e2073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed0caac86c149d127e6d686a764e2073">&#9670;&nbsp;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::ptrdiff_t <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::<a class="el" href="classcl_1_1_s_v_m_allocator.html#aed0caac86c149d127e6d686a764e2073">difference_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03398">3398</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a6222e5ff48358bc0f826885bb2a4a4ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6222e5ff48358bc0f826885bb2a4a4ec">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classcl_1_1_s_v_m_allocator.html#a80bd529e576d0ff30cc55ee9f0ec3f8c">value_type</a>* <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::<a class="el" href="classcl_1_1_s_v_m_allocator.html#a6222e5ff48358bc0f826885bb2a4a4ec">pointer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03393">3393</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="aa9a3870b226f6286dbf1917ff1d8e03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a3870b226f6286dbf1917ff1d8e03b">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classcl_1_1_s_v_m_allocator.html#a80bd529e576d0ff30cc55ee9f0ec3f8c">value_type</a>&amp; <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::<a class="el" href="classcl_1_1_s_v_m_allocator.html#aa9a3870b226f6286dbf1917ff1d8e03b">reference</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03395">3395</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="afe51e51ed34089444241a43aab0950ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe51e51ed34089444241a43aab0950ef">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::size_t <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::<a class="el" href="classcl_1_1_s_v_m_allocator.html#afe51e51ed34089444241a43aab0950ef">size_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03397">3397</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a80bd529e576d0ff30cc55ee9f0ec3f8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80bd529e576d0ff30cc55ee9f0ec3f8c">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef T <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::<a class="el" href="classcl_1_1_s_v_m_allocator.html#a80bd529e576d0ff30cc55ee9f0ec3f8c">value_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03392">3392</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<h2 class="groupheader">생성자 &amp; 소멸자 문서화</h2>
+<a id="a5851b239299b64a55bc63fa9af1bdd28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5851b239299b64a55bc63fa9af1bdd28">&#9670;&nbsp;</a></span>SVMAllocator() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::<a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03409">3409</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03409"></a><span class="lineno"> 3409</span>&#160;                   :</div><div class="line"><a name="l03410"></a><span class="lineno"> 3410</span>&#160;        <a class="code" href="classcl_1_1_s_v_m_allocator.html#a324a1c36b10fa39d7c07bd1a4310b7be">context_</a>(<a class="code" href="classcl_1_1_context.html#ad180f6f7d8b5a95710ab72f96162b051">Context::getDefault</a>())</div><div class="line"><a name="l03411"></a><span class="lineno"> 3411</span>&#160;    {</div><div class="line"><a name="l03412"></a><span class="lineno"> 3412</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a532a5219ffd5c855070a1e4f22832711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532a5219ffd5c855070a1e4f22832711">&#9670;&nbsp;</a></span>SVMAllocator() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::<a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcl_1_1_context.html">cl::Context</a>&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03414">3414</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03414"></a><span class="lineno"> 3414</span>&#160;                                             :</div><div class="line"><a name="l03415"></a><span class="lineno"> 3415</span>&#160;        <a class="code" href="classcl_1_1_s_v_m_allocator.html#a324a1c36b10fa39d7c07bd1a4310b7be">context_</a>(context)</div><div class="line"><a name="l03416"></a><span class="lineno"> 3416</span>&#160;    {</div><div class="line"><a name="l03417"></a><span class="lineno"> 3417</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a927ffbac7ec2a7cb0aee2d24a9f986b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a927ffbac7ec2a7cb0aee2d24a9f986b1">&#9670;&nbsp;</a></span>SVMAllocator() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::<a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a>&lt; T, SVMTrait &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03420">3420</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03420"></a><span class="lineno"> 3420</span>&#160;                                            :</div><div class="line"><a name="l03421"></a><span class="lineno"> 3421</span>&#160;        <a class="code" href="classcl_1_1_s_v_m_allocator.html#a324a1c36b10fa39d7c07bd1a4310b7be">context_</a>(other.context_)</div><div class="line"><a name="l03422"></a><span class="lineno"> 3422</span>&#160;    {</div><div class="line"><a name="l03423"></a><span class="lineno"> 3423</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="af103176d8c51fc469fb0b7d85a597a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af103176d8c51fc469fb0b7d85a597a9f">&#9670;&nbsp;</a></span>SVMAllocator() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::<a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a>&lt; U, SVMTrait &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03426">3426</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03426"></a><span class="lineno"> 3426</span>&#160;                                                         :</div><div class="line"><a name="l03427"></a><span class="lineno"> 3427</span>&#160;        <a class="code" href="classcl_1_1_s_v_m_allocator.html#a324a1c36b10fa39d7c07bd1a4310b7be">context_</a>(other.context_)</div><div class="line"><a name="l03428"></a><span class="lineno"> 3428</span>&#160;    {</div><div class="line"><a name="l03429"></a><span class="lineno"> 3429</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a4cfe945d163dbdd580451adbd2974dfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cfe945d163dbdd580451adbd2974dfc">&#9670;&nbsp;</a></span>~SVMAllocator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::~<a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03431">3431</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03432"></a><span class="lineno"> 3432</span>&#160;    {</div><div class="line"><a name="l03433"></a><span class="lineno"> 3433</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">멤버 함수 문서화</h2>
+<a id="afcc4bd8a99bc004c286f49a7f3e84766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcc4bd8a99bc004c286f49a7f3e84766">&#9670;&nbsp;</a></span>address() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1_s_v_m_allocator.html#af5daf4a4173794758e399e45a2f028a9">const_pointer</a> <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::address </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a64a4984f03ddff3a757f200b4c4fb357">const_reference</a>&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03440">3440</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03441"></a><span class="lineno"> 3441</span>&#160;    {</div><div class="line"><a name="l03442"></a><span class="lineno"> 3442</span>&#160;        <span class="keywordflow">return</span> std::addressof(r);</div><div class="line"><a name="l03443"></a><span class="lineno"> 3443</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a10ae2172078bf1aa987a0e3ace96cbb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ae2172078bf1aa987a0e3ace96cbb7">&#9670;&nbsp;</a></span>address() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a6222e5ff48358bc0f826885bb2a4a4ec">pointer</a> <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::address </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcl_1_1_s_v_m_allocator.html#aa9a3870b226f6286dbf1917ff1d8e03b">reference</a>&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03435">3435</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03436"></a><span class="lineno"> 3436</span>&#160;    {</div><div class="line"><a name="l03437"></a><span class="lineno"> 3437</span>&#160;        <span class="keywordflow">return</span> std::addressof(r);</div><div class="line"><a name="l03438"></a><span class="lineno"> 3438</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a44858d70971c7801aa62d7a64d18df00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44858d70971c7801aa62d7a64d18df00">&#9670;&nbsp;</a></span>allocate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a6222e5ff48358bc0f826885bb2a4a4ec">pointer</a> <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::allocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcl_1_1_s_v_m_allocator.html#afe51e51ed34089444241a43aab0950ef">size_type</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; void, SVMTrait &gt;::<a class="el" href="classcl_1_1_s_v_m_allocator.html#af5daf4a4173794758e399e45a2f028a9">const_pointer</a>&#160;</td>
+          <td class="paramname"> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Allocate an SVM pointer.</p>
+<p>If the allocator is coarse-grained, this will take ownership to allow containers to correctly construct data in place. </p>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03451">3451</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03454"></a><span class="lineno"> 3454</span>&#160;    {</div><div class="line"><a name="l03455"></a><span class="lineno"> 3455</span>&#160;        <span class="comment">// Allocate memory with default alignment matching the size of the type</span></div><div class="line"><a name="l03456"></a><span class="lineno"> 3456</span>&#160;        <span class="keywordtype">void</span>* voidPointer =</div><div class="line"><a name="l03457"></a><span class="lineno"> 3457</span>&#160;            clSVMAlloc(</div><div class="line"><a name="l03458"></a><span class="lineno"> 3458</span>&#160;            <a class="code" href="classcl_1_1_s_v_m_allocator.html#a324a1c36b10fa39d7c07bd1a4310b7be">context_</a>(),</div><div class="line"><a name="l03459"></a><span class="lineno"> 3459</span>&#160;            SVMTrait::getSVMMemFlags(),</div><div class="line"><a name="l03460"></a><span class="lineno"> 3460</span>&#160;            size*<span class="keyword">sizeof</span>(T),</div><div class="line"><a name="l03461"></a><span class="lineno"> 3461</span>&#160;            0);</div><div class="line"><a name="l03462"></a><span class="lineno"> 3462</span>&#160;        <a class="code" href="classcl_1_1_s_v_m_allocator.html#a6222e5ff48358bc0f826885bb2a4a4ec">pointer</a> retValue = reinterpret_cast&lt;pointer&gt;(</div><div class="line"><a name="l03463"></a><span class="lineno"> 3463</span>&#160;            voidPointer);</div><div class="line"><a name="l03464"></a><span class="lineno"> 3464</span>&#160;<span class="preprocessor">#if defined(CL_HPP_ENABLE_EXCEPTIONS)</span></div><div class="line"><a name="l03465"></a><span class="lineno"> 3465</span>&#160;        <span class="keywordflow">if</span> (!retValue) {</div><div class="line"><a name="l03466"></a><span class="lineno"> 3466</span>&#160;            std::bad_alloc excep;</div><div class="line"><a name="l03467"></a><span class="lineno"> 3467</span>&#160;            <span class="keywordflow">throw</span> excep;</div><div class="line"><a name="l03468"></a><span class="lineno"> 3468</span>&#160;        }</div><div class="line"><a name="l03469"></a><span class="lineno"> 3469</span>&#160;<span class="preprocessor">#endif // #if defined(CL_HPP_ENABLE_EXCEPTIONS)</span></div><div class="line"><a name="l03470"></a><span class="lineno"> 3470</span>&#160; </div><div class="line"><a name="l03471"></a><span class="lineno"> 3471</span>&#160;        <span class="comment">// If allocation was coarse-grained then map it</span></div><div class="line"><a name="l03472"></a><span class="lineno"> 3472</span>&#160;        <span class="keywordflow">if</span> (!(SVMTrait::getSVMMemFlags() &amp; CL_MEM_SVM_FINE_GRAIN_BUFFER)) {</div><div class="line"><a name="l03473"></a><span class="lineno"> 3473</span>&#160;            cl_int err = <a class="code" href="namespacecl.html#abb2c4e45814ea569a27c39d37471b2a4">enqueueMapSVM</a>(retValue, CL_TRUE, CL_MAP_READ | CL_MAP_WRITE, size*<span class="keyword">sizeof</span>(T));</div><div class="line"><a name="l03474"></a><span class="lineno"> 3474</span>&#160;            <span class="keywordflow">if</span> (err != CL_SUCCESS) {</div><div class="line"><a name="l03475"></a><span class="lineno"> 3475</span>&#160;                std::bad_alloc excep;</div><div class="line"><a name="l03476"></a><span class="lineno"> 3476</span>&#160;                <span class="keywordflow">throw</span> excep;</div><div class="line"><a name="l03477"></a><span class="lineno"> 3477</span>&#160;            }</div><div class="line"><a name="l03478"></a><span class="lineno"> 3478</span>&#160;        }</div><div class="line"><a name="l03479"></a><span class="lineno"> 3479</span>&#160; </div><div class="line"><a name="l03480"></a><span class="lineno"> 3480</span>&#160;        <span class="comment">// If exceptions disabled, return null pointer from allocator</span></div><div class="line"><a name="l03481"></a><span class="lineno"> 3481</span>&#160;        <span class="keywordflow">return</span> retValue;</div><div class="line"><a name="l03482"></a><span class="lineno"> 3482</span>&#160;    }</div></div><!-- fragment --><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_s_v_m_allocator_a44858d70971c7801aa62d7a64d18df00_cgraph.png" border="0" usemap="#classcl_1_1_s_v_m_allocator_a44858d70971c7801aa62d7a64d18df00_cgraph" alt=""/></div>
+<map name="classcl_1_1_s_v_m_allocator_a44858d70971c7801aa62d7a64d18df00_cgraph" id="classcl_1_1_s_v_m_allocator_a44858d70971c7801aa62d7a64d18df00_cgraph">
+<area shape="rect" title=" " alt="" coords="5,83,179,110"/>
+<area shape="rect" href="$namespacecl.html#abb2c4e45814ea569a27c39d37471b2a4" title=" " alt="" coords="227,83,369,110"/>
+<area shape="rect" href="$namespaceop.html#a5f092bd36c716a894cb035e1ead2aca3" title=" " alt="" coords="1447,375,1518,402"/>
+<area shape="rect" href="$classcl_1_1_command_queue.html#a24444b0dbd7cc0eb2bce126c9ccbac4c" title=" " alt="" coords="417,110,624,136"/>
+<area shape="rect" href="$namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="2045,182,2184,208"/>
+<area shape="rect" href="$classcl_1_1_command_queue.html#aec8211d19eb2ffbb8adc7f565fe61c3c" title=" " alt="" coords="685,44,879,85"/>
+<area shape="rect" href="$classcl_1_1_command_queue.html#a18c1118d0c12a5175351ac24d4bcd9ae" title="Create the default command queue returned by getDefault." alt="" coords="672,215,892,242"/>
+<area shape="rect" href="$classcl_1_1_context.html#ad180f6f7d8b5a95710ab72f96162b051" title="Returns a singleton context including all devices of CL_DEVICE_TYPE_DEFAULT." alt="" coords="1405,324,1560,351"/>
+<area shape="rect" href="$classcl_1_1_device.html#a7428cf3cdccc824c414730ed65e40a0d" title="Returns the first device on the default context." alt="" coords="969,156,1118,183"/>
+<area shape="rect" href="$classcl_1_1_command_queue.html#ab1beb7ab6e619a4e050d87c70bb001a6" title=" " alt="" coords="940,208,1147,249"/>
+<area shape="rect" href="$classcl_1_1_context.html#a0f86a1096a2f97c90cb2f6d6b505b704" title="Create the default context from the default device type in the default platform." alt="" coords="1608,359,1776,386"/>
+<area shape="rect" href="$classcl_1_1_platform.html#a01bea413d721189214cc59cfbc5d092d" title=" " alt="" coords="1824,410,1981,436"/>
+<area shape="rect" href="$classcl_1_1_context.html#a8f7e1c72445ca6e249bc7a6c9278984d" title="Default constructor &#45; initializes to NULL." alt="" coords="1833,359,1973,386"/>
+<area shape="rect" href="$classcl_1_1_platform.html#a6b6a335f96885f91f89acf0c27cd3e03" title="Create the default context." alt="" coords="2029,410,2200,436"/>
+<area shape="rect" href="$classcl_1_1_platform.html#a616344e02c3723347c752c02b7015212" title="Default constructor &#45; initializes to NULL." alt="" coords="2248,410,2395,436"/>
+<area shape="rect" href="$classcl_1_1_device.html#a7774fd668e474a8f4e196a6e7118b47e" title="Create the default context." alt="" coords="1195,223,1357,250"/>
+<area shape="rect" href="$classcl_1_1_context.html#a979d15f9228089af2a657a523b1186e8" title="Wrapper for clGetContextInfo()." alt="" coords="1415,258,1550,284"/>
+<area shape="rect" href="$namespacecl_1_1detail.html#a5954b0e110a023571c1bed2be1efb480" title=" " alt="" coords="1633,258,1751,284"/>
+<area shape="rect" href="$namespacecl_1_1detail.html#a5fa0595cfd70a34a662283c683f58bb1" title=" " alt="" coords="1824,258,1981,284"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a57e823e939f67e1209450d996556c080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e823e939f67e1209450d996556c080">&#9670;&nbsp;</a></span>construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<div class="memtemplate">
+template&lt;class U , class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::construct </td>
+          <td>(</td>
+          <td class="paramtype">U *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03507">3507</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03508"></a><span class="lineno"> 3508</span>&#160;    {</div><div class="line"><a name="l03509"></a><span class="lineno"> 3509</span>&#160;        <span class="keyword">new</span>(p)T(args...);</div><div class="line"><a name="l03510"></a><span class="lineno"> 3510</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a695f4693c4245c66285e7f4a0405cf84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a695f4693c4245c66285e7f4a0405cf84">&#9670;&nbsp;</a></span>deallocate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::deallocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcl_1_1_s_v_m_allocator.html#a6222e5ff48358bc0f826885bb2a4a4ec">pointer</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcl_1_1_s_v_m_allocator.html#afe51e51ed34089444241a43aab0950ef">size_type</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03484">3484</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03485"></a><span class="lineno"> 3485</span>&#160;    {</div><div class="line"><a name="l03486"></a><span class="lineno"> 3486</span>&#160;        clSVMFree(<a class="code" href="classcl_1_1_s_v_m_allocator.html#a324a1c36b10fa39d7c07bd1a4310b7be">context_</a>(), p);</div><div class="line"><a name="l03487"></a><span class="lineno"> 3487</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a86498cce5cce2d8ac1c509862eb28977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86498cce5cce2d8ac1c509862eb28977">&#9670;&nbsp;</a></span>destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<div class="memtemplate">
+template&lt;class U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::destroy </td>
+          <td>(</td>
+          <td class="paramtype">U *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03513">3513</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03514"></a><span class="lineno"> 3514</span>&#160;    {</div><div class="line"><a name="l03515"></a><span class="lineno"> 3515</span>&#160;        p-&gt;~U();</div><div class="line"><a name="l03516"></a><span class="lineno"> 3516</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aec263261a88fb1ec64a3e5f9a4ef41a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec263261a88fb1ec64a3e5f9a4ef41a7">&#9670;&nbsp;</a></span>max_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1_s_v_m_allocator.html#afe51e51ed34089444241a43aab0950ef">size_type</a> <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::max_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the maximum possible allocation size. This is the minimum of the maximum sizes of all devices in the context. </p>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03493">3493</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03494"></a><span class="lineno"> 3494</span>&#160;    {</div><div class="line"><a name="l03495"></a><span class="lineno"> 3495</span>&#160;        <a class="code" href="classcl_1_1_s_v_m_allocator.html#afe51e51ed34089444241a43aab0950ef">size_type</a> maxSize = std::numeric_limits&lt;size_type&gt;::max() / <span class="keyword">sizeof</span>(T);</div><div class="line"><a name="l03496"></a><span class="lineno"> 3496</span>&#160; </div><div class="line"><a name="l03497"></a><span class="lineno"> 3497</span>&#160;        <span class="keywordflow">for</span> (Device &amp;d : <a class="code" href="classcl_1_1_s_v_m_allocator.html#a324a1c36b10fa39d7c07bd1a4310b7be">context_</a>.<a class="code" href="classcl_1_1_context.html#a979d15f9228089af2a657a523b1186e8">getInfo</a>&lt;CL_CONTEXT_DEVICES&gt;()) {</div><div class="line"><a name="l03498"></a><span class="lineno"> 3498</span>&#160;            maxSize = std::min(</div><div class="line"><a name="l03499"></a><span class="lineno"> 3499</span>&#160;                maxSize, </div><div class="line"><a name="l03500"></a><span class="lineno"> 3500</span>&#160;                static_cast&lt;size_type&gt;(d.getInfo&lt;CL_DEVICE_MAX_MEM_ALLOC_SIZE&gt;()));</div><div class="line"><a name="l03501"></a><span class="lineno"> 3501</span>&#160;        }</div><div class="line"><a name="l03502"></a><span class="lineno"> 3502</span>&#160; </div><div class="line"><a name="l03503"></a><span class="lineno"> 3503</span>&#160;        <span class="keywordflow">return</span> maxSize;</div><div class="line"><a name="l03504"></a><span class="lineno"> 3504</span>&#160;    }</div></div><!-- fragment --><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_s_v_m_allocator_aec263261a88fb1ec64a3e5f9a4ef41a7_cgraph.png" border="0" usemap="#classcl_1_1_s_v_m_allocator_aec263261a88fb1ec64a3e5f9a4ef41a7_cgraph" alt=""/></div>
+<map name="classcl_1_1_s_v_m_allocator_aec263261a88fb1ec64a3e5f9a4ef41a7_cgraph" id="classcl_1_1_s_v_m_allocator_aec263261a88fb1ec64a3e5f9a4ef41a7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,189,57"/>
+<area shape="rect" href="$classcl_1_1_context.html#a979d15f9228089af2a657a523b1186e8" title="Wrapper for clGetContextInfo()." alt="" coords="237,31,372,57"/>
+<area shape="rect" href="$namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="420,5,559,32"/>
+<area shape="rect" href="$namespacecl_1_1detail.html#a5954b0e110a023571c1bed2be1efb480" title=" " alt="" coords="430,56,549,83"/>
+<area shape="rect" href="$namespacecl_1_1detail.html#a5fa0595cfd70a34a662283c683f58bb1" title=" " alt="" coords="607,56,764,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a72088f264071b2648aa80e20594d6398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72088f264071b2648aa80e20594d6398">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a>&lt; T, SVMTrait &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03526">3526</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03527"></a><span class="lineno"> 3527</span>&#160;    {</div><div class="line"><a name="l03528"></a><span class="lineno"> 3528</span>&#160;        <span class="keywordflow">return</span> !<a class="code" href="classcl_1_1_s_v_m_allocator.html#abaa89b1232891a728d3530dbd71e7cb6">operator==</a>(a);</div><div class="line"><a name="l03529"></a><span class="lineno"> 3529</span>&#160;    }</div></div><!-- fragment --><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_s_v_m_allocator_a72088f264071b2648aa80e20594d6398_cgraph.png" border="0" usemap="#classcl_1_1_s_v_m_allocator_a72088f264071b2648aa80e20594d6398_cgraph" alt=""/></div>
+<map name="classcl_1_1_s_v_m_allocator_a72088f264071b2648aa80e20594d6398_cgraph" id="classcl_1_1_s_v_m_allocator_a72088f264071b2648aa80e20594d6398_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,192,32"/>
+<area shape="rect" href="$classcl_1_1_s_v_m_allocator.html#abaa89b1232891a728d3530dbd71e7cb6" title=" " alt="" coords="240,5,431,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abaa89b1232891a728d3530dbd71e7cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa89b1232891a728d3530dbd71e7cb6">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a>&lt; T, SVMTrait &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if the contexts match. </p>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03521">3521</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03522"></a><span class="lineno"> 3522</span>&#160;    {</div><div class="line"><a name="l03523"></a><span class="lineno"> 3523</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="classcl_1_1_s_v_m_allocator.html#a324a1c36b10fa39d7c07bd1a4310b7be">context_</a>==rhs.context_);</div><div class="line"><a name="l03524"></a><span class="lineno"> 3524</span>&#160;    }</div></div><!-- fragment --><div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_s_v_m_allocator_abaa89b1232891a728d3530dbd71e7cb6_icgraph.png" border="0" usemap="#classcl_1_1_s_v_m_allocator_abaa89b1232891a728d3530dbd71e7cb6_icgraph" alt=""/></div>
+<map name="classcl_1_1_s_v_m_allocator_abaa89b1232891a728d3530dbd71e7cb6_icgraph" id="classcl_1_1_s_v_m_allocator_abaa89b1232891a728d3530dbd71e7cb6_icgraph">
+<area shape="rect" title=" " alt="" coords="240,5,431,32"/>
+<area shape="rect" href="$classcl_1_1_s_v_m_allocator.html#a72088f264071b2648aa80e20594d6398" title=" " alt="" coords="5,5,192,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Friend, 그리고 관련된 함수 문서화</h2>
+<a id="a0146b33b7681b60e7678780ae05fb43f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0146b33b7681b60e7678780ae05fb43f">&#9670;&nbsp;</a></span>SVMAllocator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<div class="memtemplate">
+template&lt;typename U , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03407">3407</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<h2 class="groupheader">멤버 데이터 문서화</h2>
+<a id="a324a1c36b10fa39d7c07bd1a4310b7be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a324a1c36b10fa39d7c07bd1a4310b7be">&#9670;&nbsp;</a></span>context_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, class SVMTrait&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1_context.html">Context</a> <a class="el" href="classcl_1_1_s_v_m_allocator.html">cl::SVMAllocator</a>&lt; T, SVMTrait &gt;::context_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03389">3389</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.:<ul>
+<li>/home/ms/openpose/include/openpose/gpu/<a class="el" href="cl2_8hpp_source.html">cl2.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclasscl_1_1_context_html_ad180f6f7d8b5a95710ab72f96162b051"><div class="ttname"><a href="classcl_1_1_context.html#ad180f6f7d8b5a95710ab72f96162b051">cl::Context::getDefault</a></div><div class="ttdeci">static Context getDefault(cl_int *err=NULL)</div><div class="ttdoc">Returns a singleton context including all devices of CL_DEVICE_TYPE_DEFAULT.</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l02818">cl2.hpp:2818</a></div></div>
+<div class="ttc" id="aclasscl_1_1_s_v_m_allocator_html_afe51e51ed34089444241a43aab0950ef"><div class="ttname"><a href="classcl_1_1_s_v_m_allocator.html#afe51e51ed34089444241a43aab0950ef">cl::SVMAllocator::size_type</a></div><div class="ttdeci">std::size_t size_type</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l03397">cl2.hpp:3397</a></div></div>
+<div class="ttc" id="aclasscl_1_1_s_v_m_allocator_html_abaa89b1232891a728d3530dbd71e7cb6"><div class="ttname"><a href="classcl_1_1_s_v_m_allocator.html#abaa89b1232891a728d3530dbd71e7cb6">cl::SVMAllocator::operator==</a></div><div class="ttdeci">bool operator==(SVMAllocator const &amp;rhs)</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l03521">cl2.hpp:3521</a></div></div>
+<div class="ttc" id="aclasscl_1_1_s_v_m_allocator_html_a324a1c36b10fa39d7c07bd1a4310b7be"><div class="ttname"><a href="classcl_1_1_s_v_m_allocator.html#a324a1c36b10fa39d7c07bd1a4310b7be">cl::SVMAllocator::context_</a></div><div class="ttdeci">Context context_</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l03389">cl2.hpp:3389</a></div></div>
+<div class="ttc" id="aclasscl_1_1_s_v_m_allocator_html_a6222e5ff48358bc0f826885bb2a4a4ec"><div class="ttname"><a href="classcl_1_1_s_v_m_allocator.html#a6222e5ff48358bc0f826885bb2a4a4ec">cl::SVMAllocator::pointer</a></div><div class="ttdeci">value_type * pointer</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l03393">cl2.hpp:3393</a></div></div>
+<div class="ttc" id="anamespacecl_html_abb2c4e45814ea569a27c39d37471b2a4"><div class="ttname"><a href="namespacecl.html#abb2c4e45814ea569a27c39d37471b2a4">cl::enqueueMapSVM</a></div><div class="ttdeci">cl_int enqueueMapSVM(T *ptr, cl_bool blocking, cl_map_flags flags, size_type size, const vector&lt; Event &gt; *events=NULL, Event *event=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l08567">cl2.hpp:8567</a></div></div>
+<div class="ttc" id="aclasscl_1_1_context_html_a979d15f9228089af2a657a523b1186e8"><div class="ttname"><a href="classcl_1_1_context.html#a979d15f9228089af2a657a523b1186e8">cl::Context::getInfo</a></div><div class="ttdeci">cl_int getInfo(cl_context_info name, T *param) const</div><div class="ttdoc">Wrapper for clGetContextInfo().</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l02866">cl2.hpp:2866</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecl.html">cl</a></li><li class="navelem"><a class="el" href="classcl_1_1_s_v_m_allocator.html">SVMAllocator</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,573 @@
+\hypertarget{classcl_1_1_user_event}{}\doxysection{cl\+::User\+Event 클래스 참조}
+\label{classcl_1_1_user_event}\index{cl::UserEvent@{cl::UserEvent}}
+
+
+Class interface for user events (a subset of cl\+\_\+event\textquotesingle{}s).  
+
+
+
+
+{\ttfamily \#include $<$cl2.\+hpp$>$}
+
+
+
+cl\+::User\+Event에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcl_1_1_user_event__inherit__graph}
+\end{center}
+\end{figure}
+
+
+cl\+::User\+Event에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcl_1_1_user_event__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+typedef cl\+\_\+event \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1_user_event_a4255beef279789245d402a00830c841f}{User\+Event}} (const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&context, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Constructs a user event on a given context. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_user_event_a1ee5bc016d511a4fec5f23b50a70821a}{User\+Event}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor -\/ initializes to N\+U\+LL. \end{DoxyCompactList}\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_user_event_ad1df3a34596fee2bf6f1de6893192ae5}{set\+Status}} (cl\+\_\+int status)
+\begin{DoxyCompactList}\small\item\em Sets the execution status of a user event object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252}{get\+Info}} (cl\+\_\+event\+\_\+info name, T $\ast$param) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Event\+Info(). \end{DoxyCompactList}\item 
+{\footnotesize template$<$cl\+\_\+int name$>$ }\\\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$ detail\+::cl\+\_\+event\+\_\+info, name $>$\+::param\+\_\+type \mbox{\hyperlink{classcl_1_1_event_ad3a362e550fbfa5f18e679357f1cdba8}{get\+Info}} (cl\+\_\+int $\ast$err=N\+U\+LL) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Event\+Info() that returns by value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f}{get\+Profiling\+Info}} (cl\+\_\+profiling\+\_\+info name, T $\ast$param) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Event\+Profiling\+Info(). \end{DoxyCompactList}\item 
+{\footnotesize template$<$cl\+\_\+int name$>$ }\\\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$ detail\+::cl\+\_\+profiling\+\_\+info, name $>$\+::param\+\_\+type \mbox{\hyperlink{classcl_1_1_event_ab76c11fecb0af5a0972903ee0f644193}{get\+Profiling\+Info}} (cl\+\_\+int $\ast$err=N\+U\+LL) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Event\+Profiling\+Info() that returns by value. \end{DoxyCompactList}\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_event_a51f83064c2024df649667071e81fb847}{wait}} () const
+\begin{DoxyCompactList}\small\item\em Blocks the calling thread until this event completes. \end{DoxyCompactList}\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_event_a4730c3b113e65efcf88aea0c9da13f52}{set\+Callback}} (cl\+\_\+int type, void(\mbox{\hyperlink{cl2_8hpp_a193b43da2ce23c54788f9b4d4f0f4740}{C\+L\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} $\ast$pfn\+\_\+notify)(cl\+\_\+event, cl\+\_\+int, void $\ast$), void $\ast$user\+\_\+data=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Registers a user callback function for a specific command execution status. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}{operator()}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}{operator()}} ()
+\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}{get}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}{get}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static cl\+\_\+int \mbox{\hyperlink{classcl_1_1_event_ae84b90e930f72c1019435dd7cefa2fbd}{wait\+For\+Events}} (const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ \&events)
+\begin{DoxyCompactList}\small\item\em Blocks the calling thread until every event specified is complete. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}{retain}} () const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}{release}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Class interface for user events (a subset of cl\+\_\+event\textquotesingle{}s). 
+
+See \mbox{\hyperlink{classcl_1_1_event}{Event}} for details about copy semantics, etc. 
+
+cl2.\+hpp 파일의 3102 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 타입정의 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}\label{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}} 
+\index{cl::UserEvent@{cl::UserEvent}!cl\_type@{cl\_type}}
+\index{cl\_type@{cl\_type}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{cl\_type}{cl\_type}}
+{\footnotesize\ttfamily typedef cl\+\_\+event  \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+event  $>$\+::\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1637 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classcl_1_1_user_event_a4255beef279789245d402a00830c841f}\label{classcl_1_1_user_event_a4255beef279789245d402a00830c841f}} 
+\index{cl::UserEvent@{cl::UserEvent}!UserEvent@{UserEvent}}
+\index{UserEvent@{UserEvent}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{UserEvent()}{UserEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily cl\+::\+User\+Event\+::\+User\+Event (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&}]{context,  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a user event on a given context. 
+
+Wraps cl\+Create\+User\+Event(). 
+
+cl2.\+hpp 파일의 3109 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3112     \{}
+\DoxyCodeLine{3113         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{3114         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateUserEvent(}
+\DoxyCodeLine{3115             context(),}
+\DoxyCodeLine{3116             \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{3117 }
+\DoxyCodeLine{3118         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_USER\_EVENT\_ERR);}
+\DoxyCodeLine{3119         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{3120             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{3121         \}}
+\DoxyCodeLine{3122     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classcl_1_1_user_event_a4255beef279789245d402a00830c841f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_user_event_a1ee5bc016d511a4fec5f23b50a70821a}\label{classcl_1_1_user_event_a1ee5bc016d511a4fec5f23b50a70821a}} 
+\index{cl::UserEvent@{cl::UserEvent}!UserEvent@{UserEvent}}
+\index{UserEvent@{UserEvent}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{UserEvent()}{UserEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily cl\+::\+User\+Event\+::\+User\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor -\/ initializes to N\+U\+LL. 
+
+
+
+cl2.\+hpp 파일의 3125 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3125 : \mbox{\hyperlink{classcl_1_1_event_a90e01689f7b394fc003d66c48a7f6f95}{Event}}() \{ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}\label{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}} 
+\index{cl::UserEvent@{cl::UserEvent}!get@{get}}
+\index{get@{get}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+event  $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1702 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1702 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}\label{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}} 
+\index{cl::UserEvent@{cl::UserEvent}!get@{get}}
+\index{get@{get}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+event  $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1700 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1700 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252}\label{classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252}} 
+\index{cl::UserEvent@{cl::UserEvent}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+cl\+\_\+int cl\+::\+Event\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+event\+\_\+info}]{name,  }\item[{T $\ast$}]{param }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Wrapper for cl\+Get\+Event\+Info(). 
+
+
+
+cl2.\+hpp 파일의 3008 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3009     \{}
+\DoxyCodeLine{3010         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{3011             \mbox{\hyperlink{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480}{detail::getInfo}}(\&::clGetEventInfo, \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, name, param),}
+\DoxyCodeLine{3012             \_\_GET\_EVENT\_INFO\_ERR);}
+\DoxyCodeLine{3013     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_event_ad3a362e550fbfa5f18e679357f1cdba8}\label{classcl_1_1_event_ad3a362e550fbfa5f18e679357f1cdba8}} 
+\index{cl::UserEvent@{cl::UserEvent}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$cl\+\_\+int name$>$ \\
+\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$detail\+::cl\+\_\+event\+\_\+info, name$>$\+::param\+\_\+type cl\+::\+Event\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Wrapper for cl\+Get\+Event\+Info() that returns by value. 
+
+
+
+cl2.\+hpp 파일의 3018 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3019     \{}
+\DoxyCodeLine{3020         \textcolor{keyword}{typename} detail::param\_traits<}
+\DoxyCodeLine{3021             detail::cl\_event\_info, name>::param\_type param;}
+\DoxyCodeLine{3022         cl\_int result = \mbox{\hyperlink{classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252}{getInfo}}(name, \&param);}
+\DoxyCodeLine{3023         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{3024             *err = result;}
+\DoxyCodeLine{3025         \}}
+\DoxyCodeLine{3026         \textcolor{keywordflow}{return} param;}
+\DoxyCodeLine{3027     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_event_ad3a362e550fbfa5f18e679357f1cdba8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_event_ab76c11fecb0af5a0972903ee0f644193}\label{classcl_1_1_event_ab76c11fecb0af5a0972903ee0f644193}} 
+\index{cl::UserEvent@{cl::UserEvent}!getProfilingInfo@{getProfilingInfo}}
+\index{getProfilingInfo@{getProfilingInfo}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{getProfilingInfo()}{getProfilingInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$cl\+\_\+int name$>$ \\
+\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$detail\+::cl\+\_\+profiling\+\_\+info, name$>$\+::param\+\_\+type cl\+::\+Event\+::get\+Profiling\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Wrapper for cl\+Get\+Event\+Profiling\+Info() that returns by value. 
+
+
+
+cl2.\+hpp 파일의 3041 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3042     \{}
+\DoxyCodeLine{3043         \textcolor{keyword}{typename} detail::param\_traits<}
+\DoxyCodeLine{3044             detail::cl\_profiling\_info, name>::param\_type param;}
+\DoxyCodeLine{3045         cl\_int result = \mbox{\hyperlink{classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f}{getProfilingInfo}}(name, \&param);}
+\DoxyCodeLine{3046         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{3047             *err = result;}
+\DoxyCodeLine{3048         \}}
+\DoxyCodeLine{3049         \textcolor{keywordflow}{return} param;}
+\DoxyCodeLine{3050     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_event_ab76c11fecb0af5a0972903ee0f644193_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f}\label{classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f}} 
+\index{cl::UserEvent@{cl::UserEvent}!getProfilingInfo@{getProfilingInfo}}
+\index{getProfilingInfo@{getProfilingInfo}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{getProfilingInfo()}{getProfilingInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+cl\+\_\+int cl\+::\+Event\+::get\+Profiling\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+profiling\+\_\+info}]{name,  }\item[{T $\ast$}]{param }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Wrapper for cl\+Get\+Event\+Profiling\+Info(). 
+
+
+
+cl2.\+hpp 파일의 3031 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3032     \{}
+\DoxyCodeLine{3033         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480}{detail::getInfo}}(}
+\DoxyCodeLine{3034             \&::clGetEventProfilingInfo, \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, name, param),}
+\DoxyCodeLine{3035             \_\_GET\_EVENT\_PROFILE\_INFO\_ERR);}
+\DoxyCodeLine{3036     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}\label{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}} 
+\index{cl::UserEvent@{cl::UserEvent}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+event  $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1698 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1698 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}\label{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}} 
+\index{cl::UserEvent@{cl::UserEvent}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+event  $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1696 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1696 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}\label{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}} 
+\index{cl::UserEvent@{cl::UserEvent}!release@{release}}
+\index{release@{release}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+event  $>$\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1719 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1720     \{}
+\DoxyCodeLine{1721         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{1722             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::release(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}});}
+\DoxyCodeLine{1723         \}}
+\DoxyCodeLine{1724         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1725             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1726         \}}
+\DoxyCodeLine{1727     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}\label{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}} 
+\index{cl::UserEvent@{cl::UserEvent}!retain@{retain}}
+\index{retain@{retain}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{retain()}{retain()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+event  $>$\+::retain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1709 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1710     \{}
+\DoxyCodeLine{1711         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{1712             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::retain(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}});}
+\DoxyCodeLine{1713         \}}
+\DoxyCodeLine{1714         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1715             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1716         \}}
+\DoxyCodeLine{1717     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_event_a4730c3b113e65efcf88aea0c9da13f52}\label{classcl_1_1_event_a4730c3b113e65efcf88aea0c9da13f52}} 
+\index{cl::UserEvent@{cl::UserEvent}!setCallback@{setCallback}}
+\index{setCallback@{setCallback}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{setCallback()}{setCallback()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Event\+::set\+Callback (\begin{DoxyParamCaption}\item[{cl\+\_\+int}]{type,  }\item[{void(\mbox{\hyperlink{cl2_8hpp_a193b43da2ce23c54788f9b4d4f0f4740}{C\+L\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} $\ast$pfn\+\_\+notify)(cl\+\_\+event, cl\+\_\+int, void $\ast$)}]{,  }\item[{void $\ast$}]{user\+\_\+data = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Registers a user callback function for a specific command execution status. 
+
+Wraps cl\+Set\+Event\+Callback(). 
+
+cl2.\+hpp 파일의 3068 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3072     \{}
+\DoxyCodeLine{3073         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{3074             ::clSetEventCallback(}
+\DoxyCodeLine{3075                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}},}
+\DoxyCodeLine{3076                 type,}
+\DoxyCodeLine{3077                 pfn\_notify,}
+\DoxyCodeLine{3078                 user\_data), }
+\DoxyCodeLine{3079             \_\_SET\_EVENT\_CALLBACK\_ERR);}
+\DoxyCodeLine{3080     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classcl_1_1_event_a4730c3b113e65efcf88aea0c9da13f52_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_user_event_ad1df3a34596fee2bf6f1de6893192ae5}\label{classcl_1_1_user_event_ad1df3a34596fee2bf6f1de6893192ae5}} 
+\index{cl::UserEvent@{cl::UserEvent}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{setStatus()}{setStatus()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+User\+Event\+::set\+Status (\begin{DoxyParamCaption}\item[{cl\+\_\+int}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the execution status of a user event object. 
+
+Wraps cl\+Set\+User\+Event\+Status(). 
+
+cl2.\+hpp 파일의 3131 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3132     \{}
+\DoxyCodeLine{3133         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{3134             ::clSetUserEventStatus(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}},status), }
+\DoxyCodeLine{3135             \_\_SET\_USER\_EVENT\_STATUS\_ERR);}
+\DoxyCodeLine{3136     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classcl_1_1_user_event_ad1df3a34596fee2bf6f1de6893192ae5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_event_a51f83064c2024df649667071e81fb847}\label{classcl_1_1_event_a51f83064c2024df649667071e81fb847}} 
+\index{cl::UserEvent@{cl::UserEvent}!wait@{wait}}
+\index{wait@{wait}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Event\+::wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Blocks the calling thread until this event completes. 
+
+Wraps cl\+Wait\+For\+Events(). 
+
+cl2.\+hpp 파일의 3056 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3057     \{}
+\DoxyCodeLine{3058         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{3059             ::clWaitForEvents(1, \&\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}),}
+\DoxyCodeLine{3060             \_\_WAIT\_FOR\_EVENTS\_ERR);}
+\DoxyCodeLine{3061     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classcl_1_1_event_a51f83064c2024df649667071e81fb847_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classcl_1_1_event_a51f83064c2024df649667071e81fb847_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_event_ae84b90e930f72c1019435dd7cefa2fbd}\label{classcl_1_1_event_ae84b90e930f72c1019435dd7cefa2fbd}} 
+\index{cl::UserEvent@{cl::UserEvent}!waitForEvents@{waitForEvents}}
+\index{waitForEvents@{waitForEvents}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{waitForEvents()}{waitForEvents()}}
+{\footnotesize\ttfamily static cl\+\_\+int cl\+::\+Event\+::wait\+For\+Events (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ \&}]{events }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+Blocks the calling thread until every event specified is complete. 
+
+Wraps cl\+Wait\+For\+Events(). 
+
+cl2.\+hpp 파일의 3088 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3089     \{}
+\DoxyCodeLine{3090         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{3091             ::clWaitForEvents(}
+\DoxyCodeLine{3092                 (cl\_uint) events.size(), (events.size() > 0) ? (cl\_event*)\&events.front() : NULL),}
+\DoxyCodeLine{3093             \_\_WAIT\_FOR\_EVENTS\_ERR);}
+\DoxyCodeLine{3094     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classcl_1_1_event_ae84b90e930f72c1019435dd7cefa2fbd_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}\label{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}} 
+\index{cl::UserEvent@{cl::UserEvent}!object\_@{object\_}}
+\index{object\_@{object\_}!cl::UserEvent@{cl::UserEvent}}
+\doxysubsubsection{\texorpdfstring{object\_}{object\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+event  $>$\+::object\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1640 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/gpu/\mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}\end{DoxyCompactItemize}

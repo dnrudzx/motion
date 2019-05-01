@@ -1,0 +1,538 @@
+\hypertarget{namespacecl_1_1detail}{}\doxysection{cl\+::detail 네임스페이스 참조}
+\label{namespacecl_1_1detail}\index{cl::detail@{cl::detail}}
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcl_1_1detail_1_1_deleter}{Deleter}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_get_info_functor0}{Get\+Info\+Functor0}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_get_info_functor1}{Get\+Info\+Functor1}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_kernel_argument_handler}{Kernel\+Argument\+Handler}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_kernel_argument_handler_3_01cl_1_1_device_command_queue_00_01void_01_4}{Kernel\+Argument\+Handler$<$ cl\+::\+Device\+Command\+Queue, void $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_kernel_argument_handler_3_01_local_space_arg_00_01void_01_4}{Kernel\+Argument\+Handler$<$ Local\+Space\+Arg, void $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_kernel_argument_handler_3_01_t_00_01typename_01std_1_1enable__if_3_01std_cb5bfaca8096193f715a7bbe8a3fa84f}{Kernel\+Argument\+Handler$<$ T, typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+base\+\_\+of$<$ cl\+::\+Memory, T $>$\+::value $>$\+::type $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_kernel_argument_handler_3_01_t_00_01typename_01std_1_1enable__if_3_9std_10affa824618af864313998f2e6bcf08f}{Kernel\+Argument\+Handler$<$ T, typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+base\+\_\+of$<$ cl\+::\+Memory, T $>$\+::value $>$\+::type $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{param\+\_\+traits}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler}{Reference\+Handler}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__command__queue_01_4}{Reference\+Handler$<$ cl\+\_\+command\+\_\+queue $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__context_01_4}{Reference\+Handler$<$ cl\+\_\+context $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__device__id_01_4}{Reference\+Handler$<$ cl\+\_\+device\+\_\+id $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__event_01_4}{Reference\+Handler$<$ cl\+\_\+event $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__kernel_01_4}{Reference\+Handler$<$ cl\+\_\+kernel $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__mem_01_4}{Reference\+Handler$<$ cl\+\_\+mem $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__platform__id_01_4}{Reference\+Handler$<$ cl\+\_\+platform\+\_\+id $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__program_01_4}{Reference\+Handler$<$ cl\+\_\+program $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__sampler_01_4}{Reference\+Handler$<$ cl\+\_\+sampler $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1detail_1_1_s_v_m_trait_null}{S\+V\+M\+Trait\+Null}}
+\item 
+class \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{Wrapper}}
+\item 
+class \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4}{Wrapper$<$ cl\+\_\+device\+\_\+id $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{타입정의}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespacecl_1_1detail_aab488f551c8b1feb4f4b3f6893c358db}{size\+\_\+t\+\_\+array}} = \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+static cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{err\+Handler}} (cl\+\_\+int err, const char $\ast$err\+Str=N\+U\+LL)
+\item 
+{\footnotesize template$<$typename Functor , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a5fa0595cfd70a34a662283c683f58bb1}{get\+Info\+Helper}} (Functor f, cl\+\_\+uint name, T $\ast$param, long)
+\item 
+{\footnotesize template$<$typename Func $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a0900b1581dac237cebb4dbc385471316}{get\+Info\+Helper}} (Func f, cl\+\_\+uint name, \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ unsigned char $>$$>$ $\ast$param, int)
+\item 
+{\footnotesize template$<$typename Func , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a1fd04ddf2303bc88b61ecc84478f6c89}{get\+Info\+Helper}} (Func f, cl\+\_\+uint name, \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ T $>$ $\ast$param, long)
+\item 
+{\footnotesize template$<$typename Func , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a66d6678a19540f0202f534a25b00b06f}{get\+Info\+Helper}} (Func f, cl\+\_\+uint name, \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ T $>$ $\ast$param, int, typename T\+::cl\+\_\+type=0)
+\item 
+{\footnotesize template$<$typename Func $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a06a46d0b30e2a0653391e74f31d684c6}{get\+Info\+Helper}} (Func f, cl\+\_\+uint name, \mbox{\hyperlink{namespacecl_abff80bfb254d646f6afeb6638df41686}{string}} $\ast$param, long)
+\item 
+{\footnotesize template$<$typename Func , size\+\_\+type N$>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_ae190233f2424c5bba4be566ccf8abcc5}{get\+Info\+Helper}} (Func f, cl\+\_\+uint name, \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, N $>$ $\ast$param, long)
+\item 
+{\footnotesize template$<$typename Func , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_abcfe70e7b9beebd31b874fc0e59ab147}{get\+Info\+Helper}} (Func f, cl\+\_\+uint name, T $\ast$param, int, typename T\+::cl\+\_\+type=0)
+\item 
+{\footnotesize template$<$typename Func , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480}{get\+Info}} (Func f, cl\+\_\+uint name, T $\ast$param)
+\item 
+{\footnotesize template$<$typename Func , typename Arg0 , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a7d4625d32a9763da801a3f1c2a75ab99}{get\+Info}} (Func f, const Arg0 \&arg0, cl\+\_\+uint name, T $\ast$param)
+\item 
+{\footnotesize template$<$typename Func , typename Arg0 , typename Arg1 , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a590a1c0214938e7466f69fae3312c342}{get\+Info}} (Func f, const Arg0 \&arg0, const Arg1 \&arg1, cl\+\_\+uint name, T $\ast$param)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{namespacecl_1_1detail_a321341cec361a9557f21a4ea8cd43d0e}{operator==}} (const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{Wrapper}}$<$ T $>$ \&lhs, const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{Wrapper}}$<$ T $>$ \&rhs)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{namespacecl_1_1detail_abed4bef503f35ab1dd6a784ea8fce69d}{operator!=}} (const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{Wrapper}}$<$ T $>$ \&lhs, const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{Wrapper}}$<$ T $>$ \&rhs)
+\item 
+static cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a6a077d9c416f9487b92a70a011a80949}{build\+Err\+Handler}} (cl\+\_\+int err, const char $\ast$err\+Str, const \mbox{\hyperlink{namespacecl_a0982464a83dd2f129b737d17d9ff9b19}{Build\+Log\+Type}} \&build\+Logs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{타입정의 문서화}
+\mbox{\Hypertarget{namespacecl_1_1detail_aab488f551c8b1feb4f4b3f6893c358db}\label{namespacecl_1_1detail_aab488f551c8b1feb4f4b3f6893c358db}} 
+\index{cl::detail@{cl::detail}!size\_t\_array@{size\_t\_array}}
+\index{size\_t\_array@{size\_t\_array}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{size\_t\_array}{size\_t\_array}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespacecl_1_1detail_aab488f551c8b1feb4f4b3f6893c358db}{cl\+::detail\+::size\+\_\+t\+\_\+array}} = typedef \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3$>$}
+
+
+
+cl2.\+hpp 파일의 665 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{함수 문서화}
+\mbox{\Hypertarget{namespacecl_1_1detail_a6a077d9c416f9487b92a70a011a80949}\label{namespacecl_1_1detail_a6a077d9c416f9487b92a70a011a80949}} 
+\index{cl::detail@{cl::detail}!buildErrHandler@{buildErrHandler}}
+\index{buildErrHandler@{buildErrHandler}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{buildErrHandler()}{buildErrHandler()}}
+{\footnotesize\ttfamily static cl\+\_\+int cl\+::detail\+::build\+Err\+Handler (\begin{DoxyParamCaption}\item[{cl\+\_\+int}]{err,  }\item[{const char $\ast$}]{err\+Str,  }\item[{const \mbox{\hyperlink{namespacecl_a0982464a83dd2f129b737d17d9ff9b19}{Build\+Log\+Type}} \&}]{build\+Logs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+cl2.\+hpp 파일의 1911 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1915     \{}
+\DoxyCodeLine{1916         (void)buildLogs; \textcolor{comment}{// suppress unused variable warning}}
+\DoxyCodeLine{1917         (void)errStr;}
+\DoxyCodeLine{1918         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{1919     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecl_1_1detail_a6a077d9c416f9487b92a70a011a80949_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}\label{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}} 
+\index{cl::detail@{cl::detail}!errHandler@{errHandler}}
+\index{errHandler@{errHandler}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{errHandler()}{errHandler()}}
+{\footnotesize\ttfamily static cl\+\_\+int cl\+::detail\+::err\+Handler (\begin{DoxyParamCaption}\item[{cl\+\_\+int}]{err,  }\item[{const char $\ast$}]{err\+Str = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+cl2.\+hpp 파일의 767 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{768 \{}
+\DoxyCodeLine{769     (void) errStr; \textcolor{comment}{// suppress unused variable warning}}
+\DoxyCodeLine{770     \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{771 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480}\label{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480}} 
+\index{cl::detail@{cl::detail}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Func , typename T $>$ \\
+cl\+\_\+int cl\+::detail\+::get\+Info (\begin{DoxyParamCaption}\item[{Func}]{f,  }\item[{cl\+\_\+uint}]{name,  }\item[{T $\ast$}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 1416 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1417 \{}
+\DoxyCodeLine{1418     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_abcfe70e7b9beebd31b874fc0e59ab147}{getInfoHelper}}(f, name, param, 0);}
+\DoxyCodeLine{1419 \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecl_1_1detail_a7d4625d32a9763da801a3f1c2a75ab99}\label{namespacecl_1_1detail_a7d4625d32a9763da801a3f1c2a75ab99}} 
+\index{cl::detail@{cl::detail}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Func , typename Arg0 , typename T $>$ \\
+cl\+\_\+int cl\+::detail\+::get\+Info (\begin{DoxyParamCaption}\item[{Func}]{f,  }\item[{const Arg0 \&}]{arg0,  }\item[{cl\+\_\+uint}]{name,  }\item[{T $\ast$}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 1441 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1442 \{}
+\DoxyCodeLine{1443     GetInfoFunctor0<Func, Arg0> f0 = \{ f, arg0 \};}
+\DoxyCodeLine{1444     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_abcfe70e7b9beebd31b874fc0e59ab147}{getInfoHelper}}(f0, name, param, 0);}
+\DoxyCodeLine{1445 \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{namespacecl_1_1detail_a7d4625d32a9763da801a3f1c2a75ab99_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecl_1_1detail_a590a1c0214938e7466f69fae3312c342}\label{namespacecl_1_1detail_a590a1c0214938e7466f69fae3312c342}} 
+\index{cl::detail@{cl::detail}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Func , typename Arg0 , typename Arg1 , typename T $>$ \\
+cl\+\_\+int cl\+::detail\+::get\+Info (\begin{DoxyParamCaption}\item[{Func}]{f,  }\item[{const Arg0 \&}]{arg0,  }\item[{const Arg1 \&}]{arg1,  }\item[{cl\+\_\+uint}]{name,  }\item[{T $\ast$}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 1449 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1450 \{}
+\DoxyCodeLine{1451     GetInfoFunctor1<Func, Arg0, Arg1> f0 = \{ f, arg0, arg1 \};}
+\DoxyCodeLine{1452     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_abcfe70e7b9beebd31b874fc0e59ab147}{getInfoHelper}}(f0, name, param, 0);}
+\DoxyCodeLine{1453 \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{namespacecl_1_1detail_a590a1c0214938e7466f69fae3312c342_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{namespacecl_1_1detail_a590a1c0214938e7466f69fae3312c342_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecl_1_1detail_ae190233f2424c5bba4be566ccf8abcc5}\label{namespacecl_1_1detail_ae190233f2424c5bba4be566ccf8abcc5}} 
+\index{cl::detail@{cl::detail}!getInfoHelper@{getInfoHelper}}
+\index{getInfoHelper@{getInfoHelper}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{getInfoHelper()}{getInfoHelper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily template$<$typename Func , size\+\_\+type N$>$ \\
+cl\+\_\+int cl\+::detail\+::get\+Info\+Helper (\begin{DoxyParamCaption}\item[{Func}]{f,  }\item[{cl\+\_\+uint}]{name,  }\item[{\mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, N $>$ $\ast$}]{param,  }\item[{long}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 1050 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1051 \{}
+\DoxyCodeLine{1052     \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} required;}
+\DoxyCodeLine{1053     cl\_int err = f(name, 0, NULL, \&required);}
+\DoxyCodeLine{1054     \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{1055         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{1056     \}}
+\DoxyCodeLine{1057 }
+\DoxyCodeLine{1058     \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} elements = required / \textcolor{keyword}{sizeof}(\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}});}
+\DoxyCodeLine{1059     vector<size\_type> value(elements, 0);}
+\DoxyCodeLine{1060 }
+\DoxyCodeLine{1061     err = f(name, required, value.data(), NULL);}
+\DoxyCodeLine{1062     \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{1063         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{1064     \}}
+\DoxyCodeLine{1065     }
+\DoxyCodeLine{1066     \textcolor{comment}{// Bound the copy with N to prevent overruns}}
+\DoxyCodeLine{1067     \textcolor{comment}{// if passed N > than the amount copied}}
+\DoxyCodeLine{1068     \textcolor{keywordflow}{if} (elements > N) \{}
+\DoxyCodeLine{1069         elements = N;}
+\DoxyCodeLine{1070     \}}
+\DoxyCodeLine{1071     \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} i = 0; i < elements; ++i) \{}
+\DoxyCodeLine{1072         (*param)[i] = value[i];}
+\DoxyCodeLine{1073     \}}
+\DoxyCodeLine{1074 }
+\DoxyCodeLine{1075     \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1076 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacecl_1_1detail_a06a46d0b30e2a0653391e74f31d684c6}\label{namespacecl_1_1detail_a06a46d0b30e2a0653391e74f31d684c6}} 
+\index{cl::detail@{cl::detail}!getInfoHelper@{getInfoHelper}}
+\index{getInfoHelper@{getInfoHelper}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{getInfoHelper()}{getInfoHelper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily template$<$typename Func $>$ \\
+cl\+\_\+int cl\+::detail\+::get\+Info\+Helper (\begin{DoxyParamCaption}\item[{Func}]{f,  }\item[{cl\+\_\+uint}]{name,  }\item[{\mbox{\hyperlink{namespacecl_abff80bfb254d646f6afeb6638df41686}{string}} $\ast$}]{param,  }\item[{long}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 1022 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1023 \{}
+\DoxyCodeLine{1024     \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} required;}
+\DoxyCodeLine{1025     cl\_int err = f(name, 0, NULL, \&required);}
+\DoxyCodeLine{1026     \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{1027         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{1028     \}}
+\DoxyCodeLine{1029 }
+\DoxyCodeLine{1030     \textcolor{comment}{// std::string has a constant data member}}
+\DoxyCodeLine{1031     \textcolor{comment}{// a char vector does not}}
+\DoxyCodeLine{1032     \textcolor{keywordflow}{if} (required > 0) \{}
+\DoxyCodeLine{1033         vector<char> value(required);}
+\DoxyCodeLine{1034         err = f(name, required, value.data(), NULL);}
+\DoxyCodeLine{1035         \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{1036             \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{1037         \}}
+\DoxyCodeLine{1038         \textcolor{keywordflow}{if} (param) \{}
+\DoxyCodeLine{1039             param-\/>assign(begin(value), prev(end(value)));}
+\DoxyCodeLine{1040         \}}
+\DoxyCodeLine{1041     \}}
+\DoxyCodeLine{1042     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (param) \{}
+\DoxyCodeLine{1043         param-\/>assign(\textcolor{stringliteral}{""});}
+\DoxyCodeLine{1044     \}}
+\DoxyCodeLine{1045     \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1046 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacecl_1_1detail_abcfe70e7b9beebd31b874fc0e59ab147}\label{namespacecl_1_1detail_abcfe70e7b9beebd31b874fc0e59ab147}} 
+\index{cl::detail@{cl::detail}!getInfoHelper@{getInfoHelper}}
+\index{getInfoHelper@{getInfoHelper}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{getInfoHelper()}{getInfoHelper()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily template$<$typename Func , typename T $>$ \\
+cl\+\_\+int cl\+::detail\+::get\+Info\+Helper (\begin{DoxyParamCaption}\item[{Func}]{f,  }\item[{cl\+\_\+uint}]{name,  }\item[{T $\ast$}]{param,  }\item[{int}]{,  }\item[{typename T\+::cl\+\_\+type}]{ = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 1087 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1088 \{}
+\DoxyCodeLine{1089     \textcolor{keyword}{typename} T::cl\_type value;}
+\DoxyCodeLine{1090     cl\_int err = f(name, \textcolor{keyword}{sizeof}(value), \&value, NULL);}
+\DoxyCodeLine{1091     \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{1092         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{1093     \}}
+\DoxyCodeLine{1094     *param = value;}
+\DoxyCodeLine{1095     \textcolor{keywordflow}{if} (value != NULL)}
+\DoxyCodeLine{1096     \{}
+\DoxyCodeLine{1097         err = param-\/>retain();}
+\DoxyCodeLine{1098         \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{1099             \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{1100         \}}
+\DoxyCodeLine{1101     \}}
+\DoxyCodeLine{1102     \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1103 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacecl_1_1detail_a66d6678a19540f0202f534a25b00b06f}\label{namespacecl_1_1detail_a66d6678a19540f0202f534a25b00b06f}} 
+\index{cl::detail@{cl::detail}!getInfoHelper@{getInfoHelper}}
+\index{getInfoHelper@{getInfoHelper}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{getInfoHelper()}{getInfoHelper()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily template$<$typename Func , typename T $>$ \\
+cl\+\_\+int cl\+::detail\+::get\+Info\+Helper (\begin{DoxyParamCaption}\item[{Func}]{f,  }\item[{cl\+\_\+uint}]{name,  }\item[{\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ T $>$ $\ast$}]{param,  }\item[{int}]{,  }\item[{typename T\+::cl\+\_\+type}]{ = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 990 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{992 \{}
+\DoxyCodeLine{993     \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} required;}
+\DoxyCodeLine{994     cl\_int err = f(name, 0, NULL, \&required);}
+\DoxyCodeLine{995     \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{996         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{997     \}}
+\DoxyCodeLine{998 }
+\DoxyCodeLine{999     \textcolor{keyword}{const} \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} elements = required / \textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} T::cl\_type);}
+\DoxyCodeLine{1000 }
+\DoxyCodeLine{1001     vector<typename T::cl\_type> value(elements);}
+\DoxyCodeLine{1002     err = f(name, required, value.data(), NULL);}
+\DoxyCodeLine{1003     \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{1004         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{1005     \}}
+\DoxyCodeLine{1006 }
+\DoxyCodeLine{1007     \textcolor{keywordflow}{if} (param) \{}
+\DoxyCodeLine{1008         \textcolor{comment}{// Assign to convert CL type to T for each element}}
+\DoxyCodeLine{1009         param-\/>resize(elements);}
+\DoxyCodeLine{1010 }
+\DoxyCodeLine{1011         \textcolor{comment}{// Assign to param, constructing with retain behaviour}}
+\DoxyCodeLine{1012         \textcolor{comment}{// to correctly capture each underlying CL object}}
+\DoxyCodeLine{1013         \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} i = 0; i < elements; i++) \{}
+\DoxyCodeLine{1014             (*param)[i] = T(value[i], \textcolor{keyword}{true});}
+\DoxyCodeLine{1015         \}}
+\DoxyCodeLine{1016     \}}
+\DoxyCodeLine{1017     \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1018 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacecl_1_1detail_a1fd04ddf2303bc88b61ecc84478f6c89}\label{namespacecl_1_1detail_a1fd04ddf2303bc88b61ecc84478f6c89}} 
+\index{cl::detail@{cl::detail}!getInfoHelper@{getInfoHelper}}
+\index{getInfoHelper@{getInfoHelper}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{getInfoHelper()}{getInfoHelper()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily template$<$typename Func , typename T $>$ \\
+cl\+\_\+int cl\+::detail\+::get\+Info\+Helper (\begin{DoxyParamCaption}\item[{Func}]{f,  }\item[{cl\+\_\+uint}]{name,  }\item[{\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ T $>$ $\ast$}]{param,  }\item[{long}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 961 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{962 \{}
+\DoxyCodeLine{963     \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} required;}
+\DoxyCodeLine{964     cl\_int err = f(name, 0, NULL, \&required);}
+\DoxyCodeLine{965     \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{966         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{967     \}}
+\DoxyCodeLine{968     \textcolor{keyword}{const} \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} elements = required / \textcolor{keyword}{sizeof}(T);}
+\DoxyCodeLine{969 }
+\DoxyCodeLine{970     \textcolor{comment}{// Temporary to avoid changing param on an error}}
+\DoxyCodeLine{971     vector<T> localData(elements);}
+\DoxyCodeLine{972     err = f(name, required, localData.data(), NULL);}
+\DoxyCodeLine{973     \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{974         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{975     \}}
+\DoxyCodeLine{976     \textcolor{keywordflow}{if} (param) \{}
+\DoxyCodeLine{977         *param = std::move(localData);}
+\DoxyCodeLine{978     \}}
+\DoxyCodeLine{979 }
+\DoxyCodeLine{980     \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{981 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacecl_1_1detail_a0900b1581dac237cebb4dbc385471316}\label{namespacecl_1_1detail_a0900b1581dac237cebb4dbc385471316}} 
+\index{cl::detail@{cl::detail}!getInfoHelper@{getInfoHelper}}
+\index{getInfoHelper@{getInfoHelper}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{getInfoHelper()}{getInfoHelper()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily template$<$typename Func $>$ \\
+cl\+\_\+int cl\+::detail\+::get\+Info\+Helper (\begin{DoxyParamCaption}\item[{Func}]{f,  }\item[{cl\+\_\+uint}]{name,  }\item[{\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ unsigned char $>$$>$ $\ast$}]{param,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 933 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{934 \{}
+\DoxyCodeLine{935     \textcolor{keywordflow}{if} (name != CL\_PROGRAM\_BINARIES) \{}
+\DoxyCodeLine{936         \textcolor{keywordflow}{return} CL\_INVALID\_VALUE;}
+\DoxyCodeLine{937     \}}
+\DoxyCodeLine{938     \textcolor{keywordflow}{if} (param) \{}
+\DoxyCodeLine{939         \textcolor{comment}{// Create array of pointers, calculate total size and pass pointer array in}}
+\DoxyCodeLine{940         \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} numBinaries = param-\/>size();}
+\DoxyCodeLine{941         vector<unsigned char*> binariesPointers(numBinaries);}
+\DoxyCodeLine{942 }
+\DoxyCodeLine{943         \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} i = 0; i < numBinaries; ++i)}
+\DoxyCodeLine{944         \{}
+\DoxyCodeLine{945             binariesPointers[i] = (*param)[i].data();}
+\DoxyCodeLine{946         \}}
+\DoxyCodeLine{947 }
+\DoxyCodeLine{948         cl\_int err = f(name, numBinaries * \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char}*), binariesPointers.data(), NULL);}
+\DoxyCodeLine{949 }
+\DoxyCodeLine{950         \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{951             \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{952         \}}
+\DoxyCodeLine{953     \}}
+\DoxyCodeLine{954 }
+\DoxyCodeLine{955 }
+\DoxyCodeLine{956     \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{957 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacecl_1_1detail_a5fa0595cfd70a34a662283c683f58bb1}\label{namespacecl_1_1detail_a5fa0595cfd70a34a662283c683f58bb1}} 
+\index{cl::detail@{cl::detail}!getInfoHelper@{getInfoHelper}}
+\index{getInfoHelper@{getInfoHelper}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{getInfoHelper()}{getInfoHelper()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily template$<$typename Functor , typename T $>$ \\
+cl\+\_\+int cl\+::detail\+::get\+Info\+Helper (\begin{DoxyParamCaption}\item[{Functor}]{f,  }\item[{cl\+\_\+uint}]{name,  }\item[{T $\ast$}]{param,  }\item[{long}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 925 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{926 \{}
+\DoxyCodeLine{927     \textcolor{keywordflow}{return} f(name, \textcolor{keyword}{sizeof}(T), param, NULL);}
+\DoxyCodeLine{928 \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecl_1_1detail_a5fa0595cfd70a34a662283c683f58bb1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecl_1_1detail_abed4bef503f35ab1dd6a784ea8fce69d}\label{namespacecl_1_1detail_abed4bef503f35ab1dd6a784ea8fce69d}} 
+\index{cl::detail@{cl::detail}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool cl\+::detail\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{Wrapper}}$<$ T $>$ \&}]{lhs,  }\item[{const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{Wrapper}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 1868 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1869 \{}
+\DoxyCodeLine{1870     \textcolor{keywordflow}{return} !\mbox{\hyperlink{namespacecl_1_1detail_a321341cec361a9557f21a4ea8cd43d0e}{operator==}}(lhs, rhs);}
+\DoxyCodeLine{1871 \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{namespacecl_1_1detail_abed4bef503f35ab1dd6a784ea8fce69d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecl_1_1detail_a321341cec361a9557f21a4ea8cd43d0e}\label{namespacecl_1_1detail_a321341cec361a9557f21a4ea8cd43d0e}} 
+\index{cl::detail@{cl::detail}!operator==@{operator==}}
+\index{operator==@{operator==}!cl::detail@{cl::detail}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool cl\+::detail\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{Wrapper}}$<$ T $>$ \&}]{lhs,  }\item[{const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{Wrapper}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 1862 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1863 \{}
+\DoxyCodeLine{1864     \textcolor{keywordflow}{return} lhs() == rhs();}
+\DoxyCodeLine{1865 \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{namespacecl_1_1detail_a321341cec361a9557f21a4ea8cd43d0e_icgraph}
+\end{center}
+\end{figure}

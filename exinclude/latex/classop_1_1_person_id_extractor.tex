@@ -1,0 +1,193 @@
+\hypertarget{classop_1_1_person_id_extractor}{}\doxysection{op\+::Person\+Id\+Extractor 클래스 참조}
+\label{classop_1_1_person_id_extractor}\index{op::PersonIdExtractor@{op::PersonIdExtractor}}
+
+
+{\ttfamily \#include $<$person\+Id\+Extractor.\+hpp$>$}
+
+
+
+op\+::Person\+Id\+Extractor에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classop_1_1_person_id_extractor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_person_id_extractor_a5916ec673bdbe127386b7f496b188828}{Person\+Id\+Extractor}} (const float confidence\+Threshold=0.\+1f, const float inlier\+Ratio\+Threshold=0.\+5f, const float distance\+Threshold=30.\+f, const int number\+Frames\+To\+Delete\+Person=10)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_person_id_extractor_a7ff9f8faf42bff0dbd7207105c149a1e}{$\sim$\+Person\+Id\+Extractor}} ()
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \mbox{\hyperlink{classop_1_1_person_id_extractor_af3403da811a2a59c60ee8f3db67299ae}{extract\+Ids}} (const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Keypoints, const cv\+::\+Mat \&cv\+Mat\+Input, const unsigned long long image\+View\+Index=0ull)
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \mbox{\hyperlink{classop_1_1_person_id_extractor_a404cd6daf91befc19e89ea5b3de757eb}{extract\+Ids\+Lock\+Thread}} (const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Keypoints, const cv\+::\+Mat \&cv\+Mat\+Input, const unsigned long long image\+View\+Index, const long long frame\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_person_id_extractor_a51e0118470423da636377505946de8b3}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_person_id_extractor}{Person\+Id\+Extractor}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{classop_1_1_person_id_extractor_aba13496dda0911c4e6b92ae29609868a}{m\+Confidence\+Threshold}}
+\item 
+const float \mbox{\hyperlink{classop_1_1_person_id_extractor_afb71fc8bd6ed5675c18c1af227c3e119}{m\+Inlier\+Ratio\+Threshold}}
+\item 
+const float \mbox{\hyperlink{classop_1_1_person_id_extractor_ad42ae6a2b53703bd260b9f82e4e1dd97}{m\+Distance\+Threshold}}
+\item 
+const int \mbox{\hyperlink{classop_1_1_person_id_extractor_a18fc2b9e2e02a164a6549cdfc1b917cb}{m\+Number\+Frames\+To\+Delete\+Person}}
+\item 
+long long \mbox{\hyperlink{classop_1_1_person_id_extractor_a96d53fc743d88daabdb681b8b70341c6}{m\+Next\+Person\+Id}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{classop_1_1_person_id_extractor_a784b1de0d7d320f6eb0277383ca5c03b}{m\+Image\+Previous}}
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_person_id_extractor_a94aff2aeea39378054af3ac20362aa4a}{m\+Pyramid\+Images\+Previous}}
+\item 
+std\+::unordered\+\_\+map$<$ int, \mbox{\hyperlink{structop_1_1_person_entry}{Person\+Entry}} $>$ \mbox{\hyperlink{classop_1_1_person_id_extractor_a4ee55dd1df4e684e249ad4d74fab1cb5}{m\+Person\+Entries}}
+\item 
+std\+::atomic$<$ long long $>$ \mbox{\hyperlink{classop_1_1_person_id_extractor_a8642d2608edf0d7e66daa84c58f273c0}{m\+Last\+Frame\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+person\+Id\+Extractor.\+hpp 파일의 26 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_a5916ec673bdbe127386b7f496b188828}\label{classop_1_1_person_id_extractor_a5916ec673bdbe127386b7f496b188828}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!PersonIdExtractor@{PersonIdExtractor}}
+\index{PersonIdExtractor@{PersonIdExtractor}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{PersonIdExtractor()}{PersonIdExtractor()}}
+{\footnotesize\ttfamily op\+::\+Person\+Id\+Extractor\+::\+Person\+Id\+Extractor (\begin{DoxyParamCaption}\item[{const float}]{confidence\+Threshold = {\ttfamily 0.1f},  }\item[{const float}]{inlier\+Ratio\+Threshold = {\ttfamily 0.5f},  }\item[{const float}]{distance\+Threshold = {\ttfamily 30.f},  }\item[{const int}]{number\+Frames\+To\+Delete\+Person = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_a7ff9f8faf42bff0dbd7207105c149a1e}\label{classop_1_1_person_id_extractor_a7ff9f8faf42bff0dbd7207105c149a1e}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!````~PersonIdExtractor@{$\sim$PersonIdExtractor}}
+\index{````~PersonIdExtractor@{$\sim$PersonIdExtractor}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{$\sim$PersonIdExtractor()}{~PersonIdExtractor()}}
+{\footnotesize\ttfamily virtual op\+::\+Person\+Id\+Extractor\+::$\sim$\+Person\+Id\+Extractor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_a51e0118470423da636377505946de8b3}\label{classop_1_1_person_id_extractor_a51e0118470423da636377505946de8b3}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Person\+Id\+Extractor\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_person_id_extractor}{Person\+Id\+Extractor}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_af3403da811a2a59c60ee8f3db67299ae}\label{classop_1_1_person_id_extractor_af3403da811a2a59c60ee8f3db67299ae}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!extractIds@{extractIds}}
+\index{extractIds@{extractIds}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{extractIds()}{extractIds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$long long$>$ op\+::\+Person\+Id\+Extractor\+::extract\+Ids (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Keypoints,  }\item[{const cv\+::\+Mat \&}]{cv\+Mat\+Input,  }\item[{const unsigned long long}]{image\+View\+Index = {\ttfamily 0ull} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_a404cd6daf91befc19e89ea5b3de757eb}\label{classop_1_1_person_id_extractor_a404cd6daf91befc19e89ea5b3de757eb}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!extractIdsLockThread@{extractIdsLockThread}}
+\index{extractIdsLockThread@{extractIdsLockThread}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{extractIdsLockThread()}{extractIdsLockThread()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$long long$>$ op\+::\+Person\+Id\+Extractor\+::extract\+Ids\+Lock\+Thread (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Keypoints,  }\item[{const cv\+::\+Mat \&}]{cv\+Mat\+Input,  }\item[{const unsigned long long}]{image\+View\+Index,  }\item[{const long long}]{frame\+Id }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_aba13496dda0911c4e6b92ae29609868a}\label{classop_1_1_person_id_extractor_aba13496dda0911c4e6b92ae29609868a}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!mConfidenceThreshold@{mConfidenceThreshold}}
+\index{mConfidenceThreshold@{mConfidenceThreshold}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{mConfidenceThreshold}{mConfidenceThreshold}}
+{\footnotesize\ttfamily const float op\+::\+Person\+Id\+Extractor\+::m\+Confidence\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Id\+Extractor.\+hpp 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_ad42ae6a2b53703bd260b9f82e4e1dd97}\label{classop_1_1_person_id_extractor_ad42ae6a2b53703bd260b9f82e4e1dd97}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!mDistanceThreshold@{mDistanceThreshold}}
+\index{mDistanceThreshold@{mDistanceThreshold}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{mDistanceThreshold}{mDistanceThreshold}}
+{\footnotesize\ttfamily const float op\+::\+Person\+Id\+Extractor\+::m\+Distance\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Id\+Extractor.\+hpp 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_a784b1de0d7d320f6eb0277383ca5c03b}\label{classop_1_1_person_id_extractor_a784b1de0d7d320f6eb0277383ca5c03b}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!mImagePrevious@{mImagePrevious}}
+\index{mImagePrevious@{mImagePrevious}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{mImagePrevious}{mImagePrevious}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Person\+Id\+Extractor\+::m\+Image\+Previous\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Id\+Extractor.\+hpp 파일의 48 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_afb71fc8bd6ed5675c18c1af227c3e119}\label{classop_1_1_person_id_extractor_afb71fc8bd6ed5675c18c1af227c3e119}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!mInlierRatioThreshold@{mInlierRatioThreshold}}
+\index{mInlierRatioThreshold@{mInlierRatioThreshold}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{mInlierRatioThreshold}{mInlierRatioThreshold}}
+{\footnotesize\ttfamily const float op\+::\+Person\+Id\+Extractor\+::m\+Inlier\+Ratio\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Id\+Extractor.\+hpp 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_a8642d2608edf0d7e66daa84c58f273c0}\label{classop_1_1_person_id_extractor_a8642d2608edf0d7e66daa84c58f273c0}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!mLastFrameId@{mLastFrameId}}
+\index{mLastFrameId@{mLastFrameId}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{mLastFrameId}{mLastFrameId}}
+{\footnotesize\ttfamily std\+::atomic$<$long long$>$ op\+::\+Person\+Id\+Extractor\+::m\+Last\+Frame\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Id\+Extractor.\+hpp 파일의 52 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_a96d53fc743d88daabdb681b8b70341c6}\label{classop_1_1_person_id_extractor_a96d53fc743d88daabdb681b8b70341c6}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!mNextPersonId@{mNextPersonId}}
+\index{mNextPersonId@{mNextPersonId}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{mNextPersonId}{mNextPersonId}}
+{\footnotesize\ttfamily long long op\+::\+Person\+Id\+Extractor\+::m\+Next\+Person\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Id\+Extractor.\+hpp 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_a18fc2b9e2e02a164a6549cdfc1b917cb}\label{classop_1_1_person_id_extractor_a18fc2b9e2e02a164a6549cdfc1b917cb}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!mNumberFramesToDeletePerson@{mNumberFramesToDeletePerson}}
+\index{mNumberFramesToDeletePerson@{mNumberFramesToDeletePerson}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{mNumberFramesToDeletePerson}{mNumberFramesToDeletePerson}}
+{\footnotesize\ttfamily const int op\+::\+Person\+Id\+Extractor\+::m\+Number\+Frames\+To\+Delete\+Person\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Id\+Extractor.\+hpp 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_a4ee55dd1df4e684e249ad4d74fab1cb5}\label{classop_1_1_person_id_extractor_a4ee55dd1df4e684e249ad4d74fab1cb5}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!mPersonEntries@{mPersonEntries}}
+\index{mPersonEntries@{mPersonEntries}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{mPersonEntries}{mPersonEntries}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$int, \mbox{\hyperlink{structop_1_1_person_entry}{Person\+Entry}}$>$ op\+::\+Person\+Id\+Extractor\+::m\+Person\+Entries\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Id\+Extractor.\+hpp 파일의 50 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_id_extractor_a94aff2aeea39378054af3ac20362aa4a}\label{classop_1_1_person_id_extractor_a94aff2aeea39378054af3ac20362aa4a}} 
+\index{op::PersonIdExtractor@{op::PersonIdExtractor}!mPyramidImagesPrevious@{mPyramidImagesPrevious}}
+\index{mPyramidImagesPrevious@{mPyramidImagesPrevious}!op::PersonIdExtractor@{op::PersonIdExtractor}}
+\doxysubsubsection{\texorpdfstring{mPyramidImagesPrevious}{mPyramidImagesPrevious}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Person\+Id\+Extractor\+::m\+Pyramid\+Images\+Previous\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Id\+Extractor.\+hpp 파일의 49 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/tracking/\mbox{\hyperlink{person_id_extractor_8hpp}{person\+Id\+Extractor.\+hpp}}\end{DoxyCompactItemize}

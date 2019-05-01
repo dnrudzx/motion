@@ -1,0 +1,7 @@
+<map id="op::FileSaver" name="op::FileSaver">
+<area shape="rect" id="node1" title=" " alt="" coords="232,5,375,127"/>
+<area shape="rect" id="node2" href="$classop_1_1_heat_map_saver.html" title=" " alt="" coords="5,182,143,289"/>
+<area shape="rect" id="node3" href="$classop_1_1_image_saver.html" title=" " alt="" coords="167,175,287,296"/>
+<area shape="rect" id="node4" href="$classop_1_1_keypoint_saver.html" title=" " alt="" coords="312,182,447,289"/>
+<area shape="rect" id="node5" href="$classop_1_1_people_json_saver.html" title=" " alt="" coords="471,182,623,289"/>
+</map>

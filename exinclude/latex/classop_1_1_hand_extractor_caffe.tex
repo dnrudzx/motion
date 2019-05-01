@@ -1,0 +1,294 @@
+\hypertarget{classop_1_1_hand_extractor_caffe}{}\doxysection{op\+::Hand\+Extractor\+Caffe 클래스 참조}
+\label{classop_1_1_hand_extractor_caffe}\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+
+
+{\ttfamily \#include $<$hand\+Extractor\+Caffe.\+hpp$>$}
+
+
+
+op\+::Hand\+Extractor\+Caffe에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classop_1_1_hand_extractor_caffe__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::Hand\+Extractor\+Caffe에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_hand_extractor_caffe__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_hand_extractor_caffe_a2ac1fb660643ceedb6ffe5c1870bba67}{Hand\+Extractor\+Caffe}} (const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&net\+Input\+Size, const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&net\+Output\+Size, const std\+::string \&model\+Folder, const int gpu\+Id, const unsigned short number\+Scales=1, const float range\+Scales=0.\+4f, const std\+::vector$<$ Heat\+Map\+Type $>$ \&heat\+Map\+Types=\{\}, const Scale\+Mode heat\+Map\+Scale\+Mode=\+Scale\+Mode\+::\+Zero\+To\+One, const bool enable\+Google\+Logging=true)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_hand_extractor_caffe_aee681b43b8691ac1f07e08616522f6af}{$\sim$\+Hand\+Extractor\+Caffe}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_hand_extractor_caffe_ace3ee9d717887ee9dc0f00ce69bd0c82}{net\+Initialization\+On\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_hand_extractor_caffe_add0603118d06a1dbeb5c6095e6ca77f3}{forward\+Pass}} (const std\+::vector$<$ std\+::array$<$ \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ float $>$, 2 $>$$>$ hand\+Rectangles, const cv\+::\+Mat \&cv\+Input\+Data)
+\item 
+void \mbox{\hyperlink{classop_1_1_hand_extractor_net_a37d86377da41c576c4d54027a9762733}{initialization\+On\+Thread}} ()
+\item 
+std\+::array$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$, 2 $>$ \mbox{\hyperlink{classop_1_1_hand_extractor_net_a88a35f29d3c53c259756bc07b2bfb093}{get\+Heat\+Maps}} () const
+\item 
+std\+::array$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$, 2 $>$ \mbox{\hyperlink{classop_1_1_hand_extractor_net_ae9617434c4dc7e390c18d596b868297d}{get\+Hand\+Keypoints}} () const
+\item 
+bool \mbox{\hyperlink{classop_1_1_hand_extractor_net_af064ccee582800f39ed3eac5d69a4134}{get\+Enabled}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_hand_extractor_net_ab59a77d051991734b0c74b122671f097}{set\+Enabled}} (const bool enabled)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::pair$<$ unsigned short, float $>$ \mbox{\hyperlink{classop_1_1_hand_extractor_net_a2a969145bac891cef2683cae440c5f79}{m\+Multi\+Scale\+Number\+And\+Range}}
+\item 
+const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \mbox{\hyperlink{classop_1_1_hand_extractor_net_ac5e36cd33696a684a4447acccec28fdd}{m\+Net\+Output\+Size}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_hand_extractor_net_a0981f4dfd15ce4a13de9d166cad9e1d4}{m\+Hand\+Image\+Crop}}
+\item 
+std\+::array$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$, 2 $>$ \mbox{\hyperlink{classop_1_1_hand_extractor_net_a7f97a5b842d20d3d37d3469418faac7b}{m\+Hand\+Keypoints}}
+\item 
+const \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bda}{Scale\+Mode}} \mbox{\hyperlink{classop_1_1_hand_extractor_net_af03c8872258c644086bda26a3aaf95b5}{m\+Heat\+Map\+Scale\+Mode}}
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{namespaceop_a1c3dbc214e7552f7ef9cc753ee97226b}{Heat\+Map\+Type}} $>$ \mbox{\hyperlink{classop_1_1_hand_extractor_net_aaf0386c8c15a37cf79e9f3f4b1ced2e8}{m\+Heat\+Map\+Types}}
+\item 
+std\+::array$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$, 2 $>$ \mbox{\hyperlink{classop_1_1_hand_extractor_net_a5c4174ed2c09ff7c15edfc5d971f4aef}{m\+Heat\+Maps}}
+\item 
+std\+::atomic$<$ bool $>$ \mbox{\hyperlink{classop_1_1_hand_extractor_net_a2ee9d38650ed3138fa74fae2cad4bd77}{m\+Enabled}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classop_1_1_hand_extractor_caffe_a6fa8509aa405d1724ed011caad8c19a2}{detect\+Hand\+Keypoints}} (\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&hand\+Current, const int person, const cv\+::\+Mat \&affine\+Matrix)
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_hand_extractor_caffe_ab522f01c1975ccf0922010607773601a}{get\+Heat\+Maps\+From\+Last\+Pass}} () const
+\item 
+\mbox{\hyperlink{classop_1_1_hand_extractor_caffe_ad39386c907defb16f2de9a97f93f1569}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_hand_extractor_caffe}{Hand\+Extractor\+Caffe}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ Impl\+Hand\+Extractor\+Caffe $>$ \mbox{\hyperlink{classop_1_1_hand_extractor_caffe_a0f3439342082b87d225a2e71cd174733}{up\+Impl}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Hand keypoint extractor class for Caffe framework. 
+
+hand\+Extractor\+Caffe.\+hpp 파일의 14 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_hand_extractor_caffe_a2ac1fb660643ceedb6ffe5c1870bba67}\label{classop_1_1_hand_extractor_caffe_a2ac1fb660643ceedb6ffe5c1870bba67}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!HandExtractorCaffe@{HandExtractorCaffe}}
+\index{HandExtractorCaffe@{HandExtractorCaffe}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{HandExtractorCaffe()}{HandExtractorCaffe()}}
+{\footnotesize\ttfamily op\+::\+Hand\+Extractor\+Caffe\+::\+Hand\+Extractor\+Caffe (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&}]{net\+Input\+Size,  }\item[{const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&}]{net\+Output\+Size,  }\item[{const std\+::string \&}]{model\+Folder,  }\item[{const int}]{gpu\+Id,  }\item[{const unsigned short}]{number\+Scales = {\ttfamily 1},  }\item[{const float}]{range\+Scales = {\ttfamily 0.4f},  }\item[{const std\+::vector$<$ \mbox{\hyperlink{namespaceop_a1c3dbc214e7552f7ef9cc753ee97226b}{Heat\+Map\+Type}} $>$ \&}]{heat\+Map\+Types = {\ttfamily \{\}},  }\item[{const \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bda}{Scale\+Mode}}}]{heat\+Map\+Scale\+Mode = {\ttfamily \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bdaa4b942544cb3e764bbb8d33f8a8744855}{Scale\+Mode\+::\+Zero\+To\+One}}},  }\item[{const bool}]{enable\+Google\+Logging = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Constructor of the \mbox{\hyperlink{classop_1_1_hand_extractor_caffe}{Hand\+Extractor\+Caffe}} class. 
+\begin{DoxyParams}{매개변수}
+{\em net\+Input\+Size} & Size at which the cropped image (where the hand is located) is resized. \\
+\hline
+{\em net\+Output\+Size} & Size of the final results. At the moment, it must be equal than net\+Output\+Size. \\
+\hline
+{\em model\+Folder} & Folder where the models are located. \\
+\hline
+{\em gpu\+Id} & The G\+PU index (0-\/based) which the deep net will use. \\
+\hline
+{\em number\+Scales} & Number of scales to run. The more scales, the slower it will be but possibly also more accurate. \\
+\hline
+{\em range\+Scales} & The range between the smaller and bigger scale. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_hand_extractor_caffe_aee681b43b8691ac1f07e08616522f6af}\label{classop_1_1_hand_extractor_caffe_aee681b43b8691ac1f07e08616522f6af}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!````~HandExtractorCaffe@{$\sim$HandExtractorCaffe}}
+\index{````~HandExtractorCaffe@{$\sim$HandExtractorCaffe}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{$\sim$HandExtractorCaffe()}{~HandExtractorCaffe()}}
+{\footnotesize\ttfamily virtual op\+::\+Hand\+Extractor\+Caffe\+::$\sim$\+Hand\+Extractor\+Caffe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual destructor of the Hand\+Extractor class. Required to allow inheritance. 
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_hand_extractor_caffe_ad39386c907defb16f2de9a97f93f1569}\label{classop_1_1_hand_extractor_caffe_ad39386c907defb16f2de9a97f93f1569}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Hand\+Extractor\+Caffe\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_hand_extractor_caffe}{Hand\+Extractor\+Caffe}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_caffe_a6fa8509aa405d1724ed011caad8c19a2}\label{classop_1_1_hand_extractor_caffe_a6fa8509aa405d1724ed011caad8c19a2}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!detectHandKeypoints@{detectHandKeypoints}}
+\index{detectHandKeypoints@{detectHandKeypoints}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{detectHandKeypoints()}{detectHandKeypoints()}}
+{\footnotesize\ttfamily void op\+::\+Hand\+Extractor\+Caffe\+::detect\+Hand\+Keypoints (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{hand\+Current,  }\item[{const int}]{person,  }\item[{const cv\+::\+Mat \&}]{affine\+Matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_caffe_add0603118d06a1dbeb5c6095e6ca77f3}\label{classop_1_1_hand_extractor_caffe_add0603118d06a1dbeb5c6095e6ca77f3}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!forwardPass@{forwardPass}}
+\index{forwardPass@{forwardPass}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{forwardPass()}{forwardPass()}}
+{\footnotesize\ttfamily void op\+::\+Hand\+Extractor\+Caffe\+::forward\+Pass (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::array$<$ \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ float $>$, 2 $>$$>$}]{hand\+Rectangles,  }\item[{const cv\+::\+Mat \&}]{cv\+Input\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function extracts the hand keypoints for each detected hand in the image. 
+\begin{DoxyParams}{매개변수}
+{\em hand\+Rectangles} & location of the hands in the image. It is a length-\/variable std\+::vector, where each index corresponds to a different person in the image. Internally the std\+::vector, a std\+::array of 2 elements\+: index 0 and 1 for left and right hand respectively. Inside each array element, a op\+::\+Rectangle$<$float$>$ (similar to cv\+::\+Rect for floating values) with the position of that hand (or 0,0,0,0 if some hand is missing, e.\+g., if a specific person has only half of the body inside the image). \\
+\hline
+{\em cv\+Input\+Data} & Original image in cv\+::\+Mat format and B\+GR format. \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{classop_1_1_hand_extractor_net_a2638c2c03b0aed0b14114968dedd612c}{op\+::\+Hand\+Extractor\+Net}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_net_af064ccee582800f39ed3eac5d69a4134}\label{classop_1_1_hand_extractor_net_af064ccee582800f39ed3eac5d69a4134}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!getEnabled@{getEnabled}}
+\index{getEnabled@{getEnabled}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{getEnabled()}{getEnabled()}}
+{\footnotesize\ttfamily bool op\+::\+Hand\+Extractor\+Net\+::get\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_net_ae9617434c4dc7e390c18d596b868297d}\label{classop_1_1_hand_extractor_net_ae9617434c4dc7e390c18d596b868297d}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!getHandKeypoints@{getHandKeypoints}}
+\index{getHandKeypoints@{getHandKeypoints}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{getHandKeypoints()}{getHandKeypoints()}}
+{\footnotesize\ttfamily std\+::array$<$\mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$, 2$>$ op\+::\+Hand\+Extractor\+Net\+::get\+Hand\+Keypoints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+This function returns the hand keypoins. V\+E\+RY I\+M\+P\+O\+R\+T\+A\+NT\+: use \mbox{\hyperlink{classop_1_1_hand_extractor_net_ae9617434c4dc7e390c18d596b868297d}{get\+Hand\+Keypoints()}}.clone() if the keypoints are going to be edited in a different thread. \begin{DoxyReturn}{반환값}
+A std\+::array with all the left hand keypoints (index 0) and all the right ones (index 1). Each \mbox{\hyperlink{classop_1_1_array}{Array$<$float$>$}} follows the pose structure, i.\+e., the first dimension corresponds to all the people in the image, the second to each specific keypoint, and the third one to (x, y, score). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_hand_extractor_net_a88a35f29d3c53c259756bc07b2bfb093}\label{classop_1_1_hand_extractor_net_a88a35f29d3c53c259756bc07b2bfb093}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!getHeatMaps@{getHeatMaps}}
+\index{getHeatMaps@{getHeatMaps}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{getHeatMaps()}{getHeatMaps()}}
+{\footnotesize\ttfamily std\+::array$<$\mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$, 2$>$ op\+::\+Hand\+Extractor\+Net\+::get\+Heat\+Maps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_caffe_ab522f01c1975ccf0922010607773601a}\label{classop_1_1_hand_extractor_caffe_ab522f01c1975ccf0922010607773601a}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!getHeatMapsFromLastPass@{getHeatMapsFromLastPass}}
+\index{getHeatMapsFromLastPass@{getHeatMapsFromLastPass}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{getHeatMapsFromLastPass()}{getHeatMapsFromLastPass()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Hand\+Extractor\+Caffe\+::get\+Heat\+Maps\+From\+Last\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_net_a37d86377da41c576c4d54027a9762733}\label{classop_1_1_hand_extractor_net_a37d86377da41c576c4d54027a9762733}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily void op\+::\+Hand\+Extractor\+Net\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+This function must be call before using any other function. It must also be called inside the thread in which the functions are going to be used. \mbox{\Hypertarget{classop_1_1_hand_extractor_caffe_ace3ee9d717887ee9dc0f00ce69bd0c82}\label{classop_1_1_hand_extractor_caffe_ace3ee9d717887ee9dc0f00ce69bd0c82}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!netInitializationOnThread@{netInitializationOnThread}}
+\index{netInitializationOnThread@{netInitializationOnThread}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{netInitializationOnThread()}{netInitializationOnThread()}}
+{\footnotesize\ttfamily void op\+::\+Hand\+Extractor\+Caffe\+::net\+Initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function must be call before using any other function. It must also be called inside the thread in which the functions are going to be used. 
+
+\mbox{\hyperlink{classop_1_1_hand_extractor_net_aad7c29237d50e77e606bb32c20c60d24}{op\+::\+Hand\+Extractor\+Net}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_net_ab59a77d051991734b0c74b122671f097}\label{classop_1_1_hand_extractor_net_ab59a77d051991734b0c74b122671f097}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!setEnabled@{setEnabled}}
+\index{setEnabled@{setEnabled}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{setEnabled()}{setEnabled()}}
+{\footnotesize\ttfamily void op\+::\+Hand\+Extractor\+Net\+::set\+Enabled (\begin{DoxyParamCaption}\item[{const bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_hand_extractor_net_a2ee9d38650ed3138fa74fae2cad4bd77}\label{classop_1_1_hand_extractor_net_a2ee9d38650ed3138fa74fae2cad4bd77}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!mEnabled@{mEnabled}}
+\index{mEnabled@{mEnabled}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mEnabled}{mEnabled}}
+{\footnotesize\ttfamily std\+::atomic$<$bool$>$ op\+::\+Hand\+Extractor\+Net\+::m\+Enabled\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+hand\+Extractor\+Net.\+hpp 파일의 79 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_net_a0981f4dfd15ce4a13de9d166cad9e1d4}\label{classop_1_1_hand_extractor_net_a0981f4dfd15ce4a13de9d166cad9e1d4}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!mHandImageCrop@{mHandImageCrop}}
+\index{mHandImageCrop@{mHandImageCrop}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mHandImageCrop}{mHandImageCrop}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Hand\+Extractor\+Net\+::m\+Hand\+Image\+Crop\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+hand\+Extractor\+Net.\+hpp 파일의 72 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_net_a7f97a5b842d20d3d37d3469418faac7b}\label{classop_1_1_hand_extractor_net_a7f97a5b842d20d3d37d3469418faac7b}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!mHandKeypoints@{mHandKeypoints}}
+\index{mHandKeypoints@{mHandKeypoints}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mHandKeypoints}{mHandKeypoints}}
+{\footnotesize\ttfamily std\+::array$<$\mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$, 2$>$ op\+::\+Hand\+Extractor\+Net\+::m\+Hand\+Keypoints\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+hand\+Extractor\+Net.\+hpp 파일의 73 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_net_a5c4174ed2c09ff7c15edfc5d971f4aef}\label{classop_1_1_hand_extractor_net_a5c4174ed2c09ff7c15edfc5d971f4aef}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!mHeatMaps@{mHeatMaps}}
+\index{mHeatMaps@{mHeatMaps}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mHeatMaps}{mHeatMaps}}
+{\footnotesize\ttfamily std\+::array$<$\mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$, 2$>$ op\+::\+Hand\+Extractor\+Net\+::m\+Heat\+Maps\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+hand\+Extractor\+Net.\+hpp 파일의 77 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_net_af03c8872258c644086bda26a3aaf95b5}\label{classop_1_1_hand_extractor_net_af03c8872258c644086bda26a3aaf95b5}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!mHeatMapScaleMode@{mHeatMapScaleMode}}
+\index{mHeatMapScaleMode@{mHeatMapScaleMode}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mHeatMapScaleMode}{mHeatMapScaleMode}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bda}{Scale\+Mode}} op\+::\+Hand\+Extractor\+Net\+::m\+Heat\+Map\+Scale\+Mode\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+hand\+Extractor\+Net.\+hpp 파일의 75 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_net_aaf0386c8c15a37cf79e9f3f4b1ced2e8}\label{classop_1_1_hand_extractor_net_aaf0386c8c15a37cf79e9f3f4b1ced2e8}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!mHeatMapTypes@{mHeatMapTypes}}
+\index{mHeatMapTypes@{mHeatMapTypes}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mHeatMapTypes}{mHeatMapTypes}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{namespaceop_a1c3dbc214e7552f7ef9cc753ee97226b}{Heat\+Map\+Type}}$>$ op\+::\+Hand\+Extractor\+Net\+::m\+Heat\+Map\+Types\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+hand\+Extractor\+Net.\+hpp 파일의 76 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_net_a2a969145bac891cef2683cae440c5f79}\label{classop_1_1_hand_extractor_net_a2a969145bac891cef2683cae440c5f79}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!mMultiScaleNumberAndRange@{mMultiScaleNumberAndRange}}
+\index{mMultiScaleNumberAndRange@{mMultiScaleNumberAndRange}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mMultiScaleNumberAndRange}{mMultiScaleNumberAndRange}}
+{\footnotesize\ttfamily const std\+::pair$<$unsigned short, float$>$ op\+::\+Hand\+Extractor\+Net\+::m\+Multi\+Scale\+Number\+And\+Range\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+hand\+Extractor\+Net.\+hpp 파일의 70 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_net_ac5e36cd33696a684a4447acccec28fdd}\label{classop_1_1_hand_extractor_net_ac5e36cd33696a684a4447acccec28fdd}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!mNetOutputSize@{mNetOutputSize}}
+\index{mNetOutputSize@{mNetOutputSize}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mNetOutputSize}{mNetOutputSize}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$int$>$ op\+::\+Hand\+Extractor\+Net\+::m\+Net\+Output\+Size\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+hand\+Extractor\+Net.\+hpp 파일의 71 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_hand_extractor_caffe_a0f3439342082b87d225a2e71cd174733}\label{classop_1_1_hand_extractor_caffe_a0f3439342082b87d225a2e71cd174733}} 
+\index{op::HandExtractorCaffe@{op::HandExtractorCaffe}!upImpl@{upImpl}}
+\index{upImpl@{upImpl}!op::HandExtractorCaffe@{op::HandExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{upImpl}{upImpl}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$Impl\+Hand\+Extractor\+Caffe$>$ op\+::\+Hand\+Extractor\+Caffe\+::up\+Impl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+hand\+Extractor\+Caffe.\+hpp 파일의 60 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/hand/\mbox{\hyperlink{hand_extractor_caffe_8hpp}{hand\+Extractor\+Caffe.\+hpp}}\end{DoxyCompactItemize}

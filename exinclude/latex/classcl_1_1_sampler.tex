@@ -1,0 +1,532 @@
+\hypertarget{classcl_1_1_sampler}{}\doxysection{cl\+::Sampler 클래스 참조}
+\label{classcl_1_1_sampler}\index{cl::Sampler@{cl::Sampler}}
+
+
+Class interface for cl\+\_\+sampler.  
+
+
+
+
+{\ttfamily \#include $<$cl2.\+hpp$>$}
+
+
+
+cl\+::Sampler에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classcl_1_1_sampler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+cl\+::Sampler에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classcl_1_1_sampler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+typedef cl\+\_\+sampler \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1_sampler_a1c8395b386e3b1c09dc43f4134909390}{Sampler}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor -\/ initializes to N\+U\+LL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_sampler_a41d7df0a069717bc570a6ccdab3d3acd}{Sampler}} (const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&context, cl\+\_\+bool normalized\+\_\+coords, cl\+\_\+addressing\+\_\+mode addressing\+\_\+mode, cl\+\_\+filter\+\_\+mode filter\+\_\+mode, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} in a specified context. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_sampler_aa32c71d59ca20e83fc283273d0b102cd}{Sampler}} (const cl\+\_\+sampler \&sampler, bool retain\+Object=false)
+\begin{DoxyCompactList}\small\item\em Constructor from cl\+\_\+sampler -\/ takes ownership. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} \& \mbox{\hyperlink{classcl_1_1_sampler_a011eed498881010b78ffdcdd9fcb4056}{operator=}} (const cl\+\_\+sampler \&rhs)
+\begin{DoxyCompactList}\small\item\em Assignment operator from cl\+\_\+sampler -\/ takes ownership. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_sampler_a684ea0f7bb85233239ba3a266795c1a4}{Sampler}} (const \mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} \&sam)
+\begin{DoxyCompactList}\small\item\em Copy constructor to forward copy to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} \& \mbox{\hyperlink{classcl_1_1_sampler_ad26196f0282429667828b5b39bbc97f1}{operator=}} (const \mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} \&sam)
+\begin{DoxyCompactList}\small\item\em Copy assignment to forward copy to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_sampler_a487aa40df9ababf70fe4c19a0b538f6f}{Sampler}} (\mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} \&\&sam) \mbox{\hyperlink{cl2_8hpp_a7fcfde26c9e031daf0c6fbb637ed7ac0}{C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Move constructor to forward move to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} \& \mbox{\hyperlink{classcl_1_1_sampler_a8d58fcb1dc466f4b1de2c38c6cb76823}{operator=}} (\mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} \&\&sam)
+\begin{DoxyCompactList}\small\item\em Move assignment to forward move to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_sampler_a692268678bf12b7b754009f9ba291fbc}{get\+Info}} (cl\+\_\+sampler\+\_\+info name, T $\ast$param) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Sampler\+Info(). \end{DoxyCompactList}\item 
+{\footnotesize template$<$cl\+\_\+int name$>$ }\\\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$ detail\+::cl\+\_\+sampler\+\_\+info, name $>$\+::param\+\_\+type \mbox{\hyperlink{classcl_1_1_sampler_afc12ea7675deef235c907034f72a0476}{get\+Info}} (cl\+\_\+int $\ast$err=N\+U\+LL) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Sampler\+Info() that returns by value. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}{operator()}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}{operator()}} ()
+\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}{get}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}{get}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}{retain}} () const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}{release}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Class interface for cl\+\_\+sampler. 
+
+\begin{DoxyNote}{주의}
+Copies of these objects are shallow, meaning that the copy will refer to the same underlying cl\+\_\+sampler as the original. For details, see cl\+Retain\+Sampler() and cl\+Release\+Sampler().
+\end{DoxyNote}
+\begin{DoxySeeAlso}{참고}
+cl\+\_\+sampler 
+\end{DoxySeeAlso}
+
+
+cl2.\+hpp 파일의 5402 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 타입정의 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}\label{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}} 
+\index{cl::Sampler@{cl::Sampler}!cl\_type@{cl\_type}}
+\index{cl\_type@{cl\_type}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{cl\_type}{cl\_type}}
+{\footnotesize\ttfamily typedef cl\+\_\+sampler  \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+sampler  $>$\+::\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1637 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classcl_1_1_sampler_a1c8395b386e3b1c09dc43f4134909390}\label{classcl_1_1_sampler_a1c8395b386e3b1c09dc43f4134909390}} 
+\index{cl::Sampler@{cl::Sampler}!Sampler@{Sampler}}
+\index{Sampler@{Sampler}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{Sampler()}{Sampler()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily cl\+::\+Sampler\+::\+Sampler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor -\/ initializes to N\+U\+LL. 
+
+
+
+cl2.\+hpp 파일의 5406 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5406 \{ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_sampler_a41d7df0a069717bc570a6ccdab3d3acd}\label{classcl_1_1_sampler_a41d7df0a069717bc570a6ccdab3d3acd}} 
+\index{cl::Sampler@{cl::Sampler}!Sampler@{Sampler}}
+\index{Sampler@{Sampler}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{Sampler()}{Sampler()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily cl\+::\+Sampler\+::\+Sampler (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&}]{context,  }\item[{cl\+\_\+bool}]{normalized\+\_\+coords,  }\item[{cl\+\_\+addressing\+\_\+mode}]{addressing\+\_\+mode,  }\item[{cl\+\_\+filter\+\_\+mode}]{filter\+\_\+mode,  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a \mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} in a specified context. 
+
+Wraps cl\+Create\+Sampler(). 
+
+cl2.\+hpp 파일의 5412 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5418     \{}
+\DoxyCodeLine{5419         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{5420 }
+\DoxyCodeLine{5421 \textcolor{preprocessor}{\#if CL\_HPP\_TARGET\_OPENCL\_VERSION >= 200}}
+\DoxyCodeLine{5422         cl\_sampler\_properties sampler\_properties[] = \{}
+\DoxyCodeLine{5423             CL\_SAMPLER\_NORMALIZED\_COORDS, normalized\_coords,}
+\DoxyCodeLine{5424             CL\_SAMPLER\_ADDRESSING\_MODE, addressing\_mode,}
+\DoxyCodeLine{5425             CL\_SAMPLER\_FILTER\_MODE, filter\_mode,}
+\DoxyCodeLine{5426             0 \};}
+\DoxyCodeLine{5427         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateSamplerWithProperties(}
+\DoxyCodeLine{5428             context(),}
+\DoxyCodeLine{5429             sampler\_properties,}
+\DoxyCodeLine{5430             \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{5431 }
+\DoxyCodeLine{5432         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_SAMPLER\_WITH\_PROPERTIES\_ERR);}
+\DoxyCodeLine{5433         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{5434             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{5435         \}}
+\DoxyCodeLine{5436 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{5437         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateSampler(}
+\DoxyCodeLine{5438             context(),}
+\DoxyCodeLine{5439             normalized\_coords,}
+\DoxyCodeLine{5440             addressing\_mode,}
+\DoxyCodeLine{5441             filter\_mode,}
+\DoxyCodeLine{5442             \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{5443 }
+\DoxyCodeLine{5444         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_SAMPLER\_ERR);}
+\DoxyCodeLine{5445         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{5446             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{5447         \}}
+\DoxyCodeLine{5448 \textcolor{preprocessor}{\#endif        }}
+\DoxyCodeLine{5449     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classcl_1_1_sampler_a41d7df0a069717bc570a6ccdab3d3acd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_sampler_aa32c71d59ca20e83fc283273d0b102cd}\label{classcl_1_1_sampler_aa32c71d59ca20e83fc283273d0b102cd}} 
+\index{cl::Sampler@{cl::Sampler}!Sampler@{Sampler}}
+\index{Sampler@{Sampler}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{Sampler()}{Sampler()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily cl\+::\+Sampler\+::\+Sampler (\begin{DoxyParamCaption}\item[{const cl\+\_\+sampler \&}]{sampler,  }\item[{bool}]{retain\+Object = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor from cl\+\_\+sampler -\/ takes ownership. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em retain\+Object} & will cause the constructor to retain its cl object. Defaults to false to maintain compatibility with earlier versions. This effectively transfers ownership of a refcount on the cl\+\_\+sampler into the new \mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} object. \\
+\hline
+\end{DoxyParams}
+
+
+cl2.\+hpp 파일의 5459 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5459                                                                            : }
+\DoxyCodeLine{5460         detail::Wrapper<cl\_type>(sampler, retainObject) \{ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_sampler_a684ea0f7bb85233239ba3a266795c1a4}\label{classcl_1_1_sampler_a684ea0f7bb85233239ba3a266795c1a4}} 
+\index{cl::Sampler@{cl::Sampler}!Sampler@{Sampler}}
+\index{Sampler@{Sampler}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{Sampler()}{Sampler()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily cl\+::\+Sampler\+::\+Sampler (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} \&}]{sam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor to forward copy to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 5476 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5476 : detail::Wrapper<cl\_type>(sam) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_sampler_a487aa40df9ababf70fe4c19a0b538f6f}\label{classcl_1_1_sampler_a487aa40df9ababf70fe4c19a0b538f6f}} 
+\index{cl::Sampler@{cl::Sampler}!Sampler@{Sampler}}
+\index{Sampler@{Sampler}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{Sampler()}{Sampler()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily cl\+::\+Sampler\+::\+Sampler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} \&\&}]{sam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move constructor to forward move to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 5490 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5490 : detail::Wrapper<cl\_type>(std::move(sam)) \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}\label{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}} 
+\index{cl::Sampler@{cl::Sampler}!get@{get}}
+\index{get@{get}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+sampler  $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1702 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1702 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}\label{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}} 
+\index{cl::Sampler@{cl::Sampler}!get@{get}}
+\index{get@{get}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+sampler  $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1700 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1700 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_sampler_afc12ea7675deef235c907034f72a0476}\label{classcl_1_1_sampler_afc12ea7675deef235c907034f72a0476}} 
+\index{cl::Sampler@{cl::Sampler}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$cl\+\_\+int name$>$ \\
+\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$detail\+::cl\+\_\+sampler\+\_\+info, name$>$\+::param\+\_\+type cl\+::\+Sampler\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wrapper for cl\+Get\+Sampler\+Info() that returns by value. 
+
+
+
+cl2.\+hpp 파일의 5513 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5514     \{}
+\DoxyCodeLine{5515         \textcolor{keyword}{typename} detail::param\_traits<}
+\DoxyCodeLine{5516             detail::cl\_sampler\_info, name>::param\_type param;}
+\DoxyCodeLine{5517         cl\_int result = \mbox{\hyperlink{classcl_1_1_sampler_a692268678bf12b7b754009f9ba291fbc}{getInfo}}(name, \&param);}
+\DoxyCodeLine{5518         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{5519             *err = result;}
+\DoxyCodeLine{5520         \}}
+\DoxyCodeLine{5521         \textcolor{keywordflow}{return} param;}
+\DoxyCodeLine{5522     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_sampler_afc12ea7675deef235c907034f72a0476_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_sampler_a692268678bf12b7b754009f9ba291fbc}\label{classcl_1_1_sampler_a692268678bf12b7b754009f9ba291fbc}} 
+\index{cl::Sampler@{cl::Sampler}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+cl\+\_\+int cl\+::\+Sampler\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+sampler\+\_\+info}]{name,  }\item[{T $\ast$}]{param }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wrapper for cl\+Get\+Sampler\+Info(). 
+
+
+
+cl2.\+hpp 파일의 5503 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5504     \{}
+\DoxyCodeLine{5505         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{5506             \mbox{\hyperlink{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480}{detail::getInfo}}(\&::clGetSamplerInfo, \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, name, param),}
+\DoxyCodeLine{5507             \_\_GET\_SAMPLER\_INFO\_ERR);}
+\DoxyCodeLine{5508     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_sampler_a692268678bf12b7b754009f9ba291fbc_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classcl_1_1_sampler_a692268678bf12b7b754009f9ba291fbc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}\label{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}} 
+\index{cl::Sampler@{cl::Sampler}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+sampler  $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1698 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1698 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}\label{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}} 
+\index{cl::Sampler@{cl::Sampler}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+sampler  $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1696 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1696 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_sampler_a011eed498881010b78ffdcdd9fcb4056}\label{classcl_1_1_sampler_a011eed498881010b78ffdcdd9fcb4056}} 
+\index{cl::Sampler@{cl::Sampler}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_sampler}{Sampler}}\& cl\+::\+Sampler\+::operator= (\begin{DoxyParamCaption}\item[{const cl\+\_\+sampler \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator from cl\+\_\+sampler -\/ takes ownership. 
+
+This effectively transfers ownership of a refcount on the rhs and calls cl\+Release\+Sampler() on the value previously held by this instance. 
+
+cl2.\+hpp 파일의 5467 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5468     \{}
+\DoxyCodeLine{5469         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a044bc05bb3eb90345cb9cf574b95a98f}{detail::Wrapper<cl\_type>::operator=}}(rhs);}
+\DoxyCodeLine{5470         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{5471     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classcl_1_1_sampler_a011eed498881010b78ffdcdd9fcb4056_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_sampler_ad26196f0282429667828b5b39bbc97f1}\label{classcl_1_1_sampler_ad26196f0282429667828b5b39bbc97f1}} 
+\index{cl::Sampler@{cl::Sampler}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_sampler}{Sampler}}\& cl\+::\+Sampler\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} \&}]{sam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy assignment to forward copy to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 5481 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5482     \{}
+\DoxyCodeLine{5483         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a044bc05bb3eb90345cb9cf574b95a98f}{detail::Wrapper<cl\_type>::operator=}}(sam);}
+\DoxyCodeLine{5484         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{5485     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classcl_1_1_sampler_ad26196f0282429667828b5b39bbc97f1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_sampler_a8d58fcb1dc466f4b1de2c38c6cb76823}\label{classcl_1_1_sampler_a8d58fcb1dc466f4b1de2c38c6cb76823}} 
+\index{cl::Sampler@{cl::Sampler}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_sampler}{Sampler}}\& cl\+::\+Sampler\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_sampler}{Sampler}} \&\&}]{sam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move assignment to forward move to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 5495 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5496     \{}
+\DoxyCodeLine{5497         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a044bc05bb3eb90345cb9cf574b95a98f}{detail::Wrapper<cl\_type>::operator=}}(std::move(sam));}
+\DoxyCodeLine{5498         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{5499     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classcl_1_1_sampler_a8d58fcb1dc466f4b1de2c38c6cb76823_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}\label{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}} 
+\index{cl::Sampler@{cl::Sampler}!release@{release}}
+\index{release@{release}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+sampler  $>$\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1719 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1720     \{}
+\DoxyCodeLine{1721         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{1722             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::release(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}});}
+\DoxyCodeLine{1723         \}}
+\DoxyCodeLine{1724         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1725             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1726         \}}
+\DoxyCodeLine{1727     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}\label{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}} 
+\index{cl::Sampler@{cl::Sampler}!retain@{retain}}
+\index{retain@{retain}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{retain()}{retain()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+sampler  $>$\+::retain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1709 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1710     \{}
+\DoxyCodeLine{1711         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{1712             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::retain(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}});}
+\DoxyCodeLine{1713         \}}
+\DoxyCodeLine{1714         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1715             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1716         \}}
+\DoxyCodeLine{1717     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}\label{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}} 
+\index{cl::Sampler@{cl::Sampler}!object\_@{object\_}}
+\index{object\_@{object\_}!cl::Sampler@{cl::Sampler}}
+\doxysubsubsection{\texorpdfstring{object\_}{object\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+sampler  $>$\+::object\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1640 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/gpu/\mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,703 @@
+\hypertarget{structop_1_1_datum}{}\doxysection{op\+::Datum 구조체 참조}
+\label{structop_1_1_datum}\index{op::Datum@{op::Datum}}
+
+
+{\ttfamily \#include $<$datum.\+hpp$>$}
+
+
+
+op\+::Datum에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structop_1_1_datum__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structop_1_1_datum_a72c75834671aebe44705738fb5efc3c5}{Datum}} ()
+\item 
+\mbox{\hyperlink{structop_1_1_datum_a42f9aef848c6335c5a81cad374319f0b}{Datum}} (const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&datum)
+\item 
+\mbox{\hyperlink{structop_1_1_datum}{Datum}} \& \mbox{\hyperlink{structop_1_1_datum_a72ee10bf507aea368cfd3dba3dd38cb5}{operator=}} (const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&datum)
+\item 
+\mbox{\hyperlink{structop_1_1_datum_a2d4940d8cb12d95b8588cd0280f6524c}{Datum}} (\mbox{\hyperlink{structop_1_1_datum}{Datum}} \&\&datum)
+\item 
+\mbox{\hyperlink{structop_1_1_datum}{Datum}} \& \mbox{\hyperlink{structop_1_1_datum_a24f3bfcb0ffffeb5742eb1530bc9e367}{operator=}} (\mbox{\hyperlink{structop_1_1_datum}{Datum}} \&\&datum)
+\item 
+virtual \mbox{\hyperlink{structop_1_1_datum_a16b968aec06e9b904751216402972e74}{$\sim$\+Datum}} ()
+\item 
+\mbox{\hyperlink{structop_1_1_datum}{Datum}} \mbox{\hyperlink{structop_1_1_datum_ad137a102ef753734a9413762d72e6d46}{clone}} () const
+\item 
+bool \mbox{\hyperlink{structop_1_1_datum_a9d67e55fbc26399e4efd2385c1899541}{operator$<$}} (const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&datum) const
+\item 
+bool \mbox{\hyperlink{structop_1_1_datum_a79a05bec9871522cfab5d33cc7b63614}{operator$>$}} (const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&datum) const
+\item 
+bool \mbox{\hyperlink{structop_1_1_datum_a32752199884dcb51b7157daa098063e1}{operator$<$=}} (const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&datum) const
+\item 
+bool \mbox{\hyperlink{structop_1_1_datum_ab97601a7628b46619f4a071cf1613ce6}{operator$>$=}} (const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&datum) const
+\item 
+bool \mbox{\hyperlink{structop_1_1_datum_ae740051202ca0db8358d5308143bb1b3}{operator==}} (const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&datum) const
+\item 
+bool \mbox{\hyperlink{structop_1_1_datum_a8337f6ff81ba8231ceeabc840372bff9}{operator!=}} (const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&datum) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long long \mbox{\hyperlink{structop_1_1_datum_a65deddd49d0fbca81f367198fc600015}{id}}
+\item 
+unsigned long long \mbox{\hyperlink{structop_1_1_datum_aeb6d10e4fa40a20d38118bf1be3112d8}{sub\+Id}}
+\item 
+unsigned long long \mbox{\hyperlink{structop_1_1_datum_ab87c493347456b592b616e9f656a5d60}{sub\+Id\+Max}}
+\item 
+std\+::string \mbox{\hyperlink{structop_1_1_datum_ae6adcdacea12a9cfa445cf0cac1985b0}{name}}
+\item 
+unsigned long long \mbox{\hyperlink{structop_1_1_datum_a8b930d61467f98702ebea68f39fc762b}{frame\+Number}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{structop_1_1_datum_a0b2c8ccac37be088524cc7c24a502c7b}{cv\+Input\+Data}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ $>$ \mbox{\hyperlink{structop_1_1_datum_a46ff336119fd0d67c8223b1a9371731d}{input\+Net\+Data}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{structop_1_1_datum_a42b953c082f479eddc527da9a3a4cc75}{output\+Data}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{structop_1_1_datum_a0d1f1c3d3494386e2d652268f6e17b5a}{cv\+Output\+Data}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{structop_1_1_datum_a08909a6f5bc17d8d72c3ac8cb0d816a4}{cv\+Output\+Data3D}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{structop_1_1_datum_a6d629b1f6f7b958fe4cf2ef4cdf57c5b}{pose\+Keypoints}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \mbox{\hyperlink{structop_1_1_datum_aba90dccffb5a830296231bd430c4766c}{pose\+Ids}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{structop_1_1_datum_afb117821de7aff9ac3c219ef3bbc0c14}{pose\+Scores}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{structop_1_1_datum_a5429e97e0ab9b0e2209a3947af668381}{pose\+Heat\+Maps}}
+\item 
+std\+::vector$<$ std\+::vector$<$ std\+::array$<$ float, 3 $>$ $>$ $>$ \mbox{\hyperlink{structop_1_1_datum_a55dd5354e09696ed6896923755f1c85b}{pose\+Candidates}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ float $>$ $>$ \mbox{\hyperlink{structop_1_1_datum_a0b2f6955a1751fc79b107789272effad}{face\+Rectangles}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{structop_1_1_datum_aebd19bf50725a5cd87de1efd96f6ebfe}{face\+Keypoints}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{structop_1_1_datum_ae0c0f33a6b75c7f47e11112dd33f23c1}{face\+Heat\+Maps}}
+\item 
+std\+::vector$<$ std\+::array$<$ \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ float $>$, 2 $>$ $>$ \mbox{\hyperlink{structop_1_1_datum_a52d75e3273490624414f0602785bb608}{hand\+Rectangles}}
+\item 
+std\+::array$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$, 2 $>$ \mbox{\hyperlink{structop_1_1_datum_a59d455dbddc50d700809c5e102c40d4e}{hand\+Keypoints}}
+\item 
+std\+::array$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$, 2 $>$ \mbox{\hyperlink{structop_1_1_datum_aef6c478313691ab5101664c1df55aa58}{hand\+Heat\+Maps}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{structop_1_1_datum_a652ac1e7de13ec9a886dece75848cfea}{pose\+Keypoints3D}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{structop_1_1_datum_a9a44196a197d5c050e626efe8b016e84}{face\+Keypoints3D}}
+\item 
+std\+::array$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$, 2 $>$ \mbox{\hyperlink{structop_1_1_datum_a27bb38102b5ebecd9b13a3619e658316}{hand\+Keypoints3D}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{structop_1_1_datum_aeab7638276f1d9eb14847302bd0d0287}{camera\+Matrix}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{structop_1_1_datum_a8f878dc9157bc9b786046d56fd151e2a}{camera\+Extrinsics}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{structop_1_1_datum_a2cabb5abd5892e5b4ca7c2958820a708}{camera\+Intrinsics}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{structop_1_1_datum_a8f6f5fd181abe3bdfd6f7bdf8a165782}{pose\+Net\+Output}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{structop_1_1_datum_a0e416771f275be98c83aaff01e482a71}{scale\+Input\+To\+Net\+Inputs}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ $>$ \mbox{\hyperlink{structop_1_1_datum_a32d164c01acf6b4f7eb1323d74edbdca}{net\+Input\+Sizes}}
+\item 
+double \mbox{\hyperlink{structop_1_1_datum_a6cf96c250c236a03f13da69e1d4336d9}{scale\+Input\+To\+Output}}
+\item 
+\mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \mbox{\hyperlink{structop_1_1_datum_ac734d4262a5a7892c6d4094cdd2bcc7c}{net\+Output\+Size}}
+\item 
+double \mbox{\hyperlink{structop_1_1_datum_a44af7162e180c6856ce909057f43d8e1}{scale\+Net\+To\+Output}}
+\item 
+std\+::pair$<$ int, std\+::string $>$ \mbox{\hyperlink{structop_1_1_datum_a35212700ef2a2ac290a6666e2993a192}{element\+Rendered}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\mbox{\hyperlink{structop_1_1_datum}{Datum}}\+: The Open\+Pose Basic Piece of Information Between Threads \mbox{\hyperlink{structop_1_1_datum}{Datum}} is one the main Open\+Pose classes/structs. The workers and threads share by default a std\+::shared\+\_\+ptr$<$std\+::vector$<$\+Datum$>$$>$. It contains all the parameters that the different workers and threads need to exchange. 
+
+datum.\+hpp 파일의 18 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{structop_1_1_datum_a72c75834671aebe44705738fb5efc3c5}\label{structop_1_1_datum_a72c75834671aebe44705738fb5efc3c5}} 
+\index{op::Datum@{op::Datum}!Datum@{Datum}}
+\index{Datum@{Datum}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{Datum()}{Datum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily op\+::\+Datum\+::\+Datum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Default constructor struct. It simply initializes the struct, id is temporary set to 0 and each other variable is assigned to its default value. \mbox{\Hypertarget{structop_1_1_datum_a42f9aef848c6335c5a81cad374319f0b}\label{structop_1_1_datum_a42f9aef848c6335c5a81cad374319f0b}} 
+\index{op::Datum@{op::Datum}!Datum@{Datum}}
+\index{Datum@{Datum}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{Datum()}{Datum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily op\+::\+Datum\+::\+Datum (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&}]{datum }\end{DoxyParamCaption})}
+
+Copy constructor. It performs {\ttfamily fast copy}\+: For performance purpose, copying a \mbox{\hyperlink{structop_1_1_datum}{Datum}} or Array$<$\+T$>$ or cv\+::\+Mat just copies the reference, it still shares the same internal data. Modifying the copied element will modify the original one. Use \mbox{\hyperlink{structop_1_1_datum_ad137a102ef753734a9413762d72e6d46}{clone()}} for a slower but real copy, similarly to cv\+::\+Mat and Array$<$\+T$>$. 
+\begin{DoxyParams}{매개변수}
+{\em datum} & \mbox{\hyperlink{structop_1_1_datum}{Datum}} to be copied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structop_1_1_datum_a2d4940d8cb12d95b8588cd0280f6524c}\label{structop_1_1_datum_a2d4940d8cb12d95b8588cd0280f6524c}} 
+\index{op::Datum@{op::Datum}!Datum@{Datum}}
+\index{Datum@{Datum}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{Datum()}{Datum()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily op\+::\+Datum\+::\+Datum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structop_1_1_datum}{Datum}} \&\&}]{datum }\end{DoxyParamCaption})}
+
+Move constructor. It destroys the original \mbox{\hyperlink{structop_1_1_datum}{Datum}} to be moved. 
+\begin{DoxyParams}{매개변수}
+{\em datum} & \mbox{\hyperlink{structop_1_1_datum}{Datum}} to be moved. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structop_1_1_datum_a16b968aec06e9b904751216402972e74}\label{structop_1_1_datum_a16b968aec06e9b904751216402972e74}} 
+\index{op::Datum@{op::Datum}!````~Datum@{$\sim$Datum}}
+\index{````~Datum@{$\sim$Datum}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{$\sim$Datum()}{~Datum()}}
+{\footnotesize\ttfamily virtual op\+::\+Datum\+::$\sim$\+Datum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor class. Declared virtual so that \mbox{\hyperlink{structop_1_1_datum}{Datum}} can be inherited. 
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{structop_1_1_datum_ad137a102ef753734a9413762d72e6d46}\label{structop_1_1_datum_ad137a102ef753734a9413762d72e6d46}} 
+\index{op::Datum@{op::Datum}!clone@{clone}}
+\index{clone@{clone}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structop_1_1_datum}{Datum}} op\+::\+Datum\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Clone function. Similar to cv\+::\+Mat\+::clone and \mbox{\hyperlink{classop_1_1_array_ab0b95bf5488cccad3bce7413251b04de}{Array$<$\+T$>$\+::clone}}. It performs a real but slow copy of the data, i.\+e., even if the copied element is modified, the original one is not. \begin{DoxyReturn}{반환값}
+The resulting \mbox{\hyperlink{structop_1_1_datum}{Datum}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structop_1_1_datum_a8337f6ff81ba8231ceeabc840372bff9}\label{structop_1_1_datum_a8337f6ff81ba8231ceeabc840372bff9}} 
+\index{op::Datum@{op::Datum}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool op\+::\+Datum\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&}]{datum }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Not equal comparison operator. 
+\begin{DoxyParams}{매개변수}
+{\em datum} & \mbox{\hyperlink{structop_1_1_datum}{Datum}} to be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Whether the instance satisfies the condition with respect to datum. 
+\end{DoxyReturn}
+
+
+datum.\+hpp 파일의 394 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{395         \{}
+\DoxyCodeLine{396             \textcolor{comment}{// return id != datum.id;}}
+\DoxyCodeLine{397             \textcolor{keywordflow}{return} \textcolor{keywordtype}{id} != datum.id || \mbox{\hyperlink{structop_1_1_datum_aeb6d10e4fa40a20d38118bf1be3112d8}{subId}} != datum.subId;}
+\DoxyCodeLine{398         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structop_1_1_datum_a9d67e55fbc26399e4efd2385c1899541}\label{structop_1_1_datum_a9d67e55fbc26399e4efd2385c1899541}} 
+\index{op::Datum@{op::Datum}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool op\+::\+Datum\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&}]{datum }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Less comparison operator. 
+\begin{DoxyParams}{매개변수}
+{\em datum} & \mbox{\hyperlink{structop_1_1_datum}{Datum}} to be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Whether the instance satisfies the condition with respect to datum. 
+\end{DoxyReturn}
+
+
+datum.\+hpp 파일의 344 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{345         \{}
+\DoxyCodeLine{346             \textcolor{comment}{// return id < datum.id;}}
+\DoxyCodeLine{347             \textcolor{keywordflow}{return} \textcolor{keywordtype}{id} < datum.id || (\textcolor{keywordtype}{id} == datum.id \&\& \mbox{\hyperlink{structop_1_1_datum_aeb6d10e4fa40a20d38118bf1be3112d8}{subId}} < datum.subId);}
+\DoxyCodeLine{348         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structop_1_1_datum_a32752199884dcb51b7157daa098063e1}\label{structop_1_1_datum_a32752199884dcb51b7157daa098063e1}} 
+\index{op::Datum@{op::Datum}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool op\+::\+Datum\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&}]{datum }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Less or equal comparison operator. 
+\begin{DoxyParams}{매개변수}
+{\em datum} & \mbox{\hyperlink{structop_1_1_datum}{Datum}} to be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Whether the instance satisfies the condition with respect to datum. 
+\end{DoxyReturn}
+
+
+datum.\+hpp 파일의 364 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{365         \{}
+\DoxyCodeLine{366             \textcolor{comment}{// return id <= datum.id;}}
+\DoxyCodeLine{367             \textcolor{keywordflow}{return} \textcolor{keywordtype}{id} < datum.id || (\textcolor{keywordtype}{id} == datum.id \&\& \mbox{\hyperlink{structop_1_1_datum_aeb6d10e4fa40a20d38118bf1be3112d8}{subId}} <= datum.subId);}
+\DoxyCodeLine{368         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structop_1_1_datum_a72ee10bf507aea368cfd3dba3dd38cb5}\label{structop_1_1_datum_a72ee10bf507aea368cfd3dba3dd38cb5}} 
+\index{op::Datum@{op::Datum}!operator=@{operator=}}
+\index{operator=@{operator=}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structop_1_1_datum}{Datum}}\& op\+::\+Datum\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&}]{datum }\end{DoxyParamCaption})}
+
+Copy assignment. Similar to \mbox{\hyperlink{structop_1_1_datum_a42f9aef848c6335c5a81cad374319f0b}{Datum\+::\+Datum(const Datum\& datum)}}. 
+\begin{DoxyParams}{매개변수}
+{\em datum} & \mbox{\hyperlink{structop_1_1_datum}{Datum}} to be copied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+The resulting \mbox{\hyperlink{structop_1_1_datum}{Datum}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structop_1_1_datum_a24f3bfcb0ffffeb5742eb1530bc9e367}\label{structop_1_1_datum_a24f3bfcb0ffffeb5742eb1530bc9e367}} 
+\index{op::Datum@{op::Datum}!operator=@{operator=}}
+\index{operator=@{operator=}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structop_1_1_datum}{Datum}}\& op\+::\+Datum\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structop_1_1_datum}{Datum}} \&\&}]{datum }\end{DoxyParamCaption})}
+
+Move assignment. Similar to \mbox{\hyperlink{structop_1_1_datum_a2d4940d8cb12d95b8588cd0280f6524c}{Datum\+::\+Datum(\+Datum\&\& datum)}}. 
+\begin{DoxyParams}{매개변수}
+{\em datum} & \mbox{\hyperlink{structop_1_1_datum}{Datum}} to be moved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+The resulting \mbox{\hyperlink{structop_1_1_datum}{Datum}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structop_1_1_datum_ae740051202ca0db8358d5308143bb1b3}\label{structop_1_1_datum_ae740051202ca0db8358d5308143bb1b3}} 
+\index{op::Datum@{op::Datum}!operator==@{operator==}}
+\index{operator==@{operator==}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool op\+::\+Datum\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&}]{datum }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Equal comparison operator. 
+\begin{DoxyParams}{매개변수}
+{\em datum} & \mbox{\hyperlink{structop_1_1_datum}{Datum}} to be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Whether the instance satisfies the condition with respect to datum. 
+\end{DoxyReturn}
+
+
+datum.\+hpp 파일의 384 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{385         \{}
+\DoxyCodeLine{386             \textcolor{comment}{// return id == datum.id;}}
+\DoxyCodeLine{387             \textcolor{keywordflow}{return} \textcolor{keywordtype}{id} == datum.id \&\& \mbox{\hyperlink{structop_1_1_datum_aeb6d10e4fa40a20d38118bf1be3112d8}{subId}} == datum.subId;}
+\DoxyCodeLine{388         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structop_1_1_datum_a79a05bec9871522cfab5d33cc7b63614}\label{structop_1_1_datum_a79a05bec9871522cfab5d33cc7b63614}} 
+\index{op::Datum@{op::Datum}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool op\+::\+Datum\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&}]{datum }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Greater comparison operator. 
+\begin{DoxyParams}{매개변수}
+{\em datum} & \mbox{\hyperlink{structop_1_1_datum}{Datum}} to be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Whether the instance satisfies the condition with respect to datum. 
+\end{DoxyReturn}
+
+
+datum.\+hpp 파일의 354 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{355         \{}
+\DoxyCodeLine{356             \textcolor{comment}{// return id > datum.id;}}
+\DoxyCodeLine{357             \textcolor{keywordflow}{return} \textcolor{keywordtype}{id} > datum.id || (\textcolor{keywordtype}{id} == datum.id \&\& \mbox{\hyperlink{structop_1_1_datum_aeb6d10e4fa40a20d38118bf1be3112d8}{subId}} > datum.subId);}
+\DoxyCodeLine{358         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structop_1_1_datum_ab97601a7628b46619f4a071cf1613ce6}\label{structop_1_1_datum_ab97601a7628b46619f4a071cf1613ce6}} 
+\index{op::Datum@{op::Datum}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool op\+::\+Datum\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_datum}{Datum}} \&}]{datum }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Greater or equal comparison operator. 
+\begin{DoxyParams}{매개변수}
+{\em datum} & \mbox{\hyperlink{structop_1_1_datum}{Datum}} to be compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Whether the instance satisfies the condition with respect to datum. 
+\end{DoxyReturn}
+
+
+datum.\+hpp 파일의 374 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{375         \{}
+\DoxyCodeLine{376             \textcolor{comment}{// return id >= datum.id;}}
+\DoxyCodeLine{377             \textcolor{keywordflow}{return} \textcolor{keywordtype}{id} > datum.id || (\textcolor{keywordtype}{id} == datum.id \&\& \mbox{\hyperlink{structop_1_1_datum_aeb6d10e4fa40a20d38118bf1be3112d8}{subId}} >= datum.subId);}
+\DoxyCodeLine{378         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{structop_1_1_datum_a8f878dc9157bc9b786046d56fd151e2a}\label{structop_1_1_datum_a8f878dc9157bc9b786046d56fd151e2a}} 
+\index{op::Datum@{op::Datum}!cameraExtrinsics@{cameraExtrinsics}}
+\index{cameraExtrinsics@{cameraExtrinsics}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{cameraExtrinsics}{cameraExtrinsics}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Datum\+::camera\+Extrinsics}
+
+3x4 extrinsic parameters of the camera. 
+
+datum.\+hpp 파일의 203 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a2cabb5abd5892e5b4ca7c2958820a708}\label{structop_1_1_datum_a2cabb5abd5892e5b4ca7c2958820a708}} 
+\index{op::Datum@{op::Datum}!cameraIntrinsics@{cameraIntrinsics}}
+\index{cameraIntrinsics@{cameraIntrinsics}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{cameraIntrinsics}{cameraIntrinsics}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Datum\+::camera\+Intrinsics}
+
+3x3 intrinsic parameters of the camera. 
+
+datum.\+hpp 파일의 208 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_aeab7638276f1d9eb14847302bd0d0287}\label{structop_1_1_datum_aeab7638276f1d9eb14847302bd0d0287}} 
+\index{op::Datum@{op::Datum}!cameraMatrix@{cameraMatrix}}
+\index{cameraMatrix@{cameraMatrix}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{cameraMatrix}{cameraMatrix}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Datum\+::camera\+Matrix}
+
+3x4 camera matrix of the camera (equivalent to camera\+Intrinsics $\ast$ camera\+Extrinsics). 
+
+datum.\+hpp 파일의 198 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a0b2c8ccac37be088524cc7c24a502c7b}\label{structop_1_1_datum_a0b2c8ccac37be088524cc7c24a502c7b}} 
+\index{op::Datum@{op::Datum}!cvInputData@{cvInputData}}
+\index{cvInputData@{cvInputData}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{cvInputData}{cvInputData}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Datum\+::cv\+Input\+Data}
+
+Original image to be processed in cv\+::\+Mat uchar format. Size\+: (input\+\_\+width x input\+\_\+height) x 3 channels 
+
+datum.\+hpp 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a0d1f1c3d3494386e2d652268f6e17b5a}\label{structop_1_1_datum_a0d1f1c3d3494386e2d652268f6e17b5a}} 
+\index{op::Datum@{op::Datum}!cvOutputData@{cvOutputData}}
+\index{cvOutputData@{cvOutputData}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{cvOutputData}{cvOutputData}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Datum\+::cv\+Output\+Data}
+
+Rendered image in cv\+::\+Mat uchar format. It has been resized to the desired output resolution (e.\+g., {\ttfamily resolution} flag in the demo). If output\+Data is empty, cv\+Output\+Data will also be empty. Size\+: (output\+\_\+height x output\+\_\+width) x 3 channels 
+
+datum.\+hpp 파일의 71 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a08909a6f5bc17d8d72c3ac8cb0d816a4}\label{structop_1_1_datum_a08909a6f5bc17d8d72c3ac8cb0d816a4}} 
+\index{op::Datum@{op::Datum}!cvOutputData3D@{cvOutputData3D}}
+\index{cvOutputData3D@{cvOutputData3D}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{cvOutputData3D}{cvOutputData3D}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Datum\+::cv\+Output\+Data3D}
+
+Rendered 3D image in cv\+::\+Mat uchar format. 
+
+datum.\+hpp 파일의 76 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a35212700ef2a2ac290a6666e2993a192}\label{structop_1_1_datum_a35212700ef2a2ac290a6666e2993a192}} 
+\index{op::Datum@{op::Datum}!elementRendered@{elementRendered}}
+\index{elementRendered@{elementRendered}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{elementRendered}{elementRendered}}
+{\footnotesize\ttfamily std\+::pair$<$int, std\+::string$>$ op\+::\+Datum\+::element\+Rendered}
+
+Pair with the element key id P\+O\+S\+E\+\_\+\+B\+O\+D\+Y\+\_\+\+P\+A\+R\+T\+\_\+\+M\+A\+P\+P\+I\+NG on {\ttfamily \mbox{\hyperlink{pose_parameters_8hpp}{pose/pose\+Parameters.\+hpp}}} and its mapped value (e.\+g. 1 and \char`\"{}\+Neck\char`\"{}). 
+
+datum.\+hpp 파일의 249 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_ae0c0f33a6b75c7f47e11112dd33f23c1}\label{structop_1_1_datum_ae0c0f33a6b75c7f47e11112dd33f23c1}} 
+\index{op::Datum@{op::Datum}!faceHeatMaps@{faceHeatMaps}}
+\index{faceHeatMaps@{faceHeatMaps}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{faceHeatMaps}{faceHeatMaps}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Datum\+::face\+Heat\+Maps}
+
+Face pose heatmaps (face parts and/or background) for the whole image. Analogous of body\+Heat\+Maps applied to face. However, there is no P\+A\+Fs and the size is different. Size\+: \#people x \#face parts (70) x output\+\_\+net\+\_\+height x output\+\_\+net\+\_\+width 
+
+datum.\+hpp 파일의 149 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_aebd19bf50725a5cd87de1efd96f6ebfe}\label{structop_1_1_datum_aebd19bf50725a5cd87de1efd96f6ebfe}} 
+\index{op::Datum@{op::Datum}!faceKeypoints@{faceKeypoints}}
+\index{faceKeypoints@{faceKeypoints}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{faceKeypoints}{faceKeypoints}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Datum\+::face\+Keypoints}
+
+Face keypoints (x,y,score) locations for each person in the image. It has been resized to the same resolution as {\ttfamily pose\+Keypoints}. Size\+: \#people x \#face parts (70) x 3 ((x,y) coordinates + score) 
+
+datum.\+hpp 파일의 142 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a9a44196a197d5c050e626efe8b016e84}\label{structop_1_1_datum_a9a44196a197d5c050e626efe8b016e84}} 
+\index{op::Datum@{op::Datum}!faceKeypoints3D@{faceKeypoints3D}}
+\index{faceKeypoints3D@{faceKeypoints3D}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{faceKeypoints3D}{faceKeypoints3D}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Datum\+::face\+Keypoints3D}
+
+Face keypoints (x,y,z,score) locations for each person in the image. It has been resized to the same resolution as {\ttfamily pose\+Keypoints3D}. Size\+: \#people x \#face parts (70) x 4 ((x,y,z) coordinates + score) 
+
+datum.\+hpp 파일의 185 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a0b2f6955a1751fc79b107789272effad}\label{structop_1_1_datum_a0b2f6955a1751fc79b107789272effad}} 
+\index{op::Datum@{op::Datum}!faceRectangles@{faceRectangles}}
+\index{faceRectangles@{faceRectangles}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{faceRectangles}{faceRectangles}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$float$>$ $>$ op\+::\+Datum\+::face\+Rectangles}
+
+Face detection locations (x,y,width,height) for each person in the image. It is resized to cv\+Input\+Data.\+size(). Size\+: \#people 
+
+datum.\+hpp 파일의 135 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a8b930d61467f98702ebea68f39fc762b}\label{structop_1_1_datum_a8b930d61467f98702ebea68f39fc762b}} 
+\index{op::Datum@{op::Datum}!frameNumber@{frameNumber}}
+\index{frameNumber@{frameNumber}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{frameNumber}{frameNumber}}
+{\footnotesize\ttfamily unsigned long long op\+::\+Datum\+::frame\+Number}
+
+Corresponding frame number. If the producer (e.\+g., video) starts from frame 0 and does not repeat any frame, then frame\+Number should match the field id. 
+
+datum.\+hpp 파일의 37 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_aef6c478313691ab5101664c1df55aa58}\label{structop_1_1_datum_aef6c478313691ab5101664c1df55aa58}} 
+\index{op::Datum@{op::Datum}!handHeatMaps@{handHeatMaps}}
+\index{handHeatMaps@{handHeatMaps}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{handHeatMaps}{handHeatMaps}}
+{\footnotesize\ttfamily std\+::array$<$\mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$, 2$>$ op\+::\+Datum\+::hand\+Heat\+Maps}
+
+Hand pose heatmaps (hand parts and/or background) for the whole image. Analogous of face\+Heat\+Maps applied to face. Size each \mbox{\hyperlink{classop_1_1_array}{Array}}\+: \#people x \#hand parts (21) x output\+\_\+net\+\_\+height x output\+\_\+net\+\_\+width 
+
+datum.\+hpp 파일의 171 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a59d455dbddc50d700809c5e102c40d4e}\label{structop_1_1_datum_a59d455dbddc50d700809c5e102c40d4e}} 
+\index{op::Datum@{op::Datum}!handKeypoints@{handKeypoints}}
+\index{handKeypoints@{handKeypoints}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{handKeypoints}{handKeypoints}}
+{\footnotesize\ttfamily std\+::array$<$\mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$, 2$>$ op\+::\+Datum\+::hand\+Keypoints}
+
+Hand keypoints (x,y,score) locations for each person in the image. It has been resized to the same resolution as {\ttfamily pose\+Keypoints}. hand\+Keypoints\mbox{[}0\mbox{]} corresponds to left hands, and hand\+Keypoints\mbox{[}1\mbox{]} to right ones. Size each \mbox{\hyperlink{classop_1_1_array}{Array}}\+: \#people x \#hand parts (21) x 3 ((x,y) coordinates + score) 
+
+datum.\+hpp 파일의 164 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a27bb38102b5ebecd9b13a3619e658316}\label{structop_1_1_datum_a27bb38102b5ebecd9b13a3619e658316}} 
+\index{op::Datum@{op::Datum}!handKeypoints3D@{handKeypoints3D}}
+\index{handKeypoints3D@{handKeypoints3D}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{handKeypoints3D}{handKeypoints3D}}
+{\footnotesize\ttfamily std\+::array$<$\mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$, 2$>$ op\+::\+Datum\+::hand\+Keypoints3D}
+
+Hand keypoints (x,y,z,score) locations for each person in the image. It has been resized to the same resolution as {\ttfamily pose\+Keypoints3D}. hand\+Keypoints\mbox{[}0\mbox{]} corresponds to left hands, and hand\+Keypoints\mbox{[}1\mbox{]} to right ones. Size each \mbox{\hyperlink{classop_1_1_array}{Array}}\+: \#people x \#hand parts (21) x 4 ((x,y,z) coordinates + score) 
+
+datum.\+hpp 파일의 193 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a52d75e3273490624414f0602785bb608}\label{structop_1_1_datum_a52d75e3273490624414f0602785bb608}} 
+\index{op::Datum@{op::Datum}!handRectangles@{handRectangles}}
+\index{handRectangles@{handRectangles}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{handRectangles}{handRectangles}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::array$<$\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$float$>$, 2$>$ $>$ op\+::\+Datum\+::hand\+Rectangles}
+
+Hand detection locations (x,y,width,height) for each person in the image. It is resized to cv\+Input\+Data.\+size(). Size\+: \#people 
+
+datum.\+hpp 파일의 156 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a65deddd49d0fbca81f367198fc600015}\label{structop_1_1_datum_a65deddd49d0fbca81f367198fc600015}} 
+\index{op::Datum@{op::Datum}!id@{id}}
+\index{id@{id}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily unsigned long long op\+::\+Datum\+::id}
+
+\mbox{\hyperlink{structop_1_1_datum}{Datum}} ID. Internally used to sort the Datums if multi-\/threading is used. 
+
+datum.\+hpp 파일의 21 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a46ff336119fd0d67c8223b1a9371731d}\label{structop_1_1_datum_a46ff336119fd0d67c8223b1a9371731d}} 
+\index{op::Datum@{op::Datum}!inputNetData@{inputNetData}}
+\index{inputNetData@{inputNetData}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{inputNetData}{inputNetData}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ $>$ op\+::\+Datum\+::input\+Net\+Data}
+
+Original image to be processed in \mbox{\hyperlink{classop_1_1_array}{Array$<$float$>$}} format. It has been resized to the net input resolution, as well as reformatted \mbox{\hyperlink{classop_1_1_array}{Array$<$float$>$}} format to be compatible with the net. If $>$1 scales, each scale is right-\/ and bottom-\/padded to fill the greatest resolution. The scales are sorted from bigger to smaller. Vector size\+: \#scales Each array size\+: 3 x input\+\_\+net\+\_\+height x input\+\_\+net\+\_\+width 
+
+datum.\+hpp 파일의 55 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_ae6adcdacea12a9cfa445cf0cac1985b0}\label{structop_1_1_datum_ae6adcdacea12a9cfa445cf0cac1985b0}} 
+\index{op::Datum@{op::Datum}!name@{name}}
+\index{name@{name}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string op\+::\+Datum\+::name}
+
+Name used when saving the data to disk (e.\+g., {\ttfamily write\+\_\+images} or {\ttfamily write\+\_\+keypoint} flags in the demo). 
+
+datum.\+hpp 파일의 30 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a32d164c01acf6b4f7eb1323d74edbdca}\label{structop_1_1_datum_a32d164c01acf6b4f7eb1323d74edbdca}} 
+\index{op::Datum@{op::Datum}!netInputSizes@{netInputSizes}}
+\index{netInputSizes@{netInputSizes}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{netInputSizes}{netInputSizes}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structop_1_1_point}{Point}}$<$int$>$ $>$ op\+::\+Datum\+::net\+Input\+Sizes}
+
+\mbox{\hyperlink{namespaceop_a5418b76dad5b4aea1133325f4aa715aca6f6cb72d544962fa333e2e34ce64f719}{Size(s)}} (width x height) of the image(s) fed to the pose deep net. The size of the std\+::vector corresponds to the number of scales. 
+
+datum.\+hpp 파일의 228 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_ac734d4262a5a7892c6d4094cdd2bcc7c}\label{structop_1_1_datum_ac734d4262a5a7892c6d4094cdd2bcc7c}} 
+\index{op::Datum@{op::Datum}!netOutputSize@{netOutputSize}}
+\index{netOutputSize@{netOutputSize}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{netOutputSize}{netOutputSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structop_1_1_point}{Point}}$<$int$>$ op\+::\+Datum\+::net\+Output\+Size}
+
+Size (width x height) of the image returned by the deep net. 
+
+datum.\+hpp 파일의 238 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a42b953c082f479eddc527da9a3a4cc75}\label{structop_1_1_datum_a42b953c082f479eddc527da9a3a4cc75}} 
+\index{op::Datum@{op::Datum}!outputData@{outputData}}
+\index{outputData@{outputData}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{outputData}{outputData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Datum\+::output\+Data}
+
+Rendered image in \mbox{\hyperlink{classop_1_1_array}{Array$<$float$>$}} format. It consists of a blending of the cv\+Input\+Data and the pose/body part(s) heatmap/\+P\+AF(s). If rendering is disabled (e.\+g., {\ttfamily no\+\_\+render\+\_\+pose} flag in the demo), output\+Data will be empty. Size\+: 3 x output\+\_\+net\+\_\+height x output\+\_\+net\+\_\+width 
+
+datum.\+hpp 파일의 63 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a55dd5354e09696ed6896923755f1c85b}\label{structop_1_1_datum_a55dd5354e09696ed6896923755f1c85b}} 
+\index{op::Datum@{op::Datum}!poseCandidates@{poseCandidates}}
+\index{poseCandidates@{poseCandidates}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{poseCandidates}{poseCandidates}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$std\+::array$<$float,3$>$ $>$ $>$ op\+::\+Datum\+::pose\+Candidates}
+
+Body pose candidates for the whole image. This parameter is by default empty and disabled for performance. It can be enabled with {\ttfamily candidates\+\_\+body}. Candidates refer to all the detected body parts, before being assembled into people. Note that the number of candidates is equal or higher than the number of body parts after being assembled into people. Size\+: \#body parts x min(part candidates, P\+O\+S\+E\+\_\+\+M\+A\+X\+\_\+\+P\+E\+O\+P\+L\+E) x 3 (x,y,score). Rather than vector, it should ideally be\+: std\+::array$<$std\+::vector$<$std\+::array$<$float,3$>$$>$, \#\+BP$>$ pose\+Candidates; 
+
+datum.\+hpp 파일의 128 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a5429e97e0ab9b0e2209a3947af668381}\label{structop_1_1_datum_a5429e97e0ab9b0e2209a3947af668381}} 
+\index{op::Datum@{op::Datum}!poseHeatMaps@{poseHeatMaps}}
+\index{poseHeatMaps@{poseHeatMaps}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{poseHeatMaps}{poseHeatMaps}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Datum\+::pose\+Heat\+Maps}
+
+Body pose heatmaps (body parts, background and/or P\+A\+Fs) for the whole image. This parameter is by default empty and disabled for performance. Each group (body parts, background and P\+A\+Fs) can be individually enabled. \#heatmaps = \#body parts (if enabled) + 1 (if background enabled) + 2 x \mbox{\hyperlink{namespaceop_a1c3dbc214e7552f7ef9cc753ee97226ba21c5c3f60f4881b8d5477f5628db74f1}{P\+A\+Fs}} (if enabled). Each P\+AF has 2 consecutive channels, one for x-\/ and one for y-\/coordinates. Order heatmaps\+: body parts + background (as appears in P\+O\+S\+E\+\_\+\+B\+O\+D\+Y\+\_\+\+P\+A\+R\+T\+\_\+\+M\+A\+P\+P\+I\+NG) + (x,y) channel of each P\+AF (sorted as appears in P\+O\+S\+E\+\_\+\+B\+O\+D\+Y\+\_\+\+P\+A\+R\+T\+\_\+\+P\+A\+I\+RS). See {\ttfamily \mbox{\hyperlink{pose_parameters_8hpp}{pose/pose\+Parameters.\+hpp}}}. The user can choose the heatmaps normalization\+: ranges \mbox{[}0, 1\mbox{]}, \mbox{[}-\/1, 1\mbox{]} or \mbox{[}0, 255\mbox{]}. Check the {\ttfamily heatmaps\+\_\+scale} flag in \{Open\+Pose\+\_\+path\}doc/demo\+\_\+overview.\+md for more details. Size\+: \#heatmaps x output\+\_\+net\+\_\+height x output\+\_\+net\+\_\+width 
+
+datum.\+hpp 파일의 117 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_aba90dccffb5a830296231bd430c4766c}\label{structop_1_1_datum_aba90dccffb5a830296231bd430c4766c}} 
+\index{op::Datum@{op::Datum}!poseIds@{poseIds}}
+\index{poseIds@{poseIds}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{poseIds}{poseIds}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$long long$>$ op\+::\+Datum\+::pose\+Ids}
+
+People ID It returns a person ID for each body pose, providing temporal consistency. The ID will be the same one for a person across frames. I.\+e. this ID allows to keep track of the same person in time. If either person identification is disabled or pose\+Keypoints is empty, pose\+Ids will also be empty. Size\+: \#people 
+
+datum.\+hpp 파일의 93 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a6d629b1f6f7b958fe4cf2ef4cdf57c5b}\label{structop_1_1_datum_a6d629b1f6f7b958fe4cf2ef4cdf57c5b}} 
+\index{op::Datum@{op::Datum}!poseKeypoints@{poseKeypoints}}
+\index{poseKeypoints@{poseKeypoints}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{poseKeypoints}{poseKeypoints}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Datum\+::pose\+Keypoints}
+
+Body pose (x,y,score) locations for each person in the image. It has been resized to the desired output resolution (e.\+g., {\ttfamily resolution} flag in the demo). Size\+: \#people x \#body parts (e.\+g., 18 for C\+O\+CO or 15 for M\+PI) x 3 ((x,y) coordinates + score) 
+
+datum.\+hpp 파일의 84 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a652ac1e7de13ec9a886dece75848cfea}\label{structop_1_1_datum_a652ac1e7de13ec9a886dece75848cfea}} 
+\index{op::Datum@{op::Datum}!poseKeypoints3D@{poseKeypoints3D}}
+\index{poseKeypoints3D@{poseKeypoints3D}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{poseKeypoints3D}{poseKeypoints3D}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Datum\+::pose\+Keypoints3D}
+
+Body pose (x,y,z,score) locations for each person in the image. Size\+: \#people x \#body parts (e.\+g., 18 for C\+O\+CO or 15 for M\+PI) x 4 ((x,y,z) coordinates + score) 
+
+datum.\+hpp 파일의 178 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a8f6f5fd181abe3bdfd6f7bdf8a165782}\label{structop_1_1_datum_a8f6f5fd181abe3bdfd6f7bdf8a165782}} 
+\index{op::Datum@{op::Datum}!poseNetOutput@{poseNetOutput}}
+\index{poseNetOutput@{poseNetOutput}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{poseNetOutput}{poseNetOutput}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Datum\+::pose\+Net\+Output}
+
+If it is not empty, Open\+Pose will not run its internal body pose estimation network and will instead use this data as the substitute of its network. The size of this element must match the size of the output of its internal network, or it will lead to core dumped (segmentation) errors. You can modify the pose estimation flags to match the dimension of both elements (e.\+g., {\ttfamily -\/-\/net\+\_\+resolution}, {\ttfamily -\/-\/scale\+\_\+number}, etc.). 
+
+datum.\+hpp 파일의 216 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_afb117821de7aff9ac3c219ef3bbc0c14}\label{structop_1_1_datum_afb117821de7aff9ac3c219ef3bbc0c14}} 
+\index{op::Datum@{op::Datum}!poseScores@{poseScores}}
+\index{poseScores@{poseScores}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{poseScores}{poseScores}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Datum\+::pose\+Scores}
+
+Body pose global confidence/score for each person in the image. It does not only consider the score of each body keypoint, but also the score of each P\+AF association. Optimized for C\+O\+CO evaluation metric. It will highly penalyze people with missing body parts (e.\+g., cropped people on the borders of the image). If pose\+Keypoints is empty, pose\+Scores will also be empty. Size\+: \#people 
+
+datum.\+hpp 파일의 103 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a0e416771f275be98c83aaff01e482a71}\label{structop_1_1_datum_a0e416771f275be98c83aaff01e482a71}} 
+\index{op::Datum@{op::Datum}!scaleInputToNetInputs@{scaleInputToNetInputs}}
+\index{scaleInputToNetInputs@{scaleInputToNetInputs}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{scaleInputToNetInputs}{scaleInputToNetInputs}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ op\+::\+Datum\+::scale\+Input\+To\+Net\+Inputs}
+
+Scale ratio between the input \mbox{\hyperlink{structop_1_1_datum_a0b2c8ccac37be088524cc7c24a502c7b}{Datum\+::cv\+Input\+Data}} and the net input size. 
+
+datum.\+hpp 파일의 222 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a6cf96c250c236a03f13da69e1d4336d9}\label{structop_1_1_datum_a6cf96c250c236a03f13da69e1d4336d9}} 
+\index{op::Datum@{op::Datum}!scaleInputToOutput@{scaleInputToOutput}}
+\index{scaleInputToOutput@{scaleInputToOutput}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{scaleInputToOutput}{scaleInputToOutput}}
+{\footnotesize\ttfamily double op\+::\+Datum\+::scale\+Input\+To\+Output}
+
+Scale ratio between the input \mbox{\hyperlink{structop_1_1_datum_a0b2c8ccac37be088524cc7c24a502c7b}{Datum\+::cv\+Input\+Data}} and the output \mbox{\hyperlink{structop_1_1_datum_a0d1f1c3d3494386e2d652268f6e17b5a}{Datum\+::cv\+Output\+Data}}. 
+
+datum.\+hpp 파일의 233 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_a44af7162e180c6856ce909057f43d8e1}\label{structop_1_1_datum_a44af7162e180c6856ce909057f43d8e1}} 
+\index{op::Datum@{op::Datum}!scaleNetToOutput@{scaleNetToOutput}}
+\index{scaleNetToOutput@{scaleNetToOutput}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{scaleNetToOutput}{scaleNetToOutput}}
+{\footnotesize\ttfamily double op\+::\+Datum\+::scale\+Net\+To\+Output}
+
+Scale ratio between the net output and the final output \mbox{\hyperlink{structop_1_1_datum_a0d1f1c3d3494386e2d652268f6e17b5a}{Datum\+::cv\+Output\+Data}}. 
+
+datum.\+hpp 파일의 243 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_aeb6d10e4fa40a20d38118bf1be3112d8}\label{structop_1_1_datum_aeb6d10e4fa40a20d38118bf1be3112d8}} 
+\index{op::Datum@{op::Datum}!subId@{subId}}
+\index{subId@{subId}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{subId}{subId}}
+{\footnotesize\ttfamily unsigned long long op\+::\+Datum\+::sub\+Id}
+
+\mbox{\hyperlink{structop_1_1_datum}{Datum}} sub-\/\+ID. Internally used to sort the Datums if multi-\/threading is used. 
+
+datum.\+hpp 파일의 23 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_datum_ab87c493347456b592b616e9f656a5d60}\label{structop_1_1_datum_ab87c493347456b592b616e9f656a5d60}} 
+\index{op::Datum@{op::Datum}!subIdMax@{subIdMax}}
+\index{subIdMax@{subIdMax}!op::Datum@{op::Datum}}
+\doxysubsubsection{\texorpdfstring{subIdMax}{subIdMax}}
+{\footnotesize\ttfamily unsigned long long op\+::\+Datum\+::sub\+Id\+Max}
+
+\mbox{\hyperlink{structop_1_1_datum}{Datum}} maximum sub-\/\+ID. Used to sort the Datums if multi-\/threading is used. 
+
+datum.\+hpp 파일의 25 번째 라인에서 정의되었습니다.
+
+
+
+이 구조체에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/core/\mbox{\hyperlink{datum_8hpp}{datum.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,292 @@
+\hypertarget{classcl_1_1_n_d_range}{}\doxysection{cl\+::N\+D\+Range 클래스 참조}
+\label{classcl_1_1_n_d_range}\index{cl::NDRange@{cl::NDRange}}
+
+
+Class interface for specifying \mbox{\hyperlink{classcl_1_1_n_d_range}{N\+D\+Range}} values.  
+
+
+
+
+{\ttfamily \#include $<$cl2.\+hpp$>$}
+
+
+
+cl\+::N\+D\+Range에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classcl_1_1_n_d_range__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1_n_d_range_ad7121613ed829d6a21f4866e96b84217}{N\+D\+Range}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor -\/ resulting range has zero dimensions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_n_d_range_aecea642547cae272e0b108a3049afeeb}{N\+D\+Range}} (\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size0)
+\begin{DoxyCompactList}\small\item\em Constructs one-\/dimensional range. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_n_d_range_a6562c4ffea059267582aa22bc96d7435}{N\+D\+Range}} (\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size0, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size1)
+\begin{DoxyCompactList}\small\item\em Constructs two-\/dimensional range. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_n_d_range_a8fd331a55e1c4871e8ffa3a35b95e538}{N\+D\+Range}} (\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size0, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size1, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size2)
+\begin{DoxyCompactList}\small\item\em Constructs three-\/dimensional range. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_n_d_range_a5e85a035063589e50076bc112782a7ec}{operator const size\+\_\+type $\ast$}} () const
+\begin{DoxyCompactList}\small\item\em Conversion operator to const size\+\_\+type $\ast$. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} \mbox{\hyperlink{classcl_1_1_n_d_range_a5684b0c2c648557ef31e6b212e8c4939}{dimensions}} () const
+\begin{DoxyCompactList}\small\item\em Queries the number of dimensions in the range. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} \mbox{\hyperlink{classcl_1_1_n_d_range_ad197ecf968b6dce338137909827cb66f}{size}} () const
+\begin{DoxyCompactList}\small\item\em Returns the size of the object in bytes based on the \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} $\ast$ \mbox{\hyperlink{classcl_1_1_n_d_range_a9a72f7d2a096f981c1b6774144e7450e}{get}} ()
+\item 
+const \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} $\ast$ \mbox{\hyperlink{classcl_1_1_n_d_range_ac075f77b0ecd3a3e836538e2b076bfad}{get}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\+\_\+}} \mbox{[}3\mbox{]}
+\item 
+cl\+\_\+uint \mbox{\hyperlink{classcl_1_1_n_d_range_a7e9858d51301a74cb06e60b3c0753cda}{dimensions\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Class interface for specifying \mbox{\hyperlink{classcl_1_1_n_d_range}{N\+D\+Range}} values. 
+
+cl2.\+hpp 파일의 5531 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classcl_1_1_n_d_range_ad7121613ed829d6a21f4866e96b84217}\label{classcl_1_1_n_d_range_ad7121613ed829d6a21f4866e96b84217}} 
+\index{cl::NDRange@{cl::NDRange}!NDRange@{NDRange}}
+\index{NDRange@{NDRange}!cl::NDRange@{cl::NDRange}}
+\doxysubsubsection{\texorpdfstring{NDRange()}{NDRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily cl\+::\+N\+D\+Range\+::\+N\+D\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor -\/ resulting range has zero dimensions. 
+
+
+
+cl2.\+hpp 파일의 5539 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5540         : \mbox{\hyperlink{classcl_1_1_n_d_range_a7e9858d51301a74cb06e60b3c0753cda}{dimensions\_}}(0)}
+\DoxyCodeLine{5541     \{}
+\DoxyCodeLine{5542         \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}}[0] = 0;}
+\DoxyCodeLine{5543         \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}}[1] = 0;}
+\DoxyCodeLine{5544         \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}}[2] = 0;}
+\DoxyCodeLine{5545     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_n_d_range_aecea642547cae272e0b108a3049afeeb}\label{classcl_1_1_n_d_range_aecea642547cae272e0b108a3049afeeb}} 
+\index{cl::NDRange@{cl::NDRange}!NDRange@{NDRange}}
+\index{NDRange@{NDRange}!cl::NDRange@{cl::NDRange}}
+\doxysubsubsection{\texorpdfstring{NDRange()}{NDRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily cl\+::\+N\+D\+Range\+::\+N\+D\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size0 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs one-\/dimensional range. 
+
+
+
+cl2.\+hpp 파일의 5548 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5549         : \mbox{\hyperlink{classcl_1_1_n_d_range_a7e9858d51301a74cb06e60b3c0753cda}{dimensions\_}}(1)}
+\DoxyCodeLine{5550     \{}
+\DoxyCodeLine{5551         \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}}[0] = size0;}
+\DoxyCodeLine{5552         \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}}[1] = 1;}
+\DoxyCodeLine{5553         \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}}[2] = 1;}
+\DoxyCodeLine{5554     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_n_d_range_a6562c4ffea059267582aa22bc96d7435}\label{classcl_1_1_n_d_range_a6562c4ffea059267582aa22bc96d7435}} 
+\index{cl::NDRange@{cl::NDRange}!NDRange@{NDRange}}
+\index{NDRange@{NDRange}!cl::NDRange@{cl::NDRange}}
+\doxysubsubsection{\texorpdfstring{NDRange()}{NDRange()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily cl\+::\+N\+D\+Range\+::\+N\+D\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size0,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs two-\/dimensional range. 
+
+
+
+cl2.\+hpp 파일의 5557 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5558         : \mbox{\hyperlink{classcl_1_1_n_d_range_a7e9858d51301a74cb06e60b3c0753cda}{dimensions\_}}(2)}
+\DoxyCodeLine{5559     \{}
+\DoxyCodeLine{5560         \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}}[0] = size0;}
+\DoxyCodeLine{5561         \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}}[1] = size1;}
+\DoxyCodeLine{5562         \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}}[2] = 1;}
+\DoxyCodeLine{5563     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_n_d_range_a8fd331a55e1c4871e8ffa3a35b95e538}\label{classcl_1_1_n_d_range_a8fd331a55e1c4871e8ffa3a35b95e538}} 
+\index{cl::NDRange@{cl::NDRange}!NDRange@{NDRange}}
+\index{NDRange@{NDRange}!cl::NDRange@{cl::NDRange}}
+\doxysubsubsection{\texorpdfstring{NDRange()}{NDRange()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily cl\+::\+N\+D\+Range\+::\+N\+D\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size0,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size1,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs three-\/dimensional range. 
+
+
+
+cl2.\+hpp 파일의 5566 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5567         : \mbox{\hyperlink{classcl_1_1_n_d_range_a7e9858d51301a74cb06e60b3c0753cda}{dimensions\_}}(3)}
+\DoxyCodeLine{5568     \{}
+\DoxyCodeLine{5569         \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}}[0] = size0;}
+\DoxyCodeLine{5570         \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}}[1] = size1;}
+\DoxyCodeLine{5571         \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}}[2] = size2;}
+\DoxyCodeLine{5572     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classcl_1_1_n_d_range_a5684b0c2c648557ef31e6b212e8c4939}\label{classcl_1_1_n_d_range_a5684b0c2c648557ef31e6b212e8c4939}} 
+\index{cl::NDRange@{cl::NDRange}!dimensions@{dimensions}}
+\index{dimensions@{dimensions}!cl::NDRange@{cl::NDRange}}
+\doxysubsubsection{\texorpdfstring{dimensions()}{dimensions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} cl\+::\+N\+D\+Range\+::dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Queries the number of dimensions in the range. 
+
+
+
+cl2.\+hpp 파일의 5583 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5584     \{ }
+\DoxyCodeLine{5585         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1_n_d_range_a7e9858d51301a74cb06e60b3c0753cda}{dimensions\_}}; }
+\DoxyCodeLine{5586     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_n_d_range_a5684b0c2c648557ef31e6b212e8c4939_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_n_d_range_a9a72f7d2a096f981c1b6774144e7450e}\label{classcl_1_1_n_d_range_a9a72f7d2a096f981c1b6774144e7450e}} 
+\index{cl::NDRange@{cl::NDRange}!get@{get}}
+\index{get@{get}!cl::NDRange@{cl::NDRange}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}$\ast$ cl\+::\+N\+D\+Range\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 5595 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5596     \{}
+\DoxyCodeLine{5597         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}};}
+\DoxyCodeLine{5598     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_n_d_range_ac075f77b0ecd3a3e836538e2b076bfad}\label{classcl_1_1_n_d_range_ac075f77b0ecd3a3e836538e2b076bfad}} 
+\index{cl::NDRange@{cl::NDRange}!get@{get}}
+\index{get@{get}!cl::NDRange@{cl::NDRange}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}$\ast$ cl\+::\+N\+D\+Range\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 5600 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5601     \{}
+\DoxyCodeLine{5602         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}};}
+\DoxyCodeLine{5603     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_n_d_range_a5e85a035063589e50076bc112782a7ec}\label{classcl_1_1_n_d_range_a5e85a035063589e50076bc112782a7ec}} 
+\index{cl::NDRange@{cl::NDRange}!operator const size\_type $\ast$@{operator const size\_type $\ast$}}
+\index{operator const size\_type $\ast$@{operator const size\_type $\ast$}!cl::NDRange@{cl::NDRange}}
+\doxysubsubsection{\texorpdfstring{operator const size\_type $\ast$()}{operator const size\_type *()}}
+{\footnotesize\ttfamily cl\+::\+N\+D\+Range\+::operator const \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} $\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Conversion operator to const size\+\_\+type $\ast$. 
+
+\begin{DoxyReturn}{반환값}
+a pointer to the size of the first dimension. 
+\end{DoxyReturn}
+
+
+cl2.\+hpp 파일의 5578 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5578                                       \{ }
+\DoxyCodeLine{5579         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}{sizes\_}}; }
+\DoxyCodeLine{5580     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_n_d_range_ad197ecf968b6dce338137909827cb66f}\label{classcl_1_1_n_d_range_ad197ecf968b6dce338137909827cb66f}} 
+\index{cl::NDRange@{cl::NDRange}!size@{size}}
+\index{size@{size}!cl::NDRange@{cl::NDRange}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} cl\+::\+N\+D\+Range\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the size of the object in bytes based on the 
+
+
+
+cl2.\+hpp 파일의 5590 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5591     \{}
+\DoxyCodeLine{5592         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1_n_d_range_a7e9858d51301a74cb06e60b3c0753cda}{dimensions\_}}*\textcolor{keyword}{sizeof}(\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}});}
+\DoxyCodeLine{5593     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classcl_1_1_n_d_range_a7e9858d51301a74cb06e60b3c0753cda}\label{classcl_1_1_n_d_range_a7e9858d51301a74cb06e60b3c0753cda}} 
+\index{cl::NDRange@{cl::NDRange}!dimensions\_@{dimensions\_}}
+\index{dimensions\_@{dimensions\_}!cl::NDRange@{cl::NDRange}}
+\doxysubsubsection{\texorpdfstring{dimensions\_}{dimensions\_}}
+{\footnotesize\ttfamily cl\+\_\+uint cl\+::\+N\+D\+Range\+::dimensions\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+cl2.\+hpp 파일의 5535 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}\label{classcl_1_1_n_d_range_a96c7ab5729e5b21b165548c43b9080bc}} 
+\index{cl::NDRange@{cl::NDRange}!sizes\_@{sizes\_}}
+\index{sizes\_@{sizes\_}!cl::NDRange@{cl::NDRange}}
+\doxysubsubsection{\texorpdfstring{sizes\_}{sizes\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} cl\+::\+N\+D\+Range\+::sizes\+\_\+\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+cl2.\+hpp 파일의 5534 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/gpu/\mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}\end{DoxyCompactItemize}

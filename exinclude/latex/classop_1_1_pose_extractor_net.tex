@@ -1,0 +1,388 @@
+\hypertarget{classop_1_1_pose_extractor_net}{}\doxysection{op\+::Pose\+Extractor\+Net 클래스 참조}
+\label{classop_1_1_pose_extractor_net}\index{op::PoseExtractorNet@{op::PoseExtractorNet}}
+
+
+{\ttfamily \#include $<$pose\+Extractor\+Net.\+hpp$>$}
+
+
+
+op\+::Pose\+Extractor\+Net에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_pose_extractor_net__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::Pose\+Extractor\+Net에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_pose_extractor_net__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_pose_extractor_net_a450a3da459333c5e69e49a40a0b4bbfc}{Pose\+Extractor\+Net}} (const \mbox{\hyperlink{namespaceop_af5b3ce2a5d3de87cb31b9b67e96f261f}{Pose\+Model}} pose\+Model, const std\+::vector$<$ \mbox{\hyperlink{namespaceop_a1c3dbc214e7552f7ef9cc753ee97226b}{Heat\+Map\+Type}} $>$ \&heat\+Map\+Types=\{\}, const \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bda}{Scale\+Mode}} heat\+Map\+Scale\+Mode=\mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bdaa4b942544cb3e764bbb8d33f8a8744855}{Scale\+Mode\+::\+Zero\+To\+One}}, const bool add\+Part\+Candidates=false, const bool maximize\+Positives=false)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_pose_extractor_net_a963c679df20b16d475aa3a7c0661135c}{$\sim$\+Pose\+Extractor\+Net}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_pose_extractor_net_a28923c846dc7c731d3571c72a50acd2f}{initialization\+On\+Thread}} ()
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_pose_extractor_net_a95c48a9fc5368af73a54aa66e44b4bc2}{forward\+Pass}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$$>$ \&input\+Net\+Data, const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&input\+Data\+Size, const std\+::vector$<$ double $>$ \&scale\+Ratios=\{1.f\}, const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Net\+Output=\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$\{\})=0
+\item 
+virtual const float $\ast$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_a3e73f27594e61bf451b8e9fff7695f62}{get\+Candidates\+Cpu\+Const\+Ptr}} () const =0
+\item 
+virtual const float $\ast$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_abee987adbe411ca71b6b37ab9cd89a41}{get\+Candidates\+Gpu\+Const\+Ptr}} () const =0
+\item 
+virtual const float $\ast$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_a80cb59fa161a7ecd3d6a016354ab9002}{get\+Heat\+Map\+Cpu\+Const\+Ptr}} () const =0
+\item 
+virtual const float $\ast$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_ad1b526d42f690a8857c0ccdc88ff88ac}{get\+Heat\+Map\+Gpu\+Const\+Ptr}} () const =0
+\item 
+virtual std\+::vector$<$ int $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_a49e1dcb9f9d049131df866b7538507cd}{get\+Heat\+Map\+Size}} () const =0
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_ad6e1c91c60cf0041c196fd4347bbcdf5}{get\+Heat\+Maps\+Copy}} () const
+\item 
+std\+::vector$<$ std\+::vector$<$ std\+::array$<$ float, 3 $>$ $>$ $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_a56d7dd1157e70786850169897bcf6883}{get\+Candidates\+Copy}} () const
+\item 
+virtual const float $\ast$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_a546f0d6e0c62c7c7e2d44de848f9a174}{get\+Pose\+Gpu\+Const\+Ptr}} () const =0
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_a3e88bd2122835db768c123d1026ce30f}{get\+Pose\+Keypoints}} () const
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_a43317a6868ffa7391586f2b8b599ecdf}{get\+Pose\+Scores}} () const
+\item 
+float \mbox{\hyperlink{classop_1_1_pose_extractor_net_ac67c1d8fcba15ccfb284f10776e9fd89}{get\+Scale\+Net\+To\+Output}} () const
+\item 
+double \mbox{\hyperlink{classop_1_1_pose_extractor_net_aa9138224f4977da54517398ba044b7c3}{get}} (const \mbox{\hyperlink{namespaceop_a37c58b781e5bcd9fee67a7768afc5d0e}{Pose\+Property}} property) const
+\item 
+void \mbox{\hyperlink{classop_1_1_pose_extractor_net_a7e49f2339e21ff784689ec78c9d69b75}{set}} (const \mbox{\hyperlink{namespaceop_a37c58b781e5bcd9fee67a7768afc5d0e}{Pose\+Property}} property, const double value)
+\item 
+void \mbox{\hyperlink{classop_1_1_pose_extractor_net_a4959a9c9d433d9297e5daef0e3a0eabc}{increase}} (const \mbox{\hyperlink{namespaceop_a37c58b781e5bcd9fee67a7768afc5d0e}{Pose\+Property}} property, const double value)
+\item 
+void \mbox{\hyperlink{classop_1_1_pose_extractor_net_a3fe7256d9860f4c624f5cf928556bc28}{clear}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classop_1_1_pose_extractor_net_a840c6fbdbf59d088d966ad26d45572a4}{check\+Thread}} () const
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_pose_extractor_net_aa8bf8cdfdede22410e2dfcea5d3f0cdc}{net\+Initialization\+On\+Thread}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{namespaceop_af5b3ce2a5d3de87cb31b9b67e96f261f}{Pose\+Model}} \mbox{\hyperlink{classop_1_1_pose_extractor_net_a8595789b244399ecd9c4b2a774f2c74b}{m\+Pose\+Model}}
+\item 
+\mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_aab49f9af9f5d7e4e64957dc0feb60ca7}{m\+Net\+Output\+Size}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_aaaa4c619868bbf6306a549280002a2c6}{m\+Pose\+Keypoints}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_a528c3056546b0759fafb249a02edd1b6}{m\+Pose\+Scores}}
+\item 
+float \mbox{\hyperlink{classop_1_1_pose_extractor_net_a67ea32116dfaff15cc16e5a0a2bef822}{m\+Scale\+Net\+To\+Output}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_pose_extractor_net_a1e217e3647e877c927f386f6b1796dc9}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{namespaceop_a1c3dbc214e7552f7ef9cc753ee97226b}{Heat\+Map\+Type}} $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_ad7a3495ecad65cf088f8deb55fb5316f}{m\+Heat\+Map\+Types}}
+\item 
+const \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bda}{Scale\+Mode}} \mbox{\hyperlink{classop_1_1_pose_extractor_net_a9acdf2947964f19d2478f6e97f88a28a}{m\+Heat\+Map\+Scale\+Mode}}
+\item 
+const bool \mbox{\hyperlink{classop_1_1_pose_extractor_net_af39a769a7c66ed838de31a0a6bae2f4b}{m\+Add\+Part\+Candidates}}
+\item 
+std\+::array$<$ std\+::atomic$<$ double $>$,(int) \mbox{\hyperlink{namespaceop_a37c58b781e5bcd9fee67a7768afc5d0ea6f6cb72d544962fa333e2e34ce64f719}{Pose\+Property\+::\+Size}} $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_net_a370f57474f6f5a99b517e00f699f36d0}{m\+Properties}}
+\item 
+std\+::thread\+::id \mbox{\hyperlink{classop_1_1_pose_extractor_net_ab2bcf18bb3be7d2fffe294d5e83d7a58}{m\+Thread\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+pose\+Extractor\+Net.\+hpp 파일의 11 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a450a3da459333c5e69e49a40a0b4bbfc}\label{classop_1_1_pose_extractor_net_a450a3da459333c5e69e49a40a0b4bbfc}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!PoseExtractorNet@{PoseExtractorNet}}
+\index{PoseExtractorNet@{PoseExtractorNet}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{PoseExtractorNet()}{PoseExtractorNet()}}
+{\footnotesize\ttfamily op\+::\+Pose\+Extractor\+Net\+::\+Pose\+Extractor\+Net (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_af5b3ce2a5d3de87cb31b9b67e96f261f}{Pose\+Model}}}]{pose\+Model,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{namespaceop_a1c3dbc214e7552f7ef9cc753ee97226b}{Heat\+Map\+Type}} $>$ \&}]{heat\+Map\+Types = {\ttfamily \{\}},  }\item[{const \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bda}{Scale\+Mode}}}]{heat\+Map\+Scale\+Mode = {\ttfamily \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bdaa4b942544cb3e764bbb8d33f8a8744855}{Scale\+Mode\+::\+Zero\+To\+One}}},  }\item[{const bool}]{add\+Part\+Candidates = {\ttfamily false},  }\item[{const bool}]{maximize\+Positives = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a963c679df20b16d475aa3a7c0661135c}\label{classop_1_1_pose_extractor_net_a963c679df20b16d475aa3a7c0661135c}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!````~PoseExtractorNet@{$\sim$PoseExtractorNet}}
+\index{````~PoseExtractorNet@{$\sim$PoseExtractorNet}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{$\sim$PoseExtractorNet()}{~PoseExtractorNet()}}
+{\footnotesize\ttfamily virtual op\+::\+Pose\+Extractor\+Net\+::$\sim$\+Pose\+Extractor\+Net (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a840c6fbdbf59d088d966ad26d45572a4}\label{classop_1_1_pose_extractor_net_a840c6fbdbf59d088d966ad26d45572a4}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!checkThread@{checkThread}}
+\index{checkThread@{checkThread}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{checkThread()}{checkThread()}}
+{\footnotesize\ttfamily void op\+::\+Pose\+Extractor\+Net\+::check\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a3fe7256d9860f4c624f5cf928556bc28}\label{classop_1_1_pose_extractor_net_a3fe7256d9860f4c624f5cf928556bc28}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!clear@{clear}}
+\index{clear@{clear}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void op\+::\+Pose\+Extractor\+Net\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a1e217e3647e877c927f386f6b1796dc9}\label{classop_1_1_pose_extractor_net_a1e217e3647e877c927f386f6b1796dc9}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Pose\+Extractor\+Net\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a95c48a9fc5368af73a54aa66e44b4bc2}\label{classop_1_1_pose_extractor_net_a95c48a9fc5368af73a54aa66e44b4bc2}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!forwardPass@{forwardPass}}
+\index{forwardPass@{forwardPass}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{forwardPass()}{forwardPass()}}
+{\footnotesize\ttfamily virtual void op\+::\+Pose\+Extractor\+Net\+::forward\+Pass (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$$>$ \&}]{input\+Net\+Data,  }\item[{const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&}]{input\+Data\+Size,  }\item[{const std\+::vector$<$ double $>$ \&}]{scale\+Ratios = {\ttfamily \{1.f\}},  }\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Net\+Output = {\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$~float~$>$\{\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_pose_extractor_caffe_a9f8677779c9c07c0fd4ac265cd8d2d8f}{op\+::\+Pose\+Extractor\+Caffe}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_aa9138224f4977da54517398ba044b7c3}\label{classop_1_1_pose_extractor_net_aa9138224f4977da54517398ba044b7c3}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!get@{get}}
+\index{get@{get}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily double op\+::\+Pose\+Extractor\+Net\+::get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_a37c58b781e5bcd9fee67a7768afc5d0e}{Pose\+Property}}}]{property }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a56d7dd1157e70786850169897bcf6883}\label{classop_1_1_pose_extractor_net_a56d7dd1157e70786850169897bcf6883}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!getCandidatesCopy@{getCandidatesCopy}}
+\index{getCandidatesCopy@{getCandidatesCopy}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{getCandidatesCopy()}{getCandidatesCopy()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$std\+::array$<$float,3$>$ $>$ $>$ op\+::\+Pose\+Extractor\+Net\+::get\+Candidates\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a3e73f27594e61bf451b8e9fff7695f62}\label{classop_1_1_pose_extractor_net_a3e73f27594e61bf451b8e9fff7695f62}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!getCandidatesCpuConstPtr@{getCandidatesCpuConstPtr}}
+\index{getCandidatesCpuConstPtr@{getCandidatesCpuConstPtr}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{getCandidatesCpuConstPtr()}{getCandidatesCpuConstPtr()}}
+{\footnotesize\ttfamily virtual const float$\ast$ op\+::\+Pose\+Extractor\+Net\+::get\+Candidates\+Cpu\+Const\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_pose_extractor_caffe_a1444ad1ee245a5bcd9e0b5b55395d6d8}{op\+::\+Pose\+Extractor\+Caffe}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_abee987adbe411ca71b6b37ab9cd89a41}\label{classop_1_1_pose_extractor_net_abee987adbe411ca71b6b37ab9cd89a41}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!getCandidatesGpuConstPtr@{getCandidatesGpuConstPtr}}
+\index{getCandidatesGpuConstPtr@{getCandidatesGpuConstPtr}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{getCandidatesGpuConstPtr()}{getCandidatesGpuConstPtr()}}
+{\footnotesize\ttfamily virtual const float$\ast$ op\+::\+Pose\+Extractor\+Net\+::get\+Candidates\+Gpu\+Const\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_pose_extractor_caffe_a499d975f7b6add768425271b2af19a2e}{op\+::\+Pose\+Extractor\+Caffe}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a80cb59fa161a7ecd3d6a016354ab9002}\label{classop_1_1_pose_extractor_net_a80cb59fa161a7ecd3d6a016354ab9002}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!getHeatMapCpuConstPtr@{getHeatMapCpuConstPtr}}
+\index{getHeatMapCpuConstPtr@{getHeatMapCpuConstPtr}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{getHeatMapCpuConstPtr()}{getHeatMapCpuConstPtr()}}
+{\footnotesize\ttfamily virtual const float$\ast$ op\+::\+Pose\+Extractor\+Net\+::get\+Heat\+Map\+Cpu\+Const\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_pose_extractor_caffe_a9e8056cd50ba679636c5d5055f5a563b}{op\+::\+Pose\+Extractor\+Caffe}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_ad1b526d42f690a8857c0ccdc88ff88ac}\label{classop_1_1_pose_extractor_net_ad1b526d42f690a8857c0ccdc88ff88ac}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!getHeatMapGpuConstPtr@{getHeatMapGpuConstPtr}}
+\index{getHeatMapGpuConstPtr@{getHeatMapGpuConstPtr}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{getHeatMapGpuConstPtr()}{getHeatMapGpuConstPtr()}}
+{\footnotesize\ttfamily virtual const float$\ast$ op\+::\+Pose\+Extractor\+Net\+::get\+Heat\+Map\+Gpu\+Const\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_pose_extractor_caffe_ac4737f29b467f6c0daad5f54aa20524b}{op\+::\+Pose\+Extractor\+Caffe}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_ad6e1c91c60cf0041c196fd4347bbcdf5}\label{classop_1_1_pose_extractor_net_ad6e1c91c60cf0041c196fd4347bbcdf5}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!getHeatMapsCopy@{getHeatMapsCopy}}
+\index{getHeatMapsCopy@{getHeatMapsCopy}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{getHeatMapsCopy()}{getHeatMapsCopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Pose\+Extractor\+Net\+::get\+Heat\+Maps\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a49e1dcb9f9d049131df866b7538507cd}\label{classop_1_1_pose_extractor_net_a49e1dcb9f9d049131df866b7538507cd}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!getHeatMapSize@{getHeatMapSize}}
+\index{getHeatMapSize@{getHeatMapSize}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{getHeatMapSize()}{getHeatMapSize()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$int$>$ op\+::\+Pose\+Extractor\+Net\+::get\+Heat\+Map\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_pose_extractor_caffe_a350900a3b326f4ed7d3dcb9531055523}{op\+::\+Pose\+Extractor\+Caffe}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a546f0d6e0c62c7c7e2d44de848f9a174}\label{classop_1_1_pose_extractor_net_a546f0d6e0c62c7c7e2d44de848f9a174}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!getPoseGpuConstPtr@{getPoseGpuConstPtr}}
+\index{getPoseGpuConstPtr@{getPoseGpuConstPtr}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{getPoseGpuConstPtr()}{getPoseGpuConstPtr()}}
+{\footnotesize\ttfamily virtual const float$\ast$ op\+::\+Pose\+Extractor\+Net\+::get\+Pose\+Gpu\+Const\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_pose_extractor_caffe_a6ffc941073b66868177c91cc9e025098}{op\+::\+Pose\+Extractor\+Caffe}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a3e88bd2122835db768c123d1026ce30f}\label{classop_1_1_pose_extractor_net_a3e88bd2122835db768c123d1026ce30f}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!getPoseKeypoints@{getPoseKeypoints}}
+\index{getPoseKeypoints@{getPoseKeypoints}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{getPoseKeypoints()}{getPoseKeypoints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Pose\+Extractor\+Net\+::get\+Pose\+Keypoints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a43317a6868ffa7391586f2b8b599ecdf}\label{classop_1_1_pose_extractor_net_a43317a6868ffa7391586f2b8b599ecdf}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!getPoseScores@{getPoseScores}}
+\index{getPoseScores@{getPoseScores}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{getPoseScores()}{getPoseScores()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Pose\+Extractor\+Net\+::get\+Pose\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_ac67c1d8fcba15ccfb284f10776e9fd89}\label{classop_1_1_pose_extractor_net_ac67c1d8fcba15ccfb284f10776e9fd89}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!getScaleNetToOutput@{getScaleNetToOutput}}
+\index{getScaleNetToOutput@{getScaleNetToOutput}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{getScaleNetToOutput()}{getScaleNetToOutput()}}
+{\footnotesize\ttfamily float op\+::\+Pose\+Extractor\+Net\+::get\+Scale\+Net\+To\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a4959a9c9d433d9297e5daef0e3a0eabc}\label{classop_1_1_pose_extractor_net_a4959a9c9d433d9297e5daef0e3a0eabc}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!increase@{increase}}
+\index{increase@{increase}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{increase()}{increase()}}
+{\footnotesize\ttfamily void op\+::\+Pose\+Extractor\+Net\+::increase (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_a37c58b781e5bcd9fee67a7768afc5d0e}{Pose\+Property}}}]{property,  }\item[{const double}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a28923c846dc7c731d3571c72a50acd2f}\label{classop_1_1_pose_extractor_net_a28923c846dc7c731d3571c72a50acd2f}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily void op\+::\+Pose\+Extractor\+Net\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_aa8bf8cdfdede22410e2dfcea5d3f0cdc}\label{classop_1_1_pose_extractor_net_aa8bf8cdfdede22410e2dfcea5d3f0cdc}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!netInitializationOnThread@{netInitializationOnThread}}
+\index{netInitializationOnThread@{netInitializationOnThread}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{netInitializationOnThread()}{netInitializationOnThread()}}
+{\footnotesize\ttfamily virtual void op\+::\+Pose\+Extractor\+Net\+::net\+Initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_pose_extractor_caffe_ae5d41065ea3eaf37d2c9663aa35554d6}{op\+::\+Pose\+Extractor\+Caffe}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a7e49f2339e21ff784689ec78c9d69b75}\label{classop_1_1_pose_extractor_net_a7e49f2339e21ff784689ec78c9d69b75}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!set@{set}}
+\index{set@{set}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void op\+::\+Pose\+Extractor\+Net\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_a37c58b781e5bcd9fee67a7768afc5d0e}{Pose\+Property}}}]{property,  }\item[{const double}]{value }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_af39a769a7c66ed838de31a0a6bae2f4b}\label{classop_1_1_pose_extractor_net_af39a769a7c66ed838de31a0a6bae2f4b}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!mAddPartCandidates@{mAddPartCandidates}}
+\index{mAddPartCandidates@{mAddPartCandidates}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{mAddPartCandidates}{mAddPartCandidates}}
+{\footnotesize\ttfamily const bool op\+::\+Pose\+Extractor\+Net\+::m\+Add\+Part\+Candidates\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pose\+Extractor\+Net.\+hpp 파일의 72 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a9acdf2947964f19d2478f6e97f88a28a}\label{classop_1_1_pose_extractor_net_a9acdf2947964f19d2478f6e97f88a28a}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!mHeatMapScaleMode@{mHeatMapScaleMode}}
+\index{mHeatMapScaleMode@{mHeatMapScaleMode}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{mHeatMapScaleMode}{mHeatMapScaleMode}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bda}{Scale\+Mode}} op\+::\+Pose\+Extractor\+Net\+::m\+Heat\+Map\+Scale\+Mode\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pose\+Extractor\+Net.\+hpp 파일의 71 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_ad7a3495ecad65cf088f8deb55fb5316f}\label{classop_1_1_pose_extractor_net_ad7a3495ecad65cf088f8deb55fb5316f}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!mHeatMapTypes@{mHeatMapTypes}}
+\index{mHeatMapTypes@{mHeatMapTypes}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{mHeatMapTypes}{mHeatMapTypes}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{namespaceop_a1c3dbc214e7552f7ef9cc753ee97226b}{Heat\+Map\+Type}}$>$ op\+::\+Pose\+Extractor\+Net\+::m\+Heat\+Map\+Types\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pose\+Extractor\+Net.\+hpp 파일의 70 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_aab49f9af9f5d7e4e64957dc0feb60ca7}\label{classop_1_1_pose_extractor_net_aab49f9af9f5d7e4e64957dc0feb60ca7}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!mNetOutputSize@{mNetOutputSize}}
+\index{mNetOutputSize@{mNetOutputSize}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{mNetOutputSize}{mNetOutputSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structop_1_1_point}{Point}}$<$int$>$ op\+::\+Pose\+Extractor\+Net\+::m\+Net\+Output\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+pose\+Extractor\+Net.\+hpp 파일의 60 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_aaaa4c619868bbf6306a549280002a2c6}\label{classop_1_1_pose_extractor_net_aaaa4c619868bbf6306a549280002a2c6}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!mPoseKeypoints@{mPoseKeypoints}}
+\index{mPoseKeypoints@{mPoseKeypoints}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{mPoseKeypoints}{mPoseKeypoints}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Pose\+Extractor\+Net\+::m\+Pose\+Keypoints\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+pose\+Extractor\+Net.\+hpp 파일의 61 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a8595789b244399ecd9c4b2a774f2c74b}\label{classop_1_1_pose_extractor_net_a8595789b244399ecd9c4b2a774f2c74b}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!mPoseModel@{mPoseModel}}
+\index{mPoseModel@{mPoseModel}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{mPoseModel}{mPoseModel}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceop_af5b3ce2a5d3de87cb31b9b67e96f261f}{Pose\+Model}} op\+::\+Pose\+Extractor\+Net\+::m\+Pose\+Model\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+pose\+Extractor\+Net.\+hpp 파일의 59 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a528c3056546b0759fafb249a02edd1b6}\label{classop_1_1_pose_extractor_net_a528c3056546b0759fafb249a02edd1b6}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!mPoseScores@{mPoseScores}}
+\index{mPoseScores@{mPoseScores}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{mPoseScores}{mPoseScores}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Pose\+Extractor\+Net\+::m\+Pose\+Scores\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+pose\+Extractor\+Net.\+hpp 파일의 62 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a370f57474f6f5a99b517e00f699f36d0}\label{classop_1_1_pose_extractor_net_a370f57474f6f5a99b517e00f699f36d0}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!mProperties@{mProperties}}
+\index{mProperties@{mProperties}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{mProperties}{mProperties}}
+{\footnotesize\ttfamily std\+::array$<$std\+::atomic$<$double$>$, (int)\mbox{\hyperlink{namespaceop_a37c58b781e5bcd9fee67a7768afc5d0ea6f6cb72d544962fa333e2e34ce64f719}{Pose\+Property\+::\+Size}}$>$ op\+::\+Pose\+Extractor\+Net\+::m\+Properties\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pose\+Extractor\+Net.\+hpp 파일의 73 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_a67ea32116dfaff15cc16e5a0a2bef822}\label{classop_1_1_pose_extractor_net_a67ea32116dfaff15cc16e5a0a2bef822}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!mScaleNetToOutput@{mScaleNetToOutput}}
+\index{mScaleNetToOutput@{mScaleNetToOutput}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{mScaleNetToOutput}{mScaleNetToOutput}}
+{\footnotesize\ttfamily float op\+::\+Pose\+Extractor\+Net\+::m\+Scale\+Net\+To\+Output\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+pose\+Extractor\+Net.\+hpp 파일의 63 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_net_ab2bcf18bb3be7d2fffe294d5e83d7a58}\label{classop_1_1_pose_extractor_net_ab2bcf18bb3be7d2fffe294d5e83d7a58}} 
+\index{op::PoseExtractorNet@{op::PoseExtractorNet}!mThreadId@{mThreadId}}
+\index{mThreadId@{mThreadId}!op::PoseExtractorNet@{op::PoseExtractorNet}}
+\doxysubsubsection{\texorpdfstring{mThreadId}{mThreadId}}
+{\footnotesize\ttfamily std\+::thread\+::id op\+::\+Pose\+Extractor\+Net\+::m\+Thread\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pose\+Extractor\+Net.\+hpp 파일의 74 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/pose/\mbox{\hyperlink{pose_extractor_net_8hpp}{pose\+Extractor\+Net.\+hpp}}\end{DoxyCompactItemize}

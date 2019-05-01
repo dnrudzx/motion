@@ -1,0 +1,776 @@
+\hypertarget{classcl_1_1_device}{}\doxysection{cl\+::Device 클래스 참조}
+\label{classcl_1_1_device}\index{cl::Device@{cl::Device}}
+
+
+Class interface for cl\+\_\+device\+\_\+id.  
+
+
+
+
+{\ttfamily \#include $<$cl2.\+hpp$>$}
+
+
+
+cl\+::Device에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcl_1_1_device__inherit__graph}
+\end{center}
+\end{figure}
+
+
+cl\+::Device에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcl_1_1_device__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+typedef cl\+\_\+device\+\_\+id \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}{cl\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1_device_a6131ff3eb77c31dfba11091a3c0f4235}{Device}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor -\/ initializes to N\+U\+LL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_device_ad28b573c8a28028a06ded4e1dc7fa725}{Device}} (const cl\+\_\+device\+\_\+id \&device, bool retain\+Object=false)
+\begin{DoxyCompactList}\small\item\em Constructor from cl\+\_\+device\+\_\+id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_device}{Device}} \& \mbox{\hyperlink{classcl_1_1_device_a432e00756f0972116bae69e81387c82d}{operator=}} (const cl\+\_\+device\+\_\+id \&rhs)
+\begin{DoxyCompactList}\small\item\em Assignment operator from cl\+\_\+device\+\_\+id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_device_a8445328fa0af11c93f20615f820b93fc}{Device}} (const \mbox{\hyperlink{classcl_1_1_device}{Device}} \&dev)
+\begin{DoxyCompactList}\small\item\em Copy constructor to forward copy to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_device}{Device}} \& \mbox{\hyperlink{classcl_1_1_device_a53aac3e18ae85e11fd08626d80621606}{operator=}} (const \mbox{\hyperlink{classcl_1_1_device}{Device}} \&dev)
+\begin{DoxyCompactList}\small\item\em Copy assignment to forward copy to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_device_a9a8f38bb1636628bdb31d3a47c8cee36}{Device}} (\mbox{\hyperlink{classcl_1_1_device}{Device}} \&\&dev) \mbox{\hyperlink{cl2_8hpp_a7fcfde26c9e031daf0c6fbb637ed7ac0}{C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Move constructor to forward move to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_device}{Device}} \& \mbox{\hyperlink{classcl_1_1_device_aedea093cb357dcc87ff7003d143f1bfc}{operator=}} (\mbox{\hyperlink{classcl_1_1_device}{Device}} \&\&dev)
+\begin{DoxyCompactList}\small\item\em Move assignment to forward move to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_device_a575493c25049dae087540ed8a65efd6d}{get\+Info}} (cl\+\_\+device\+\_\+info name, T $\ast$param) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Device\+Info(). \end{DoxyCompactList}\item 
+{\footnotesize template$<$cl\+\_\+int name$>$ }\\\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$ detail\+::cl\+\_\+device\+\_\+info, name $>$\+::param\+\_\+type \mbox{\hyperlink{classcl_1_1_device_a2b776c204cde7b4b53cde728ed5bf79b}{get\+Info}} (cl\+\_\+int $\ast$err=N\+U\+LL) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Device\+Info() that returns by value. \end{DoxyCompactList}\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_device_ab60bfd190bf8f82cb8f0adb0a869a2f2}{create\+Sub\+Devices}} (const cl\+\_\+device\+\_\+partition\+\_\+property $\ast$properties, \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_device}{Device}} $>$ $\ast$devices)
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Create\+Sub\+Devices(). \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a43175aa1ebaacc04c9394b69ef2bcb45}{operator()}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a0861309296077e75b77d39e2cfeada11}{operator()}} ()
+\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_afe74b549a71f0d753d0ee9bc0d3e1732}{get}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_aad0cbce396cc3ff3b73be767ce783286}{get}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcl_1_1_device}{Device}} \mbox{\hyperlink{classcl_1_1_device_a7428cf3cdccc824c414730ed65e40a0d}{get\+Default}} (cl\+\_\+int $\ast$err\+Result=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Returns the first device on the default context. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classcl_1_1_device}{Device}} \mbox{\hyperlink{classcl_1_1_device_abff439f0de1ed8699a1b93a702d0fc65}{set\+Default}} (const \mbox{\hyperlink{classcl_1_1_device}{Device}} \&default\+\_\+device)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a6b9c9bb8cab1ef5e8c684d6c382b4522}{retain}} () const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a5ec1f410d9e0564c990300308be2fa76}{release}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a708c4af6087d158e8c685c52c07c7066}{is\+Reference\+Countable}} (cl\+\_\+device\+\_\+id device)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}{object\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a6bf49a144579823e03d4e88cafc4fb9d}{reference\+Countable\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcl_1_1_device_a7774fd668e474a8f4e196a6e7118b47e}{make\+Default}} ()
+\begin{DoxyCompactList}\small\item\em Create the default context. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classcl_1_1_device_a80f0201f9882c2c44b69b6fa45e5860d}{make\+Default\+Provided}} (const \mbox{\hyperlink{classcl_1_1_device}{Device}} \&p)
+\begin{DoxyCompactList}\small\item\em Create the default platform from a provided platform. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::once\+\_\+flag \mbox{\hyperlink{classcl_1_1_device_a72e0b75fb4579a85023904707c8da83f}{default\+\_\+initialized\+\_\+}}
+\item 
+static \mbox{\hyperlink{classcl_1_1_device}{Device}} \mbox{\hyperlink{classcl_1_1_device_ad548f958e82010158e702ab956786742}{default\+\_\+}}
+\item 
+static cl\+\_\+int \mbox{\hyperlink{classcl_1_1_device_aa6cd70da1e8ed1f6a287cdd31728ee8b}{default\+\_\+error\+\_\+}} = C\+L\+\_\+\+S\+U\+C\+C\+E\+SS
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Class interface for cl\+\_\+device\+\_\+id. 
+
+\begin{DoxyNote}{주의}
+Copies of these objects are inexpensive, since they don\textquotesingle{}t \textquotesingle{}own\textquotesingle{} any underlying resources or data structures.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{참고}
+cl\+\_\+device\+\_\+id 
+\end{DoxySeeAlso}
+
+
+cl2.\+hpp 파일의 1959 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 타입정의 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}\label{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}} 
+\index{cl::Device@{cl::Device}!cl\_type@{cl\_type}}
+\index{cl\_type@{cl\_type}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{cl\_type}{cl\_type}}
+{\footnotesize\ttfamily typedef cl\+\_\+device\+\_\+id \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+device\+\_\+id $>$\+::\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}{cl\+\_\+type}}\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1734 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classcl_1_1_device_a6131ff3eb77c31dfba11091a3c0f4235}\label{classcl_1_1_device_a6131ff3eb77c31dfba11091a3c0f4235}} 
+\index{cl::Device@{cl::Device}!Device@{Device}}
+\index{Device@{Device}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{Device()}{Device()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily cl\+::\+Device\+::\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor -\/ initializes to N\+U\+LL. 
+
+
+
+cl2.\+hpp 파일의 1996 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1996 : detail::Wrapper<cl\_type>() \{ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_device_ad28b573c8a28028a06ded4e1dc7fa725}\label{classcl_1_1_device_ad28b573c8a28028a06ded4e1dc7fa725}} 
+\index{cl::Device@{cl::Device}!Device@{Device}}
+\index{Device@{Device}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{Device()}{Device()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily cl\+::\+Device\+::\+Device (\begin{DoxyParamCaption}\item[{const cl\+\_\+device\+\_\+id \&}]{device,  }\item[{bool}]{retain\+Object = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor from cl\+\_\+device\+\_\+id. 
+
+This simply copies the device ID value, which is an inexpensive operation. 
+
+cl2.\+hpp 파일의 2002 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2002                                                                            : }
+\DoxyCodeLine{2003         detail::Wrapper<cl\_type>(device, retainObject) \{ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_device_a8445328fa0af11c93f20615f820b93fc}\label{classcl_1_1_device_a8445328fa0af11c93f20615f820b93fc}} 
+\index{cl::Device@{cl::Device}!Device@{Device}}
+\index{Device@{Device}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{Device()}{Device()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily cl\+::\+Device\+::\+Device (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_device}{Device}} \&}]{dev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor to forward copy to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 2047 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2047 : detail::Wrapper<cl\_type>(dev) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_device_a9a8f38bb1636628bdb31d3a47c8cee36}\label{classcl_1_1_device_a9a8f38bb1636628bdb31d3a47c8cee36}} 
+\index{cl::Device@{cl::Device}!Device@{Device}}
+\index{Device@{Device}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{Device()}{Device()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily cl\+::\+Device\+::\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_device}{Device}} \&\&}]{dev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move constructor to forward move to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 2061 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2061 : detail::Wrapper<cl\_type>(std::move(dev)) \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classcl_1_1_device_ab60bfd190bf8f82cb8f0adb0a869a2f2}\label{classcl_1_1_device_ab60bfd190bf8f82cb8f0adb0a869a2f2}} 
+\index{cl::Device@{cl::Device}!createSubDevices@{createSubDevices}}
+\index{createSubDevices@{createSubDevices}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{createSubDevices()}{createSubDevices()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Device\+::create\+Sub\+Devices (\begin{DoxyParamCaption}\item[{const cl\+\_\+device\+\_\+partition\+\_\+property $\ast$}]{properties,  }\item[{\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_device}{Device}} $>$ $\ast$}]{devices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wrapper for cl\+Create\+Sub\+Devices(). 
+
+CL 1.\+2 version 
+
+cl2.\+hpp 파일의 2100 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2103     \{}
+\DoxyCodeLine{2104         cl\_uint n = 0;}
+\DoxyCodeLine{2105         cl\_int err = clCreateSubDevices(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}{object\_}}, properties, 0, NULL, \&n);}
+\DoxyCodeLine{2106         \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{2107             \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(err, \_\_CREATE\_SUB\_DEVICES\_ERR);}
+\DoxyCodeLine{2108         \}}
+\DoxyCodeLine{2109 }
+\DoxyCodeLine{2110         vector<cl\_device\_id> ids(n);}
+\DoxyCodeLine{2111         err = clCreateSubDevices(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}{object\_}}, properties, n, ids.data(), NULL);}
+\DoxyCodeLine{2112         \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{2113             \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(err, \_\_CREATE\_SUB\_DEVICES\_ERR);}
+\DoxyCodeLine{2114         \}}
+\DoxyCodeLine{2115 }
+\DoxyCodeLine{2116         \textcolor{comment}{// Cannot trivially assign because we need to capture intermediates }}
+\DoxyCodeLine{2117         \textcolor{comment}{// with safe construction}}
+\DoxyCodeLine{2118         \textcolor{keywordflow}{if} (devices) \{}
+\DoxyCodeLine{2119             devices-\/>resize(ids.size());}
+\DoxyCodeLine{2120 }
+\DoxyCodeLine{2121             \textcolor{comment}{// Assign to param, constructing with retain behaviour}}
+\DoxyCodeLine{2122             \textcolor{comment}{// to correctly capture each underlying CL object}}
+\DoxyCodeLine{2123             \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} i = 0; i < ids.size(); i++) \{}
+\DoxyCodeLine{2124                 \textcolor{comment}{// We do not need to retain because this device is being created }}
+\DoxyCodeLine{2125                 \textcolor{comment}{// by the runtime}}
+\DoxyCodeLine{2126                 (*devices)[i] = \mbox{\hyperlink{classcl_1_1_device_a6131ff3eb77c31dfba11091a3c0f4235}{Device}}(ids[i], \textcolor{keyword}{false});}
+\DoxyCodeLine{2127             \}}
+\DoxyCodeLine{2128         \}}
+\DoxyCodeLine{2129 }
+\DoxyCodeLine{2130         \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{2131     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_aad0cbce396cc3ff3b73be767ce783286}\label{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_aad0cbce396cc3ff3b73be767ce783286}} 
+\index{cl::Device@{cl::Device}!get@{get}}
+\index{get@{get}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+device\+\_\+id $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1831 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1831 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_afe74b549a71f0d753d0ee9bc0d3e1732}\label{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_afe74b549a71f0d753d0ee9bc0d3e1732}} 
+\index{cl::Device@{cl::Device}!get@{get}}
+\index{get@{get}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+device\+\_\+id $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1829 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1829 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_device_a7428cf3cdccc824c414730ed65e40a0d}\label{classcl_1_1_device_a7428cf3cdccc824c414730ed65e40a0d}} 
+\index{cl::Device@{cl::Device}!getDefault@{getDefault}}
+\index{getDefault@{getDefault}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{getDefault()}{getDefault()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcl_1_1_device}{Device}} cl\+::\+Device\+::get\+Default (\begin{DoxyParamCaption}\item[{cl\+\_\+int $\ast$}]{err\+Result = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the first device on the default context. 
+
+\begin{DoxySeeAlso}{참고}
+\mbox{\hyperlink{classcl_1_1_context_ad180f6f7d8b5a95710ab72f96162b051}{Context\+::get\+Default()}} 
+\end{DoxySeeAlso}
+
+
+cl2.\+hpp 파일의 2009 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2011     \{}
+\DoxyCodeLine{2012         std::call\_once(\mbox{\hyperlink{classcl_1_1_device_a72e0b75fb4579a85023904707c8da83f}{default\_initialized\_}}, \mbox{\hyperlink{classcl_1_1_device_a7774fd668e474a8f4e196a6e7118b47e}{makeDefault}});}
+\DoxyCodeLine{2013         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{classcl_1_1_device_aa6cd70da1e8ed1f6a287cdd31728ee8b}{default\_error\_}});}
+\DoxyCodeLine{2014         \textcolor{keywordflow}{if} (errResult != NULL) \{}
+\DoxyCodeLine{2015             *errResult = \mbox{\hyperlink{classcl_1_1_device_aa6cd70da1e8ed1f6a287cdd31728ee8b}{default\_error\_}};}
+\DoxyCodeLine{2016         \}}
+\DoxyCodeLine{2017         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1_device_ad548f958e82010158e702ab956786742}{default\_}};}
+\DoxyCodeLine{2018     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_device_a7428cf3cdccc824c414730ed65e40a0d_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_device_a7428cf3cdccc824c414730ed65e40a0d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_device_a575493c25049dae087540ed8a65efd6d}\label{classcl_1_1_device_a575493c25049dae087540ed8a65efd6d}} 
+\index{cl::Device@{cl::Device}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+cl\+\_\+int cl\+::\+Device\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+device\+\_\+info}]{name,  }\item[{T $\ast$}]{param }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wrapper for cl\+Get\+Device\+Info(). 
+
+
+
+cl2.\+hpp 파일의 2074 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2075     \{}
+\DoxyCodeLine{2076         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{2077             \mbox{\hyperlink{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480}{detail::getInfo}}(\&::clGetDeviceInfo, \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}{object\_}}, name, param),}
+\DoxyCodeLine{2078             \_\_GET\_DEVICE\_INFO\_ERR);}
+\DoxyCodeLine{2079     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_device_a575493c25049dae087540ed8a65efd6d_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classcl_1_1_device_a575493c25049dae087540ed8a65efd6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_device_a2b776c204cde7b4b53cde728ed5bf79b}\label{classcl_1_1_device_a2b776c204cde7b4b53cde728ed5bf79b}} 
+\index{cl::Device@{cl::Device}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$cl\+\_\+int name$>$ \\
+\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$detail\+::cl\+\_\+device\+\_\+info, name$>$\+::param\+\_\+type cl\+::\+Device\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wrapper for cl\+Get\+Device\+Info() that returns by value. 
+
+
+
+cl2.\+hpp 파일의 2084 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2085     \{}
+\DoxyCodeLine{2086         \textcolor{keyword}{typename} detail::param\_traits<}
+\DoxyCodeLine{2087             detail::cl\_device\_info, name>::param\_type param;}
+\DoxyCodeLine{2088         cl\_int result = \mbox{\hyperlink{classcl_1_1_device_a575493c25049dae087540ed8a65efd6d}{getInfo}}(name, \&param);}
+\DoxyCodeLine{2089         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{2090             *err = result;}
+\DoxyCodeLine{2091         \}}
+\DoxyCodeLine{2092         \textcolor{keywordflow}{return} param;}
+\DoxyCodeLine{2093     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_device_a2b776c204cde7b4b53cde728ed5bf79b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a708c4af6087d158e8c685c52c07c7066}\label{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a708c4af6087d158e8c685c52c07c7066}} 
+\index{cl::Device@{cl::Device}!isReferenceCountable@{isReferenceCountable}}
+\index{isReferenceCountable@{isReferenceCountable}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{isReferenceCountable()}{isReferenceCountable()}}
+{\footnotesize\ttfamily static bool \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+device\+\_\+id $>$\+::is\+Reference\+Countable (\begin{DoxyParamCaption}\item[{cl\+\_\+device\+\_\+id}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1740 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1741     \{}
+\DoxyCodeLine{1742         \textcolor{keywordtype}{bool} retVal = \textcolor{keyword}{false};}
+\DoxyCodeLine{1743 \textcolor{preprocessor}{\#if CL\_HPP\_TARGET\_OPENCL\_VERSION >= 120}}
+\DoxyCodeLine{1744 \textcolor{preprocessor}{\#if CL\_HPP\_MINIMUM\_OPENCL\_VERSION < 120}}
+\DoxyCodeLine{1745         \textcolor{keywordflow}{if} (device != NULL) \{}
+\DoxyCodeLine{1746             \textcolor{keywordtype}{int} version = getDevicePlatformVersion(device);}
+\DoxyCodeLine{1747             \textcolor{keywordflow}{if}(version > ((1 << 16) + 1)) \{}
+\DoxyCodeLine{1748                 retVal = \textcolor{keyword}{true};}
+\DoxyCodeLine{1749             \}}
+\DoxyCodeLine{1750         \}}
+\DoxyCodeLine{1751 \textcolor{preprocessor}{\#else // CL\_HPP\_MINIMUM\_OPENCL\_VERSION < 120}}
+\DoxyCodeLine{1752         retVal = \textcolor{keyword}{true};}
+\DoxyCodeLine{1753 \textcolor{preprocessor}{\#endif // CL\_HPP\_MINIMUM\_OPENCL\_VERSION < 120}}
+\DoxyCodeLine{1754 \textcolor{preprocessor}{\#endif // CL\_HPP\_TARGET\_OPENCL\_VERSION >= 120}}
+\DoxyCodeLine{1755         \textcolor{keywordflow}{return} retVal;}
+\DoxyCodeLine{1756     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_device_a7774fd668e474a8f4e196a6e7118b47e}\label{classcl_1_1_device_a7774fd668e474a8f4e196a6e7118b47e}} 
+\index{cl::Device@{cl::Device}!makeDefault@{makeDefault}}
+\index{makeDefault@{makeDefault}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{makeDefault()}{makeDefault()}}
+{\footnotesize\ttfamily void cl\+::\+Device\+::make\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Create the default context. 
+
+This sets {\ttfamily default\+\_\+} and {\ttfamily default\+\_\+error\+\_\+}. It does not throw {\ttfamily cl\+::\+Error}. 
+
+cl2.\+hpp 파일의 2937 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2938 \{}
+\DoxyCodeLine{2939     \textcolor{comment}{/* Throwing an exception from a call\_once invocation does not do}}
+\DoxyCodeLine{2940 \textcolor{comment}{    * what we wish, so we catch it and save the error.}}
+\DoxyCodeLine{2941 \textcolor{comment}{    */}}
+\DoxyCodeLine{2942 \textcolor{preprocessor}{\#if defined(CL\_HPP\_ENABLE\_EXCEPTIONS)}}
+\DoxyCodeLine{2943     \textcolor{keywordflow}{try}}
+\DoxyCodeLine{2944 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{2945     \{}
+\DoxyCodeLine{2946         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} = 0;}
+\DoxyCodeLine{2947 }
+\DoxyCodeLine{2948         Context context = \mbox{\hyperlink{classcl_1_1_context_ad180f6f7d8b5a95710ab72f96162b051}{Context::getDefault}}(\&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{2949         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_CONTEXT\_ERR);}
+\DoxyCodeLine{2950 }
+\DoxyCodeLine{2951         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} != CL\_SUCCESS) \{}
+\DoxyCodeLine{2952             \mbox{\hyperlink{classcl_1_1_device_aa6cd70da1e8ed1f6a287cdd31728ee8b}{default\_error\_}} = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{2953         \}}
+\DoxyCodeLine{2954         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{2955             \mbox{\hyperlink{classcl_1_1_device_ad548f958e82010158e702ab956786742}{default\_}} = context.\mbox{\hyperlink{classcl_1_1_device_a575493c25049dae087540ed8a65efd6d}{getInfo}}<CL\_CONTEXT\_DEVICES>()[0];}
+\DoxyCodeLine{2956             \mbox{\hyperlink{classcl_1_1_device_aa6cd70da1e8ed1f6a287cdd31728ee8b}{default\_error\_}} = CL\_SUCCESS;}
+\DoxyCodeLine{2957         \}}
+\DoxyCodeLine{2958     \}}
+\DoxyCodeLine{2959 \textcolor{preprocessor}{\#if defined(CL\_HPP\_ENABLE\_EXCEPTIONS)}}
+\DoxyCodeLine{2960     \textcolor{keywordflow}{catch} (cl::Error \&e) \{}
+\DoxyCodeLine{2961         \mbox{\hyperlink{classcl_1_1_device_aa6cd70da1e8ed1f6a287cdd31728ee8b}{default\_error\_}} = e.err();}
+\DoxyCodeLine{2962     \}}
+\DoxyCodeLine{2963 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{2964 \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_device_a7774fd668e474a8f4e196a6e7118b47e_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_device_a7774fd668e474a8f4e196a6e7118b47e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_device_a80f0201f9882c2c44b69b6fa45e5860d}\label{classcl_1_1_device_a80f0201f9882c2c44b69b6fa45e5860d}} 
+\index{cl::Device@{cl::Device}!makeDefaultProvided@{makeDefaultProvided}}
+\index{makeDefaultProvided@{makeDefaultProvided}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{makeDefaultProvided()}{makeDefaultProvided()}}
+{\footnotesize\ttfamily static void cl\+::\+Device\+::make\+Default\+Provided (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_device}{Device}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Create the default platform from a provided platform. 
+
+This sets {\ttfamily default\+\_\+}. It does not throw {\ttfamily cl\+::\+Error}. 
+
+cl2.\+hpp 파일의 1978 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1978                                                      \{}
+\DoxyCodeLine{1979         \mbox{\hyperlink{classcl_1_1_device_ad548f958e82010158e702ab956786742}{default\_}} = p;}
+\DoxyCodeLine{1980     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_device_a80f0201f9882c2c44b69b6fa45e5860d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a0861309296077e75b77d39e2cfeada11}\label{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a0861309296077e75b77d39e2cfeada11}} 
+\index{cl::Device@{cl::Device}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+device\+\_\+id $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1827 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1827 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a43175aa1ebaacc04c9394b69ef2bcb45}\label{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a43175aa1ebaacc04c9394b69ef2bcb45}} 
+\index{cl::Device@{cl::Device}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+device\+\_\+id $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1825 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1825 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_device_a432e00756f0972116bae69e81387c82d}\label{classcl_1_1_device_a432e00756f0972116bae69e81387c82d}} 
+\index{cl::Device@{cl::Device}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_device}{Device}}\& cl\+::\+Device\+::operator= (\begin{DoxyParamCaption}\item[{const cl\+\_\+device\+\_\+id \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator from cl\+\_\+device\+\_\+id. 
+
+This simply copies the device ID value, which is an inexpensive operation. 
+
+cl2.\+hpp 파일의 2038 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2039     \{}
+\DoxyCodeLine{2040         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a044bc05bb3eb90345cb9cf574b95a98f}{detail::Wrapper<cl\_type>::operator=}}(rhs);}
+\DoxyCodeLine{2041         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{2042     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classcl_1_1_device_a432e00756f0972116bae69e81387c82d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_device_a53aac3e18ae85e11fd08626d80621606}\label{classcl_1_1_device_a53aac3e18ae85e11fd08626d80621606}} 
+\index{cl::Device@{cl::Device}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_device}{Device}}\& cl\+::\+Device\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_device}{Device}} \&}]{dev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy assignment to forward copy to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 2052 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2053     \{}
+\DoxyCodeLine{2054         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a044bc05bb3eb90345cb9cf574b95a98f}{detail::Wrapper<cl\_type>::operator=}}(dev);}
+\DoxyCodeLine{2055         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{2056     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classcl_1_1_device_a53aac3e18ae85e11fd08626d80621606_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_device_aedea093cb357dcc87ff7003d143f1bfc}\label{classcl_1_1_device_aedea093cb357dcc87ff7003d143f1bfc}} 
+\index{cl::Device@{cl::Device}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_device}{Device}}\& cl\+::\+Device\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_device}{Device}} \&\&}]{dev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move assignment to forward move to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 2066 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2067     \{}
+\DoxyCodeLine{2068         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a044bc05bb3eb90345cb9cf574b95a98f}{detail::Wrapper<cl\_type>::operator=}}(std::move(dev));}
+\DoxyCodeLine{2069         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{2070     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classcl_1_1_device_aedea093cb357dcc87ff7003d143f1bfc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a5ec1f410d9e0564c990300308be2fa76}\label{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a5ec1f410d9e0564c990300308be2fa76}} 
+\index{cl::Device@{cl::Device}!release@{release}}
+\index{release@{release}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+device\+\_\+id $>$\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1850 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1851     \{}
+\DoxyCodeLine{1852         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}{object\_}} != \textcolor{keyword}{nullptr} \&\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a6bf49a144579823e03d4e88cafc4fb9d}{referenceCountable\_}}) \{}
+\DoxyCodeLine{1853             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::release(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}{object\_}});}
+\DoxyCodeLine{1854         \}}
+\DoxyCodeLine{1855         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1856             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1857         \}}
+\DoxyCodeLine{1858     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a6b9c9bb8cab1ef5e8c684d6c382b4522}\label{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a6b9c9bb8cab1ef5e8c684d6c382b4522}} 
+\index{cl::Device@{cl::Device}!retain@{retain}}
+\index{retain@{retain}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{retain()}{retain()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+device\+\_\+id $>$\+::retain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1840 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1841     \{}
+\DoxyCodeLine{1842         \textcolor{keywordflow}{if}( \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}{object\_}} != \textcolor{keyword}{nullptr} \&\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a6bf49a144579823e03d4e88cafc4fb9d}{referenceCountable\_}} ) \{}
+\DoxyCodeLine{1843             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::retain(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}{object\_}});}
+\DoxyCodeLine{1844         \}}
+\DoxyCodeLine{1845         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1846             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1847         \}}
+\DoxyCodeLine{1848     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_device_abff439f0de1ed8699a1b93a702d0fc65}\label{classcl_1_1_device_abff439f0de1ed8699a1b93a702d0fc65}} 
+\index{cl::Device@{cl::Device}!setDefault@{setDefault}}
+\index{setDefault@{setDefault}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{setDefault()}{setDefault()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcl_1_1_device}{Device}} cl\+::\+Device\+::set\+Default (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_device}{Device}} \&}]{default\+\_\+device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Modify the default device to be used by subsequent operations. Will only set the default if no default was previously created. \begin{DoxyReturn}{반환값}
+updated default device. Should be compared to the passed value to ensure that it was updated. 
+\end{DoxyReturn}
+
+
+cl2.\+hpp 파일의 2027 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2028     \{}
+\DoxyCodeLine{2029         std::call\_once(\mbox{\hyperlink{classcl_1_1_device_a72e0b75fb4579a85023904707c8da83f}{default\_initialized\_}}, \mbox{\hyperlink{classcl_1_1_device_a80f0201f9882c2c44b69b6fa45e5860d}{makeDefaultProvided}}, std::cref(default\_device));}
+\DoxyCodeLine{2030         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{classcl_1_1_device_aa6cd70da1e8ed1f6a287cdd31728ee8b}{default\_error\_}});}
+\DoxyCodeLine{2031         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1_device_ad548f958e82010158e702ab956786742}{default\_}};}
+\DoxyCodeLine{2032     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_device_abff439f0de1ed8699a1b93a702d0fc65_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classcl_1_1_device_ad548f958e82010158e702ab956786742}\label{classcl_1_1_device_ad548f958e82010158e702ab956786742}} 
+\index{cl::Device@{cl::Device}!default\_@{default\_}}
+\index{default\_@{default\_}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{default\_}{default\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cl2_8hpp_a43bdbc2602e055e27992c3f36aeb616a}{C\+L\+\_\+\+H\+P\+P\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+}} \mbox{\hyperlink{classcl_1_1_device}{Device}} cl\+::\+Device\+::default\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+cl2.\+hpp 파일의 1963 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1_device_aa6cd70da1e8ed1f6a287cdd31728ee8b}\label{classcl_1_1_device_aa6cd70da1e8ed1f6a287cdd31728ee8b}} 
+\index{cl::Device@{cl::Device}!default\_error\_@{default\_error\_}}
+\index{default\_error\_@{default\_error\_}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{default\_error\_}{default\_error\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cl2_8hpp_a43bdbc2602e055e27992c3f36aeb616a}{C\+L\+\_\+\+H\+P\+P\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+}} cl\+\_\+int cl\+::\+Device\+::default\+\_\+error\+\_\+ = C\+L\+\_\+\+S\+U\+C\+C\+E\+SS\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+cl2.\+hpp 파일의 1964 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1_device_a72e0b75fb4579a85023904707c8da83f}\label{classcl_1_1_device_a72e0b75fb4579a85023904707c8da83f}} 
+\index{cl::Device@{cl::Device}!default\_initialized\_@{default\_initialized\_}}
+\index{default\_initialized\_@{default\_initialized\_}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{default\_initialized\_}{default\_initialized\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cl2_8hpp_a43bdbc2602e055e27992c3f36aeb616a}{C\+L\+\_\+\+H\+P\+P\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+}} std\+::once\+\_\+flag cl\+::\+Device\+::default\+\_\+initialized\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+cl2.\+hpp 파일의 1962 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}\label{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a34bae3d4d284c0ea2921182962c210df}} 
+\index{cl::Device@{cl::Device}!object\_@{object\_}}
+\index{object\_@{object\_}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{object\_}{object\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a2c117e3bbe52e50aa462f8da53278484}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+device\+\_\+id $>$\+::object\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1737 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a6bf49a144579823e03d4e88cafc4fb9d}\label{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4_a6bf49a144579823e03d4e88cafc4fb9d}} 
+\index{cl::Device@{cl::Device}!referenceCountable\_@{referenceCountable\_}}
+\index{referenceCountable\_@{referenceCountable\_}!cl::Device@{cl::Device}}
+\doxysubsubsection{\texorpdfstring{referenceCountable\_}{referenceCountable\_}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+device\+\_\+id $>$\+::reference\+Countable\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1738 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/gpu/\mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}\end{DoxyCompactItemize}

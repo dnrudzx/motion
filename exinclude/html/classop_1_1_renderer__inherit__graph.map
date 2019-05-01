@@ -1,0 +1,10 @@
+<map id="op::Renderer" name="op::Renderer">
+<area shape="rect" id="node1" title=" " alt="" coords="315,5,520,361"/>
+<area shape="rect" id="node2" href="$classop_1_1_face_cpu_renderer.html" title=" " alt="" coords="5,461,163,582"/>
+<area shape="rect" id="node3" href="$classop_1_1_gpu_renderer.html" title=" " alt="" coords="187,409,426,633"/>
+<area shape="rect" id="node7" href="$classop_1_1_hand_cpu_renderer.html" title=" " alt="" coords="450,461,609,582"/>
+<area shape="rect" id="node8" href="$classop_1_1_pose_cpu_renderer.html" title=" " alt="" coords="633,461,791,582"/>
+<area shape="rect" id="node4" href="$classop_1_1_face_gpu_renderer.html" title=" " alt="" coords="33,689,199,825"/>
+<area shape="rect" id="node5" href="$classop_1_1_hand_gpu_renderer.html" title=" " alt="" coords="223,689,390,825"/>
+<area shape="rect" id="node6" href="$classop_1_1_pose_gpu_renderer.html" title=" " alt="" coords="414,681,581,832"/>
+</map>

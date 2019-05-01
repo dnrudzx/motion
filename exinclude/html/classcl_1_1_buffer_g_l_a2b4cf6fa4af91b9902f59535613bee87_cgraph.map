@@ -1,0 +1,6 @@
+<map id="cl::BufferGL::operator=" name="cl::BufferGL::operator=">
+<area shape="rect" id="node1" title="Copy assignment to forward copy to the superclass correctly. Required for MSVC." alt="" coords="5,13,160,39"/>
+<area shape="rect" id="node2" href="$classcl_1_1_buffer.html#a7f1c8cf8cd50afde28a6a1e1f2d100b0" title="Assignment from cl_mem &#45; performs shallow copy." alt="" coords="208,13,347,39"/>
+<area shape="rect" id="node3" href="$classcl_1_1_memory.html#aa6cd4c07a111c6baa3195bee2a447dad" title="Assignment operator from cl_mem &#45; takes ownership." alt="" coords="395,13,545,39"/>
+<area shape="rect" id="node4" href="$classcl_1_1detail_1_1_wrapper.html#a044bc05bb3eb90345cb9cf574b95a98f" title=" " alt="" coords="593,5,721,47"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="cl::Event::wait" name="cl::Event::wait">
+<area shape="rect" id="node1" title="Blocks the calling thread until this event completes." alt="" coords="121,5,228,32"/>
+<area shape="rect" id="node2" href="$namespacecl.html#a2f71ed9a316daf59c03c0f3ba62f1bd3" title=" " alt="" coords="5,5,73,32"/>
+</map>

@@ -1,0 +1,89 @@
+\hypertarget{classop_1_1_udp_sender}{}\doxysection{op\+::Udp\+Sender 클래스 참조}
+\label{classop_1_1_udp_sender}\index{op::UdpSender@{op::UdpSender}}
+
+
+{\ttfamily \#include $<$udp\+Sender.\+hpp$>$}
+
+
+
+op\+::Udp\+Sender에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classop_1_1_udp_sender__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_udp_sender_a80fb12e5d4357e5dbb37c8a7b660c67c}{Udp\+Sender}} (const std\+::string \&udp\+Host, const std\+::string \&udp\+Port)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_udp_sender_ac85192d475d5e84b9dcc839d5e240585}{$\sim$\+Udp\+Sender}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_udp_sender_a2e8b52e1fd5a3383ebc9063ce21f6f06}{send\+Joint\+Angles}} (const double $\ast$const adam\+Pose\+Ptr, const int adam\+Pose\+Rows, const double $\ast$const adam\+Translation\+Ptr, const double $\ast$const adam\+Face\+Coeffs\+Exp\+Ptr, const int face\+Coeff\+Rows)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_udp_sender_a4e49d4d10c6cf96a2f732cc0cc7cc4a6}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_udp_sender}{Udp\+Sender}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ Impl\+Udp\+Sender $>$ \mbox{\hyperlink{classop_1_1_udp_sender_a5f08c24f5a37295576910436e019ba9c}{sp\+Impl}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+udp\+Sender.\+hpp 파일의 8 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_udp_sender_a80fb12e5d4357e5dbb37c8a7b660c67c}\label{classop_1_1_udp_sender_a80fb12e5d4357e5dbb37c8a7b660c67c}} 
+\index{op::UdpSender@{op::UdpSender}!UdpSender@{UdpSender}}
+\index{UdpSender@{UdpSender}!op::UdpSender@{op::UdpSender}}
+\doxysubsubsection{\texorpdfstring{UdpSender()}{UdpSender()}}
+{\footnotesize\ttfamily op\+::\+Udp\+Sender\+::\+Udp\+Sender (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{udp\+Host,  }\item[{const std\+::string \&}]{udp\+Port }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_udp_sender_ac85192d475d5e84b9dcc839d5e240585}\label{classop_1_1_udp_sender_ac85192d475d5e84b9dcc839d5e240585}} 
+\index{op::UdpSender@{op::UdpSender}!````~UdpSender@{$\sim$UdpSender}}
+\index{````~UdpSender@{$\sim$UdpSender}!op::UdpSender@{op::UdpSender}}
+\doxysubsubsection{\texorpdfstring{$\sim$UdpSender()}{~UdpSender()}}
+{\footnotesize\ttfamily virtual op\+::\+Udp\+Sender\+::$\sim$\+Udp\+Sender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_udp_sender_a4e49d4d10c6cf96a2f732cc0cc7cc4a6}\label{classop_1_1_udp_sender_a4e49d4d10c6cf96a2f732cc0cc7cc4a6}} 
+\index{op::UdpSender@{op::UdpSender}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::UdpSender@{op::UdpSender}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Udp\+Sender\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_udp_sender}{Udp\+Sender}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_udp_sender_a2e8b52e1fd5a3383ebc9063ce21f6f06}\label{classop_1_1_udp_sender_a2e8b52e1fd5a3383ebc9063ce21f6f06}} 
+\index{op::UdpSender@{op::UdpSender}!sendJointAngles@{sendJointAngles}}
+\index{sendJointAngles@{sendJointAngles}!op::UdpSender@{op::UdpSender}}
+\doxysubsubsection{\texorpdfstring{sendJointAngles()}{sendJointAngles()}}
+{\footnotesize\ttfamily void op\+::\+Udp\+Sender\+::send\+Joint\+Angles (\begin{DoxyParamCaption}\item[{const double $\ast$const}]{adam\+Pose\+Ptr,  }\item[{const int}]{adam\+Pose\+Rows,  }\item[{const double $\ast$const}]{adam\+Translation\+Ptr,  }\item[{const double $\ast$const}]{adam\+Face\+Coeffs\+Exp\+Ptr,  }\item[{const int}]{face\+Coeff\+Rows }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_udp_sender_a5f08c24f5a37295576910436e019ba9c}\label{classop_1_1_udp_sender_a5f08c24f5a37295576910436e019ba9c}} 
+\index{op::UdpSender@{op::UdpSender}!spImpl@{spImpl}}
+\index{spImpl@{spImpl}!op::UdpSender@{op::UdpSender}}
+\doxysubsubsection{\texorpdfstring{spImpl}{spImpl}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$Impl\+Udp\+Sender$>$ op\+::\+Udp\+Sender\+::sp\+Impl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+udp\+Sender.\+hpp 파일의 22 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/filestream/\mbox{\hyperlink{udp_sender_8hpp}{udp\+Sender.\+hpp}}\end{DoxyCompactItemize}

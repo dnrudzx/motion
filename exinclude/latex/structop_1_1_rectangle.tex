@@ -1,0 +1,283 @@
+\hypertarget{structop_1_1_rectangle}{}\doxysection{op\+::Rectangle$<$ T $>$ 구조체 템플릿 참조}
+\label{structop_1_1_rectangle}\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+
+
+{\ttfamily \#include $<$rectangle.\+hpp$>$}
+
+
+
+op\+::Rectangle$<$ T $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{structop_1_1_rectangle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structop_1_1_rectangle_a0112ddaa9782f3ccbb76a319b05f030b}{Rectangle}} (const T \mbox{\hyperlink{structop_1_1_rectangle_ac4ae58fe6ffd2f811f5cbc48661c1856}{x}}=0, const T \mbox{\hyperlink{structop_1_1_rectangle_a64e6891af0088a4ad271a725601b8043}{y}}=0, const T \mbox{\hyperlink{structop_1_1_rectangle_a0d0ae826039b0961fae8723708809cdf}{width}}=0, const T \mbox{\hyperlink{structop_1_1_rectangle_a5db9f0e8c946d837a1d351cc0bc72811}{height}}=0)
+\item 
+\mbox{\hyperlink{structop_1_1_rectangle_afbb0da8956e35178d3f28d2b1d998175}{Rectangle}} (const \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \&rectangle)
+\item 
+\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \& \mbox{\hyperlink{structop_1_1_rectangle_abd3476f9a32ad2058ea67c75c2a547a2}{operator=}} (const \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \&rectangle)
+\item 
+\mbox{\hyperlink{structop_1_1_rectangle_a5a9a60fdfd9c88ab8ded6275d64333ea}{Rectangle}} (\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \&\&rectangle)
+\item 
+\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \& \mbox{\hyperlink{structop_1_1_rectangle_abea1a6760629dc4ed99875dae9d5ac36}{operator=}} (\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \&\&rectangle)
+\item 
+\mbox{\hyperlink{structop_1_1_point}{Point}}$<$ T $>$ \mbox{\hyperlink{structop_1_1_rectangle_a0b0b8be8a0b300204a2afff4f219879b}{center}} () const
+\item 
+\mbox{\hyperlink{structop_1_1_point}{Point}}$<$ T $>$ \mbox{\hyperlink{structop_1_1_rectangle_a640050d6186148b425bedba8c33cf1ea}{top\+Left}} () const
+\item 
+\mbox{\hyperlink{structop_1_1_point}{Point}}$<$ T $>$ \mbox{\hyperlink{structop_1_1_rectangle_ab4473fb43ab826ffb10c2be18cb96f24}{bottom\+Right}} () const
+\item 
+T \mbox{\hyperlink{structop_1_1_rectangle_a5b319240c995c81bfa1d73a2461d49fd}{area}} () const
+\item 
+void \mbox{\hyperlink{structop_1_1_rectangle_a1c9a572db2c17fb02a7d19e965c1d3dc}{recenter}} (const T new\+Width, const T new\+Height)
+\item 
+std\+::string \mbox{\hyperlink{structop_1_1_rectangle_af1c7f96c34132924fa9237248894e63d}{to\+String}} () const
+\item 
+\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \& \mbox{\hyperlink{structop_1_1_rectangle_a2d3d7951770da3954d5af9e365f5780c}{operator$\ast$=}} (const T value)
+\item 
+\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \mbox{\hyperlink{structop_1_1_rectangle_a66e38889d2b413df95a9995e93103ff7}{operator$\ast$}} (const T value) const
+\item 
+\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \& \mbox{\hyperlink{structop_1_1_rectangle_a65620c7efbb3db95d85c90c2be3a851d}{operator/=}} (const T value)
+\item 
+\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \mbox{\hyperlink{structop_1_1_rectangle_adba48a35368d4a4d55896899b217d523}{operator/}} (const T value) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{structop_1_1_rectangle_ac4ae58fe6ffd2f811f5cbc48661c1856}{x}}
+\item 
+T \mbox{\hyperlink{structop_1_1_rectangle_a64e6891af0088a4ad271a725601b8043}{y}}
+\item 
+T \mbox{\hyperlink{structop_1_1_rectangle_a0d0ae826039b0961fae8723708809cdf}{width}}
+\item 
+T \mbox{\hyperlink{structop_1_1_rectangle_a5db9f0e8c946d837a1d351cc0bc72811}{height}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T$>$\newline
+struct op\+::\+Rectangle$<$ T $>$}
+
+
+
+rectangle.\+hpp 파일의 11 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{structop_1_1_rectangle_a0112ddaa9782f3ccbb76a319b05f030b}\label{structop_1_1_rectangle_a0112ddaa9782f3ccbb76a319b05f030b}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}} (\begin{DoxyParamCaption}\item[{const T}]{x = {\ttfamily 0},  }\item[{const T}]{y = {\ttfamily 0},  }\item[{const T}]{width = {\ttfamily 0},  }\item[{const T}]{height = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structop_1_1_rectangle_afbb0da8956e35178d3f28d2b1d998175}\label{structop_1_1_rectangle_afbb0da8956e35178d3f28d2b1d998175}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \&}]{rectangle }\end{DoxyParamCaption})}
+
+Copy constructor. It performs {\ttfamily fast copy}\+: For performance purpose, copying a Rectangle$<$\+T$>$ or \mbox{\hyperlink{structop_1_1_datum}{Datum}} or cv\+::\+Mat just copies the reference, it still shares the same internal data. Modifying the copied element will modify the original one. Use clone() for a slower but real copy, similarly to cv\+::\+Mat and Rectangle$<$\+T$>$. 
+\begin{DoxyParams}{매개변수}
+{\em rectangle} & \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}} to be copied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structop_1_1_rectangle_a5a9a60fdfd9c88ab8ded6275d64333ea}\label{structop_1_1_rectangle_a5a9a60fdfd9c88ab8ded6275d64333ea}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \&\&}]{rectangle }\end{DoxyParamCaption})}
+
+Move constructor. It destroys the original \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}} to be moved. 
+\begin{DoxyParams}{매개변수}
+{\em rectangle} & \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}} to be moved. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{structop_1_1_rectangle_a5b319240c995c81bfa1d73a2461d49fd}\label{structop_1_1_rectangle_a5b319240c995c81bfa1d73a2461d49fd}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!area@{area}}
+\index{area@{area}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+rectangle.\+hpp 파일의 62 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63         \{}
+\DoxyCodeLine{64             \textcolor{keywordflow}{return} \mbox{\hyperlink{structop_1_1_rectangle_a0d0ae826039b0961fae8723708809cdf}{width}} * \mbox{\hyperlink{structop_1_1_rectangle_a5db9f0e8c946d837a1d351cc0bc72811}{height}};}
+\DoxyCodeLine{65         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structop_1_1_rectangle_ab4473fb43ab826ffb10c2be18cb96f24}\label{structop_1_1_rectangle_ab4473fb43ab826ffb10c2be18cb96f24}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!bottomRight@{bottomRight}}
+\index{bottomRight@{bottomRight}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{bottomRight()}{bottomRight()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{structop_1_1_point}{Point}}$<$T$>$ \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::bottom\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structop_1_1_rectangle_a0b0b8be8a0b300204a2afff4f219879b}\label{structop_1_1_rectangle_a0b0b8be8a0b300204a2afff4f219879b}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!center@{center}}
+\index{center@{center}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{structop_1_1_point}{Point}}$<$T$>$ \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structop_1_1_rectangle_a66e38889d2b413df95a9995e93103ff7}\label{structop_1_1_rectangle_a66e38889d2b413df95a9995e93103ff7}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$T$>$ \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const T}]{value }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structop_1_1_rectangle_a2d3d7951770da3954d5af9e365f5780c}\label{structop_1_1_rectangle_a2d3d7951770da3954d5af9e365f5780c}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$T$>$\& \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const T}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structop_1_1_rectangle_adba48a35368d4a4d55896899b217d523}\label{structop_1_1_rectangle_adba48a35368d4a4d55896899b217d523}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!operator/@{operator/}}
+\index{operator/@{operator/}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$T$>$ \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::operator/ (\begin{DoxyParamCaption}\item[{const T}]{value }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structop_1_1_rectangle_a65620c7efbb3db95d85c90c2be3a851d}\label{structop_1_1_rectangle_a65620c7efbb3db95d85c90c2be3a851d}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$T$>$\& \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::operator/= (\begin{DoxyParamCaption}\item[{const T}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structop_1_1_rectangle_abd3476f9a32ad2058ea67c75c2a547a2}\label{structop_1_1_rectangle_abd3476f9a32ad2058ea67c75c2a547a2}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$T$>$\& \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \&}]{rectangle }\end{DoxyParamCaption})}
+
+Copy assignment. Similar to \mbox{\hyperlink{structop_1_1_rectangle_afbb0da8956e35178d3f28d2b1d998175}{Rectangle$<$\+T$>$(const Rectangle$<$\+T$>$\& rectangle)}}. 
+\begin{DoxyParams}{매개변수}
+{\em rectangle} & \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}} to be copied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+The resulting \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structop_1_1_rectangle_abea1a6760629dc4ed99875dae9d5ac36}\label{structop_1_1_rectangle_abea1a6760629dc4ed99875dae9d5ac36}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$T$>$\& \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ T $>$ \&\&}]{rectangle }\end{DoxyParamCaption})}
+
+Move assignment. Similar to \mbox{\hyperlink{structop_1_1_rectangle_a5a9a60fdfd9c88ab8ded6275d64333ea}{Rectangle$<$\+T$>$(\+Rectangle$<$\+T$>$\&\& rectangle)}}. 
+\begin{DoxyParams}{매개변수}
+{\em rectangle} & \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}} to be moved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+The resulting \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structop_1_1_rectangle_a1c9a572db2c17fb02a7d19e965c1d3dc}\label{structop_1_1_rectangle_a1c9a572db2c17fb02a7d19e965c1d3dc}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!recenter@{recenter}}
+\index{recenter@{recenter}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{recenter()}{recenter()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::recenter (\begin{DoxyParamCaption}\item[{const T}]{new\+Width,  }\item[{const T}]{new\+Height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structop_1_1_rectangle_a640050d6186148b425bedba8c33cf1ea}\label{structop_1_1_rectangle_a640050d6186148b425bedba8c33cf1ea}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!topLeft@{topLeft}}
+\index{topLeft@{topLeft}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{topLeft()}{topLeft()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{structop_1_1_point}{Point}}$<$T$>$ \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::top\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+rectangle.\+hpp 파일의 55 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56         \{}
+\DoxyCodeLine{57             \textcolor{keywordflow}{return} Point<T>\{\mbox{\hyperlink{structop_1_1_rectangle_ac4ae58fe6ffd2f811f5cbc48661c1856}{x}}, \mbox{\hyperlink{structop_1_1_rectangle_a64e6891af0088a4ad271a725601b8043}{y}}\};}
+\DoxyCodeLine{58         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structop_1_1_rectangle_af1c7f96c34132924fa9237248894e63d}\label{structop_1_1_rectangle_af1c7f96c34132924fa9237248894e63d}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!toString@{toString}}
+\index{toString@{toString}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+std\+::string \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+It returns a string with the whole Rectangle$<$\+T$>$ data. Useful for debugging. The format is\+: {\ttfamily \mbox{[}x, y, width, height\mbox{]}} \begin{DoxyReturn}{반환값}
+A string with the Rectangle$<$\+T$>$ values in the above format. 
+\end{DoxyReturn}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{structop_1_1_rectangle_a5db9f0e8c946d837a1d351cc0bc72811}\label{structop_1_1_rectangle_a5db9f0e8c946d837a1d351cc0bc72811}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!height@{height}}
+\index{height@{height}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::height}
+
+
+
+rectangle.\+hpp 파일의 16 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_rectangle_a0d0ae826039b0961fae8723708809cdf}\label{structop_1_1_rectangle_a0d0ae826039b0961fae8723708809cdf}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!width@{width}}
+\index{width@{width}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::width}
+
+
+
+rectangle.\+hpp 파일의 15 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_rectangle_ac4ae58fe6ffd2f811f5cbc48661c1856}\label{structop_1_1_rectangle_ac4ae58fe6ffd2f811f5cbc48661c1856}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!x@{x}}
+\index{x@{x}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::x}
+
+
+
+rectangle.\+hpp 파일의 13 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_rectangle_a64e6891af0088a4ad271a725601b8043}\label{structop_1_1_rectangle_a64e6891af0088a4ad271a725601b8043}} 
+\index{op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}!y@{y}}
+\index{y@{y}!op::Rectangle$<$ T $>$@{op::Rectangle$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \mbox{\hyperlink{structop_1_1_rectangle}{op\+::\+Rectangle}}$<$ T $>$\+::y}
+
+
+
+rectangle.\+hpp 파일의 14 번째 라인에서 정의되었습니다.
+
+
+
+이 구조체에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/core/\mbox{\hyperlink{rectangle_8hpp}{rectangle.\+hpp}}\end{DoxyCompactItemize}

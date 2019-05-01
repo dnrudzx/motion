@@ -1,0 +1,467 @@
+\hypertarget{classop_1_1_w_queue_orderer}{}\doxysection{op\+::W\+Queue\+Orderer$<$ T\+Datums $>$ 클래스 템플릿 참조}
+\label{classop_1_1_w_queue_orderer}\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+
+
+{\ttfamily \#include $<$w\+Queue\+Orderer.\+hpp$>$}
+
+
+
+op\+::W\+Queue\+Orderer$<$ T\+Datums $>$에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classop_1_1_w_queue_orderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::W\+Queue\+Orderer$<$ T\+Datums $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classop_1_1_w_queue_orderer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_w_queue_orderer_a3303add5fa8cc36593d3d859ffdd8ae0}{W\+Queue\+Orderer}} (const unsigned int max\+Buffer\+Size=64u)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_w_queue_orderer_a720b2cd490e2267258bf5d5776f00095}{$\sim$\+W\+Queue\+Orderer}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_w_queue_orderer_a85598f83f6f3a30b7ddce9bc7beddf33}{initialization\+On\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_w_queue_orderer_a1ea314eeaa8d99fbf33885d9a4c6d044}{work}} (T\+Datums \&t\+Datums)
+\item 
+void \mbox{\hyperlink{classop_1_1_w_queue_orderer_a01bc7495ec992cc9c54a040534cb3634}{try\+Stop}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}{initialization\+On\+Thread\+No\+Exception}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}{check\+And\+Work}} (T\+Datums \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}{is\+Running}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_w_queue_orderer_a0b8e18b47a9decd7ecc3734e3a4c80f5}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_w_queue_orderer}{W\+Queue\+Orderer}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned int \mbox{\hyperlink{classop_1_1_w_queue_orderer_a84bf4dc126c523714f02def565f3d35f}{m\+Max\+Buffer\+Size}}
+\item 
+bool \mbox{\hyperlink{classop_1_1_w_queue_orderer_a4e218b043947f6aaa2f9d49e809695ab}{m\+Stop\+When\+Empty}}
+\item 
+unsigned long long \mbox{\hyperlink{classop_1_1_w_queue_orderer_ad6cda97b7fd14b76d2b2c62d56281c60}{m\+Next\+Expected\+Id}}
+\item 
+unsigned long long \mbox{\hyperlink{classop_1_1_w_queue_orderer_ac0a723a3982ef7d9bb65808d8f277fa1}{m\+Next\+Expected\+Sub\+Id}}
+\item 
+std\+::priority\+\_\+queue$<$ T\+Datums, std\+::vector$<$ T\+Datums $>$, \mbox{\hyperlink{classop_1_1_pointer_container_greater}{Pointer\+Container\+Greater}}$<$ T\+Datums $>$ $>$ \mbox{\hyperlink{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}{m\+Priority\+Queue\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T\+Datums$>$\newline
+class op\+::\+W\+Queue\+Orderer$<$ T\+Datums $>$}
+
+
+
+w\+Queue\+Orderer.\+hpp 파일의 12 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_w_queue_orderer_a3303add5fa8cc36593d3d859ffdd8ae0}\label{classop_1_1_w_queue_orderer_a3303add5fa8cc36593d3d859ffdd8ae0}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!WQueueOrderer@{WQueueOrderer}}
+\index{WQueueOrderer@{WQueueOrderer}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{WQueueOrderer()}{WQueueOrderer()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_queue_orderer}{op\+::\+W\+Queue\+Orderer}}$<$ T\+Datums $>$\+::\mbox{\hyperlink{classop_1_1_w_queue_orderer}{W\+Queue\+Orderer}} (\begin{DoxyParamCaption}\item[{const unsigned int}]{max\+Buffer\+Size = {\ttfamily 64u} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+w\+Queue\+Orderer.\+hpp 파일의 44 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                                                           :}
+\DoxyCodeLine{45         \mbox{\hyperlink{classop_1_1_w_queue_orderer_a84bf4dc126c523714f02def565f3d35f}{mMaxBufferSize}}\{maxBufferSize\},}
+\DoxyCodeLine{46         \mbox{\hyperlink{classop_1_1_w_queue_orderer_a4e218b043947f6aaa2f9d49e809695ab}{mStopWhenEmpty}}\{\textcolor{keyword}{false}\},}
+\DoxyCodeLine{47         \mbox{\hyperlink{classop_1_1_w_queue_orderer_ad6cda97b7fd14b76d2b2c62d56281c60}{mNextExpectedId}}\{0\},}
+\DoxyCodeLine{48         \mbox{\hyperlink{classop_1_1_w_queue_orderer_ac0a723a3982ef7d9bb65808d8f277fa1}{mNextExpectedSubId}}\{0\}}
+\DoxyCodeLine{49     \{}
+\DoxyCodeLine{50     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_queue_orderer_a720b2cd490e2267258bf5d5776f00095}\label{classop_1_1_w_queue_orderer_a720b2cd490e2267258bf5d5776f00095}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!````~WQueueOrderer@{$\sim$WQueueOrderer}}
+\index{````~WQueueOrderer@{$\sim$WQueueOrderer}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$WQueueOrderer()}{~WQueueOrderer()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_queue_orderer}{op\+::\+W\+Queue\+Orderer}}$<$ T\+Datums $>$\+::$\sim$\mbox{\hyperlink{classop_1_1_w_queue_orderer}{W\+Queue\+Orderer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+w\+Queue\+Orderer.\+hpp 파일의 53 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54     \{}
+\DoxyCodeLine{55     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}\label{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!checkAndWork@{checkAndWork}}
+\index{checkAndWork@{checkAndWork}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{checkAndWork()}{checkAndWork()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+bool \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::check\+And\+Work (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 82 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83     \{}
+\DoxyCodeLine{84         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{85         \{}
+\DoxyCodeLine{86             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}})}
+\DoxyCodeLine{87                 \mbox{\hyperlink{classop_1_1_worker_a9acadd6df7af03b31b9e354ae815f781}{work}}(tDatums);}
+\DoxyCodeLine{88             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}};}
+\DoxyCodeLine{89         \}}
+\DoxyCodeLine{90         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{91         \{}
+\DoxyCodeLine{92             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{93             \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{errorWorker}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{94             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_queue_orderer_a0b8e18b47a9decd7ecc3734e3a4c80f5}\label{classop_1_1_w_queue_orderer_a0b8e18b47a9decd7ecc3734e3a4c80f5}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_queue_orderer}{op\+::\+W\+Queue\+Orderer}}$<$ T\+Datums $>$\+::D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_w_queue_orderer}{W\+Queue\+Orderer}}$<$ T\+Datums $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_w_queue_orderer_a85598f83f6f3a30b7ddce9bc7beddf33}\label{classop_1_1_w_queue_orderer_a85598f83f6f3a30b7ddce9bc7beddf33}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_w_queue_orderer}{op\+::\+W\+Queue\+Orderer}}$<$ T\+Datums $>$\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}{op\+::\+Worker$<$ T\+Datums $>$}}를 구현.
+
+
+
+w\+Queue\+Orderer.\+hpp 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59     \{}
+\DoxyCodeLine{60     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}\label{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!initializationOnThreadNoException@{initializationOnThreadNoException}}
+\index{initializationOnThreadNoException@{initializationOnThreadNoException}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{initializationOnThreadNoException()}{initializationOnThreadNoException()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::initialization\+On\+Thread\+No\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69     \{}
+\DoxyCodeLine{70         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{71         \{}
+\DoxyCodeLine{72             this-\/>\mbox{\hyperlink{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}{initializationOnThread}}();}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{75         \{}
+\DoxyCodeLine{76             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{77             \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{errorWorker}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{78         \}}
+\DoxyCodeLine{79     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}\label{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+bool \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 20 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21         \{}
+\DoxyCodeLine{22             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}};}
+\DoxyCodeLine{23         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}\label{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!stop@{stop}}
+\index{stop@{stop}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 25 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26         \{}
+\DoxyCodeLine{27             \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{28         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_w_queue_orderer_a01bc7495ec992cc9c54a040534cb3634}\label{classop_1_1_w_queue_orderer_a01bc7495ec992cc9c54a040534cb3634}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!tryStop@{tryStop}}
+\index{tryStop@{tryStop}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{tryStop()}{tryStop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_w_queue_orderer}{op\+::\+W\+Queue\+Orderer}}$<$ T\+Datums $>$\+::try\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}{op\+::\+Worker$<$ T\+Datums $>$}}(으)로부터 재구현되었습니다.
+
+
+
+w\+Queue\+Orderer.\+hpp 파일의 159 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{160     \{}
+\DoxyCodeLine{161         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{162         \{}
+\DoxyCodeLine{163             \textcolor{comment}{// Close if all frames were retrieved from the queue}}
+\DoxyCodeLine{164             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}{mPriorityQueueBuffer}}.empty())}
+\DoxyCodeLine{165                 this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{166             \mbox{\hyperlink{classop_1_1_w_queue_orderer_a4e218b043947f6aaa2f9d49e809695ab}{mStopWhenEmpty}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168         \}}
+\DoxyCodeLine{169         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{170         \{}
+\DoxyCodeLine{171             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{172         \}}
+\DoxyCodeLine{173     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{classop_1_1_w_queue_orderer_a01bc7495ec992cc9c54a040534cb3634_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_w_queue_orderer_a1ea314eeaa8d99fbf33885d9a4c6d044}\label{classop_1_1_w_queue_orderer_a1ea314eeaa8d99fbf33885d9a4c6d044}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!work@{work}}
+\index{work@{work}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{work()}{work()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_w_queue_orderer}{op\+::\+W\+Queue\+Orderer}}$<$ T\+Datums $>$\+::work (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_worker_a9acadd6df7af03b31b9e354ae815f781}{op\+::\+Worker$<$ T\+Datums $>$}}를 구현.
+
+
+
+w\+Queue\+Orderer.\+hpp 파일의 63 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64     \{}
+\DoxyCodeLine{65         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{66         \{}
+\DoxyCodeLine{67             \textcolor{comment}{// Profiling speed}}
+\DoxyCodeLine{68             \textcolor{keyword}{const} \textcolor{keyword}{auto} profilerKey = \mbox{\hyperlink{classop_1_1_profiler_aea2c89bcd0a661a53f47e59b9bec2be7}{Profiler::timerInit}}(\_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{69             \textcolor{keywordtype}{bool} profileSpeed = (tDatums != \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{70             \textcolor{comment}{// Input TDatum -\/> enqueue or return it back}}
+\DoxyCodeLine{71             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceop_a02164ca0af9e838190f584f5d1d8465e}{checkNoNullNorEmpty}}(tDatums))}
+\DoxyCodeLine{72             \{}
+\DoxyCodeLine{73                 \textcolor{comment}{// T* to T}}
+\DoxyCodeLine{74                 \textcolor{keyword}{auto}\& tDatumsNoPtr = *tDatums;}
+\DoxyCodeLine{75                 \textcolor{comment}{// tDatums is the next expected, update counter}}
+\DoxyCodeLine{76                 \textcolor{keywordflow}{if} (tDatumsNoPtr[0]-\/>\textcolor{keywordtype}{id} == \mbox{\hyperlink{classop_1_1_w_queue_orderer_ad6cda97b7fd14b76d2b2c62d56281c60}{mNextExpectedId}} \&\& tDatumsNoPtr[0]-\/>subId == \mbox{\hyperlink{classop_1_1_w_queue_orderer_ac0a723a3982ef7d9bb65808d8f277fa1}{mNextExpectedSubId}})}
+\DoxyCodeLine{77                 \{}
+\DoxyCodeLine{78                     \textcolor{comment}{// If single-\/view}}
+\DoxyCodeLine{79                     \textcolor{keywordflow}{if} (tDatumsNoPtr[0]-\/>subIdMax == 0)}
+\DoxyCodeLine{80                         \mbox{\hyperlink{classop_1_1_w_queue_orderer_ad6cda97b7fd14b76d2b2c62d56281c60}{mNextExpectedId}}++;}
+\DoxyCodeLine{81                     \textcolor{comment}{// If muilti-\/view system}}
+\DoxyCodeLine{82                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{83                     \{}
+\DoxyCodeLine{84                         \mbox{\hyperlink{classop_1_1_w_queue_orderer_ac0a723a3982ef7d9bb65808d8f277fa1}{mNextExpectedSubId}}++;}
+\DoxyCodeLine{85                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_w_queue_orderer_ac0a723a3982ef7d9bb65808d8f277fa1}{mNextExpectedSubId}} > tDatumsNoPtr[0]-\/>subIdMax)}
+\DoxyCodeLine{86                         \{}
+\DoxyCodeLine{87                             \mbox{\hyperlink{classop_1_1_w_queue_orderer_ac0a723a3982ef7d9bb65808d8f277fa1}{mNextExpectedSubId}} = 0;}
+\DoxyCodeLine{88                             \mbox{\hyperlink{classop_1_1_w_queue_orderer_ad6cda97b7fd14b76d2b2c62d56281c60}{mNextExpectedId}}++;}
+\DoxyCodeLine{89                         \}}
+\DoxyCodeLine{90                     \}}
+\DoxyCodeLine{91                 \}}
+\DoxyCodeLine{92                 \textcolor{comment}{// Else push it to our buffered queue}}
+\DoxyCodeLine{93                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{94                 \{}
+\DoxyCodeLine{95                     \textcolor{comment}{// Enqueue current tDatums}}
+\DoxyCodeLine{96                     \mbox{\hyperlink{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}{mPriorityQueueBuffer}}.emplace(tDatums);}
+\DoxyCodeLine{97                     tDatums = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{98                     \textcolor{comment}{// Else if buffer full -\/> remove one tDatums}}
+\DoxyCodeLine{99                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}{mPriorityQueueBuffer}}.size() > \mbox{\hyperlink{classop_1_1_w_queue_orderer_a84bf4dc126c523714f02def565f3d35f}{mMaxBufferSize}})}
+\DoxyCodeLine{100                     \{}
+\DoxyCodeLine{101                         tDatums = \mbox{\hyperlink{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}{mPriorityQueueBuffer}}.top();}
+\DoxyCodeLine{102                         \mbox{\hyperlink{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}{mPriorityQueueBuffer}}.pop();}
+\DoxyCodeLine{103                     \}}
+\DoxyCodeLine{104                 \}}
+\DoxyCodeLine{105             \}}
+\DoxyCodeLine{106             \textcolor{comment}{// If input TDatum enqueued -\/> check if previously enqueued next desired frame and pop it}}
+\DoxyCodeLine{107             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{namespaceop_a02164ca0af9e838190f584f5d1d8465e}{checkNoNullNorEmpty}}(tDatums))}
+\DoxyCodeLine{108             \{}
+\DoxyCodeLine{109                 \textcolor{comment}{// Retrieve frame if next is desired frame or if we want to stop this worker}}
+\DoxyCodeLine{110                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}{mPriorityQueueBuffer}}.empty()}
+\DoxyCodeLine{111                     \&\& (\mbox{\hyperlink{classop_1_1_w_queue_orderer_a4e218b043947f6aaa2f9d49e809695ab}{mStopWhenEmpty}} ||}
+\DoxyCodeLine{112                         ((*\mbox{\hyperlink{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}{mPriorityQueueBuffer}}.top())[0]-\/>\textcolor{keywordtype}{id} == \mbox{\hyperlink{classop_1_1_w_queue_orderer_ad6cda97b7fd14b76d2b2c62d56281c60}{mNextExpectedId}}}
+\DoxyCodeLine{113                           \&\& (*\mbox{\hyperlink{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}{mPriorityQueueBuffer}}.top())[0]-\/>subId == \mbox{\hyperlink{classop_1_1_w_queue_orderer_ac0a723a3982ef7d9bb65808d8f277fa1}{mNextExpectedSubId}})))}
+\DoxyCodeLine{114                 \{}
+\DoxyCodeLine{115                     tDatums = \{ \mbox{\hyperlink{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}{mPriorityQueueBuffer}}.top() \};}
+\DoxyCodeLine{116                     \mbox{\hyperlink{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}{mPriorityQueueBuffer}}.pop();}
+\DoxyCodeLine{117                 \}}
+\DoxyCodeLine{118             \}}
+\DoxyCodeLine{119             \textcolor{comment}{// If TDatum ready to be returned -\/> updated next expected id}}
+\DoxyCodeLine{120             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceop_a02164ca0af9e838190f584f5d1d8465e}{checkNoNullNorEmpty}}(tDatums))}
+\DoxyCodeLine{121             \{}
+\DoxyCodeLine{122                 \textcolor{keyword}{const} \textcolor{keyword}{auto}\& tDatumsNoPtr = *tDatums;}
+\DoxyCodeLine{123                 \textcolor{comment}{// If single-\/view}}
+\DoxyCodeLine{124                 \textcolor{keywordflow}{if} (tDatumsNoPtr[0]-\/>subIdMax == 0)}
+\DoxyCodeLine{125                     \mbox{\hyperlink{classop_1_1_w_queue_orderer_ad6cda97b7fd14b76d2b2c62d56281c60}{mNextExpectedId}} = tDatumsNoPtr[0]-\/>id + 1;}
+\DoxyCodeLine{126                 \textcolor{comment}{// If muilti-\/view system}}
+\DoxyCodeLine{127                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{128                 \{}
+\DoxyCodeLine{129                     \mbox{\hyperlink{classop_1_1_w_queue_orderer_ac0a723a3982ef7d9bb65808d8f277fa1}{mNextExpectedSubId}} = tDatumsNoPtr[0]-\/>subId + 1;}
+\DoxyCodeLine{130                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_w_queue_orderer_ac0a723a3982ef7d9bb65808d8f277fa1}{mNextExpectedSubId}} > tDatumsNoPtr[0]-\/>subIdMax)}
+\DoxyCodeLine{131                     \{}
+\DoxyCodeLine{132                         \mbox{\hyperlink{classop_1_1_w_queue_orderer_ac0a723a3982ef7d9bb65808d8f277fa1}{mNextExpectedSubId}} = 0;}
+\DoxyCodeLine{133                         \mbox{\hyperlink{classop_1_1_w_queue_orderer_ad6cda97b7fd14b76d2b2c62d56281c60}{mNextExpectedId}} = tDatumsNoPtr[0]-\/>id + 1;}
+\DoxyCodeLine{134                     \}}
+\DoxyCodeLine{135                 \}}
+\DoxyCodeLine{136             \}}
+\DoxyCodeLine{137             \textcolor{comment}{// Sleep if no new tDatums to either pop or push}}
+\DoxyCodeLine{138             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{namespaceop_a02164ca0af9e838190f584f5d1d8465e}{checkNoNullNorEmpty}}(tDatums) \&\& \mbox{\hyperlink{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}{mPriorityQueueBuffer}}.size() < \mbox{\hyperlink{classop_1_1_w_queue_orderer_a84bf4dc126c523714f02def565f3d35f}{mMaxBufferSize}} / 2u)}
+\DoxyCodeLine{139                 std::this\_thread::sleep\_for(std::chrono::milliseconds\{1\});}
+\DoxyCodeLine{140             \textcolor{comment}{// If TDatum popped and/or pushed}}
+\DoxyCodeLine{141             \textcolor{keywordflow}{if} (profileSpeed || tDatums != \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{142             \{}
+\DoxyCodeLine{143                 \textcolor{comment}{// Profiling speed}}
+\DoxyCodeLine{144                 \mbox{\hyperlink{classop_1_1_profiler_affff5b0b992e05276b2a699f97ad525d}{Profiler::timerEnd}}(profilerKey);}
+\DoxyCodeLine{145                 \mbox{\hyperlink{classop_1_1_profiler_a58b930a54a98bbc91af074395852da76}{Profiler::printAveragedTimeMsOnIterationX}}(profilerKey, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{146                 \textcolor{comment}{// Debugging log}}
+\DoxyCodeLine{147                 \mbox{\hyperlink{namespaceop_a4eb991aa18818196d35c66455a437a32}{dLog}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{148             \}}
+\DoxyCodeLine{149         \}}
+\DoxyCodeLine{150         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{151         \{}
+\DoxyCodeLine{152             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{153             tDatums = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{154             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{155         \}}
+\DoxyCodeLine{156     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classop_1_1_w_queue_orderer_a1ea314eeaa8d99fbf33885d9a4c6d044_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_w_queue_orderer_a84bf4dc126c523714f02def565f3d35f}\label{classop_1_1_w_queue_orderer_a84bf4dc126c523714f02def565f3d35f}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!mMaxBufferSize@{mMaxBufferSize}}
+\index{mMaxBufferSize@{mMaxBufferSize}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{mMaxBufferSize}{mMaxBufferSize}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+const unsigned int \mbox{\hyperlink{classop_1_1_w_queue_orderer}{op\+::\+W\+Queue\+Orderer}}$<$ T\+Datums $>$\+::m\+Max\+Buffer\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+w\+Queue\+Orderer.\+hpp 파일의 26 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_w_queue_orderer_ad6cda97b7fd14b76d2b2c62d56281c60}\label{classop_1_1_w_queue_orderer_ad6cda97b7fd14b76d2b2c62d56281c60}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!mNextExpectedId@{mNextExpectedId}}
+\index{mNextExpectedId@{mNextExpectedId}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{mNextExpectedId}{mNextExpectedId}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+unsigned long long \mbox{\hyperlink{classop_1_1_w_queue_orderer}{op\+::\+W\+Queue\+Orderer}}$<$ T\+Datums $>$\+::m\+Next\+Expected\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+w\+Queue\+Orderer.\+hpp 파일의 28 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_w_queue_orderer_ac0a723a3982ef7d9bb65808d8f277fa1}\label{classop_1_1_w_queue_orderer_ac0a723a3982ef7d9bb65808d8f277fa1}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!mNextExpectedSubId@{mNextExpectedSubId}}
+\index{mNextExpectedSubId@{mNextExpectedSubId}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{mNextExpectedSubId}{mNextExpectedSubId}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+unsigned long long \mbox{\hyperlink{classop_1_1_w_queue_orderer}{op\+::\+W\+Queue\+Orderer}}$<$ T\+Datums $>$\+::m\+Next\+Expected\+Sub\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+w\+Queue\+Orderer.\+hpp 파일의 29 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}\label{classop_1_1_w_queue_orderer_ae682153dc78325a58c77e11771f476cc}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!mPriorityQueueBuffer@{mPriorityQueueBuffer}}
+\index{mPriorityQueueBuffer@{mPriorityQueueBuffer}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{mPriorityQueueBuffer}{mPriorityQueueBuffer}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+std\+::priority\+\_\+queue$<$T\+Datums, std\+::vector$<$T\+Datums$>$, \mbox{\hyperlink{classop_1_1_pointer_container_greater}{Pointer\+Container\+Greater}}$<$T\+Datums$>$ $>$ \mbox{\hyperlink{classop_1_1_w_queue_orderer}{op\+::\+W\+Queue\+Orderer}}$<$ T\+Datums $>$\+::m\+Priority\+Queue\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+w\+Queue\+Orderer.\+hpp 파일의 30 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_w_queue_orderer_a4e218b043947f6aaa2f9d49e809695ab}\label{classop_1_1_w_queue_orderer_a4e218b043947f6aaa2f9d49e809695ab}} 
+\index{op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}!mStopWhenEmpty@{mStopWhenEmpty}}
+\index{mStopWhenEmpty@{mStopWhenEmpty}!op::WQueueOrderer$<$ TDatums $>$@{op::WQueueOrderer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{mStopWhenEmpty}{mStopWhenEmpty}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+bool \mbox{\hyperlink{classop_1_1_w_queue_orderer}{op\+::\+W\+Queue\+Orderer}}$<$ T\+Datums $>$\+::m\+Stop\+When\+Empty\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+w\+Queue\+Orderer.\+hpp 파일의 27 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/thread/\mbox{\hyperlink{w_queue_orderer_8hpp}{w\+Queue\+Orderer.\+hpp}}\end{DoxyCompactItemize}

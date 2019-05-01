@@ -1,0 +1,279 @@
+\hypertarget{macros_8hpp}{}\doxysection{/home/ms/openpose/include/openpose/core/macros.hpp 파일 참조}
+\label{macros_8hpp}\index{/home/ms/openpose/include/openpose/core/macros.hpp@{/home/ms/openpose/include/openpose/core/macros.hpp}}
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$opencv2/core/core.\+hpp$>$}\newline
+macros.\+hpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{macros_8hpp__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{macros_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{매크로}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}}
+\item 
+\#define \mbox{\hyperlink{macros_8hpp_af57a843cfdae82e064838c20b3b54851}{U\+N\+U\+S\+ED}}(unused\+Variable)~(void)(unused\+Variable)
+\item 
+\#define \mbox{\hyperlink{macros_8hpp_abef96b5dd35dd9d44ad27ddf0e2f5f2e}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}}(class\+Name)
+\item 
+\#define \mbox{\hyperlink{macros_8hpp_a60e010d8a2352d94b8b57d97cf4a7d73}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+B\+A\+S\+I\+C\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+C\+L\+A\+SS}}(class\+Name)~\mbox{\hyperlink{macros_8hpp_a6bf32c65e0f388d5b09d8b2424416c0e}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+B\+A\+S\+I\+C\+\_\+\+T\+Y\+P\+ES}}(class\+Name, class)
+\item 
+\#define \mbox{\hyperlink{macros_8hpp_ac5627744abe5fd0c8eacfe9c7f8bd32e}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+B\+A\+S\+I\+C\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+S\+T\+R\+U\+CT}}(class\+Name)~\mbox{\hyperlink{macros_8hpp_a6bf32c65e0f388d5b09d8b2424416c0e}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+B\+A\+S\+I\+C\+\_\+\+T\+Y\+P\+ES}}(class\+Name, struct)
+\item 
+\#define \mbox{\hyperlink{macros_8hpp_a6bf32c65e0f388d5b09d8b2424416c0e}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+B\+A\+S\+I\+C\+\_\+\+T\+Y\+P\+ES}}(class\+Name,  class\+Type)
+\item 
+\#define \mbox{\hyperlink{macros_8hpp_a1eadbb31e92e7fbc799bf7cf4d2a6f50}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+C\+L\+A\+SS}}(class\+Name)~\mbox{\hyperlink{macros_8hpp_a80404791b46a15fd601feaa11f1e5028}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+T\+Y\+P\+ES}}(class\+Name, class)
+\item 
+\#define \mbox{\hyperlink{macros_8hpp_af9fed593b7a4237bc6ede717a1ae70f0}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+S\+T\+R\+U\+CT}}(class\+Name)~\mbox{\hyperlink{macros_8hpp_a80404791b46a15fd601feaa11f1e5028}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+T\+Y\+P\+ES}}(class\+Name, struct)
+\item 
+\#define \mbox{\hyperlink{macros_8hpp_a80404791b46a15fd601feaa11f1e5028}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+T\+Y\+P\+ES}}(class\+Name,  class\+Type)
+\item 
+\#define \mbox{\hyperlink{macros_8hpp_a7bacf9f65110ec8292bc69e1eb0f426e}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+I\+N\+T\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+C\+L\+A\+SS}}(class\+Name)~\mbox{\hyperlink{macros_8hpp_ad0aef3afcb2a9da69c3453426f56b0ac}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+I\+N\+T\+\_\+\+T\+Y\+P\+ES}}(class\+Name, class)
+\item 
+\#define \mbox{\hyperlink{macros_8hpp_acc5af19a77b18cf5aa2e1f82e2e484dd}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+I\+N\+T\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+S\+T\+R\+U\+CT}}(class\+Name)~\mbox{\hyperlink{macros_8hpp_ad0aef3afcb2a9da69c3453426f56b0ac}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+I\+N\+T\+\_\+\+T\+Y\+P\+ES}}(class\+Name, struct)
+\item 
+\#define \mbox{\hyperlink{macros_8hpp_ad0aef3afcb2a9da69c3453426f56b0ac}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+I\+N\+T\+\_\+\+T\+Y\+P\+ES}}(class\+Name,  class\+Type)
+\item 
+\#define \mbox{\hyperlink{macros_8hpp_aa883b8ec96d2804b37d3bfb0bd4c5f16}{O\+V\+E\+R\+L\+O\+A\+D\+\_\+\+C\+\_\+\+O\+UT}}(class\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{변수}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{macros_8hpp_afda430d83b9513af7270f1d680bf5471}{O\+P\+E\+N\+\_\+\+P\+O\+S\+E\+\_\+\+N\+A\+M\+E\+\_\+\+S\+T\+R\+I\+NG}} = \char`\"{}Open\+Pose\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{macros_8hpp_a7de0b663a3aa8043a346ebf2c411bda3}{O\+P\+E\+N\+\_\+\+P\+O\+S\+E\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+T\+R\+I\+NG}} = \char`\"{}1.\+4.\+0\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{macros_8hpp_adcf24c45000a4f44f355f1cc3062ea49}{O\+P\+E\+N\+\_\+\+P\+O\+S\+E\+\_\+\+N\+A\+M\+E\+\_\+\+A\+N\+D\+\_\+\+V\+E\+R\+S\+I\+ON}} = \mbox{\hyperlink{macros_8hpp_afda430d83b9513af7270f1d680bf5471}{O\+P\+E\+N\+\_\+\+P\+O\+S\+E\+\_\+\+N\+A\+M\+E\+\_\+\+S\+T\+R\+I\+NG}} + \char`\"{} \char`\"{} + \mbox{\hyperlink{macros_8hpp_a7de0b663a3aa8043a346ebf2c411bda3}{O\+P\+E\+N\+\_\+\+P\+O\+S\+E\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+T\+R\+I\+NG}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{매크로 문서화}
+\mbox{\Hypertarget{macros_8hpp_a6bf32c65e0f388d5b09d8b2424416c0e}\label{macros_8hpp_a6bf32c65e0f388d5b09d8b2424416c0e}} 
+\index{macros.hpp@{macros.hpp}!COMPILE\_TEMPLATE\_BASIC\_TYPES@{COMPILE\_TEMPLATE\_BASIC\_TYPES}}
+\index{COMPILE\_TEMPLATE\_BASIC\_TYPES@{COMPILE\_TEMPLATE\_BASIC\_TYPES}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{COMPILE\_TEMPLATE\_BASIC\_TYPES}{COMPILE\_TEMPLATE\_BASIC\_TYPES}}
+{\footnotesize\ttfamily \#define C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+B\+A\+S\+I\+C\+\_\+\+T\+Y\+P\+ES(\begin{DoxyParamCaption}\item[{}]{class\+Name,  }\item[{}]{class\+Type }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{template} classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<char>; \(\backslash\)}
+\DoxyCodeLine{    template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<signed char>; \(\backslash\)}
+\DoxyCodeLine{    template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<short>; \(\backslash\)}
+\DoxyCodeLine{    template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<int>; \(\backslash\)}
+\DoxyCodeLine{    template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<long>; \(\backslash\)}
+\DoxyCodeLine{    template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<long long>; \(\backslash\)}
+\DoxyCodeLine{    template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<unsigned char>; \(\backslash\)}
+\DoxyCodeLine{    template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<unsigned short>; \(\backslash\)}
+\DoxyCodeLine{    template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<unsigned int>; \(\backslash\)}
+\DoxyCodeLine{    template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<unsigned long>; \(\backslash\)}
+\DoxyCodeLine{    template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<unsigned long long>; \(\backslash\)}
+\DoxyCodeLine{    template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<float>; \(\backslash\)}
+\DoxyCodeLine{    template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<double>; \(\backslash\)}
+\DoxyCodeLine{    template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<long double>}
+
+\end{DoxyCode}
+
+
+macros.\+hpp 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_a60e010d8a2352d94b8b57d97cf4a7d73}\label{macros_8hpp_a60e010d8a2352d94b8b57d97cf4a7d73}} 
+\index{macros.hpp@{macros.hpp}!COMPILE\_TEMPLATE\_BASIC\_TYPES\_CLASS@{COMPILE\_TEMPLATE\_BASIC\_TYPES\_CLASS}}
+\index{COMPILE\_TEMPLATE\_BASIC\_TYPES\_CLASS@{COMPILE\_TEMPLATE\_BASIC\_TYPES\_CLASS}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{COMPILE\_TEMPLATE\_BASIC\_TYPES\_CLASS}{COMPILE\_TEMPLATE\_BASIC\_TYPES\_CLASS}}
+{\footnotesize\ttfamily \#define C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+B\+A\+S\+I\+C\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+C\+L\+A\+SS(\begin{DoxyParamCaption}\item[{}]{class\+Name }\end{DoxyParamCaption})~\mbox{\hyperlink{macros_8hpp_a6bf32c65e0f388d5b09d8b2424416c0e}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+B\+A\+S\+I\+C\+\_\+\+T\+Y\+P\+ES}}(class\+Name, class)}
+
+
+
+macros.\+hpp 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_ac5627744abe5fd0c8eacfe9c7f8bd32e}\label{macros_8hpp_ac5627744abe5fd0c8eacfe9c7f8bd32e}} 
+\index{macros.hpp@{macros.hpp}!COMPILE\_TEMPLATE\_BASIC\_TYPES\_STRUCT@{COMPILE\_TEMPLATE\_BASIC\_TYPES\_STRUCT}}
+\index{COMPILE\_TEMPLATE\_BASIC\_TYPES\_STRUCT@{COMPILE\_TEMPLATE\_BASIC\_TYPES\_STRUCT}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{COMPILE\_TEMPLATE\_BASIC\_TYPES\_STRUCT}{COMPILE\_TEMPLATE\_BASIC\_TYPES\_STRUCT}}
+{\footnotesize\ttfamily \#define C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+B\+A\+S\+I\+C\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+S\+T\+R\+U\+CT(\begin{DoxyParamCaption}\item[{}]{class\+Name }\end{DoxyParamCaption})~\mbox{\hyperlink{macros_8hpp_a6bf32c65e0f388d5b09d8b2424416c0e}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+B\+A\+S\+I\+C\+\_\+\+T\+Y\+P\+ES}}(class\+Name, struct)}
+
+
+
+macros.\+hpp 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_ad0aef3afcb2a9da69c3453426f56b0ac}\label{macros_8hpp_ad0aef3afcb2a9da69c3453426f56b0ac}} 
+\index{macros.hpp@{macros.hpp}!COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES@{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES}}
+\index{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES@{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES}{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES}}
+{\footnotesize\ttfamily \#define C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+I\+N\+T\+\_\+\+T\+Y\+P\+ES(\begin{DoxyParamCaption}\item[{}]{class\+Name,  }\item[{}]{class\+Type }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{char} gInstantiationGuard\#\#className; \(\backslash\)}
+\DoxyCodeLine{  template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<int>; \(\backslash\)}
+\DoxyCodeLine{  template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<unsigned int>; \(\backslash\)}
+\DoxyCodeLine{  template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<float>; \(\backslash\)}
+\DoxyCodeLine{  template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<double>}
+
+\end{DoxyCode}
+
+
+macros.\+hpp 파일의 68 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_a7bacf9f65110ec8292bc69e1eb0f426e}\label{macros_8hpp_a7bacf9f65110ec8292bc69e1eb0f426e}} 
+\index{macros.hpp@{macros.hpp}!COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES\_CLASS@{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES\_CLASS}}
+\index{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES\_CLASS@{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES\_CLASS}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES\_CLASS}{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES\_CLASS}}
+{\footnotesize\ttfamily \#define C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+I\+N\+T\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+C\+L\+A\+SS(\begin{DoxyParamCaption}\item[{}]{class\+Name }\end{DoxyParamCaption})~\mbox{\hyperlink{macros_8hpp_ad0aef3afcb2a9da69c3453426f56b0ac}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+I\+N\+T\+\_\+\+T\+Y\+P\+ES}}(class\+Name, class)}
+
+
+
+macros.\+hpp 파일의 66 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_acc5af19a77b18cf5aa2e1f82e2e484dd}\label{macros_8hpp_acc5af19a77b18cf5aa2e1f82e2e484dd}} 
+\index{macros.hpp@{macros.hpp}!COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES\_STRUCT@{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES\_STRUCT}}
+\index{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES\_STRUCT@{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES\_STRUCT}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES\_STRUCT}{COMPILE\_TEMPLATE\_FLOATING\_INT\_TYPES\_STRUCT}}
+{\footnotesize\ttfamily \#define C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+I\+N\+T\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+S\+T\+R\+U\+CT(\begin{DoxyParamCaption}\item[{}]{class\+Name }\end{DoxyParamCaption})~\mbox{\hyperlink{macros_8hpp_ad0aef3afcb2a9da69c3453426f56b0ac}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+I\+N\+T\+\_\+\+T\+Y\+P\+ES}}(class\+Name, struct)}
+
+
+
+macros.\+hpp 파일의 67 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_a80404791b46a15fd601feaa11f1e5028}\label{macros_8hpp_a80404791b46a15fd601feaa11f1e5028}} 
+\index{macros.hpp@{macros.hpp}!COMPILE\_TEMPLATE\_FLOATING\_TYPES@{COMPILE\_TEMPLATE\_FLOATING\_TYPES}}
+\index{COMPILE\_TEMPLATE\_FLOATING\_TYPES@{COMPILE\_TEMPLATE\_FLOATING\_TYPES}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{COMPILE\_TEMPLATE\_FLOATING\_TYPES}{COMPILE\_TEMPLATE\_FLOATING\_TYPES}}
+{\footnotesize\ttfamily \#define C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+T\+Y\+P\+ES(\begin{DoxyParamCaption}\item[{}]{class\+Name,  }\item[{}]{class\+Type }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{char} gInstantiationGuard\#\#className; \(\backslash\)}
+\DoxyCodeLine{  template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<float>; \(\backslash\)}
+\DoxyCodeLine{  template classType \mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{OP\_API}} className<double>}
+
+\end{DoxyCode}
+
+
+macros.\+hpp 파일의 60 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_a1eadbb31e92e7fbc799bf7cf4d2a6f50}\label{macros_8hpp_a1eadbb31e92e7fbc799bf7cf4d2a6f50}} 
+\index{macros.hpp@{macros.hpp}!COMPILE\_TEMPLATE\_FLOATING\_TYPES\_CLASS@{COMPILE\_TEMPLATE\_FLOATING\_TYPES\_CLASS}}
+\index{COMPILE\_TEMPLATE\_FLOATING\_TYPES\_CLASS@{COMPILE\_TEMPLATE\_FLOATING\_TYPES\_CLASS}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{COMPILE\_TEMPLATE\_FLOATING\_TYPES\_CLASS}{COMPILE\_TEMPLATE\_FLOATING\_TYPES\_CLASS}}
+{\footnotesize\ttfamily \#define C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+C\+L\+A\+SS(\begin{DoxyParamCaption}\item[{}]{class\+Name }\end{DoxyParamCaption})~\mbox{\hyperlink{macros_8hpp_a80404791b46a15fd601feaa11f1e5028}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+T\+Y\+P\+ES}}(class\+Name, class)}
+
+
+
+macros.\+hpp 파일의 58 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_af9fed593b7a4237bc6ede717a1ae70f0}\label{macros_8hpp_af9fed593b7a4237bc6ede717a1ae70f0}} 
+\index{macros.hpp@{macros.hpp}!COMPILE\_TEMPLATE\_FLOATING\_TYPES\_STRUCT@{COMPILE\_TEMPLATE\_FLOATING\_TYPES\_STRUCT}}
+\index{COMPILE\_TEMPLATE\_FLOATING\_TYPES\_STRUCT@{COMPILE\_TEMPLATE\_FLOATING\_TYPES\_STRUCT}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{COMPILE\_TEMPLATE\_FLOATING\_TYPES\_STRUCT}{COMPILE\_TEMPLATE\_FLOATING\_TYPES\_STRUCT}}
+{\footnotesize\ttfamily \#define C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+S\+T\+R\+U\+CT(\begin{DoxyParamCaption}\item[{}]{class\+Name }\end{DoxyParamCaption})~\mbox{\hyperlink{macros_8hpp_a80404791b46a15fd601feaa11f1e5028}{C\+O\+M\+P\+I\+L\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+T\+Y\+P\+ES}}(class\+Name, struct)}
+
+
+
+macros.\+hpp 파일의 59 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_abef96b5dd35dd9d44ad27ddf0e2f5f2e}\label{macros_8hpp_abef96b5dd35dd9d44ad27ddf0e2f5f2e}} 
+\index{macros.hpp@{macros.hpp}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY}{DELETE\_COPY}}
+{\footnotesize\ttfamily \#define D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY(\begin{DoxyParamCaption}\item[{}]{class\+Name }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{className(\textcolor{keyword}{const} className\&) = \textcolor{keyword}{delete}; \(\backslash\)}
+\DoxyCodeLine{    className\& operator=(\textcolor{keyword}{const} className\&) = \textcolor{keyword}{delete}}
+
+\end{DoxyCode}
+
+
+macros.\+hpp 파일의 34 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}\label{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}} 
+\index{macros.hpp@{macros.hpp}!OP\_API@{OP\_API}}
+\index{OP\_API@{OP\_API}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{OP\_API}{OP\_API}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+A\+PI}
+
+
+
+macros.\+hpp 파일의 19 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_aa883b8ec96d2804b37d3bfb0bd4c5f16}\label{macros_8hpp_aa883b8ec96d2804b37d3bfb0bd4c5f16}} 
+\index{macros.hpp@{macros.hpp}!OVERLOAD\_C\_OUT@{OVERLOAD\_C\_OUT}}
+\index{OVERLOAD\_C\_OUT@{OVERLOAD\_C\_OUT}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{OVERLOAD\_C\_OUT}{OVERLOAD\_C\_OUT}}
+{\footnotesize\ttfamily \#define O\+V\+E\+R\+L\+O\+A\+D\+\_\+\+C\+\_\+\+O\+UT(\begin{DoxyParamCaption}\item[{}]{class\+Name }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{template}<\textcolor{keyword}{typename} T> std::ostream \&operator<<(std::ostream\& ostream, \textcolor{keyword}{const} op::className<T>\& obj) \(\backslash\)}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{        ostream << obj.toString(); \(\backslash\)}
+\DoxyCodeLine{        return ostream; \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+cout operator overload calling to\+String() function \begin{DoxyReturn}{반환값}
+std\+::ostream containing output from to\+String() 
+\end{DoxyReturn}
+
+
+macros.\+hpp 파일의 79 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_af57a843cfdae82e064838c20b3b54851}\label{macros_8hpp_af57a843cfdae82e064838c20b3b54851}} 
+\index{macros.hpp@{macros.hpp}!UNUSED@{UNUSED}}
+\index{UNUSED@{UNUSED}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{UNUSED}{UNUSED}}
+{\footnotesize\ttfamily \#define U\+N\+U\+S\+ED(\begin{DoxyParamCaption}\item[{}]{unused\+Variable }\end{DoxyParamCaption})~(void)(unused\+Variable)}
+
+
+
+macros.\+hpp 파일의 32 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{변수 문서화}
+\mbox{\Hypertarget{macros_8hpp_adcf24c45000a4f44f355f1cc3062ea49}\label{macros_8hpp_adcf24c45000a4f44f355f1cc3062ea49}} 
+\index{macros.hpp@{macros.hpp}!OPEN\_POSE\_NAME\_AND\_VERSION@{OPEN\_POSE\_NAME\_AND\_VERSION}}
+\index{OPEN\_POSE\_NAME\_AND\_VERSION@{OPEN\_POSE\_NAME\_AND\_VERSION}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{OPEN\_POSE\_NAME\_AND\_VERSION}{OPEN\_POSE\_NAME\_AND\_VERSION}}
+{\footnotesize\ttfamily const std\+::string O\+P\+E\+N\+\_\+\+P\+O\+S\+E\+\_\+\+N\+A\+M\+E\+\_\+\+A\+N\+D\+\_\+\+V\+E\+R\+S\+I\+ON = \mbox{\hyperlink{macros_8hpp_afda430d83b9513af7270f1d680bf5471}{O\+P\+E\+N\+\_\+\+P\+O\+S\+E\+\_\+\+N\+A\+M\+E\+\_\+\+S\+T\+R\+I\+NG}} + \char`\"{} \char`\"{} + \mbox{\hyperlink{macros_8hpp_a7de0b663a3aa8043a346ebf2c411bda3}{O\+P\+E\+N\+\_\+\+P\+O\+S\+E\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+T\+R\+I\+NG}}}
+
+
+
+macros.\+hpp 파일의 15 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_afda430d83b9513af7270f1d680bf5471}\label{macros_8hpp_afda430d83b9513af7270f1d680bf5471}} 
+\index{macros.hpp@{macros.hpp}!OPEN\_POSE\_NAME\_STRING@{OPEN\_POSE\_NAME\_STRING}}
+\index{OPEN\_POSE\_NAME\_STRING@{OPEN\_POSE\_NAME\_STRING}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{OPEN\_POSE\_NAME\_STRING}{OPEN\_POSE\_NAME\_STRING}}
+{\footnotesize\ttfamily const std\+::string O\+P\+E\+N\+\_\+\+P\+O\+S\+E\+\_\+\+N\+A\+M\+E\+\_\+\+S\+T\+R\+I\+NG = \char`\"{}Open\+Pose\char`\"{}}
+
+
+
+macros.\+hpp 파일의 13 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{macros_8hpp_a7de0b663a3aa8043a346ebf2c411bda3}\label{macros_8hpp_a7de0b663a3aa8043a346ebf2c411bda3}} 
+\index{macros.hpp@{macros.hpp}!OPEN\_POSE\_VERSION\_STRING@{OPEN\_POSE\_VERSION\_STRING}}
+\index{OPEN\_POSE\_VERSION\_STRING@{OPEN\_POSE\_VERSION\_STRING}!macros.hpp@{macros.hpp}}
+\doxysubsubsection{\texorpdfstring{OPEN\_POSE\_VERSION\_STRING}{OPEN\_POSE\_VERSION\_STRING}}
+{\footnotesize\ttfamily const std\+::string O\+P\+E\+N\+\_\+\+P\+O\+S\+E\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+T\+R\+I\+NG = \char`\"{}1.\+4.\+0\char`\"{}}
+
+
+
+macros.\+hpp 파일의 14 번째 라인에서 정의되었습니다.
+

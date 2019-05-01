@@ -1,0 +1,258 @@
+\hypertarget{classop_1_1_face_extractor_caffe}{}\doxysection{op\+::Face\+Extractor\+Caffe 클래스 참조}
+\label{classop_1_1_face_extractor_caffe}\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+
+
+{\ttfamily \#include $<$face\+Extractor\+Caffe.\+hpp$>$}
+
+
+
+op\+::Face\+Extractor\+Caffe에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classop_1_1_face_extractor_caffe__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::Face\+Extractor\+Caffe에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_face_extractor_caffe__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_face_extractor_caffe_a1883ca5af749ba2fcb1369a246e4d435}{Face\+Extractor\+Caffe}} (const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&net\+Input\+Size, const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&net\+Output\+Size, const std\+::string \&model\+Folder, const int gpu\+Id, const std\+::vector$<$ \mbox{\hyperlink{namespaceop_a1c3dbc214e7552f7ef9cc753ee97226b}{Heat\+Map\+Type}} $>$ \&heat\+Map\+Types=\{\}, const \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bda}{Scale\+Mode}} heat\+Map\+Scale\+Mode=\mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bdaa4b942544cb3e764bbb8d33f8a8744855}{Scale\+Mode\+::\+Zero\+To\+One}}, const bool enable\+Google\+Logging=true)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_face_extractor_caffe_a4450e656f21a8cb7f1d9bf5f545012f1}{$\sim$\+Face\+Extractor\+Caffe}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_face_extractor_caffe_add2a24d9bd5e03ff90034239e90523c2}{net\+Initialization\+On\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_face_extractor_caffe_a68592dee6b3ecdbb97e0cb1cb343c0a5}{forward\+Pass}} (const std\+::vector$<$ \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ float $>$$>$ \&face\+Rectangles, const cv\+::\+Mat \&cv\+Input\+Data)
+\item 
+void \mbox{\hyperlink{classop_1_1_face_extractor_net_a6d6d5d6bd912bb940058a2b958aadf61}{initialization\+On\+Thread}} ()
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_face_extractor_net_a1ba97136b2cc006cd066e3e950f0c179}{get\+Heat\+Maps}} () const
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_face_extractor_net_aee0d7b760214c805466ae515938b5190}{get\+Face\+Keypoints}} () const
+\item 
+bool \mbox{\hyperlink{classop_1_1_face_extractor_net_a18911596f5ba442d50718f54a3d64fe0}{get\+Enabled}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_face_extractor_net_a6c00e96ddf7465062d6f0b51a7a1348d}{set\+Enabled}} (const bool enabled)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \mbox{\hyperlink{classop_1_1_face_extractor_net_acf72945f62375b6ac8939c463a616f4a}{m\+Net\+Output\+Size}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_face_extractor_net_ae18226cef1478a929df9061c7d699c6f}{m\+Face\+Image\+Crop}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_face_extractor_net_a5d3437e6a4a0fd834232b0afaab95a8a}{m\+Face\+Keypoints}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_face_extractor_net_a43bd29f8c1fc0dbef051bd574df2deca}{m\+Heat\+Maps}}
+\item 
+const \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bda}{Scale\+Mode}} \mbox{\hyperlink{classop_1_1_face_extractor_net_aa3f6566e8b857262f57e18a88c90b9be}{m\+Heat\+Map\+Scale\+Mode}}
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{namespaceop_a1c3dbc214e7552f7ef9cc753ee97226b}{Heat\+Map\+Type}} $>$ \mbox{\hyperlink{classop_1_1_face_extractor_net_a3bf177dbf1a3effbe6b15545e6102d6e}{m\+Heat\+Map\+Types}}
+\item 
+std\+::atomic$<$ bool $>$ \mbox{\hyperlink{classop_1_1_face_extractor_net_a637f9c4c19e110be435cd05052248f86}{m\+Enabled}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_face_extractor_caffe_a226c124387f309b0250455073594fa11}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_face_extractor_caffe}{Face\+Extractor\+Caffe}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ Impl\+Face\+Extractor\+Caffe $>$ \mbox{\hyperlink{classop_1_1_face_extractor_caffe_aea41569aa786be1dcf6eaf983df7bf9a}{up\+Impl}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Face keypoint extractor class for Caffe framework. 
+
+face\+Extractor\+Caffe.\+hpp 파일의 14 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_face_extractor_caffe_a1883ca5af749ba2fcb1369a246e4d435}\label{classop_1_1_face_extractor_caffe_a1883ca5af749ba2fcb1369a246e4d435}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!FaceExtractorCaffe@{FaceExtractorCaffe}}
+\index{FaceExtractorCaffe@{FaceExtractorCaffe}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{FaceExtractorCaffe()}{FaceExtractorCaffe()}}
+{\footnotesize\ttfamily op\+::\+Face\+Extractor\+Caffe\+::\+Face\+Extractor\+Caffe (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&}]{net\+Input\+Size,  }\item[{const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&}]{net\+Output\+Size,  }\item[{const std\+::string \&}]{model\+Folder,  }\item[{const int}]{gpu\+Id,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{namespaceop_a1c3dbc214e7552f7ef9cc753ee97226b}{Heat\+Map\+Type}} $>$ \&}]{heat\+Map\+Types = {\ttfamily \{\}},  }\item[{const \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bda}{Scale\+Mode}}}]{heat\+Map\+Scale\+Mode = {\ttfamily \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bdaa4b942544cb3e764bbb8d33f8a8744855}{Scale\+Mode\+::\+Zero\+To\+One}}},  }\item[{const bool}]{enable\+Google\+Logging = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Constructor of the Face\+Extractor class. 
+\begin{DoxyParams}{매개변수}
+{\em net\+Input\+Size} & Size at which the cropped image (where the face is located) is resized. \\
+\hline
+{\em net\+Output\+Size} & Size of the final results. At the moment, it must be equal than net\+Output\+Size. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_face_extractor_caffe_a4450e656f21a8cb7f1d9bf5f545012f1}\label{classop_1_1_face_extractor_caffe_a4450e656f21a8cb7f1d9bf5f545012f1}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!````~FaceExtractorCaffe@{$\sim$FaceExtractorCaffe}}
+\index{````~FaceExtractorCaffe@{$\sim$FaceExtractorCaffe}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{$\sim$FaceExtractorCaffe()}{~FaceExtractorCaffe()}}
+{\footnotesize\ttfamily virtual op\+::\+Face\+Extractor\+Caffe\+::$\sim$\+Face\+Extractor\+Caffe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_face_extractor_caffe_a226c124387f309b0250455073594fa11}\label{classop_1_1_face_extractor_caffe_a226c124387f309b0250455073594fa11}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Face\+Extractor\+Caffe\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_face_extractor_caffe}{Face\+Extractor\+Caffe}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_face_extractor_caffe_a68592dee6b3ecdbb97e0cb1cb343c0a5}\label{classop_1_1_face_extractor_caffe_a68592dee6b3ecdbb97e0cb1cb343c0a5}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!forwardPass@{forwardPass}}
+\index{forwardPass@{forwardPass}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{forwardPass()}{forwardPass()}}
+{\footnotesize\ttfamily void op\+::\+Face\+Extractor\+Caffe\+::forward\+Pass (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ float $>$$>$ \&}]{face\+Rectangles,  }\item[{const cv\+::\+Mat \&}]{cv\+Input\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function extracts the face keypoints for each detected face in the image. 
+\begin{DoxyParams}{매개변수}
+{\em face\+Rectangles} & location of the faces in the image. It is a length-\/variable std\+::vector, where each index corresponds to a different person in the image. Internally, a op\+::\+Rectangle$<$float$>$ (similar to cv\+::\+Rect for floating values) with the position of that face (or 0,0,0,0 if some face is missing, e.\+g., if a specific person has only half of the body inside the image). \\
+\hline
+{\em cv\+Input\+Data} & Original image in cv\+::\+Mat format and B\+GR format. \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{classop_1_1_face_extractor_net_a6801ceb4f26d1a9d48a8c5b00dcd93d4}{op\+::\+Face\+Extractor\+Net}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_face_extractor_net_a18911596f5ba442d50718f54a3d64fe0}\label{classop_1_1_face_extractor_net_a18911596f5ba442d50718f54a3d64fe0}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!getEnabled@{getEnabled}}
+\index{getEnabled@{getEnabled}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{getEnabled()}{getEnabled()}}
+{\footnotesize\ttfamily bool op\+::\+Face\+Extractor\+Net\+::get\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_face_extractor_net_aee0d7b760214c805466ae515938b5190}\label{classop_1_1_face_extractor_net_aee0d7b760214c805466ae515938b5190}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!getFaceKeypoints@{getFaceKeypoints}}
+\index{getFaceKeypoints@{getFaceKeypoints}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{getFaceKeypoints()}{getFaceKeypoints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Face\+Extractor\+Net\+::get\+Face\+Keypoints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+This function returns the face keypoins. V\+E\+RY I\+M\+P\+O\+R\+T\+A\+NT\+: use \mbox{\hyperlink{classop_1_1_face_extractor_net_aee0d7b760214c805466ae515938b5190}{get\+Face\+Keypoints()}}.clone() if the keypoints are going to be edited in a different thread. \begin{DoxyReturn}{반환값}
+A \mbox{\hyperlink{classop_1_1_array}{Array}} with all the face keypoints. It follows the pose structure, i.\+e., the first dimension corresponds to all the people in the image, the second to each specific keypoint, and the third one to (x, y, score). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_face_extractor_net_a1ba97136b2cc006cd066e3e950f0c179}\label{classop_1_1_face_extractor_net_a1ba97136b2cc006cd066e3e950f0c179}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!getHeatMaps@{getHeatMaps}}
+\index{getHeatMaps@{getHeatMaps}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{getHeatMaps()}{getHeatMaps()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Face\+Extractor\+Net\+::get\+Heat\+Maps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_face_extractor_net_a6d6d5d6bd912bb940058a2b958aadf61}\label{classop_1_1_face_extractor_net_a6d6d5d6bd912bb940058a2b958aadf61}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily void op\+::\+Face\+Extractor\+Net\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+This function must be call before using any other function. It must also be called inside the thread in which the functions are going to be used. \mbox{\Hypertarget{classop_1_1_face_extractor_caffe_add2a24d9bd5e03ff90034239e90523c2}\label{classop_1_1_face_extractor_caffe_add2a24d9bd5e03ff90034239e90523c2}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!netInitializationOnThread@{netInitializationOnThread}}
+\index{netInitializationOnThread@{netInitializationOnThread}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{netInitializationOnThread()}{netInitializationOnThread()}}
+{\footnotesize\ttfamily void op\+::\+Face\+Extractor\+Caffe\+::net\+Initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function must be call before using any other function. It must also be called inside the thread in which the functions are going to be used. 
+
+\mbox{\hyperlink{classop_1_1_face_extractor_net_a6a9a02b46596283cab6f8a4640161081}{op\+::\+Face\+Extractor\+Net}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_face_extractor_net_a6c00e96ddf7465062d6f0b51a7a1348d}\label{classop_1_1_face_extractor_net_a6c00e96ddf7465062d6f0b51a7a1348d}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!setEnabled@{setEnabled}}
+\index{setEnabled@{setEnabled}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{setEnabled()}{setEnabled()}}
+{\footnotesize\ttfamily void op\+::\+Face\+Extractor\+Net\+::set\+Enabled (\begin{DoxyParamCaption}\item[{const bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_face_extractor_net_a637f9c4c19e110be435cd05052248f86}\label{classop_1_1_face_extractor_net_a637f9c4c19e110be435cd05052248f86}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!mEnabled@{mEnabled}}
+\index{mEnabled@{mEnabled}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mEnabled}{mEnabled}}
+{\footnotesize\ttfamily std\+::atomic$<$bool$>$ op\+::\+Face\+Extractor\+Net\+::m\+Enabled\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+face\+Extractor\+Net.\+hpp 파일의 72 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_face_extractor_net_ae18226cef1478a929df9061c7d699c6f}\label{classop_1_1_face_extractor_net_ae18226cef1478a929df9061c7d699c6f}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!mFaceImageCrop@{mFaceImageCrop}}
+\index{mFaceImageCrop@{mFaceImageCrop}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mFaceImageCrop}{mFaceImageCrop}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Face\+Extractor\+Net\+::m\+Face\+Image\+Crop\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+face\+Extractor\+Net.\+hpp 파일의 65 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_face_extractor_net_a5d3437e6a4a0fd834232b0afaab95a8a}\label{classop_1_1_face_extractor_net_a5d3437e6a4a0fd834232b0afaab95a8a}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!mFaceKeypoints@{mFaceKeypoints}}
+\index{mFaceKeypoints@{mFaceKeypoints}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mFaceKeypoints}{mFaceKeypoints}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Face\+Extractor\+Net\+::m\+Face\+Keypoints\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+face\+Extractor\+Net.\+hpp 파일의 66 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_face_extractor_net_a43bd29f8c1fc0dbef051bd574df2deca}\label{classop_1_1_face_extractor_net_a43bd29f8c1fc0dbef051bd574df2deca}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!mHeatMaps@{mHeatMaps}}
+\index{mHeatMaps@{mHeatMaps}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mHeatMaps}{mHeatMaps}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Face\+Extractor\+Net\+::m\+Heat\+Maps\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+face\+Extractor\+Net.\+hpp 파일의 68 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_face_extractor_net_aa3f6566e8b857262f57e18a88c90b9be}\label{classop_1_1_face_extractor_net_aa3f6566e8b857262f57e18a88c90b9be}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!mHeatMapScaleMode@{mHeatMapScaleMode}}
+\index{mHeatMapScaleMode@{mHeatMapScaleMode}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mHeatMapScaleMode}{mHeatMapScaleMode}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceop_af72fe4ed32846c12f41b049d3d0e1bda}{Scale\+Mode}} op\+::\+Face\+Extractor\+Net\+::m\+Heat\+Map\+Scale\+Mode\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+face\+Extractor\+Net.\+hpp 파일의 69 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_face_extractor_net_a3bf177dbf1a3effbe6b15545e6102d6e}\label{classop_1_1_face_extractor_net_a3bf177dbf1a3effbe6b15545e6102d6e}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!mHeatMapTypes@{mHeatMapTypes}}
+\index{mHeatMapTypes@{mHeatMapTypes}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mHeatMapTypes}{mHeatMapTypes}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{namespaceop_a1c3dbc214e7552f7ef9cc753ee97226b}{Heat\+Map\+Type}}$>$ op\+::\+Face\+Extractor\+Net\+::m\+Heat\+Map\+Types\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+face\+Extractor\+Net.\+hpp 파일의 70 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_face_extractor_net_acf72945f62375b6ac8939c463a616f4a}\label{classop_1_1_face_extractor_net_acf72945f62375b6ac8939c463a616f4a}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!mNetOutputSize@{mNetOutputSize}}
+\index{mNetOutputSize@{mNetOutputSize}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{mNetOutputSize}{mNetOutputSize}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$int$>$ op\+::\+Face\+Extractor\+Net\+::m\+Net\+Output\+Size\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+face\+Extractor\+Net.\+hpp 파일의 64 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_face_extractor_caffe_aea41569aa786be1dcf6eaf983df7bf9a}\label{classop_1_1_face_extractor_caffe_aea41569aa786be1dcf6eaf983df7bf9a}} 
+\index{op::FaceExtractorCaffe@{op::FaceExtractorCaffe}!upImpl@{upImpl}}
+\index{upImpl@{upImpl}!op::FaceExtractorCaffe@{op::FaceExtractorCaffe}}
+\doxysubsubsection{\texorpdfstring{upImpl}{upImpl}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$Impl\+Face\+Extractor\+Caffe$>$ op\+::\+Face\+Extractor\+Caffe\+::up\+Impl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+face\+Extractor\+Caffe.\+hpp 파일의 49 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/face/\mbox{\hyperlink{face_extractor_caffe_8hpp}{face\+Extractor\+Caffe.\+hpp}}\end{DoxyCompactItemize}

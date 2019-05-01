@@ -1,0 +1,4 @@
+<map id="cl::Device::getInfo" name="cl::Device::getInfo">
+<area shape="rect" id="node1" title="Wrapper for clGetDeviceInfo()." alt="" coords="183,5,312,32"/>
+<area shape="rect" id="node2" href="$classcl_1_1_device.html#a2b776c204cde7b4b53cde728ed5bf79b" title="Wrapper for clGetDeviceInfo() that returns by value." alt="" coords="5,5,135,32"/>
+</map>

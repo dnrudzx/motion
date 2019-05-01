@@ -1,0 +1,364 @@
+\hypertarget{classop_1_1_datum_producer}{}\doxysection{op\+::Datum\+Producer$<$ T\+Datum $>$ 클래스 템플릿 참조}
+\label{classop_1_1_datum_producer}\index{op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}}
+
+
+{\ttfamily \#include $<$datum\+Producer.\+hpp$>$}
+
+
+
+op\+::Datum\+Producer$<$ T\+Datum $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classop_1_1_datum_producer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_datum_producer_a4d52ee6961e2c5c9564f49d203a2865e}{Datum\+Producer}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_producer}{Producer}} $>$ \&producer\+Shared\+Ptr, const unsigned long long frame\+First=0, const unsigned long long frame\+Step=1, const unsigned long long frame\+Last=std\+::numeric\+\_\+limits$<$ unsigned long long $>$\+::max(), const std\+::shared\+\_\+ptr$<$ std\+::pair$<$ std\+::atomic$<$ bool $>$, std\+::atomic$<$ int $>$$>$$>$ \&video\+Seek\+Shared\+Ptr=nullptr)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_datum_producer_ad12f3202a265c989430d15bf7476a326}{$\sim$\+Datum\+Producer}} ()
+\item 
+std\+::pair$<$ bool, std\+::shared\+\_\+ptr$<$ std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T\+Datum $>$ $>$ $>$ $>$ \mbox{\hyperlink{classop_1_1_datum_producer_a39da4822705d23ca7e600b69f39e69be}{check\+If\+Running\+And\+Get\+Datum}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classop_1_1_datum_producer_ae7e6c84c7d7ff60b68a668a346de67b3}{check\+If\+Too\+Many\+Consecutive\+Empty\+Frames}} (unsigned int \&number\+Consecutive\+Empty\+Frames, const bool empty\+Frame) const
+\item 
+\mbox{\hyperlink{classop_1_1_datum_producer_ab7587b357d08eefc236ae49ceab507ac}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_datum_producer}{Datum\+Producer}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned long long \mbox{\hyperlink{classop_1_1_datum_producer_aabc2dde824ce26178270f7c9b1fc83c5}{m\+Number\+Frames\+To\+Process}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_producer}{Producer}} $>$ \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{sp\+Producer}}
+\item 
+unsigned long long \mbox{\hyperlink{classop_1_1_datum_producer_af04cbc64032872b6844fba2acfff217c}{m\+Global\+Counter}}
+\item 
+unsigned long long \mbox{\hyperlink{classop_1_1_datum_producer_ae41cf4ebf36d4970f62d68f07e7e7ebe}{m\+Frame\+Step}}
+\item 
+unsigned int \mbox{\hyperlink{classop_1_1_datum_producer_ad26645db7fcc80f0f684d4d19d4763da}{m\+Number\+Consecutive\+Empty\+Frames}}
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::pair$<$ std\+::atomic$<$ bool $>$, std\+::atomic$<$ int $>$ $>$ $>$ \mbox{\hyperlink{classop_1_1_datum_producer_a9882792bb6442cfcae7b5f14f6eb7124}{sp\+Video\+Seek}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T\+Datum$>$\newline
+class op\+::\+Datum\+Producer$<$ T\+Datum $>$}
+
+
+
+datum\+Producer.\+hpp 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_datum_producer_a4d52ee6961e2c5c9564f49d203a2865e}\label{classop_1_1_datum_producer_a4d52ee6961e2c5c9564f49d203a2865e}} 
+\index{op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}!DatumProducer@{DatumProducer}}
+\index{DatumProducer@{DatumProducer}!op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}}
+\doxysubsubsection{\texorpdfstring{DatumProducer()}{DatumProducer()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum $>$ \\
+\mbox{\hyperlink{classop_1_1_datum_producer}{op\+::\+Datum\+Producer}}$<$ T\+Datum $>$\+::\mbox{\hyperlink{classop_1_1_datum_producer}{Datum\+Producer}} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_producer}{Producer}} $>$ \&}]{producer\+Shared\+Ptr,  }\item[{const unsigned long long}]{frame\+First = {\ttfamily 0},  }\item[{const unsigned long long}]{frame\+Step = {\ttfamily 1},  }\item[{const unsigned long long}]{frame\+Last = {\ttfamily std\+:\+:numeric\+\_\+limits$<$unsigned~long~long$>$\+:\+:max()},  }\item[{const std\+::shared\+\_\+ptr$<$ std\+::pair$<$ std\+::atomic$<$ bool $>$, std\+::atomic$<$ int $>$$>$$>$ \&}]{video\+Seek\+Shared\+Ptr = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+datum\+Producer.\+hpp 파일의 53 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57                                                                                            :}
+\DoxyCodeLine{58         \mbox{\hyperlink{classop_1_1_datum_producer_aabc2dde824ce26178270f7c9b1fc83c5}{mNumberFramesToProcess}}\{(frameLast != std::numeric\_limits<unsigned long long>::max()}
+\DoxyCodeLine{59                                 ? frameLast -\/ frameFirst : frameLast)\},}
+\DoxyCodeLine{60         \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}\{producerSharedPtr\},}
+\DoxyCodeLine{61         \mbox{\hyperlink{classop_1_1_datum_producer_af04cbc64032872b6844fba2acfff217c}{mGlobalCounter}}\{0ll\},}
+\DoxyCodeLine{62         \mbox{\hyperlink{classop_1_1_datum_producer_ae41cf4ebf36d4970f62d68f07e7e7ebe}{mFrameStep}}\{frameStep\},}
+\DoxyCodeLine{63         \mbox{\hyperlink{classop_1_1_datum_producer_ad26645db7fcc80f0f684d4d19d4763da}{mNumberConsecutiveEmptyFrames}}\{0u\},}
+\DoxyCodeLine{64         \mbox{\hyperlink{classop_1_1_datum_producer_a9882792bb6442cfcae7b5f14f6eb7124}{spVideoSeek}}\{videoSeekSharedPtr\}}
+\DoxyCodeLine{65     \{}
+\DoxyCodeLine{66         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{67         \{}
+\DoxyCodeLine{68             \textcolor{comment}{// Sanity check}}
+\DoxyCodeLine{69             \textcolor{keywordflow}{if} (frameLast < frameFirst)}
+\DoxyCodeLine{70                 \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(\textcolor{stringliteral}{"The desired initial frame must be lower than the last one (flags `-\/-\/frame\_first` vs."}}
+\DoxyCodeLine{71                       \textcolor{stringliteral}{" `-\/-\/frame\_last`). Current: "} + std::to\_string(frameFirst) + \textcolor{stringliteral}{" vs. "} + std::to\_string(frameLast)}
+\DoxyCodeLine{72                       + \textcolor{stringliteral}{"."}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{73             \textcolor{keywordflow}{if} (frameLast != std::numeric\_limits<unsigned long long>::max()}
+\DoxyCodeLine{74                 \&\& frameLast > \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>get(CV\_CAP\_PROP\_FRAME\_COUNT)-\/1)}
+\DoxyCodeLine{75                 \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(\textcolor{stringliteral}{"The desired last frame must be lower than the length of the video or the number of images."}}
+\DoxyCodeLine{76                       \textcolor{stringliteral}{" Current: "} + std::to\_string(frameLast) + \textcolor{stringliteral}{" vs. "}}
+\DoxyCodeLine{77                       + std::to\_string(\mbox{\hyperlink{namespaceop_a699ef17b0f27b8bc2c4d4a03e46e6be1}{positiveIntRound}}(\mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>get(CV\_CAP\_PROP\_FRAME\_COUNT))-\/1) + \textcolor{stringliteral}{"."},}
+\DoxyCodeLine{78                       \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{79             \textcolor{comment}{// Set frame first and step}}
+\DoxyCodeLine{80             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>getType() != \mbox{\hyperlink{namespaceop_a54b73745852c270cfd891eed0f6f2332af436d4d7a472ac39a7cb227e3ea24f8d}{ProducerType::FlirCamera}} \&\& \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>getType() != \mbox{\hyperlink{namespaceop_a54b73745852c270cfd891eed0f6f2332af40a40a04a078c4449cda2f326d7fb18}{ProducerType::IPCamera}}}
+\DoxyCodeLine{81                 \&\& \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>getType() != \mbox{\hyperlink{namespaceop_a54b73745852c270cfd891eed0f6f2332ae2faa2a74b6a4134d0b3e84c7c0e2a01}{ProducerType::Webcam}})}
+\DoxyCodeLine{82             \{}
+\DoxyCodeLine{83                 \textcolor{comment}{// Frame first}}
+\DoxyCodeLine{84                 \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>set(CV\_CAP\_PROP\_POS\_FRAMES, (\textcolor{keywordtype}{double})frameFirst);}
+\DoxyCodeLine{85                 \textcolor{comment}{// Frame step}}
+\DoxyCodeLine{86                 \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>set(\mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774a63eacc5ed21c0ecb8bc583e10dc3ae58}{ProducerProperty::FrameStep}}, (\textcolor{keywordtype}{double})frameStep);}
+\DoxyCodeLine{87             \}}
+\DoxyCodeLine{88         \}}
+\DoxyCodeLine{89         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{90         \{}
+\DoxyCodeLine{91             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{92         \}}
+\DoxyCodeLine{93     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_datum_producer_ad12f3202a265c989430d15bf7476a326}\label{classop_1_1_datum_producer_ad12f3202a265c989430d15bf7476a326}} 
+\index{op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}!````~DatumProducer@{$\sim$DatumProducer}}
+\index{````~DatumProducer@{$\sim$DatumProducer}!op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$DatumProducer()}{~DatumProducer()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum $>$ \\
+\mbox{\hyperlink{classop_1_1_datum_producer}{op\+::\+Datum\+Producer}}$<$ T\+Datum $>$\+::$\sim$\mbox{\hyperlink{classop_1_1_datum_producer}{Datum\+Producer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+datum\+Producer.\+hpp 파일의 96 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97     \{}
+\DoxyCodeLine{98     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_datum_producer_a39da4822705d23ca7e600b69f39e69be}\label{classop_1_1_datum_producer_a39da4822705d23ca7e600b69f39e69be}} 
+\index{op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}!checkIfRunningAndGetDatum@{checkIfRunningAndGetDatum}}
+\index{checkIfRunningAndGetDatum@{checkIfRunningAndGetDatum}!op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}}
+\doxysubsubsection{\texorpdfstring{checkIfRunningAndGetDatum()}{checkIfRunningAndGetDatum()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum $>$ \\
+std\+::pair$<$ bool, std\+::shared\+\_\+ptr$<$ std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T\+Datum $>$ $>$ $>$ $>$ \mbox{\hyperlink{classop_1_1_datum_producer}{op\+::\+Datum\+Producer}}$<$ T\+Datum $>$\+::check\+If\+Running\+And\+Get\+Datum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+datum\+Producer.\+hpp 파일의 101 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{102     \{}
+\DoxyCodeLine{103         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{104         \{}
+\DoxyCodeLine{105             \textcolor{keyword}{auto} datums = std::make\_shared<std::vector<std::shared\_ptr<TDatum>>>();}
+\DoxyCodeLine{106             \textcolor{comment}{// Check last desired frame has not been reached}}
+\DoxyCodeLine{107             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_datum_producer_aabc2dde824ce26178270f7c9b1fc83c5}{mNumberFramesToProcess}} != std::numeric\_limits<unsigned long long>::max()}
+\DoxyCodeLine{108                 \&\& \mbox{\hyperlink{classop_1_1_datum_producer_af04cbc64032872b6844fba2acfff217c}{mGlobalCounter}} > \mbox{\hyperlink{classop_1_1_datum_producer_aabc2dde824ce26178270f7c9b1fc83c5}{mNumberFramesToProcess}})}
+\DoxyCodeLine{109             \{}
+\DoxyCodeLine{110                 \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>release();}
+\DoxyCodeLine{111             \}}
+\DoxyCodeLine{112             \textcolor{comment}{// If producer released -\/> it sends an empty cv::Mat + a datumProducerRunning signal}}
+\DoxyCodeLine{113             \textcolor{keyword}{const} \textcolor{keywordtype}{bool} datumProducerRunning = \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>isOpened();}
+\DoxyCodeLine{114             \textcolor{comment}{// If device is open}}
+\DoxyCodeLine{115             \textcolor{keywordflow}{if} (datumProducerRunning)}
+\DoxyCodeLine{116             \{}
+\DoxyCodeLine{117                 \textcolor{comment}{// Fast forward/backward -\/ Seek to specific frame index desired}}
+\DoxyCodeLine{118                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_datum_producer_a9882792bb6442cfcae7b5f14f6eb7124}{spVideoSeek}} != \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{119                 \{}
+\DoxyCodeLine{120                     \textcolor{comment}{// Fake pause vs. normal mode}}
+\DoxyCodeLine{121                     \textcolor{keyword}{const} \textcolor{keyword}{auto} increment = \mbox{\hyperlink{classop_1_1_datum_producer_a9882792bb6442cfcae7b5f14f6eb7124}{spVideoSeek}}-\/>second -\/ (\mbox{\hyperlink{classop_1_1_datum_producer_a9882792bb6442cfcae7b5f14f6eb7124}{spVideoSeek}}-\/>first ? 1 : 0);}
+\DoxyCodeLine{122                     \textcolor{comment}{// Normal mode}}
+\DoxyCodeLine{123                     \textcolor{keywordflow}{if} (increment != 0)}
+\DoxyCodeLine{124                         \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>set(CV\_CAP\_PROP\_POS\_FRAMES, \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>get(CV\_CAP\_PROP\_POS\_FRAMES) + increment);}
+\DoxyCodeLine{125                     \textcolor{comment}{// It must be always reset or bug in fake pause}}
+\DoxyCodeLine{126                     \mbox{\hyperlink{classop_1_1_datum_producer_a9882792bb6442cfcae7b5f14f6eb7124}{spVideoSeek}}-\/>second = 0;}
+\DoxyCodeLine{127                 \}}
+\DoxyCodeLine{128                 \textcolor{keyword}{auto} nextFrameName = \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>getNextFrameName();}
+\DoxyCodeLine{129                 \textcolor{keyword}{const} \textcolor{keyword}{auto} nextFrameNumber = (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} long)\mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>get(CV\_CAP\_PROP\_POS\_FRAMES);}
+\DoxyCodeLine{130                 \textcolor{keyword}{const} \textcolor{keyword}{auto} cvMats = \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>getFrames();}
+\DoxyCodeLine{131                 \textcolor{keyword}{const} \textcolor{keyword}{auto} cameraMatrices = \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>getCameraMatrices();}
+\DoxyCodeLine{132                 \textcolor{keyword}{auto} cameraExtrinsics = \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>getCameraExtrinsics();}
+\DoxyCodeLine{133                 \textcolor{keyword}{auto} cameraIntrinsics = \mbox{\hyperlink{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}{spProducer}}-\/>getCameraIntrinsics();}
+\DoxyCodeLine{134                 \textcolor{comment}{// Check frames are not empty}}
+\DoxyCodeLine{135                 \mbox{\hyperlink{classop_1_1_datum_producer_ae7e6c84c7d7ff60b68a668a346de67b3}{checkIfTooManyConsecutiveEmptyFrames}}(\mbox{\hyperlink{classop_1_1_datum_producer_ad26645db7fcc80f0f684d4d19d4763da}{mNumberConsecutiveEmptyFrames}}, cvMats.empty() || cvMats[0].empty());}
+\DoxyCodeLine{136                 \textcolor{keywordflow}{if} (!cvMats.empty())}
+\DoxyCodeLine{137                 \{}
+\DoxyCodeLine{138                     datums-\/>resize(cvMats.size());}
+\DoxyCodeLine{139                     \textcolor{comment}{// Datum cannot be assigned before resize()}}
+\DoxyCodeLine{140                     \textcolor{keyword}{auto}\& datumPtr = (*datums)[0];}
+\DoxyCodeLine{141                     datumPtr = std::make\_shared<TDatum>();}
+\DoxyCodeLine{142                     \textcolor{comment}{// Filling first element}}
+\DoxyCodeLine{143                     std::swap(datumPtr-\/>name, nextFrameName);}
+\DoxyCodeLine{144                     datumPtr-\/>frameNumber = nextFrameNumber;}
+\DoxyCodeLine{145                     datumPtr-\/>cvInputData = cvMats[0];}
+\DoxyCodeLine{146                     \textcolor{keywordflow}{if} (!cameraMatrices.empty())}
+\DoxyCodeLine{147                     \{}
+\DoxyCodeLine{148                         datumPtr-\/>cameraMatrix = cameraMatrices[0];}
+\DoxyCodeLine{149                         datumPtr-\/>cameraExtrinsics = cameraExtrinsics[0];}
+\DoxyCodeLine{150                         datumPtr-\/>cameraIntrinsics = cameraIntrinsics[0];}
+\DoxyCodeLine{151                     \}}
+\DoxyCodeLine{152                     \textcolor{comment}{// Image integrity}}
+\DoxyCodeLine{153                     \textcolor{keywordflow}{if} (datumPtr-\/>cvInputData.channels() != 3)}
+\DoxyCodeLine{154                     \{}
+\DoxyCodeLine{155                         \textcolor{keyword}{const} \mbox{\hyperlink{namespacecl_abff80bfb254d646f6afeb6638df41686}{std::string}} commonMessage\{\textcolor{stringliteral}{"Input images must be 3-\/channel BGR."}\};}
+\DoxyCodeLine{156                         \textcolor{comment}{// Grey to RGB if required}}
+\DoxyCodeLine{157                         \textcolor{keywordflow}{if} (datumPtr-\/>cvInputData.channels() == 1)}
+\DoxyCodeLine{158                         \{}
+\DoxyCodeLine{159                             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(commonMessage + \textcolor{stringliteral}{" Converting grey image into BGR."}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a655d20c1ca69519ca647684edbb2db35}{Priority::High}});}
+\DoxyCodeLine{160                             cv::cvtColor(datumPtr-\/>cvInputData, datumPtr-\/>cvInputData, CV\_GRAY2BGR);}
+\DoxyCodeLine{161                         \}}
+\DoxyCodeLine{162                         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{163                             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(commonMessage, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{164                     \}}
+\DoxyCodeLine{165                     datumPtr-\/>cvOutputData = datumPtr-\/>cvInputData;}
+\DoxyCodeLine{166                     \textcolor{comment}{// Resize if it's stereo-\/system}}
+\DoxyCodeLine{167                     \textcolor{keywordflow}{if} (datums-\/>size() > 1)}
+\DoxyCodeLine{168                     \{}
+\DoxyCodeLine{169                         \textcolor{comment}{// Stereo-\/system: Assign all cv::Mat}}
+\DoxyCodeLine{170                         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} i = 1u ; i < datums-\/>size() ; i++)}
+\DoxyCodeLine{171                         \{}
+\DoxyCodeLine{172                             \textcolor{keyword}{auto}\& datumIPtr = (*datums)[i];}
+\DoxyCodeLine{173                             datumIPtr = std::make\_shared<TDatum>();}
+\DoxyCodeLine{174                             datumIPtr-\/>name = datumPtr-\/>name;}
+\DoxyCodeLine{175                             datumIPtr-\/>frameNumber = datumPtr-\/>frameNumber;}
+\DoxyCodeLine{176                             datumIPtr-\/>cvInputData = cvMats[i];}
+\DoxyCodeLine{177                             datumIPtr-\/>cvOutputData = datumIPtr-\/>cvInputData;}
+\DoxyCodeLine{178                             \textcolor{keywordflow}{if} (cameraMatrices.size() > i)}
+\DoxyCodeLine{179                             \{}
+\DoxyCodeLine{180                                 datumIPtr-\/>cameraMatrix = cameraMatrices[i];}
+\DoxyCodeLine{181                                 datumIPtr-\/>cameraExtrinsics = cameraExtrinsics[i];}
+\DoxyCodeLine{182                                 datumIPtr-\/>cameraIntrinsics = cameraIntrinsics[i];}
+\DoxyCodeLine{183                             \}}
+\DoxyCodeLine{184                         \}}
+\DoxyCodeLine{185                     \}}
+\DoxyCodeLine{186                     \textcolor{comment}{// Check producer is running}}
+\DoxyCodeLine{187                     \textcolor{keywordflow}{if} (!datumProducerRunning || (*datums)[0]-\/>cvInputData.empty())}
+\DoxyCodeLine{188                         datums = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{189                     \textcolor{comment}{// Increase counter if successful image}}
+\DoxyCodeLine{190                     \textcolor{keywordflow}{if} (datums != \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{191                         \mbox{\hyperlink{classop_1_1_datum_producer_af04cbc64032872b6844fba2acfff217c}{mGlobalCounter}} += \mbox{\hyperlink{classop_1_1_datum_producer_ae41cf4ebf36d4970f62d68f07e7e7ebe}{mFrameStep}};}
+\DoxyCodeLine{192                 \}}
+\DoxyCodeLine{193             \}}
+\DoxyCodeLine{194             \textcolor{comment}{// Return result}}
+\DoxyCodeLine{195             \textcolor{keywordflow}{return} std::make\_pair(datumProducerRunning, datums);}
+\DoxyCodeLine{196         \}}
+\DoxyCodeLine{197         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{198         \{}
+\DoxyCodeLine{199             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{200             \textcolor{keywordflow}{return} std::make\_pair(\textcolor{keyword}{false}, std::make\_shared<\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{std::vector}}<std::shared\_ptr<TDatum>>>());}
+\DoxyCodeLine{201         \}}
+\DoxyCodeLine{202     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classop_1_1_datum_producer_a39da4822705d23ca7e600b69f39e69be_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_datum_producer_ae7e6c84c7d7ff60b68a668a346de67b3}\label{classop_1_1_datum_producer_ae7e6c84c7d7ff60b68a668a346de67b3}} 
+\index{op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}!checkIfTooManyConsecutiveEmptyFrames@{checkIfTooManyConsecutiveEmptyFrames}}
+\index{checkIfTooManyConsecutiveEmptyFrames@{checkIfTooManyConsecutiveEmptyFrames}!op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}}
+\doxysubsubsection{\texorpdfstring{checkIfTooManyConsecutiveEmptyFrames()}{checkIfTooManyConsecutiveEmptyFrames()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum $>$ \\
+void \mbox{\hyperlink{classop_1_1_datum_producer}{op\+::\+Datum\+Producer}}$<$ T\+Datum $>$\+::check\+If\+Too\+Many\+Consecutive\+Empty\+Frames (\begin{DoxyParamCaption}\item[{unsigned int \&}]{number\+Consecutive\+Empty\+Frames,  }\item[{const bool}]{empty\+Frame }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+datum\+Producer.\+hpp 파일의 205 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{207     \{}
+\DoxyCodeLine{208         numberConsecutiveEmptyFrames = (emptyFrame ? numberConsecutiveEmptyFrames+1 : 0);}
+\DoxyCodeLine{209         \textcolor{keyword}{const} \textcolor{keyword}{auto} threshold = 500u;}
+\DoxyCodeLine{210         \textcolor{keywordflow}{if} (numberConsecutiveEmptyFrames >= threshold)}
+\DoxyCodeLine{211             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(\textcolor{stringliteral}{"Detected too many ("} + std::to\_string(numberConsecutiveEmptyFrames) + \textcolor{stringliteral}{") empty frames in a row."},}
+\DoxyCodeLine{212                   \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{213     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classop_1_1_datum_producer_ae7e6c84c7d7ff60b68a668a346de67b3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_datum_producer_ab7587b357d08eefc236ae49ceab507ac}\label{classop_1_1_datum_producer_ab7587b357d08eefc236ae49ceab507ac}} 
+\index{op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily template$<$typename T\+Datum $>$ \\
+\mbox{\hyperlink{classop_1_1_datum_producer}{op\+::\+Datum\+Producer}}$<$ T\+Datum $>$\+::D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_datum_producer}{Datum\+Producer}}$<$ T\+Datum $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_datum_producer_ae41cf4ebf36d4970f62d68f07e7e7ebe}\label{classop_1_1_datum_producer_ae41cf4ebf36d4970f62d68f07e7e7ebe}} 
+\index{op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}!mFrameStep@{mFrameStep}}
+\index{mFrameStep@{mFrameStep}!op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}}
+\doxysubsubsection{\texorpdfstring{mFrameStep}{mFrameStep}}
+{\footnotesize\ttfamily template$<$typename T\+Datum $>$ \\
+unsigned long long \mbox{\hyperlink{classop_1_1_datum_producer}{op\+::\+Datum\+Producer}}$<$ T\+Datum $>$\+::m\+Frame\+Step\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+datum\+Producer.\+hpp 파일의 32 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_datum_producer_af04cbc64032872b6844fba2acfff217c}\label{classop_1_1_datum_producer_af04cbc64032872b6844fba2acfff217c}} 
+\index{op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}!mGlobalCounter@{mGlobalCounter}}
+\index{mGlobalCounter@{mGlobalCounter}!op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}}
+\doxysubsubsection{\texorpdfstring{mGlobalCounter}{mGlobalCounter}}
+{\footnotesize\ttfamily template$<$typename T\+Datum $>$ \\
+unsigned long long \mbox{\hyperlink{classop_1_1_datum_producer}{op\+::\+Datum\+Producer}}$<$ T\+Datum $>$\+::m\+Global\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+datum\+Producer.\+hpp 파일의 31 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_datum_producer_ad26645db7fcc80f0f684d4d19d4763da}\label{classop_1_1_datum_producer_ad26645db7fcc80f0f684d4d19d4763da}} 
+\index{op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}!mNumberConsecutiveEmptyFrames@{mNumberConsecutiveEmptyFrames}}
+\index{mNumberConsecutiveEmptyFrames@{mNumberConsecutiveEmptyFrames}!op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}}
+\doxysubsubsection{\texorpdfstring{mNumberConsecutiveEmptyFrames}{mNumberConsecutiveEmptyFrames}}
+{\footnotesize\ttfamily template$<$typename T\+Datum $>$ \\
+unsigned int \mbox{\hyperlink{classop_1_1_datum_producer}{op\+::\+Datum\+Producer}}$<$ T\+Datum $>$\+::m\+Number\+Consecutive\+Empty\+Frames\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+datum\+Producer.\+hpp 파일의 33 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_datum_producer_aabc2dde824ce26178270f7c9b1fc83c5}\label{classop_1_1_datum_producer_aabc2dde824ce26178270f7c9b1fc83c5}} 
+\index{op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}!mNumberFramesToProcess@{mNumberFramesToProcess}}
+\index{mNumberFramesToProcess@{mNumberFramesToProcess}!op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}}
+\doxysubsubsection{\texorpdfstring{mNumberFramesToProcess}{mNumberFramesToProcess}}
+{\footnotesize\ttfamily template$<$typename T\+Datum $>$ \\
+const unsigned long long \mbox{\hyperlink{classop_1_1_datum_producer}{op\+::\+Datum\+Producer}}$<$ T\+Datum $>$\+::m\+Number\+Frames\+To\+Process\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+datum\+Producer.\+hpp 파일의 29 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}\label{classop_1_1_datum_producer_aab7007ef5e077b1f40237f3358205740}} 
+\index{op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}!spProducer@{spProducer}}
+\index{spProducer@{spProducer}!op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}}
+\doxysubsubsection{\texorpdfstring{spProducer}{spProducer}}
+{\footnotesize\ttfamily template$<$typename T\+Datum $>$ \\
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classop_1_1_producer}{Producer}}$>$ \mbox{\hyperlink{classop_1_1_datum_producer}{op\+::\+Datum\+Producer}}$<$ T\+Datum $>$\+::sp\+Producer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+datum\+Producer.\+hpp 파일의 30 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_datum_producer_a9882792bb6442cfcae7b5f14f6eb7124}\label{classop_1_1_datum_producer_a9882792bb6442cfcae7b5f14f6eb7124}} 
+\index{op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}!spVideoSeek@{spVideoSeek}}
+\index{spVideoSeek@{spVideoSeek}!op::DatumProducer$<$ TDatum $>$@{op::DatumProducer$<$ TDatum $>$}}
+\doxysubsubsection{\texorpdfstring{spVideoSeek}{spVideoSeek}}
+{\footnotesize\ttfamily template$<$typename T\+Datum $>$ \\
+std\+::shared\+\_\+ptr$<$std\+::pair$<$std\+::atomic$<$bool$>$, std\+::atomic$<$int$>$ $>$ $>$ \mbox{\hyperlink{classop_1_1_datum_producer}{op\+::\+Datum\+Producer}}$<$ T\+Datum $>$\+::sp\+Video\+Seek\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+datum\+Producer.\+hpp 파일의 34 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/producer/\mbox{\hyperlink{datum_producer_8hpp}{datum\+Producer.\+hpp}}\end{DoxyCompactItemize}

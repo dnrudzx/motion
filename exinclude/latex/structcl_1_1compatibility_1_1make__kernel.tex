@@ -1,0 +1,172 @@
+\hypertarget{structcl_1_1compatibility_1_1make__kernel}{}\doxysection{cl\+::compatibility\+::make\+\_\+kernel$<$ Ts $>$ 구조체 템플릿 참조}
+\label{structcl_1_1compatibility_1_1make__kernel}\index{cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}}
+
+
+{\ttfamily \#include $<$cl2.\+hpp$>$}
+
+
+
+cl\+::compatibility\+::make\+\_\+kernel$<$ Ts $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structcl_1_1compatibility_1_1make__kernel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classcl_1_1_kernel_functor}{Kernel\+Functor}}$<$ Ts... $>$ \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_ae167b9758dddb66f67413ea8ed8a8b2e}{Functor\+Type}}
+\item 
+typedef \mbox{\hyperlink{classcl_1_1_event}{Event}} \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_ab5a793302f7651ad151a1e4b585be5d4}{result\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Return type of the functor \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classcl_1_1_event}{Event}} \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_aaa094f5455d73fae53eb99b374f05eec}{type\+\_\+}}(const \mbox{\hyperlink{classcl_1_1_enqueue_args}{Enqueue\+Args}} \&, Ts...)
+\begin{DoxyCompactList}\small\item\em Function signature of kernel functor with no event dependency. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_a1dccd422eb61c9aa37a69e0a3a80f62d}{make\+\_\+kernel}} (const \mbox{\hyperlink{classcl_1_1_program}{Program}} \&program, const \mbox{\hyperlink{namespacecl_abff80bfb254d646f6afeb6638df41686}{string}} name, cl\+\_\+int $\ast$err=N\+U\+LL)
+\item 
+\mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_abee3103ba9dc1d3e7531dcf6e74bf2a8}{make\+\_\+kernel}} (const \mbox{\hyperlink{classcl_1_1_kernel}{Kernel}} kernel)
+\item 
+\mbox{\hyperlink{classcl_1_1_event}{Event}} \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_ae85bd2d289bfa63483e76843c36f1ea6}{operator()}} (const \mbox{\hyperlink{classcl_1_1_enqueue_args}{Enqueue\+Args}} \&enqueue\+Args, Ts... args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_ae167b9758dddb66f67413ea8ed8a8b2e}{Functor\+Type}} \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_a821c68ade541cfe7b62d894c6d5113d7}{functor\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename... Ts$>$\newline
+struct cl\+::compatibility\+::make\+\_\+kernel$<$ Ts $>$}
+
+Backward compatibility class to ensure that cl.\+hpp code works with \mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}. Please use \mbox{\hyperlink{classcl_1_1_kernel_functor}{Kernel\+Functor}} directly. 
+
+cl2.\+hpp 파일의 9446 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 타입정의 문서화}
+\mbox{\Hypertarget{structcl_1_1compatibility_1_1make__kernel_ae167b9758dddb66f67413ea8ed8a8b2e}\label{structcl_1_1compatibility_1_1make__kernel_ae167b9758dddb66f67413ea8ed8a8b2e}} 
+\index{cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}!FunctorType@{FunctorType}}
+\index{FunctorType@{FunctorType}!cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}}
+\doxysubsubsection{\texorpdfstring{FunctorType}{FunctorType}}
+{\footnotesize\ttfamily template$<$typename... Ts$>$ \\
+typedef \mbox{\hyperlink{classcl_1_1_kernel_functor}{Kernel\+Functor}}$<$Ts...$>$ \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel}{cl\+::compatibility\+::make\+\_\+kernel}}$<$ Ts $>$\+::\mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_ae167b9758dddb66f67413ea8ed8a8b2e}{Functor\+Type}}}
+
+
+
+cl2.\+hpp 파일의 9448 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structcl_1_1compatibility_1_1make__kernel_ab5a793302f7651ad151a1e4b585be5d4}\label{structcl_1_1compatibility_1_1make__kernel_ab5a793302f7651ad151a1e4b585be5d4}} 
+\index{cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}!result\_type@{result\_type}}
+\index{result\_type@{result\_type}!cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}}
+\doxysubsubsection{\texorpdfstring{result\_type}{result\_type}}
+{\footnotesize\ttfamily template$<$typename... Ts$>$ \\
+typedef \mbox{\hyperlink{classcl_1_1_event}{Event}} \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel}{cl\+::compatibility\+::make\+\_\+kernel}}$<$ Ts $>$\+::\mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_ab5a793302f7651ad151a1e4b585be5d4}{result\+\_\+type}}}
+
+
+
+Return type of the functor 
+
+
+
+cl2.\+hpp 파일의 9465 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structcl_1_1compatibility_1_1make__kernel_aaa094f5455d73fae53eb99b374f05eec}\label{structcl_1_1compatibility_1_1make__kernel_aaa094f5455d73fae53eb99b374f05eec}} 
+\index{cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}!type\_@{type\_}}
+\index{type\_@{type\_}!cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}}
+\doxysubsubsection{\texorpdfstring{type\_}{type\_}}
+{\footnotesize\ttfamily template$<$typename... Ts$>$ \\
+typedef \mbox{\hyperlink{classcl_1_1_event}{Event}} \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel}{cl\+::compatibility\+::make\+\_\+kernel}}$<$ Ts $>$\+::type\+\_\+(const \mbox{\hyperlink{classcl_1_1_enqueue_args}{Enqueue\+Args}} \&, Ts...)}
+
+
+
+Function signature of kernel functor with no event dependency. 
+
+
+
+cl2.\+hpp 파일의 9468 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{structcl_1_1compatibility_1_1make__kernel_a1dccd422eb61c9aa37a69e0a3a80f62d}\label{structcl_1_1compatibility_1_1make__kernel_a1dccd422eb61c9aa37a69e0a3a80f62d}} 
+\index{cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}!make\_kernel@{make\_kernel}}
+\index{make\_kernel@{make\_kernel}!cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}}
+\doxysubsubsection{\texorpdfstring{make\_kernel()}{make\_kernel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Ts$>$ \\
+\mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel}{cl\+::compatibility\+::make\+\_\+kernel}}$<$ Ts $>$\+::\mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel}{make\+\_\+kernel}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_program}{Program}} \&}]{program,  }\item[{const \mbox{\hyperlink{namespacecl_abff80bfb254d646f6afeb6638df41686}{string}}}]{name,  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 9452 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9455                                  :}
+\DoxyCodeLine{9456             \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_a821c68ade541cfe7b62d894c6d5113d7}{functor\_}}(\mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_ae167b9758dddb66f67413ea8ed8a8b2e}{FunctorType}}(program, name, err))}
+\DoxyCodeLine{9457         \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structcl_1_1compatibility_1_1make__kernel_abee3103ba9dc1d3e7531dcf6e74bf2a8}\label{structcl_1_1compatibility_1_1make__kernel_abee3103ba9dc1d3e7531dcf6e74bf2a8}} 
+\index{cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}!make\_kernel@{make\_kernel}}
+\index{make\_kernel@{make\_kernel}!cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}}
+\doxysubsubsection{\texorpdfstring{make\_kernel()}{make\_kernel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename... Ts$>$ \\
+\mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel}{cl\+::compatibility\+::make\+\_\+kernel}}$<$ Ts $>$\+::\mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel}{make\+\_\+kernel}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_kernel}{Kernel}}}]{kernel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 9459 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9460                                  :}
+\DoxyCodeLine{9461             \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_a821c68ade541cfe7b62d894c6d5113d7}{functor\_}}(\mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_ae167b9758dddb66f67413ea8ed8a8b2e}{FunctorType}}(kernel))}
+\DoxyCodeLine{9462         \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{structcl_1_1compatibility_1_1make__kernel_ae85bd2d289bfa63483e76843c36f1ea6}\label{structcl_1_1compatibility_1_1make__kernel_ae85bd2d289bfa63483e76843c36f1ea6}} 
+\index{cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename... Ts$>$ \\
+\mbox{\hyperlink{classcl_1_1_event}{Event}} \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel}{cl\+::compatibility\+::make\+\_\+kernel}}$<$ Ts $>$\+::operator() (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_enqueue_args}{Enqueue\+Args}} \&}]{enqueue\+Args,  }\item[{Ts...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 9472 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9475         \{}
+\DoxyCodeLine{9476             \textcolor{keywordflow}{return} \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_a821c68ade541cfe7b62d894c6d5113d7}{functor\_}}(}
+\DoxyCodeLine{9477                 enqueueArgs, args...);}
+\DoxyCodeLine{9478         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{structcl_1_1compatibility_1_1make__kernel_a821c68ade541cfe7b62d894c6d5113d7}\label{structcl_1_1compatibility_1_1make__kernel_a821c68ade541cfe7b62d894c6d5113d7}} 
+\index{cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}!functor\_@{functor\_}}
+\index{functor\_@{functor\_}!cl::compatibility::make\_kernel$<$ Ts $>$@{cl::compatibility::make\_kernel$<$ Ts $>$}}
+\doxysubsubsection{\texorpdfstring{functor\_}{functor\_}}
+{\footnotesize\ttfamily template$<$typename... Ts$>$ \\
+\mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel_ae167b9758dddb66f67413ea8ed8a8b2e}{Functor\+Type}} \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel}{cl\+::compatibility\+::make\+\_\+kernel}}$<$ Ts $>$\+::functor\+\_\+}
+
+
+
+cl2.\+hpp 파일의 9450 번째 라인에서 정의되었습니다.
+
+
+
+이 구조체에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/gpu/\mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}\end{DoxyCompactItemize}

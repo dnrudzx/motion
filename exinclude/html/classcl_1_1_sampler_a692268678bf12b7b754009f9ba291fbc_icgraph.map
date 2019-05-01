@@ -1,0 +1,4 @@
+<map id="cl::Sampler::getInfo" name="cl::Sampler::getInfo">
+<area shape="rect" id="node1" title="Wrapper for clGetSamplerInfo()." alt="" coords="189,5,325,32"/>
+<area shape="rect" id="node2" href="$classcl_1_1_sampler.html#afc12ea7675deef235c907034f72a0476" title="Wrapper for clGetSamplerInfo() that returns by value." alt="" coords="5,5,141,32"/>
+</map>

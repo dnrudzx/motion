@@ -1,0 +1,5 @@
+<map id="cl::Buffer::operator=" name="cl::Buffer::operator=">
+<area shape="rect" id="node1" title="Assignment from cl_mem &#45; performs shallow copy." alt="" coords="208,35,347,61"/>
+<area shape="rect" id="node2" href="$classcl_1_1_buffer_g_l.html#aaef7042e8710b4ea535422bfe1c17590" title="Assignment from cl_mem &#45; performs shallow copy." alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node3" href="$classcl_1_1_buffer_render_g_l.html#a8e133bcc8dce2061d9af72231506c124" title="Assignment from cl_mem &#45; performs shallow copy." alt="" coords="15,57,150,98"/>
+</map>

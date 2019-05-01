@@ -1,0 +1,4 @@
+<map id="cl::Context::operator=" name="cl::Context::operator=">
+<area shape="rect" id="node1" title="Copy assignment to forward copy to the superclass correctly. Required for MSVC." alt="" coords="5,13,155,39"/>
+<area shape="rect" id="node2" href="$classcl_1_1detail_1_1_wrapper.html#a044bc05bb3eb90345cb9cf574b95a98f" title=" " alt="" coords="203,5,331,47"/>
+</map>

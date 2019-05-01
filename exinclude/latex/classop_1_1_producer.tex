@@ -1,0 +1,471 @@
+\hypertarget{classop_1_1_producer}{}\doxysection{op\+::Producer 클래스 참조}
+\label{classop_1_1_producer}\index{op::Producer@{op::Producer}}
+
+
+{\ttfamily \#include $<$producer.\+hpp$>$}
+
+
+
+op\+::Producer에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classop_1_1_producer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::Producer에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_producer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_producer_aaec98c35fe9f2695cd31be3e2d437a61}{Producer}} (const \mbox{\hyperlink{namespaceop_a54b73745852c270cfd891eed0f6f2332}{Producer\+Type}} type, const std\+::string \&camera\+Parameter\+Path, const bool undistort\+Image, const int m\+Number\+Views)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_producer_a8b48342b2c4003a080b17ac411f3454f}{$\sim$\+Producer}} ()
+\item 
+cv\+::\+Mat \mbox{\hyperlink{classop_1_1_producer_aacd96f08524772d8865bb187c881943e}{get\+Frame}} ()
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_producer_a3fbf3df1e02d326d7c954d78aa0dca0d}{get\+Frames}} ()
+\item 
+virtual std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_producer_adb33a11ca1ebe16a4f26f8c78a9a4087}{get\+Camera\+Matrices}} ()
+\item 
+virtual std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_producer_a6e35a05069c126bea452be08d599c4c4}{get\+Camera\+Extrinsics}} ()
+\item 
+virtual std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_producer_a04a9b2b0d953edc848f6e19c818be9b9}{get\+Camera\+Intrinsics}} ()
+\item 
+virtual std\+::string \mbox{\hyperlink{classop_1_1_producer_ab35d570dc35573433ec86e3fce25e545}{get\+Next\+Frame\+Name}} ()=0
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_a024e55b4ec769cdbc40ee21613a6ef6f}{set\+Producer\+Fps\+Mode}} (const \mbox{\hyperlink{namespaceop_ac0230b669b296920c0cfc41b7587268f}{Producer\+Fps\+Mode}} fps\+Mode)
+\item 
+\mbox{\hyperlink{namespaceop_a54b73745852c270cfd891eed0f6f2332}{Producer\+Type}} \mbox{\hyperlink{classop_1_1_producer_a9a9424027e5bc8e0fba7c65eccc460e0}{get\+Type}} ()
+\item 
+virtual bool \mbox{\hyperlink{classop_1_1_producer_a58590e4a409d31f839184b4bf030a68b}{is\+Opened}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_producer_a7753ffb0daa486ab0f82873b3567f95e}{release}} ()=0
+\item 
+virtual double \mbox{\hyperlink{classop_1_1_producer_a366881a952ad34071cc719477f08b968}{get}} (const int cap\+Property)=0
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_producer_ab30c7b3e34d962e0b17458d9a0947f6b}{set}} (const int cap\+Property, const double value)=0
+\item 
+double \mbox{\hyperlink{classop_1_1_producer_a94d561f95384dfa0cd91113882869d06}{get}} (const \mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774}{Producer\+Property}} property)
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_af11f1bbfbd61b9534c02c3e4839e19b0}{set}} (const \mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774}{Producer\+Property}} property, const double value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_a901c2ff1f56b551a058143ed884b1a5a}{check\+Frame\+Integrity}} (cv\+::\+Mat \&frame)
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_ac72a751759ae8b5a0a99552580f7fbad}{if\+Ended\+Reset\+Or\+Release}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_afad3eadd16cca0de2c2be8b083c0d56d}{keep\+Desired\+Frame\+Rate}} ()
+\item 
+virtual cv\+::\+Mat \mbox{\hyperlink{classop_1_1_producer_a39f52d80ac4146c82ed12aae0f05478e}{get\+Raw\+Frame}} ()=0
+\item 
+virtual std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_producer_ad51001c3e9f42722c52990d43b315f78}{get\+Raw\+Frames}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_producer_ab7a694c6da2a8391ff577d10fc6e6017}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_producer}{Producer}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{namespaceop_a54b73745852c270cfd891eed0f6f2332}{Producer\+Type}} \mbox{\hyperlink{classop_1_1_producer_a4ae382b91ed92aac41d348c0836dda9e}{m\+Type}}
+\item 
+\mbox{\hyperlink{namespaceop_ac0230b669b296920c0cfc41b7587268f}{Producer\+Fps\+Mode}} \mbox{\hyperlink{classop_1_1_producer_a53df97ca98f4a5f9bab054ec8f9b906d}{m\+Producer\+Fps\+Mode}}
+\item 
+std\+::array$<$ double,(int) \mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774a6f6cb72d544962fa333e2e34ce64f719}{Producer\+Property\+::\+Size}} $>$ \mbox{\hyperlink{classop_1_1_producer_a23ec3deb54d2f784753b4c36a5de2861}{m\+Properties}}
+\item 
+unsigned int \mbox{\hyperlink{classop_1_1_producer_a591d012cf423c009195640d220c567e1}{m\+Number\+Empty\+Frames}}
+\item 
+bool \mbox{\hyperlink{classop_1_1_producer_ab6ed010ec93f4f74e3189e609029c8c9}{m\+Tracking\+Fps}}
+\item 
+unsigned long long \mbox{\hyperlink{classop_1_1_producer_acda9b3a6cf18987c2bb0c6774197f6c6}{m\+First\+Frame\+Tracking\+Fps}}
+\item 
+unsigned long long \mbox{\hyperlink{classop_1_1_producer_a8ae22c659a1712d53d896e90bab41dfa}{m\+Number\+Frames\+Tracking\+Fps}}
+\item 
+unsigned int \mbox{\hyperlink{classop_1_1_producer_a3abedb0d9814e773d2936aa1ccc5efec}{m\+Number\+Set\+Position\+Tracking\+Fps}}
+\item 
+std\+::chrono\+::high\+\_\+resolution\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{classop_1_1_producer_aba02f69c622fe7ba67d77aecce3c5505}{m\+Clock\+Tracking\+Fps}}
+\item 
+\mbox{\hyperlink{classop_1_1_camera_parameter_reader}{Camera\+Parameter\+Reader}} \mbox{\hyperlink{classop_1_1_producer_ac231fa648b5fc98d32267e4f09399351}{m\+Camera\+Parameter\+Reader}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\mbox{\hyperlink{classop_1_1_producer}{Producer}} is an abstract class to extract frames from a source (image directory, video file, webcam stream, etc.). It has the basic and common functions (e.\+g., get\+Frame, release \& is\+Opened). 
+
+producer.\+hpp 파일의 16 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_producer_aaec98c35fe9f2695cd31be3e2d437a61}\label{classop_1_1_producer_aaec98c35fe9f2695cd31be3e2d437a61}} 
+\index{op::Producer@{op::Producer}!Producer@{Producer}}
+\index{Producer@{Producer}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{Producer()}{Producer()}}
+{\footnotesize\ttfamily op\+::\+Producer\+::\+Producer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_a54b73745852c270cfd891eed0f6f2332}{Producer\+Type}}}]{type,  }\item[{const std\+::string \&}]{camera\+Parameter\+Path,  }\item[{const bool}]{undistort\+Image,  }\item[{const int}]{m\+Number\+Views }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor of \mbox{\hyperlink{classop_1_1_producer}{Producer}}. \mbox{\Hypertarget{classop_1_1_producer_a8b48342b2c4003a080b17ac411f3454f}\label{classop_1_1_producer_a8b48342b2c4003a080b17ac411f3454f}} 
+\index{op::Producer@{op::Producer}!````~Producer@{$\sim$Producer}}
+\index{````~Producer@{$\sim$Producer}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Producer()}{~Producer()}}
+{\footnotesize\ttfamily virtual op\+::\+Producer\+::$\sim$\+Producer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor of \mbox{\hyperlink{classop_1_1_producer}{Producer}}. It is virtual so that any children class can implement its own destructor. 
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_producer_a901c2ff1f56b551a058143ed884b1a5a}\label{classop_1_1_producer_a901c2ff1f56b551a058143ed884b1a5a}} 
+\index{op::Producer@{op::Producer}!checkFrameIntegrity@{checkFrameIntegrity}}
+\index{checkFrameIntegrity@{checkFrameIntegrity}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{checkFrameIntegrity()}{checkFrameIntegrity()}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::check\+Frame\+Integrity (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Protected function which checks that the frames keeps their integry (some Open\+CV versions might return corrupted frames within a video or webcam with a size different to the standard resolution). If the frame is corrupted, it is set to an empty cv\+::\+Mat. 
+\begin{DoxyParams}{매개변수}
+{\em frame} & cv\+::\+Mat with the frame matrix to be checked and modified. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_producer_ab7a694c6da2a8391ff577d10fc6e6017}\label{classop_1_1_producer_ab7a694c6da2a8391ff577d10fc6e6017}} 
+\index{op::Producer@{op::Producer}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Producer\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_producer}{Producer}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_producer_a366881a952ad34071cc719477f08b968}\label{classop_1_1_producer_a366881a952ad34071cc719477f08b968}} 
+\index{op::Producer@{op::Producer}!get@{get}}
+\index{get@{get}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double op\+::\+Producer\+::get (\begin{DoxyParamCaption}\item[{const int}]{cap\+Property }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This function is a wrapper of cv\+::\+Video\+Capture\+::get. It allows getting different properties of the \mbox{\hyperlink{classop_1_1_producer}{Producer}} (fps, width, height, etc.). See the Open\+CV documentation for all the available properties. 
+\begin{DoxyParams}{매개변수}
+{\em cap\+Property} & int indicating the property to be modified. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+double returning the property value. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_video_capture_reader_a64e5cbfb1c556d64cabcebc6eb94eaf1}{op\+::\+Video\+Capture\+Reader}}, \mbox{\hyperlink{classop_1_1_image_directory_reader_aa05bfd69272e81115ba23a3c0731b596}{op\+::\+Image\+Directory\+Reader}}, \mbox{\hyperlink{classop_1_1_flir_reader_a5101cdbcd46e51bf7f35995a3d87e900}{op\+::\+Flir\+Reader}}, \mbox{\hyperlink{classop_1_1_video_reader_a057a7d0c498c48639b38c10ac7efc183}{op\+::\+Video\+Reader}}, \mbox{\hyperlink{classop_1_1_webcam_reader_a38ccbdf61f21fba0694362077cb6bdb1}{op\+::\+Webcam\+Reader}}, \mbox{\hyperlink{classop_1_1_ip_camera_reader_aa7ad6adac6e401193e03d279176dd889}{op\+::\+Ip\+Camera\+Reader}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_a94d561f95384dfa0cd91113882869d06}\label{classop_1_1_producer_a94d561f95384dfa0cd91113882869d06}} 
+\index{op::Producer@{op::Producer}!get@{get}}
+\index{get@{get}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double op\+::\+Producer\+::get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774}{Producer\+Property}}}]{property }\end{DoxyParamCaption})}
+
+Extra attributes that Video\+Capture\+::get/set do not contain. 
+\begin{DoxyParams}{매개변수}
+{\em property} & Producer\+Property indicating the property to be modified. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_producer_a6e35a05069c126bea452be08d599c4c4}\label{classop_1_1_producer_a6e35a05069c126bea452be08d599c4c4}} 
+\index{op::Producer@{op::Producer}!getCameraExtrinsics@{getCameraExtrinsics}}
+\index{getCameraExtrinsics@{getCameraExtrinsics}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{getCameraExtrinsics()}{getCameraExtrinsics()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Producer\+::get\+Camera\+Extrinsics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+It retrieves and returns the camera extrinsic parameters from the frames producer. Virtual class because \mbox{\hyperlink{classop_1_1_flir_reader}{Flir\+Reader}} implements their own. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the camera extrinsic parameters. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_flir_reader_afb0ae89ef49073345b038fad8652cc37}{op\+::\+Flir\+Reader}}에서 재구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_a04a9b2b0d953edc848f6e19c818be9b9}\label{classop_1_1_producer_a04a9b2b0d953edc848f6e19c818be9b9}} 
+\index{op::Producer@{op::Producer}!getCameraIntrinsics@{getCameraIntrinsics}}
+\index{getCameraIntrinsics@{getCameraIntrinsics}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{getCameraIntrinsics()}{getCameraIntrinsics()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Producer\+::get\+Camera\+Intrinsics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+It retrieves and returns the camera intrinsic parameters from the frames producer. Virtual class because \mbox{\hyperlink{classop_1_1_flir_reader}{Flir\+Reader}} implements their own. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the camera intrinsic parameters. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_flir_reader_a4a6576da78857c0e532d59b442332e83}{op\+::\+Flir\+Reader}}에서 재구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_adb33a11ca1ebe16a4f26f8c78a9a4087}\label{classop_1_1_producer_adb33a11ca1ebe16a4f26f8c78a9a4087}} 
+\index{op::Producer@{op::Producer}!getCameraMatrices@{getCameraMatrices}}
+\index{getCameraMatrices@{getCameraMatrices}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{getCameraMatrices()}{getCameraMatrices()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Producer\+::get\+Camera\+Matrices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+It retrieves and returns the camera matrixes from the frames producer. Virtual class because \mbox{\hyperlink{classop_1_1_flir_reader}{Flir\+Reader}} implements their own. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the camera matrices. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_flir_reader_a7c3450fd4b5c6f81ade293ee95da7ba6}{op\+::\+Flir\+Reader}}에서 재구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_aacd96f08524772d8865bb187c881943e}\label{classop_1_1_producer_aacd96f08524772d8865bb187c881943e}} 
+\index{op::Producer@{op::Producer}!getFrame@{getFrame}}
+\index{getFrame@{getFrame}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{getFrame()}{getFrame()}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Producer\+::get\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Main function of \mbox{\hyperlink{classop_1_1_producer}{Producer}}, it retrieves and returns a new frame from the frames producer. \begin{DoxyReturn}{반환값}
+cv\+::\+Mat with the new frame. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_producer_a3fbf3df1e02d326d7c954d78aa0dca0d}\label{classop_1_1_producer_a3fbf3df1e02d326d7c954d78aa0dca0d}} 
+\index{op::Producer@{op::Producer}!getFrames@{getFrames}}
+\index{getFrames@{getFrames}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{getFrames()}{getFrames()}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Producer\+::get\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Analogous to get\+Frame, but it could return $>$ 1 frame. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the new frame(s). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_producer_ab35d570dc35573433ec86e3fce25e545}\label{classop_1_1_producer_ab35d570dc35573433ec86e3fce25e545}} 
+\index{op::Producer@{op::Producer}!getNextFrameName@{getNextFrameName}}
+\index{getNextFrameName@{getNextFrameName}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{getNextFrameName()}{getNextFrameName()}}
+{\footnotesize\ttfamily virtual std\+::string op\+::\+Producer\+::get\+Next\+Frame\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This function returns a unique frame name (e.\+g., the frame number for video, the frame counter for webcam, the image name for image directory reader, etc.). \begin{DoxyReturn}{반환값}
+std\+::string with an unique frame name. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_video_capture_reader_a06348fd9a290fc2ece2f3c2e4dc9bc70}{op\+::\+Video\+Capture\+Reader}}, \mbox{\hyperlink{classop_1_1_webcam_reader_a58c315e577c12486e5ab1b941d4cce04}{op\+::\+Webcam\+Reader}}, \mbox{\hyperlink{classop_1_1_flir_reader_a711db0919bd7516fde3e641c13259637}{op\+::\+Flir\+Reader}}, \mbox{\hyperlink{classop_1_1_image_directory_reader_a46ce23209afe6d3ca90db545b69cd04a}{op\+::\+Image\+Directory\+Reader}}, \mbox{\hyperlink{classop_1_1_video_reader_a508eed918fbe3bfe3eff4c1ebacb3463}{op\+::\+Video\+Reader}}, \mbox{\hyperlink{classop_1_1_ip_camera_reader_a0c1582090cc7c54dd9cb752207b52986}{op\+::\+Ip\+Camera\+Reader}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_a39f52d80ac4146c82ed12aae0f05478e}\label{classop_1_1_producer_a39f52d80ac4146c82ed12aae0f05478e}} 
+\index{op::Producer@{op::Producer}!getRawFrame@{getRawFrame}}
+\index{getRawFrame@{getRawFrame}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{getRawFrame()}{getRawFrame()}}
+{\footnotesize\ttfamily virtual cv\+::\+Mat op\+::\+Producer\+::get\+Raw\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Function to be defined by its children class. It retrieves and returns a new frame from the frames producer. \begin{DoxyReturn}{반환값}
+cv\+::\+Mat with the new frame. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_video_capture_reader_af57cc02f86ee0c29ccb83f1f7c37bec2}{op\+::\+Video\+Capture\+Reader}}, \mbox{\hyperlink{classop_1_1_webcam_reader_a40d0631d11c5c043c9c6af3246a1498d}{op\+::\+Webcam\+Reader}}, \mbox{\hyperlink{classop_1_1_image_directory_reader_ad08350382c9ab338a0a0225922843b4c}{op\+::\+Image\+Directory\+Reader}}, \mbox{\hyperlink{classop_1_1_flir_reader_ada499e9752a528cbd70a4b66c83b5d91}{op\+::\+Flir\+Reader}}, \mbox{\hyperlink{classop_1_1_video_reader_a31c0819c0191c513750e3643e2afd665}{op\+::\+Video\+Reader}}, \mbox{\hyperlink{classop_1_1_ip_camera_reader_ac298f98e17abf35c37453971b8ce7b08}{op\+::\+Ip\+Camera\+Reader}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_ad51001c3e9f42722c52990d43b315f78}\label{classop_1_1_producer_ad51001c3e9f42722c52990d43b315f78}} 
+\index{op::Producer@{op::Producer}!getRawFrames@{getRawFrames}}
+\index{getRawFrames@{getRawFrames}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{getRawFrames()}{getRawFrames()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Producer\+::get\+Raw\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Function to be defined by its children class. It retrieves and returns a new frame from the frames producer. It is equivalent to get\+Raw\+Frame when more than 1 image can be returned. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the new frames. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_video_capture_reader_a07abbb0001dd9972ab416eb619812043}{op\+::\+Video\+Capture\+Reader}}, \mbox{\hyperlink{classop_1_1_webcam_reader_ad70083fad0422959bb380be75470fb36}{op\+::\+Webcam\+Reader}}, \mbox{\hyperlink{classop_1_1_image_directory_reader_a871bbeafb2f1ddb8ce2a049dd6c5dc99}{op\+::\+Image\+Directory\+Reader}}, \mbox{\hyperlink{classop_1_1_flir_reader_a114bae4436cc30e6bba8b2249e5e8dab}{op\+::\+Flir\+Reader}}, \mbox{\hyperlink{classop_1_1_video_reader_a503b62ef8a73ea1155d41775c4785c57}{op\+::\+Video\+Reader}}, \mbox{\hyperlink{classop_1_1_ip_camera_reader_a735611d8977733fc9ee15a9097277ab8}{op\+::\+Ip\+Camera\+Reader}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_a9a9424027e5bc8e0fba7c65eccc460e0}\label{classop_1_1_producer_a9a9424027e5bc8e0fba7c65eccc460e0}} 
+\index{op::Producer@{op::Producer}!getType@{getType}}
+\index{getType@{getType}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceop_a54b73745852c270cfd891eed0f6f2332}{Producer\+Type}} op\+::\+Producer\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function returns the type of producer (video, webcam, ...). \begin{DoxyReturn}{반환값}
+Producer\+Type with the kind of producer. 
+\end{DoxyReturn}
+
+
+producer.\+hpp 파일의 82 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83         \{}
+\DoxyCodeLine{84             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_producer_a4ae382b91ed92aac41d348c0836dda9e}{mType}};}
+\DoxyCodeLine{85         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_producer_ac72a751759ae8b5a0a99552580f7fbad}\label{classop_1_1_producer_ac72a751759ae8b5a0a99552580f7fbad}} 
+\index{op::Producer@{op::Producer}!ifEndedResetOrRelease@{ifEndedResetOrRelease}}
+\index{ifEndedResetOrRelease@{ifEndedResetOrRelease}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{ifEndedResetOrRelease()}{ifEndedResetOrRelease()}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::if\+Ended\+Reset\+Or\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Protected function which checks that the frame producer has ended. If so, if resets or releases the producer according to m\+Repeat\+When\+Finished. \mbox{\Hypertarget{classop_1_1_producer_a58590e4a409d31f839184b4bf030a68b}\label{classop_1_1_producer_a58590e4a409d31f839184b4bf030a68b}} 
+\index{op::Producer@{op::Producer}!isOpened@{isOpened}}
+\index{isOpened@{isOpened}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{isOpened()}{isOpened()}}
+{\footnotesize\ttfamily virtual bool op\+::\+Producer\+::is\+Opened (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This function returns whether the \mbox{\hyperlink{classop_1_1_producer}{Producer}} instance is still opened and able to retrieve more frames. \begin{DoxyReturn}{반환값}
+bool indicating whether the \mbox{\hyperlink{classop_1_1_producer}{Producer}} is opened. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_video_capture_reader_ab0c6519396faae82ec1b49262ed454a2}{op\+::\+Video\+Capture\+Reader}}, \mbox{\hyperlink{classop_1_1_webcam_reader_a6a065fcf3d6dca624741adc0f77da11d}{op\+::\+Webcam\+Reader}}, \mbox{\hyperlink{classop_1_1_flir_reader_a3d383e03a405dcbff566a86253db90af}{op\+::\+Flir\+Reader}}, \mbox{\hyperlink{classop_1_1_image_directory_reader_adbf9ff392cd52a585332dbdcd46ffb81}{op\+::\+Image\+Directory\+Reader}}, \mbox{\hyperlink{classop_1_1_video_reader_a503e70039e2cfecfe2d31771df509733}{op\+::\+Video\+Reader}}, \mbox{\hyperlink{classop_1_1_ip_camera_reader_ac26913b4ff841f56f43bb53b012a2401}{op\+::\+Ip\+Camera\+Reader}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_afad3eadd16cca0de2c2be8b083c0d56d}\label{classop_1_1_producer_afad3eadd16cca0de2c2be8b083c0d56d}} 
+\index{op::Producer@{op::Producer}!keepDesiredFrameRate@{keepDesiredFrameRate}}
+\index{keepDesiredFrameRate@{keepDesiredFrameRate}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{keepDesiredFrameRate()}{keepDesiredFrameRate()}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::keep\+Desired\+Frame\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Protected function which forces the producer to get frames at the rate of get(\+C\+V\+\_\+\+C\+A\+P\+\_\+\+P\+R\+O\+P\+\_\+\+F\+P\+S). \mbox{\Hypertarget{classop_1_1_producer_a7753ffb0daa486ab0f82873b3567f95e}\label{classop_1_1_producer_a7753ffb0daa486ab0f82873b3567f95e}} 
+\index{op::Producer@{op::Producer}!release@{release}}
+\index{release@{release}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily virtual void op\+::\+Producer\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This function releases and closes the \mbox{\hyperlink{classop_1_1_producer}{Producer}}. After it is called, no more frames can be retrieved from \mbox{\hyperlink{classop_1_1_producer_a3fbf3df1e02d326d7c954d78aa0dca0d}{Producer\+::get\+Frames}}. 
+
+\mbox{\hyperlink{classop_1_1_video_capture_reader_a2f73e10efe7f9b24a6cb75af2167de58}{op\+::\+Video\+Capture\+Reader}}, \mbox{\hyperlink{classop_1_1_image_directory_reader_af74e192f8cba5c10f8e252674a85185a}{op\+::\+Image\+Directory\+Reader}}, \mbox{\hyperlink{classop_1_1_flir_reader_ab28f40422c9edff8594d855bbef91f58}{op\+::\+Flir\+Reader}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_ab30c7b3e34d962e0b17458d9a0947f6b}\label{classop_1_1_producer_ab30c7b3e34d962e0b17458d9a0947f6b}} 
+\index{op::Producer@{op::Producer}!set@{set}}
+\index{set@{set}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void op\+::\+Producer\+::set (\begin{DoxyParamCaption}\item[{const int}]{cap\+Property,  }\item[{const double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This function is a wrapper of cv\+::\+Video\+Capture\+::set. It allows setting different properties of the \mbox{\hyperlink{classop_1_1_producer}{Producer}} (fps, width, height, etc.). See the Open\+CV documentation for all the available properties. 
+\begin{DoxyParams}{매개변수}
+{\em cap\+Property} & int indicating the property to be modified. \\
+\hline
+{\em value} & double indicating the new value to be assigned. \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{classop_1_1_video_capture_reader_ab2929b7d2d002b58ebaf7b9b56999cca}{op\+::\+Video\+Capture\+Reader}}, \mbox{\hyperlink{classop_1_1_image_directory_reader_a1965a4dca2ddb86b24e69e2da90b9dbf}{op\+::\+Image\+Directory\+Reader}}, \mbox{\hyperlink{classop_1_1_flir_reader_af14f63c79272781429341dc3a0720485}{op\+::\+Flir\+Reader}}, \mbox{\hyperlink{classop_1_1_video_reader_a0dd53334327642368d41ec860e64e756}{op\+::\+Video\+Reader}}, \mbox{\hyperlink{classop_1_1_webcam_reader_ae66b26829cc2d6e3f02109d4431a7bc2}{op\+::\+Webcam\+Reader}}, \mbox{\hyperlink{classop_1_1_ip_camera_reader_ac13cc7da97a31d8e69eaa64b2a7b31ba}{op\+::\+Ip\+Camera\+Reader}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_af11f1bbfbd61b9534c02c3e4839e19b0}\label{classop_1_1_producer_af11f1bbfbd61b9534c02c3e4839e19b0}} 
+\index{op::Producer@{op::Producer}!set@{set}}
+\index{set@{set}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774}{Producer\+Property}}}]{property,  }\item[{const double}]{value }\end{DoxyParamCaption})}
+
+Extra attributes that Video\+Capture\+::get/set do not contain. 
+\begin{DoxyParams}{매개변수}
+{\em property} & Producer\+Property indicating the property to be modified. \\
+\hline
+{\em value} & double indicating the new value to be assigned. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_producer_a024e55b4ec769cdbc40ee21613a6ef6f}\label{classop_1_1_producer_a024e55b4ec769cdbc40ee21613a6ef6f}} 
+\index{op::Producer@{op::Producer}!setProducerFpsMode@{setProducerFpsMode}}
+\index{setProducerFpsMode@{setProducerFpsMode}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{setProducerFpsMode()}{setProducerFpsMode()}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::set\+Producer\+Fps\+Mode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_ac0230b669b296920c0cfc41b7587268f}{Producer\+Fps\+Mode}}}]{fps\+Mode }\end{DoxyParamCaption})}
+
+This function sets whether the producer must keep the original fps frame rate or extract the frames as quick as possible. 
+\begin{DoxyParams}{매개변수}
+{\em fps\+Mode} & Producer\+Fps\+Mode parameter specifying the new value. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_producer_ac231fa648b5fc98d32267e4f09399351}\label{classop_1_1_producer_ac231fa648b5fc98d32267e4f09399351}} 
+\index{op::Producer@{op::Producer}!mCameraParameterReader@{mCameraParameterReader}}
+\index{mCameraParameterReader@{mCameraParameterReader}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{mCameraParameterReader}{mCameraParameterReader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_camera_parameter_reader}{Camera\+Parameter\+Reader}} op\+::\+Producer\+::m\+Camera\+Parameter\+Reader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+producer.\+hpp 파일의 176 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_aba02f69c622fe7ba67d77aecce3c5505}\label{classop_1_1_producer_aba02f69c622fe7ba67d77aecce3c5505}} 
+\index{op::Producer@{op::Producer}!mClockTrackingFps@{mClockTrackingFps}}
+\index{mClockTrackingFps@{mClockTrackingFps}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{mClockTrackingFps}{mClockTrackingFps}}
+{\footnotesize\ttfamily std\+::chrono\+::high\+\_\+resolution\+\_\+clock\+::time\+\_\+point op\+::\+Producer\+::m\+Clock\+Tracking\+Fps\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+producer.\+hpp 파일의 174 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_acda9b3a6cf18987c2bb0c6774197f6c6}\label{classop_1_1_producer_acda9b3a6cf18987c2bb0c6774197f6c6}} 
+\index{op::Producer@{op::Producer}!mFirstFrameTrackingFps@{mFirstFrameTrackingFps}}
+\index{mFirstFrameTrackingFps@{mFirstFrameTrackingFps}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{mFirstFrameTrackingFps}{mFirstFrameTrackingFps}}
+{\footnotesize\ttfamily unsigned long long op\+::\+Producer\+::m\+First\+Frame\+Tracking\+Fps\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+producer.\+hpp 파일의 171 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_a591d012cf423c009195640d220c567e1}\label{classop_1_1_producer_a591d012cf423c009195640d220c567e1}} 
+\index{op::Producer@{op::Producer}!mNumberEmptyFrames@{mNumberEmptyFrames}}
+\index{mNumberEmptyFrames@{mNumberEmptyFrames}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{mNumberEmptyFrames}{mNumberEmptyFrames}}
+{\footnotesize\ttfamily unsigned int op\+::\+Producer\+::m\+Number\+Empty\+Frames\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+producer.\+hpp 파일의 168 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_a8ae22c659a1712d53d896e90bab41dfa}\label{classop_1_1_producer_a8ae22c659a1712d53d896e90bab41dfa}} 
+\index{op::Producer@{op::Producer}!mNumberFramesTrackingFps@{mNumberFramesTrackingFps}}
+\index{mNumberFramesTrackingFps@{mNumberFramesTrackingFps}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{mNumberFramesTrackingFps}{mNumberFramesTrackingFps}}
+{\footnotesize\ttfamily unsigned long long op\+::\+Producer\+::m\+Number\+Frames\+Tracking\+Fps\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+producer.\+hpp 파일의 172 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_a3abedb0d9814e773d2936aa1ccc5efec}\label{classop_1_1_producer_a3abedb0d9814e773d2936aa1ccc5efec}} 
+\index{op::Producer@{op::Producer}!mNumberSetPositionTrackingFps@{mNumberSetPositionTrackingFps}}
+\index{mNumberSetPositionTrackingFps@{mNumberSetPositionTrackingFps}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{mNumberSetPositionTrackingFps}{mNumberSetPositionTrackingFps}}
+{\footnotesize\ttfamily unsigned int op\+::\+Producer\+::m\+Number\+Set\+Position\+Tracking\+Fps\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+producer.\+hpp 파일의 173 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_a53df97ca98f4a5f9bab054ec8f9b906d}\label{classop_1_1_producer_a53df97ca98f4a5f9bab054ec8f9b906d}} 
+\index{op::Producer@{op::Producer}!mProducerFpsMode@{mProducerFpsMode}}
+\index{mProducerFpsMode@{mProducerFpsMode}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{mProducerFpsMode}{mProducerFpsMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceop_ac0230b669b296920c0cfc41b7587268f}{Producer\+Fps\+Mode}} op\+::\+Producer\+::m\+Producer\+Fps\+Mode\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+producer.\+hpp 파일의 166 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_a23ec3deb54d2f784753b4c36a5de2861}\label{classop_1_1_producer_a23ec3deb54d2f784753b4c36a5de2861}} 
+\index{op::Producer@{op::Producer}!mProperties@{mProperties}}
+\index{mProperties@{mProperties}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{mProperties}{mProperties}}
+{\footnotesize\ttfamily std\+::array$<$double, (int)\mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774a6f6cb72d544962fa333e2e34ce64f719}{Producer\+Property\+::\+Size}}$>$ op\+::\+Producer\+::m\+Properties\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+producer.\+hpp 파일의 167 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_ab6ed010ec93f4f74e3189e609029c8c9}\label{classop_1_1_producer_ab6ed010ec93f4f74e3189e609029c8c9}} 
+\index{op::Producer@{op::Producer}!mTrackingFps@{mTrackingFps}}
+\index{mTrackingFps@{mTrackingFps}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{mTrackingFps}{mTrackingFps}}
+{\footnotesize\ttfamily bool op\+::\+Producer\+::m\+Tracking\+Fps\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+producer.\+hpp 파일의 170 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_a4ae382b91ed92aac41d348c0836dda9e}\label{classop_1_1_producer_a4ae382b91ed92aac41d348c0836dda9e}} 
+\index{op::Producer@{op::Producer}!mType@{mType}}
+\index{mType@{mType}!op::Producer@{op::Producer}}
+\doxysubsubsection{\texorpdfstring{mType}{mType}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceop_a54b73745852c270cfd891eed0f6f2332}{Producer\+Type}} op\+::\+Producer\+::m\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+producer.\+hpp 파일의 165 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/producer/\mbox{\hyperlink{producer_8hpp}{producer.\+hpp}}\end{DoxyCompactItemize}

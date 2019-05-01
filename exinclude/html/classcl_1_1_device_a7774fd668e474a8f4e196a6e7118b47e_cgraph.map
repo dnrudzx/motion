@@ -1,0 +1,14 @@
+<map id="cl::Device::makeDefault" name="cl::Device::makeDefault">
+<area shape="rect" id="node1" title="Create the default context." alt="" coords="5,132,168,159"/>
+<area shape="rect" id="node2" href="$namespaceop.html#a5f092bd36c716a894cb035e1ead2aca3" title=" " alt="" coords="258,56,329,83"/>
+<area shape="rect" id="node3" href="$classcl_1_1_context.html#ad180f6f7d8b5a95710ab72f96162b051" title="Returns a singleton context including all devices of CL_DEVICE_TYPE_DEFAULT." alt="" coords="216,107,371,133"/>
+<area shape="rect" id="node8" href="$namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="856,132,995,159"/>
+<area shape="rect" id="node10" href="$classcl_1_1_context.html#a979d15f9228089af2a657a523b1186e8" title="Wrapper for clGetContextInfo()." alt="" coords="226,208,361,235"/>
+<area shape="rect" id="node4" href="$classcl_1_1_context.html#a0f86a1096a2f97c90cb2f6d6b505b704" title="Create the default context from the default device type in the default platform." alt="" coords="419,56,587,83"/>
+<area shape="rect" id="node5" href="$classcl_1_1_platform.html#a01bea413d721189214cc59cfbc5d092d" title=" " alt="" coords="635,5,792,32"/>
+<area shape="rect" id="node9" href="$classcl_1_1_context.html#a8f7e1c72445ca6e249bc7a6c9278984d" title="Default constructor &#45; initializes to NULL." alt="" coords="643,56,783,83"/>
+<area shape="rect" id="node6" href="$classcl_1_1_platform.html#a6b6a335f96885f91f89acf0c27cd3e03" title="Create the default context." alt="" coords="840,5,1011,32"/>
+<area shape="rect" id="node7" href="$classcl_1_1_platform.html#a616344e02c3723347c752c02b7015212" title="Default constructor &#45; initializes to NULL." alt="" coords="1059,5,1205,32"/>
+<area shape="rect" id="node11" href="$namespacecl_1_1detail.html#a5954b0e110a023571c1bed2be1efb480" title=" " alt="" coords="443,259,562,285"/>
+<area shape="rect" id="node12" href="$namespacecl_1_1detail.html#a5fa0595cfd70a34a662283c683f58bb1" title=" " alt="" coords="635,259,792,285"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="cl::Memory::setDestructorCallback" name="cl::Memory::setDestructorCallback">
+<area shape="rect" id="node1" title="Registers a callback function to be called when the memory object is no longer needed." alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node2" href="$namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="228,13,367,39"/>
+</map>

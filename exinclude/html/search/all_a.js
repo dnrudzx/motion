@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['keepdesiredframerate',['keepDesiredFrameRate',['../classop_1_1_producer.html#afad3eadd16cca0de2c2be8b083c0d56d',1,'op::Producer']]],
+  ['keeproiinside',['keepRoiInside',['../namespaceop.html#ad838617b60f6bf4f71e15667eb8b9cad',1,'op']]],
+  ['keeptopnpeople',['KeepTopNPeople',['../classop_1_1_keep_top_n_people.html',1,'op::KeepTopNPeople'],['../classop_1_1_keep_top_n_people.html#ae9419ae35da5b0547989f19795a26808',1,'op::KeepTopNPeople::KeepTopNPeople()']]],
+  ['keeptopnpeople_2ehpp',['keepTopNPeople.hpp',['../keep_top_n_people_8hpp.html',1,'']]],
+  ['keeptoppeople',['keepTopPeople',['../classop_1_1_keep_top_n_people.html#a556a0d8d97985e0b73fc78e372be6ea8',1,'op::KeepTopNPeople::keepTopPeople()'],['../classop_1_1_pose_extractor.html#a291521decad2465df13dc769fe9cc4e5',1,'op::PoseExtractor::keepTopPeople()']]],
+  ['kernel',['Kernel',['../classcl_1_1_kernel.html',1,'cl::Kernel'],['../classcl_1_1_kernel.html#a351422a7e7125812c23610628b0f9de7',1,'cl::Kernel::Kernel(const Program &amp;program, const char *name, cl_int *err=NULL)'],['../classcl_1_1_kernel.html#a69b2fc97f80d90a23927a74395d09ec9',1,'cl::Kernel::Kernel()'],['../classcl_1_1_kernel.html#a0c71f37cb53fbe492847fbb2dff2bfed',1,'cl::Kernel::Kernel(const cl_kernel &amp;kernel, bool retainObject=false)'],['../classcl_1_1_kernel.html#a93b516f37993297101dd9d30a4572b23',1,'cl::Kernel::Kernel(const Kernel &amp;kernel)'],['../classcl_1_1_kernel.html#a0869347f24520f2d59222f74297c5fe5',1,'cl::Kernel::Kernel(Kernel &amp;&amp;kernel) CL_HPP_NOEXCEPT_']]],
+  ['kernel_5f',['kernel_',['../classcl_1_1_kernel_functor.html#a6a268072e9a4ccb08ae90815554ceff5',1,'cl::KernelFunctor']]],
+  ['kernelargumenthandler',['KernelArgumentHandler',['../structcl_1_1detail_1_1_kernel_argument_handler.html',1,'cl::detail']]],
+  ['kernelargumenthandler_3c_20cl_3a_3adevicecommandqueue_2c_20void_20_3e',['KernelArgumentHandler&lt; cl::DeviceCommandQueue, void &gt;',['../structcl_1_1detail_1_1_kernel_argument_handler_3_01cl_1_1_device_command_queue_00_01void_01_4.html',1,'cl::detail']]],
+  ['kernelargumenthandler_3c_20localspacearg_2c_20void_20_3e',['KernelArgumentHandler&lt; LocalSpaceArg, void &gt;',['../structcl_1_1detail_1_1_kernel_argument_handler_3_01_local_space_arg_00_01void_01_4.html',1,'cl::detail']]],
+  ['kernelargumenthandler_3c_20t_2c_20typename_20std_3a_3aenable_5fif_3c_20std_3a_3ais_5fbase_5fof_3c_20cl_3a_3amemory_2c_20t_20_3e_3a_3avalue_20_3e_3a_3atype_20_3e',['KernelArgumentHandler&lt; T, typename std::enable_if&lt; std::is_base_of&lt; cl::Memory, T &gt;::value &gt;::type &gt;',['../structcl_1_1detail_1_1_kernel_argument_handler_3_01_t_00_01typename_01std_1_1enable__if_3_01std_cb5bfaca8096193f715a7bbe8a3fa84f.html',1,'cl::detail']]],
+  ['kernelargumenthandler_3c_20t_2c_20typename_20std_3a_3aenable_5fif_3c_21std_3a_3ais_5fbase_5fof_3c_20cl_3a_3amemory_2c_20t_20_3e_3a_3avalue_20_3e_3a_3atype_20_3e',['KernelArgumentHandler&lt; T, typename std::enable_if&lt;!std::is_base_of&lt; cl::Memory, T &gt;::value &gt;::type &gt;',['../structcl_1_1detail_1_1_kernel_argument_handler_3_01_t_00_01typename_01std_1_1enable__if_3_9std_10affa824618af864313998f2e6bcf08f.html',1,'cl::detail']]],
+  ['kernelfunctor',['KernelFunctor',['../classcl_1_1_kernel_functor.html',1,'cl::KernelFunctor&lt; Ts &gt;'],['../classcl_1_1_enqueue_args.html#a83b7a776d00d3d5247f007bc9c535395',1,'cl::EnqueueArgs::KernelFunctor()'],['../classcl_1_1_kernel_functor.html#ab5b5bd1f278dfeab61801177244b7718',1,'cl::KernelFunctor::KernelFunctor(Kernel kernel)'],['../classcl_1_1_kernel_functor.html#aa15875f49bc3968385adbbad2796dec2',1,'cl::KernelFunctor::KernelFunctor(const Program &amp;program, const string name, cl_int *err=NULL)']]],
+  ['kernelfunctor_3c_20ts_2e_2e_2e_20_3e',['KernelFunctor&lt; Ts... &gt;',['../classcl_1_1_kernel_functor.html',1,'cl']]],
+  ['key',['key',['../classop_1_1_json_ofstream.html#af0c7f763e7e809810c00b394a260672e',1,'op::JsonOfstream']]],
+  ['keypoint_2ehpp',['keypoint.hpp',['../keypoint_8hpp.html',1,'']]],
+  ['keypoints',['keypoints',['../structop_1_1_person_entry.html#affb5ab6b6ca5324780d6dc1294fdb8f8',1,'op::PersonEntry::keypoints()'],['../structop_1_1_person_tracker_entry.html#a086269259c4901aa14ba53b9b4541dd6',1,'op::PersonTrackerEntry::keypoints()']]],
+  ['keypointsaver',['KeypointSaver',['../classop_1_1_keypoint_saver.html',1,'op::KeypointSaver'],['../classop_1_1_keypoint_saver.html#aa6d9eb36cfd40c5cfa3995420cdf3dfa',1,'op::KeypointSaver::KeypointSaver()']]],
+  ['keypointsaver_2ehpp',['keypointSaver.hpp',['../keypoint_saver_8hpp.html',1,'']]],
+  ['keypointscalemode',['keypointScaleMode',['../structop_1_1_wrapper_struct_pose.html#a054c88e977084707e80eb31dd0a658ab',1,'op::WrapperStructPose']]],
+  ['keypointscaler',['KeypointScaler',['../classop_1_1_keypoint_scaler.html',1,'op::KeypointScaler'],['../classop_1_1_keypoint_scaler.html#a0f556c1b0fad63c7c3551a5d4fd72219',1,'op::KeypointScaler::KeypointScaler()']]],
+  ['keypointscaler_2ehpp',['keypointScaler.hpp',['../keypoint_scaler_8hpp.html',1,'']]]
+];

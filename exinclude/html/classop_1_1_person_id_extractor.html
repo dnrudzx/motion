@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: op::PersonIdExtractor 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classop_1_1_person_id_extractor.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pri-methods">Private 멤버 함수</a> &#124;
+<a href="#pri-attribs">Private 속성</a> &#124;
+<a href="classop_1_1_person_id_extractor-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">op::PersonIdExtractor 클래스 참조</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="person_id_extractor_8hpp_source.html">personIdExtractor.hpp</a>&gt;</code></p>
+<div class="dynheader">
+op::PersonIdExtractor에 대한 협력 다이어그램:</div>
+<div class="dyncontent">
+<div class="center"><img src="classop_1_1_person_id_extractor__coll__graph.png" border="0" usemap="#op_1_1_person_id_extractor_coll__map" alt="Collaboration graph"/></div>
+<map name="op_1_1_person_id_extractor_coll__map" id="op_1_1_person_id_extractor_coll__map">
+<area shape="rect" title=" " alt="" coords="5,5,231,259"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a5916ec673bdbe127386b7f496b188828"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#a5916ec673bdbe127386b7f496b188828">PersonIdExtractor</a> (const float confidenceThreshold=0.1f, const float inlierRatioThreshold=0.5f, const float distanceThreshold=30.f, const int numberFramesToDeletePerson=10)</td></tr>
+<tr class="separator:a5916ec673bdbe127386b7f496b188828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff9f8faf42bff0dbd7207105c149a1e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#a7ff9f8faf42bff0dbd7207105c149a1e">~PersonIdExtractor</a> ()</td></tr>
+<tr class="separator:a7ff9f8faf42bff0dbd7207105c149a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3403da811a2a59c60ee8f3db67299ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classop_1_1_array.html">Array</a>&lt; long long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#af3403da811a2a59c60ee8f3db67299ae">extractIds</a> (const <a class="el" href="classop_1_1_array.html">Array</a>&lt; float &gt; &amp;poseKeypoints, const cv::Mat &amp;cvMatInput, const unsigned long long imageViewIndex=0ull)</td></tr>
+<tr class="separator:af3403da811a2a59c60ee8f3db67299ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404cd6daf91befc19e89ea5b3de757eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classop_1_1_array.html">Array</a>&lt; long long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#a404cd6daf91befc19e89ea5b3de757eb">extractIdsLockThread</a> (const <a class="el" href="classop_1_1_array.html">Array</a>&lt; float &gt; &amp;poseKeypoints, const cv::Mat &amp;cvMatInput, const unsigned long long imageViewIndex, const long long frameId)</td></tr>
+<tr class="separator:a404cd6daf91befc19e89ea5b3de757eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 멤버 함수</h2></td></tr>
+<tr class="memitem:a51e0118470423da636377505946de8b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#a51e0118470423da636377505946de8b3">DELETE_COPY</a> (<a class="el" href="classop_1_1_person_id_extractor.html">PersonIdExtractor</a>)</td></tr>
+<tr class="separator:a51e0118470423da636377505946de8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 속성</h2></td></tr>
+<tr class="memitem:aba13496dda0911c4e6b92ae29609868a"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#aba13496dda0911c4e6b92ae29609868a">mConfidenceThreshold</a></td></tr>
+<tr class="separator:aba13496dda0911c4e6b92ae29609868a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb71fc8bd6ed5675c18c1af227c3e119"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#afb71fc8bd6ed5675c18c1af227c3e119">mInlierRatioThreshold</a></td></tr>
+<tr class="separator:afb71fc8bd6ed5675c18c1af227c3e119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42ae6a2b53703bd260b9f82e4e1dd97"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#ad42ae6a2b53703bd260b9f82e4e1dd97">mDistanceThreshold</a></td></tr>
+<tr class="separator:ad42ae6a2b53703bd260b9f82e4e1dd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18fc2b9e2e02a164a6549cdfc1b917cb"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#a18fc2b9e2e02a164a6549cdfc1b917cb">mNumberFramesToDeletePerson</a></td></tr>
+<tr class="separator:a18fc2b9e2e02a164a6549cdfc1b917cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d53fc743d88daabdb681b8b70341c6"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#a96d53fc743d88daabdb681b8b70341c6">mNextPersonId</a></td></tr>
+<tr class="separator:a96d53fc743d88daabdb681b8b70341c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a784b1de0d7d320f6eb0277383ca5c03b"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#a784b1de0d7d320f6eb0277383ca5c03b">mImagePrevious</a></td></tr>
+<tr class="separator:a784b1de0d7d320f6eb0277383ca5c03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94aff2aeea39378054af3ac20362aa4a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; cv::Mat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#a94aff2aeea39378054af3ac20362aa4a">mPyramidImagesPrevious</a></td></tr>
+<tr class="separator:a94aff2aeea39378054af3ac20362aa4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee55dd1df4e684e249ad4d74fab1cb5"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; int, <a class="el" href="structop_1_1_person_entry.html">PersonEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#a4ee55dd1df4e684e249ad4d74fab1cb5">mPersonEntries</a></td></tr>
+<tr class="separator:a4ee55dd1df4e684e249ad4d74fab1cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8642d2608edf0d7e66daa84c58f273c0"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; long long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_person_id_extractor.html#a8642d2608edf0d7e66daa84c58f273c0">mLastFrameId</a></td></tr>
+<tr class="separator:a8642d2608edf0d7e66daa84c58f273c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock">
+<p class="definition"><a class="el" href="person_id_extractor_8hpp_source.html">personIdExtractor.hpp</a> 파일의 <a class="el" href="person_id_extractor_8hpp_source.html#l00026">26</a> 번째 라인에서 정의되었습니다.</p>
+</div><h2 class="groupheader">생성자 &amp; 소멸자 문서화</h2>
+<a id="a5916ec673bdbe127386b7f496b188828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5916ec673bdbe127386b7f496b188828">&#9670;&nbsp;</a></span>PersonIdExtractor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">op::PersonIdExtractor::PersonIdExtractor </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>confidenceThreshold</em> = <code>0.1f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>inlierRatioThreshold</em> = <code>0.5f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>distanceThreshold</em> = <code>30.f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>numberFramesToDeletePerson</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ff9f8faf42bff0dbd7207105c149a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff9f8faf42bff0dbd7207105c149a1e">&#9670;&nbsp;</a></span>~PersonIdExtractor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual op::PersonIdExtractor::~PersonIdExtractor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">멤버 함수 문서화</h2>
+<a id="a51e0118470423da636377505946de8b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e0118470423da636377505946de8b3">&#9670;&nbsp;</a></span>DELETE_COPY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">op::PersonIdExtractor::DELETE_COPY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classop_1_1_person_id_extractor.html">PersonIdExtractor</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3403da811a2a59c60ee8f3db67299ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3403da811a2a59c60ee8f3db67299ae">&#9670;&nbsp;</a></span>extractIds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classop_1_1_array.html">Array</a>&lt;long long&gt; op::PersonIdExtractor::extractIds </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classop_1_1_array.html">Array</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>poseKeypoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>cvMatInput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned long long&#160;</td>
+          <td class="paramname"><em>imageViewIndex</em> = <code>0ull</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a404cd6daf91befc19e89ea5b3de757eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a404cd6daf91befc19e89ea5b3de757eb">&#9670;&nbsp;</a></span>extractIdsLockThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classop_1_1_array.html">Array</a>&lt;long long&gt; op::PersonIdExtractor::extractIdsLockThread </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classop_1_1_array.html">Array</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>poseKeypoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>cvMatInput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned long long&#160;</td>
+          <td class="paramname"><em>imageViewIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const long long&#160;</td>
+          <td class="paramname"><em>frameId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">멤버 데이터 문서화</h2>
+<a id="aba13496dda0911c4e6b92ae29609868a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba13496dda0911c4e6b92ae29609868a">&#9670;&nbsp;</a></span>mConfidenceThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float op::PersonIdExtractor::mConfidenceThreshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="person_id_extractor_8hpp_source.html">personIdExtractor.hpp</a> 파일의 <a class="el" href="person_id_extractor_8hpp_source.html#l00043">43</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="ad42ae6a2b53703bd260b9f82e4e1dd97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42ae6a2b53703bd260b9f82e4e1dd97">&#9670;&nbsp;</a></span>mDistanceThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float op::PersonIdExtractor::mDistanceThreshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="person_id_extractor_8hpp_source.html">personIdExtractor.hpp</a> 파일의 <a class="el" href="person_id_extractor_8hpp_source.html#l00045">45</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a784b1de0d7d320f6eb0277383ca5c03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a784b1de0d7d320f6eb0277383ca5c03b">&#9670;&nbsp;</a></span>mImagePrevious</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat op::PersonIdExtractor::mImagePrevious</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="person_id_extractor_8hpp_source.html">personIdExtractor.hpp</a> 파일의 <a class="el" href="person_id_extractor_8hpp_source.html#l00048">48</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="afb71fc8bd6ed5675c18c1af227c3e119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb71fc8bd6ed5675c18c1af227c3e119">&#9670;&nbsp;</a></span>mInlierRatioThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float op::PersonIdExtractor::mInlierRatioThreshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="person_id_extractor_8hpp_source.html">personIdExtractor.hpp</a> 파일의 <a class="el" href="person_id_extractor_8hpp_source.html#l00044">44</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a8642d2608edf0d7e66daa84c58f273c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8642d2608edf0d7e66daa84c58f273c0">&#9670;&nbsp;</a></span>mLastFrameId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;long long&gt; op::PersonIdExtractor::mLastFrameId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="person_id_extractor_8hpp_source.html">personIdExtractor.hpp</a> 파일의 <a class="el" href="person_id_extractor_8hpp_source.html#l00052">52</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a96d53fc743d88daabdb681b8b70341c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d53fc743d88daabdb681b8b70341c6">&#9670;&nbsp;</a></span>mNextPersonId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long long op::PersonIdExtractor::mNextPersonId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="person_id_extractor_8hpp_source.html">personIdExtractor.hpp</a> 파일의 <a class="el" href="person_id_extractor_8hpp_source.html#l00047">47</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a18fc2b9e2e02a164a6549cdfc1b917cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18fc2b9e2e02a164a6549cdfc1b917cb">&#9670;&nbsp;</a></span>mNumberFramesToDeletePerson</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int op::PersonIdExtractor::mNumberFramesToDeletePerson</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="person_id_extractor_8hpp_source.html">personIdExtractor.hpp</a> 파일의 <a class="el" href="person_id_extractor_8hpp_source.html#l00046">46</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a4ee55dd1df4e684e249ad4d74fab1cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee55dd1df4e684e249ad4d74fab1cb5">&#9670;&nbsp;</a></span>mPersonEntries</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;int, <a class="el" href="structop_1_1_person_entry.html">PersonEntry</a>&gt; op::PersonIdExtractor::mPersonEntries</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="person_id_extractor_8hpp_source.html">personIdExtractor.hpp</a> 파일의 <a class="el" href="person_id_extractor_8hpp_source.html#l00050">50</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a94aff2aeea39378054af3ac20362aa4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94aff2aeea39378054af3ac20362aa4a">&#9670;&nbsp;</a></span>mPyramidImagesPrevious</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;cv::Mat&gt; op::PersonIdExtractor::mPyramidImagesPrevious</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="person_id_extractor_8hpp_source.html">personIdExtractor.hpp</a> 파일의 <a class="el" href="person_id_extractor_8hpp_source.html#l00049">49</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.:<ul>
+<li>/home/ms/openpose/include/openpose/tracking/<a class="el" href="person_id_extractor_8hpp_source.html">personIdExtractor.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceop.html">op</a></li><li class="navelem"><a class="el" href="classop_1_1_person_id_extractor.html">PersonIdExtractor</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

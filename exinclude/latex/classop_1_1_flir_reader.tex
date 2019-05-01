@@ -1,0 +1,387 @@
+\hypertarget{classop_1_1_flir_reader}{}\doxysection{op\+::Flir\+Reader 클래스 참조}
+\label{classop_1_1_flir_reader}\index{op::FlirReader@{op::FlirReader}}
+
+
+{\ttfamily \#include $<$flir\+Reader.\+hpp$>$}
+
+
+
+op\+::Flir\+Reader에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_flir_reader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::Flir\+Reader에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_flir_reader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_flir_reader_a8fa5c03b6ce95372ce47013c01c782a5}{Flir\+Reader}} (const std\+::string \&camera\+Parameters\+Path, const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&camera\+Resolution, const bool undistort\+Image=true, const int camera\+Index=-\/1)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_flir_reader_a66d6144c5dcb0dd3cbadcd6f8eefa9e0}{$\sim$\+Flir\+Reader}} ()
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_flir_reader_a7c3450fd4b5c6f81ade293ee95da7ba6}{get\+Camera\+Matrices}} ()
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_flir_reader_afb0ae89ef49073345b038fad8652cc37}{get\+Camera\+Extrinsics}} ()
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_flir_reader_a4a6576da78857c0e532d59b442332e83}{get\+Camera\+Intrinsics}} ()
+\item 
+std\+::string \mbox{\hyperlink{classop_1_1_flir_reader_a711db0919bd7516fde3e641c13259637}{get\+Next\+Frame\+Name}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_flir_reader_a3d383e03a405dcbff566a86253db90af}{is\+Opened}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_flir_reader_ab28f40422c9edff8594d855bbef91f58}{release}} ()
+\item 
+double \mbox{\hyperlink{classop_1_1_flir_reader_a5101cdbcd46e51bf7f35995a3d87e900}{get}} (const int cap\+Property)
+\item 
+void \mbox{\hyperlink{classop_1_1_flir_reader_af14f63c79272781429341dc3a0720485}{set}} (const int cap\+Property, const double value)
+\item 
+cv\+::\+Mat \mbox{\hyperlink{classop_1_1_producer_aacd96f08524772d8865bb187c881943e}{get\+Frame}} ()
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_producer_a3fbf3df1e02d326d7c954d78aa0dca0d}{get\+Frames}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_a024e55b4ec769cdbc40ee21613a6ef6f}{set\+Producer\+Fps\+Mode}} (const \mbox{\hyperlink{namespaceop_ac0230b669b296920c0cfc41b7587268f}{Producer\+Fps\+Mode}} fps\+Mode)
+\item 
+\mbox{\hyperlink{namespaceop_a54b73745852c270cfd891eed0f6f2332}{Producer\+Type}} \mbox{\hyperlink{classop_1_1_producer_a9a9424027e5bc8e0fba7c65eccc460e0}{get\+Type}} ()
+\item 
+double \mbox{\hyperlink{classop_1_1_producer_a94d561f95384dfa0cd91113882869d06}{get}} (const \mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774}{Producer\+Property}} property)
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_af11f1bbfbd61b9534c02c3e4839e19b0}{set}} (const \mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774}{Producer\+Property}} property, const double value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_a901c2ff1f56b551a058143ed884b1a5a}{check\+Frame\+Integrity}} (cv\+::\+Mat \&frame)
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_ac72a751759ae8b5a0a99552580f7fbad}{if\+Ended\+Reset\+Or\+Release}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_afad3eadd16cca0de2c2be8b083c0d56d}{keep\+Desired\+Frame\+Rate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{classop_1_1_flir_reader_ada499e9752a528cbd70a4b66c83b5d91}{get\+Raw\+Frame}} ()
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_flir_reader_a114bae4436cc30e6bba8b2249e5e8dab}{get\+Raw\+Frames}} ()
+\item 
+\mbox{\hyperlink{classop_1_1_flir_reader_a1715c3cbe21ba060dd0e17bf5131cade}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_flir_reader}{Flir\+Reader}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_spinnaker_wrapper}{Spinnaker\+Wrapper}} \mbox{\hyperlink{classop_1_1_flir_reader_aeb67a0fa93017a8b279e201494d125db}{m\+Spinnaker\+Wrapper}}
+\item 
+\mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \mbox{\hyperlink{classop_1_1_flir_reader_aa68a8625471004e76b2542f260ed46fd}{m\+Resolution}}
+\item 
+unsigned long long \mbox{\hyperlink{classop_1_1_flir_reader_a91f63579b50e777a5c9e0358ef5cf64f}{m\+Frame\+Name\+Counter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\mbox{\hyperlink{classop_1_1_flir_reader}{Flir\+Reader}} is an abstract class to extract frames from a F\+L\+IR stereo-\/camera system. Its interface imitates the cv\+::\+Video\+Capture class, so it can be used quite similarly to the cv\+::\+Video\+Capture class. Thus, it is quite similar to \mbox{\hyperlink{classop_1_1_video_reader}{Video\+Reader}} and \mbox{\hyperlink{classop_1_1_webcam_reader}{Webcam\+Reader}}. 
+
+flir\+Reader.\+hpp 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_flir_reader_a8fa5c03b6ce95372ce47013c01c782a5}\label{classop_1_1_flir_reader_a8fa5c03b6ce95372ce47013c01c782a5}} 
+\index{op::FlirReader@{op::FlirReader}!FlirReader@{FlirReader}}
+\index{FlirReader@{FlirReader}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{FlirReader()}{FlirReader()}}
+{\footnotesize\ttfamily op\+::\+Flir\+Reader\+::\+Flir\+Reader (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{camera\+Parameters\+Path,  }\item[{const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&}]{camera\+Resolution,  }\item[{const bool}]{undistort\+Image = {\ttfamily true},  }\item[{const int}]{camera\+Index = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor of \mbox{\hyperlink{classop_1_1_flir_reader}{Flir\+Reader}}. It opens all the available F\+L\+IR cameras \mbox{\Hypertarget{classop_1_1_flir_reader_a66d6144c5dcb0dd3cbadcd6f8eefa9e0}\label{classop_1_1_flir_reader_a66d6144c5dcb0dd3cbadcd6f8eefa9e0}} 
+\index{op::FlirReader@{op::FlirReader}!````~FlirReader@{$\sim$FlirReader}}
+\index{````~FlirReader@{$\sim$FlirReader}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{$\sim$FlirReader()}{~FlirReader()}}
+{\footnotesize\ttfamily virtual op\+::\+Flir\+Reader\+::$\sim$\+Flir\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_producer_a901c2ff1f56b551a058143ed884b1a5a}\label{classop_1_1_producer_a901c2ff1f56b551a058143ed884b1a5a}} 
+\index{op::FlirReader@{op::FlirReader}!checkFrameIntegrity@{checkFrameIntegrity}}
+\index{checkFrameIntegrity@{checkFrameIntegrity}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{checkFrameIntegrity()}{checkFrameIntegrity()}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::check\+Frame\+Integrity (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Protected function which checks that the frames keeps their integry (some Open\+CV versions might return corrupted frames within a video or webcam with a size different to the standard resolution). If the frame is corrupted, it is set to an empty cv\+::\+Mat. 
+\begin{DoxyParams}{매개변수}
+{\em frame} & cv\+::\+Mat with the frame matrix to be checked and modified. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_flir_reader_a1715c3cbe21ba060dd0e17bf5131cade}\label{classop_1_1_flir_reader_a1715c3cbe21ba060dd0e17bf5131cade}} 
+\index{op::FlirReader@{op::FlirReader}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Flir\+Reader\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_flir_reader}{Flir\+Reader}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_flir_reader_a5101cdbcd46e51bf7f35995a3d87e900}\label{classop_1_1_flir_reader_a5101cdbcd46e51bf7f35995a3d87e900}} 
+\index{op::FlirReader@{op::FlirReader}!get@{get}}
+\index{get@{get}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double op\+::\+Flir\+Reader\+::get (\begin{DoxyParamCaption}\item[{const int}]{cap\+Property }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function is a wrapper of cv\+::\+Video\+Capture\+::get. It allows getting different properties of the \mbox{\hyperlink{classop_1_1_producer}{Producer}} (fps, width, height, etc.). See the Open\+CV documentation for all the available properties. 
+\begin{DoxyParams}{매개변수}
+{\em cap\+Property} & int indicating the property to be modified. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+double returning the property value. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_producer_a366881a952ad34071cc719477f08b968}{op\+::\+Producer}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_producer_a94d561f95384dfa0cd91113882869d06}\label{classop_1_1_producer_a94d561f95384dfa0cd91113882869d06}} 
+\index{op::FlirReader@{op::FlirReader}!get@{get}}
+\index{get@{get}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double op\+::\+Producer\+::get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774}{Producer\+Property}}}]{property }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Extra attributes that Video\+Capture\+::get/set do not contain. 
+\begin{DoxyParams}{매개변수}
+{\em property} & Producer\+Property indicating the property to be modified. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_flir_reader_afb0ae89ef49073345b038fad8652cc37}\label{classop_1_1_flir_reader_afb0ae89ef49073345b038fad8652cc37}} 
+\index{op::FlirReader@{op::FlirReader}!getCameraExtrinsics@{getCameraExtrinsics}}
+\index{getCameraExtrinsics@{getCameraExtrinsics}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{getCameraExtrinsics()}{getCameraExtrinsics()}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Flir\+Reader\+::get\+Camera\+Extrinsics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+It retrieves and returns the camera extrinsic parameters from the frames producer. Virtual class because \mbox{\hyperlink{classop_1_1_flir_reader}{Flir\+Reader}} implements their own. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the camera extrinsic parameters. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_producer_a6e35a05069c126bea452be08d599c4c4}{op\+::\+Producer}}(으)로부터 재구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_flir_reader_a4a6576da78857c0e532d59b442332e83}\label{classop_1_1_flir_reader_a4a6576da78857c0e532d59b442332e83}} 
+\index{op::FlirReader@{op::FlirReader}!getCameraIntrinsics@{getCameraIntrinsics}}
+\index{getCameraIntrinsics@{getCameraIntrinsics}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{getCameraIntrinsics()}{getCameraIntrinsics()}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Flir\+Reader\+::get\+Camera\+Intrinsics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+It retrieves and returns the camera intrinsic parameters from the frames producer. Virtual class because \mbox{\hyperlink{classop_1_1_flir_reader}{Flir\+Reader}} implements their own. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the camera intrinsic parameters. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_producer_a04a9b2b0d953edc848f6e19c818be9b9}{op\+::\+Producer}}(으)로부터 재구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_flir_reader_a7c3450fd4b5c6f81ade293ee95da7ba6}\label{classop_1_1_flir_reader_a7c3450fd4b5c6f81ade293ee95da7ba6}} 
+\index{op::FlirReader@{op::FlirReader}!getCameraMatrices@{getCameraMatrices}}
+\index{getCameraMatrices@{getCameraMatrices}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{getCameraMatrices()}{getCameraMatrices()}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Flir\+Reader\+::get\+Camera\+Matrices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+It retrieves and returns the camera matrixes from the frames producer. Virtual class because \mbox{\hyperlink{classop_1_1_flir_reader}{Flir\+Reader}} implements their own. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the camera matrices. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_producer_adb33a11ca1ebe16a4f26f8c78a9a4087}{op\+::\+Producer}}(으)로부터 재구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_aacd96f08524772d8865bb187c881943e}\label{classop_1_1_producer_aacd96f08524772d8865bb187c881943e}} 
+\index{op::FlirReader@{op::FlirReader}!getFrame@{getFrame}}
+\index{getFrame@{getFrame}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{getFrame()}{getFrame()}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Producer\+::get\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Main function of \mbox{\hyperlink{classop_1_1_producer}{Producer}}, it retrieves and returns a new frame from the frames producer. \begin{DoxyReturn}{반환값}
+cv\+::\+Mat with the new frame. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_producer_a3fbf3df1e02d326d7c954d78aa0dca0d}\label{classop_1_1_producer_a3fbf3df1e02d326d7c954d78aa0dca0d}} 
+\index{op::FlirReader@{op::FlirReader}!getFrames@{getFrames}}
+\index{getFrames@{getFrames}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{getFrames()}{getFrames()}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Producer\+::get\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Analogous to get\+Frame, but it could return $>$ 1 frame. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the new frame(s). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_flir_reader_a711db0919bd7516fde3e641c13259637}\label{classop_1_1_flir_reader_a711db0919bd7516fde3e641c13259637}} 
+\index{op::FlirReader@{op::FlirReader}!getNextFrameName@{getNextFrameName}}
+\index{getNextFrameName@{getNextFrameName}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{getNextFrameName()}{getNextFrameName()}}
+{\footnotesize\ttfamily std\+::string op\+::\+Flir\+Reader\+::get\+Next\+Frame\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function returns a unique frame name (e.\+g., the frame number for video, the frame counter for webcam, the image name for image directory reader, etc.). \begin{DoxyReturn}{반환값}
+std\+::string with an unique frame name. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_producer_ab35d570dc35573433ec86e3fce25e545}{op\+::\+Producer}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_flir_reader_ada499e9752a528cbd70a4b66c83b5d91}\label{classop_1_1_flir_reader_ada499e9752a528cbd70a4b66c83b5d91}} 
+\index{op::FlirReader@{op::FlirReader}!getRawFrame@{getRawFrame}}
+\index{getRawFrame@{getRawFrame}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{getRawFrame()}{getRawFrame()}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Flir\+Reader\+::get\+Raw\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Function to be defined by its children class. It retrieves and returns a new frame from the frames producer. \begin{DoxyReturn}{반환값}
+cv\+::\+Mat with the new frame. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_producer_a39f52d80ac4146c82ed12aae0f05478e}{op\+::\+Producer}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_flir_reader_a114bae4436cc30e6bba8b2249e5e8dab}\label{classop_1_1_flir_reader_a114bae4436cc30e6bba8b2249e5e8dab}} 
+\index{op::FlirReader@{op::FlirReader}!getRawFrames@{getRawFrames}}
+\index{getRawFrames@{getRawFrames}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{getRawFrames()}{getRawFrames()}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Flir\+Reader\+::get\+Raw\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Function to be defined by its children class. It retrieves and returns a new frame from the frames producer. It is equivalent to get\+Raw\+Frame when more than 1 image can be returned. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the new frames. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_producer_ad51001c3e9f42722c52990d43b315f78}{op\+::\+Producer}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_producer_a9a9424027e5bc8e0fba7c65eccc460e0}\label{classop_1_1_producer_a9a9424027e5bc8e0fba7c65eccc460e0}} 
+\index{op::FlirReader@{op::FlirReader}!getType@{getType}}
+\index{getType@{getType}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceop_a54b73745852c270cfd891eed0f6f2332}{Producer\+Type}} op\+::\+Producer\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+This function returns the type of producer (video, webcam, ...). \begin{DoxyReturn}{반환값}
+Producer\+Type with the kind of producer. 
+\end{DoxyReturn}
+
+
+producer.\+hpp 파일의 82 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83         \{}
+\DoxyCodeLine{84             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_producer_a4ae382b91ed92aac41d348c0836dda9e}{mType}};}
+\DoxyCodeLine{85         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_producer_ac72a751759ae8b5a0a99552580f7fbad}\label{classop_1_1_producer_ac72a751759ae8b5a0a99552580f7fbad}} 
+\index{op::FlirReader@{op::FlirReader}!ifEndedResetOrRelease@{ifEndedResetOrRelease}}
+\index{ifEndedResetOrRelease@{ifEndedResetOrRelease}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{ifEndedResetOrRelease()}{ifEndedResetOrRelease()}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::if\+Ended\+Reset\+Or\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Protected function which checks that the frame producer has ended. If so, if resets or releases the producer according to m\+Repeat\+When\+Finished. \mbox{\Hypertarget{classop_1_1_flir_reader_a3d383e03a405dcbff566a86253db90af}\label{classop_1_1_flir_reader_a3d383e03a405dcbff566a86253db90af}} 
+\index{op::FlirReader@{op::FlirReader}!isOpened@{isOpened}}
+\index{isOpened@{isOpened}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{isOpened()}{isOpened()}}
+{\footnotesize\ttfamily bool op\+::\+Flir\+Reader\+::is\+Opened (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function returns whether the \mbox{\hyperlink{classop_1_1_producer}{Producer}} instance is still opened and able to retrieve more frames. \begin{DoxyReturn}{반환값}
+bool indicating whether the \mbox{\hyperlink{classop_1_1_producer}{Producer}} is opened. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_producer_a58590e4a409d31f839184b4bf030a68b}{op\+::\+Producer}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_producer_afad3eadd16cca0de2c2be8b083c0d56d}\label{classop_1_1_producer_afad3eadd16cca0de2c2be8b083c0d56d}} 
+\index{op::FlirReader@{op::FlirReader}!keepDesiredFrameRate@{keepDesiredFrameRate}}
+\index{keepDesiredFrameRate@{keepDesiredFrameRate}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{keepDesiredFrameRate()}{keepDesiredFrameRate()}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::keep\+Desired\+Frame\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Protected function which forces the producer to get frames at the rate of get(\+C\+V\+\_\+\+C\+A\+P\+\_\+\+P\+R\+O\+P\+\_\+\+F\+P\+S). \mbox{\Hypertarget{classop_1_1_flir_reader_ab28f40422c9edff8594d855bbef91f58}\label{classop_1_1_flir_reader_ab28f40422c9edff8594d855bbef91f58}} 
+\index{op::FlirReader@{op::FlirReader}!release@{release}}
+\index{release@{release}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void op\+::\+Flir\+Reader\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function releases and closes the \mbox{\hyperlink{classop_1_1_producer}{Producer}}. After it is called, no more frames can be retrieved from \mbox{\hyperlink{classop_1_1_producer_a3fbf3df1e02d326d7c954d78aa0dca0d}{Producer\+::get\+Frames}}. 
+
+\mbox{\hyperlink{classop_1_1_producer_a7753ffb0daa486ab0f82873b3567f95e}{op\+::\+Producer}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_flir_reader_af14f63c79272781429341dc3a0720485}\label{classop_1_1_flir_reader_af14f63c79272781429341dc3a0720485}} 
+\index{op::FlirReader@{op::FlirReader}!set@{set}}
+\index{set@{set}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void op\+::\+Flir\+Reader\+::set (\begin{DoxyParamCaption}\item[{const int}]{cap\+Property,  }\item[{const double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function is a wrapper of cv\+::\+Video\+Capture\+::set. It allows setting different properties of the \mbox{\hyperlink{classop_1_1_producer}{Producer}} (fps, width, height, etc.). See the Open\+CV documentation for all the available properties. 
+\begin{DoxyParams}{매개변수}
+{\em cap\+Property} & int indicating the property to be modified. \\
+\hline
+{\em value} & double indicating the new value to be assigned. \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{classop_1_1_producer_ab30c7b3e34d962e0b17458d9a0947f6b}{op\+::\+Producer}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_producer_af11f1bbfbd61b9534c02c3e4839e19b0}\label{classop_1_1_producer_af11f1bbfbd61b9534c02c3e4839e19b0}} 
+\index{op::FlirReader@{op::FlirReader}!set@{set}}
+\index{set@{set}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774}{Producer\+Property}}}]{property,  }\item[{const double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Extra attributes that Video\+Capture\+::get/set do not contain. 
+\begin{DoxyParams}{매개변수}
+{\em property} & Producer\+Property indicating the property to be modified. \\
+\hline
+{\em value} & double indicating the new value to be assigned. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_producer_a024e55b4ec769cdbc40ee21613a6ef6f}\label{classop_1_1_producer_a024e55b4ec769cdbc40ee21613a6ef6f}} 
+\index{op::FlirReader@{op::FlirReader}!setProducerFpsMode@{setProducerFpsMode}}
+\index{setProducerFpsMode@{setProducerFpsMode}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{setProducerFpsMode()}{setProducerFpsMode()}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::set\+Producer\+Fps\+Mode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_ac0230b669b296920c0cfc41b7587268f}{Producer\+Fps\+Mode}}}]{fps\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+This function sets whether the producer must keep the original fps frame rate or extract the frames as quick as possible. 
+\begin{DoxyParams}{매개변수}
+{\em fps\+Mode} & Producer\+Fps\+Mode parameter specifying the new value. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_flir_reader_a91f63579b50e777a5c9e0358ef5cf64f}\label{classop_1_1_flir_reader_a91f63579b50e777a5c9e0358ef5cf64f}} 
+\index{op::FlirReader@{op::FlirReader}!mFrameNameCounter@{mFrameNameCounter}}
+\index{mFrameNameCounter@{mFrameNameCounter}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{mFrameNameCounter}{mFrameNameCounter}}
+{\footnotesize\ttfamily unsigned long long op\+::\+Flir\+Reader\+::m\+Frame\+Name\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+flir\+Reader.\+hpp 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_flir_reader_aa68a8625471004e76b2542f260ed46fd}\label{classop_1_1_flir_reader_aa68a8625471004e76b2542f260ed46fd}} 
+\index{op::FlirReader@{op::FlirReader}!mResolution@{mResolution}}
+\index{mResolution@{mResolution}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{mResolution}{mResolution}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structop_1_1_point}{Point}}$<$int$>$ op\+::\+Flir\+Reader\+::m\+Resolution\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+flir\+Reader.\+hpp 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_flir_reader_aeb67a0fa93017a8b279e201494d125db}\label{classop_1_1_flir_reader_aeb67a0fa93017a8b279e201494d125db}} 
+\index{op::FlirReader@{op::FlirReader}!mSpinnakerWrapper@{mSpinnakerWrapper}}
+\index{mSpinnakerWrapper@{mSpinnakerWrapper}!op::FlirReader@{op::FlirReader}}
+\doxysubsubsection{\texorpdfstring{mSpinnakerWrapper}{mSpinnakerWrapper}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_spinnaker_wrapper}{Spinnaker\+Wrapper}} op\+::\+Flir\+Reader\+::m\+Spinnaker\+Wrapper\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+flir\+Reader.\+hpp 파일의 43 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/producer/\mbox{\hyperlink{flir_reader_8hpp}{flir\+Reader.\+hpp}}\end{DoxyCompactItemize}

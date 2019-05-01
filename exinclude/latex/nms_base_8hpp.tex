@@ -1,0 +1,31 @@
+\hypertarget{nms_base_8hpp}{}\doxysection{/home/ms/openpose/include/openpose/net/nms\+Base.hpp 파일 참조}
+\label{nms_base_8hpp}\index{/home/ms/openpose/include/openpose/net/nmsBase.hpp@{/home/ms/openpose/include/openpose/net/nmsBase.hpp}}
+{\ttfamily \#include $<$openpose/core/common.\+hpp$>$}\newline
+nms\+Base.\+hpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{nms_base_8hpp__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{nms_base_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{네임스페이스}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceop}{op}}
+\end{DoxyCompactItemize}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_a6a97f255cc323f1c1babe4c598727196}{op\+::nms\+Cpu}} (T $\ast$target\+Ptr, int $\ast$kernel\+Ptr, const T $\ast$const source\+Ptr, const T threshold, const std\+::array$<$ int, 4 $>$ \&target\+Size, const std\+::array$<$ int, 4 $>$ \&source\+Size, const Point$<$ T $>$ \&offset)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_a28c5ac530845231600fb93c0be44ad6d}{op\+::nms\+Gpu}} (T $\ast$target\+Ptr, int $\ast$kernel\+Ptr, const T $\ast$const source\+Ptr, const T threshold, const std\+::array$<$ int, 4 $>$ \&target\+Size, const std\+::array$<$ int, 4 $>$ \&source\+Size, const Point$<$ T $>$ \&offset)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_a37dce2abad2568d7664654e4598002af}{op\+::nms\+Ocl}} (T $\ast$target\+Ptr, uint8\+\_\+t $\ast$kernel\+Gpu\+Ptr, uint8\+\_\+t $\ast$kernel\+Cpu\+Ptr, const T $\ast$const source\+Ptr, const T threshold, const std\+::array$<$ int, 4 $>$ \&target\+Size, const std\+::array$<$ int, 4 $>$ \&source\+Size, const Point$<$ T $>$ \&offset, const int gpu\+ID=0)
+\end{DoxyCompactItemize}

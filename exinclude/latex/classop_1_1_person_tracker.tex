@@ -1,0 +1,237 @@
+\hypertarget{classop_1_1_person_tracker}{}\doxysection{op\+::Person\+Tracker 클래스 참조}
+\label{classop_1_1_person_tracker}\index{op::PersonTracker@{op::PersonTracker}}
+
+
+{\ttfamily \#include $<$person\+Tracker.\+hpp$>$}
+
+
+
+op\+::Person\+Tracker에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_person_tracker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_person_tracker_aa88f617ff9f1ff509c54b2cbf51e764a}{Person\+Tracker}} (const bool merge\+Results, const int levels=3, const int patch\+Size=31, const float confidence\+Threshold=0.\+05f, const bool track\+Velocity=false, const bool scale\+Varying=false, const float rescale=640)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_person_tracker_a840ed2e06c1cc4dfc89e6083b2a8bc37}{$\sim$\+Person\+Tracker}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_person_tracker_ac5e82e50c4777b81d6b4d4c782031f4f}{track}} (\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Keypoints, \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \&pose\+Ids, const cv\+::\+Mat \&cv\+Mat\+Input)
+\item 
+void \mbox{\hyperlink{classop_1_1_person_tracker_a2d9d1cc28b270d458a3361c06f4f5fcc}{track\+Lock\+Thread}} (\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Keypoints, \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \&pose\+Ids, const cv\+::\+Mat \&cv\+Mat\+Input, const long long frame\+Id)
+\item 
+bool \mbox{\hyperlink{classop_1_1_person_tracker_a68f46367bd719196974aa5b1bd23cb7d}{get\+Merge\+Results}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_person_tracker_a93912f7463761f32e24bc5f39dd02c01}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_person_tracker}{Person\+Tracker}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const bool \mbox{\hyperlink{classop_1_1_person_tracker_ad0300e55f4a43b77a3c2790590f6e986}{m\+Merge\+Results}}
+\item 
+const int \mbox{\hyperlink{classop_1_1_person_tracker_aadfae70e3ec3f7f9d61f65ad87d84284}{m\+Levels}}
+\item 
+const int \mbox{\hyperlink{classop_1_1_person_tracker_ab06f4648bb31b4093940b7da0b26f046}{m\+Patch\+Size}}
+\item 
+const bool \mbox{\hyperlink{classop_1_1_person_tracker_afed1f006981f66eb26c6f6101a53e8ff}{m\+Track\+Velocity}}
+\item 
+const float \mbox{\hyperlink{classop_1_1_person_tracker_a66c3d31269401a719da3b940bb2d766c}{m\+Confidence\+Threshold}}
+\item 
+const bool \mbox{\hyperlink{classop_1_1_person_tracker_a84dd1af0dcfc4653347dbbaefbb590cf}{m\+Scale\+Varying}}
+\item 
+const float \mbox{\hyperlink{classop_1_1_person_tracker_a7efaad7ad97e5a341bc3d1b9cf079181}{m\+Rescale}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{classop_1_1_person_tracker_a16d709f4fb233b38f4784c9e7253d113}{m\+Image\+Previous}}
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_person_tracker_ae6f7a0eedae4802dba346665dfc67001}{m\+Pyramid\+Images\+Previous}}
+\item 
+std\+::unordered\+\_\+map$<$ int, \mbox{\hyperlink{structop_1_1_person_tracker_entry}{Person\+Tracker\+Entry}} $>$ \mbox{\hyperlink{classop_1_1_person_tracker_aa57a22083d802b3c78ae275e683c3cd9}{m\+Person\+Entries}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \mbox{\hyperlink{classop_1_1_person_tracker_a430f5dc113530146f8928289531773a5}{m\+Last\+Pose\+Ids}}
+\item 
+std\+::atomic$<$ long long $>$ \mbox{\hyperlink{classop_1_1_person_tracker_a52783d1389f04b96ea899e3f2296c7dd}{m\+Last\+Frame\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+person\+Tracker.\+hpp 파일의 29 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_person_tracker_aa88f617ff9f1ff509c54b2cbf51e764a}\label{classop_1_1_person_tracker_aa88f617ff9f1ff509c54b2cbf51e764a}} 
+\index{op::PersonTracker@{op::PersonTracker}!PersonTracker@{PersonTracker}}
+\index{PersonTracker@{PersonTracker}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{PersonTracker()}{PersonTracker()}}
+{\footnotesize\ttfamily op\+::\+Person\+Tracker\+::\+Person\+Tracker (\begin{DoxyParamCaption}\item[{const bool}]{merge\+Results,  }\item[{const int}]{levels = {\ttfamily 3},  }\item[{const int}]{patch\+Size = {\ttfamily 31},  }\item[{const float}]{confidence\+Threshold = {\ttfamily 0.05f},  }\item[{const bool}]{track\+Velocity = {\ttfamily false},  }\item[{const bool}]{scale\+Varying = {\ttfamily false},  }\item[{const float}]{rescale = {\ttfamily 640} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_a840ed2e06c1cc4dfc89e6083b2a8bc37}\label{classop_1_1_person_tracker_a840ed2e06c1cc4dfc89e6083b2a8bc37}} 
+\index{op::PersonTracker@{op::PersonTracker}!````~PersonTracker@{$\sim$PersonTracker}}
+\index{````~PersonTracker@{$\sim$PersonTracker}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{$\sim$PersonTracker()}{~PersonTracker()}}
+{\footnotesize\ttfamily virtual op\+::\+Person\+Tracker\+::$\sim$\+Person\+Tracker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_person_tracker_a93912f7463761f32e24bc5f39dd02c01}\label{classop_1_1_person_tracker_a93912f7463761f32e24bc5f39dd02c01}} 
+\index{op::PersonTracker@{op::PersonTracker}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Person\+Tracker\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_person_tracker}{Person\+Tracker}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_a68f46367bd719196974aa5b1bd23cb7d}\label{classop_1_1_person_tracker_a68f46367bd719196974aa5b1bd23cb7d}} 
+\index{op::PersonTracker@{op::PersonTracker}!getMergeResults@{getMergeResults}}
+\index{getMergeResults@{getMergeResults}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{getMergeResults()}{getMergeResults()}}
+{\footnotesize\ttfamily bool op\+::\+Person\+Tracker\+::get\+Merge\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_ac5e82e50c4777b81d6b4d4c782031f4f}\label{classop_1_1_person_tracker_ac5e82e50c4777b81d6b4d4c782031f4f}} 
+\index{op::PersonTracker@{op::PersonTracker}!track@{track}}
+\index{track@{track}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{track()}{track()}}
+{\footnotesize\ttfamily void op\+::\+Person\+Tracker\+::track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Keypoints,  }\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \&}]{pose\+Ids,  }\item[{const cv\+::\+Mat \&}]{cv\+Mat\+Input }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_a2d9d1cc28b270d458a3361c06f4f5fcc}\label{classop_1_1_person_tracker_a2d9d1cc28b270d458a3361c06f4f5fcc}} 
+\index{op::PersonTracker@{op::PersonTracker}!trackLockThread@{trackLockThread}}
+\index{trackLockThread@{trackLockThread}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{trackLockThread()}{trackLockThread()}}
+{\footnotesize\ttfamily void op\+::\+Person\+Tracker\+::track\+Lock\+Thread (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Keypoints,  }\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \&}]{pose\+Ids,  }\item[{const cv\+::\+Mat \&}]{cv\+Mat\+Input,  }\item[{const long long}]{frame\+Id }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_person_tracker_a66c3d31269401a719da3b940bb2d766c}\label{classop_1_1_person_tracker_a66c3d31269401a719da3b940bb2d766c}} 
+\index{op::PersonTracker@{op::PersonTracker}!mConfidenceThreshold@{mConfidenceThreshold}}
+\index{mConfidenceThreshold@{mConfidenceThreshold}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{mConfidenceThreshold}{mConfidenceThreshold}}
+{\footnotesize\ttfamily const float op\+::\+Person\+Tracker\+::m\+Confidence\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Tracker.\+hpp 파일의 51 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_a16d709f4fb233b38f4784c9e7253d113}\label{classop_1_1_person_tracker_a16d709f4fb233b38f4784c9e7253d113}} 
+\index{op::PersonTracker@{op::PersonTracker}!mImagePrevious@{mImagePrevious}}
+\index{mImagePrevious@{mImagePrevious}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{mImagePrevious}{mImagePrevious}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Person\+Tracker\+::m\+Image\+Previous\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Tracker.\+hpp 파일의 55 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_a52783d1389f04b96ea899e3f2296c7dd}\label{classop_1_1_person_tracker_a52783d1389f04b96ea899e3f2296c7dd}} 
+\index{op::PersonTracker@{op::PersonTracker}!mLastFrameId@{mLastFrameId}}
+\index{mLastFrameId@{mLastFrameId}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{mLastFrameId}{mLastFrameId}}
+{\footnotesize\ttfamily std\+::atomic$<$long long$>$ op\+::\+Person\+Tracker\+::m\+Last\+Frame\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Tracker.\+hpp 파일의 61 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_a430f5dc113530146f8928289531773a5}\label{classop_1_1_person_tracker_a430f5dc113530146f8928289531773a5}} 
+\index{op::PersonTracker@{op::PersonTracker}!mLastPoseIds@{mLastPoseIds}}
+\index{mLastPoseIds@{mLastPoseIds}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{mLastPoseIds}{mLastPoseIds}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$long long$>$ op\+::\+Person\+Tracker\+::m\+Last\+Pose\+Ids\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Tracker.\+hpp 파일의 58 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_aadfae70e3ec3f7f9d61f65ad87d84284}\label{classop_1_1_person_tracker_aadfae70e3ec3f7f9d61f65ad87d84284}} 
+\index{op::PersonTracker@{op::PersonTracker}!mLevels@{mLevels}}
+\index{mLevels@{mLevels}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{mLevels}{mLevels}}
+{\footnotesize\ttfamily const int op\+::\+Person\+Tracker\+::m\+Levels\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Tracker.\+hpp 파일의 48 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_ad0300e55f4a43b77a3c2790590f6e986}\label{classop_1_1_person_tracker_ad0300e55f4a43b77a3c2790590f6e986}} 
+\index{op::PersonTracker@{op::PersonTracker}!mMergeResults@{mMergeResults}}
+\index{mMergeResults@{mMergeResults}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{mMergeResults}{mMergeResults}}
+{\footnotesize\ttfamily const bool op\+::\+Person\+Tracker\+::m\+Merge\+Results\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Tracker.\+hpp 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_ab06f4648bb31b4093940b7da0b26f046}\label{classop_1_1_person_tracker_ab06f4648bb31b4093940b7da0b26f046}} 
+\index{op::PersonTracker@{op::PersonTracker}!mPatchSize@{mPatchSize}}
+\index{mPatchSize@{mPatchSize}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{mPatchSize}{mPatchSize}}
+{\footnotesize\ttfamily const int op\+::\+Person\+Tracker\+::m\+Patch\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Tracker.\+hpp 파일의 49 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_aa57a22083d802b3c78ae275e683c3cd9}\label{classop_1_1_person_tracker_aa57a22083d802b3c78ae275e683c3cd9}} 
+\index{op::PersonTracker@{op::PersonTracker}!mPersonEntries@{mPersonEntries}}
+\index{mPersonEntries@{mPersonEntries}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{mPersonEntries}{mPersonEntries}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$int, \mbox{\hyperlink{structop_1_1_person_tracker_entry}{Person\+Tracker\+Entry}}$>$ op\+::\+Person\+Tracker\+::m\+Person\+Entries\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Tracker.\+hpp 파일의 57 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_ae6f7a0eedae4802dba346665dfc67001}\label{classop_1_1_person_tracker_ae6f7a0eedae4802dba346665dfc67001}} 
+\index{op::PersonTracker@{op::PersonTracker}!mPyramidImagesPrevious@{mPyramidImagesPrevious}}
+\index{mPyramidImagesPrevious@{mPyramidImagesPrevious}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{mPyramidImagesPrevious}{mPyramidImagesPrevious}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Person\+Tracker\+::m\+Pyramid\+Images\+Previous\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Tracker.\+hpp 파일의 56 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_a7efaad7ad97e5a341bc3d1b9cf079181}\label{classop_1_1_person_tracker_a7efaad7ad97e5a341bc3d1b9cf079181}} 
+\index{op::PersonTracker@{op::PersonTracker}!mRescale@{mRescale}}
+\index{mRescale@{mRescale}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{mRescale}{mRescale}}
+{\footnotesize\ttfamily const float op\+::\+Person\+Tracker\+::m\+Rescale\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Tracker.\+hpp 파일의 53 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_a84dd1af0dcfc4653347dbbaefbb590cf}\label{classop_1_1_person_tracker_a84dd1af0dcfc4653347dbbaefbb590cf}} 
+\index{op::PersonTracker@{op::PersonTracker}!mScaleVarying@{mScaleVarying}}
+\index{mScaleVarying@{mScaleVarying}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{mScaleVarying}{mScaleVarying}}
+{\footnotesize\ttfamily const bool op\+::\+Person\+Tracker\+::m\+Scale\+Varying\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Tracker.\+hpp 파일의 52 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_person_tracker_afed1f006981f66eb26c6f6101a53e8ff}\label{classop_1_1_person_tracker_afed1f006981f66eb26c6f6101a53e8ff}} 
+\index{op::PersonTracker@{op::PersonTracker}!mTrackVelocity@{mTrackVelocity}}
+\index{mTrackVelocity@{mTrackVelocity}!op::PersonTracker@{op::PersonTracker}}
+\doxysubsubsection{\texorpdfstring{mTrackVelocity}{mTrackVelocity}}
+{\footnotesize\ttfamily const bool op\+::\+Person\+Tracker\+::m\+Track\+Velocity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+person\+Tracker.\+hpp 파일의 50 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/tracking/\mbox{\hyperlink{person_tracker_8hpp}{person\+Tracker.\+hpp}}\end{DoxyCompactItemize}

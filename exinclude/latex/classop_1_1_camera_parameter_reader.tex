@@ -1,0 +1,289 @@
+\hypertarget{classop_1_1_camera_parameter_reader}{}\doxysection{op\+::Camera\+Parameter\+Reader 클래스 참조}
+\label{classop_1_1_camera_parameter_reader}\index{op::CameraParameterReader@{op::CameraParameterReader}}
+
+
+{\ttfamily \#include $<$camera\+Parameter\+Reader.\+hpp$>$}
+
+
+
+op\+::Camera\+Parameter\+Reader에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classop_1_1_camera_parameter_reader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_camera_parameter_reader_ab7a4c3ef7ac8d8a41e5711ec85b7be4b}{Camera\+Parameter\+Reader}} ()
+\item 
+virtual \mbox{\hyperlink{classop_1_1_camera_parameter_reader_acfa701389b1e566e1ea49cfd2605bbf8}{$\sim$\+Camera\+Parameter\+Reader}} ()
+\item 
+\mbox{\hyperlink{classop_1_1_camera_parameter_reader_a8ab51e2ebb5c536dbd7d1e43dd455da3}{Camera\+Parameter\+Reader}} (const std\+::string \&serial\+Number, const cv\+::\+Mat \&camera\+Intrinsics, const cv\+::\+Mat \&camera\+Distortion, const cv\+::\+Mat \&camera\+Extrinsics=cv\+::\+Mat(), const cv\+::\+Mat \&camera\+Extrinsics\+Initial=cv\+::\+Mat())
+\item 
+void \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a906fd316f09d901280a5fe10a4a54541}{read\+Parameters}} (const std\+::string \&camera\+Parameter\+Path, const std\+::vector$<$ std\+::string $>$ \&serial\+Numbers=\{\})
+\item 
+void \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a2be8ff6d89e5f623f476c75afe3c5c3b}{read\+Parameters}} (const std\+::string \&camera\+Parameter\+Path, const std\+::string \&serial\+Number)
+\item 
+void \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a7210bc5ebfe6e90a52524b7f0f3f3991}{write\+Parameters}} (const std\+::string \&camera\+Parameter\+Path) const
+\item 
+unsigned long long \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a8d97033970f3e71657da070cd87fd70c}{get\+Number\+Cameras}} () const
+\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classop_1_1_camera_parameter_reader_acf2b4d428d18f2663f4df640171b254d}{get\+Camera\+Serial\+Numbers}} () const
+\item 
+const std\+::vector$<$ cv\+::\+Mat $>$ \& \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a2ab87673525226c3ce2893d2bd5cea3f}{get\+Camera\+Matrices}} () const
+\item 
+const std\+::vector$<$ cv\+::\+Mat $>$ \& \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a06e8462b5c849ac8fed3cd26735417b4}{get\+Camera\+Distortions}} () const
+\item 
+const std\+::vector$<$ cv\+::\+Mat $>$ \& \mbox{\hyperlink{classop_1_1_camera_parameter_reader_aa61f9d5475922e6da21fe616cc334149}{get\+Camera\+Intrinsics}} () const
+\item 
+const std\+::vector$<$ cv\+::\+Mat $>$ \& \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a51bc1038b49cf8c729a1e80e318b42de}{get\+Camera\+Extrinsics}} () const
+\item 
+const std\+::vector$<$ cv\+::\+Mat $>$ \& \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a718ad294d108721f825a1fd75e9d4a20}{get\+Camera\+Extrinsics\+Initial}} () const
+\item 
+bool \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a4c819945b0df95bcfb6f8d79451290d5}{get\+Undistort\+Image}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_camera_parameter_reader_ae33e8637012413719b389649d1e5448a}{set\+Undistort\+Image}} (const bool undistort\+Image)
+\item 
+void \mbox{\hyperlink{classop_1_1_camera_parameter_reader_ab40c8cc103643d184465d526a6b6ac9d}{undistort}} (cv\+::\+Mat \&frame, const unsigned int camera\+Index=0u)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_camera_parameter_reader_a6c4ee99adc798530aa6114d970008e9e}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_camera_parameter_reader}{Camera\+Parameter\+Reader}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a974784bea4cc8b306da564bc84db28f2}{m\+Serial\+Numbers}}
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_camera_parameter_reader_aeec06ca2ed2950a5bb71ead3d9918da9}{m\+Camera\+Matrices}}
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_camera_parameter_reader_ace37a92253877d95920793be3a5f16d7}{m\+Camera\+Distortions}}
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a407717265efb584d376202565c25b2be}{m\+Camera\+Intrinsics}}
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_camera_parameter_reader_acd1bb3f48f7da7adbbee2679c29f4400}{m\+Camera\+Extrinsics}}
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a3e5297015f7be2a4019a42b5bc90a814}{m\+Camera\+Extrinsics\+Initial}}
+\item 
+bool \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a686b78cb3f128a2f36d1f087cda0a867}{m\+Undistort\+Image}}
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_camera_parameter_reader_a4778bffae6e3456f7674479bdde3dd83}{m\+Remove\+Distortion\+Maps1}}
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_camera_parameter_reader_ad9b8a246854ef98dc8b587d5083dd1c5}{m\+Remove\+Distortion\+Maps2}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+camera\+Parameter\+Reader.\+hpp 파일의 9 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_ab7a4c3ef7ac8d8a41e5711ec85b7be4b}\label{classop_1_1_camera_parameter_reader_ab7a4c3ef7ac8d8a41e5711ec85b7be4b}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!CameraParameterReader@{CameraParameterReader}}
+\index{CameraParameterReader@{CameraParameterReader}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{CameraParameterReader()}{CameraParameterReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily op\+::\+Camera\+Parameter\+Reader\+::\+Camera\+Parameter\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_acfa701389b1e566e1ea49cfd2605bbf8}\label{classop_1_1_camera_parameter_reader_acfa701389b1e566e1ea49cfd2605bbf8}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!````~CameraParameterReader@{$\sim$CameraParameterReader}}
+\index{````~CameraParameterReader@{$\sim$CameraParameterReader}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{$\sim$CameraParameterReader()}{~CameraParameterReader()}}
+{\footnotesize\ttfamily virtual op\+::\+Camera\+Parameter\+Reader\+::$\sim$\+Camera\+Parameter\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a8ab51e2ebb5c536dbd7d1e43dd455da3}\label{classop_1_1_camera_parameter_reader_a8ab51e2ebb5c536dbd7d1e43dd455da3}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!CameraParameterReader@{CameraParameterReader}}
+\index{CameraParameterReader@{CameraParameterReader}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{CameraParameterReader()}{CameraParameterReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily op\+::\+Camera\+Parameter\+Reader\+::\+Camera\+Parameter\+Reader (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{serial\+Number,  }\item[{const cv\+::\+Mat \&}]{camera\+Intrinsics,  }\item[{const cv\+::\+Mat \&}]{camera\+Distortion,  }\item[{const cv\+::\+Mat \&}]{camera\+Extrinsics = {\ttfamily cv\+:\+:Mat()},  }\item[{const cv\+::\+Mat \&}]{camera\+Extrinsics\+Initial = {\ttfamily cv\+:\+:Mat()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a6c4ee99adc798530aa6114d970008e9e}\label{classop_1_1_camera_parameter_reader_a6c4ee99adc798530aa6114d970008e9e}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Camera\+Parameter\+Reader\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_camera_parameter_reader}{Camera\+Parameter\+Reader}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a06e8462b5c849ac8fed3cd26735417b4}\label{classop_1_1_camera_parameter_reader_a06e8462b5c849ac8fed3cd26735417b4}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!getCameraDistortions@{getCameraDistortions}}
+\index{getCameraDistortions@{getCameraDistortions}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{getCameraDistortions()}{getCameraDistortions()}}
+{\footnotesize\ttfamily const std\+::vector$<$cv\+::\+Mat$>$\& op\+::\+Camera\+Parameter\+Reader\+::get\+Camera\+Distortions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a51bc1038b49cf8c729a1e80e318b42de}\label{classop_1_1_camera_parameter_reader_a51bc1038b49cf8c729a1e80e318b42de}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!getCameraExtrinsics@{getCameraExtrinsics}}
+\index{getCameraExtrinsics@{getCameraExtrinsics}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{getCameraExtrinsics()}{getCameraExtrinsics()}}
+{\footnotesize\ttfamily const std\+::vector$<$cv\+::\+Mat$>$\& op\+::\+Camera\+Parameter\+Reader\+::get\+Camera\+Extrinsics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a718ad294d108721f825a1fd75e9d4a20}\label{classop_1_1_camera_parameter_reader_a718ad294d108721f825a1fd75e9d4a20}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!getCameraExtrinsicsInitial@{getCameraExtrinsicsInitial}}
+\index{getCameraExtrinsicsInitial@{getCameraExtrinsicsInitial}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{getCameraExtrinsicsInitial()}{getCameraExtrinsicsInitial()}}
+{\footnotesize\ttfamily const std\+::vector$<$cv\+::\+Mat$>$\& op\+::\+Camera\+Parameter\+Reader\+::get\+Camera\+Extrinsics\+Initial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_aa61f9d5475922e6da21fe616cc334149}\label{classop_1_1_camera_parameter_reader_aa61f9d5475922e6da21fe616cc334149}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!getCameraIntrinsics@{getCameraIntrinsics}}
+\index{getCameraIntrinsics@{getCameraIntrinsics}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{getCameraIntrinsics()}{getCameraIntrinsics()}}
+{\footnotesize\ttfamily const std\+::vector$<$cv\+::\+Mat$>$\& op\+::\+Camera\+Parameter\+Reader\+::get\+Camera\+Intrinsics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a2ab87673525226c3ce2893d2bd5cea3f}\label{classop_1_1_camera_parameter_reader_a2ab87673525226c3ce2893d2bd5cea3f}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!getCameraMatrices@{getCameraMatrices}}
+\index{getCameraMatrices@{getCameraMatrices}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{getCameraMatrices()}{getCameraMatrices()}}
+{\footnotesize\ttfamily const std\+::vector$<$cv\+::\+Mat$>$\& op\+::\+Camera\+Parameter\+Reader\+::get\+Camera\+Matrices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_acf2b4d428d18f2663f4df640171b254d}\label{classop_1_1_camera_parameter_reader_acf2b4d428d18f2663f4df640171b254d}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!getCameraSerialNumbers@{getCameraSerialNumbers}}
+\index{getCameraSerialNumbers@{getCameraSerialNumbers}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{getCameraSerialNumbers()}{getCameraSerialNumbers()}}
+{\footnotesize\ttfamily const std\+::vector$<$std\+::string$>$\& op\+::\+Camera\+Parameter\+Reader\+::get\+Camera\+Serial\+Numbers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a8d97033970f3e71657da070cd87fd70c}\label{classop_1_1_camera_parameter_reader_a8d97033970f3e71657da070cd87fd70c}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!getNumberCameras@{getNumberCameras}}
+\index{getNumberCameras@{getNumberCameras}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{getNumberCameras()}{getNumberCameras()}}
+{\footnotesize\ttfamily unsigned long long op\+::\+Camera\+Parameter\+Reader\+::get\+Number\+Cameras (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a4c819945b0df95bcfb6f8d79451290d5}\label{classop_1_1_camera_parameter_reader_a4c819945b0df95bcfb6f8d79451290d5}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!getUndistortImage@{getUndistortImage}}
+\index{getUndistortImage@{getUndistortImage}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{getUndistortImage()}{getUndistortImage()}}
+{\footnotesize\ttfamily bool op\+::\+Camera\+Parameter\+Reader\+::get\+Undistort\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a2be8ff6d89e5f623f476c75afe3c5c3b}\label{classop_1_1_camera_parameter_reader_a2be8ff6d89e5f623f476c75afe3c5c3b}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!readParameters@{readParameters}}
+\index{readParameters@{readParameters}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{readParameters()}{readParameters()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void op\+::\+Camera\+Parameter\+Reader\+::read\+Parameters (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{camera\+Parameter\+Path,  }\item[{const std\+::string \&}]{serial\+Number }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a906fd316f09d901280a5fe10a4a54541}\label{classop_1_1_camera_parameter_reader_a906fd316f09d901280a5fe10a4a54541}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!readParameters@{readParameters}}
+\index{readParameters@{readParameters}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{readParameters()}{readParameters()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void op\+::\+Camera\+Parameter\+Reader\+::read\+Parameters (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{camera\+Parameter\+Path,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{serial\+Numbers = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_ae33e8637012413719b389649d1e5448a}\label{classop_1_1_camera_parameter_reader_ae33e8637012413719b389649d1e5448a}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!setUndistortImage@{setUndistortImage}}
+\index{setUndistortImage@{setUndistortImage}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{setUndistortImage()}{setUndistortImage()}}
+{\footnotesize\ttfamily void op\+::\+Camera\+Parameter\+Reader\+::set\+Undistort\+Image (\begin{DoxyParamCaption}\item[{const bool}]{undistort\+Image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_ab40c8cc103643d184465d526a6b6ac9d}\label{classop_1_1_camera_parameter_reader_ab40c8cc103643d184465d526a6b6ac9d}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!undistort@{undistort}}
+\index{undistort@{undistort}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{undistort()}{undistort()}}
+{\footnotesize\ttfamily void op\+::\+Camera\+Parameter\+Reader\+::undistort (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{frame,  }\item[{const unsigned int}]{camera\+Index = {\ttfamily 0u} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a7210bc5ebfe6e90a52524b7f0f3f3991}\label{classop_1_1_camera_parameter_reader_a7210bc5ebfe6e90a52524b7f0f3f3991}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!writeParameters@{writeParameters}}
+\index{writeParameters@{writeParameters}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{writeParameters()}{writeParameters()}}
+{\footnotesize\ttfamily void op\+::\+Camera\+Parameter\+Reader\+::write\+Parameters (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{camera\+Parameter\+Path }\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_ace37a92253877d95920793be3a5f16d7}\label{classop_1_1_camera_parameter_reader_ace37a92253877d95920793be3a5f16d7}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!mCameraDistortions@{mCameraDistortions}}
+\index{mCameraDistortions@{mCameraDistortions}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{mCameraDistortions}{mCameraDistortions}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Camera\+Parameter\+Reader\+::m\+Camera\+Distortions\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+camera\+Parameter\+Reader.\+hpp 파일의 57 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_acd1bb3f48f7da7adbbee2679c29f4400}\label{classop_1_1_camera_parameter_reader_acd1bb3f48f7da7adbbee2679c29f4400}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!mCameraExtrinsics@{mCameraExtrinsics}}
+\index{mCameraExtrinsics@{mCameraExtrinsics}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{mCameraExtrinsics}{mCameraExtrinsics}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Camera\+Parameter\+Reader\+::m\+Camera\+Extrinsics\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+camera\+Parameter\+Reader.\+hpp 파일의 59 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a3e5297015f7be2a4019a42b5bc90a814}\label{classop_1_1_camera_parameter_reader_a3e5297015f7be2a4019a42b5bc90a814}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!mCameraExtrinsicsInitial@{mCameraExtrinsicsInitial}}
+\index{mCameraExtrinsicsInitial@{mCameraExtrinsicsInitial}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{mCameraExtrinsicsInitial}{mCameraExtrinsicsInitial}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Camera\+Parameter\+Reader\+::m\+Camera\+Extrinsics\+Initial\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+camera\+Parameter\+Reader.\+hpp 파일의 60 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a407717265efb584d376202565c25b2be}\label{classop_1_1_camera_parameter_reader_a407717265efb584d376202565c25b2be}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!mCameraIntrinsics@{mCameraIntrinsics}}
+\index{mCameraIntrinsics@{mCameraIntrinsics}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{mCameraIntrinsics}{mCameraIntrinsics}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Camera\+Parameter\+Reader\+::m\+Camera\+Intrinsics\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+camera\+Parameter\+Reader.\+hpp 파일의 58 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_aeec06ca2ed2950a5bb71ead3d9918da9}\label{classop_1_1_camera_parameter_reader_aeec06ca2ed2950a5bb71ead3d9918da9}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!mCameraMatrices@{mCameraMatrices}}
+\index{mCameraMatrices@{mCameraMatrices}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{mCameraMatrices}{mCameraMatrices}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Camera\+Parameter\+Reader\+::m\+Camera\+Matrices\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+camera\+Parameter\+Reader.\+hpp 파일의 56 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a4778bffae6e3456f7674479bdde3dd83}\label{classop_1_1_camera_parameter_reader_a4778bffae6e3456f7674479bdde3dd83}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!mRemoveDistortionMaps1@{mRemoveDistortionMaps1}}
+\index{mRemoveDistortionMaps1@{mRemoveDistortionMaps1}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{mRemoveDistortionMaps1}{mRemoveDistortionMaps1}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Camera\+Parameter\+Reader\+::m\+Remove\+Distortion\+Maps1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+camera\+Parameter\+Reader.\+hpp 파일의 64 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_ad9b8a246854ef98dc8b587d5083dd1c5}\label{classop_1_1_camera_parameter_reader_ad9b8a246854ef98dc8b587d5083dd1c5}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!mRemoveDistortionMaps2@{mRemoveDistortionMaps2}}
+\index{mRemoveDistortionMaps2@{mRemoveDistortionMaps2}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{mRemoveDistortionMaps2}{mRemoveDistortionMaps2}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Camera\+Parameter\+Reader\+::m\+Remove\+Distortion\+Maps2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+camera\+Parameter\+Reader.\+hpp 파일의 65 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a974784bea4cc8b306da564bc84db28f2}\label{classop_1_1_camera_parameter_reader_a974784bea4cc8b306da564bc84db28f2}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!mSerialNumbers@{mSerialNumbers}}
+\index{mSerialNumbers@{mSerialNumbers}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{mSerialNumbers}{mSerialNumbers}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ op\+::\+Camera\+Parameter\+Reader\+::m\+Serial\+Numbers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+camera\+Parameter\+Reader.\+hpp 파일의 55 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_camera_parameter_reader_a686b78cb3f128a2f36d1f087cda0a867}\label{classop_1_1_camera_parameter_reader_a686b78cb3f128a2f36d1f087cda0a867}} 
+\index{op::CameraParameterReader@{op::CameraParameterReader}!mUndistortImage@{mUndistortImage}}
+\index{mUndistortImage@{mUndistortImage}!op::CameraParameterReader@{op::CameraParameterReader}}
+\doxysubsubsection{\texorpdfstring{mUndistortImage}{mUndistortImage}}
+{\footnotesize\ttfamily bool op\+::\+Camera\+Parameter\+Reader\+::m\+Undistort\+Image\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+camera\+Parameter\+Reader.\+hpp 파일의 63 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/3d/\mbox{\hyperlink{camera_parameter_reader_8hpp}{camera\+Parameter\+Reader.\+hpp}}\end{DoxyCompactItemize}

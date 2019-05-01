@@ -1,0 +1,218 @@
+\hypertarget{classop_1_1_gui}{}\doxysection{op\+::Gui 클래스 참조}
+\label{classop_1_1_gui}\index{op::Gui@{op::Gui}}
+
+
+{\ttfamily \#include $<$gui.\+hpp$>$}
+
+
+
+op\+::Gui에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classop_1_1_gui__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::Gui에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_gui__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_gui_a1084d79f61d08f0551832de1ca337c70}{Gui}} (const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&output\+Size, const bool full\+Screen, const std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ bool $>$$>$ \&is\+Running\+Shared\+Ptr, const std\+::shared\+\_\+ptr$<$ std\+::pair$<$ std\+::atomic$<$ bool $>$, std\+::atomic$<$ int $>$$>$$>$ \&video\+Seek\+Shared\+Ptr=nullptr, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}} $>$$>$ \&pose\+Extractor\+Nets=\{\}, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_face_extractor_net}{Face\+Extractor\+Net}} $>$$>$ \&face\+Extractor\+Nets=\{\}, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_hand_extractor_net}{Hand\+Extractor\+Net}} $>$$>$ \&hand\+Extractor\+Nets=\{\}, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_renderer}{Renderer}} $>$$>$ \&renderers=\{\}, const \mbox{\hyperlink{namespaceop_ae52707752b1872b39f0306cc4f6c6ae6}{Display\+Mode}} display\+Mode=\mbox{\hyperlink{namespaceop_ae52707752b1872b39f0306cc4f6c6ae6a3bd9369403112127ae7db2f866002be2}{Display\+Mode\+::\+Display2D}})
+\item 
+virtual \mbox{\hyperlink{classop_1_1_gui_a5e7e30073c0f7ee18904b25fc638b4e2}{$\sim$\+Gui}} ()
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_gui_a07cf9b4e7757979666d097278df02c20}{initialization\+On\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_gui_a9391ffe3fb09f881327f55d65cbe52eb}{set\+Image}} (const cv\+::\+Mat \&cv\+Mat\+Output)
+\item 
+void \mbox{\hyperlink{classop_1_1_gui_a637966de704cfffc247e9db9aded20f5}{set\+Image}} (const std\+::vector$<$ cv\+::\+Mat $>$ \&cv\+Mat\+Outputs)
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_gui_a8e9a67dd507598654a5db06273d50c94}{update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ bool $>$ $>$ \mbox{\hyperlink{classop_1_1_gui_a0ad7be7018e634769da8d22d60e7edc0}{sp\+Is\+Running}}
+\item 
+\mbox{\hyperlink{namespaceop_ae52707752b1872b39f0306cc4f6c6ae6}{Display\+Mode}} \mbox{\hyperlink{classop_1_1_gui_a5b95cbfa7cd4018977f4eb1fc095823b}{m\+Display\+Mode}}
+\item 
+\mbox{\hyperlink{namespaceop_ae52707752b1872b39f0306cc4f6c6ae6}{Display\+Mode}} \mbox{\hyperlink{classop_1_1_gui_a94cfbf759e88467bfcab18fcd2c987f2}{m\+Display\+Mode\+Original}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_frame_displayer}{Frame\+Displayer}} \mbox{\hyperlink{classop_1_1_gui_a72ccffd2d1c0fcbf007c47c60c3781cf}{m\+Frame\+Displayer}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}} $>$ $>$ \mbox{\hyperlink{classop_1_1_gui_a83b6e1920a5bf968000df77c61929c21}{m\+Pose\+Extractor\+Nets}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_face_extractor_net}{Face\+Extractor\+Net}} $>$ $>$ \mbox{\hyperlink{classop_1_1_gui_af3f456d38cfa86a47dbb8676e6746109}{m\+Face\+Extractor\+Nets}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_hand_extractor_net}{Hand\+Extractor\+Net}} $>$ $>$ \mbox{\hyperlink{classop_1_1_gui_a0e0cac101ffffc141d677a10714b6d66}{m\+Hand\+Extractor\+Nets}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_renderer}{Renderer}} $>$ $>$ \mbox{\hyperlink{classop_1_1_gui_a1b0c6456f6300c2f4afac55c064a85a4}{m\+Renderers}}
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::pair$<$ std\+::atomic$<$ bool $>$, std\+::atomic$<$ int $>$ $>$ $>$ \mbox{\hyperlink{classop_1_1_gui_a60cf055fd48b62dc2b3da2f6e92cdf7d}{sp\+Video\+Seek}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+gui.\+hpp 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_gui_a1084d79f61d08f0551832de1ca337c70}\label{classop_1_1_gui_a1084d79f61d08f0551832de1ca337c70}} 
+\index{op::Gui@{op::Gui}!Gui@{Gui}}
+\index{Gui@{Gui}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{Gui()}{Gui()}}
+{\footnotesize\ttfamily op\+::\+Gui\+::\+Gui (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&}]{output\+Size,  }\item[{const bool}]{full\+Screen,  }\item[{const std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ bool $>$$>$ \&}]{is\+Running\+Shared\+Ptr,  }\item[{const std\+::shared\+\_\+ptr$<$ std\+::pair$<$ std\+::atomic$<$ bool $>$, std\+::atomic$<$ int $>$$>$$>$ \&}]{video\+Seek\+Shared\+Ptr = {\ttfamily nullptr},  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}} $>$$>$ \&}]{pose\+Extractor\+Nets = {\ttfamily \{\}},  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_face_extractor_net}{Face\+Extractor\+Net}} $>$$>$ \&}]{face\+Extractor\+Nets = {\ttfamily \{\}},  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_hand_extractor_net}{Hand\+Extractor\+Net}} $>$$>$ \&}]{hand\+Extractor\+Nets = {\ttfamily \{\}},  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_renderer}{Renderer}} $>$$>$ \&}]{renderers = {\ttfamily \{\}},  }\item[{const \mbox{\hyperlink{namespaceop_ae52707752b1872b39f0306cc4f6c6ae6}{Display\+Mode}}}]{display\+Mode = {\ttfamily \mbox{\hyperlink{namespaceop_ae52707752b1872b39f0306cc4f6c6ae6a3bd9369403112127ae7db2f866002be2}{Display\+Mode\+::\+Display2D}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_gui_a5e7e30073c0f7ee18904b25fc638b4e2}\label{classop_1_1_gui_a5e7e30073c0f7ee18904b25fc638b4e2}} 
+\index{op::Gui@{op::Gui}!````~Gui@{$\sim$Gui}}
+\index{````~Gui@{$\sim$Gui}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{$\sim$Gui()}{~Gui()}}
+{\footnotesize\ttfamily virtual op\+::\+Gui\+::$\sim$\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_gui_a07cf9b4e7757979666d097278df02c20}\label{classop_1_1_gui_a07cf9b4e7757979666d097278df02c20}} 
+\index{op::Gui@{op::Gui}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily virtual void op\+::\+Gui\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_gui3_d_a4247c56f90a535944b8aa14def754eaa}{op\+::\+Gui3D}}에서 재구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_gui_a9391ffe3fb09f881327f55d65cbe52eb}\label{classop_1_1_gui_a9391ffe3fb09f881327f55d65cbe52eb}} 
+\index{op::Gui@{op::Gui}!setImage@{setImage}}
+\index{setImage@{setImage}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{setImage()}{setImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void op\+::\+Gui\+::set\+Image (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{cv\+Mat\+Output }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_gui_a637966de704cfffc247e9db9aded20f5}\label{classop_1_1_gui_a637966de704cfffc247e9db9aded20f5}} 
+\index{op::Gui@{op::Gui}!setImage@{setImage}}
+\index{setImage@{setImage}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{setImage()}{setImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void op\+::\+Gui\+::set\+Image (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ cv\+::\+Mat $>$ \&}]{cv\+Mat\+Outputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_gui_a8e9a67dd507598654a5db06273d50c94}\label{classop_1_1_gui_a8e9a67dd507598654a5db06273d50c94}} 
+\index{op::Gui@{op::Gui}!update@{update}}
+\index{update@{update}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void op\+::\+Gui\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_gui3_d_af10162684889706894f13a308970ba32}{op\+::\+Gui3D}}에서 재구현되었습니다.
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_gui_a5b95cbfa7cd4018977f4eb1fc095823b}\label{classop_1_1_gui_a5b95cbfa7cd4018977f4eb1fc095823b}} 
+\index{op::Gui@{op::Gui}!mDisplayMode@{mDisplayMode}}
+\index{mDisplayMode@{mDisplayMode}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{mDisplayMode}{mDisplayMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceop_ae52707752b1872b39f0306cc4f6c6ae6}{Display\+Mode}} op\+::\+Gui\+::m\+Display\+Mode\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+gui.\+hpp 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_gui_a94cfbf759e88467bfcab18fcd2c987f2}\label{classop_1_1_gui_a94cfbf759e88467bfcab18fcd2c987f2}} 
+\index{op::Gui@{op::Gui}!mDisplayModeOriginal@{mDisplayModeOriginal}}
+\index{mDisplayModeOriginal@{mDisplayModeOriginal}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{mDisplayModeOriginal}{mDisplayModeOriginal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceop_ae52707752b1872b39f0306cc4f6c6ae6}{Display\+Mode}} op\+::\+Gui\+::m\+Display\+Mode\+Original\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+gui.\+hpp 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_gui_af3f456d38cfa86a47dbb8676e6746109}\label{classop_1_1_gui_af3f456d38cfa86a47dbb8676e6746109}} 
+\index{op::Gui@{op::Gui}!mFaceExtractorNets@{mFaceExtractorNets}}
+\index{mFaceExtractorNets@{mFaceExtractorNets}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{mFaceExtractorNets}{mFaceExtractorNets}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classop_1_1_face_extractor_net}{Face\+Extractor\+Net}}$>$ $>$ op\+::\+Gui\+::m\+Face\+Extractor\+Nets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+gui.\+hpp 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_gui_a72ccffd2d1c0fcbf007c47c60c3781cf}\label{classop_1_1_gui_a72ccffd2d1c0fcbf007c47c60c3781cf}} 
+\index{op::Gui@{op::Gui}!mFrameDisplayer@{mFrameDisplayer}}
+\index{mFrameDisplayer@{mFrameDisplayer}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{mFrameDisplayer}{mFrameDisplayer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_frame_displayer}{Frame\+Displayer}} op\+::\+Gui\+::m\+Frame\+Displayer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+gui.\+hpp 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_gui_a0e0cac101ffffc141d677a10714b6d66}\label{classop_1_1_gui_a0e0cac101ffffc141d677a10714b6d66}} 
+\index{op::Gui@{op::Gui}!mHandExtractorNets@{mHandExtractorNets}}
+\index{mHandExtractorNets@{mHandExtractorNets}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{mHandExtractorNets}{mHandExtractorNets}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classop_1_1_hand_extractor_net}{Hand\+Extractor\+Net}}$>$ $>$ op\+::\+Gui\+::m\+Hand\+Extractor\+Nets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+gui.\+hpp 파일의 48 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_gui_a83b6e1920a5bf968000df77c61929c21}\label{classop_1_1_gui_a83b6e1920a5bf968000df77c61929c21}} 
+\index{op::Gui@{op::Gui}!mPoseExtractorNets@{mPoseExtractorNets}}
+\index{mPoseExtractorNets@{mPoseExtractorNets}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{mPoseExtractorNets}{mPoseExtractorNets}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}}$>$ $>$ op\+::\+Gui\+::m\+Pose\+Extractor\+Nets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+gui.\+hpp 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_gui_a1b0c6456f6300c2f4afac55c064a85a4}\label{classop_1_1_gui_a1b0c6456f6300c2f4afac55c064a85a4}} 
+\index{op::Gui@{op::Gui}!mRenderers@{mRenderers}}
+\index{mRenderers@{mRenderers}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{mRenderers}{mRenderers}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classop_1_1_renderer}{Renderer}}$>$ $>$ op\+::\+Gui\+::m\+Renderers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+gui.\+hpp 파일의 49 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_gui_a0ad7be7018e634769da8d22d60e7edc0}\label{classop_1_1_gui_a0ad7be7018e634769da8d22d60e7edc0}} 
+\index{op::Gui@{op::Gui}!spIsRunning@{spIsRunning}}
+\index{spIsRunning@{spIsRunning}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{spIsRunning}{spIsRunning}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::atomic$<$bool$>$ $>$ op\+::\+Gui\+::sp\+Is\+Running\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+gui.\+hpp 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_gui_a60cf055fd48b62dc2b3da2f6e92cdf7d}\label{classop_1_1_gui_a60cf055fd48b62dc2b3da2f6e92cdf7d}} 
+\index{op::Gui@{op::Gui}!spVideoSeek@{spVideoSeek}}
+\index{spVideoSeek@{spVideoSeek}!op::Gui@{op::Gui}}
+\doxysubsubsection{\texorpdfstring{spVideoSeek}{spVideoSeek}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::pair$<$std\+::atomic$<$bool$>$, std\+::atomic$<$int$>$ $>$ $>$ op\+::\+Gui\+::sp\+Video\+Seek\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+gui.\+hpp 파일의 50 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/gui/\mbox{\hyperlink{gui_8hpp}{gui.\+hpp}}\end{DoxyCompactItemize}

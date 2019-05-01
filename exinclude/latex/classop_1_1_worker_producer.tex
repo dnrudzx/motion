@@ -1,0 +1,258 @@
+\hypertarget{classop_1_1_worker_producer}{}\doxysection{op\+::Worker\+Producer$<$ T\+Datums $>$ 클래스 템플릿 참조}
+\label{classop_1_1_worker_producer}\index{op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}}
+
+
+{\ttfamily \#include $<$worker\+Producer.\+hpp$>$}
+
+
+
+op\+::Worker\+Producer$<$ T\+Datums $>$에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classop_1_1_worker_producer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::Worker\+Producer$<$ T\+Datums $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classop_1_1_worker_producer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classop_1_1_worker_producer_a8f2592f70d723de4b818c97b25c5a476}{$\sim$\+Worker\+Producer}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_worker_producer_a0259f0b387e2b868388ba0a6769f4691}{work}} (T\+Datums \&t\+Datums)
+\item 
+void \mbox{\hyperlink{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}{initialization\+On\+Thread\+No\+Exception}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}{check\+And\+Work}} (T\+Datums \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}{is\+Running}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}} ()
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}{try\+Stop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+virtual T\+Datums \mbox{\hyperlink{classop_1_1_worker_producer_a364992ef862fe84a78416e2b556daae7}{work\+Producer}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}{initialization\+On\+Thread}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T\+Datums$>$\newline
+class op\+::\+Worker\+Producer$<$ T\+Datums $>$}
+
+
+
+worker\+Producer.\+hpp 파일의 10 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_worker_producer_a8f2592f70d723de4b818c97b25c5a476}\label{classop_1_1_worker_producer_a8f2592f70d723de4b818c97b25c5a476}} 
+\index{op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}!````~WorkerProducer@{$\sim$WorkerProducer}}
+\index{````~WorkerProducer@{$\sim$WorkerProducer}!op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$WorkerProducer()}{~WorkerProducer()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_worker_producer}{op\+::\+Worker\+Producer}}$<$ T\+Datums $>$\+::$\sim$\mbox{\hyperlink{classop_1_1_worker_producer}{Worker\+Producer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+worker\+Producer.\+hpp 파일의 30 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31     \{}
+\DoxyCodeLine{32     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}\label{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}} 
+\index{op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}!checkAndWork@{checkAndWork}}
+\index{checkAndWork@{checkAndWork}!op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{checkAndWork()}{checkAndWork()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+bool \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::check\+And\+Work (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 82 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83     \{}
+\DoxyCodeLine{84         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{85         \{}
+\DoxyCodeLine{86             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}})}
+\DoxyCodeLine{87                 \mbox{\hyperlink{classop_1_1_worker_a9acadd6df7af03b31b9e354ae815f781}{work}}(tDatums);}
+\DoxyCodeLine{88             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}};}
+\DoxyCodeLine{89         \}}
+\DoxyCodeLine{90         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{91         \{}
+\DoxyCodeLine{92             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{93             \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{errorWorker}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{94             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}\label{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}} 
+\index{op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_w_queue_assembler_a02bb2d4e47689903434c05a911a5ba15}{op\+::\+W\+Queue\+Assembler$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_datum_producer_a4381eaec4625824ebaa2d23f0cf1be48}{op\+::\+W\+Datum\+Producer$<$ T\+Datum $>$}}, \mbox{\hyperlink{classop_1_1_w_face_saver_ae8401789881462eb8438c65e9d2d3fb2}{op\+::\+W\+Face\+Saver$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_hand_saver_aa234a68d1cc7ec97fefbf30239149baa}{op\+::\+W\+Hand\+Saver$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_pose_saver_a4f0774832e12389593361186f1b83128}{op\+::\+W\+Pose\+Saver$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_gui3_d_a7da4f85892e0d7d9e105c6d471a706a3}{op\+::\+W\+Gui3\+D$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_fps_max_af8c5f74f0271d227b2c70b4415366332}{op\+::\+W\+Fps\+Max$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_id_generator_a50a1b7929810daae87ee6443c659edad}{op\+::\+W\+Id\+Generator$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_queue_orderer_a85598f83f6f3a30b7ddce9bc7beddf33}{op\+::\+W\+Queue\+Orderer$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_pose_triangulation_a5711329db1768eb77d2d96575c9fb668}{op\+::\+W\+Pose\+Triangulation$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_cv_mat_to_op_input_ac03534bbe3b6c3c45efb61b5d78402da}{op\+::\+W\+Cv\+Mat\+To\+Op\+Input$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_cv_mat_to_op_output_ad4c957d391e371b7ee56cdb5be6b1452}{op\+::\+W\+Cv\+Mat\+To\+Op\+Output$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_keep_top_n_people_a56371016b6fe1fbacdba8d558685719b}{op\+::\+W\+Keep\+Top\+N\+People$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_keypoint_scaler_aba4fb004818f3adc22959e382a90cd2c}{op\+::\+W\+Keypoint\+Scaler$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_op_output_to_cv_mat_adea2e8b1d33e6c091640c7d904dac7cd}{op\+::\+W\+Op\+Output\+To\+Cv\+Mat$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_scale_and_size_extractor_ac1203ef395a836b13f5586432f284c41}{op\+::\+W\+Scale\+And\+Size\+Extractor$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_verbose_printer_a9d21f5db0e70ba4cad73cf2bdf6c9fe2}{op\+::\+W\+Verbose\+Printer$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_face_detector_afaca53a669f0cd43103f7317aded75d3}{op\+::\+W\+Face\+Detector$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_face_detector_open_c_v_ad7dce5824ba32bc07d2474c20b23e62d}{op\+::\+W\+Face\+Detector\+Open\+C\+V$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_face_extractor_net_ac04b0bec061a6cbc6a6afacb3f8d15c7}{op\+::\+W\+Face\+Extractor\+Net$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_face_renderer_a7b72c70dc02c9209d84992caad6ad7d0}{op\+::\+W\+Face\+Renderer$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_coco_json_saver_a5cca095ff23c3134ab0addc9a4feabaf}{op\+::\+W\+Coco\+Json\+Saver$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_heat_map_saver_a20e82b121a580c578f69cbb0401c4cb0}{op\+::\+W\+Heat\+Map\+Saver$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_image_saver_a78655ea3d4dac28bdf7e2e4a80b5a337}{op\+::\+W\+Image\+Saver$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_people_json_saver_a5d4239596a996723a20a1031d32c7446}{op\+::\+W\+People\+Json\+Saver$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_udp_sender_a567d9fe2adc85ae086379696573112e3}{op\+::\+W\+Udp\+Sender$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_video_saver_ada90f76b28e4bafe9c8ecbb9bcbb2d14}{op\+::\+W\+Video\+Saver$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_video_saver3_d_ad5a050f5646af36bf8d91909e8f47b2f}{op\+::\+W\+Video\+Saver3\+D$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_gui_a4e4db210b87f78cc1238dd3ab2bedaa4}{op\+::\+W\+Gui$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_gui_info_adder_ae620275d6570fd5c74f33728cd340217}{op\+::\+W\+Gui\+Info\+Adder$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_hand_detector_a5c29c944205ee0727f76c282ef55ae52}{op\+::\+W\+Hand\+Detector$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_hand_detector_from_txt_acd7d37555c09a58dc660811724930276}{op\+::\+W\+Hand\+Detector\+From\+Txt$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_hand_detector_tracking_a20ef6206194a873c2cfa7fe13d905d92}{op\+::\+W\+Hand\+Detector\+Tracking$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_hand_detector_update_a729aaa628e4f4c24e7cb9afca1cdc761}{op\+::\+W\+Hand\+Detector\+Update$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_hand_extractor_net_a7904f62b91d658a06ed89f0bfd307642}{op\+::\+W\+Hand\+Extractor\+Net$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_hand_renderer_a2ee88145b38fea1a6a2bb7987a33bd40}{op\+::\+W\+Hand\+Renderer$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_pose_extractor_a9b621ed9915da9bf3cce49db547de9e6}{op\+::\+W\+Pose\+Extractor$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_pose_extractor_net_a18d4a120314ec44d1722cc164aaba7a8}{op\+::\+W\+Pose\+Extractor\+Net$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_pose_renderer_aba989a73cef9a807879ad2196725c61c}{op\+::\+W\+Pose\+Renderer$<$ T\+Datums $>$}}, \mbox{\hyperlink{classop_1_1_w_person_id_extractor_a72b888875be18eb3fc8d0a8c267630de}{op\+::\+W\+Person\+Id\+Extractor$<$ T\+Datums $>$}}에서 구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}\label{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}} 
+\index{op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}!initializationOnThreadNoException@{initializationOnThreadNoException}}
+\index{initializationOnThreadNoException@{initializationOnThreadNoException}!op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{initializationOnThreadNoException()}{initializationOnThreadNoException()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::initialization\+On\+Thread\+No\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69     \{}
+\DoxyCodeLine{70         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{71         \{}
+\DoxyCodeLine{72             this-\/>\mbox{\hyperlink{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}{initializationOnThread}}();}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{75         \{}
+\DoxyCodeLine{76             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{77             \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{errorWorker}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{78         \}}
+\DoxyCodeLine{79     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}\label{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}} 
+\index{op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+bool \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 20 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21         \{}
+\DoxyCodeLine{22             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}};}
+\DoxyCodeLine{23         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}\label{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}} 
+\index{op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}!stop@{stop}}
+\index{stop@{stop}!op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 25 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26         \{}
+\DoxyCodeLine{27             \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{28         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}\label{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}} 
+\index{op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}!tryStop@{tryStop}}
+\index{tryStop@{tryStop}!op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{tryStop()}{tryStop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::try\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_w_queue_orderer_a01bc7495ec992cc9c54a040534cb3634}{op\+::\+W\+Queue\+Orderer$<$ T\+Datums $>$}}에서 재구현되었습니다.
+
+
+
+worker.\+hpp 파일의 32 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33         \{}
+\DoxyCodeLine{34             \mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{35         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_producer_a0259f0b387e2b868388ba0a6769f4691}\label{classop_1_1_worker_producer_a0259f0b387e2b868388ba0a6769f4691}} 
+\index{op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}!work@{work}}
+\index{work@{work}!op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{work()}{work()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+void \mbox{\hyperlink{classop_1_1_worker_producer}{op\+::\+Worker\+Producer}}$<$ T\+Datums $>$\+::work (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_worker_a9acadd6df7af03b31b9e354ae815f781}{op\+::\+Worker$<$ T\+Datums $>$}}를 구현.
+
+
+
+worker\+Producer.\+hpp 파일의 35 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36     \{}
+\DoxyCodeLine{37         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{38         \{}
+\DoxyCodeLine{39             tDatums = std::move(\mbox{\hyperlink{classop_1_1_worker_producer_a364992ef862fe84a78416e2b556daae7}{workProducer}}());}
+\DoxyCodeLine{40         \}}
+\DoxyCodeLine{41         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{42         \{}
+\DoxyCodeLine{43             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{44             \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{errorWorker}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{45         \}}
+\DoxyCodeLine{46     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_producer_a364992ef862fe84a78416e2b556daae7}\label{classop_1_1_worker_producer_a364992ef862fe84a78416e2b556daae7}} 
+\index{op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}!workProducer@{workProducer}}
+\index{workProducer@{workProducer}!op::WorkerProducer$<$ TDatums $>$@{op::WorkerProducer$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{workProducer()}{workProducer()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+virtual T\+Datums \mbox{\hyperlink{classop_1_1_worker_producer}{op\+::\+Worker\+Producer}}$<$ T\+Datums $>$\+::work\+Producer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_w_datum_producer_aac2674f961492fa299da18d716a617b4}{op\+::\+W\+Datum\+Producer$<$ T\+Datum $>$}}에서 구현되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/thread/\mbox{\hyperlink{worker_producer_8hpp}{worker\+Producer.\+hpp}}\end{DoxyCompactItemize}

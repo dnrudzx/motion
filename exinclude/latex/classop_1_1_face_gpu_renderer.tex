@@ -1,0 +1,320 @@
+\hypertarget{classop_1_1_face_gpu_renderer}{}\doxysection{op\+::Face\+Gpu\+Renderer 클래스 참조}
+\label{classop_1_1_face_gpu_renderer}\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+
+
+{\ttfamily \#include $<$face\+Gpu\+Renderer.\+hpp$>$}
+
+
+
+op\+::Face\+Gpu\+Renderer에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_face_gpu_renderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::Face\+Gpu\+Renderer에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_face_gpu_renderer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_face_gpu_renderer_a344b4f1d256d6ad805273eb8ba29cde1}{Face\+Gpu\+Renderer}} (const float render\+Threshold, const float alpha\+Keypoint=\mbox{\hyperlink{namespaceop_a15f6c39797cee87f6aa941d93f22b78b}{F\+A\+C\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+K\+E\+Y\+P\+O\+I\+NT}}, const float alpha\+Heat\+Map=\mbox{\hyperlink{namespaceop_a4f191afed46fea5e3ce5b2a8756e1ddd}{F\+A\+C\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+H\+E\+A\+T\+\_\+\+M\+AP}})
+\item 
+virtual \mbox{\hyperlink{classop_1_1_face_gpu_renderer_a94758beab4bfbfed02cc8330a63abaeb}{$\sim$\+Face\+Gpu\+Renderer}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_face_gpu_renderer_a6ebd9287927529ffaa4200890190896b}{initialization\+On\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_face_gpu_renderer_ae54b7538a6ed6a5eaedcbdc117a0d61c}{render\+Face\+Inherited}} (\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&output\+Data, const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&face\+Keypoints)
+\item 
+std\+::tuple$<$ std\+::shared\+\_\+ptr$<$ float $\ast$ $>$, std\+::shared\+\_\+ptr$<$ bool $>$, std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ unsigned int $>$ $>$, std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ unsigned long long $>$ $>$, std\+::shared\+\_\+ptr$<$ const unsigned int $>$ $>$ \mbox{\hyperlink{classop_1_1_gpu_renderer_a5576d2da79ef7ff38ee86b35383d6d46}{get\+Shared\+Parameters}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_gpu_renderer_ac1642afb73d94c84eb12f4a97abfb9ac}{set\+Shared\+Parameters\+And\+If\+Last}} (const std\+::tuple$<$ std\+::shared\+\_\+ptr$<$ float $\ast$ $>$, std\+::shared\+\_\+ptr$<$ bool $>$, std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ unsigned int $>$$>$, std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ unsigned long long $>$$>$, std\+::shared\+\_\+ptr$<$ const unsigned int $>$$>$ \&tuple, const bool is\+Last)
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_a298a5a58bab80b7252db7d3386a0ed8a}{increase\+Element\+To\+Render}} (const int increment)
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_afd48a9cb0be184303dce2969fa2f8e02}{set\+Element\+To\+Render}} (const int element\+To\+Render)
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_a9d46c28d88225af94468c757ab1b26c1}{set\+Element\+To\+Render}} (const \mbox{\hyperlink{namespaceop_a37a23e10d9cbc428c793c3df1d62993e}{Element\+To\+Render}} element\+To\+Render)
+\item 
+bool \mbox{\hyperlink{classop_1_1_renderer_ad2ac64e018f2b925d0c8d45883928b68}{get\+Blend\+Original\+Frame}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_aa8339054ed113d99ca70208d0cee5aa9}{set\+Blend\+Original\+Frame}} (const bool blend\+Original\+Frame)
+\item 
+float \mbox{\hyperlink{classop_1_1_renderer_a3cf2d07dc9df42db4648398367c72dbb}{get\+Alpha\+Keypoint}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_a039e88897ed844551cadb115ea98e9ef}{set\+Alpha\+Keypoint}} (const float alpha\+Keypoint)
+\item 
+float \mbox{\hyperlink{classop_1_1_renderer_ab776e07b5b2f3a3b0aca0ce95d67796b}{get\+Alpha\+Heat\+Map}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_abaea1725725ff775aed0c120b2ba3d1f}{set\+Alpha\+Heat\+Map}} (const float alpha\+Heat\+Map)
+\item 
+bool \mbox{\hyperlink{classop_1_1_renderer_a44e13a965a9b0fca119ea897ad1348e0}{get\+Show\+Googly\+Eyes}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_ab226d47f554735fa3e0372ce429747c3}{set\+Show\+Googly\+Eyes}} (const bool show\+Googly\+Eyes)
+\item 
+void \mbox{\hyperlink{classop_1_1_face_renderer_acbbdaca16f4115a5a68d006f4f325397}{render\+Face}} (\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&output\+Data, const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&face\+Keypoints, const float scale\+Input\+To\+Output)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classop_1_1_gpu_renderer_ac7c1ab0eebf1d54b55cc65a5560bad7b}{cpu\+To\+Gpu\+Memory\+If\+Not\+Copied\+Yet}} (const float $\ast$const cpu\+Memory, const unsigned long long memory\+Volume)
+\item 
+void \mbox{\hyperlink{classop_1_1_gpu_renderer_a6355f70d16c6427b028fa4596ce5d985}{gpu\+To\+Cpu\+Memory\+If\+Last\+Renderer}} (float $\ast$cpu\+Memory, const unsigned long long memory\+Volume)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ float $\ast$ $>$ \mbox{\hyperlink{classop_1_1_gpu_renderer_a5d729aab549908c758953be742dd0115}{sp\+Gpu\+Memory}}
+\item 
+const float \mbox{\hyperlink{classop_1_1_renderer_adc4cd0a62008325c5c7df6df2f95a167}{m\+Render\+Threshold}}
+\item 
+std\+::atomic$<$ bool $>$ \mbox{\hyperlink{classop_1_1_renderer_a88449a7c29a48e157cd6b16089825be7}{m\+Blend\+Original\+Frame}}
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ unsigned int $>$ $>$ \mbox{\hyperlink{classop_1_1_renderer_aca8ebf0c0a50b87f0be82afa090155a0}{sp\+Element\+To\+Render}}
+\item 
+std\+::shared\+\_\+ptr$<$ const unsigned int $>$ \mbox{\hyperlink{classop_1_1_renderer_a3e04644546dd9990a16d0b6861b60553}{sp\+Number\+Elements\+To\+Render}}
+\item 
+std\+::atomic$<$ bool $>$ \mbox{\hyperlink{classop_1_1_renderer_ace2490fa3c5a87443e4d1e64007cd1ff}{m\+Show\+Googly\+Eyes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_face_gpu_renderer_a36560dbc7a5773fa0f6330681e4aefd9}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_face_gpu_renderer}{Face\+Gpu\+Renderer}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+float $\ast$ \mbox{\hyperlink{classop_1_1_face_gpu_renderer_af3cf47156af1edf12ff5400a9ec52ca6}{p\+Gpu\+Face}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+face\+Gpu\+Renderer.\+hpp 파일의 11 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_face_gpu_renderer_a344b4f1d256d6ad805273eb8ba29cde1}\label{classop_1_1_face_gpu_renderer_a344b4f1d256d6ad805273eb8ba29cde1}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!FaceGpuRenderer@{FaceGpuRenderer}}
+\index{FaceGpuRenderer@{FaceGpuRenderer}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{FaceGpuRenderer()}{FaceGpuRenderer()}}
+{\footnotesize\ttfamily op\+::\+Face\+Gpu\+Renderer\+::\+Face\+Gpu\+Renderer (\begin{DoxyParamCaption}\item[{const float}]{render\+Threshold,  }\item[{const float}]{alpha\+Keypoint = {\ttfamily \mbox{\hyperlink{namespaceop_a15f6c39797cee87f6aa941d93f22b78b}{F\+A\+C\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+K\+E\+Y\+P\+O\+I\+NT}}},  }\item[{const float}]{alpha\+Heat\+Map = {\ttfamily \mbox{\hyperlink{namespaceop_a4f191afed46fea5e3ce5b2a8756e1ddd}{F\+A\+C\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+H\+E\+A\+T\+\_\+\+M\+AP}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_face_gpu_renderer_a94758beab4bfbfed02cc8330a63abaeb}\label{classop_1_1_face_gpu_renderer_a94758beab4bfbfed02cc8330a63abaeb}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!````~FaceGpuRenderer@{$\sim$FaceGpuRenderer}}
+\index{````~FaceGpuRenderer@{$\sim$FaceGpuRenderer}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{$\sim$FaceGpuRenderer()}{~FaceGpuRenderer()}}
+{\footnotesize\ttfamily virtual op\+::\+Face\+Gpu\+Renderer\+::$\sim$\+Face\+Gpu\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_gpu_renderer_ac7c1ab0eebf1d54b55cc65a5560bad7b}\label{classop_1_1_gpu_renderer_ac7c1ab0eebf1d54b55cc65a5560bad7b}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!cpuToGpuMemoryIfNotCopiedYet@{cpuToGpuMemoryIfNotCopiedYet}}
+\index{cpuToGpuMemoryIfNotCopiedYet@{cpuToGpuMemoryIfNotCopiedYet}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{cpuToGpuMemoryIfNotCopiedYet()}{cpuToGpuMemoryIfNotCopiedYet()}}
+{\footnotesize\ttfamily void op\+::\+Gpu\+Renderer\+::cpu\+To\+Gpu\+Memory\+If\+Not\+Copied\+Yet (\begin{DoxyParamCaption}\item[{const float $\ast$const}]{cpu\+Memory,  }\item[{const unsigned long long}]{memory\+Volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_face_gpu_renderer_a36560dbc7a5773fa0f6330681e4aefd9}\label{classop_1_1_face_gpu_renderer_a36560dbc7a5773fa0f6330681e4aefd9}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Face\+Gpu\+Renderer\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_face_gpu_renderer}{Face\+Gpu\+Renderer}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_renderer_ab776e07b5b2f3a3b0aca0ce95d67796b}\label{classop_1_1_renderer_ab776e07b5b2f3a3b0aca0ce95d67796b}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!getAlphaHeatMap@{getAlphaHeatMap}}
+\index{getAlphaHeatMap@{getAlphaHeatMap}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{getAlphaHeatMap()}{getAlphaHeatMap()}}
+{\footnotesize\ttfamily float op\+::\+Renderer\+::get\+Alpha\+Heat\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_renderer_a3cf2d07dc9df42db4648398367c72dbb}\label{classop_1_1_renderer_a3cf2d07dc9df42db4648398367c72dbb}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!getAlphaKeypoint@{getAlphaKeypoint}}
+\index{getAlphaKeypoint@{getAlphaKeypoint}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{getAlphaKeypoint()}{getAlphaKeypoint()}}
+{\footnotesize\ttfamily float op\+::\+Renderer\+::get\+Alpha\+Keypoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_renderer_ad2ac64e018f2b925d0c8d45883928b68}\label{classop_1_1_renderer_ad2ac64e018f2b925d0c8d45883928b68}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!getBlendOriginalFrame@{getBlendOriginalFrame}}
+\index{getBlendOriginalFrame@{getBlendOriginalFrame}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{getBlendOriginalFrame()}{getBlendOriginalFrame()}}
+{\footnotesize\ttfamily bool op\+::\+Renderer\+::get\+Blend\+Original\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_gpu_renderer_a5576d2da79ef7ff38ee86b35383d6d46}\label{classop_1_1_gpu_renderer_a5576d2da79ef7ff38ee86b35383d6d46}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!getSharedParameters@{getSharedParameters}}
+\index{getSharedParameters@{getSharedParameters}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{getSharedParameters()}{getSharedParameters()}}
+{\footnotesize\ttfamily std\+::tuple$<$std\+::shared\+\_\+ptr$<$float$\ast$$>$, std\+::shared\+\_\+ptr$<$bool$>$, std\+::shared\+\_\+ptr$<$std\+::atomic$<$unsigned int$>$ $>$, std\+::shared\+\_\+ptr$<$std\+::atomic$<$unsigned long long$>$ $>$, std\+::shared\+\_\+ptr$<$const unsigned int$>$ $>$ op\+::\+Gpu\+Renderer\+::get\+Shared\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_renderer_a44e13a965a9b0fca119ea897ad1348e0}\label{classop_1_1_renderer_a44e13a965a9b0fca119ea897ad1348e0}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!getShowGooglyEyes@{getShowGooglyEyes}}
+\index{getShowGooglyEyes@{getShowGooglyEyes}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{getShowGooglyEyes()}{getShowGooglyEyes()}}
+{\footnotesize\ttfamily bool op\+::\+Renderer\+::get\+Show\+Googly\+Eyes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_gpu_renderer_a6355f70d16c6427b028fa4596ce5d985}\label{classop_1_1_gpu_renderer_a6355f70d16c6427b028fa4596ce5d985}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!gpuToCpuMemoryIfLastRenderer@{gpuToCpuMemoryIfLastRenderer}}
+\index{gpuToCpuMemoryIfLastRenderer@{gpuToCpuMemoryIfLastRenderer}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{gpuToCpuMemoryIfLastRenderer()}{gpuToCpuMemoryIfLastRenderer()}}
+{\footnotesize\ttfamily void op\+::\+Gpu\+Renderer\+::gpu\+To\+Cpu\+Memory\+If\+Last\+Renderer (\begin{DoxyParamCaption}\item[{float $\ast$}]{cpu\+Memory,  }\item[{const unsigned long long}]{memory\+Volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_renderer_a298a5a58bab80b7252db7d3386a0ed8a}\label{classop_1_1_renderer_a298a5a58bab80b7252db7d3386a0ed8a}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!increaseElementToRender@{increaseElementToRender}}
+\index{increaseElementToRender@{increaseElementToRender}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{increaseElementToRender()}{increaseElementToRender()}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::increase\+Element\+To\+Render (\begin{DoxyParamCaption}\item[{const int}]{increment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_face_gpu_renderer_a6ebd9287927529ffaa4200890190896b}\label{classop_1_1_face_gpu_renderer_a6ebd9287927529ffaa4200890190896b}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily void op\+::\+Face\+Gpu\+Renderer\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_face_renderer_aa34ce7a0602b0994cc3043b80627a31c}{op\+::\+Face\+Renderer}}(으)로부터 재구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_face_renderer_acbbdaca16f4115a5a68d006f4f325397}\label{classop_1_1_face_renderer_acbbdaca16f4115a5a68d006f4f325397}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!renderFace@{renderFace}}
+\index{renderFace@{renderFace}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{renderFace()}{renderFace()}}
+{\footnotesize\ttfamily void op\+::\+Face\+Renderer\+::render\+Face (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{output\+Data,  }\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{face\+Keypoints,  }\item[{const float}]{scale\+Input\+To\+Output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_face_gpu_renderer_ae54b7538a6ed6a5eaedcbdc117a0d61c}\label{classop_1_1_face_gpu_renderer_ae54b7538a6ed6a5eaedcbdc117a0d61c}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!renderFaceInherited@{renderFaceInherited}}
+\index{renderFaceInherited@{renderFaceInherited}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{renderFaceInherited()}{renderFaceInherited()}}
+{\footnotesize\ttfamily void op\+::\+Face\+Gpu\+Renderer\+::render\+Face\+Inherited (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{output\+Data,  }\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{face\+Keypoints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_face_renderer_ac586e6ab78e15198b0121f6cdf765def}{op\+::\+Face\+Renderer}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_renderer_abaea1725725ff775aed0c120b2ba3d1f}\label{classop_1_1_renderer_abaea1725725ff775aed0c120b2ba3d1f}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!setAlphaHeatMap@{setAlphaHeatMap}}
+\index{setAlphaHeatMap@{setAlphaHeatMap}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{setAlphaHeatMap()}{setAlphaHeatMap()}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::set\+Alpha\+Heat\+Map (\begin{DoxyParamCaption}\item[{const float}]{alpha\+Heat\+Map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_renderer_a039e88897ed844551cadb115ea98e9ef}\label{classop_1_1_renderer_a039e88897ed844551cadb115ea98e9ef}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!setAlphaKeypoint@{setAlphaKeypoint}}
+\index{setAlphaKeypoint@{setAlphaKeypoint}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{setAlphaKeypoint()}{setAlphaKeypoint()}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::set\+Alpha\+Keypoint (\begin{DoxyParamCaption}\item[{const float}]{alpha\+Keypoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_renderer_aa8339054ed113d99ca70208d0cee5aa9}\label{classop_1_1_renderer_aa8339054ed113d99ca70208d0cee5aa9}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!setBlendOriginalFrame@{setBlendOriginalFrame}}
+\index{setBlendOriginalFrame@{setBlendOriginalFrame}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{setBlendOriginalFrame()}{setBlendOriginalFrame()}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::set\+Blend\+Original\+Frame (\begin{DoxyParamCaption}\item[{const bool}]{blend\+Original\+Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_renderer_a9d46c28d88225af94468c757ab1b26c1}\label{classop_1_1_renderer_a9d46c28d88225af94468c757ab1b26c1}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!setElementToRender@{setElementToRender}}
+\index{setElementToRender@{setElementToRender}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{setElementToRender()}{setElementToRender()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::set\+Element\+To\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_a37a23e10d9cbc428c793c3df1d62993e}{Element\+To\+Render}}}]{element\+To\+Render }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_renderer_afd48a9cb0be184303dce2969fa2f8e02}\label{classop_1_1_renderer_afd48a9cb0be184303dce2969fa2f8e02}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!setElementToRender@{setElementToRender}}
+\index{setElementToRender@{setElementToRender}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{setElementToRender()}{setElementToRender()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::set\+Element\+To\+Render (\begin{DoxyParamCaption}\item[{const int}]{element\+To\+Render }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_gpu_renderer_ac1642afb73d94c84eb12f4a97abfb9ac}\label{classop_1_1_gpu_renderer_ac1642afb73d94c84eb12f4a97abfb9ac}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!setSharedParametersAndIfLast@{setSharedParametersAndIfLast}}
+\index{setSharedParametersAndIfLast@{setSharedParametersAndIfLast}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{setSharedParametersAndIfLast()}{setSharedParametersAndIfLast()}}
+{\footnotesize\ttfamily void op\+::\+Gpu\+Renderer\+::set\+Shared\+Parameters\+And\+If\+Last (\begin{DoxyParamCaption}\item[{const std\+::tuple$<$ std\+::shared\+\_\+ptr$<$ float $\ast$ $>$, std\+::shared\+\_\+ptr$<$ bool $>$, std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ unsigned int $>$$>$, std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ unsigned long long $>$$>$, std\+::shared\+\_\+ptr$<$ const unsigned int $>$$>$ \&}]{tuple,  }\item[{const bool}]{is\+Last }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_renderer_ab226d47f554735fa3e0372ce429747c3}\label{classop_1_1_renderer_ab226d47f554735fa3e0372ce429747c3}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!setShowGooglyEyes@{setShowGooglyEyes}}
+\index{setShowGooglyEyes@{setShowGooglyEyes}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{setShowGooglyEyes()}{setShowGooglyEyes()}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::set\+Show\+Googly\+Eyes (\begin{DoxyParamCaption}\item[{const bool}]{show\+Googly\+Eyes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_renderer_a88449a7c29a48e157cd6b16089825be7}\label{classop_1_1_renderer_a88449a7c29a48e157cd6b16089825be7}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!mBlendOriginalFrame@{mBlendOriginalFrame}}
+\index{mBlendOriginalFrame@{mBlendOriginalFrame}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{mBlendOriginalFrame}{mBlendOriginalFrame}}
+{\footnotesize\ttfamily std\+::atomic$<$bool$>$ op\+::\+Renderer\+::m\+Blend\+Original\+Frame\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+renderer.\+hpp 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_renderer_adc4cd0a62008325c5c7df6df2f95a167}\label{classop_1_1_renderer_adc4cd0a62008325c5c7df6df2f95a167}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!mRenderThreshold@{mRenderThreshold}}
+\index{mRenderThreshold@{mRenderThreshold}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{mRenderThreshold}{mRenderThreshold}}
+{\footnotesize\ttfamily const float op\+::\+Renderer\+::m\+Render\+Threshold\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+renderer.\+hpp 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_renderer_ace2490fa3c5a87443e4d1e64007cd1ff}\label{classop_1_1_renderer_ace2490fa3c5a87443e4d1e64007cd1ff}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!mShowGooglyEyes@{mShowGooglyEyes}}
+\index{mShowGooglyEyes@{mShowGooglyEyes}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{mShowGooglyEyes}{mShowGooglyEyes}}
+{\footnotesize\ttfamily std\+::atomic$<$bool$>$ op\+::\+Renderer\+::m\+Show\+Googly\+Eyes\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+renderer.\+hpp 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_face_gpu_renderer_af3cf47156af1edf12ff5400a9ec52ca6}\label{classop_1_1_face_gpu_renderer_af3cf47156af1edf12ff5400a9ec52ca6}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!pGpuFace@{pGpuFace}}
+\index{pGpuFace@{pGpuFace}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{pGpuFace}{pGpuFace}}
+{\footnotesize\ttfamily float$\ast$ op\+::\+Face\+Gpu\+Renderer\+::p\+Gpu\+Face\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+face\+Gpu\+Renderer.\+hpp 파일의 25 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_renderer_aca8ebf0c0a50b87f0be82afa090155a0}\label{classop_1_1_renderer_aca8ebf0c0a50b87f0be82afa090155a0}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!spElementToRender@{spElementToRender}}
+\index{spElementToRender@{spElementToRender}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{spElementToRender}{spElementToRender}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::atomic$<$unsigned int$>$ $>$ op\+::\+Renderer\+::sp\+Element\+To\+Render\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+renderer.\+hpp 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_gpu_renderer_a5d729aab549908c758953be742dd0115}\label{classop_1_1_gpu_renderer_a5d729aab549908c758953be742dd0115}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!spGpuMemory@{spGpuMemory}}
+\index{spGpuMemory@{spGpuMemory}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{spGpuMemory}{spGpuMemory}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$float$\ast$$>$ op\+::\+Gpu\+Renderer\+::sp\+Gpu\+Memory\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+gpu\+Renderer.\+hpp 파일의 31 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_renderer_a3e04644546dd9990a16d0b6861b60553}\label{classop_1_1_renderer_a3e04644546dd9990a16d0b6861b60553}} 
+\index{op::FaceGpuRenderer@{op::FaceGpuRenderer}!spNumberElementsToRender@{spNumberElementsToRender}}
+\index{spNumberElementsToRender@{spNumberElementsToRender}!op::FaceGpuRenderer@{op::FaceGpuRenderer}}
+\doxysubsubsection{\texorpdfstring{spNumberElementsToRender}{spNumberElementsToRender}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$const unsigned int$>$ op\+::\+Renderer\+::sp\+Number\+Elements\+To\+Render\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+renderer.\+hpp 파일의 45 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/face/\mbox{\hyperlink{face_gpu_renderer_8hpp}{face\+Gpu\+Renderer.\+hpp}}\end{DoxyCompactItemize}

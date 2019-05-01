@@ -1,0 +1,414 @@
+\hypertarget{classop_1_1_body_part_connector_caffe}{}\doxysection{op\+::Body\+Part\+Connector\+Caffe$<$ T $>$ 클래스 템플릿 참조}
+\label{classop_1_1_body_part_connector_caffe}\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+
+
+{\ttfamily \#include $<$body\+Part\+Connector\+Caffe.\+hpp$>$}
+
+
+
+op\+::Body\+Part\+Connector\+Caffe$<$ T $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classop_1_1_body_part_connector_caffe__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a94e2364fa13ea79b2d6fd72c5db34765}{Body\+Part\+Connector\+Caffe}} ()
+\item 
+virtual \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_ab0beade5f7d8e56e881231e46f9306ec}{$\sim$\+Body\+Part\+Connector\+Caffe}} ()
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_abf26360f5d25fab82705270dae5f5d86}{Reshape}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom, const int gpu\+ID=0)
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_aec0d6f32107a6222406e73ca9ae4942d}{type}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a104744fdab14d4c1335eb8778edea21e}{set\+Pose\+Model}} (const \mbox{\hyperlink{namespaceop_af5b3ce2a5d3de87cb31b9b67e96f261f}{Pose\+Model}} pose\+Model)
+\item 
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a6d859f2e218b1ea707fddcaf0911886d}{set\+Maximize\+Positives}} (const bool maximize\+Positives)
+\item 
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a789c77e69e5590a78b22e1e5f5cc4efc}{set\+Inter\+Min\+Above\+Threshold}} (const T inter\+Min\+Above\+Threshold)
+\item 
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a75d0a3f3c8dca99c8a9e1b680098da16}{set\+Inter\+Threshold}} (const T inter\+Threshold)
+\item 
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a6442721373481873ddeb9ffd7c6fdb7b}{set\+Min\+Subset\+Cnt}} (const int min\+Subset\+Cnt)
+\item 
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a9b9fa9490fef0121a70c3d6d749272f7}{set\+Min\+Subset\+Score}} (const T min\+Subset\+Score)
+\item 
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a0bad959b2da005b62cab962327ccba01}{set\+Scale\+Net\+To\+Output}} (const T scale\+Net\+To\+Output)
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a52cc46828bc7720a62fbbe841022331e}{Forward}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom, \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&pose\+Keypoints, \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&pose\+Scores)
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a03364fbed0c71e76eb5fb1f61a397de8}{Forward\+\_\+cpu}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom, \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&pose\+Keypoints, \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&pose\+Scores)
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a9dbcac7de4a57a58733462f3ce1db10c}{Forward\+\_\+gpu}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom, \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&pose\+Keypoints, \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&pose\+Scores)
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a51324177e60bf260f6c2def76e9e3d7d}{Forward\+\_\+ocl}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom, \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&pose\+Keypoints, \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&pose\+Scores)
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a8ad522722607c9ff6299337019f04175}{Backward\+\_\+cpu}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&top, const std\+::vector$<$ bool $>$ \&propagate\+\_\+down, const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom)
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_ace9cba081581a4c58fcfbef73b6dd11b}{Backward\+\_\+gpu}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&top, const std\+::vector$<$ bool $>$ \&propagate\+\_\+down, const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_body_part_connector_caffe_ad6d5e6b6d2201dc52faff2702b474853}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{Body\+Part\+Connector\+Caffe}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceop_af5b3ce2a5d3de87cb31b9b67e96f261f}{Pose\+Model}} \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_ad6adb2beb81c251b0e1652dc9774ea13}{m\+Pose\+Model}}
+\item 
+bool \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a12e0849f08eb5c89968ccb31665ea299}{m\+Maximize\+Positives}}
+\item 
+T \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a43413851f61dd1219d28dc5be51e9175}{m\+Inter\+Min\+Above\+Threshold}}
+\item 
+T \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_ab6eaa1014e033cedb636c563fc0f3e7c}{m\+Inter\+Threshold}}
+\item 
+int \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a998386ed75dfb98195e798cec4b0a9fe}{m\+Min\+Subset\+Cnt}}
+\item 
+T \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_ae87625dc50b2c9dcf5b14a24637aa104}{m\+Min\+Subset\+Score}}
+\item 
+T \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a46bf70607e534665b23b82f4c1701c25}{m\+Scale\+Net\+To\+Output}}
+\item 
+std\+::array$<$ int, 4 $>$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_aa15d757c411095972d232f8cfec96bcd}{m\+Heat\+Maps\+Size}}
+\item 
+std\+::array$<$ int, 4 $>$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a6c2b10aa3aa28e84bb4bd5de88884aca}{m\+Peaks\+Size}}
+\item 
+std\+::array$<$ int, 4 $>$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a33a1e5dfe13a1e92ae4535f7bf44b699}{m\+Top\+Size}}
+\item 
+unsigned int $\ast$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a3bb4fdc7ea222205b1dfa033319ef6e4}{p\+Body\+Part\+Pairs\+Gpu\+Ptr}}
+\item 
+unsigned int $\ast$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_abec6ceabe5c51210fe0f3872adeeb528}{p\+Map\+Idx\+Gpu\+Ptr}}
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a4280cb99e0121f7ce830f70458cad8bf}{m\+Final\+Output\+Cpu}}
+\item 
+T $\ast$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_aff144f54cad95bbacaf6cc4cbd151b2d}{p\+Final\+Output\+Gpu\+Ptr}}
+\item 
+int \mbox{\hyperlink{classop_1_1_body_part_connector_caffe_a8712b04d78a90e9f7d8349fac95beec8}{m\+Gpu\+ID}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T$>$\newline
+class op\+::\+Body\+Part\+Connector\+Caffe$<$ T $>$}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 13 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a94e2364fa13ea79b2d6fd72c5db34765}\label{classop_1_1_body_part_connector_caffe_a94e2364fa13ea79b2d6fd72c5db34765}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!BodyPartConnectorCaffe@{BodyPartConnectorCaffe}}
+\index{BodyPartConnectorCaffe@{BodyPartConnectorCaffe}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BodyPartConnectorCaffe()}{BodyPartConnectorCaffe()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::\mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{Body\+Part\+Connector\+Caffe}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_ab0beade5f7d8e56e881231e46f9306ec}\label{classop_1_1_body_part_connector_caffe_ab0beade5f7d8e56e881231e46f9306ec}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!````~BodyPartConnectorCaffe@{$\sim$BodyPartConnectorCaffe}}
+\index{````~BodyPartConnectorCaffe@{$\sim$BodyPartConnectorCaffe}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$BodyPartConnectorCaffe()}{~BodyPartConnectorCaffe()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{Body\+Part\+Connector\+Caffe}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a8ad522722607c9ff6299337019f04175}\label{classop_1_1_body_part_connector_caffe_a8ad522722607c9ff6299337019f04175}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!Backward\_cpu@{Backward\_cpu}}
+\index{Backward\_cpu@{Backward\_cpu}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Backward\_cpu()}{Backward\_cpu()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::Backward\+\_\+cpu (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{top,  }\item[{const std\+::vector$<$ bool $>$ \&}]{propagate\+\_\+down,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_ace9cba081581a4c58fcfbef73b6dd11b}\label{classop_1_1_body_part_connector_caffe_ace9cba081581a4c58fcfbef73b6dd11b}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!Backward\_gpu@{Backward\_gpu}}
+\index{Backward\_gpu@{Backward\_gpu}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Backward\_gpu()}{Backward\_gpu()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::Backward\+\_\+gpu (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{top,  }\item[{const std\+::vector$<$ bool $>$ \&}]{propagate\+\_\+down,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_ad6d5e6b6d2201dc52faff2702b474853}\label{classop_1_1_body_part_connector_caffe_ad6d5e6b6d2201dc52faff2702b474853}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{Body\+Part\+Connector\+Caffe}}$<$ T $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a52cc46828bc7720a62fbbe841022331e}\label{classop_1_1_body_part_connector_caffe_a52cc46828bc7720a62fbbe841022331e}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!Forward@{Forward}}
+\index{Forward@{Forward}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Forward()}{Forward()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::Forward (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom,  }\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&}]{pose\+Keypoints,  }\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&}]{pose\+Scores }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a03364fbed0c71e76eb5fb1f61a397de8}\label{classop_1_1_body_part_connector_caffe_a03364fbed0c71e76eb5fb1f61a397de8}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!Forward\_cpu@{Forward\_cpu}}
+\index{Forward\_cpu@{Forward\_cpu}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Forward\_cpu()}{Forward\_cpu()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::Forward\+\_\+cpu (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom,  }\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&}]{pose\+Keypoints,  }\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&}]{pose\+Scores }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a9dbcac7de4a57a58733462f3ce1db10c}\label{classop_1_1_body_part_connector_caffe_a9dbcac7de4a57a58733462f3ce1db10c}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!Forward\_gpu@{Forward\_gpu}}
+\index{Forward\_gpu@{Forward\_gpu}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Forward\_gpu()}{Forward\_gpu()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::Forward\+\_\+gpu (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom,  }\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&}]{pose\+Keypoints,  }\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&}]{pose\+Scores }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a51324177e60bf260f6c2def76e9e3d7d}\label{classop_1_1_body_part_connector_caffe_a51324177e60bf260f6c2def76e9e3d7d}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!Forward\_ocl@{Forward\_ocl}}
+\index{Forward\_ocl@{Forward\_ocl}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Forward\_ocl()}{Forward\_ocl()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::Forward\+\_\+ocl (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom,  }\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&}]{pose\+Keypoints,  }\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&}]{pose\+Scores }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_abf26360f5d25fab82705270dae5f5d86}\label{classop_1_1_body_part_connector_caffe_abf26360f5d25fab82705270dae5f5d86}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!Reshape@{Reshape}}
+\index{Reshape@{Reshape}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Reshape()}{Reshape()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::Reshape (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom,  }\item[{const int}]{gpu\+ID = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a789c77e69e5590a78b22e1e5f5cc4efc}\label{classop_1_1_body_part_connector_caffe_a789c77e69e5590a78b22e1e5f5cc4efc}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!setInterMinAboveThreshold@{setInterMinAboveThreshold}}
+\index{setInterMinAboveThreshold@{setInterMinAboveThreshold}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setInterMinAboveThreshold()}{setInterMinAboveThreshold()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::set\+Inter\+Min\+Above\+Threshold (\begin{DoxyParamCaption}\item[{const T}]{inter\+Min\+Above\+Threshold }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a75d0a3f3c8dca99c8a9e1b680098da16}\label{classop_1_1_body_part_connector_caffe_a75d0a3f3c8dca99c8a9e1b680098da16}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!setInterThreshold@{setInterThreshold}}
+\index{setInterThreshold@{setInterThreshold}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setInterThreshold()}{setInterThreshold()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::set\+Inter\+Threshold (\begin{DoxyParamCaption}\item[{const T}]{inter\+Threshold }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a6d859f2e218b1ea707fddcaf0911886d}\label{classop_1_1_body_part_connector_caffe_a6d859f2e218b1ea707fddcaf0911886d}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!setMaximizePositives@{setMaximizePositives}}
+\index{setMaximizePositives@{setMaximizePositives}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setMaximizePositives()}{setMaximizePositives()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::set\+Maximize\+Positives (\begin{DoxyParamCaption}\item[{const bool}]{maximize\+Positives }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a6442721373481873ddeb9ffd7c6fdb7b}\label{classop_1_1_body_part_connector_caffe_a6442721373481873ddeb9ffd7c6fdb7b}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!setMinSubsetCnt@{setMinSubsetCnt}}
+\index{setMinSubsetCnt@{setMinSubsetCnt}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setMinSubsetCnt()}{setMinSubsetCnt()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::set\+Min\+Subset\+Cnt (\begin{DoxyParamCaption}\item[{const int}]{min\+Subset\+Cnt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a9b9fa9490fef0121a70c3d6d749272f7}\label{classop_1_1_body_part_connector_caffe_a9b9fa9490fef0121a70c3d6d749272f7}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!setMinSubsetScore@{setMinSubsetScore}}
+\index{setMinSubsetScore@{setMinSubsetScore}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setMinSubsetScore()}{setMinSubsetScore()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::set\+Min\+Subset\+Score (\begin{DoxyParamCaption}\item[{const T}]{min\+Subset\+Score }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a104744fdab14d4c1335eb8778edea21e}\label{classop_1_1_body_part_connector_caffe_a104744fdab14d4c1335eb8778edea21e}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!setPoseModel@{setPoseModel}}
+\index{setPoseModel@{setPoseModel}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setPoseModel()}{setPoseModel()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::set\+Pose\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_af5b3ce2a5d3de87cb31b9b67e96f261f}{Pose\+Model}}}]{pose\+Model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a0bad959b2da005b62cab962327ccba01}\label{classop_1_1_body_part_connector_caffe_a0bad959b2da005b62cab962327ccba01}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!setScaleNetToOutput@{setScaleNetToOutput}}
+\index{setScaleNetToOutput@{setScaleNetToOutput}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setScaleNetToOutput()}{setScaleNetToOutput()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::set\+Scale\+Net\+To\+Output (\begin{DoxyParamCaption}\item[{const T}]{scale\+Net\+To\+Output }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_aec0d6f32107a6222406e73ca9ae4942d}\label{classop_1_1_body_part_connector_caffe_aec0d6f32107a6222406e73ca9ae4942d}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!type@{type}}
+\index{type@{type}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual const char$\ast$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 22 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"BodyPartConnector"}; \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a4280cb99e0121f7ce830f70458cad8bf}\label{classop_1_1_body_part_connector_caffe_a4280cb99e0121f7ce830f70458cad8bf}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!mFinalOutputCpu@{mFinalOutputCpu}}
+\index{mFinalOutputCpu@{mFinalOutputCpu}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mFinalOutputCpu}{mFinalOutputCpu}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$T$>$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::m\+Final\+Output\+Cpu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 70 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a8712b04d78a90e9f7d8349fac95beec8}\label{classop_1_1_body_part_connector_caffe_a8712b04d78a90e9f7d8349fac95beec8}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!mGpuID@{mGpuID}}
+\index{mGpuID@{mGpuID}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mGpuID}{mGpuID}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::m\+Gpu\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 72 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_aa15d757c411095972d232f8cfec96bcd}\label{classop_1_1_body_part_connector_caffe_aa15d757c411095972d232f8cfec96bcd}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!mHeatMapsSize@{mHeatMapsSize}}
+\index{mHeatMapsSize@{mHeatMapsSize}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mHeatMapsSize}{mHeatMapsSize}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::array$<$int, 4$>$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::m\+Heat\+Maps\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 64 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a43413851f61dd1219d28dc5be51e9175}\label{classop_1_1_body_part_connector_caffe_a43413851f61dd1219d28dc5be51e9175}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!mInterMinAboveThreshold@{mInterMinAboveThreshold}}
+\index{mInterMinAboveThreshold@{mInterMinAboveThreshold}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mInterMinAboveThreshold}{mInterMinAboveThreshold}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::m\+Inter\+Min\+Above\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 59 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_ab6eaa1014e033cedb636c563fc0f3e7c}\label{classop_1_1_body_part_connector_caffe_ab6eaa1014e033cedb636c563fc0f3e7c}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!mInterThreshold@{mInterThreshold}}
+\index{mInterThreshold@{mInterThreshold}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mInterThreshold}{mInterThreshold}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::m\+Inter\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 60 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a12e0849f08eb5c89968ccb31665ea299}\label{classop_1_1_body_part_connector_caffe_a12e0849f08eb5c89968ccb31665ea299}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!mMaximizePositives@{mMaximizePositives}}
+\index{mMaximizePositives@{mMaximizePositives}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mMaximizePositives}{mMaximizePositives}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::m\+Maximize\+Positives\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 58 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a998386ed75dfb98195e798cec4b0a9fe}\label{classop_1_1_body_part_connector_caffe_a998386ed75dfb98195e798cec4b0a9fe}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!mMinSubsetCnt@{mMinSubsetCnt}}
+\index{mMinSubsetCnt@{mMinSubsetCnt}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mMinSubsetCnt}{mMinSubsetCnt}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::m\+Min\+Subset\+Cnt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 61 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_ae87625dc50b2c9dcf5b14a24637aa104}\label{classop_1_1_body_part_connector_caffe_ae87625dc50b2c9dcf5b14a24637aa104}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!mMinSubsetScore@{mMinSubsetScore}}
+\index{mMinSubsetScore@{mMinSubsetScore}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mMinSubsetScore}{mMinSubsetScore}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::m\+Min\+Subset\+Score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 62 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a6c2b10aa3aa28e84bb4bd5de88884aca}\label{classop_1_1_body_part_connector_caffe_a6c2b10aa3aa28e84bb4bd5de88884aca}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!mPeaksSize@{mPeaksSize}}
+\index{mPeaksSize@{mPeaksSize}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mPeaksSize}{mPeaksSize}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::array$<$int, 4$>$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::m\+Peaks\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 65 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_ad6adb2beb81c251b0e1652dc9774ea13}\label{classop_1_1_body_part_connector_caffe_ad6adb2beb81c251b0e1652dc9774ea13}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!mPoseModel@{mPoseModel}}
+\index{mPoseModel@{mPoseModel}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mPoseModel}{mPoseModel}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceop_af5b3ce2a5d3de87cb31b9b67e96f261f}{Pose\+Model}} \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::m\+Pose\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 57 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a46bf70607e534665b23b82f4c1701c25}\label{classop_1_1_body_part_connector_caffe_a46bf70607e534665b23b82f4c1701c25}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!mScaleNetToOutput@{mScaleNetToOutput}}
+\index{mScaleNetToOutput@{mScaleNetToOutput}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mScaleNetToOutput}{mScaleNetToOutput}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::m\+Scale\+Net\+To\+Output\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 63 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a33a1e5dfe13a1e92ae4535f7bf44b699}\label{classop_1_1_body_part_connector_caffe_a33a1e5dfe13a1e92ae4535f7bf44b699}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!mTopSize@{mTopSize}}
+\index{mTopSize@{mTopSize}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mTopSize}{mTopSize}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::array$<$int, 4$>$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::m\+Top\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 66 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_a3bb4fdc7ea222205b1dfa033319ef6e4}\label{classop_1_1_body_part_connector_caffe_a3bb4fdc7ea222205b1dfa033319ef6e4}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!pBodyPartPairsGpuPtr@{pBodyPartPairsGpuPtr}}
+\index{pBodyPartPairsGpuPtr@{pBodyPartPairsGpuPtr}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pBodyPartPairsGpuPtr}{pBodyPartPairsGpuPtr}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+unsigned int$\ast$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::p\+Body\+Part\+Pairs\+Gpu\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 68 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_aff144f54cad95bbacaf6cc4cbd151b2d}\label{classop_1_1_body_part_connector_caffe_aff144f54cad95bbacaf6cc4cbd151b2d}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!pFinalOutputGpuPtr@{pFinalOutputGpuPtr}}
+\index{pFinalOutputGpuPtr@{pFinalOutputGpuPtr}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pFinalOutputGpuPtr}{pFinalOutputGpuPtr}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::p\+Final\+Output\+Gpu\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 71 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_body_part_connector_caffe_abec6ceabe5c51210fe0f3872adeeb528}\label{classop_1_1_body_part_connector_caffe_abec6ceabe5c51210fe0f3872adeeb528}} 
+\index{op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}!pMapIdxGpuPtr@{pMapIdxGpuPtr}}
+\index{pMapIdxGpuPtr@{pMapIdxGpuPtr}!op::BodyPartConnectorCaffe$<$ T $>$@{op::BodyPartConnectorCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pMapIdxGpuPtr}{pMapIdxGpuPtr}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+unsigned int$\ast$ \mbox{\hyperlink{classop_1_1_body_part_connector_caffe}{op\+::\+Body\+Part\+Connector\+Caffe}}$<$ T $>$\+::p\+Map\+Idx\+Gpu\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+body\+Part\+Connector\+Caffe.\+hpp 파일의 69 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/net/\mbox{\hyperlink{body_part_connector_caffe_8hpp}{body\+Part\+Connector\+Caffe.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,2531 @@
+\hypertarget{classcl_1_1_command_queue}{}\doxysection{cl\+::Command\+Queue 클래스 참조}
+\label{classcl_1_1_command_queue}\index{cl::CommandQueue@{cl::CommandQueue}}
+
+
+\mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} interface for cl\+\_\+command\+\_\+queue.  
+
+
+
+
+{\ttfamily \#include $<$cl2.\+hpp$>$}
+
+
+
+cl\+::Command\+Queue에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcl_1_1_command_queue__inherit__graph}
+\end{center}
+\end{figure}
+
+
+cl\+::Command\+Queue에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcl_1_1_command_queue__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+typedef cl\+\_\+command\+\_\+queue \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1_command_queue_a8462de408ebfaf6332429a92b7938490}{Command\+Queue}} (cl\+\_\+command\+\_\+queue\+\_\+properties properties, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} based on passed properties. Will return an C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES error if C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+N\+\_\+\+D\+E\+V\+I\+CE is specified. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_command_queue_a05ae8e9e44e9b28fc755937490535550}{Command\+Queue}} (\mbox{\hyperlink{namespacecl_a6b1e69bec24f2a7f89eb17c265060e0d}{Queue\+Properties}} properties, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} based on passed properties. Will return an C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES error if C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+N\+\_\+\+D\+E\+V\+I\+CE is specified. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_command_queue_adcb116a4e1a53417dad3d3850c33d42f}{Command\+Queue}} (const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&context, cl\+\_\+command\+\_\+queue\+\_\+properties properties=0, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} for an implementation defined device in the given context Will return an C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES error if C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+N\+\_\+\+D\+E\+V\+I\+CE is specified. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_command_queue_a975c3dce399cb77a5c6b0e294e4778fe}{Command\+Queue}} (const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&context, \mbox{\hyperlink{namespacecl_a6b1e69bec24f2a7f89eb17c265060e0d}{Queue\+Properties}} properties, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} for an implementation defined device in the given context Will return an C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES error if C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+N\+\_\+\+D\+E\+V\+I\+CE is specified. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_command_queue_a887826e515b03224aec87b33ac59f327}{Command\+Queue}} (const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&context, const \mbox{\hyperlink{classcl_1_1_device}{Device}} \&device, cl\+\_\+command\+\_\+queue\+\_\+properties properties=0, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} for a passed device and context Will return an C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES error if C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+N\+\_\+\+D\+E\+V\+I\+CE is specified. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_command_queue_a8dd467bd94839921b7318cb30f92b5a4}{Command\+Queue}} (const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&context, const \mbox{\hyperlink{classcl_1_1_device}{Device}} \&device, \mbox{\hyperlink{namespacecl_a6b1e69bec24f2a7f89eb17c265060e0d}{Queue\+Properties}} properties, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} for a passed device and context Will return an C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES error if C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+N\+\_\+\+D\+E\+V\+I\+CE is specified. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_command_queue_ab1beb7ab6e619a4e050d87c70bb001a6}{Command\+Queue}} ()
+\item 
+\mbox{\hyperlink{classcl_1_1_command_queue_a09be675998c51f36aa7744b47eabebd3}{Command\+Queue}} (const cl\+\_\+command\+\_\+queue \&command\+Queue, bool retain\+Object=false)
+\begin{DoxyCompactList}\small\item\em Constructor from cl\+\_\+mem -\/ takes ownership. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \& \mbox{\hyperlink{classcl_1_1_command_queue_a30d0117e538d0c080333cb21afd7e18d}{operator=}} (const cl\+\_\+command\+\_\+queue \&rhs)
+\item 
+\mbox{\hyperlink{classcl_1_1_command_queue_ae2ce434c5100e5b467ea8c6561e1f11e}{Command\+Queue}} (const \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&queue)
+\begin{DoxyCompactList}\small\item\em Copy constructor to forward copy to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \& \mbox{\hyperlink{classcl_1_1_command_queue_aafedf5e6899afe6097062277e4c3da17}{operator=}} (const \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&queue)
+\begin{DoxyCompactList}\small\item\em Copy assignment to forward copy to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_command_queue_a1c5830678be567e34dccbb0065c89b21}{Command\+Queue}} (\mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&\&queue) \mbox{\hyperlink{cl2_8hpp_a7fcfde26c9e031daf0c6fbb637ed7ac0}{C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Move constructor to forward move to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \& \mbox{\hyperlink{classcl_1_1_command_queue_af448f36396f06bcf9fffd5762c15d67d}{operator=}} (\mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&\&queue)
+\begin{DoxyCompactList}\small\item\em Move assignment to forward move to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a24ba91cef5c88b386b5ecad998501503}{get\+Info}} (cl\+\_\+command\+\_\+queue\+\_\+info name, T $\ast$param) const
+\item 
+{\footnotesize template$<$cl\+\_\+int name$>$ }\\\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$ detail\+::cl\+\_\+command\+\_\+queue\+\_\+info, name $>$\+::param\+\_\+type \mbox{\hyperlink{classcl_1_1_command_queue_a66638b5e76c09e955a4b9c4bd4e0263f}{get\+Info}} (cl\+\_\+int $\ast$err=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a81f78df7eadfd5202e1e670aacb16014}{enqueue\+Read\+Buffer}} (const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&buffer, cl\+\_\+bool blocking, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} offset, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size, void $\ast$ptr, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_acee8965ec3b645fd416d6448516b346c}{enqueue\+Write\+Buffer}} (const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&buffer, cl\+\_\+bool blocking, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} offset, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size, const void $\ast$ptr, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a5708cb52ca4ef7dd61d774e7aad2ef95}{enqueue\+Copy\+Buffer}} (const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&src, const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&dst, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} src\+\_\+offset, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} dst\+\_\+offset, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_ae8b7b02623f13b393a79e3ff9916d270}{enqueue\+Read\+Buffer\+Rect}} (const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&buffer, cl\+\_\+bool blocking, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&buffer\+\_\+offset, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&host\+\_\+offset, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&region, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} buffer\+\_\+row\+\_\+pitch, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} buffer\+\_\+slice\+\_\+pitch, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} host\+\_\+row\+\_\+pitch, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} host\+\_\+slice\+\_\+pitch, void $\ast$ptr, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a84669123946c99690f32c08276b9512a}{enqueue\+Write\+Buffer\+Rect}} (const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&buffer, cl\+\_\+bool blocking, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&buffer\+\_\+offset, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&host\+\_\+offset, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&region, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} buffer\+\_\+row\+\_\+pitch, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} buffer\+\_\+slice\+\_\+pitch, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} host\+\_\+row\+\_\+pitch, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} host\+\_\+slice\+\_\+pitch, const void $\ast$ptr, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a83096c6bf792527c8c606a653d6b308b}{enqueue\+Copy\+Buffer\+Rect}} (const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&src, const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&dst, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&src\+\_\+origin, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&dst\+\_\+origin, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&region, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} src\+\_\+row\+\_\+pitch, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} src\+\_\+slice\+\_\+pitch, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} dst\+\_\+row\+\_\+pitch, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} dst\+\_\+slice\+\_\+pitch, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+{\footnotesize template$<$typename Pattern\+Type $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a09f546d77b717ce26606c462c0ca9d1c}{enqueue\+Fill\+Buffer}} (const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&buffer, Pattern\+Type pattern, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} offset, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_abcd7ead0f68caafafffae2cb7be75c0b}{enqueue\+Read\+Image}} (const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&image, cl\+\_\+bool blocking, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&origin, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&region, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} row\+\_\+pitch, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} slice\+\_\+pitch, void $\ast$ptr, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a88e335f69c0e65b624c670e0dfe10e59}{enqueue\+Write\+Image}} (const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&image, cl\+\_\+bool blocking, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&origin, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&region, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} row\+\_\+pitch, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} slice\+\_\+pitch, const void $\ast$ptr, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a97e4e3e6c2183aa6254901dc62ed1e0e}{enqueue\+Copy\+Image}} (const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&src, const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&dst, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&src\+\_\+origin, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&dst\+\_\+origin, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&region, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a9c3230b644ad638973be7199e0451e46}{enqueue\+Fill\+Image}} (const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&image, cl\+\_\+float4 fill\+Color, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&origin, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&region, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_acb2c278ef4f177c5d01035c008a5cb3e}{enqueue\+Fill\+Image}} (const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&image, cl\+\_\+int4 fill\+Color, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&origin, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&region, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a3081328f7b10be88e87eb719d3ad6307}{enqueue\+Fill\+Image}} (const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&image, cl\+\_\+uint4 fill\+Color, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&origin, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&region, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_acaaa991a224cae832f2fe743e66b3773}{enqueue\+Copy\+Image\+To\+Buffer}} (const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&src, const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&dst, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&src\+\_\+origin, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&region, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} dst\+\_\+offset, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a4bf243bc86af453851faa779d5aa3c9e}{enqueue\+Copy\+Buffer\+To\+Image}} (const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&src, const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&dst, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} src\+\_\+offset, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&dst\+\_\+origin, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&region, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+void $\ast$ \mbox{\hyperlink{classcl_1_1_command_queue_a609517b0dec41b4e9e9258800b4534af}{enqueue\+Map\+Buffer}} (const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&buffer, cl\+\_\+bool blocking, cl\+\_\+map\+\_\+flags flags, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} offset, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL, cl\+\_\+int $\ast$err=N\+U\+LL) const
+\item 
+void $\ast$ \mbox{\hyperlink{classcl_1_1_command_queue_aba5a93548056faa707ed195d76783a70}{enqueue\+Map\+Image}} (const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&buffer, cl\+\_\+bool blocking, cl\+\_\+map\+\_\+flags flags, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&origin, const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&region, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} $\ast$row\+\_\+pitch, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} $\ast$slice\+\_\+pitch, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL, cl\+\_\+int $\ast$err=N\+U\+LL) const
+\item 
+{\footnotesize template$<$typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_aec8211d19eb2ffbb8adc7f565fe61c3c}{enqueue\+Map\+S\+VM}} (T $\ast$ptr, cl\+\_\+bool blocking, cl\+\_\+map\+\_\+flags flags, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+{\footnotesize template$<$typename T , class D $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a58d16044448bcb2797f490a33e450bde}{enqueue\+Map\+S\+VM}} (\mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}}$<$ T, D $>$ \&ptr, cl\+\_\+bool blocking, cl\+\_\+map\+\_\+flags flags, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+{\footnotesize template$<$typename T , class Alloc $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a30fcb95415b760f23b2abba6e0842125}{enqueue\+Map\+S\+VM}} (\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl\+::vector}}$<$ T, Alloc $>$ \&container, cl\+\_\+bool blocking, cl\+\_\+map\+\_\+flags flags, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_abf59626241152db7c2c986198ad32bba}{enqueue\+Unmap\+Mem\+Object}} (const \mbox{\hyperlink{classcl_1_1_memory}{Memory}} \&memory, void $\ast$mapped\+\_\+ptr, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+{\footnotesize template$<$typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_affae2ea7a86c23e01c11fbdcdc149300}{enqueue\+Unmap\+S\+VM}} (T $\ast$ptr, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+{\footnotesize template$<$typename T , class D $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a8818c06a2f28a319d5259be7374c93fc}{enqueue\+Unmap\+S\+VM}} (\mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}}$<$ T, D $>$ \&ptr, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+{\footnotesize template$<$typename T , class Alloc $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_af7e83f7dec93b2700b8ce4380d81bfcb}{enqueue\+Unmap\+S\+VM}} (\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl\+::vector}}$<$ T, Alloc $>$ \&container, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a7fcfee2b6739e6c4aaf49dd3e690da76}{enqueue\+Marker\+With\+Wait\+List}} (const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=0, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=0)
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_ae852576fe5e8e925fca2812f57fc94b5}{enqueue\+Barrier\+With\+Wait\+List}} (const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=0, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=0)
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_aacf7eb07723c00bd3a872f69b0b1871b}{enqueue\+Migrate\+Mem\+Objects}} (const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_memory}{Memory}} $>$ \&mem\+Objects, cl\+\_\+mem\+\_\+migration\+\_\+flags flags, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL)
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a0e6d2ed1031239edaf9134a15ad1a816}{enqueue\+N\+D\+Range\+Kernel}} (const \mbox{\hyperlink{classcl_1_1_kernel}{Kernel}} \&kernel, const \mbox{\hyperlink{classcl_1_1_n_d_range}{N\+D\+Range}} \&offset, const \mbox{\hyperlink{classcl_1_1_n_d_range}{N\+D\+Range}} \&global, const \mbox{\hyperlink{classcl_1_1_n_d_range}{N\+D\+Range}} \&local=\mbox{\hyperlink{namespacecl_afbb06364f32694f32b6944a3794d8af7}{Null\+Range}}, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a53ff05e345b2160cceae073b0e56f7ab}{enqueue\+Native\+Kernel}} (void(\mbox{\hyperlink{cl2_8hpp_a193b43da2ce23c54788f9b4d4f0f4740}{C\+L\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} $\ast$user\+Fptr)(void $\ast$), std\+::pair$<$ void $\ast$, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} $>$ args, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_memory}{Memory}} $>$ $\ast$mem\+\_\+objects=N\+U\+LL, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ const void $\ast$ $>$ $\ast$mem\+\_\+locs=N\+U\+LL, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_ae9b8fbe11859b0d9b2ad317fcfdcaced}{enqueue\+Acquire\+G\+L\+Objects}} (const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_memory}{Memory}} $>$ $\ast$mem\+\_\+objects=N\+U\+LL, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_aea30fd364c0ba14f3fd9f260b8a9ad1f}{enqueue\+Release\+G\+L\+Objects}} (const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_memory}{Memory}} $>$ $\ast$mem\+\_\+objects=N\+U\+LL, const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$events=N\+U\+LL, \mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$event=N\+U\+LL) const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a3cba88b51715610d76b0956140be9655}{flush}} () const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a511d461b0f5fabc8d737f4f29a4f346e}{finish}} () const
+\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}{operator()}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}{operator()}} ()
+\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}{get}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}{get}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \mbox{\hyperlink{classcl_1_1_command_queue_a24444b0dbd7cc0eb2bce126c9ccbac4c}{get\+Default}} (cl\+\_\+int $\ast$err=N\+U\+LL)
+\item 
+static \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \mbox{\hyperlink{classcl_1_1_command_queue_a736a138dd72e39056e8a9aa3dec5d132}{set\+Default}} (const \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&default\+\_\+queue)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}{retain}} () const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}{release}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcl_1_1_command_queue_a18c1118d0c12a5175351ac24d4bcd9ae}{make\+Default}} ()
+\begin{DoxyCompactList}\small\item\em Create the default command queue returned by \mbox{\hyperlink{classcl_1_1_command_queue_a24444b0dbd7cc0eb2bce126c9ccbac4c}{get\+Default}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classcl_1_1_command_queue_a2a84b82b7ed4c788bc39e407368e051a}{make\+Default\+Provided}} (const \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&c)
+\begin{DoxyCompactList}\small\item\em Create the default command queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::once\+\_\+flag \mbox{\hyperlink{classcl_1_1_command_queue_ab94813bab45d4274edae3cf86c00d2fc}{default\+\_\+initialized\+\_\+}}
+\item 
+static \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \mbox{\hyperlink{classcl_1_1_command_queue_a6f7c8bb9d56990403275d8894cbf6f83}{default\+\_\+}}
+\item 
+static cl\+\_\+int \mbox{\hyperlink{classcl_1_1_command_queue_a12cb59bdae1879389c45cecbfb816ed2}{default\+\_\+error\+\_\+}} = C\+L\+\_\+\+S\+U\+C\+C\+E\+SS
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} interface for cl\+\_\+command\+\_\+queue. 
+
+cl2.\+hpp 파일의 6618 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 타입정의 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}\label{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!cl\_type@{cl\_type}}
+\index{cl\_type@{cl\_type}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{cl\_type}{cl\_type}}
+{\footnotesize\ttfamily typedef cl\+\_\+command\+\_\+queue  \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+command\+\_\+queue  $>$\+::\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1637 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a8462de408ebfaf6332429a92b7938490}\label{classcl_1_1_command_queue_a8462de408ebfaf6332429a92b7938490}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!CommandQueue@{CommandQueue}}
+\index{CommandQueue@{CommandQueue}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{CommandQueue()}{CommandQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily cl\+::\+Command\+Queue\+::\+Command\+Queue (\begin{DoxyParamCaption}\item[{cl\+\_\+command\+\_\+queue\+\_\+properties}]{properties,  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} based on passed properties. Will return an C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES error if C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+N\+\_\+\+D\+E\+V\+I\+CE is specified. 
+
+
+
+cl2.\+hpp 파일의 6684 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6687     \{}
+\DoxyCodeLine{6688         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6689 }
+\DoxyCodeLine{6690         Context context = \mbox{\hyperlink{classcl_1_1_context_ad180f6f7d8b5a95710ab72f96162b051}{Context::getDefault}}(\&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6691         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_CONTEXT\_ERR);}
+\DoxyCodeLine{6692 }
+\DoxyCodeLine{6693         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} != CL\_SUCCESS) \{}
+\DoxyCodeLine{6694             \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6695                 *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6696             \}}
+\DoxyCodeLine{6697         \}}
+\DoxyCodeLine{6698         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{6699             Device device = context.getInfo<CL\_CONTEXT\_DEVICES>()[0];}
+\DoxyCodeLine{6700 }
+\DoxyCodeLine{6701 \textcolor{preprocessor}{\#if CL\_HPP\_TARGET\_OPENCL\_VERSION >= 200}}
+\DoxyCodeLine{6702             cl\_queue\_properties queue\_properties[] = \{}
+\DoxyCodeLine{6703                 CL\_QUEUE\_PROPERTIES, properties, 0 \};}
+\DoxyCodeLine{6704             \textcolor{keywordflow}{if} ((properties \& CL\_QUEUE\_ON\_DEVICE) == 0) \{}
+\DoxyCodeLine{6705                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateCommandQueueWithProperties(}
+\DoxyCodeLine{6706                     context(), device(), queue\_properties, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6707             \}}
+\DoxyCodeLine{6708             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{6709                 \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} = CL\_INVALID\_QUEUE\_PROPERTIES;}
+\DoxyCodeLine{6710             \}}
+\DoxyCodeLine{6711 }
+\DoxyCodeLine{6712             \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_COMMAND\_QUEUE\_WITH\_PROPERTIES\_ERR);}
+\DoxyCodeLine{6713             \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6714                 *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6715             \}}
+\DoxyCodeLine{6716 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{6717             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateCommandQueue(}
+\DoxyCodeLine{6718                 context(), device(), properties, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6719 }
+\DoxyCodeLine{6720             \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_COMMAND\_QUEUE\_ERR);}
+\DoxyCodeLine{6721             \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6722                 *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6723             \}}
+\DoxyCodeLine{6724 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{6725         \}}
+\DoxyCodeLine{6726     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a8462de408ebfaf6332429a92b7938490_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a05ae8e9e44e9b28fc755937490535550}\label{classcl_1_1_command_queue_a05ae8e9e44e9b28fc755937490535550}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!CommandQueue@{CommandQueue}}
+\index{CommandQueue@{CommandQueue}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{CommandQueue()}{CommandQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily cl\+::\+Command\+Queue\+::\+Command\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecl_a6b1e69bec24f2a7f89eb17c265060e0d}{Queue\+Properties}}}]{properties,  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} based on passed properties. Will return an C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES error if C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+N\+\_\+\+D\+E\+V\+I\+CE is specified. 
+
+
+
+cl2.\+hpp 파일의 6732 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6735    \{}
+\DoxyCodeLine{6736        cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6737 }
+\DoxyCodeLine{6738        Context context = \mbox{\hyperlink{classcl_1_1_context_ad180f6f7d8b5a95710ab72f96162b051}{Context::getDefault}}(\&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6739        \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_CONTEXT\_ERR);}
+\DoxyCodeLine{6740 }
+\DoxyCodeLine{6741        \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} != CL\_SUCCESS) \{}
+\DoxyCodeLine{6742            \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6743                *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6744            \}}
+\DoxyCodeLine{6745        \}}
+\DoxyCodeLine{6746        \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{6747            Device device = context.getInfo<CL\_CONTEXT\_DEVICES>()[0];}
+\DoxyCodeLine{6748 }
+\DoxyCodeLine{6749 \textcolor{preprocessor}{\#if CL\_HPP\_TARGET\_OPENCL\_VERSION >= 200}}
+\DoxyCodeLine{6750            cl\_queue\_properties queue\_properties[] = \{}
+\DoxyCodeLine{6751                CL\_QUEUE\_PROPERTIES, static\_cast<cl\_queue\_properties>(properties), 0 \};}
+\DoxyCodeLine{6752 }
+\DoxyCodeLine{6753            \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateCommandQueueWithProperties(}
+\DoxyCodeLine{6754                context(), device(), queue\_properties, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6755 }
+\DoxyCodeLine{6756 }
+\DoxyCodeLine{6757            \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_COMMAND\_QUEUE\_WITH\_PROPERTIES\_ERR);}
+\DoxyCodeLine{6758            \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6759                *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6760            \}}
+\DoxyCodeLine{6761 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{6762            \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateCommandQueue(}
+\DoxyCodeLine{6763                context(), device(), static\_cast<cl\_command\_queue\_properties>(properties), \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6764 }
+\DoxyCodeLine{6765            \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_COMMAND\_QUEUE\_ERR);}
+\DoxyCodeLine{6766            \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6767                *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6768            \}}
+\DoxyCodeLine{6769 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{6770        \}}
+\DoxyCodeLine{6771    \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a05ae8e9e44e9b28fc755937490535550_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_adcb116a4e1a53417dad3d3850c33d42f}\label{classcl_1_1_command_queue_adcb116a4e1a53417dad3d3850c33d42f}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!CommandQueue@{CommandQueue}}
+\index{CommandQueue@{CommandQueue}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{CommandQueue()}{CommandQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily cl\+::\+Command\+Queue\+::\+Command\+Queue (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&}]{context,  }\item[{cl\+\_\+command\+\_\+queue\+\_\+properties}]{properties = {\ttfamily 0},  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructs a \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} for an implementation defined device in the given context Will return an C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES error if C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+N\+\_\+\+D\+E\+V\+I\+CE is specified. 
+
+
+
+cl2.\+hpp 파일의 6777 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6781     \{}
+\DoxyCodeLine{6782         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6783         vector<cl::Device> devices;}
+\DoxyCodeLine{6784         \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} = context.getInfo(CL\_CONTEXT\_DEVICES, \&devices);}
+\DoxyCodeLine{6785 }
+\DoxyCodeLine{6786         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_CONTEXT\_ERR);}
+\DoxyCodeLine{6787 }
+\DoxyCodeLine{6788         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} != CL\_SUCCESS)}
+\DoxyCodeLine{6789         \{}
+\DoxyCodeLine{6790             \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6791                 *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6792             \}}
+\DoxyCodeLine{6793             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{6794         \}}
+\DoxyCodeLine{6795 }
+\DoxyCodeLine{6796 \textcolor{preprocessor}{\#if CL\_HPP\_TARGET\_OPENCL\_VERSION >= 200}}
+\DoxyCodeLine{6797         cl\_queue\_properties queue\_properties[] = \{}
+\DoxyCodeLine{6798             CL\_QUEUE\_PROPERTIES, properties, 0 \};}
+\DoxyCodeLine{6799         \textcolor{keywordflow}{if} ((properties \& CL\_QUEUE\_ON\_DEVICE) == 0) \{}
+\DoxyCodeLine{6800             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateCommandQueueWithProperties(}
+\DoxyCodeLine{6801                 context(), devices[0](), queue\_properties, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6802         \}}
+\DoxyCodeLine{6803         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{6804             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} = CL\_INVALID\_QUEUE\_PROPERTIES;}
+\DoxyCodeLine{6805         \}}
+\DoxyCodeLine{6806 }
+\DoxyCodeLine{6807         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_COMMAND\_QUEUE\_WITH\_PROPERTIES\_ERR);}
+\DoxyCodeLine{6808         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6809             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6810         \}}
+\DoxyCodeLine{6811 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{6812         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateCommandQueue(}
+\DoxyCodeLine{6813             context(), devices[0](), properties, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6814 }
+\DoxyCodeLine{6815         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_COMMAND\_QUEUE\_ERR);}
+\DoxyCodeLine{6816         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6817             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6818         \}}
+\DoxyCodeLine{6819 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{6820 }
+\DoxyCodeLine{6821     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_adcb116a4e1a53417dad3d3850c33d42f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a975c3dce399cb77a5c6b0e294e4778fe}\label{classcl_1_1_command_queue_a975c3dce399cb77a5c6b0e294e4778fe}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!CommandQueue@{CommandQueue}}
+\index{CommandQueue@{CommandQueue}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{CommandQueue()}{CommandQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily cl\+::\+Command\+Queue\+::\+Command\+Queue (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&}]{context,  }\item[{\mbox{\hyperlink{namespacecl_a6b1e69bec24f2a7f89eb17c265060e0d}{Queue\+Properties}}}]{properties,  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructs a \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} for an implementation defined device in the given context Will return an C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES error if C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+N\+\_\+\+D\+E\+V\+I\+CE is specified. 
+
+
+
+cl2.\+hpp 파일의 6827 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6831     \{}
+\DoxyCodeLine{6832         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6833         vector<cl::Device> devices;}
+\DoxyCodeLine{6834         \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} = context.getInfo(CL\_CONTEXT\_DEVICES, \&devices);}
+\DoxyCodeLine{6835 }
+\DoxyCodeLine{6836         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_CONTEXT\_ERR);}
+\DoxyCodeLine{6837 }
+\DoxyCodeLine{6838         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} != CL\_SUCCESS)}
+\DoxyCodeLine{6839         \{}
+\DoxyCodeLine{6840             \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6841                 *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6842             \}}
+\DoxyCodeLine{6843             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{6844         \}}
+\DoxyCodeLine{6845 }
+\DoxyCodeLine{6846 \textcolor{preprocessor}{\#if CL\_HPP\_TARGET\_OPENCL\_VERSION >= 200}}
+\DoxyCodeLine{6847         cl\_queue\_properties queue\_properties[] = \{}
+\DoxyCodeLine{6848             CL\_QUEUE\_PROPERTIES, static\_cast<cl\_queue\_properties>(properties), 0 \};}
+\DoxyCodeLine{6849         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateCommandQueueWithProperties(}
+\DoxyCodeLine{6850             context(), devices[0](), queue\_properties, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6851        }
+\DoxyCodeLine{6852         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_COMMAND\_QUEUE\_WITH\_PROPERTIES\_ERR);}
+\DoxyCodeLine{6853         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6854             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6855         \}}
+\DoxyCodeLine{6856 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{6857         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateCommandQueue(}
+\DoxyCodeLine{6858             context(), devices[0](), static\_cast<cl\_command\_queue\_properties>(properties), \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6859 }
+\DoxyCodeLine{6860         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_COMMAND\_QUEUE\_ERR);}
+\DoxyCodeLine{6861         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6862             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6863         \}}
+\DoxyCodeLine{6864 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{6865 }
+\DoxyCodeLine{6866     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a975c3dce399cb77a5c6b0e294e4778fe_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a887826e515b03224aec87b33ac59f327}\label{classcl_1_1_command_queue_a887826e515b03224aec87b33ac59f327}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!CommandQueue@{CommandQueue}}
+\index{CommandQueue@{CommandQueue}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{CommandQueue()}{CommandQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily cl\+::\+Command\+Queue\+::\+Command\+Queue (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&}]{context,  }\item[{const \mbox{\hyperlink{classcl_1_1_device}{Device}} \&}]{device,  }\item[{cl\+\_\+command\+\_\+queue\+\_\+properties}]{properties = {\ttfamily 0},  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} for a passed device and context Will return an C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES error if C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+N\+\_\+\+D\+E\+V\+I\+CE is specified. 
+
+
+
+cl2.\+hpp 파일의 6872 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6877     \{}
+\DoxyCodeLine{6878         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6879 }
+\DoxyCodeLine{6880 \textcolor{preprocessor}{\#if CL\_HPP\_TARGET\_OPENCL\_VERSION >= 200}}
+\DoxyCodeLine{6881         cl\_queue\_properties queue\_properties[] = \{}
+\DoxyCodeLine{6882             CL\_QUEUE\_PROPERTIES, properties, 0 \};}
+\DoxyCodeLine{6883         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateCommandQueueWithProperties(}
+\DoxyCodeLine{6884             context(), device(), queue\_properties, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6885         }
+\DoxyCodeLine{6886         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_COMMAND\_QUEUE\_WITH\_PROPERTIES\_ERR);}
+\DoxyCodeLine{6887         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6888             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6889         \}}
+\DoxyCodeLine{6890 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{6891         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateCommandQueue(}
+\DoxyCodeLine{6892             context(), device(), properties, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6893 }
+\DoxyCodeLine{6894         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_COMMAND\_QUEUE\_ERR);}
+\DoxyCodeLine{6895         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6896             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6897         \}}
+\DoxyCodeLine{6898 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{6899     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a887826e515b03224aec87b33ac59f327_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a8dd467bd94839921b7318cb30f92b5a4}\label{classcl_1_1_command_queue_a8dd467bd94839921b7318cb30f92b5a4}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!CommandQueue@{CommandQueue}}
+\index{CommandQueue@{CommandQueue}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{CommandQueue()}{CommandQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily cl\+::\+Command\+Queue\+::\+Command\+Queue (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&}]{context,  }\item[{const \mbox{\hyperlink{classcl_1_1_device}{Device}} \&}]{device,  }\item[{\mbox{\hyperlink{namespacecl_a6b1e69bec24f2a7f89eb17c265060e0d}{Queue\+Properties}}}]{properties,  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} for a passed device and context Will return an C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES error if C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+N\+\_\+\+D\+E\+V\+I\+CE is specified. 
+
+
+
+cl2.\+hpp 파일의 6905 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6910     \{}
+\DoxyCodeLine{6911             cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6912 }
+\DoxyCodeLine{6913 \textcolor{preprocessor}{\#if CL\_HPP\_TARGET\_OPENCL\_VERSION >= 200}}
+\DoxyCodeLine{6914             cl\_queue\_properties queue\_properties[] = \{}
+\DoxyCodeLine{6915                 CL\_QUEUE\_PROPERTIES, static\_cast<cl\_queue\_properties>(properties), 0 \};}
+\DoxyCodeLine{6916             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateCommandQueueWithProperties(}
+\DoxyCodeLine{6917                 context(), device(), queue\_properties, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6918       }
+\DoxyCodeLine{6919             \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_COMMAND\_QUEUE\_WITH\_PROPERTIES\_ERR);}
+\DoxyCodeLine{6920             \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6921                 *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6922             \}}
+\DoxyCodeLine{6923 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{6924             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateCommandQueue(}
+\DoxyCodeLine{6925                 context(), device(), static\_cast<cl\_command\_queue\_properties>(properties), \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6926 }
+\DoxyCodeLine{6927             \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_COMMAND\_QUEUE\_ERR);}
+\DoxyCodeLine{6928             \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6929                 *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6930             \}}
+\DoxyCodeLine{6931 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{6932         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a8dd467bd94839921b7318cb30f92b5a4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_ab1beb7ab6e619a4e050d87c70bb001a6}\label{classcl_1_1_command_queue_ab1beb7ab6e619a4e050d87c70bb001a6}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!CommandQueue@{CommandQueue}}
+\index{CommandQueue@{CommandQueue}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{CommandQueue()}{CommandQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily cl\+::\+Command\+Queue\+::\+Command\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 6962 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6962 \{ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_ab1beb7ab6e619a4e050d87c70bb001a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a09be675998c51f36aa7744b47eabebd3}\label{classcl_1_1_command_queue_a09be675998c51f36aa7744b47eabebd3}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!CommandQueue@{CommandQueue}}
+\index{CommandQueue@{CommandQueue}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{CommandQueue()}{CommandQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily cl\+::\+Command\+Queue\+::\+Command\+Queue (\begin{DoxyParamCaption}\item[{const cl\+\_\+command\+\_\+queue \&}]{command\+Queue,  }\item[{bool}]{retain\+Object = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor from cl\+\_\+mem -\/ takes ownership. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em retain\+Object} & will cause the constructor to retain its cl object. Defaults to false to maintain compatibility with earlier versions. \\
+\hline
+\end{DoxyParams}
+
+
+cl2.\+hpp 파일의 6971 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6971                                                                                            : }
+\DoxyCodeLine{6972         detail::Wrapper<cl\_type>(commandQueue, retainObject) \{ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_command_queue_ae2ce434c5100e5b467ea8c6561e1f11e}\label{classcl_1_1_command_queue_ae2ce434c5100e5b467ea8c6561e1f11e}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!CommandQueue@{CommandQueue}}
+\index{CommandQueue@{CommandQueue}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{CommandQueue()}{CommandQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily cl\+::\+Command\+Queue\+::\+Command\+Queue (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&}]{queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor to forward copy to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 6983 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6983 : detail::Wrapper<cl\_type>(queue) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a1c5830678be567e34dccbb0065c89b21}\label{classcl_1_1_command_queue_a1c5830678be567e34dccbb0065c89b21}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!CommandQueue@{CommandQueue}}
+\index{CommandQueue@{CommandQueue}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{CommandQueue()}{CommandQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily cl\+::\+Command\+Queue\+::\+Command\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&\&}]{queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move constructor to forward move to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 6997 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6997 : detail::Wrapper<cl\_type>(std::move(queue)) \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classcl_1_1_command_queue_ae9b8fbe11859b0d9b2ad317fcfdcaced}\label{classcl_1_1_command_queue_ae9b8fbe11859b0d9b2ad317fcfdcaced}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueAcquireGLObjects@{enqueueAcquireGLObjects}}
+\index{enqueueAcquireGLObjects@{enqueueAcquireGLObjects}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueAcquireGLObjects()}{enqueueAcquireGLObjects()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Acquire\+G\+L\+Objects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_memory}{Memory}} $>$ $\ast$}]{mem\+\_\+objects = {\ttfamily NULL},  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Deprecated A\+P\+Is for 1.\+2 
+
+cl2.\+hpp 파일의 7976 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7980      \{}
+\DoxyCodeLine{7981         cl\_event tmp;}
+\DoxyCodeLine{7982         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7983              ::clEnqueueAcquireGLObjects(}
+\DoxyCodeLine{7984                  \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}},}
+\DoxyCodeLine{7985                  (mem\_objects != NULL) ? (cl\_uint) mem\_objects-\/>size() : 0,}
+\DoxyCodeLine{7986                  (mem\_objects != NULL \&\& mem\_objects-\/>size() > 0) ? (\textcolor{keyword}{const} cl\_mem *) \&mem\_objects-\/>front(): NULL,}
+\DoxyCodeLine{7987                  (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7988                  (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7989                  (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7990              \_\_ENQUEUE\_ACQUIRE\_GL\_ERR);}
+\DoxyCodeLine{7991 }
+\DoxyCodeLine{7992         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7993             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7994 }
+\DoxyCodeLine{7995         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7996      \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_ae9b8fbe11859b0d9b2ad317fcfdcaced_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_ae852576fe5e8e925fca2812f57fc94b5}\label{classcl_1_1_command_queue_ae852576fe5e8e925fca2812f57fc94b5}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueBarrierWithWaitList@{enqueueBarrierWithWaitList}}
+\index{enqueueBarrierWithWaitList@{enqueueBarrierWithWaitList}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueBarrierWithWaitList()}{enqueueBarrierWithWaitList()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Barrier\+With\+Wait\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily 0},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A synchronization point that enqueues a barrier operation.
+
+Enqueues a barrier command which waits for either a list of events to complete, or if the list is empty it waits for all commands previously enqueued in command\+\_\+queue to complete before it completes. This command blocks command execution, that is, any following commands enqueued after it do not execute until it completes. This command returns an event which can be waited on, i.\+e. this event can be waited on to insure that all events either in the event\+\_\+wait\+\_\+list or all previously enqueued commands, queued before this command to command\+\_\+queue, have completed. 
+
+cl2.\+hpp 파일의 7804 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7807     \{}
+\DoxyCodeLine{7808         cl\_event tmp;}
+\DoxyCodeLine{7809         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7810             ::clEnqueueBarrierWithWaitList(}
+\DoxyCodeLine{7811                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}},}
+\DoxyCodeLine{7812                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7813                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7814                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7815             \_\_ENQUEUE\_BARRIER\_WAIT\_LIST\_ERR);}
+\DoxyCodeLine{7816 }
+\DoxyCodeLine{7817         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7818             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7819 }
+\DoxyCodeLine{7820         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7821     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_ae852576fe5e8e925fca2812f57fc94b5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a5708cb52ca4ef7dd61d774e7aad2ef95}\label{classcl_1_1_command_queue_a5708cb52ca4ef7dd61d774e7aad2ef95}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueCopyBuffer@{enqueueCopyBuffer}}
+\index{enqueueCopyBuffer@{enqueueCopyBuffer}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueCopyBuffer()}{enqueueCopyBuffer()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Copy\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{src,  }\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{dst,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{src\+\_\+offset,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{dst\+\_\+offset,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7080 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7088     \{}
+\DoxyCodeLine{7089         cl\_event tmp;}
+\DoxyCodeLine{7090         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7091             ::clEnqueueCopyBuffer(}
+\DoxyCodeLine{7092                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, src(), dst(), src\_offset, dst\_offset, size,}
+\DoxyCodeLine{7093                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7094                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7095                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7096             \_\_ENQEUE\_COPY\_BUFFER\_ERR);}
+\DoxyCodeLine{7097 }
+\DoxyCodeLine{7098         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7099             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7100 }
+\DoxyCodeLine{7101         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7102     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a5708cb52ca4ef7dd61d774e7aad2ef95_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a5708cb52ca4ef7dd61d774e7aad2ef95_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a83096c6bf792527c8c606a653d6b308b}\label{classcl_1_1_command_queue_a83096c6bf792527c8c606a653d6b308b}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueCopyBufferRect@{enqueueCopyBufferRect}}
+\index{enqueueCopyBufferRect@{enqueueCopyBufferRect}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueCopyBufferRect()}{enqueueCopyBufferRect()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Copy\+Buffer\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{src,  }\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{dst,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{src\+\_\+origin,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{dst\+\_\+origin,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{region,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{src\+\_\+row\+\_\+pitch,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{src\+\_\+slice\+\_\+pitch,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{dst\+\_\+row\+\_\+pitch,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{dst\+\_\+slice\+\_\+pitch,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7182 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7194     \{}
+\DoxyCodeLine{7195         cl\_event tmp;}
+\DoxyCodeLine{7196         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7197             ::clEnqueueCopyBufferRect(}
+\DoxyCodeLine{7198                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{7199                 src(), }
+\DoxyCodeLine{7200                 dst(), }
+\DoxyCodeLine{7201                 src\_origin.data(),}
+\DoxyCodeLine{7202                 dst\_origin.data(),}
+\DoxyCodeLine{7203                 region.data(),}
+\DoxyCodeLine{7204                 src\_row\_pitch,}
+\DoxyCodeLine{7205                 src\_slice\_pitch,}
+\DoxyCodeLine{7206                 dst\_row\_pitch,}
+\DoxyCodeLine{7207                 dst\_slice\_pitch,}
+\DoxyCodeLine{7208                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7209                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7210                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7211             \_\_ENQEUE\_COPY\_BUFFER\_RECT\_ERR);}
+\DoxyCodeLine{7212 }
+\DoxyCodeLine{7213         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7214             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7215 }
+\DoxyCodeLine{7216         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7217     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a83096c6bf792527c8c606a653d6b308b_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a83096c6bf792527c8c606a653d6b308b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a4bf243bc86af453851faa779d5aa3c9e}\label{classcl_1_1_command_queue_a4bf243bc86af453851faa779d5aa3c9e}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueCopyBufferToImage@{enqueueCopyBufferToImage}}
+\index{enqueueCopyBufferToImage@{enqueueCopyBufferToImage}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueCopyBufferToImage()}{enqueueCopyBufferToImage()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Copy\+Buffer\+To\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{src,  }\item[{const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&}]{dst,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{src\+\_\+offset,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{dst\+\_\+origin,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{region,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7489 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7497     \{}
+\DoxyCodeLine{7498         cl\_event tmp;}
+\DoxyCodeLine{7499         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7500             ::clEnqueueCopyBufferToImage(}
+\DoxyCodeLine{7501                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{7502                 src(), }
+\DoxyCodeLine{7503                 dst(), }
+\DoxyCodeLine{7504                 src\_offset,}
+\DoxyCodeLine{7505                 dst\_origin.data(), }
+\DoxyCodeLine{7506                 region.data(),}
+\DoxyCodeLine{7507                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7508                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7509                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7510             \_\_ENQUEUE\_COPY\_BUFFER\_TO\_IMAGE\_ERR);}
+\DoxyCodeLine{7511 }
+\DoxyCodeLine{7512         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7513             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7514 }
+\DoxyCodeLine{7515         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7516     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a4bf243bc86af453851faa779d5aa3c9e_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a4bf243bc86af453851faa779d5aa3c9e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a97e4e3e6c2183aa6254901dc62ed1e0e}\label{classcl_1_1_command_queue_a97e4e3e6c2183aa6254901dc62ed1e0e}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueCopyImage@{enqueueCopyImage}}
+\index{enqueueCopyImage@{enqueueCopyImage}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueCopyImage()}{enqueueCopyImage()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Copy\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&}]{src,  }\item[{const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&}]{dst,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{src\+\_\+origin,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{dst\+\_\+origin,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{region,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7327 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7335     \{}
+\DoxyCodeLine{7336         cl\_event tmp;}
+\DoxyCodeLine{7337         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7338             ::clEnqueueCopyImage(}
+\DoxyCodeLine{7339                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{7340                 src(), }
+\DoxyCodeLine{7341                 dst(), }
+\DoxyCodeLine{7342                 src\_origin.data(),}
+\DoxyCodeLine{7343                 dst\_origin.data(), }
+\DoxyCodeLine{7344                 region.data(),}
+\DoxyCodeLine{7345                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7346                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7347                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7348             \_\_ENQUEUE\_COPY\_IMAGE\_ERR);}
+\DoxyCodeLine{7349 }
+\DoxyCodeLine{7350         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7351             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7352 }
+\DoxyCodeLine{7353         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7354     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a97e4e3e6c2183aa6254901dc62ed1e0e_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a97e4e3e6c2183aa6254901dc62ed1e0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_acaaa991a224cae832f2fe743e66b3773}\label{classcl_1_1_command_queue_acaaa991a224cae832f2fe743e66b3773}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueCopyImageToBuffer@{enqueueCopyImageToBuffer}}
+\index{enqueueCopyImageToBuffer@{enqueueCopyImageToBuffer}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueCopyImageToBuffer()}{enqueueCopyImageToBuffer()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Copy\+Image\+To\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&}]{src,  }\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{dst,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{src\+\_\+origin,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{region,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{dst\+\_\+offset,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7460 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7468     \{}
+\DoxyCodeLine{7469         cl\_event tmp;}
+\DoxyCodeLine{7470         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7471             ::clEnqueueCopyImageToBuffer(}
+\DoxyCodeLine{7472                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{7473                 src(), }
+\DoxyCodeLine{7474                 dst(), }
+\DoxyCodeLine{7475                 src\_origin.data(),}
+\DoxyCodeLine{7476                 region.data(), }
+\DoxyCodeLine{7477                 dst\_offset,}
+\DoxyCodeLine{7478                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7479                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7480                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7481             \_\_ENQUEUE\_COPY\_IMAGE\_TO\_BUFFER\_ERR);}
+\DoxyCodeLine{7482 }
+\DoxyCodeLine{7483         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7484             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7485 }
+\DoxyCodeLine{7486         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7487     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_acaaa991a224cae832f2fe743e66b3773_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_acaaa991a224cae832f2fe743e66b3773_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a09f546d77b717ce26606c462c0ca9d1c}\label{classcl_1_1_command_queue_a09f546d77b717ce26606c462c0ca9d1c}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueFillBuffer@{enqueueFillBuffer}}
+\index{enqueueFillBuffer@{enqueueFillBuffer}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueFillBuffer()}{enqueueFillBuffer()}}
+{\footnotesize\ttfamily template$<$typename Pattern\+Type $>$ \\
+cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Fill\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{buffer,  }\item[{Pattern\+Type}]{pattern,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{offset,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enqueue a command to fill a buffer object with a pattern of a given size. The pattern is specified as a vector type. 
+\begin{DoxyTemplParams}{템플릿 파라메터}
+{\em Pattern\+Type} & The datatype of the pattern field. The pattern type must be an accepted Open\+CL data type. \\
+\hline
+{\em offset} & Is the offset in bytes into the buffer at which to start filling. This must be a multiple of the pattern size. \\
+\hline
+{\em size} & Is the size in bytes of the region to fill. This must be a multiple of the pattern size. \\
+\hline
+\end{DoxyTemplParams}
+
+
+cl2.\+hpp 파일의 7232 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7239     \{}
+\DoxyCodeLine{7240         cl\_event tmp;}
+\DoxyCodeLine{7241         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7242             ::clEnqueueFillBuffer(}
+\DoxyCodeLine{7243                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{7244                 buffer(),}
+\DoxyCodeLine{7245                 static\_cast<void*>(\&pattern),}
+\DoxyCodeLine{7246                 \textcolor{keyword}{sizeof}(PatternType), }
+\DoxyCodeLine{7247                 offset, }
+\DoxyCodeLine{7248                 size,}
+\DoxyCodeLine{7249                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7250                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7251                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7252                 \_\_ENQUEUE\_FILL\_BUFFER\_ERR);}
+\DoxyCodeLine{7253 }
+\DoxyCodeLine{7254         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7255             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7256 }
+\DoxyCodeLine{7257         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7258     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a09f546d77b717ce26606c462c0ca9d1c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a9c3230b644ad638973be7199e0451e46}\label{classcl_1_1_command_queue_a9c3230b644ad638973be7199e0451e46}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueFillImage@{enqueueFillImage}}
+\index{enqueueFillImage@{enqueueFillImage}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueFillImage()}{enqueueFillImage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Fill\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&}]{image,  }\item[{cl\+\_\+float4}]{fill\+Color,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{origin,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{region,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enqueue a command to fill an image object with a specified color. 
+\begin{DoxyParams}{매개변수}
+{\em fill\+Color} & is the color to use to fill the image. This is a four component R\+G\+BA floating-\/point color value if the image channel data type is not an unnormalized signed or unsigned data type. \\
+\hline
+\end{DoxyParams}
+
+
+cl2.\+hpp 파일의 7364 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7371     \{}
+\DoxyCodeLine{7372         cl\_event tmp;}
+\DoxyCodeLine{7373         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7374             ::clEnqueueFillImage(}
+\DoxyCodeLine{7375                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{7376                 image(),}
+\DoxyCodeLine{7377                 static\_cast<void*>(\&fillColor), }
+\DoxyCodeLine{7378                 origin.data(),}
+\DoxyCodeLine{7379                 region.data(),}
+\DoxyCodeLine{7380                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7381                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7382                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7383                 \_\_ENQUEUE\_FILL\_IMAGE\_ERR);}
+\DoxyCodeLine{7384 }
+\DoxyCodeLine{7385         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7386             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7387 }
+\DoxyCodeLine{7388         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7389     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a9c3230b644ad638973be7199e0451e46_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_acb2c278ef4f177c5d01035c008a5cb3e}\label{classcl_1_1_command_queue_acb2c278ef4f177c5d01035c008a5cb3e}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueFillImage@{enqueueFillImage}}
+\index{enqueueFillImage@{enqueueFillImage}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueFillImage()}{enqueueFillImage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Fill\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&}]{image,  }\item[{cl\+\_\+int4}]{fill\+Color,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{origin,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{region,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enqueue a command to fill an image object with a specified color. 
+\begin{DoxyParams}{매개변수}
+{\em fill\+Color} & is the color to use to fill the image. This is a four component R\+G\+BA signed integer color value if the image channel data type is an unnormalized signed integer type. \\
+\hline
+\end{DoxyParams}
+
+
+cl2.\+hpp 파일의 7398 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7405     \{}
+\DoxyCodeLine{7406         cl\_event tmp;}
+\DoxyCodeLine{7407         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7408             ::clEnqueueFillImage(}
+\DoxyCodeLine{7409                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{7410                 image(),}
+\DoxyCodeLine{7411                 static\_cast<void*>(\&fillColor), }
+\DoxyCodeLine{7412                 origin.data(),}
+\DoxyCodeLine{7413                 region.data(),}
+\DoxyCodeLine{7414                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7415                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7416                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7417                 \_\_ENQUEUE\_FILL\_IMAGE\_ERR);}
+\DoxyCodeLine{7418 }
+\DoxyCodeLine{7419         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7420             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7421 }
+\DoxyCodeLine{7422         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7423     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_acb2c278ef4f177c5d01035c008a5cb3e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a3081328f7b10be88e87eb719d3ad6307}\label{classcl_1_1_command_queue_a3081328f7b10be88e87eb719d3ad6307}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueFillImage@{enqueueFillImage}}
+\index{enqueueFillImage@{enqueueFillImage}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueFillImage()}{enqueueFillImage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Fill\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&}]{image,  }\item[{cl\+\_\+uint4}]{fill\+Color,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{origin,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{region,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enqueue a command to fill an image object with a specified color. 
+\begin{DoxyParams}{매개변수}
+{\em fill\+Color} & is the color to use to fill the image. This is a four component R\+G\+BA unsigned integer color value if the image channel data type is an unnormalized unsigned integer type. \\
+\hline
+\end{DoxyParams}
+
+
+cl2.\+hpp 파일의 7432 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7439     \{}
+\DoxyCodeLine{7440         cl\_event tmp;}
+\DoxyCodeLine{7441         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7442             ::clEnqueueFillImage(}
+\DoxyCodeLine{7443                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{7444                 image(),}
+\DoxyCodeLine{7445                 static\_cast<void*>(\&fillColor), }
+\DoxyCodeLine{7446                 origin.data(),}
+\DoxyCodeLine{7447                 region.data(),}
+\DoxyCodeLine{7448                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7449                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7450                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7451                 \_\_ENQUEUE\_FILL\_IMAGE\_ERR);}
+\DoxyCodeLine{7452 }
+\DoxyCodeLine{7453         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7454             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7455 }
+\DoxyCodeLine{7456         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7457     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a3081328f7b10be88e87eb719d3ad6307_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a609517b0dec41b4e9e9258800b4534af}\label{classcl_1_1_command_queue_a609517b0dec41b4e9e9258800b4534af}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueMapBuffer@{enqueueMapBuffer}}
+\index{enqueueMapBuffer@{enqueueMapBuffer}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueMapBuffer()}{enqueueMapBuffer()}}
+{\footnotesize\ttfamily void$\ast$ cl\+::\+Command\+Queue\+::enqueue\+Map\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{buffer,  }\item[{cl\+\_\+bool}]{blocking,  }\item[{cl\+\_\+map\+\_\+flags}]{flags,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{offset,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL},  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7518 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7527     \{}
+\DoxyCodeLine{7528         cl\_event tmp;}
+\DoxyCodeLine{7529         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{7530         \textcolor{keywordtype}{void} * result = ::clEnqueueMapBuffer(}
+\DoxyCodeLine{7531             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, buffer(), blocking, flags, offset, size,}
+\DoxyCodeLine{7532             (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7533             (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7534             (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL,}
+\DoxyCodeLine{7535             \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{7536 }
+\DoxyCodeLine{7537         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_ENQUEUE\_MAP\_BUFFER\_ERR);}
+\DoxyCodeLine{7538         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{7539             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{7540         \}}
+\DoxyCodeLine{7541         \textcolor{keywordflow}{if} (event != NULL \&\& \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} == CL\_SUCCESS)}
+\DoxyCodeLine{7542             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7543 }
+\DoxyCodeLine{7544         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{7545     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a609517b0dec41b4e9e9258800b4534af_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classcl_1_1_command_queue_a609517b0dec41b4e9e9258800b4534af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_aba5a93548056faa707ed195d76783a70}\label{classcl_1_1_command_queue_aba5a93548056faa707ed195d76783a70}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueMapImage@{enqueueMapImage}}
+\index{enqueueMapImage@{enqueueMapImage}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueMapImage()}{enqueueMapImage()}}
+{\footnotesize\ttfamily void$\ast$ cl\+::\+Command\+Queue\+::enqueue\+Map\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&}]{buffer,  }\item[{cl\+\_\+bool}]{blocking,  }\item[{cl\+\_\+map\+\_\+flags}]{flags,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{origin,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{region,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} $\ast$}]{row\+\_\+pitch,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} $\ast$}]{slice\+\_\+pitch,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL},  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7547 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7558     \{}
+\DoxyCodeLine{7559         cl\_event tmp;}
+\DoxyCodeLine{7560         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{7561         \textcolor{keywordtype}{void} * result = ::clEnqueueMapImage(}
+\DoxyCodeLine{7562             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, buffer(), blocking, flags,}
+\DoxyCodeLine{7563             origin.data(), }
+\DoxyCodeLine{7564             region.data(),}
+\DoxyCodeLine{7565             row\_pitch, slice\_pitch,}
+\DoxyCodeLine{7566             (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7567             (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7568             (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL,}
+\DoxyCodeLine{7569             \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{7570 }
+\DoxyCodeLine{7571         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_ENQUEUE\_MAP\_IMAGE\_ERR);}
+\DoxyCodeLine{7572         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{7573               *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{7574         \}}
+\DoxyCodeLine{7575         \textcolor{keywordflow}{if} (event != NULL \&\& \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} == CL\_SUCCESS)}
+\DoxyCodeLine{7576             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7577         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{7578     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_aba5a93548056faa707ed195d76783a70_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a58d16044448bcb2797f490a33e450bde}\label{classcl_1_1_command_queue_a58d16044448bcb2797f490a33e450bde}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueMapSVM@{enqueueMapSVM}}
+\index{enqueueMapSVM@{enqueueMapSVM}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueMapSVM()}{enqueueMapSVM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , class D $>$ \\
+cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Map\+S\+VM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}}$<$ T, D $>$ \&}]{ptr,  }\item[{cl\+\_\+bool}]{blocking,  }\item[{cl\+\_\+map\+\_\+flags}]{flags,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enqueues a command that will allow the host to update a region of a coarse-\/grained S\+VM buffer. This variant takes a \mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}} instance. 
+
+cl2.\+hpp 파일의 7614 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7621     \{}
+\DoxyCodeLine{7622         cl\_event tmp;}
+\DoxyCodeLine{7623         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(::clEnqueueSVMMap(}
+\DoxyCodeLine{7624             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, blocking, flags, static\_cast<void*>(ptr.get()), size,}
+\DoxyCodeLine{7625             (events != NULL) ? (cl\_uint)events-\/>size() : 0,}
+\DoxyCodeLine{7626             (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*)\&events-\/>front() : NULL,}
+\DoxyCodeLine{7627             (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7628             \_\_ENQUEUE\_MAP\_BUFFER\_ERR);}
+\DoxyCodeLine{7629 }
+\DoxyCodeLine{7630         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7631             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7632 }
+\DoxyCodeLine{7633         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7634     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a58d16044448bcb2797f490a33e450bde_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a30fcb95415b760f23b2abba6e0842125}\label{classcl_1_1_command_queue_a30fcb95415b760f23b2abba6e0842125}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueMapSVM@{enqueueMapSVM}}
+\index{enqueueMapSVM@{enqueueMapSVM}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueMapSVM()}{enqueueMapSVM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T , class Alloc $>$ \\
+cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Map\+S\+VM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl\+::vector}}$<$ T, Alloc $>$ \&}]{container,  }\item[{cl\+\_\+bool}]{blocking,  }\item[{cl\+\_\+map\+\_\+flags}]{flags,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enqueues a command that will allow the host to update a region of a coarse-\/grained S\+VM buffer. This variant takes a \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl\+::vector}} instance. 
+
+cl2.\+hpp 파일의 7641 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7647     \{}
+\DoxyCodeLine{7648         cl\_event tmp;}
+\DoxyCodeLine{7649         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(::clEnqueueSVMMap(}
+\DoxyCodeLine{7650             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, blocking, flags, static\_cast<void*>(container.data()), container.size(),}
+\DoxyCodeLine{7651             (events != NULL) ? (cl\_uint)events-\/>size() : 0,}
+\DoxyCodeLine{7652             (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*)\&events-\/>front() : NULL,}
+\DoxyCodeLine{7653             (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7654             \_\_ENQUEUE\_MAP\_BUFFER\_ERR);}
+\DoxyCodeLine{7655 }
+\DoxyCodeLine{7656         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7657             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7658 }
+\DoxyCodeLine{7659         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7660     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a30fcb95415b760f23b2abba6e0842125_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_aec8211d19eb2ffbb8adc7f565fe61c3c}\label{classcl_1_1_command_queue_aec8211d19eb2ffbb8adc7f565fe61c3c}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueMapSVM@{enqueueMapSVM}}
+\index{enqueueMapSVM@{enqueueMapSVM}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueMapSVM()}{enqueueMapSVM()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Map\+S\+VM (\begin{DoxyParamCaption}\item[{T $\ast$}]{ptr,  }\item[{cl\+\_\+bool}]{blocking,  }\item[{cl\+\_\+map\+\_\+flags}]{flags,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enqueues a command that will allow the host to update a region of a coarse-\/grained S\+VM buffer. This variant takes a raw S\+VM pointer. 
+
+cl2.\+hpp 파일의 7586 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7593     \{}
+\DoxyCodeLine{7594         cl\_event tmp;}
+\DoxyCodeLine{7595         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(::clEnqueueSVMMap(}
+\DoxyCodeLine{7596             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, blocking, flags, static\_cast<void*>(ptr), size,}
+\DoxyCodeLine{7597             (events != NULL) ? (cl\_uint)events-\/>size() : 0,}
+\DoxyCodeLine{7598             (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*)\&events-\/>front() : NULL,}
+\DoxyCodeLine{7599             (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7600             \_\_ENQUEUE\_MAP\_BUFFER\_ERR);}
+\DoxyCodeLine{7601 }
+\DoxyCodeLine{7602         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7603             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7604 }
+\DoxyCodeLine{7605         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7606     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_aec8211d19eb2ffbb8adc7f565fe61c3c_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_aec8211d19eb2ffbb8adc7f565fe61c3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a7fcfee2b6739e6c4aaf49dd3e690da76}\label{classcl_1_1_command_queue_a7fcfee2b6739e6c4aaf49dd3e690da76}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueMarkerWithWaitList@{enqueueMarkerWithWaitList}}
+\index{enqueueMarkerWithWaitList@{enqueueMarkerWithWaitList}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueMarkerWithWaitList()}{enqueueMarkerWithWaitList()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Marker\+With\+Wait\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily 0},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enqueues a marker command which waits for either a list of events to complete, or all previously enqueued commands to complete.
+
+Enqueues a marker command which waits for either a list of events to complete, or if the list is empty it waits for all commands previously enqueued in command\+\_\+queue to complete before it completes. This command returns an event which can be waited on, i.\+e. this event can be waited on to insure that all events either in the event\+\_\+wait\+\_\+list or all previously enqueued commands, queued before this command to command\+\_\+queue, have completed. 
+
+cl2.\+hpp 파일의 7774 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7777     \{}
+\DoxyCodeLine{7778         cl\_event tmp;}
+\DoxyCodeLine{7779         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7780             ::clEnqueueMarkerWithWaitList(}
+\DoxyCodeLine{7781                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}},}
+\DoxyCodeLine{7782                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7783                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7784                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7785             \_\_ENQUEUE\_MARKER\_WAIT\_LIST\_ERR);}
+\DoxyCodeLine{7786 }
+\DoxyCodeLine{7787         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7788             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7789 }
+\DoxyCodeLine{7790         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7791     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a7fcfee2b6739e6c4aaf49dd3e690da76_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_aacf7eb07723c00bd3a872f69b0b1871b}\label{classcl_1_1_command_queue_aacf7eb07723c00bd3a872f69b0b1871b}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueMigrateMemObjects@{enqueueMigrateMemObjects}}
+\index{enqueueMigrateMemObjects@{enqueueMigrateMemObjects}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueMigrateMemObjects()}{enqueueMigrateMemObjects()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Migrate\+Mem\+Objects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_memory}{Memory}} $>$ \&}]{mem\+Objects,  }\item[{cl\+\_\+mem\+\_\+migration\+\_\+flags}]{flags,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enqueues a command to indicate with which device a set of memory objects should be associated. 
+
+cl2.\+hpp 파일의 7827 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7833     \{}
+\DoxyCodeLine{7834         cl\_event tmp;}
+\DoxyCodeLine{7835         }
+\DoxyCodeLine{7836         vector<cl\_mem> localMemObjects(memObjects.size());}
+\DoxyCodeLine{7837 }
+\DoxyCodeLine{7838         \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i = 0; i < (int)memObjects.size(); ++i ) \{}
+\DoxyCodeLine{7839             localMemObjects[i] = memObjects[i]();}
+\DoxyCodeLine{7840         \}}
+\DoxyCodeLine{7841 }
+\DoxyCodeLine{7842 }
+\DoxyCodeLine{7843         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7844             ::clEnqueueMigrateMemObjects(}
+\DoxyCodeLine{7845                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{7846                 (cl\_uint)memObjects.size(), }
+\DoxyCodeLine{7847                 localMemObjects.data(),}
+\DoxyCodeLine{7848                 flags,}
+\DoxyCodeLine{7849                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7850                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7851                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7852             \_\_ENQUEUE\_UNMAP\_MEM\_OBJECT\_ERR);}
+\DoxyCodeLine{7853 }
+\DoxyCodeLine{7854         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7855             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7856 }
+\DoxyCodeLine{7857         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7858     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_aacf7eb07723c00bd3a872f69b0b1871b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a53ff05e345b2160cceae073b0e56f7ab}\label{classcl_1_1_command_queue_a53ff05e345b2160cceae073b0e56f7ab}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueNativeKernel@{enqueueNativeKernel}}
+\index{enqueueNativeKernel@{enqueueNativeKernel}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueNativeKernel()}{enqueueNativeKernel()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Native\+Kernel (\begin{DoxyParamCaption}\item[{void(\mbox{\hyperlink{cl2_8hpp_a193b43da2ce23c54788f9b4d4f0f4740}{C\+L\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} $\ast$user\+Fptr)(void $\ast$)}]{,  }\item[{std\+::pair$<$ void $\ast$, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} $>$}]{args,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_memory}{Memory}} $>$ $\ast$}]{mem\+\_\+objects = {\ttfamily NULL},  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ const void $\ast$ $>$ $\ast$}]{mem\+\_\+locs = {\ttfamily NULL},  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7909 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7916     \{}
+\DoxyCodeLine{7917         \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} elements = 0;}
+\DoxyCodeLine{7918         \textcolor{keywordflow}{if} (mem\_objects != NULL) \{}
+\DoxyCodeLine{7919             elements = mem\_objects-\/>size();}
+\DoxyCodeLine{7920         \}}
+\DoxyCodeLine{7921         vector<cl\_mem> mems(elements);}
+\DoxyCodeLine{7922         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < elements; i++) \{}
+\DoxyCodeLine{7923             mems[i] = ((*mem\_objects)[i])();}
+\DoxyCodeLine{7924         \}}
+\DoxyCodeLine{7925         }
+\DoxyCodeLine{7926         cl\_event tmp;}
+\DoxyCodeLine{7927         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7928             ::clEnqueueNativeKernel(}
+\DoxyCodeLine{7929                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, userFptr, args.first, args.second,}
+\DoxyCodeLine{7930                 (mem\_objects != NULL) ? (cl\_uint) mem\_objects-\/>size() : 0,}
+\DoxyCodeLine{7931                 mems.data(),}
+\DoxyCodeLine{7932                 (mem\_locs != NULL \&\& mem\_locs-\/>size() > 0) ? (\textcolor{keyword}{const} \textcolor{keywordtype}{void} **) \&mem\_locs-\/>front() : NULL,}
+\DoxyCodeLine{7933                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7934                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7935                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7936             \_\_ENQUEUE\_NATIVE\_KERNEL);}
+\DoxyCodeLine{7937 }
+\DoxyCodeLine{7938         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7939             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7940 }
+\DoxyCodeLine{7941         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7942     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a53ff05e345b2160cceae073b0e56f7ab_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a0e6d2ed1031239edaf9134a15ad1a816}\label{classcl_1_1_command_queue_a0e6d2ed1031239edaf9134a15ad1a816}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueNDRangeKernel@{enqueueNDRangeKernel}}
+\index{enqueueNDRangeKernel@{enqueueNDRangeKernel}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueNDRangeKernel()}{enqueueNDRangeKernel()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+N\+D\+Range\+Kernel (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_kernel}{Kernel}} \&}]{kernel,  }\item[{const \mbox{\hyperlink{classcl_1_1_n_d_range}{N\+D\+Range}} \&}]{offset,  }\item[{const \mbox{\hyperlink{classcl_1_1_n_d_range}{N\+D\+Range}} \&}]{global,  }\item[{const \mbox{\hyperlink{classcl_1_1_n_d_range}{N\+D\+Range}} \&}]{local = {\ttfamily \mbox{\hyperlink{namespacecl_afbb06364f32694f32b6944a3794d8af7}{Null\+Range}}},  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7861 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7868     \{}
+\DoxyCodeLine{7869         cl\_event tmp;}
+\DoxyCodeLine{7870         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7871             ::clEnqueueNDRangeKernel(}
+\DoxyCodeLine{7872                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, kernel(), (cl\_uint) global.dimensions(),}
+\DoxyCodeLine{7873                 offset.dimensions() != 0 ? (\textcolor{keyword}{const} \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}}*) offset : NULL,}
+\DoxyCodeLine{7874                 (\textcolor{keyword}{const} \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}}*) global,}
+\DoxyCodeLine{7875                 local.dimensions() != 0 ? (\textcolor{keyword}{const} \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}}*) local : NULL,}
+\DoxyCodeLine{7876                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7877                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7878                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7879             \_\_ENQUEUE\_NDRANGE\_KERNEL\_ERR);}
+\DoxyCodeLine{7880 }
+\DoxyCodeLine{7881         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7882             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7883 }
+\DoxyCodeLine{7884         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7885     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a0e6d2ed1031239edaf9134a15ad1a816_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a0e6d2ed1031239edaf9134a15ad1a816_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a81f78df7eadfd5202e1e670aacb16014}\label{classcl_1_1_command_queue_a81f78df7eadfd5202e1e670aacb16014}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueReadBuffer@{enqueueReadBuffer}}
+\index{enqueueReadBuffer@{enqueueReadBuffer}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueReadBuffer()}{enqueueReadBuffer()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Read\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{buffer,  }\item[{cl\+\_\+bool}]{blocking,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{offset,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size,  }\item[{void $\ast$}]{ptr,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7030 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7038     \{}
+\DoxyCodeLine{7039         cl\_event tmp;}
+\DoxyCodeLine{7040         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7041             ::clEnqueueReadBuffer(}
+\DoxyCodeLine{7042                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, buffer(), blocking, offset, size,}
+\DoxyCodeLine{7043                 ptr,}
+\DoxyCodeLine{7044                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7045                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7046                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7047             \_\_ENQUEUE\_READ\_BUFFER\_ERR);}
+\DoxyCodeLine{7048 }
+\DoxyCodeLine{7049         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7050             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7051 }
+\DoxyCodeLine{7052         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7053     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a81f78df7eadfd5202e1e670aacb16014_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a81f78df7eadfd5202e1e670aacb16014_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_ae8b7b02623f13b393a79e3ff9916d270}\label{classcl_1_1_command_queue_ae8b7b02623f13b393a79e3ff9916d270}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueReadBufferRect@{enqueueReadBufferRect}}
+\index{enqueueReadBufferRect@{enqueueReadBufferRect}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueReadBufferRect()}{enqueueReadBufferRect()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Read\+Buffer\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{buffer,  }\item[{cl\+\_\+bool}]{blocking,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{buffer\+\_\+offset,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{host\+\_\+offset,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{region,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{buffer\+\_\+row\+\_\+pitch,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{buffer\+\_\+slice\+\_\+pitch,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{host\+\_\+row\+\_\+pitch,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{host\+\_\+slice\+\_\+pitch,  }\item[{void $\ast$}]{ptr,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7104 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7117     \{}
+\DoxyCodeLine{7118         cl\_event tmp;}
+\DoxyCodeLine{7119         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7120             ::clEnqueueReadBufferRect(}
+\DoxyCodeLine{7121                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{7122                 buffer(), }
+\DoxyCodeLine{7123                 blocking,}
+\DoxyCodeLine{7124                 buffer\_offset.data(),}
+\DoxyCodeLine{7125                 host\_offset.data(),}
+\DoxyCodeLine{7126                 region.data(),}
+\DoxyCodeLine{7127                 buffer\_row\_pitch,}
+\DoxyCodeLine{7128                 buffer\_slice\_pitch,}
+\DoxyCodeLine{7129                 host\_row\_pitch,}
+\DoxyCodeLine{7130                 host\_slice\_pitch,}
+\DoxyCodeLine{7131                 ptr,}
+\DoxyCodeLine{7132                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7133                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7134                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7135                 \_\_ENQUEUE\_READ\_BUFFER\_RECT\_ERR);}
+\DoxyCodeLine{7136 }
+\DoxyCodeLine{7137         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7138             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7139 }
+\DoxyCodeLine{7140         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7141     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_ae8b7b02623f13b393a79e3ff9916d270_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_ae8b7b02623f13b393a79e3ff9916d270_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_abcd7ead0f68caafafffae2cb7be75c0b}\label{classcl_1_1_command_queue_abcd7ead0f68caafafffae2cb7be75c0b}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueReadImage@{enqueueReadImage}}
+\index{enqueueReadImage@{enqueueReadImage}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueReadImage()}{enqueueReadImage()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Read\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&}]{image,  }\item[{cl\+\_\+bool}]{blocking,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{origin,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{region,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{row\+\_\+pitch,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{slice\+\_\+pitch,  }\item[{void $\ast$}]{ptr,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7261 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7271     \{}
+\DoxyCodeLine{7272         cl\_event tmp;}
+\DoxyCodeLine{7273         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7274             ::clEnqueueReadImage(}
+\DoxyCodeLine{7275                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{7276                 image(), }
+\DoxyCodeLine{7277                 blocking, }
+\DoxyCodeLine{7278                 origin.data(),}
+\DoxyCodeLine{7279                 region.data(), }
+\DoxyCodeLine{7280                 row\_pitch, }
+\DoxyCodeLine{7281                 slice\_pitch, }
+\DoxyCodeLine{7282                 ptr,}
+\DoxyCodeLine{7283                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7284                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7285                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7286             \_\_ENQUEUE\_READ\_IMAGE\_ERR);}
+\DoxyCodeLine{7287 }
+\DoxyCodeLine{7288         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7289             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7290 }
+\DoxyCodeLine{7291         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7292     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_abcd7ead0f68caafafffae2cb7be75c0b_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_abcd7ead0f68caafafffae2cb7be75c0b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_aea30fd364c0ba14f3fd9f260b8a9ad1f}\label{classcl_1_1_command_queue_aea30fd364c0ba14f3fd9f260b8a9ad1f}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueReleaseGLObjects@{enqueueReleaseGLObjects}}
+\index{enqueueReleaseGLObjects@{enqueueReleaseGLObjects}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueReleaseGLObjects()}{enqueueReleaseGLObjects()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Release\+G\+L\+Objects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_memory}{Memory}} $>$ $\ast$}]{mem\+\_\+objects = {\ttfamily NULL},  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7998 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8002      \{}
+\DoxyCodeLine{8003         cl\_event tmp;}
+\DoxyCodeLine{8004         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{8005              ::clEnqueueReleaseGLObjects(}
+\DoxyCodeLine{8006                  \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}},}
+\DoxyCodeLine{8007                  (mem\_objects != NULL) ? (cl\_uint) mem\_objects-\/>size() : 0,}
+\DoxyCodeLine{8008                  (mem\_objects != NULL \&\& mem\_objects-\/>size() > 0) ? (\textcolor{keyword}{const} cl\_mem *) \&mem\_objects-\/>front(): NULL,}
+\DoxyCodeLine{8009                  (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{8010                  (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{8011                  (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{8012              \_\_ENQUEUE\_RELEASE\_GL\_ERR);}
+\DoxyCodeLine{8013 }
+\DoxyCodeLine{8014         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{8015             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{8016 }
+\DoxyCodeLine{8017         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{8018      \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_aea30fd364c0ba14f3fd9f260b8a9ad1f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_abf59626241152db7c2c986198ad32bba}\label{classcl_1_1_command_queue_abf59626241152db7c2c986198ad32bba}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueUnmapMemObject@{enqueueUnmapMemObject}}
+\index{enqueueUnmapMemObject@{enqueueUnmapMemObject}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueUnmapMemObject()}{enqueueUnmapMemObject()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Unmap\+Mem\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_memory}{Memory}} \&}]{memory,  }\item[{void $\ast$}]{mapped\+\_\+ptr,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7663 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7668     \{}
+\DoxyCodeLine{7669         cl\_event tmp;}
+\DoxyCodeLine{7670         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7671             ::clEnqueueUnmapMemObject(}
+\DoxyCodeLine{7672                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, memory(), mapped\_ptr,}
+\DoxyCodeLine{7673                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7674                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7675                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7676             \_\_ENQUEUE\_UNMAP\_MEM\_OBJECT\_ERR);}
+\DoxyCodeLine{7677 }
+\DoxyCodeLine{7678         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7679             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7680 }
+\DoxyCodeLine{7681         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7682     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_abf59626241152db7c2c986198ad32bba_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classcl_1_1_command_queue_abf59626241152db7c2c986198ad32bba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a8818c06a2f28a319d5259be7374c93fc}\label{classcl_1_1_command_queue_a8818c06a2f28a319d5259be7374c93fc}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueUnmapSVM@{enqueueUnmapSVM}}
+\index{enqueueUnmapSVM@{enqueueUnmapSVM}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueUnmapSVM()}{enqueueUnmapSVM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , class D $>$ \\
+cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Unmap\+S\+VM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}}$<$ T, D $>$ \&}]{ptr,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enqueues a command that will release a coarse-\/grained S\+VM buffer back to the Open\+CL runtime. This variant takes a \mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}} instance. 
+
+cl2.\+hpp 파일의 7716 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7720     \{}
+\DoxyCodeLine{7721         cl\_event tmp;}
+\DoxyCodeLine{7722         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7723             ::clEnqueueSVMUnmap(}
+\DoxyCodeLine{7724             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, static\_cast<void*>(ptr.get()),}
+\DoxyCodeLine{7725             (events != NULL) ? (cl\_uint)events-\/>size() : 0,}
+\DoxyCodeLine{7726             (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*)\&events-\/>front() : NULL,}
+\DoxyCodeLine{7727             (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7728             \_\_ENQUEUE\_UNMAP\_MEM\_OBJECT\_ERR);}
+\DoxyCodeLine{7729 }
+\DoxyCodeLine{7730         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7731             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7732 }
+\DoxyCodeLine{7733         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7734     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a8818c06a2f28a319d5259be7374c93fc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_af7e83f7dec93b2700b8ce4380d81bfcb}\label{classcl_1_1_command_queue_af7e83f7dec93b2700b8ce4380d81bfcb}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueUnmapSVM@{enqueueUnmapSVM}}
+\index{enqueueUnmapSVM@{enqueueUnmapSVM}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueUnmapSVM()}{enqueueUnmapSVM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T , class Alloc $>$ \\
+cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Unmap\+S\+VM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl\+::vector}}$<$ T, Alloc $>$ \&}]{container,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enqueues a command that will release a coarse-\/grained S\+VM buffer back to the Open\+CL runtime. This variant takes a \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl\+::vector}} instance. 
+
+cl2.\+hpp 파일의 7741 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7745     \{}
+\DoxyCodeLine{7746         cl\_event tmp;}
+\DoxyCodeLine{7747         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7748             ::clEnqueueSVMUnmap(}
+\DoxyCodeLine{7749             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, static\_cast<void*>(container.data()),}
+\DoxyCodeLine{7750             (events != NULL) ? (cl\_uint)events-\/>size() : 0,}
+\DoxyCodeLine{7751             (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*)\&events-\/>front() : NULL,}
+\DoxyCodeLine{7752             (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7753             \_\_ENQUEUE\_UNMAP\_MEM\_OBJECT\_ERR);}
+\DoxyCodeLine{7754 }
+\DoxyCodeLine{7755         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7756             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7757 }
+\DoxyCodeLine{7758         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7759     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_af7e83f7dec93b2700b8ce4380d81bfcb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_affae2ea7a86c23e01c11fbdcdc149300}\label{classcl_1_1_command_queue_affae2ea7a86c23e01c11fbdcdc149300}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueUnmapSVM@{enqueueUnmapSVM}}
+\index{enqueueUnmapSVM@{enqueueUnmapSVM}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueUnmapSVM()}{enqueueUnmapSVM()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Unmap\+S\+VM (\begin{DoxyParamCaption}\item[{T $\ast$}]{ptr,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enqueues a command that will release a coarse-\/grained S\+VM buffer back to the Open\+CL runtime. This variant takes a raw S\+VM pointer. 
+
+cl2.\+hpp 파일의 7691 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7695     \{}
+\DoxyCodeLine{7696         cl\_event tmp;}
+\DoxyCodeLine{7697         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7698             ::clEnqueueSVMUnmap(}
+\DoxyCodeLine{7699             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, static\_cast<void*>(ptr),}
+\DoxyCodeLine{7700             (events != NULL) ? (cl\_uint)events-\/>size() : 0,}
+\DoxyCodeLine{7701             (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*)\&events-\/>front() : NULL,}
+\DoxyCodeLine{7702             (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7703             \_\_ENQUEUE\_UNMAP\_MEM\_OBJECT\_ERR);}
+\DoxyCodeLine{7704 }
+\DoxyCodeLine{7705         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7706             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7707 }
+\DoxyCodeLine{7708         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7709     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_affae2ea7a86c23e01c11fbdcdc149300_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_affae2ea7a86c23e01c11fbdcdc149300_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_acee8965ec3b645fd416d6448516b346c}\label{classcl_1_1_command_queue_acee8965ec3b645fd416d6448516b346c}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueWriteBuffer@{enqueueWriteBuffer}}
+\index{enqueueWriteBuffer@{enqueueWriteBuffer}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueWriteBuffer()}{enqueueWriteBuffer()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Write\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{buffer,  }\item[{cl\+\_\+bool}]{blocking,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{offset,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size,  }\item[{const void $\ast$}]{ptr,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7055 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7063     \{}
+\DoxyCodeLine{7064         cl\_event tmp;}
+\DoxyCodeLine{7065         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7066             ::clEnqueueWriteBuffer(}
+\DoxyCodeLine{7067                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, buffer(), blocking, offset, size,}
+\DoxyCodeLine{7068                 ptr,}
+\DoxyCodeLine{7069                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7070                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7071                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7072                 \_\_ENQUEUE\_WRITE\_BUFFER\_ERR);}
+\DoxyCodeLine{7073 }
+\DoxyCodeLine{7074         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7075             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7076 }
+\DoxyCodeLine{7077         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7078     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_acee8965ec3b645fd416d6448516b346c_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_acee8965ec3b645fd416d6448516b346c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a84669123946c99690f32c08276b9512a}\label{classcl_1_1_command_queue_a84669123946c99690f32c08276b9512a}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueWriteBufferRect@{enqueueWriteBufferRect}}
+\index{enqueueWriteBufferRect@{enqueueWriteBufferRect}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueWriteBufferRect()}{enqueueWriteBufferRect()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Write\+Buffer\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{buffer,  }\item[{cl\+\_\+bool}]{blocking,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{buffer\+\_\+offset,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{host\+\_\+offset,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{region,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{buffer\+\_\+row\+\_\+pitch,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{buffer\+\_\+slice\+\_\+pitch,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{host\+\_\+row\+\_\+pitch,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{host\+\_\+slice\+\_\+pitch,  }\item[{const void $\ast$}]{ptr,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7143 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7156     \{}
+\DoxyCodeLine{7157         cl\_event tmp;}
+\DoxyCodeLine{7158         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7159             ::clEnqueueWriteBufferRect(}
+\DoxyCodeLine{7160                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{7161                 buffer(), }
+\DoxyCodeLine{7162                 blocking,}
+\DoxyCodeLine{7163                 buffer\_offset.data(),}
+\DoxyCodeLine{7164                 host\_offset.data(),}
+\DoxyCodeLine{7165                 region.data(),}
+\DoxyCodeLine{7166                 buffer\_row\_pitch,}
+\DoxyCodeLine{7167                 buffer\_slice\_pitch,}
+\DoxyCodeLine{7168                 host\_row\_pitch,}
+\DoxyCodeLine{7169                 host\_slice\_pitch,}
+\DoxyCodeLine{7170                 ptr,}
+\DoxyCodeLine{7171                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7172                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7173                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7174                 \_\_ENQUEUE\_WRITE\_BUFFER\_RECT\_ERR);}
+\DoxyCodeLine{7175 }
+\DoxyCodeLine{7176         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7177             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7178 }
+\DoxyCodeLine{7179         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7180     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a84669123946c99690f32c08276b9512a_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a84669123946c99690f32c08276b9512a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a88e335f69c0e65b624c670e0dfe10e59}\label{classcl_1_1_command_queue_a88e335f69c0e65b624c670e0dfe10e59}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!enqueueWriteImage@{enqueueWriteImage}}
+\index{enqueueWriteImage@{enqueueWriteImage}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{enqueueWriteImage()}{enqueueWriteImage()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::enqueue\+Write\+Image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_image}{Image}} \&}]{image,  }\item[{cl\+\_\+bool}]{blocking,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{origin,  }\item[{const \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{array}}$<$ \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}, 3 $>$ \&}]{region,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{row\+\_\+pitch,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{slice\+\_\+pitch,  }\item[{const void $\ast$}]{ptr,  }\item[{const \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_event}{Event}} $>$ $\ast$}]{events = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classcl_1_1_event}{Event}} $\ast$}]{event = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7294 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7304     \{}
+\DoxyCodeLine{7305         cl\_event tmp;}
+\DoxyCodeLine{7306         cl\_int err = \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7307             ::clEnqueueWriteImage(}
+\DoxyCodeLine{7308                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{7309                 image(), }
+\DoxyCodeLine{7310                 blocking, }
+\DoxyCodeLine{7311                 origin.data(),}
+\DoxyCodeLine{7312                 region.data(), }
+\DoxyCodeLine{7313                 row\_pitch, }
+\DoxyCodeLine{7314                 slice\_pitch, }
+\DoxyCodeLine{7315                 ptr,}
+\DoxyCodeLine{7316                 (events != NULL) ? (cl\_uint) events-\/>size() : 0,}
+\DoxyCodeLine{7317                 (events != NULL \&\& events-\/>size() > 0) ? (cl\_event*) \&events-\/>front() : NULL,}
+\DoxyCodeLine{7318                 (\textcolor{keyword}{event} != NULL) ? \&tmp : NULL),}
+\DoxyCodeLine{7319             \_\_ENQUEUE\_WRITE\_IMAGE\_ERR);}
+\DoxyCodeLine{7320 }
+\DoxyCodeLine{7321         \textcolor{keywordflow}{if} (event != NULL \&\& err == CL\_SUCCESS)}
+\DoxyCodeLine{7322             *\textcolor{keyword}{event} = tmp;}
+\DoxyCodeLine{7323 }
+\DoxyCodeLine{7324         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{7325     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a88e335f69c0e65b624c670e0dfe10e59_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a88e335f69c0e65b624c670e0dfe10e59_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a511d461b0f5fabc8d737f4f29a4f346e}\label{classcl_1_1_command_queue_a511d461b0f5fabc8d737f4f29a4f346e}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!finish@{finish}}
+\index{finish@{finish}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{finish()}{finish()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 8115 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8116     \{}
+\DoxyCodeLine{8117         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(::clFinish(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}), \_\_FINISH\_ERR);}
+\DoxyCodeLine{8118     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a511d461b0f5fabc8d737f4f29a4f346e_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classcl_1_1_command_queue_a511d461b0f5fabc8d737f4f29a4f346e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a3cba88b51715610d76b0956140be9655}\label{classcl_1_1_command_queue_a3cba88b51715610d76b0956140be9655}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!flush@{flush}}
+\index{flush@{flush}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Command\+Queue\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Deprecated A\+P\+Is for 1.\+2 
+
+cl2.\+hpp 파일의 8110 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8111     \{}
+\DoxyCodeLine{8112         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(::clFlush(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}), \_\_FLUSH\_ERR);}
+\DoxyCodeLine{8113     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a3cba88b51715610d76b0956140be9655_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classcl_1_1_command_queue_a3cba88b51715610d76b0956140be9655_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}\label{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!get@{get}}
+\index{get@{get}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+command\+\_\+queue  $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1702 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1702 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}\label{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!get@{get}}
+\index{get@{get}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+command\+\_\+queue  $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1700 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1700 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a24444b0dbd7cc0eb2bce126c9ccbac4c}\label{classcl_1_1_command_queue_a24444b0dbd7cc0eb2bce126c9ccbac4c}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!getDefault@{getDefault}}
+\index{getDefault@{getDefault}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{getDefault()}{getDefault()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} cl\+::\+Command\+Queue\+::get\+Default (\begin{DoxyParamCaption}\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+cl2.\+hpp 파일의 6934 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6935     \{}
+\DoxyCodeLine{6936         std::call\_once(\mbox{\hyperlink{classcl_1_1_command_queue_ab94813bab45d4274edae3cf86c00d2fc}{default\_initialized\_}}, \mbox{\hyperlink{classcl_1_1_command_queue_a18c1118d0c12a5175351ac24d4bcd9ae}{makeDefault}});}
+\DoxyCodeLine{6937 \textcolor{preprocessor}{\#if CL\_HPP\_TARGET\_OPENCL\_VERSION >= 200}}
+\DoxyCodeLine{6938         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{classcl_1_1_command_queue_a12cb59bdae1879389c45cecbfb816ed2}{default\_error\_}}, \_\_CREATE\_COMMAND\_QUEUE\_WITH\_PROPERTIES\_ERR);}
+\DoxyCodeLine{6939 \textcolor{preprocessor}{\#else // CL\_HPP\_TARGET\_OPENCL\_VERSION >= 200}}
+\DoxyCodeLine{6940         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{classcl_1_1_command_queue_a12cb59bdae1879389c45cecbfb816ed2}{default\_error\_}}, \_\_CREATE\_COMMAND\_QUEUE\_ERR);}
+\DoxyCodeLine{6941 \textcolor{preprocessor}{\#endif // CL\_HPP\_TARGET\_OPENCL\_VERSION >= 200}}
+\DoxyCodeLine{6942         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{6943             *err = \mbox{\hyperlink{classcl_1_1_command_queue_a12cb59bdae1879389c45cecbfb816ed2}{default\_error\_}};}
+\DoxyCodeLine{6944         \}}
+\DoxyCodeLine{6945         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1_command_queue_a6f7c8bb9d56990403275d8894cbf6f83}{default\_}};}
+\DoxyCodeLine{6946     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a24444b0dbd7cc0eb2bce126c9ccbac4c_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a24444b0dbd7cc0eb2bce126c9ccbac4c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a24ba91cef5c88b386b5ecad998501503}\label{classcl_1_1_command_queue_a24ba91cef5c88b386b5ecad998501503}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+cl\+\_\+int cl\+::\+Command\+Queue\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+command\+\_\+queue\+\_\+info}]{name,  }\item[{T $\ast$}]{param }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7009 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7010     \{}
+\DoxyCodeLine{7011         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{7012             \mbox{\hyperlink{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480}{detail::getInfo}}(}
+\DoxyCodeLine{7013                 \&::clGetCommandQueueInfo, \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, name, param),}
+\DoxyCodeLine{7014                 \_\_GET\_COMMAND\_QUEUE\_INFO\_ERR);}
+\DoxyCodeLine{7015     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a24ba91cef5c88b386b5ecad998501503_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a24ba91cef5c88b386b5ecad998501503_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a66638b5e76c09e955a4b9c4bd4e0263f}\label{classcl_1_1_command_queue_a66638b5e76c09e955a4b9c4bd4e0263f}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$cl\+\_\+int name$>$ \\
+\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$detail\+::cl\+\_\+command\+\_\+queue\+\_\+info, name$>$\+::param\+\_\+type cl\+::\+Command\+Queue\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 7019 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7020     \{}
+\DoxyCodeLine{7021         \textcolor{keyword}{typename} detail::param\_traits<}
+\DoxyCodeLine{7022             detail::cl\_command\_queue\_info, name>::param\_type param;}
+\DoxyCodeLine{7023         cl\_int result = \mbox{\hyperlink{classcl_1_1_command_queue_a24ba91cef5c88b386b5ecad998501503}{getInfo}}(name, \&param);}
+\DoxyCodeLine{7024         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{7025             *err = result;}
+\DoxyCodeLine{7026         \}}
+\DoxyCodeLine{7027         \textcolor{keywordflow}{return} param;}
+\DoxyCodeLine{7028     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a66638b5e76c09e955a4b9c4bd4e0263f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a18c1118d0c12a5175351ac24d4bcd9ae}\label{classcl_1_1_command_queue_a18c1118d0c12a5175351ac24d4bcd9ae}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!makeDefault@{makeDefault}}
+\index{makeDefault@{makeDefault}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{makeDefault()}{makeDefault()}}
+{\footnotesize\ttfamily static void cl\+::\+Command\+Queue\+::make\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Create the default command queue returned by \mbox{\hyperlink{classcl_1_1_command_queue_a24444b0dbd7cc0eb2bce126c9ccbac4c}{get\+Default}}. 
+
+It sets default\+\_\+error\+\_\+ to indicate success or failure. It does not throw {\ttfamily cl\+::\+Error}. 
+
+cl2.\+hpp 파일의 6630 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6631     \{}
+\DoxyCodeLine{6632         \textcolor{comment}{/* We don't want to throw an error from this function, so we have to}}
+\DoxyCodeLine{6633 \textcolor{comment}{         * catch and set the error flag.}}
+\DoxyCodeLine{6634 \textcolor{comment}{         */}}
+\DoxyCodeLine{6635 \textcolor{preprocessor}{\#if defined(CL\_HPP\_ENABLE\_EXCEPTIONS)}}
+\DoxyCodeLine{6636         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{6637 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{6638         \{}
+\DoxyCodeLine{6639             \textcolor{keywordtype}{int} \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6640             Context context = \mbox{\hyperlink{classcl_1_1_context_ad180f6f7d8b5a95710ab72f96162b051}{Context::getDefault}}(\&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{6641 }
+\DoxyCodeLine{6642             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} != CL\_SUCCESS) \{}
+\DoxyCodeLine{6643                 \mbox{\hyperlink{classcl_1_1_command_queue_a12cb59bdae1879389c45cecbfb816ed2}{default\_error\_}} = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{6644             \}}
+\DoxyCodeLine{6645             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{6646                 Device device = \mbox{\hyperlink{classcl_1_1_device_a7428cf3cdccc824c414730ed65e40a0d}{Device::getDefault}}();}
+\DoxyCodeLine{6647                 \mbox{\hyperlink{classcl_1_1_command_queue_a6f7c8bb9d56990403275d8894cbf6f83}{default\_}} = \mbox{\hyperlink{classcl_1_1_command_queue_ab1beb7ab6e619a4e050d87c70bb001a6}{CommandQueue}}(context, device, 0, \&\mbox{\hyperlink{classcl_1_1_command_queue_a12cb59bdae1879389c45cecbfb816ed2}{default\_error\_}});}
+\DoxyCodeLine{6648             \}}
+\DoxyCodeLine{6649         \}}
+\DoxyCodeLine{6650 \textcolor{preprocessor}{\#if defined(CL\_HPP\_ENABLE\_EXCEPTIONS)}}
+\DoxyCodeLine{6651         \textcolor{keywordflow}{catch} (cl::Error \&e) \{}
+\DoxyCodeLine{6652             \mbox{\hyperlink{classcl_1_1_command_queue_a12cb59bdae1879389c45cecbfb816ed2}{default\_error\_}} = e.err();}
+\DoxyCodeLine{6653         \}}
+\DoxyCodeLine{6654 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{6655     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a18c1118d0c12a5175351ac24d4bcd9ae_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a18c1118d0c12a5175351ac24d4bcd9ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a2a84b82b7ed4c788bc39e407368e051a}\label{classcl_1_1_command_queue_a2a84b82b7ed4c788bc39e407368e051a}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!makeDefaultProvided@{makeDefaultProvided}}
+\index{makeDefaultProvided@{makeDefaultProvided}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{makeDefaultProvided()}{makeDefaultProvided()}}
+{\footnotesize\ttfamily static void cl\+::\+Command\+Queue\+::make\+Default\+Provided (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Create the default command queue. 
+
+This sets {\ttfamily default\+\_\+}. It does not throw {\ttfamily cl\+::\+Error}. 
+
+cl2.\+hpp 파일의 6662 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6662                                                            \{}
+\DoxyCodeLine{6663         \mbox{\hyperlink{classcl_1_1_command_queue_a6f7c8bb9d56990403275d8894cbf6f83}{default\_}} = c;}
+\DoxyCodeLine{6664     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a2a84b82b7ed4c788bc39e407368e051a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}\label{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+command\+\_\+queue  $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1698 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1698 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}\label{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+command\+\_\+queue  $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1696 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1696 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_command_queue_af448f36396f06bcf9fffd5762c15d67d}\label{classcl_1_1_command_queue_af448f36396f06bcf9fffd5762c15d67d}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}}\& cl\+::\+Command\+Queue\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&\&}]{queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move assignment to forward move to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 7002 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7003     \{}
+\DoxyCodeLine{7004         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a044bc05bb3eb90345cb9cf574b95a98f}{detail::Wrapper<cl\_type>::operator=}}(std::move(queue));}
+\DoxyCodeLine{7005         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{7006     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_af448f36396f06bcf9fffd5762c15d67d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a30d0117e538d0c080333cb21afd7e18d}\label{classcl_1_1_command_queue_a30d0117e538d0c080333cb21afd7e18d}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}}\& cl\+::\+Command\+Queue\+::operator= (\begin{DoxyParamCaption}\item[{const cl\+\_\+command\+\_\+queue \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 6974 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6975     \{}
+\DoxyCodeLine{6976         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a044bc05bb3eb90345cb9cf574b95a98f}{detail::Wrapper<cl\_type>::operator=}}(rhs);}
+\DoxyCodeLine{6977         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{6978     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a30d0117e538d0c080333cb21afd7e18d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_command_queue_aafedf5e6899afe6097062277e4c3da17}\label{classcl_1_1_command_queue_aafedf5e6899afe6097062277e4c3da17}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}}\& cl\+::\+Command\+Queue\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&}]{queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy assignment to forward copy to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 6988 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6989     \{}
+\DoxyCodeLine{6990         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a044bc05bb3eb90345cb9cf574b95a98f}{detail::Wrapper<cl\_type>::operator=}}(queue);}
+\DoxyCodeLine{6991         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{6992     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_aafedf5e6899afe6097062277e4c3da17_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}\label{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!release@{release}}
+\index{release@{release}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+command\+\_\+queue  $>$\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1719 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1720     \{}
+\DoxyCodeLine{1721         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{1722             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::release(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}});}
+\DoxyCodeLine{1723         \}}
+\DoxyCodeLine{1724         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1725             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1726         \}}
+\DoxyCodeLine{1727     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}\label{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!retain@{retain}}
+\index{retain@{retain}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{retain()}{retain()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+command\+\_\+queue  $>$\+::retain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1709 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1710     \{}
+\DoxyCodeLine{1711         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{1712             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::retain(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}});}
+\DoxyCodeLine{1713         \}}
+\DoxyCodeLine{1714         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1715             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1716         \}}
+\DoxyCodeLine{1717     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a736a138dd72e39056e8a9aa3dec5d132}\label{classcl_1_1_command_queue_a736a138dd72e39056e8a9aa3dec5d132}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!setDefault@{setDefault}}
+\index{setDefault@{setDefault}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{setDefault()}{setDefault()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} cl\+::\+Command\+Queue\+::set\+Default (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&}]{default\+\_\+queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Modify the default command queue to be used by subsequent operations. Will only set the default if no default was previously created. \begin{DoxyReturn}{반환값}
+updated default command queue. Should be compared to the passed value to ensure that it was updated. 
+\end{DoxyReturn}
+
+
+cl2.\+hpp 파일의 6955 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6956     \{}
+\DoxyCodeLine{6957         std::call\_once(\mbox{\hyperlink{classcl_1_1_command_queue_ab94813bab45d4274edae3cf86c00d2fc}{default\_initialized\_}}, \mbox{\hyperlink{classcl_1_1_command_queue_a2a84b82b7ed4c788bc39e407368e051a}{makeDefaultProvided}}, std::cref(default\_queue));}
+\DoxyCodeLine{6958         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{classcl_1_1_command_queue_a12cb59bdae1879389c45cecbfb816ed2}{default\_error\_}});}
+\DoxyCodeLine{6959         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1_command_queue_a6f7c8bb9d56990403275d8894cbf6f83}{default\_}};}
+\DoxyCodeLine{6960     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_command_queue_a736a138dd72e39056e8a9aa3dec5d132_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classcl_1_1_command_queue_a6f7c8bb9d56990403275d8894cbf6f83}\label{classcl_1_1_command_queue_a6f7c8bb9d56990403275d8894cbf6f83}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!default\_@{default\_}}
+\index{default\_@{default\_}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{default\_}{default\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cl2_8hpp_a43bdbc2602e055e27992c3f36aeb616a}{C\+L\+\_\+\+H\+P\+P\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+}} \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} cl\+::\+Command\+Queue\+::default\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+cl2.\+hpp 파일의 6622 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1_command_queue_a12cb59bdae1879389c45cecbfb816ed2}\label{classcl_1_1_command_queue_a12cb59bdae1879389c45cecbfb816ed2}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!default\_error\_@{default\_error\_}}
+\index{default\_error\_@{default\_error\_}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{default\_error\_}{default\_error\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cl2_8hpp_a43bdbc2602e055e27992c3f36aeb616a}{C\+L\+\_\+\+H\+P\+P\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+}} cl\+\_\+int cl\+::\+Command\+Queue\+::default\+\_\+error\+\_\+ = C\+L\+\_\+\+S\+U\+C\+C\+E\+SS\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+cl2.\+hpp 파일의 6623 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1_command_queue_ab94813bab45d4274edae3cf86c00d2fc}\label{classcl_1_1_command_queue_ab94813bab45d4274edae3cf86c00d2fc}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!default\_initialized\_@{default\_initialized\_}}
+\index{default\_initialized\_@{default\_initialized\_}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{default\_initialized\_}{default\_initialized\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cl2_8hpp_a43bdbc2602e055e27992c3f36aeb616a}{C\+L\+\_\+\+H\+P\+P\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+}} std\+::once\+\_\+flag cl\+::\+Command\+Queue\+::default\+\_\+initialized\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+cl2.\+hpp 파일의 6621 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}\label{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}} 
+\index{cl::CommandQueue@{cl::CommandQueue}!object\_@{object\_}}
+\index{object\_@{object\_}!cl::CommandQueue@{cl::CommandQueue}}
+\doxysubsubsection{\texorpdfstring{object\_}{object\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+command\+\_\+queue  $>$\+::object\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1640 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/gpu/\mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,42 @@
+\hypertarget{render_pose_8hpp}{}\doxysection{/home/ms/openpose/include/openpose/pose/render\+Pose.hpp 파일 참조}
+\label{render_pose_8hpp}\index{/home/ms/openpose/include/openpose/pose/renderPose.hpp@{/home/ms/openpose/include/openpose/pose/renderPose.hpp}}
+{\ttfamily \#include $<$opencv2/core/core.\+hpp$>$}\newline
+{\ttfamily \#include $<$openpose/core/common.\+hpp$>$}\newline
+{\ttfamily \#include $<$openpose/pose/enum\+Classes.\+hpp$>$}\newline
+{\ttfamily \#include $<$openpose/pose/pose\+Parameters\+Render.\+hpp$>$}\newline
+render\+Pose.\+hpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{render_pose_8hpp__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{render_pose_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{네임스페이스}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceop}{op}}
+\end{DoxyCompactItemize}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a99a08148f440bd96546076e15f0de04c}{op\+::render\+Pose\+Keypoints\+Cpu}} (Array$<$ float $>$ \&frame\+Array, const Array$<$ float $>$ \&pose\+Keypoints, const Pose\+Model pose\+Model, const float render\+Threshold, const bool blend\+Original\+Frame=true)
+\item 
+void \mbox{\hyperlink{namespaceop_a7f16c9970e52d2c0bca22628487b0f05}{op\+::render\+Pose\+Keypoints\+Gpu}} (float $\ast$frame\+Ptr, const Pose\+Model pose\+Model, const int number\+People, const Point$<$ int $>$ \&frame\+Size, const float $\ast$const pose\+Ptr, const float render\+Threshold, const bool googly\+Eyes=false, const bool blend\+Original\+Frame=true, const float alpha\+Blending=P\+O\+S\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+K\+E\+Y\+P\+O\+I\+NT)
+\item 
+void \mbox{\hyperlink{namespaceop_a0ca2eb02250389b5497930fd7f699ac8}{op\+::render\+Pose\+Heat\+Map\+Gpu}} (float $\ast$frame, const Point$<$ int $>$ \&frame\+Size, const float $\ast$const heat\+Map\+Ptr, const Point$<$ int $>$ \&heat\+Map\+Size, const float scale\+To\+Keep\+Ratio, const unsigned int part, const float alpha\+Blending=P\+O\+S\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+H\+E\+A\+T\+\_\+\+M\+AP)
+\item 
+void \mbox{\hyperlink{namespaceop_a7647d7d5831538fdfa3efb259683b622}{op\+::render\+Pose\+Heat\+Maps\+Gpu}} (float $\ast$frame, const Pose\+Model pose\+Model, const Point$<$ int $>$ \&frame\+Size, const float $\ast$const heat\+Map\+Ptr, const Point$<$ int $>$ \&heat\+Map\+Size, const float scale\+To\+Keep\+Ratio, const float alpha\+Blending=P\+O\+S\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+H\+E\+A\+T\+\_\+\+M\+AP)
+\item 
+void \mbox{\hyperlink{namespaceop_a2eb8c7f1fec76d0753293dc80f029880}{op\+::render\+Pose\+P\+A\+F\+Gpu}} (float $\ast$frame\+Ptr, const Pose\+Model pose\+Model, const Point$<$ int $>$ \&frame\+Size, const float $\ast$const heat\+Map\+Ptr, const Point$<$ int $>$ \&heat\+Map\+Size, const float scale\+To\+Keep\+Ratio, const int part, const float alpha\+Blending=P\+O\+S\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+H\+E\+A\+T\+\_\+\+M\+AP)
+\item 
+void \mbox{\hyperlink{namespaceop_a81861ebca5dfd2b33c6b4d5a3cc81560}{op\+::render\+Pose\+P\+A\+Fs\+Gpu}} (float $\ast$frame\+Ptr, const Pose\+Model pose\+Model, const Point$<$ int $>$ \&frame\+Size, const float $\ast$const heat\+Map\+Ptr, const Point$<$ int $>$ \&heat\+Map\+Size, const float scale\+To\+Keep\+Ratio, const float alpha\+Blending=P\+O\+S\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+H\+E\+A\+T\+\_\+\+M\+AP)
+\item 
+void \mbox{\hyperlink{namespaceop_a667d1659678e7dff9f6ecbce6b06ca4f}{op\+::render\+Pose\+Distance\+Gpu}} (float $\ast$frame\+Ptr, const Point$<$ int $>$ \&frame\+Size, const float $\ast$const heat\+Map\+Ptr, const Point$<$ int $>$ \&heat\+Map\+Size, const float scale\+To\+Keep\+Ratio, const unsigned int part, const float alpha\+Blending=P\+O\+S\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+P\+H\+A\+\_\+\+H\+E\+A\+T\+\_\+\+M\+AP)
+\end{DoxyCompactItemize}

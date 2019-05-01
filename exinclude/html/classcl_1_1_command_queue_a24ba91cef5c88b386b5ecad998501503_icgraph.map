@@ -1,0 +1,5 @@
+<map id="cl::CommandQueue::getInfo" name="cl::CommandQueue::getInfo">
+<area shape="rect" id="node1" title=" " alt="" coords="240,31,427,57"/>
+<area shape="rect" id="node2" href="$classcl_1_1_command_queue.html#a66638b5e76c09e955a4b9c4bd4e0263f" title=" " alt="" coords="5,5,192,32"/>
+<area shape="rect" id="node3" href="$classcl_1_1_buffer.html#a589e770b263ccedb789620860799e2c6" title="Construct a Buffer from a host container via iterators using a specified queue. If useHostPtr is spec..." alt="" coords="39,56,158,83"/>
+</map>

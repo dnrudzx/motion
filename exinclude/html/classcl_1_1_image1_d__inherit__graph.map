@@ -1,0 +1,6 @@
+<map id="cl::Image1D" name="cl::Image1D">
+<area shape="rect" id="node1" title="Class interface for 1D Image Memory objects." alt="" coords="43,836,140,1016"/>
+<area shape="rect" id="node2" href="$classcl_1_1_image.html" title="C++ base class for Image Memory objects." alt="" coords="32,593,151,788"/>
+<area shape="rect" id="node3" href="$classcl_1_1_memory.html" title="Class interface for cl_mem." alt="" coords="5,336,177,545"/>
+<area shape="rect" id="node4" href="$classcl_1_1detail_1_1_wrapper.html" title=" " alt="" coords="27,5,155,288"/>
+</map>

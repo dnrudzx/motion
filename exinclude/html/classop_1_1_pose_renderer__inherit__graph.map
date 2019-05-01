@@ -1,0 +1,5 @@
+<map id="op::PoseRenderer" name="op::PoseRenderer">
+<area shape="rect" id="node1" title=" " alt="" coords="94,5,261,156"/>
+<area shape="rect" id="node2" href="$classop_1_1_pose_cpu_renderer.html" title=" " alt="" coords="5,219,163,340"/>
+<area shape="rect" id="node3" href="$classop_1_1_pose_gpu_renderer.html" title=" " alt="" coords="187,204,354,355"/>
+</map>

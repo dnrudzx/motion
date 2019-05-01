@@ -1,0 +1,244 @@
+\hypertarget{classop_1_1_hand_detector}{}\doxysection{op\+::Hand\+Detector 클래스 참조}
+\label{classop_1_1_hand_detector}\index{op::HandDetector@{op::HandDetector}}
+
+
+{\ttfamily \#include $<$hand\+Detector.\+hpp$>$}
+
+
+
+op\+::Hand\+Detector에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classop_1_1_hand_detector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_hand_detector_a20b127dd7b51afcd336d1f16b40ee0b1}{Hand\+Detector}} (const \mbox{\hyperlink{namespaceop_af5b3ce2a5d3de87cb31b9b67e96f261f}{Pose\+Model}} pose\+Model)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_hand_detector_ae70826e6de6a8f26c240d0152578375e}{$\sim$\+Hand\+Detector}} ()
+\item 
+std\+::vector$<$ std\+::array$<$ \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ float $>$, 2 $>$ $>$ \mbox{\hyperlink{classop_1_1_hand_detector_a731a19ff54389b1f56b0aae76af6debe}{detect\+Hands}} (const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Keypoints) const
+\item 
+std\+::vector$<$ std\+::array$<$ \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ float $>$, 2 $>$ $>$ \mbox{\hyperlink{classop_1_1_hand_detector_a963972f9ecb769786b5f60018da443e4}{track\+Hands}} (const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Keypoints)
+\item 
+void \mbox{\hyperlink{classop_1_1_hand_detector_a58513169f01ab7c705979f1f2a88b571}{update\+Tracker}} (const std\+::array$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$, 2 $>$ \&hand\+Keypoints, const unsigned long long id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 타입}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73}{Pose\+Part}} \+: unsigned int \{ \newline
+\mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73ae5d57da0335273e8e6ccb5f79085602b}{Pose\+Part\+::\+L\+Wrist}} = 0, 
+\mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a9b3d8bb6ec5c21c2f00e7152d60f395b}{Pose\+Part\+::\+L\+Elbow}}, 
+\mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73afe788e67252c3049b894226c0c6ca5aa}{Pose\+Part\+::\+L\+Shoulder}}, 
+\mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73aab9b475a55e6eec58b94cd43542cb8f1}{Pose\+Part\+::\+R\+Wrist}}, 
+\newline
+\mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6957f13571097d3ddddc63474dccf0bf}{Pose\+Part\+::\+R\+Elbow}}, 
+\mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a41a810fe24d1ea211a55337eaaa1e3d2}{Pose\+Part\+::\+R\+Shoulder}}, 
+\mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6f6cb72d544962fa333e2e34ce64f719}{Pose\+Part\+::\+Size}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+std\+::array$<$ unsigned int,(int) \mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6f6cb72d544962fa333e2e34ce64f719}{Pose\+Part\+::\+Size}} $>$ \mbox{\hyperlink{classop_1_1_hand_detector_a836e35669c9d0cbb7dfa890838bc9729}{get\+Pose\+Keypoints}} (const \mbox{\hyperlink{namespaceop_af5b3ce2a5d3de87cb31b9b67e96f261f}{Pose\+Model}} pose\+Model, const std\+::array$<$ std\+::string,(int) \mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6f6cb72d544962fa333e2e34ce64f719}{Pose\+Part\+::\+Size}} $>$ \&pose\+Strings) const
+\item 
+\mbox{\hyperlink{classop_1_1_hand_detector_a126485bd38de9d7ceeabd523dc924537}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_hand_detector}{Hand\+Detector}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::array$<$ unsigned int,(int) \mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6f6cb72d544962fa333e2e34ce64f719}{Pose\+Part\+::\+Size}} $>$ \mbox{\hyperlink{classop_1_1_hand_detector_a2a59591978c5c7b0cbf805f90bafd798}{m\+Pose\+Indexes}}
+\item 
+std\+::vector$<$ std\+::array$<$ \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ float $>$,(int) \mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6f6cb72d544962fa333e2e34ce64f719}{Pose\+Part\+::\+Size}} $>$ $>$ \mbox{\hyperlink{classop_1_1_hand_detector_a7aca2341800581353c865492c8cf8d1f}{m\+Pose\+Track}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ float $>$ $>$ \mbox{\hyperlink{classop_1_1_hand_detector_a57cb8552a34bd46e9b7dca5af8e5311c}{m\+Hand\+Left\+Previous}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$ float $>$ $>$ \mbox{\hyperlink{classop_1_1_hand_detector_af524a4f845d46cdf08204d9d86668ffe}{m\+Hand\+Right\+Previous}}
+\item 
+unsigned long long \mbox{\hyperlink{classop_1_1_hand_detector_a8a7f9d0cebfa8162b2d62644916fd5f4}{m\+Current\+Id}}
+\item 
+std\+::mutex \mbox{\hyperlink{classop_1_1_hand_detector_aaf3bc196c16fa76a63d8521966693684}{m\+Mutex}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+hand\+Detector.\+hpp 파일의 12 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 열거형 문서화}
+\mbox{\Hypertarget{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73}\label{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73}} 
+\index{op::HandDetector@{op::HandDetector}!PosePart@{PosePart}}
+\index{PosePart@{PosePart}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{PosePart}{PosePart}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73}{op\+::\+Hand\+Detector\+::\+Pose\+Part}} \+: unsigned int\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LWrist@{LWrist}!op::HandDetector@{op::HandDetector}}\index{op::HandDetector@{op::HandDetector}!LWrist@{LWrist}}}\mbox{\Hypertarget{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73ae5d57da0335273e8e6ccb5f79085602b}\label{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73ae5d57da0335273e8e6ccb5f79085602b}} 
+L\+Wrist&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LElbow@{LElbow}!op::HandDetector@{op::HandDetector}}\index{op::HandDetector@{op::HandDetector}!LElbow@{LElbow}}}\mbox{\Hypertarget{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a9b3d8bb6ec5c21c2f00e7152d60f395b}\label{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a9b3d8bb6ec5c21c2f00e7152d60f395b}} 
+L\+Elbow&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LShoulder@{LShoulder}!op::HandDetector@{op::HandDetector}}\index{op::HandDetector@{op::HandDetector}!LShoulder@{LShoulder}}}\mbox{\Hypertarget{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73afe788e67252c3049b894226c0c6ca5aa}\label{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73afe788e67252c3049b894226c0c6ca5aa}} 
+L\+Shoulder&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RWrist@{RWrist}!op::HandDetector@{op::HandDetector}}\index{op::HandDetector@{op::HandDetector}!RWrist@{RWrist}}}\mbox{\Hypertarget{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73aab9b475a55e6eec58b94cd43542cb8f1}\label{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73aab9b475a55e6eec58b94cd43542cb8f1}} 
+R\+Wrist&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RElbow@{RElbow}!op::HandDetector@{op::HandDetector}}\index{op::HandDetector@{op::HandDetector}!RElbow@{RElbow}}}\mbox{\Hypertarget{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6957f13571097d3ddddc63474dccf0bf}\label{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6957f13571097d3ddddc63474dccf0bf}} 
+R\+Elbow&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RShoulder@{RShoulder}!op::HandDetector@{op::HandDetector}}\index{op::HandDetector@{op::HandDetector}!RShoulder@{RShoulder}}}\mbox{\Hypertarget{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a41a810fe24d1ea211a55337eaaa1e3d2}\label{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a41a810fe24d1ea211a55337eaaa1e3d2}} 
+R\+Shoulder&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Size@{Size}!op::HandDetector@{op::HandDetector}}\index{op::HandDetector@{op::HandDetector}!Size@{Size}}}\mbox{\Hypertarget{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6f6cb72d544962fa333e2e34ce64f719}\label{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6f6cb72d544962fa333e2e34ce64f719}} 
+Size&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+hand\+Detector.\+hpp 파일의 26 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26                             : \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}}
+\DoxyCodeLine{27         \{}
+\DoxyCodeLine{28             LWrist = 0,}
+\DoxyCodeLine{29             LElbow,}
+\DoxyCodeLine{30             LShoulder,}
+\DoxyCodeLine{31             RWrist,}
+\DoxyCodeLine{32             RElbow,}
+\DoxyCodeLine{33             RShoulder,}
+\DoxyCodeLine{34             \mbox{\hyperlink{namespaceop_a5418b76dad5b4aea1133325f4aa715aca6f6cb72d544962fa333e2e34ce64f719}{Size}},}
+\DoxyCodeLine{35         \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_hand_detector_a20b127dd7b51afcd336d1f16b40ee0b1}\label{classop_1_1_hand_detector_a20b127dd7b51afcd336d1f16b40ee0b1}} 
+\index{op::HandDetector@{op::HandDetector}!HandDetector@{HandDetector}}
+\index{HandDetector@{HandDetector}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{HandDetector()}{HandDetector()}}
+{\footnotesize\ttfamily op\+::\+Hand\+Detector\+::\+Hand\+Detector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_af5b3ce2a5d3de87cb31b9b67e96f261f}{Pose\+Model}}}]{pose\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classop_1_1_hand_detector_ae70826e6de6a8f26c240d0152578375e}\label{classop_1_1_hand_detector_ae70826e6de6a8f26c240d0152578375e}} 
+\index{op::HandDetector@{op::HandDetector}!````~HandDetector@{$\sim$HandDetector}}
+\index{````~HandDetector@{$\sim$HandDetector}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{$\sim$HandDetector()}{~HandDetector()}}
+{\footnotesize\ttfamily virtual op\+::\+Hand\+Detector\+::$\sim$\+Hand\+Detector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_hand_detector_a126485bd38de9d7ceeabd523dc924537}\label{classop_1_1_hand_detector_a126485bd38de9d7ceeabd523dc924537}} 
+\index{op::HandDetector@{op::HandDetector}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Hand\+Detector\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_hand_detector}{Hand\+Detector}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_hand_detector_a731a19ff54389b1f56b0aae76af6debe}\label{classop_1_1_hand_detector_a731a19ff54389b1f56b0aae76af6debe}} 
+\index{op::HandDetector@{op::HandDetector}!detectHands@{detectHands}}
+\index{detectHands@{detectHands}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{detectHands()}{detectHands()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::array$<$\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$float$>$, 2$>$ $>$ op\+::\+Hand\+Detector\+::detect\+Hands (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Keypoints }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_hand_detector_a836e35669c9d0cbb7dfa890838bc9729}\label{classop_1_1_hand_detector_a836e35669c9d0cbb7dfa890838bc9729}} 
+\index{op::HandDetector@{op::HandDetector}!getPoseKeypoints@{getPoseKeypoints}}
+\index{getPoseKeypoints@{getPoseKeypoints}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{getPoseKeypoints()}{getPoseKeypoints()}}
+{\footnotesize\ttfamily std\+::array$<$unsigned int, (int)\mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6f6cb72d544962fa333e2e34ce64f719}{Pose\+Part\+::\+Size}}$>$ op\+::\+Hand\+Detector\+::get\+Pose\+Keypoints (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_af5b3ce2a5d3de87cb31b9b67e96f261f}{Pose\+Model}}}]{pose\+Model,  }\item[{const std\+::array$<$ std\+::string,(int) \mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6f6cb72d544962fa333e2e34ce64f719}{Pose\+Part\+::\+Size}} $>$ \&}]{pose\+Strings }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_hand_detector_a963972f9ecb769786b5f60018da443e4}\label{classop_1_1_hand_detector_a963972f9ecb769786b5f60018da443e4}} 
+\index{op::HandDetector@{op::HandDetector}!trackHands@{trackHands}}
+\index{trackHands@{trackHands}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{trackHands()}{trackHands()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::array$<$\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$float$>$, 2$>$ $>$ op\+::\+Hand\+Detector\+::track\+Hands (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Keypoints }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_hand_detector_a58513169f01ab7c705979f1f2a88b571}\label{classop_1_1_hand_detector_a58513169f01ab7c705979f1f2a88b571}} 
+\index{op::HandDetector@{op::HandDetector}!updateTracker@{updateTracker}}
+\index{updateTracker@{updateTracker}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{updateTracker()}{updateTracker()}}
+{\footnotesize\ttfamily void op\+::\+Hand\+Detector\+::update\+Tracker (\begin{DoxyParamCaption}\item[{const std\+::array$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$, 2 $>$ \&}]{hand\+Keypoints,  }\item[{const unsigned long long}]{id }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_hand_detector_a8a7f9d0cebfa8162b2d62644916fd5f4}\label{classop_1_1_hand_detector_a8a7f9d0cebfa8162b2d62644916fd5f4}} 
+\index{op::HandDetector@{op::HandDetector}!mCurrentId@{mCurrentId}}
+\index{mCurrentId@{mCurrentId}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{mCurrentId}{mCurrentId}}
+{\footnotesize\ttfamily unsigned long long op\+::\+Hand\+Detector\+::m\+Current\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+hand\+Detector.\+hpp 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_hand_detector_a57cb8552a34bd46e9b7dca5af8e5311c}\label{classop_1_1_hand_detector_a57cb8552a34bd46e9b7dca5af8e5311c}} 
+\index{op::HandDetector@{op::HandDetector}!mHandLeftPrevious@{mHandLeftPrevious}}
+\index{mHandLeftPrevious@{mHandLeftPrevious}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{mHandLeftPrevious}{mHandLeftPrevious}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$float$>$ $>$ op\+::\+Hand\+Detector\+::m\+Hand\+Left\+Previous\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+hand\+Detector.\+hpp 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_hand_detector_af524a4f845d46cdf08204d9d86668ffe}\label{classop_1_1_hand_detector_af524a4f845d46cdf08204d9d86668ffe}} 
+\index{op::HandDetector@{op::HandDetector}!mHandRightPrevious@{mHandRightPrevious}}
+\index{mHandRightPrevious@{mHandRightPrevious}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{mHandRightPrevious}{mHandRightPrevious}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structop_1_1_rectangle}{Rectangle}}$<$float$>$ $>$ op\+::\+Hand\+Detector\+::m\+Hand\+Right\+Previous\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+hand\+Detector.\+hpp 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_hand_detector_aaf3bc196c16fa76a63d8521966693684}\label{classop_1_1_hand_detector_aaf3bc196c16fa76a63d8521966693684}} 
+\index{op::HandDetector@{op::HandDetector}!mMutex@{mMutex}}
+\index{mMutex@{mMutex}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{mMutex}{mMutex}}
+{\footnotesize\ttfamily std\+::mutex op\+::\+Hand\+Detector\+::m\+Mutex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+hand\+Detector.\+hpp 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_hand_detector_a2a59591978c5c7b0cbf805f90bafd798}\label{classop_1_1_hand_detector_a2a59591978c5c7b0cbf805f90bafd798}} 
+\index{op::HandDetector@{op::HandDetector}!mPoseIndexes@{mPoseIndexes}}
+\index{mPoseIndexes@{mPoseIndexes}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{mPoseIndexes}{mPoseIndexes}}
+{\footnotesize\ttfamily const std\+::array$<$unsigned int, (int)\mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6f6cb72d544962fa333e2e34ce64f719}{Pose\+Part\+::\+Size}}$>$ op\+::\+Hand\+Detector\+::m\+Pose\+Indexes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+hand\+Detector.\+hpp 파일의 37 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_hand_detector_a7aca2341800581353c865492c8cf8d1f}\label{classop_1_1_hand_detector_a7aca2341800581353c865492c8cf8d1f}} 
+\index{op::HandDetector@{op::HandDetector}!mPoseTrack@{mPoseTrack}}
+\index{mPoseTrack@{mPoseTrack}!op::HandDetector@{op::HandDetector}}
+\doxysubsubsection{\texorpdfstring{mPoseTrack}{mPoseTrack}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::array$<$\mbox{\hyperlink{structop_1_1_point}{Point}}$<$float$>$, (int)\mbox{\hyperlink{classop_1_1_hand_detector_a4d058446e66aff15d8702558fd256b73a6f6cb72d544962fa333e2e34ce64f719}{Pose\+Part\+::\+Size}}$>$ $>$ op\+::\+Hand\+Detector\+::m\+Pose\+Track\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+hand\+Detector.\+hpp 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/hand/\mbox{\hyperlink{hand_detector_8hpp}{hand\+Detector.\+hpp}}\end{DoxyCompactItemize}

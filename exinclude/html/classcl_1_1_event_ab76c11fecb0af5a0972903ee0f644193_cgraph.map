@@ -1,0 +1,7 @@
+<map id="cl::Event::getProfilingInfo" name="cl::Event::getProfilingInfo">
+<area shape="rect" id="node1" title="Wrapper for clGetEventProfilingInfo() that returns by value." alt="" coords="5,31,175,57"/>
+<area shape="rect" id="node2" href="$classcl_1_1_event.html#a3f5ef317602809c4a99d6f244f758b5f" title="Wrapper for clGetEventProfilingInfo()." alt="" coords="223,31,392,57"/>
+<area shape="rect" id="node3" href="$namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="440,5,579,32"/>
+<area shape="rect" id="node4" href="$namespacecl_1_1detail.html#a5954b0e110a023571c1bed2be1efb480" title=" " alt="" coords="450,56,569,83"/>
+<area shape="rect" id="node5" href="$namespacecl_1_1detail.html#a5fa0595cfd70a34a662283c683f58bb1" title=" " alt="" coords="627,56,784,83"/>
+</map>

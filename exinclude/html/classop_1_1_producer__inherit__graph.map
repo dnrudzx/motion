@@ -1,0 +1,9 @@
+<map id="op::Producer" name="op::Producer">
+<area shape="rect" id="node1" title=" " alt="" coords="171,5,398,449"/>
+<area shape="rect" id="node2" href="$classop_1_1_flir_reader.html" title=" " alt="" coords="5,497,169,780"/>
+<area shape="rect" id="node3" href="$classop_1_1_image_directory_reader.html" title=" " alt="" coords="194,512,375,765"/>
+<area shape="rect" id="node4" href="$classop_1_1_video_capture_reader.html" title=" " alt="" coords="399,519,570,758"/>
+<area shape="rect" id="node5" href="$classop_1_1_ip_camera_reader.html" title=" " alt="" coords="221,916,381,1111"/>
+<area shape="rect" id="node6" href="$classop_1_1_video_reader.html" title=" " alt="" coords="405,916,565,1111"/>
+<area shape="rect" id="node7" href="$classop_1_1_webcam_reader.html" title=" " alt="" coords="589,828,756,1199"/>
+</map>

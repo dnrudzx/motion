@@ -1,0 +1,326 @@
+\hypertarget{classop_1_1_w_hand_detector_update}{}\doxysection{op\+::W\+Hand\+Detector\+Update$<$ T\+Datums $>$ 클래스 템플릿 참조}
+\label{classop_1_1_w_hand_detector_update}\index{op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}}
+
+
+{\ttfamily \#include $<$w\+Hand\+Detector\+Update.\+hpp$>$}
+
+
+
+op\+::W\+Hand\+Detector\+Update$<$ T\+Datums $>$에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classop_1_1_w_hand_detector_update__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::W\+Hand\+Detector\+Update$<$ T\+Datums $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classop_1_1_w_hand_detector_update__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_w_hand_detector_update_abd8b56fbfbd2a619a4f37d148592f61b}{W\+Hand\+Detector\+Update}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_hand_detector}{Hand\+Detector}} $>$ \&hand\+Detector)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_w_hand_detector_update_a29d71b3c1ee52f04bd52b932db350b59}{$\sim$\+W\+Hand\+Detector\+Update}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_w_hand_detector_update_a729aaa628e4f4c24e7cb9afca1cdc761}{initialization\+On\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_w_hand_detector_update_af9287dc0a3c67abd35974c1c74614f3c}{work}} (T\+Datums \&t\+Datums)
+\item 
+void \mbox{\hyperlink{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}{initialization\+On\+Thread\+No\+Exception}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}{check\+And\+Work}} (T\+Datums \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}{is\+Running}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}} ()
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}{try\+Stop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_w_hand_detector_update_a0f17cb2f806c1270e6052a36a6b79f81}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_w_hand_detector_update}{W\+Hand\+Detector\+Update}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_hand_detector}{Hand\+Detector}} $>$ \mbox{\hyperlink{classop_1_1_w_hand_detector_update_a55278c27add25390e2aeb88fb45bb9cf}{sp\+Hand\+Detector}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T\+Datums$>$\newline
+class op\+::\+W\+Hand\+Detector\+Update$<$ T\+Datums $>$}
+
+
+
+w\+Hand\+Detector\+Update.\+hpp 파일의 11 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_w_hand_detector_update_abd8b56fbfbd2a619a4f37d148592f61b}\label{classop_1_1_w_hand_detector_update_abd8b56fbfbd2a619a4f37d148592f61b}} 
+\index{op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}!WHandDetectorUpdate@{WHandDetectorUpdate}}
+\index{WHandDetectorUpdate@{WHandDetectorUpdate}!op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{WHandDetectorUpdate()}{WHandDetectorUpdate()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_hand_detector_update}{op\+::\+W\+Hand\+Detector\+Update}}$<$ T\+Datums $>$\+::\mbox{\hyperlink{classop_1_1_w_hand_detector_update}{W\+Hand\+Detector\+Update}} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_hand_detector}{Hand\+Detector}} $>$ \&}]{hand\+Detector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+w\+Hand\+Detector\+Update.\+hpp 파일의 38 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                                                                                                      :}
+\DoxyCodeLine{39         \mbox{\hyperlink{classop_1_1_w_hand_detector_update_a55278c27add25390e2aeb88fb45bb9cf}{spHandDetector}}\{handDetector\}}
+\DoxyCodeLine{40     \{}
+\DoxyCodeLine{41     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_hand_detector_update_a29d71b3c1ee52f04bd52b932db350b59}\label{classop_1_1_w_hand_detector_update_a29d71b3c1ee52f04bd52b932db350b59}} 
+\index{op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}!````~WHandDetectorUpdate@{$\sim$WHandDetectorUpdate}}
+\index{````~WHandDetectorUpdate@{$\sim$WHandDetectorUpdate}!op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$WHandDetectorUpdate()}{~WHandDetectorUpdate()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_hand_detector_update}{op\+::\+W\+Hand\+Detector\+Update}}$<$ T\+Datums $>$\+::$\sim$\mbox{\hyperlink{classop_1_1_w_hand_detector_update}{W\+Hand\+Detector\+Update}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+w\+Hand\+Detector\+Update.\+hpp 파일의 44 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45     \{}
+\DoxyCodeLine{46     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}\label{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}} 
+\index{op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}!checkAndWork@{checkAndWork}}
+\index{checkAndWork@{checkAndWork}!op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{checkAndWork()}{checkAndWork()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+bool \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::check\+And\+Work (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 82 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83     \{}
+\DoxyCodeLine{84         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{85         \{}
+\DoxyCodeLine{86             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}})}
+\DoxyCodeLine{87                 \mbox{\hyperlink{classop_1_1_worker_a9acadd6df7af03b31b9e354ae815f781}{work}}(tDatums);}
+\DoxyCodeLine{88             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}};}
+\DoxyCodeLine{89         \}}
+\DoxyCodeLine{90         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{91         \{}
+\DoxyCodeLine{92             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{93             \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{errorWorker}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{94             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_hand_detector_update_a0f17cb2f806c1270e6052a36a6b79f81}\label{classop_1_1_w_hand_detector_update_a0f17cb2f806c1270e6052a36a6b79f81}} 
+\index{op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_hand_detector_update}{op\+::\+W\+Hand\+Detector\+Update}}$<$ T\+Datums $>$\+::D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_w_hand_detector_update}{W\+Hand\+Detector\+Update}}$<$ T\+Datums $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_w_hand_detector_update_a729aaa628e4f4c24e7cb9afca1cdc761}\label{classop_1_1_w_hand_detector_update_a729aaa628e4f4c24e7cb9afca1cdc761}} 
+\index{op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_w_hand_detector_update}{op\+::\+W\+Hand\+Detector\+Update}}$<$ T\+Datums $>$\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}{op\+::\+Worker$<$ T\+Datums $>$}}를 구현.
+
+
+
+w\+Hand\+Detector\+Update.\+hpp 파일의 49 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50     \{}
+\DoxyCodeLine{51     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}\label{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}} 
+\index{op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}!initializationOnThreadNoException@{initializationOnThreadNoException}}
+\index{initializationOnThreadNoException@{initializationOnThreadNoException}!op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{initializationOnThreadNoException()}{initializationOnThreadNoException()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::initialization\+On\+Thread\+No\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69     \{}
+\DoxyCodeLine{70         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{71         \{}
+\DoxyCodeLine{72             this-\/>\mbox{\hyperlink{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}{initializationOnThread}}();}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{75         \{}
+\DoxyCodeLine{76             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{77             \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{errorWorker}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{78         \}}
+\DoxyCodeLine{79     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}\label{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}} 
+\index{op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+bool \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 20 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21         \{}
+\DoxyCodeLine{22             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}};}
+\DoxyCodeLine{23         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}\label{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}} 
+\index{op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}!stop@{stop}}
+\index{stop@{stop}!op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 25 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26         \{}
+\DoxyCodeLine{27             \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{28         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}\label{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}} 
+\index{op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}!tryStop@{tryStop}}
+\index{tryStop@{tryStop}!op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{tryStop()}{tryStop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::try\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_w_queue_orderer_a01bc7495ec992cc9c54a040534cb3634}{op\+::\+W\+Queue\+Orderer$<$ T\+Datums $>$}}에서 재구현되었습니다.
+
+
+
+worker.\+hpp 파일의 32 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33         \{}
+\DoxyCodeLine{34             \mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{35         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_hand_detector_update_af9287dc0a3c67abd35974c1c74614f3c}\label{classop_1_1_w_hand_detector_update_af9287dc0a3c67abd35974c1c74614f3c}} 
+\index{op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}!work@{work}}
+\index{work@{work}!op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{work()}{work()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_w_hand_detector_update}{op\+::\+W\+Hand\+Detector\+Update}}$<$ T\+Datums $>$\+::work (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_worker_a9acadd6df7af03b31b9e354ae815f781}{op\+::\+Worker$<$ T\+Datums $>$}}를 구현.
+
+
+
+w\+Hand\+Detector\+Update.\+hpp 파일의 54 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55     \{}
+\DoxyCodeLine{56         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{57         \{}
+\DoxyCodeLine{58             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceop_a02164ca0af9e838190f584f5d1d8465e}{checkNoNullNorEmpty}}(tDatums))}
+\DoxyCodeLine{59             \{}
+\DoxyCodeLine{60                 \textcolor{comment}{// Debugging log}}
+\DoxyCodeLine{61                 \mbox{\hyperlink{namespaceop_a4eb991aa18818196d35c66455a437a32}{dLog}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{62                 \textcolor{comment}{// Profiling speed}}
+\DoxyCodeLine{63                 \textcolor{keyword}{const} \textcolor{keyword}{auto} profilerKey = \mbox{\hyperlink{classop_1_1_profiler_aea2c89bcd0a661a53f47e59b9bec2be7}{Profiler::timerInit}}(\_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{64                 \textcolor{comment}{// Detect people hand}}
+\DoxyCodeLine{65                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}\& tDatumPtr : *tDatums)}
+\DoxyCodeLine{66                     \mbox{\hyperlink{classop_1_1_w_hand_detector_update_a55278c27add25390e2aeb88fb45bb9cf}{spHandDetector}}-\/>updateTracker(tDatumPtr-\/>handKeypoints, tDatumPtr-\/>id);}
+\DoxyCodeLine{67                 \textcolor{comment}{// Profiling speed}}
+\DoxyCodeLine{68                 \mbox{\hyperlink{classop_1_1_profiler_affff5b0b992e05276b2a699f97ad525d}{Profiler::timerEnd}}(profilerKey);}
+\DoxyCodeLine{69                 \mbox{\hyperlink{classop_1_1_profiler_a58b930a54a98bbc91af074395852da76}{Profiler::printAveragedTimeMsOnIterationX}}(profilerKey, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{70                 \textcolor{comment}{// Debugging log}}
+\DoxyCodeLine{71                 \mbox{\hyperlink{namespaceop_a4eb991aa18818196d35c66455a437a32}{dLog}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{72             \}}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{75         \{}
+\DoxyCodeLine{76             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{77             tDatums = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{78             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{79         \}}
+\DoxyCodeLine{80     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classop_1_1_w_hand_detector_update_af9287dc0a3c67abd35974c1c74614f3c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_w_hand_detector_update_a55278c27add25390e2aeb88fb45bb9cf}\label{classop_1_1_w_hand_detector_update_a55278c27add25390e2aeb88fb45bb9cf}} 
+\index{op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}!spHandDetector@{spHandDetector}}
+\index{spHandDetector@{spHandDetector}!op::WHandDetectorUpdate$<$ TDatums $>$@{op::WHandDetectorUpdate$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{spHandDetector}{spHandDetector}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classop_1_1_hand_detector}{Hand\+Detector}}$>$ \mbox{\hyperlink{classop_1_1_w_hand_detector_update}{op\+::\+W\+Hand\+Detector\+Update}}$<$ T\+Datums $>$\+::sp\+Hand\+Detector\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+w\+Hand\+Detector\+Update.\+hpp 파일의 23 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/hand/\mbox{\hyperlink{w_hand_detector_update_8hpp}{w\+Hand\+Detector\+Update.\+hpp}}\end{DoxyCompactItemize}

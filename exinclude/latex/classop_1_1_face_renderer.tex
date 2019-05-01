@@ -1,0 +1,106 @@
+\hypertarget{classop_1_1_face_renderer}{}\doxysection{op\+::Face\+Renderer 클래스 참조}
+\label{classop_1_1_face_renderer}\index{op::FaceRenderer@{op::FaceRenderer}}
+
+
+{\ttfamily \#include $<$face\+Renderer.\+hpp$>$}
+
+
+
+op\+::Face\+Renderer에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classop_1_1_face_renderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::Face\+Renderer에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classop_1_1_face_renderer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classop_1_1_face_renderer_a8ba7bad616bd2cf673d8faa846bf95b5}{$\sim$\+Face\+Renderer}} ()
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_face_renderer_aa34ce7a0602b0994cc3043b80627a31c}{initialization\+On\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_face_renderer_acbbdaca16f4115a5a68d006f4f325397}{render\+Face}} (\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&output\+Data, const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&face\+Keypoints, const float scale\+Input\+To\+Output)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_face_renderer_ac586e6ab78e15198b0121f6cdf765def}{render\+Face\+Inherited}} (\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&output\+Data, const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&face\+Keypoints)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+face\+Renderer.\+hpp 파일의 8 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_face_renderer_a8ba7bad616bd2cf673d8faa846bf95b5}\label{classop_1_1_face_renderer_a8ba7bad616bd2cf673d8faa846bf95b5}} 
+\index{op::FaceRenderer@{op::FaceRenderer}!````~FaceRenderer@{$\sim$FaceRenderer}}
+\index{````~FaceRenderer@{$\sim$FaceRenderer}!op::FaceRenderer@{op::FaceRenderer}}
+\doxysubsubsection{\texorpdfstring{$\sim$FaceRenderer()}{~FaceRenderer()}}
+{\footnotesize\ttfamily virtual op\+::\+Face\+Renderer\+::$\sim$\+Face\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+face\+Renderer.\+hpp 파일의 11 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11 \{\};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_face_renderer_aa34ce7a0602b0994cc3043b80627a31c}\label{classop_1_1_face_renderer_aa34ce7a0602b0994cc3043b80627a31c}} 
+\index{op::FaceRenderer@{op::FaceRenderer}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::FaceRenderer@{op::FaceRenderer}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily virtual void op\+::\+Face\+Renderer\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_face_gpu_renderer_a6ebd9287927529ffaa4200890190896b}{op\+::\+Face\+Gpu\+Renderer}}에서 재구현되었습니다.
+
+
+
+face\+Renderer.\+hpp 파일의 13 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{\};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_face_renderer_acbbdaca16f4115a5a68d006f4f325397}\label{classop_1_1_face_renderer_acbbdaca16f4115a5a68d006f4f325397}} 
+\index{op::FaceRenderer@{op::FaceRenderer}!renderFace@{renderFace}}
+\index{renderFace@{renderFace}!op::FaceRenderer@{op::FaceRenderer}}
+\doxysubsubsection{\texorpdfstring{renderFace()}{renderFace()}}
+{\footnotesize\ttfamily void op\+::\+Face\+Renderer\+::render\+Face (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{output\+Data,  }\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{face\+Keypoints,  }\item[{const float}]{scale\+Input\+To\+Output }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_face_renderer_ac586e6ab78e15198b0121f6cdf765def}\label{classop_1_1_face_renderer_ac586e6ab78e15198b0121f6cdf765def}} 
+\index{op::FaceRenderer@{op::FaceRenderer}!renderFaceInherited@{renderFaceInherited}}
+\index{renderFaceInherited@{renderFaceInherited}!op::FaceRenderer@{op::FaceRenderer}}
+\doxysubsubsection{\texorpdfstring{renderFaceInherited()}{renderFaceInherited()}}
+{\footnotesize\ttfamily virtual void op\+::\+Face\+Renderer\+::render\+Face\+Inherited (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{output\+Data,  }\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{face\+Keypoints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_face_gpu_renderer_ae54b7538a6ed6a5eaedcbdc117a0d61c}{op\+::\+Face\+Gpu\+Renderer}}, \mbox{\hyperlink{classop_1_1_face_cpu_renderer_aa2f7c7f0a5a8df2dbb94c8a01fa41e2a}{op\+::\+Face\+Cpu\+Renderer}}에서 구현되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/face/\mbox{\hyperlink{face_renderer_8hpp}{face\+Renderer.\+hpp}}\end{DoxyCompactItemize}

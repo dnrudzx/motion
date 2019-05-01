@@ -1,0 +1,7 @@
+<map id="cl::Buffer" name="cl::Buffer">
+<area shape="rect" id="node1" title="Class interface for Buffer Memory Objects." alt="" coords="73,593,209,847"/>
+<area shape="rect" id="node4" href="$classcl_1_1_buffer_g_l.html" title="Class interface for GL Buffer Memory Objects." alt="" coords="5,895,125,1089"/>
+<area shape="rect" id="node5" href="$classcl_1_1_buffer_render_g_l.html" title="Class interface for GL Render Buffer Memory Objects." alt="" coords="149,895,285,1089"/>
+<area shape="rect" id="node2" href="$classcl_1_1_memory.html" title="Class interface for cl_mem." alt="" coords="55,336,227,545"/>
+<area shape="rect" id="node3" href="$classcl_1_1detail_1_1_wrapper.html" title=" " alt="" coords="77,5,205,288"/>
+</map>

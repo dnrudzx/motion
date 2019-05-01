@@ -1,0 +1,350 @@
+\hypertarget{classop_1_1_w_pose_extractor_net}{}\doxysection{op\+::W\+Pose\+Extractor\+Net$<$ T\+Datums $>$ 클래스 템플릿 참조}
+\label{classop_1_1_w_pose_extractor_net}\index{op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}}
+
+
+{\ttfamily \#include $<$w\+Pose\+Extractor\+Net.\+hpp$>$}
+
+
+
+op\+::W\+Pose\+Extractor\+Net$<$ T\+Datums $>$에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classop_1_1_w_pose_extractor_net__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::W\+Pose\+Extractor\+Net$<$ T\+Datums $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classop_1_1_w_pose_extractor_net__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_w_pose_extractor_net_aa0f6b7ec6f36fe2a27649ac2c7490c09}{W\+Pose\+Extractor\+Net}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}} $>$ \&pose\+Extractor\+Shared\+Ptr)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_w_pose_extractor_net_aa085377f965ffc8385d34d77a2e65e5a}{$\sim$\+W\+Pose\+Extractor\+Net}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_w_pose_extractor_net_a18d4a120314ec44d1722cc164aaba7a8}{initialization\+On\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_w_pose_extractor_net_a3d691e30c419c70e23a4d7b3c92adb4b}{work}} (T\+Datums \&t\+Datums)
+\item 
+void \mbox{\hyperlink{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}{initialization\+On\+Thread\+No\+Exception}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}{check\+And\+Work}} (T\+Datums \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}{is\+Running}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}} ()
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}{try\+Stop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_w_pose_extractor_net_a039ab6f9ceeec485bebf977bcddd35f0}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_w_pose_extractor_net}{W\+Pose\+Extractor\+Net}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}} $>$ \mbox{\hyperlink{classop_1_1_w_pose_extractor_net_a9df694a9802a2c387688034852f174b8}{sp\+Pose\+Extractor\+Net}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T\+Datums$>$\newline
+class op\+::\+W\+Pose\+Extractor\+Net$<$ T\+Datums $>$}
+
+
+
+w\+Pose\+Extractor\+Net.\+hpp 파일의 11 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_w_pose_extractor_net_aa0f6b7ec6f36fe2a27649ac2c7490c09}\label{classop_1_1_w_pose_extractor_net_aa0f6b7ec6f36fe2a27649ac2c7490c09}} 
+\index{op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}!WPoseExtractorNet@{WPoseExtractorNet}}
+\index{WPoseExtractorNet@{WPoseExtractorNet}!op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{WPoseExtractorNet()}{WPoseExtractorNet()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_pose_extractor_net}{op\+::\+W\+Pose\+Extractor\+Net}}$<$ T\+Datums $>$\+::\mbox{\hyperlink{classop_1_1_w_pose_extractor_net}{W\+Pose\+Extractor\+Net}} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}} $>$ \&}]{pose\+Extractor\+Shared\+Ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+w\+Pose\+Extractor\+Net.\+hpp 파일의 38 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                                                                                                                :}
+\DoxyCodeLine{39         \mbox{\hyperlink{classop_1_1_w_pose_extractor_net_a9df694a9802a2c387688034852f174b8}{spPoseExtractorNet}}\{poseExtractorSharedPtr\}}
+\DoxyCodeLine{40     \{}
+\DoxyCodeLine{41     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_pose_extractor_net_aa085377f965ffc8385d34d77a2e65e5a}\label{classop_1_1_w_pose_extractor_net_aa085377f965ffc8385d34d77a2e65e5a}} 
+\index{op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}!````~WPoseExtractorNet@{$\sim$WPoseExtractorNet}}
+\index{````~WPoseExtractorNet@{$\sim$WPoseExtractorNet}!op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$WPoseExtractorNet()}{~WPoseExtractorNet()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_pose_extractor_net}{op\+::\+W\+Pose\+Extractor\+Net}}$<$ T\+Datums $>$\+::$\sim$\mbox{\hyperlink{classop_1_1_w_pose_extractor_net}{W\+Pose\+Extractor\+Net}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+w\+Pose\+Extractor\+Net.\+hpp 파일의 44 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45     \{}
+\DoxyCodeLine{46     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}\label{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}} 
+\index{op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}!checkAndWork@{checkAndWork}}
+\index{checkAndWork@{checkAndWork}!op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{checkAndWork()}{checkAndWork()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+bool \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::check\+And\+Work (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 82 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83     \{}
+\DoxyCodeLine{84         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{85         \{}
+\DoxyCodeLine{86             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}})}
+\DoxyCodeLine{87                 \mbox{\hyperlink{classop_1_1_worker_a9acadd6df7af03b31b9e354ae815f781}{work}}(tDatums);}
+\DoxyCodeLine{88             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}};}
+\DoxyCodeLine{89         \}}
+\DoxyCodeLine{90         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{91         \{}
+\DoxyCodeLine{92             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{93             \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{errorWorker}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{94             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_pose_extractor_net_a039ab6f9ceeec485bebf977bcddd35f0}\label{classop_1_1_w_pose_extractor_net_a039ab6f9ceeec485bebf977bcddd35f0}} 
+\index{op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_pose_extractor_net}{op\+::\+W\+Pose\+Extractor\+Net}}$<$ T\+Datums $>$\+::D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_w_pose_extractor_net}{W\+Pose\+Extractor\+Net}}$<$ T\+Datums $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_w_pose_extractor_net_a18d4a120314ec44d1722cc164aaba7a8}\label{classop_1_1_w_pose_extractor_net_a18d4a120314ec44d1722cc164aaba7a8}} 
+\index{op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_w_pose_extractor_net}{op\+::\+W\+Pose\+Extractor\+Net}}$<$ T\+Datums $>$\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}{op\+::\+Worker$<$ T\+Datums $>$}}를 구현.
+
+
+
+w\+Pose\+Extractor\+Net.\+hpp 파일의 49 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50     \{}
+\DoxyCodeLine{51         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{52         \{}
+\DoxyCodeLine{53             \mbox{\hyperlink{classop_1_1_w_pose_extractor_net_a9df694a9802a2c387688034852f174b8}{spPoseExtractorNet}}-\/>initializationOnThread();}
+\DoxyCodeLine{54         \}}
+\DoxyCodeLine{55         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{56         \{}
+\DoxyCodeLine{57             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{58         \}}
+\DoxyCodeLine{59     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classop_1_1_w_pose_extractor_net_a18d4a120314ec44d1722cc164aaba7a8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}\label{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}} 
+\index{op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}!initializationOnThreadNoException@{initializationOnThreadNoException}}
+\index{initializationOnThreadNoException@{initializationOnThreadNoException}!op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{initializationOnThreadNoException()}{initializationOnThreadNoException()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::initialization\+On\+Thread\+No\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69     \{}
+\DoxyCodeLine{70         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{71         \{}
+\DoxyCodeLine{72             this-\/>\mbox{\hyperlink{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}{initializationOnThread}}();}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{75         \{}
+\DoxyCodeLine{76             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{77             \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{errorWorker}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{78         \}}
+\DoxyCodeLine{79     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}\label{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}} 
+\index{op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+bool \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 20 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21         \{}
+\DoxyCodeLine{22             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}};}
+\DoxyCodeLine{23         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}\label{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}} 
+\index{op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}!stop@{stop}}
+\index{stop@{stop}!op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 25 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26         \{}
+\DoxyCodeLine{27             \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{28         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}\label{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}} 
+\index{op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}!tryStop@{tryStop}}
+\index{tryStop@{tryStop}!op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{tryStop()}{tryStop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::try\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_w_queue_orderer_a01bc7495ec992cc9c54a040534cb3634}{op\+::\+W\+Queue\+Orderer$<$ T\+Datums $>$}}에서 재구현되었습니다.
+
+
+
+worker.\+hpp 파일의 32 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33         \{}
+\DoxyCodeLine{34             \mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{35         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_pose_extractor_net_a3d691e30c419c70e23a4d7b3c92adb4b}\label{classop_1_1_w_pose_extractor_net_a3d691e30c419c70e23a4d7b3c92adb4b}} 
+\index{op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}!work@{work}}
+\index{work@{work}!op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{work()}{work()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_w_pose_extractor_net}{op\+::\+W\+Pose\+Extractor\+Net}}$<$ T\+Datums $>$\+::work (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_worker_a9acadd6df7af03b31b9e354ae815f781}{op\+::\+Worker$<$ T\+Datums $>$}}를 구현.
+
+
+
+w\+Pose\+Extractor\+Net.\+hpp 파일의 62 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63     \{}
+\DoxyCodeLine{64         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{65         \{}
+\DoxyCodeLine{66             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceop_a02164ca0af9e838190f584f5d1d8465e}{checkNoNullNorEmpty}}(tDatums))}
+\DoxyCodeLine{67             \{}
+\DoxyCodeLine{68                 \textcolor{comment}{// Debugging log}}
+\DoxyCodeLine{69                 \mbox{\hyperlink{namespaceop_a4eb991aa18818196d35c66455a437a32}{dLog}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{70                 \textcolor{comment}{// Profiling speed}}
+\DoxyCodeLine{71                 \textcolor{keyword}{const} \textcolor{keyword}{auto} profilerKey = \mbox{\hyperlink{classop_1_1_profiler_aea2c89bcd0a661a53f47e59b9bec2be7}{Profiler::timerInit}}(\_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{72                 \textcolor{comment}{// Extract people pose}}
+\DoxyCodeLine{73                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}\& tDatumPtr : *tDatums)}
+\DoxyCodeLine{74                 \{}
+\DoxyCodeLine{75                     \mbox{\hyperlink{classop_1_1_w_pose_extractor_net_a9df694a9802a2c387688034852f174b8}{spPoseExtractorNet}}-\/>forwardPass(}
+\DoxyCodeLine{76                         tDatumPtr-\/>inputNetData, Point<int>\{tDatumPtr-\/>cvInputData.cols, tDatumPtr-\/>cvInputData.rows\},}
+\DoxyCodeLine{77                         tDatumPtr-\/>scaleInputToNetInputs, tDatumPtr-\/>poseNetOutput);}
+\DoxyCodeLine{78                     tDatumPtr-\/>poseCandidates = \mbox{\hyperlink{classop_1_1_w_pose_extractor_net_a9df694a9802a2c387688034852f174b8}{spPoseExtractorNet}}-\/>getCandidatesCopy();}
+\DoxyCodeLine{79                     tDatumPtr-\/>poseHeatMaps = \mbox{\hyperlink{classop_1_1_w_pose_extractor_net_a9df694a9802a2c387688034852f174b8}{spPoseExtractorNet}}-\/>getHeatMapsCopy();}
+\DoxyCodeLine{80                     tDatumPtr-\/>poseKeypoints = \mbox{\hyperlink{classop_1_1_w_pose_extractor_net_a9df694a9802a2c387688034852f174b8}{spPoseExtractorNet}}-\/>getPoseKeypoints().clone();}
+\DoxyCodeLine{81                     tDatumPtr-\/>poseScores = \mbox{\hyperlink{classop_1_1_w_pose_extractor_net_a9df694a9802a2c387688034852f174b8}{spPoseExtractorNet}}-\/>getPoseScores().clone();}
+\DoxyCodeLine{82                     tDatumPtr-\/>scaleNetToOutput = \mbox{\hyperlink{classop_1_1_w_pose_extractor_net_a9df694a9802a2c387688034852f174b8}{spPoseExtractorNet}}-\/>getScaleNetToOutput();}
+\DoxyCodeLine{83                 \}}
+\DoxyCodeLine{84                 \textcolor{comment}{// Profiling speed}}
+\DoxyCodeLine{85                 \mbox{\hyperlink{classop_1_1_profiler_affff5b0b992e05276b2a699f97ad525d}{Profiler::timerEnd}}(profilerKey);}
+\DoxyCodeLine{86                 \mbox{\hyperlink{classop_1_1_profiler_a58b930a54a98bbc91af074395852da76}{Profiler::printAveragedTimeMsOnIterationX}}(profilerKey, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{87                 \textcolor{comment}{// Debugging log}}
+\DoxyCodeLine{88                 \mbox{\hyperlink{namespaceop_a4eb991aa18818196d35c66455a437a32}{dLog}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{89             \}}
+\DoxyCodeLine{90         \}}
+\DoxyCodeLine{91         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{92         \{}
+\DoxyCodeLine{93             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{94             tDatums = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{95             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{96         \}}
+\DoxyCodeLine{97     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classop_1_1_w_pose_extractor_net_a3d691e30c419c70e23a4d7b3c92adb4b_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_w_pose_extractor_net_a9df694a9802a2c387688034852f174b8}\label{classop_1_1_w_pose_extractor_net_a9df694a9802a2c387688034852f174b8}} 
+\index{op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}!spPoseExtractorNet@{spPoseExtractorNet}}
+\index{spPoseExtractorNet@{spPoseExtractorNet}!op::WPoseExtractorNet$<$ TDatums $>$@{op::WPoseExtractorNet$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{spPoseExtractorNet}{spPoseExtractorNet}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}}$>$ \mbox{\hyperlink{classop_1_1_w_pose_extractor_net}{op\+::\+W\+Pose\+Extractor\+Net}}$<$ T\+Datums $>$\+::sp\+Pose\+Extractor\+Net\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+w\+Pose\+Extractor\+Net.\+hpp 파일의 23 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/pose/\mbox{\hyperlink{w_pose_extractor_net_8hpp}{w\+Pose\+Extractor\+Net.\+hpp}}\end{DoxyCompactItemize}

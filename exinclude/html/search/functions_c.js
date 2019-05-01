@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['make_5fkernel',['make_kernel',['../structcl_1_1compatibility_1_1make__kernel.html#a1dccd422eb61c9aa37a69e0a3a80f62d',1,'cl::compatibility::make_kernel::make_kernel(const Program &amp;program, const string name, cl_int *err=NULL)'],['../structcl_1_1compatibility_1_1make__kernel.html#abee3103ba9dc1d3e7531dcf6e74bf2a8',1,'cl::compatibility::make_kernel::make_kernel(const Kernel kernel)']]],
+  ['makedefault',['makeDefault',['../classcl_1_1_device.html#a7774fd668e474a8f4e196a6e7118b47e',1,'cl::Device::makeDefault()'],['../classcl_1_1_platform.html#a6b6a335f96885f91f89acf0c27cd3e03',1,'cl::Platform::makeDefault()'],['../classcl_1_1_context.html#a0f86a1096a2f97c90cb2f6d6b505b704',1,'cl::Context::makeDefault()'],['../classcl_1_1_command_queue.html#a18c1118d0c12a5175351ac24d4bcd9ae',1,'cl::CommandQueue::makeDefault()'],['../classcl_1_1_device_command_queue.html#acf98d7e70d84afc31789a6f26a95d14b',1,'cl::DeviceCommandQueue::makeDefault(cl_int *err=nullptr)'],['../classcl_1_1_device_command_queue.html#a2188fe106a515329fd90ac58ee95e10e',1,'cl::DeviceCommandQueue::makeDefault(const Context &amp;context, const Device &amp;device, cl_int *err=nullptr)'],['../classcl_1_1_device_command_queue.html#a74abbdd1ba59525634baa4334ae70215',1,'cl::DeviceCommandQueue::makeDefault(const Context &amp;context, const Device &amp;device, cl_uint queueSize, cl_int *err=nullptr)']]],
+  ['makedefaultprovided',['makeDefaultProvided',['../classcl_1_1_device.html#a80f0201f9882c2c44b69b6fa45e5860d',1,'cl::Device::makeDefaultProvided()'],['../classcl_1_1_platform.html#a55503b1e24d1db89621345122e3be967',1,'cl::Platform::makeDefaultProvided()'],['../classcl_1_1_context.html#ab360874ba7fd201b08ec9d3ad0baa134',1,'cl::Context::makeDefaultProvided()'],['../classcl_1_1_command_queue.html#a2a84b82b7ed4c788bc39e407368e051a',1,'cl::CommandQueue::makeDefaultProvided()']]],
+  ['makedirectory',['makeDirectory',['../namespaceop.html#acc650faa23df88ca16a09a2d2a522960',1,'op']]],
+  ['mapsvm',['mapSVM',['../namespacecl.html#ae97dc5bb86e2c3c3935280a86cda301c',1,'cl']]],
+  ['max_5fsize',['max_size',['../classcl_1_1_s_v_m_allocator.html#aec263261a88fb1ec64a3e5f9a4ef41a7',1,'cl::SVMAllocator']]],
+  ['maximumcaffe',['MaximumCaffe',['../classop_1_1_maximum_caffe.html#a66bd0aa863a97647ae6350d1f886ea51',1,'op::MaximumCaffe']]],
+  ['maximumcpu',['maximumCpu',['../namespaceop.html#ae0fea41041a70ae8449a77f46ffe8100',1,'op']]],
+  ['maximumgpu',['maximumGpu',['../namespaceop.html#a8ec109805adf02f9872a6af37d602caa',1,'op']]],
+  ['memory',['Memory',['../classcl_1_1_memory.html#a9926612772ae6e016f1118ef4148da22',1,'cl::Memory::Memory()'],['../classcl_1_1_memory.html#a6fa9f585a65beebcb75e41cca70ee1bb',1,'cl::Memory::Memory(const cl_mem &amp;memory, bool retainObject)'],['../classcl_1_1_memory.html#a23691d3d5e70f47538f1cde3741b0367',1,'cl::Memory::Memory(const Memory &amp;mem)'],['../classcl_1_1_memory.html#a48a3ca6b8b6c4dbdcd6cc8e75d6503e6',1,'cl::Memory::Memory(Memory &amp;&amp;mem) CL_HPP_NOEXCEPT_']]],
+  ['mergevectors',['mergeVectors',['../namespaceop.html#aa3a3e2acfb27ecbd187d01c8dcd41899',1,'op']]],
+  ['multisettothreads',['multisetToThreads',['../classop_1_1_thread_manager.html#aabd5425410454d5df8ddb0ca8ebf362c',1,'op::ThreadManager']]],
+  ['mutable_5fcpu_5fdata',['mutable_cpu_data',['../classop_1_1_array_cpu_gpu.html#a6eafc0638925b776bb78c68c1fef972a',1,'op::ArrayCpuGpu']]],
+  ['mutable_5fcpu_5fdiff',['mutable_cpu_diff',['../classop_1_1_array_cpu_gpu.html#aba03b602ed1c745b3ba344d7ccedfd30',1,'op::ArrayCpuGpu']]],
+  ['mutable_5fgpu_5fdata',['mutable_gpu_data',['../classop_1_1_array_cpu_gpu.html#ac0bb37052ae356e85d681f52a4716f3c',1,'op::ArrayCpuGpu']]],
+  ['mutable_5fgpu_5fdiff',['mutable_gpu_diff',['../classop_1_1_array_cpu_gpu.html#a678e65cb71d2cc2e1070499465894892',1,'op::ArrayCpuGpu']]]
+];

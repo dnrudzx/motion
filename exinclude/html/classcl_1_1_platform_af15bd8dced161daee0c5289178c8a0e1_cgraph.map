@@ -1,0 +1,5 @@
+<map id="cl::Platform::get" name="cl::Platform::get">
+<area shape="rect" id="node1" title="Gets a list of available platforms." alt="" coords="5,31,120,57"/>
+<area shape="rect" id="node2" href="$namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="172,5,311,32"/>
+<area shape="rect" id="node3" href="$classcl_1_1_platform.html#a616344e02c3723347c752c02b7015212" title="Default constructor &#45; initializes to NULL." alt="" coords="168,56,315,83"/>
+</map>

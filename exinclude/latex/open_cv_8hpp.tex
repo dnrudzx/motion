@@ -1,0 +1,41 @@
+\hypertarget{open_cv_8hpp}{}\doxysection{/home/ms/openpose/include/openpose/utilities/open\+Cv.hpp 파일 참조}
+\label{open_cv_8hpp}\index{/home/ms/openpose/include/openpose/utilities/openCv.hpp@{/home/ms/openpose/include/openpose/utilities/openCv.hpp}}
+{\ttfamily \#include $<$opencv2/core/core.\+hpp$>$}\newline
+{\ttfamily \#include $<$opencv2/imgproc/imgproc.\+hpp$>$}\newline
+{\ttfamily \#include $<$openpose/core/common.\+hpp$>$}\newline
+open\+Cv.\+hpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{open_cv_8hpp__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{open_cv_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{네임스페이스}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceop}{op}}
+\end{DoxyCompactItemize}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_ad1d0931229d15c0a8ac13d4c0ff407e2}{op\+::put\+Text\+On\+Cv\+Mat}} (cv\+::\+Mat \&cv\+Mat, const std\+::string \&text\+To\+Display, const Point$<$ int $>$ \&position, const cv\+::\+Scalar \&color, const bool normalize\+Width, const int image\+Width)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_ab8b9daed84e741afb7191fde8ed95b5e}{op\+::unroll\+Array\+To\+U\+Char\+Cv\+Mat}} (cv\+::\+Mat \&cv\+Mat\+Result, const Array$<$ float $>$ \&array)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_aa497ecc2e06a583b2c08ae14e5f3891a}{op\+::u\+Char\+Cv\+Mat\+To\+Float\+Ptr}} (float $\ast$float\+Ptr\+Image, const cv\+::\+Mat \&cv\+Image, const int normalize)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} double \mbox{\hyperlink{namespaceop_a24ebdcb8395dea0429f220de6a715d6e}{op\+::resize\+Get\+Scale\+Factor}} (const Point$<$ int $>$ \&initial\+Size, const Point$<$ int $>$ \&target\+Size)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a822ae69643ce2a125d929ff0e84e4019}{op\+::resize\+Fixed\+Aspect\+Ratio}} (cv\+::\+Mat \&resized\+Cv\+Mat, const cv\+::\+Mat \&cv\+Mat, const double scale\+Factor, const Point$<$ int $>$ \&target\+Size, const int border\+Mode=cv\+::\+B\+O\+R\+D\+E\+R\+\_\+\+C\+O\+N\+S\+T\+A\+NT, const cv\+::\+Scalar \&border\+Value=cv\+::\+Scalar\{0, 0, 0\})
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_ad838617b60f6bf4f71e15667eb8b9cad}{op\+::keep\+Roi\+Inside}} (cv\+::\+Rect \&roi, const int image\+Width, const int image\+Height)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a6234b3abdafd93fd0c4a4ddc6eddc19e}{op\+::rotate\+And\+Flip\+Frame}} (cv\+::\+Mat \&cv\+Mat, const double rotation\+Angle, const bool flip\+Frame=false)
+\end{DoxyCompactItemize}

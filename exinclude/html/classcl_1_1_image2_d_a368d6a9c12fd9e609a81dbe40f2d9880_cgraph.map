@@ -1,0 +1,6 @@
+<map id="cl::Image2D::operator=" name="cl::Image2D::operator=">
+<area shape="rect" id="node1" title="Copy assignment to forward copy to the superclass correctly. Required for MSVC." alt="" coords="5,13,161,39"/>
+<area shape="rect" id="node2" href="$classcl_1_1_image.html#af9fda827ebfbbe8b92a5cefc5225cd69" title="Assignment from cl_mem &#45; performs shallow copy." alt="" coords="209,13,348,39"/>
+<area shape="rect" id="node3" href="$classcl_1_1_memory.html#aa6cd4c07a111c6baa3195bee2a447dad" title="Assignment operator from cl_mem &#45; takes ownership." alt="" coords="396,13,547,39"/>
+<area shape="rect" id="node4" href="$classcl_1_1detail_1_1_wrapper.html#a044bc05bb3eb90345cb9cf574b95a98f" title=" " alt="" coords="595,5,723,47"/>
+</map>

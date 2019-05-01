@@ -1,0 +1,47 @@
+\hypertarget{grid_pattern_functions_8hpp}{}\doxysection{/home/ms/openpose/include/openpose/calibration/grid\+Pattern\+Functions.hpp 파일 참조}
+\label{grid_pattern_functions_8hpp}\index{/home/ms/openpose/include/openpose/calibration/gridPatternFunctions.hpp@{/home/ms/openpose/include/openpose/calibration/gridPatternFunctions.hpp}}
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
+{\ttfamily \#include $<$openpose/core/common.\+hpp$>$}\newline
+grid\+Pattern\+Functions.\+hpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grid_pattern_functions_8hpp__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{grid_pattern_functions_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{네임스페이스}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceop}{op}}
+\end{DoxyCompactItemize}
+\doxysubsection*{열거형 타입}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceop_a98fa284e9c4f26865d8c78ad76ea4073}{op\+::\+Points2\+D\+Origin}} \{ \mbox{\hyperlink{namespaceop_a98fa284e9c4f26865d8c78ad76ea4073ab32beb056fbfe36afbabc6c88c81ab36}{op\+::\+Points2\+D\+Origin\+::\+Top\+Left}}, 
+\mbox{\hyperlink{namespaceop_a98fa284e9c4f26865d8c78ad76ea4073a1d85a557894c340c318493f33bfa8efb}{op\+::\+Points2\+D\+Origin\+::\+Top\+Right}}, 
+\mbox{\hyperlink{namespaceop_a98fa284e9c4f26865d8c78ad76ea4073a98e5a1c44509157ebcaf46c515c78875}{op\+::\+Points2\+D\+Origin\+::\+Bottom\+Left}}, 
+\mbox{\hyperlink{namespaceop_a98fa284e9c4f26865d8c78ad76ea4073a9146bfc669fddc88db2c4d89297d0e9a}{op\+::\+Points2\+D\+Origin\+::\+Bottom\+Right}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} std\+::pair$<$ bool, std\+::vector$<$ cv\+::\+Point2f $>$ $>$ \mbox{\hyperlink{namespaceop_a133c08ba217983ac48281a5f1456a7de}{op\+::find\+Accurate\+Grid\+Corners}} (const cv\+::\+Mat \&image, const cv\+::\+Size \&grid\+Inner\+Corners)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} std\+::vector$<$ cv\+::\+Point3f $>$ \mbox{\hyperlink{namespaceop_a3eac494df764905a18e976f6af303855}{op\+::get\+Objects3\+D\+Vector}} (const cv\+::\+Size \&grid\+Inner\+Corners, const float grid\+Square\+Size\+Mm)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a1a0199d6781778e6f50213c816189f26}{op\+::draw\+Grid\+Corners}} (cv\+::\+Mat \&image, const cv\+::\+Size \&grid\+Inner\+Corners, const std\+::vector$<$ cv\+::\+Point2f $>$ \&points2\+D\+Vector)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} std\+::array$<$ unsigned int, 4 $>$ \mbox{\hyperlink{namespaceop_a7fbb758fb8268964611914305f185afe}{op\+::get\+Outter\+Corner\+Indices}} (const std\+::vector$<$ cv\+::\+Point2f $>$ \&points2\+D\+Vector, const cv\+::\+Size \&grid\+Inner\+Corners)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_ab2e1ce3444df12c21e3bd963a1d81d86}{op\+::reorder\+Points}} (std\+::vector$<$ cv\+::\+Point2f $>$ \&points2\+D\+Vector, const cv\+::\+Size \&grid\+Inner\+Corners, const cv\+::\+Mat \&image, const bool show\+Warning=true)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a99f8e5818b5006929abdc879d82f175b}{op\+::plot\+Grid\+Corners}} (const cv\+::\+Size \&grid\+Inner\+Corners, const std\+::vector$<$ cv\+::\+Point2f $>$ \&points2\+D\+Vector, const std\+::string \&image\+Path, const cv\+::\+Mat \&image)
+\end{DoxyCompactItemize}

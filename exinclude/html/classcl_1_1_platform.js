@@ -1,0 +1,28 @@
+var classcl_1_1_platform =
+[
+    [ "cl_type", "classcl_1_1_platform.html#a83841267bac5ad4411ec8935f78315d8", null ],
+    [ "Platform", "classcl_1_1_platform.html#a616344e02c3723347c752c02b7015212", null ],
+    [ "Platform", "classcl_1_1_platform.html#a339232a64068fe7157e124b82fb4b9fa", null ],
+    [ "get", "classcl_1_1_platform.html#a4e9571071a0b51bb2fada511a1ebc964", null ],
+    [ "get", "classcl_1_1_platform.html#a1b785e6bbf238183338a22800a6fe1d1", null ],
+    [ "get", "classcl_1_1_platform.html#a87f6baad09c31e9f2bc8755a61439d04", null ],
+    [ "get", "classcl_1_1_platform.html#a2a60edf4cfdfda695919c2879a9ae64e", null ],
+    [ "get", "classcl_1_1_platform.html#af15bd8dced161daee0c5289178c8a0e1", null ],
+    [ "getDefault", "classcl_1_1_platform.html#a01bea413d721189214cc59cfbc5d092d", null ],
+    [ "getDevices", "classcl_1_1_platform.html#a73cf4b02df3beafae1a97a91ee3e9565", null ],
+    [ "getInfo", "classcl_1_1_platform.html#aa7d1ac92678763f18a40c7bb026b6fb1", null ],
+    [ "getInfo", "classcl_1_1_platform.html#a5000dc4a51c43e9e9bf851c695cf16f2", null ],
+    [ "makeDefault", "classcl_1_1_platform.html#a6b6a335f96885f91f89acf0c27cd3e03", null ],
+    [ "makeDefaultProvided", "classcl_1_1_platform.html#a55503b1e24d1db89621345122e3be967", null ],
+    [ "operator()", "classcl_1_1_platform.html#a5aa32c6d3304d4ee9fb63491a72b0d58", null ],
+    [ "operator()", "classcl_1_1_platform.html#a89adf70432169d0b0a82bc6696a9aad1", null ],
+    [ "operator=", "classcl_1_1_platform.html#aea2f06c8796a53c641fa5e17800b2ead", null ],
+    [ "release", "classcl_1_1_platform.html#a207374e201c6c33c01bdc7ee09e92d76", null ],
+    [ "retain", "classcl_1_1_platform.html#adfdff8a6c98ca62fedc6a9ffced47a06", null ],
+    [ "setDefault", "classcl_1_1_platform.html#afcf93176bebefc3add081c2d93935453", null ],
+    [ "unloadCompiler", "classcl_1_1_platform.html#a70313ea76e0e369c4dc951a7f47b531f", null ],
+    [ "default_", "classcl_1_1_platform.html#acc3bd50e5ea3d496b9f89cd343155c5c", null ],
+    [ "default_error_", "classcl_1_1_platform.html#ab219f1b23de95267c5c1be39133911c1", null ],
+    [ "default_initialized_", "classcl_1_1_platform.html#a4a5483328aefc577fe82af4c264d06e8", null ],
+    [ "object_", "classcl_1_1_platform.html#a1292547dd0c591aa972e25b793481583", null ]
+];

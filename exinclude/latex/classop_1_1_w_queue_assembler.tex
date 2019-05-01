@@ -1,0 +1,331 @@
+\hypertarget{classop_1_1_w_queue_assembler}{}\doxysection{op\+::W\+Queue\+Assembler$<$ T\+Datums $>$ 클래스 템플릿 참조}
+\label{classop_1_1_w_queue_assembler}\index{op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}}
+
+
+{\ttfamily \#include $<$w\+Queue\+Assembler.\+hpp$>$}
+
+
+
+op\+::W\+Queue\+Assembler$<$ T\+Datums $>$에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classop_1_1_w_queue_assembler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::W\+Queue\+Assembler$<$ T\+Datums $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classop_1_1_w_queue_assembler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_w_queue_assembler_ad4a4ec3e060ad6483331156a5a62af25}{W\+Queue\+Assembler}} ()
+\item 
+virtual \mbox{\hyperlink{classop_1_1_w_queue_assembler_abe8d97c0749cd8d968c8df2727b643e6}{$\sim$\+W\+Queue\+Assembler}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_w_queue_assembler_a02bb2d4e47689903434c05a911a5ba15}{initialization\+On\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_w_queue_assembler_ad3b1ca56d18e1e234773ba15efea7158}{work}} (std\+::shared\+\_\+ptr$<$ T\+Datums $>$ \&t\+Datums)
+\item 
+void \mbox{\hyperlink{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}{initialization\+On\+Thread\+No\+Exception}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}{check\+And\+Work}} (std\+::shared\+\_\+ptr$<$ T\+Datums $>$ \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}{is\+Running}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}} ()
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}{try\+Stop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_w_queue_assembler_abe00b43c0aec64539caca9786d43c4e6}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_w_queue_assembler}{W\+Queue\+Assembler}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ T\+Datums $>$ \mbox{\hyperlink{classop_1_1_w_queue_assembler_a31e27b393afb53de7a254b0e1d67324d}{m\+Next\+T\+Datums}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T\+Datums$>$\newline
+class op\+::\+W\+Queue\+Assembler$<$ T\+Datums $>$}
+
+
+
+w\+Queue\+Assembler.\+hpp 파일의 17 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_w_queue_assembler_ad4a4ec3e060ad6483331156a5a62af25}\label{classop_1_1_w_queue_assembler_ad4a4ec3e060ad6483331156a5a62af25}} 
+\index{op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}!WQueueAssembler@{WQueueAssembler}}
+\index{WQueueAssembler@{WQueueAssembler}!op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{WQueueAssembler()}{WQueueAssembler()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_queue_assembler}{op\+::\+W\+Queue\+Assembler}}$<$ T\+Datums $>$\+::\mbox{\hyperlink{classop_1_1_w_queue_assembler}{W\+Queue\+Assembler}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+w\+Queue\+Assembler.\+hpp 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44     \{}
+\DoxyCodeLine{45     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_queue_assembler_abe8d97c0749cd8d968c8df2727b643e6}\label{classop_1_1_w_queue_assembler_abe8d97c0749cd8d968c8df2727b643e6}} 
+\index{op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}!````~WQueueAssembler@{$\sim$WQueueAssembler}}
+\index{````~WQueueAssembler@{$\sim$WQueueAssembler}!op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$WQueueAssembler()}{~WQueueAssembler()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_queue_assembler}{op\+::\+W\+Queue\+Assembler}}$<$ T\+Datums $>$\+::$\sim$\mbox{\hyperlink{classop_1_1_w_queue_assembler}{W\+Queue\+Assembler}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+w\+Queue\+Assembler.\+hpp 파일의 48 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49     \{}
+\DoxyCodeLine{50     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}\label{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}} 
+\index{op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}!checkAndWork@{checkAndWork}}
+\index{checkAndWork@{checkAndWork}!op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{checkAndWork()}{checkAndWork()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ std\+::shared\+\_\+ptr$<$ T\+Datums $>$  $>$\+::check\+And\+Work (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ T\+Datums $>$  \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 82 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83     \{}
+\DoxyCodeLine{84         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{85         \{}
+\DoxyCodeLine{86             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}})}
+\DoxyCodeLine{87                 \mbox{\hyperlink{classop_1_1_worker_a9acadd6df7af03b31b9e354ae815f781}{work}}(tDatums);}
+\DoxyCodeLine{88             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}};}
+\DoxyCodeLine{89         \}}
+\DoxyCodeLine{90         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{91         \{}
+\DoxyCodeLine{92             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{93             \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{errorWorker}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{94             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_queue_assembler_abe00b43c0aec64539caca9786d43c4e6}\label{classop_1_1_w_queue_assembler_abe00b43c0aec64539caca9786d43c4e6}} 
+\index{op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_queue_assembler}{op\+::\+W\+Queue\+Assembler}}$<$ T\+Datums $>$\+::D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_w_queue_assembler}{W\+Queue\+Assembler}}$<$ T\+Datums $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_w_queue_assembler_a02bb2d4e47689903434c05a911a5ba15}\label{classop_1_1_w_queue_assembler_a02bb2d4e47689903434c05a911a5ba15}} 
+\index{op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_w_queue_assembler}{op\+::\+W\+Queue\+Assembler}}$<$ T\+Datums $>$\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}{op\+::\+Worker$<$ std\+::shared\+\_\+ptr$<$ T\+Datums $>$ $>$}}를 구현.
+
+
+
+w\+Queue\+Assembler.\+hpp 파일의 53 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54     \{}
+\DoxyCodeLine{55     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}\label{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}} 
+\index{op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}!initializationOnThreadNoException@{initializationOnThreadNoException}}
+\index{initializationOnThreadNoException@{initializationOnThreadNoException}!op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{initializationOnThreadNoException()}{initializationOnThreadNoException()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ std\+::shared\+\_\+ptr$<$ T\+Datums $>$  $>$\+::initialization\+On\+Thread\+No\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69     \{}
+\DoxyCodeLine{70         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{71         \{}
+\DoxyCodeLine{72             this-\/>\mbox{\hyperlink{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}{initializationOnThread}}();}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{75         \{}
+\DoxyCodeLine{76             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{77             \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{errorWorker}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{78         \}}
+\DoxyCodeLine{79     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}\label{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}} 
+\index{op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ std\+::shared\+\_\+ptr$<$ T\+Datums $>$  $>$\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 20 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21         \{}
+\DoxyCodeLine{22             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}};}
+\DoxyCodeLine{23         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}\label{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}} 
+\index{op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}!stop@{stop}}
+\index{stop@{stop}!op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ std\+::shared\+\_\+ptr$<$ T\+Datums $>$  $>$\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 25 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26         \{}
+\DoxyCodeLine{27             \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{28         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}\label{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}} 
+\index{op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}!tryStop@{tryStop}}
+\index{tryStop@{tryStop}!op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{tryStop()}{tryStop()}}
+{\footnotesize\ttfamily virtual void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ std\+::shared\+\_\+ptr$<$ T\+Datums $>$  $>$\+::try\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 32 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33         \{}
+\DoxyCodeLine{34             \mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{35         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_queue_assembler_ad3b1ca56d18e1e234773ba15efea7158}\label{classop_1_1_w_queue_assembler_ad3b1ca56d18e1e234773ba15efea7158}} 
+\index{op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}!work@{work}}
+\index{work@{work}!op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{work()}{work()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_w_queue_assembler}{op\+::\+W\+Queue\+Assembler}}$<$ T\+Datums $>$\+::work (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ T\+Datums $>$ \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_worker_a9acadd6df7af03b31b9e354ae815f781}{op\+::\+Worker$<$ std\+::shared\+\_\+ptr$<$ T\+Datums $>$ $>$}}를 구현.
+
+
+
+w\+Queue\+Assembler.\+hpp 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59     \{}
+\DoxyCodeLine{60         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{61         \{}
+\DoxyCodeLine{62             \textcolor{comment}{// Profiling speed}}
+\DoxyCodeLine{63             \textcolor{keyword}{const} \textcolor{keyword}{auto} profilerKey = \mbox{\hyperlink{classop_1_1_profiler_aea2c89bcd0a661a53f47e59b9bec2be7}{Profiler::timerInit}}(\_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{64             \textcolor{comment}{// Input TDatums -\/> enqueue it}}
+\DoxyCodeLine{65             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceop_a02164ca0af9e838190f584f5d1d8465e}{checkNoNullNorEmpty}}(tDatums))}
+\DoxyCodeLine{66             \{}
+\DoxyCodeLine{67                 \textcolor{comment}{// Sanity check}}
+\DoxyCodeLine{68                 \textcolor{keywordflow}{if} (tDatums-\/>size() > 1)}
+\DoxyCodeLine{69                     \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(\textcolor{stringliteral}{"This function assumes that WQueueSplitter (inside WDatumProducer)"}}
+\DoxyCodeLine{70                           \textcolor{stringliteral}{" was applied in the first place, i.e., that there is only 1 element"}}
+\DoxyCodeLine{71                           \textcolor{stringliteral}{" per TDatums (size = "} + std::to\_string(tDatums-\/>size()) + \textcolor{stringliteral}{")."},}
+\DoxyCodeLine{72                           \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{73                 \textcolor{keyword}{auto} tDatumPtr = (*tDatums)[0];}
+\DoxyCodeLine{74                 \textcolor{comment}{// Single view -\/-\/> Return}}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{if} (tDatumPtr-\/>subIdMax == 0)}
+\DoxyCodeLine{76                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{77                 \textcolor{comment}{// Multiple view -\/-\/> Merge views into different TDatums (1st frame)}}
+\DoxyCodeLine{78                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_w_queue_assembler_a31e27b393afb53de7a254b0e1d67324d}{mNextTDatums}} == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{79                     \mbox{\hyperlink{classop_1_1_w_queue_assembler_a31e27b393afb53de7a254b0e1d67324d}{mNextTDatums}} = std::make\_shared<TDatums>();}
+\DoxyCodeLine{80                 \textcolor{comment}{// Multiple view -\/-\/> Merge views into different TDatums}}
+\DoxyCodeLine{81                 \mbox{\hyperlink{classop_1_1_w_queue_assembler_a31e27b393afb53de7a254b0e1d67324d}{mNextTDatums}}-\/>emplace\_back(tDatumPtr);}
+\DoxyCodeLine{82                 \textcolor{comment}{// Last view -\/ Return frame}}
+\DoxyCodeLine{83                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_w_queue_assembler_a31e27b393afb53de7a254b0e1d67324d}{mNextTDatums}}-\/>back()-\/>subId == \mbox{\hyperlink{classop_1_1_w_queue_assembler_a31e27b393afb53de7a254b0e1d67324d}{mNextTDatums}}-\/>back()-\/>subIdMax)}
+\DoxyCodeLine{84                 \{}
+\DoxyCodeLine{85                     tDatums = \mbox{\hyperlink{classop_1_1_w_queue_assembler_a31e27b393afb53de7a254b0e1d67324d}{mNextTDatums}};}
+\DoxyCodeLine{86                     \mbox{\hyperlink{classop_1_1_w_queue_assembler_a31e27b393afb53de7a254b0e1d67324d}{mNextTDatums}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{87                     \textcolor{comment}{// Profiling speed}}
+\DoxyCodeLine{88                     \mbox{\hyperlink{classop_1_1_profiler_affff5b0b992e05276b2a699f97ad525d}{Profiler::timerEnd}}(profilerKey);}
+\DoxyCodeLine{89                     \mbox{\hyperlink{classop_1_1_profiler_a58b930a54a98bbc91af074395852da76}{Profiler::printAveragedTimeMsOnIterationX}}(profilerKey, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{90                     \textcolor{comment}{// Debugging log}}
+\DoxyCodeLine{91                     \mbox{\hyperlink{namespaceop_a4eb991aa18818196d35c66455a437a32}{dLog}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{92                 \}}
+\DoxyCodeLine{93                 \textcolor{comment}{// Non-\/last view -\/ Return nothing}}
+\DoxyCodeLine{94                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{95                     tDatums = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{96             \}}
+\DoxyCodeLine{97             \textcolor{comment}{// Sleep if no new tDatums to either pop or push}}
+\DoxyCodeLine{98             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{99                 std::this\_thread::sleep\_for(std::chrono::milliseconds\{1\});}
+\DoxyCodeLine{100         \}}
+\DoxyCodeLine{101         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{102         \{}
+\DoxyCodeLine{103             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{104             tDatums = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{105             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{106         \}}
+\DoxyCodeLine{107     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classop_1_1_w_queue_assembler_ad3b1ca56d18e1e234773ba15efea7158_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_w_queue_assembler_a31e27b393afb53de7a254b0e1d67324d}\label{classop_1_1_w_queue_assembler_a31e27b393afb53de7a254b0e1d67324d}} 
+\index{op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}!mNextTDatums@{mNextTDatums}}
+\index{mNextTDatums@{mNextTDatums}!op::WQueueAssembler$<$ TDatums $>$@{op::WQueueAssembler$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{mNextTDatums}{mNextTDatums}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+std\+::shared\+\_\+ptr$<$T\+Datums$>$ \mbox{\hyperlink{classop_1_1_w_queue_assembler}{op\+::\+W\+Queue\+Assembler}}$<$ T\+Datums $>$\+::m\+Next\+T\+Datums\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+w\+Queue\+Assembler.\+hpp 파일의 29 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/thread/\mbox{\hyperlink{w_queue_assembler_8hpp}{w\+Queue\+Assembler.\+hpp}}\end{DoxyCompactItemize}

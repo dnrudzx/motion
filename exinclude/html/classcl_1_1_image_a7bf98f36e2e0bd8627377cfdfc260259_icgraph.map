@@ -1,0 +1,5 @@
+<map id="cl::Image::getImageInfo" name="cl::Image::getImageInfo">
+<area shape="rect" id="node1" title="Wrapper for clGetImageInfo()." alt="" coords="213,31,373,57"/>
+<area shape="rect" id="node2" href="$classcl_1_1_image.html#a6c19e6b799c523fe5229a7a8f3da7431" title="Wrapper for clGetImageInfo() that returns by value." alt="" coords="5,5,165,32"/>
+<area shape="rect" id="node3" href="$classcl_1_1_image2_d.html#af6e0b8578a6e36d76854468ae9dee400" title="Constructs a 2D Image from an image." alt="" coords="8,56,163,83"/>
+</map>

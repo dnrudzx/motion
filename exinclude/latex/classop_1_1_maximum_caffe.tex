@@ -1,0 +1,170 @@
+\hypertarget{classop_1_1_maximum_caffe}{}\doxysection{op\+::Maximum\+Caffe$<$ T $>$ 클래스 템플릿 참조}
+\label{classop_1_1_maximum_caffe}\index{op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}}
+
+
+{\ttfamily \#include $<$maximum\+Caffe.\+hpp$>$}
+
+
+
+op\+::Maximum\+Caffe$<$ T $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classop_1_1_maximum_caffe__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_maximum_caffe_a66bd0aa863a97647ae6350d1f886ea51}{Maximum\+Caffe}} ()
+\item 
+virtual \mbox{\hyperlink{classop_1_1_maximum_caffe_a0b438980e5c2fce978e9de80f75afcd3}{$\sim$\+Maximum\+Caffe}} ()
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe_a47047083e35d2af5a969acbf7cb55674}{Layer\+Set\+Up}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom, const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&top)
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe_ab9fb5ce2358801ac4e85fa25f052baa4}{Reshape}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom, const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&top)
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classop_1_1_maximum_caffe_a8d047aa2e08e49199f9f422191e9bdd2}{type}} () const
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe_a51604d40efcfa63c5a46dc257c72cf9c}{Forward}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom, const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&top)
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe_ae88c10cadaef2e4e7347ef7f8c101b67}{Forward\+\_\+cpu}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom, const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&top)
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe_a6e44cdf4dc3fce4d1dcc75ce29bc051e}{Forward\+\_\+gpu}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom, const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&top)
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe_ad21700230d1f1ac1139e8ce76574232c}{Backward\+\_\+cpu}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&top, const std\+::vector$<$ bool $>$ \&propagate\+\_\+down, const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom)
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe_a91989f6e0a2c1349c33815a8cd659e52}{Backward\+\_\+gpu}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&top, const std\+::vector$<$ bool $>$ \&propagate\+\_\+down, const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&bottom)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::array$<$ int, 4 $>$ \mbox{\hyperlink{classop_1_1_maximum_caffe_a8a379af15cf5454ade5e1ad92777441c}{m\+Bottom\+Size}}
+\item 
+std\+::array$<$ int, 4 $>$ \mbox{\hyperlink{classop_1_1_maximum_caffe_a6cdff0f131fc6f01bebf2f429901261b}{m\+Top\+Size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T$>$\newline
+class op\+::\+Maximum\+Caffe$<$ T $>$}
+
+
+
+maximum\+Caffe.\+hpp 파일의 12 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_maximum_caffe_a66bd0aa863a97647ae6350d1f886ea51}\label{classop_1_1_maximum_caffe_a66bd0aa863a97647ae6350d1f886ea51}} 
+\index{op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}!MaximumCaffe@{MaximumCaffe}}
+\index{MaximumCaffe@{MaximumCaffe}!op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MaximumCaffe()}{MaximumCaffe()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classop_1_1_maximum_caffe}{op\+::\+Maximum\+Caffe}}$<$ T $>$\+::\mbox{\hyperlink{classop_1_1_maximum_caffe}{Maximum\+Caffe}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classop_1_1_maximum_caffe_a0b438980e5c2fce978e9de80f75afcd3}\label{classop_1_1_maximum_caffe_a0b438980e5c2fce978e9de80f75afcd3}} 
+\index{op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}!````~MaximumCaffe@{$\sim$MaximumCaffe}}
+\index{````~MaximumCaffe@{$\sim$MaximumCaffe}!op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$MaximumCaffe()}{~MaximumCaffe()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual \mbox{\hyperlink{classop_1_1_maximum_caffe}{op\+::\+Maximum\+Caffe}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classop_1_1_maximum_caffe}{Maximum\+Caffe}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_maximum_caffe_ad21700230d1f1ac1139e8ce76574232c}\label{classop_1_1_maximum_caffe_ad21700230d1f1ac1139e8ce76574232c}} 
+\index{op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}!Backward\_cpu@{Backward\_cpu}}
+\index{Backward\_cpu@{Backward\_cpu}!op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Backward\_cpu()}{Backward\_cpu()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe}{op\+::\+Maximum\+Caffe}}$<$ T $>$\+::Backward\+\_\+cpu (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{top,  }\item[{const std\+::vector$<$ bool $>$ \&}]{propagate\+\_\+down,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_maximum_caffe_a91989f6e0a2c1349c33815a8cd659e52}\label{classop_1_1_maximum_caffe_a91989f6e0a2c1349c33815a8cd659e52}} 
+\index{op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}!Backward\_gpu@{Backward\_gpu}}
+\index{Backward\_gpu@{Backward\_gpu}!op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Backward\_gpu()}{Backward\_gpu()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe}{op\+::\+Maximum\+Caffe}}$<$ T $>$\+::Backward\+\_\+gpu (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{top,  }\item[{const std\+::vector$<$ bool $>$ \&}]{propagate\+\_\+down,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_maximum_caffe_a51604d40efcfa63c5a46dc257c72cf9c}\label{classop_1_1_maximum_caffe_a51604d40efcfa63c5a46dc257c72cf9c}} 
+\index{op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}!Forward@{Forward}}
+\index{Forward@{Forward}!op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Forward()}{Forward()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe}{op\+::\+Maximum\+Caffe}}$<$ T $>$\+::Forward (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{top }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_maximum_caffe_ae88c10cadaef2e4e7347ef7f8c101b67}\label{classop_1_1_maximum_caffe_ae88c10cadaef2e4e7347ef7f8c101b67}} 
+\index{op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}!Forward\_cpu@{Forward\_cpu}}
+\index{Forward\_cpu@{Forward\_cpu}!op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Forward\_cpu()}{Forward\_cpu()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe}{op\+::\+Maximum\+Caffe}}$<$ T $>$\+::Forward\+\_\+cpu (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{top }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_maximum_caffe_a6e44cdf4dc3fce4d1dcc75ce29bc051e}\label{classop_1_1_maximum_caffe_a6e44cdf4dc3fce4d1dcc75ce29bc051e}} 
+\index{op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}!Forward\_gpu@{Forward\_gpu}}
+\index{Forward\_gpu@{Forward\_gpu}!op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Forward\_gpu()}{Forward\_gpu()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe}{op\+::\+Maximum\+Caffe}}$<$ T $>$\+::Forward\+\_\+gpu (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{top }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_maximum_caffe_a47047083e35d2af5a969acbf7cb55674}\label{classop_1_1_maximum_caffe_a47047083e35d2af5a969acbf7cb55674}} 
+\index{op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}!LayerSetUp@{LayerSetUp}}
+\index{LayerSetUp@{LayerSetUp}!op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LayerSetUp()}{LayerSetUp()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe}{op\+::\+Maximum\+Caffe}}$<$ T $>$\+::Layer\+Set\+Up (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{top }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_maximum_caffe_ab9fb5ce2358801ac4e85fa25f052baa4}\label{classop_1_1_maximum_caffe_ab9fb5ce2358801ac4e85fa25f052baa4}} 
+\index{op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}!Reshape@{Reshape}}
+\index{Reshape@{Reshape}!op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Reshape()}{Reshape()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_maximum_caffe}{op\+::\+Maximum\+Caffe}}$<$ T $>$\+::Reshape (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{bottom,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array_cpu_gpu}{Array\+Cpu\+Gpu}}$<$ T $>$ $\ast$ $>$ \&}]{top }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classop_1_1_maximum_caffe_a8d047aa2e08e49199f9f422191e9bdd2}\label{classop_1_1_maximum_caffe_a8d047aa2e08e49199f9f422191e9bdd2}} 
+\index{op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}!type@{type}}
+\index{type@{type}!op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual const char$\ast$ \mbox{\hyperlink{classop_1_1_maximum_caffe}{op\+::\+Maximum\+Caffe}}$<$ T $>$\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+maximum\+Caffe.\+hpp 파일의 23 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Maximum"}; \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_maximum_caffe_a8a379af15cf5454ade5e1ad92777441c}\label{classop_1_1_maximum_caffe_a8a379af15cf5454ade5e1ad92777441c}} 
+\index{op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}!mBottomSize@{mBottomSize}}
+\index{mBottomSize@{mBottomSize}!op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mBottomSize}{mBottomSize}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::array$<$int, 4$>$ \mbox{\hyperlink{classop_1_1_maximum_caffe}{op\+::\+Maximum\+Caffe}}$<$ T $>$\+::m\+Bottom\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+maximum\+Caffe.\+hpp 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_maximum_caffe_a6cdff0f131fc6f01bebf2f429901261b}\label{classop_1_1_maximum_caffe_a6cdff0f131fc6f01bebf2f429901261b}} 
+\index{op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}!mTopSize@{mTopSize}}
+\index{mTopSize@{mTopSize}!op::MaximumCaffe$<$ T $>$@{op::MaximumCaffe$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mTopSize}{mTopSize}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::array$<$int, 4$>$ \mbox{\hyperlink{classop_1_1_maximum_caffe}{op\+::\+Maximum\+Caffe}}$<$ T $>$\+::m\+Top\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+maximum\+Caffe.\+hpp 파일의 39 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/net/\mbox{\hyperlink{maximum_caffe_8hpp}{maximum\+Caffe.\+hpp}}\end{DoxyCompactItemize}

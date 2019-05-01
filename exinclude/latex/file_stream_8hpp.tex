@@ -1,0 +1,52 @@
+\hypertarget{file_stream_8hpp}{}\doxysection{/home/ms/openpose/include/openpose/filestream/file\+Stream.hpp 파일 참조}
+\label{file_stream_8hpp}\index{/home/ms/openpose/include/openpose/filestream/fileStream.hpp@{/home/ms/openpose/include/openpose/filestream/fileStream.hpp}}
+{\ttfamily \#include $<$opencv2/core/core.\+hpp$>$}\newline
+{\ttfamily \#include $<$opencv2/highgui/highgui.\+hpp$>$}\newline
+{\ttfamily \#include $<$openpose/core/common.\+hpp$>$}\newline
+{\ttfamily \#include $<$openpose/filestream/enum\+Classes.\+hpp$>$}\newline
+file\+Stream.\+hpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{file_stream_8hpp__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{file_stream_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{네임스페이스}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceop}{op}}
+\end{DoxyCompactItemize}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} std\+::string \mbox{\hyperlink{namespaceop_a9d121f33179e41075f4602eb6527e658}{op\+::data\+Format\+To\+String}} (const Data\+Format data\+Format)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} Data\+Format \mbox{\hyperlink{namespaceop_a46e815df32db67d78a94367b7f97df25}{op\+::string\+To\+Data\+Format}} (const std\+::string \&data\+Format)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_ac1080e627185a65b88ec788184a95552}{op\+::save\+Float\+Array}} (const Array$<$ float $>$ \&array, const std\+::string \&full\+File\+Path)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a82a9b02531d6197f023185489c7587b3}{op\+::save\+Data}} (const std\+::vector$<$ cv\+::\+Mat $>$ \&cv\+Mats, const std\+::vector$<$ std\+::string $>$ \&cv\+Mat\+Names, const std\+::string \&file\+Name\+No\+Extension, const Data\+Format data\+Format)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_adc3c5d63a289c98efa9ee37c066432d7}{op\+::save\+Data}} (const cv\+::\+Mat \&cv\+Mat, const std\+::string cv\+Mat\+Name, const std\+::string \&file\+Name\+No\+Extension, const Data\+Format data\+Format)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{namespaceop_a3c8bedd64e2e84fec5a719794556e179}{op\+::load\+Data}} (const std\+::vector$<$ std\+::string $>$ \&cv\+Mat\+Names, const std\+::string \&file\+Name\+No\+Extension, const Data\+Format data\+Format)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} cv\+::\+Mat \mbox{\hyperlink{namespaceop_a28f3a6f2e634149466eaedf958383455}{op\+::load\+Data}} (const std\+::string \&cv\+Mat\+Name, const std\+::string \&file\+Name\+No\+Extension, const Data\+Format data\+Format)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_af9c189f7c80092570699c8b9d5686fea}{op\+::save\+People\+Json}} (const Array$<$ float $>$ \&keypoints, const std\+::vector$<$ std\+::vector$<$ std\+::array$<$ float, 3 $>$$>$$>$ \&candidates, const std\+::string \&keypoint\+Name, const std\+::string \&file\+Name, const bool human\+Readable)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a1e986a510a29bfd8c682f65a8b399551}{op\+::save\+People\+Json}} (const std\+::vector$<$ std\+::pair$<$ Array$<$ float $>$, std\+::string $>$$>$ \&keypoint\+Vector, const std\+::vector$<$ std\+::vector$<$ std\+::array$<$ float, 3 $>$$>$$>$ \&candidates, const std\+::string \&file\+Name, const bool human\+Readable)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a80f8d102523be3fd8a884d14e38cbce9}{op\+::save\+Image}} (const cv\+::\+Mat \&cv\+Mat, const std\+::string \&full\+File\+Path, const std\+::vector$<$ int $>$ \&open\+Cv\+Compression\+Params=\{C\+V\+\_\+\+I\+M\+W\+R\+I\+T\+E\+\_\+\+J\+P\+E\+G\+\_\+\+Q\+U\+A\+L\+I\+TY, 100, C\+V\+\_\+\+I\+M\+W\+R\+I\+T\+E\+\_\+\+P\+N\+G\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+ON, 9\})
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} cv\+::\+Mat \mbox{\hyperlink{namespaceop_ad8705cea162a5874afc33fdec9a37d9f}{op\+::load\+Image}} (const std\+::string \&full\+File\+Path, const int open\+Cv\+Flags=C\+V\+\_\+\+L\+O\+A\+D\+\_\+\+I\+M\+A\+G\+E\+\_\+\+A\+N\+Y\+D\+E\+P\+TH)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} std\+::vector$<$ std\+::array$<$ Rectangle$<$ float $>$, 2 $>$ $>$ \mbox{\hyperlink{namespaceop_a0ce96f84c6e380b261802c7e2639dc7d}{op\+::load\+Hand\+Detector\+Txt}} (const std\+::string \&txt\+File\+Path)
+\end{DoxyCompactItemize}

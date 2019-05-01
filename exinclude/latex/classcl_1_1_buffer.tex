@@ -1,0 +1,865 @@
+\hypertarget{classcl_1_1_buffer}{}\doxysection{cl\+::Buffer 클래스 참조}
+\label{classcl_1_1_buffer}\index{cl::Buffer@{cl::Buffer}}
+
+
+Class interface for \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \mbox{\hyperlink{classcl_1_1_memory}{Memory}} Objects.  
+
+
+
+
+{\ttfamily \#include $<$cl2.\+hpp$>$}
+
+
+
+cl\+::Buffer에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcl_1_1_buffer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+cl\+::Buffer에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcl_1_1_buffer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+typedef cl\+\_\+mem \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1_buffer_a66ee6c9c837b5f74f02bef8f90459b5c}{Buffer}} (const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&context, cl\+\_\+mem\+\_\+flags flags, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size, void $\ast$host\+\_\+ptr=N\+U\+LL, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} in a specified context. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_buffer_ac9eaf7f65478faefa7053ab6c9f1e16d}{Buffer}} (cl\+\_\+mem\+\_\+flags flags, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}} size, void $\ast$host\+\_\+ptr=N\+U\+LL, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} in the default context. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\\mbox{\hyperlink{classcl_1_1_buffer_aadd3663801107fabb88238565c55ba16}{Buffer}} (Iterator\+Type start\+Iterator, Iterator\+Type end\+Iterator, bool read\+Only, bool use\+Host\+Ptr=false, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Construct a \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} from a host container via iterators. Iterator\+Type must be random access. If use\+Host\+Ptr is specified iterators must represent contiguous data. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\\mbox{\hyperlink{classcl_1_1_buffer_a96e0d46de95bd3f335c39f5b4f10c640}{Buffer}} (const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&context, Iterator\+Type start\+Iterator, Iterator\+Type end\+Iterator, bool read\+Only, bool use\+Host\+Ptr=false, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Construct a \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} from a host container via iterators using a specified context. Iterator\+Type must be random access. If use\+Host\+Ptr is specified iterators must represent contiguous data. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\\mbox{\hyperlink{classcl_1_1_buffer_a589e770b263ccedb789620860799e2c6}{Buffer}} (const \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&queue, Iterator\+Type start\+Iterator, Iterator\+Type end\+Iterator, bool read\+Only, bool use\+Host\+Ptr=false, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Construct a \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} from a host container via iterators using a specified queue. If use\+Host\+Ptr is specified iterators must be random access. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_buffer_a1c82aa24dd8a4d80b698605f60a26d71}{Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor -\/ initializes to N\+U\+LL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_buffer_a68c77da266a476c4b4789bd53aa33337}{Buffer}} (const cl\+\_\+mem \&buffer, bool retain\+Object=false)
+\begin{DoxyCompactList}\small\item\em Constructor from cl\+\_\+mem -\/ takes ownership. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \& \mbox{\hyperlink{classcl_1_1_buffer_a7f1c8cf8cd50afde28a6a1e1f2d100b0}{operator=}} (const cl\+\_\+mem \&rhs)
+\begin{DoxyCompactList}\small\item\em Assignment from cl\+\_\+mem -\/ performs shallow copy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_buffer_a2cfe3144f7d69d4b390edfa934641dcf}{Buffer}} (const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&buf)
+\begin{DoxyCompactList}\small\item\em Copy constructor to forward copy to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \& \mbox{\hyperlink{classcl_1_1_buffer_a88ebbe0901b409d64fbef488ba83d82a}{operator=}} (const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&buf)
+\begin{DoxyCompactList}\small\item\em Copy assignment to forward copy to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_buffer_a5ee4055b862daa313919ef577600b9fa}{Buffer}} (\mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&\&buf) \mbox{\hyperlink{cl2_8hpp_a7fcfde26c9e031daf0c6fbb637ed7ac0}{C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Move constructor to forward move to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \& \mbox{\hyperlink{classcl_1_1_buffer_a1954b31fb8d5e1fd221c128d73e387ce}{operator=}} (\mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&\&buf)
+\begin{DoxyCompactList}\small\item\em Move assignment to forward move to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \mbox{\hyperlink{classcl_1_1_buffer_ab73f1e0ab2224f3d515820dd6b0c1d73}{create\+Sub\+Buffer}} (cl\+\_\+mem\+\_\+flags flags, cl\+\_\+buffer\+\_\+create\+\_\+type buffer\+\_\+create\+\_\+type, const void $\ast$buffer\+\_\+create\+\_\+info, cl\+\_\+int $\ast$err=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Creates a new buffer object from this. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_memory_ab86d24b2a4f9a7090148fb8e77d73135}{get\+Info}} (cl\+\_\+mem\+\_\+info name, T $\ast$param) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Mem\+Object\+Info(). \end{DoxyCompactList}\item 
+{\footnotesize template$<$cl\+\_\+int name$>$ }\\\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$ detail\+::cl\+\_\+mem\+\_\+info, name $>$\+::param\+\_\+type \mbox{\hyperlink{classcl_1_1_memory_a71a7dacb458fb6a8993c586f5c9fab6f}{get\+Info}} (cl\+\_\+int $\ast$err=N\+U\+LL) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Mem\+Object\+Info() that returns by value. \end{DoxyCompactList}\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_memory_a15e14fda4062d21ad354126a599a6111}{set\+Destructor\+Callback}} (void(\mbox{\hyperlink{cl2_8hpp_a193b43da2ce23c54788f9b4d4f0f4740}{C\+L\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} $\ast$pfn\+\_\+notify)(cl\+\_\+mem, void $\ast$), void $\ast$user\+\_\+data=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Registers a callback function to be called when the memory object is no longer needed. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}{operator()}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}{operator()}} ()
+\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}{get}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}{get}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}{retain}} () const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}{release}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Class interface for \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \mbox{\hyperlink{classcl_1_1_memory}{Memory}} Objects. 
+
+See \mbox{\hyperlink{classcl_1_1_memory}{Memory}} for details about copy semantics, etc.
+
+\begin{DoxySeeAlso}{참고}
+\mbox{\hyperlink{classcl_1_1_memory}{Memory}} 
+\end{DoxySeeAlso}
+
+
+cl2.\+hpp 파일의 3651 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 타입정의 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}\label{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}} 
+\index{cl::Buffer@{cl::Buffer}!cl\_type@{cl\_type}}
+\index{cl\_type@{cl\_type}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{cl\_type}{cl\_type}}
+{\footnotesize\ttfamily typedef cl\+\_\+mem  \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1637 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classcl_1_1_buffer_a66ee6c9c837b5f74f02bef8f90459b5c}\label{classcl_1_1_buffer_a66ee6c9c837b5f74f02bef8f90459b5c}} 
+\index{cl::Buffer@{cl::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/9]}}
+{\footnotesize\ttfamily cl\+::\+Buffer\+::\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&}]{context,  }\item[{cl\+\_\+mem\+\_\+flags}]{flags,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size,  }\item[{void $\ast$}]{host\+\_\+ptr = {\ttfamily NULL},  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} in a specified context. 
+
+Wraps cl\+Create\+Buffer().
+
+
+\begin{DoxyParams}{매개변수}
+{\em host\+\_\+ptr} & Storage to be used if the C\+L\+\_\+\+M\+E\+M\+\_\+\+U\+S\+E\+\_\+\+H\+O\+S\+T\+\_\+\+P\+TR flag was specified. Note alignment \& exclusivity requirements. \\
+\hline
+\end{DoxyParams}
+
+
+cl2.\+hpp 파일의 3662 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3668     \{}
+\DoxyCodeLine{3669         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{3670         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateBuffer(context(), flags, size, host\_ptr, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{3671 }
+\DoxyCodeLine{3672         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_BUFFER\_ERR);}
+\DoxyCodeLine{3673         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{3674             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{3675         \}}
+\DoxyCodeLine{3676     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classcl_1_1_buffer_a66ee6c9c837b5f74f02bef8f90459b5c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_buffer_ac9eaf7f65478faefa7053ab6c9f1e16d}\label{classcl_1_1_buffer_ac9eaf7f65478faefa7053ab6c9f1e16d}} 
+\index{cl::Buffer@{cl::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/9]}}
+{\footnotesize\ttfamily cl\+::\+Buffer\+::\+Buffer (\begin{DoxyParamCaption}\item[{cl\+\_\+mem\+\_\+flags}]{flags,  }\item[{\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\+\_\+type}}}]{size,  }\item[{void $\ast$}]{host\+\_\+ptr = {\ttfamily NULL},  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} in the default context. 
+
+Wraps cl\+Create\+Buffer().
+
+
+\begin{DoxyParams}{매개변수}
+{\em host\+\_\+ptr} & Storage to be used if the C\+L\+\_\+\+M\+E\+M\+\_\+\+U\+S\+E\+\_\+\+H\+O\+S\+T\+\_\+\+P\+TR flag was specified. Note alignment \& exclusivity requirements.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{참고}
+\mbox{\hyperlink{classcl_1_1_context_ad180f6f7d8b5a95710ab72f96162b051}{Context\+::get\+Default()}} 
+\end{DoxySeeAlso}
+
+
+cl2.\+hpp 파일의 3687 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3692     \{}
+\DoxyCodeLine{3693         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{3694 }
+\DoxyCodeLine{3695         Context context = \mbox{\hyperlink{classcl_1_1_context_ad180f6f7d8b5a95710ab72f96162b051}{Context::getDefault}}(err);}
+\DoxyCodeLine{3696 }
+\DoxyCodeLine{3697         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateBuffer(context(), flags, size, host\_ptr, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{3698 }
+\DoxyCodeLine{3699         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_BUFFER\_ERR);}
+\DoxyCodeLine{3700         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{3701             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{3702         \}}
+\DoxyCodeLine{3703     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_buffer_ac9eaf7f65478faefa7053ab6c9f1e16d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_buffer_aadd3663801107fabb88238565c55ba16}\label{classcl_1_1_buffer_aadd3663801107fabb88238565c55ba16}} 
+\index{cl::Buffer@{cl::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/9]}}
+{\footnotesize\ttfamily template$<$typename Iterator\+Type $>$ \\
+cl\+::\+Buffer\+::\+Buffer (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{start\+Iterator,  }\item[{Iterator\+Type}]{end\+Iterator,  }\item[{bool}]{read\+Only,  }\item[{bool}]{use\+Host\+Ptr = {\ttfamily false},  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} from a host container via iterators. Iterator\+Type must be random access. If use\+Host\+Ptr is specified iterators must represent contiguous data. 
+
+
+
+cl2.\+hpp 파일의 3711 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3717     \{}
+\DoxyCodeLine{3718         \textcolor{keyword}{typedef} \textcolor{keyword}{typename} std::iterator\_traits<IteratorType>::value\_type DataType;}
+\DoxyCodeLine{3719         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{3720 }
+\DoxyCodeLine{3721         cl\_mem\_flags flags = 0;}
+\DoxyCodeLine{3722         \textcolor{keywordflow}{if}( readOnly ) \{}
+\DoxyCodeLine{3723             flags |= CL\_MEM\_READ\_ONLY;}
+\DoxyCodeLine{3724         \}}
+\DoxyCodeLine{3725         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{3726             flags |= CL\_MEM\_READ\_WRITE;}
+\DoxyCodeLine{3727         \}}
+\DoxyCodeLine{3728         \textcolor{keywordflow}{if}( useHostPtr ) \{}
+\DoxyCodeLine{3729             flags |= CL\_MEM\_USE\_HOST\_PTR;}
+\DoxyCodeLine{3730         \}}
+\DoxyCodeLine{3731         }
+\DoxyCodeLine{3732         \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} size = \textcolor{keyword}{sizeof}(DataType)*(endIterator -\/ startIterator);}
+\DoxyCodeLine{3733 }
+\DoxyCodeLine{3734         Context context = \mbox{\hyperlink{classcl_1_1_context_ad180f6f7d8b5a95710ab72f96162b051}{Context::getDefault}}(err);}
+\DoxyCodeLine{3735 }
+\DoxyCodeLine{3736         \textcolor{keywordflow}{if}( useHostPtr ) \{}
+\DoxyCodeLine{3737             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateBuffer(context(), flags, size, static\_cast<DataType*>(\&*startIterator), \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{3738         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{3739             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateBuffer(context(), flags, size, 0, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{3740         \}}
+\DoxyCodeLine{3741 }
+\DoxyCodeLine{3742         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_BUFFER\_ERR);}
+\DoxyCodeLine{3743         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{3744             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{3745         \}}
+\DoxyCodeLine{3746 }
+\DoxyCodeLine{3747         \textcolor{keywordflow}{if}( !useHostPtr ) \{}
+\DoxyCodeLine{3748             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} = \mbox{\hyperlink{namespacecl_a1197a833cdd6664f206b079f2bebd2eb}{cl::copy}}(startIterator, endIterator, *\textcolor{keyword}{this});}
+\DoxyCodeLine{3749             \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_BUFFER\_ERR);}
+\DoxyCodeLine{3750             \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{3751                 *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{3752             \}}
+\DoxyCodeLine{3753         \}}
+\DoxyCodeLine{3754     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_buffer_aadd3663801107fabb88238565c55ba16_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_buffer_a96e0d46de95bd3f335c39f5b4f10c640}\label{classcl_1_1_buffer_a96e0d46de95bd3f335c39f5b4f10c640}} 
+\index{cl::Buffer@{cl::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/9]}}
+{\footnotesize\ttfamily template$<$typename Iterator\+Type $>$ \\
+cl\+::\+Buffer\+::\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&}]{context,  }\item[{Iterator\+Type}]{start\+Iterator,  }\item[{Iterator\+Type}]{end\+Iterator,  }\item[{bool}]{read\+Only,  }\item[{bool}]{use\+Host\+Ptr = {\ttfamily false},  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+Construct a \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} from a host container via iterators using a specified context. Iterator\+Type must be random access. If use\+Host\+Ptr is specified iterators must represent contiguous data. 
+
+
+
+cl2.\+hpp 파일의 8392 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8399 \{}
+\DoxyCodeLine{8400     \textcolor{keyword}{typedef} \textcolor{keyword}{typename} std::iterator\_traits<IteratorType>::value\_type DataType;}
+\DoxyCodeLine{8401     cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{8402 }
+\DoxyCodeLine{8403     cl\_mem\_flags flags = 0;}
+\DoxyCodeLine{8404     \textcolor{keywordflow}{if}( readOnly ) \{}
+\DoxyCodeLine{8405         flags |= CL\_MEM\_READ\_ONLY;}
+\DoxyCodeLine{8406     \}}
+\DoxyCodeLine{8407     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{8408         flags |= CL\_MEM\_READ\_WRITE;}
+\DoxyCodeLine{8409     \}}
+\DoxyCodeLine{8410     \textcolor{keywordflow}{if}( useHostPtr ) \{}
+\DoxyCodeLine{8411         flags |= CL\_MEM\_USE\_HOST\_PTR;}
+\DoxyCodeLine{8412     \}}
+\DoxyCodeLine{8413     }
+\DoxyCodeLine{8414     \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} size = \textcolor{keyword}{sizeof}(DataType)*(endIterator -\/ startIterator);}
+\DoxyCodeLine{8415 }
+\DoxyCodeLine{8416     \textcolor{keywordflow}{if}( useHostPtr ) \{}
+\DoxyCodeLine{8417         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateBuffer(context(), flags, size, static\_cast<DataType*>(\&*startIterator), \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{8418     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{8419         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateBuffer(context(), flags, size, 0, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{8420     \}}
+\DoxyCodeLine{8421 }
+\DoxyCodeLine{8422     \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_BUFFER\_ERR);}
+\DoxyCodeLine{8423     \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{8424         *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{8425     \}}
+\DoxyCodeLine{8426 }
+\DoxyCodeLine{8427     \textcolor{keywordflow}{if}( !useHostPtr ) \{}
+\DoxyCodeLine{8428         CommandQueue queue(context, 0, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{8429         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_BUFFER\_ERR);}
+\DoxyCodeLine{8430         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{8431             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{8432         \}}
+\DoxyCodeLine{8433 }
+\DoxyCodeLine{8434         \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} = \mbox{\hyperlink{namespacecl_a1197a833cdd6664f206b079f2bebd2eb}{cl::copy}}(queue, startIterator, endIterator, *\textcolor{keyword}{this});}
+\DoxyCodeLine{8435         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_BUFFER\_ERR);}
+\DoxyCodeLine{8436         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{8437             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{8438         \}}
+\DoxyCodeLine{8439     \}}
+\DoxyCodeLine{8440 \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_buffer_a96e0d46de95bd3f335c39f5b4f10c640_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_buffer_a589e770b263ccedb789620860799e2c6}\label{classcl_1_1_buffer_a589e770b263ccedb789620860799e2c6}} 
+\index{cl::Buffer@{cl::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [5/9]}}
+{\footnotesize\ttfamily template$<$typename Iterator\+Type $>$ \\
+cl\+::\+Buffer\+::\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} \&}]{queue,  }\item[{Iterator\+Type}]{start\+Iterator,  }\item[{Iterator\+Type}]{end\+Iterator,  }\item[{bool}]{read\+Only,  }\item[{bool}]{use\+Host\+Ptr = {\ttfamily false},  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+Construct a \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} from a host container via iterators using a specified queue. If use\+Host\+Ptr is specified iterators must be random access. 
+
+
+
+cl2.\+hpp 파일의 8443 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8450 \{}
+\DoxyCodeLine{8451     \textcolor{keyword}{typedef} \textcolor{keyword}{typename} std::iterator\_traits<IteratorType>::value\_type DataType;}
+\DoxyCodeLine{8452     cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{8453 }
+\DoxyCodeLine{8454     cl\_mem\_flags flags = 0;}
+\DoxyCodeLine{8455     \textcolor{keywordflow}{if} (readOnly) \{}
+\DoxyCodeLine{8456         flags |= CL\_MEM\_READ\_ONLY;}
+\DoxyCodeLine{8457     \}}
+\DoxyCodeLine{8458     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{8459         flags |= CL\_MEM\_READ\_WRITE;}
+\DoxyCodeLine{8460     \}}
+\DoxyCodeLine{8461     \textcolor{keywordflow}{if} (useHostPtr) \{}
+\DoxyCodeLine{8462         flags |= CL\_MEM\_USE\_HOST\_PTR;}
+\DoxyCodeLine{8463     \}}
+\DoxyCodeLine{8464 }
+\DoxyCodeLine{8465     \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} size = \textcolor{keyword}{sizeof}(DataType)*(endIterator -\/ startIterator);}
+\DoxyCodeLine{8466 }
+\DoxyCodeLine{8467     Context context = queue.getInfo<CL\_QUEUE\_CONTEXT>();}
+\DoxyCodeLine{8468 }
+\DoxyCodeLine{8469     \textcolor{keywordflow}{if} (useHostPtr) \{}
+\DoxyCodeLine{8470         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateBuffer(context(), flags, size, static\_cast<DataType*>(\&*startIterator), \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{8471     \}}
+\DoxyCodeLine{8472     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{8473         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateBuffer(context(), flags, size, 0, \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{8474     \}}
+\DoxyCodeLine{8475 }
+\DoxyCodeLine{8476     \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_BUFFER\_ERR);}
+\DoxyCodeLine{8477     \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{8478         *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{8479     \}}
+\DoxyCodeLine{8480 }
+\DoxyCodeLine{8481     \textcolor{keywordflow}{if} (!useHostPtr) \{}
+\DoxyCodeLine{8482         \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}} = \mbox{\hyperlink{namespacecl_a1197a833cdd6664f206b079f2bebd2eb}{cl::copy}}(queue, startIterator, endIterator, *\textcolor{keyword}{this});}
+\DoxyCodeLine{8483         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_BUFFER\_ERR);}
+\DoxyCodeLine{8484         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{8485             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{8486         \}}
+\DoxyCodeLine{8487     \}}
+\DoxyCodeLine{8488 \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_buffer_a589e770b263ccedb789620860799e2c6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_buffer_a1c82aa24dd8a4d80b698605f60a26d71}\label{classcl_1_1_buffer_a1c82aa24dd8a4d80b698605f60a26d71}} 
+\index{cl::Buffer@{cl::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [6/9]}}
+{\footnotesize\ttfamily cl\+::\+Buffer\+::\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor -\/ initializes to N\+U\+LL. 
+
+
+
+cl2.\+hpp 파일의 3774 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3774 : \mbox{\hyperlink{classcl_1_1_memory_a9926612772ae6e016f1118ef4148da22}{Memory}}() \{ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_buffer_a68c77da266a476c4b4789bd53aa33337}\label{classcl_1_1_buffer_a68c77da266a476c4b4789bd53aa33337}} 
+\index{cl::Buffer@{cl::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [7/9]}}
+{\footnotesize\ttfamily cl\+::\+Buffer\+::\+Buffer (\begin{DoxyParamCaption}\item[{const cl\+\_\+mem \&}]{buffer,  }\item[{bool}]{retain\+Object = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor from cl\+\_\+mem -\/ takes ownership. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em retain\+Object} & will cause the constructor to retain its cl object. Defaults to false to maintain compatibility with earlier versions.\\
+\hline
+\end{DoxyParams}
+See \mbox{\hyperlink{classcl_1_1_memory}{Memory}} for further details. 
+
+cl2.\+hpp 파일의 3783 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3783                                                                      :}
+\DoxyCodeLine{3784         \mbox{\hyperlink{classcl_1_1_memory_a9926612772ae6e016f1118ef4148da22}{Memory}}(buffer, retainObject) \{ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_buffer_a2cfe3144f7d69d4b390edfa934641dcf}\label{classcl_1_1_buffer_a2cfe3144f7d69d4b390edfa934641dcf}} 
+\index{cl::Buffer@{cl::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [8/9]}}
+{\footnotesize\ttfamily cl\+::\+Buffer\+::\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{buf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor to forward copy to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 3799 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3799 : \mbox{\hyperlink{classcl_1_1_memory_a9926612772ae6e016f1118ef4148da22}{Memory}}(buf) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_buffer_a5ee4055b862daa313919ef577600b9fa}\label{classcl_1_1_buffer_a5ee4055b862daa313919ef577600b9fa}} 
+\index{cl::Buffer@{cl::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [9/9]}}
+{\footnotesize\ttfamily cl\+::\+Buffer\+::\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&\&}]{buf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move constructor to forward move to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 3813 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3813 : \mbox{\hyperlink{classcl_1_1_memory_a9926612772ae6e016f1118ef4148da22}{Memory}}(std::move(buf)) \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classcl_1_1_buffer_ab73f1e0ab2224f3d515820dd6b0c1d73}\label{classcl_1_1_buffer_ab73f1e0ab2224f3d515820dd6b0c1d73}} 
+\index{cl::Buffer@{cl::Buffer}!createSubBuffer@{createSubBuffer}}
+\index{createSubBuffer@{createSubBuffer}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{createSubBuffer()}{createSubBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} cl\+::\+Buffer\+::create\+Sub\+Buffer (\begin{DoxyParamCaption}\item[{cl\+\_\+mem\+\_\+flags}]{flags,  }\item[{cl\+\_\+buffer\+\_\+create\+\_\+type}]{buffer\+\_\+create\+\_\+type,  }\item[{const void $\ast$}]{buffer\+\_\+create\+\_\+info,  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new buffer object from this. 
+
+Wraps cl\+Create\+Sub\+Buffer(). 
+
+cl2.\+hpp 파일의 3829 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3834     \{}
+\DoxyCodeLine{3835         \mbox{\hyperlink{classcl_1_1_buffer_a1c82aa24dd8a4d80b698605f60a26d71}{Buffer}} result;}
+\DoxyCodeLine{3836         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{3837         result.object\_ = ::clCreateSubBuffer(}
+\DoxyCodeLine{3838             \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, }
+\DoxyCodeLine{3839             flags, }
+\DoxyCodeLine{3840             buffer\_create\_type, }
+\DoxyCodeLine{3841             buffer\_create\_info, }
+\DoxyCodeLine{3842             \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{3843 }
+\DoxyCodeLine{3844         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_SUBBUFFER\_ERR);}
+\DoxyCodeLine{3845         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{3846             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{3847         \}}
+\DoxyCodeLine{3848 }
+\DoxyCodeLine{3849         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{3850     \}       }
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_buffer_ab73f1e0ab2224f3d515820dd6b0c1d73_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}\label{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}} 
+\index{cl::Buffer@{cl::Buffer}!get@{get}}
+\index{get@{get}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1702 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1702 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}\label{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}} 
+\index{cl::Buffer@{cl::Buffer}!get@{get}}
+\index{get@{get}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1700 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1700 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_memory_a71a7dacb458fb6a8993c586f5c9fab6f}\label{classcl_1_1_memory_a71a7dacb458fb6a8993c586f5c9fab6f}} 
+\index{cl::Buffer@{cl::Buffer}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$cl\+\_\+int name$>$ \\
+\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$detail\+::cl\+\_\+mem\+\_\+info, name$>$\+::param\+\_\+type cl\+::\+Memory\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Wrapper for cl\+Get\+Mem\+Object\+Info() that returns by value. 
+
+
+
+cl2.\+hpp 파일의 3233 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3234     \{}
+\DoxyCodeLine{3235         \textcolor{keyword}{typename} detail::param\_traits<}
+\DoxyCodeLine{3236             detail::cl\_mem\_info, name>::param\_type param;}
+\DoxyCodeLine{3237         cl\_int result = \mbox{\hyperlink{classcl_1_1_memory_ab86d24b2a4f9a7090148fb8e77d73135}{getInfo}}(name, \&param);}
+\DoxyCodeLine{3238         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{3239             *err = result;}
+\DoxyCodeLine{3240         \}}
+\DoxyCodeLine{3241         \textcolor{keywordflow}{return} param;}
+\DoxyCodeLine{3242     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_memory_a71a7dacb458fb6a8993c586f5c9fab6f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_memory_ab86d24b2a4f9a7090148fb8e77d73135}\label{classcl_1_1_memory_ab86d24b2a4f9a7090148fb8e77d73135}} 
+\index{cl::Buffer@{cl::Buffer}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+cl\+\_\+int cl\+::\+Memory\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+mem\+\_\+info}]{name,  }\item[{T $\ast$}]{param }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Wrapper for cl\+Get\+Mem\+Object\+Info(). 
+
+
+
+cl2.\+hpp 파일의 3223 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3224     \{}
+\DoxyCodeLine{3225         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{3226             \mbox{\hyperlink{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480}{detail::getInfo}}(\&::clGetMemObjectInfo, \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, name, param),}
+\DoxyCodeLine{3227             \_\_GET\_MEM\_OBJECT\_INFO\_ERR);}
+\DoxyCodeLine{3228     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_memory_ab86d24b2a4f9a7090148fb8e77d73135_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classcl_1_1_memory_ab86d24b2a4f9a7090148fb8e77d73135_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}\label{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}} 
+\index{cl::Buffer@{cl::Buffer}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1698 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1698 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}\label{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}} 
+\index{cl::Buffer@{cl::Buffer}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1696 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1696 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_buffer_a1954b31fb8d5e1fd221c128d73e387ce}\label{classcl_1_1_buffer_a1954b31fb8d5e1fd221c128d73e387ce}} 
+\index{cl::Buffer@{cl::Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}}\& cl\+::\+Buffer\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&\&}]{buf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move assignment to forward move to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 3818 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3819     \{}
+\DoxyCodeLine{3820         \mbox{\hyperlink{classcl_1_1_memory_aa6cd4c07a111c6baa3195bee2a447dad}{Memory::operator=}}(std::move(buf));}
+\DoxyCodeLine{3821         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{3822     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_buffer_a1954b31fb8d5e1fd221c128d73e387ce_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_buffer_a88ebbe0901b409d64fbef488ba83d82a}\label{classcl_1_1_buffer_a88ebbe0901b409d64fbef488ba83d82a}} 
+\index{cl::Buffer@{cl::Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}}\& cl\+::\+Buffer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \&}]{buf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy assignment to forward copy to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 3804 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3805     \{}
+\DoxyCodeLine{3806         \mbox{\hyperlink{classcl_1_1_memory_aa6cd4c07a111c6baa3195bee2a447dad}{Memory::operator=}}(buf);}
+\DoxyCodeLine{3807         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{3808     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_buffer_a88ebbe0901b409d64fbef488ba83d82a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_buffer_a7f1c8cf8cd50afde28a6a1e1f2d100b0}\label{classcl_1_1_buffer_a7f1c8cf8cd50afde28a6a1e1f2d100b0}} 
+\index{cl::Buffer@{cl::Buffer}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}}\& cl\+::\+Buffer\+::operator= (\begin{DoxyParamCaption}\item[{const cl\+\_\+mem \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment from cl\+\_\+mem -\/ performs shallow copy. 
+
+See \mbox{\hyperlink{classcl_1_1_memory}{Memory}} for further details. 
+
+cl2.\+hpp 파일의 3790 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3791     \{}
+\DoxyCodeLine{3792         \mbox{\hyperlink{classcl_1_1_memory_aa6cd4c07a111c6baa3195bee2a447dad}{Memory::operator=}}(rhs);}
+\DoxyCodeLine{3793         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{3794     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_buffer_a7f1c8cf8cd50afde28a6a1e1f2d100b0_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classcl_1_1_buffer_a7f1c8cf8cd50afde28a6a1e1f2d100b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}\label{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}} 
+\index{cl::Buffer@{cl::Buffer}!release@{release}}
+\index{release@{release}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1719 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1720     \{}
+\DoxyCodeLine{1721         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{1722             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::release(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}});}
+\DoxyCodeLine{1723         \}}
+\DoxyCodeLine{1724         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1725             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1726         \}}
+\DoxyCodeLine{1727     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}\label{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}} 
+\index{cl::Buffer@{cl::Buffer}!retain@{retain}}
+\index{retain@{retain}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{retain()}{retain()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::retain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1709 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1710     \{}
+\DoxyCodeLine{1711         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{1712             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::retain(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}});}
+\DoxyCodeLine{1713         \}}
+\DoxyCodeLine{1714         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1715             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1716         \}}
+\DoxyCodeLine{1717     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_memory_a15e14fda4062d21ad354126a599a6111}\label{classcl_1_1_memory_a15e14fda4062d21ad354126a599a6111}} 
+\index{cl::Buffer@{cl::Buffer}!setDestructorCallback@{setDestructorCallback}}
+\index{setDestructorCallback@{setDestructorCallback}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{setDestructorCallback()}{setDestructorCallback()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Memory\+::set\+Destructor\+Callback (\begin{DoxyParamCaption}\item[{void(\mbox{\hyperlink{cl2_8hpp_a193b43da2ce23c54788f9b4d4f0f4740}{C\+L\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} $\ast$pfn\+\_\+notify)(cl\+\_\+mem, void $\ast$)}]{,  }\item[{void $\ast$}]{user\+\_\+data = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Registers a callback function to be called when the memory object is no longer needed. 
+
+Wraps cl\+Set\+Mem\+Object\+Destructor\+Callback().
+
+Repeated calls to this function, for a given cl\+\_\+mem value, will append to the list of functions called (in reverse order) when memory object\textquotesingle{}s resources are freed and the memory object is deleted.
+
+\begin{DoxyNote}{주의}
+The registered callbacks are associated with the underlying cl\+\_\+mem value -\/ not the \mbox{\hyperlink{classcl_1_1_memory}{Memory}} class instance. 
+\end{DoxyNote}
+
+
+cl2.\+hpp 파일의 3258 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3261     \{}
+\DoxyCodeLine{3262         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{3263             ::clSetMemObjectDestructorCallback(}
+\DoxyCodeLine{3264                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}},}
+\DoxyCodeLine{3265                 pfn\_notify,}
+\DoxyCodeLine{3266                 user\_data), }
+\DoxyCodeLine{3267             \_\_SET\_MEM\_OBJECT\_DESTRUCTOR\_CALLBACK\_ERR);}
+\DoxyCodeLine{3268     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_memory_a15e14fda4062d21ad354126a599a6111_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}\label{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}} 
+\index{cl::Buffer@{cl::Buffer}!object\_@{object\_}}
+\index{object\_@{object\_}!cl::Buffer@{cl::Buffer}}
+\doxysubsubsection{\texorpdfstring{object\_}{object\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::object\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1640 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/gpu/\mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}\end{DoxyCompactItemize}

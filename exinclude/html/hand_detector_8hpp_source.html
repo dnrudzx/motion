@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: /home/ms/openpose/include/openpose/hand/handDetector.hpp 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('hand_detector_8hpp_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">handDetector.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="hand_detector_8hpp.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OPENPOSE_HAND_HAND_DETECTOR_HPP</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OPENPOSE_HAND_HAND_DETECTOR_HPP</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="common_8hpp.html">openpose/core/common.hpp</a>&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pose_2enum_classes_8hpp.html">openpose/pose/enumClasses.hpp</a>&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceop.html">op</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">// Note: This class is thread-safe, so several GPUs can be running hands and using `updateTracker`, and updateTracker will keep the latest known</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">// tracking</span></div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classop_1_1_hand_detector.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="macros_8hpp.html#a4ba443bb7a0e5dbe8054a9ac37a5e000">OP_API</a> <a class="code" href="classop_1_1_hand_detector.html">HandDetector</a></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classop_1_1_hand_detector.html">HandDetector</a>(<span class="keyword">const</span> <a class="code" href="namespaceop.html#af5b3ce2a5d3de87cb31b9b67e96f261f">PoseModel</a> poseModel);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classop_1_1_hand_detector.html">HandDetector</a>();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        std::vector&lt;std::array&lt;Rectangle&lt;float&gt;, 2&gt;&gt; detectHands(<span class="keyword">const</span> <a class="code" href="classop_1_1_array.html">Array&lt;float&gt;</a>&amp; poseKeypoints) <span class="keyword">const</span>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        std::vector&lt;std::array&lt;Rectangle&lt;float&gt;, 2&gt;&gt; trackHands(<span class="keyword">const</span> <a class="code" href="classop_1_1_array.html">Array&lt;float&gt;</a>&amp; poseKeypoints);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> updateTracker(<span class="keyword">const</span> <a class="code" href="namespacecl.html#a8856ce875094624efdce0a49496d695e">std::array</a>&lt;<a class="code" href="classop_1_1_array.html">Array&lt;float&gt;</a>, 2&gt;&amp; handKeypoints, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">id</span>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classop_1_1_hand_detector.html#a4d058446e66aff15d8702558fd256b73">   26</a></span>&#160;        <span class="keyword">enum class</span> <a class="code" href="classop_1_1_hand_detector.html#a4d058446e66aff15d8702558fd256b73">PosePart</a> : unsigned int</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            LWrist = 0,</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            LElbow,</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            LShoulder,</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            RWrist,</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            RElbow,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            RShoulder,</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="namespaceop.html#a5418b76dad5b4aea1133325f4aa715aca6f6cb72d544962fa333e2e34ce64f719">Size</a>,</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        };</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classop_1_1_hand_detector.html#a2a59591978c5c7b0cbf805f90bafd798">   37</a></span>&#160;        <span class="keyword">const</span> <a class="code" href="namespacecl.html#a8856ce875094624efdce0a49496d695e">std::array</a>&lt;<span class="keywordtype">unsigned</span> int, (int)<a class="code" href="namespaceop.html#a5418b76dad5b4aea1133325f4aa715aca6f6cb72d544962fa333e2e34ce64f719">PosePart::Size</a>&gt; mPoseIndexes;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classop_1_1_hand_detector.html#a7aca2341800581353c865492c8cf8d1f">   38</a></span>&#160;        std::vector&lt;std::array&lt;Point&lt;float&gt;, (int)<a class="code" href="namespaceop.html#a5418b76dad5b4aea1133325f4aa715aca6f6cb72d544962fa333e2e34ce64f719">PosePart::Size</a>&gt;&gt; mPoseTrack;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classop_1_1_hand_detector.html#a57cb8552a34bd46e9b7dca5af8e5311c">   39</a></span>&#160;        std::vector&lt;Rectangle&lt;float&gt;&gt; <a class="code" href="classop_1_1_hand_detector.html#a57cb8552a34bd46e9b7dca5af8e5311c">mHandLeftPrevious</a>;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classop_1_1_hand_detector.html#af524a4f845d46cdf08204d9d86668ffe">   40</a></span>&#160;        std::vector&lt;Rectangle&lt;float&gt;&gt; <a class="code" href="classop_1_1_hand_detector.html#af524a4f845d46cdf08204d9d86668ffe">mHandRightPrevious</a>;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classop_1_1_hand_detector.html#a8a7f9d0cebfa8162b2d62644916fd5f4">   41</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="classop_1_1_hand_detector.html#a8a7f9d0cebfa8162b2d62644916fd5f4">mCurrentId</a>;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classop_1_1_hand_detector.html#aaf3bc196c16fa76a63d8521966693684">   42</a></span>&#160;        std::mutex <a class="code" href="classop_1_1_hand_detector.html#aaf3bc196c16fa76a63d8521966693684">mMutex</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="namespacecl.html#a8856ce875094624efdce0a49496d695e">std::array</a>&lt;<span class="keywordtype">unsigned</span> int, (int)<a class="code" href="namespaceop.html#a5418b76dad5b4aea1133325f4aa715aca6f6cb72d544962fa333e2e34ce64f719">PosePart::Size</a>&gt; getPoseKeypoints(<span class="keyword">const</span> <a class="code" href="namespaceop.html#af5b3ce2a5d3de87cb31b9b67e96f261f">PoseModel</a> poseModel,</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                                       <span class="keyword">const</span> <a class="code" href="namespacecl.html#a8856ce875094624efdce0a49496d695e">std::array</a>&lt;<a class="code" href="namespacecl.html#abff80bfb254d646f6afeb6638df41686">std::string</a>, (<span class="keywordtype">int</span>)<a class="code" href="namespaceop.html#a5418b76dad5b4aea1133325f4aa715aca6f6cb72d544962fa333e2e34ce64f719">PosePart::Size</a>&gt;&amp; poseStrings) <span class="keyword">const</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="macros_8hpp.html#abef96b5dd35dd9d44ad27ddf0e2f5f2e">DELETE_COPY</a>(<a class="code" href="classop_1_1_hand_detector.html">HandDetector</a>);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // OPENPOSE_HAND_HAND_DETECTOR_HPP</span></div></div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="anamespaceop_html_a5418b76dad5b4aea1133325f4aa715aca6f6cb72d544962fa333e2e34ce64f719"><div class="ttname"><a href="namespaceop.html#a5418b76dad5b4aea1133325f4aa715aca6f6cb72d544962fa333e2e34ce64f719">op::CocoJsonFormat::Size</a></div></div>
+<div class="ttc" id="amacros_8hpp_html_abef96b5dd35dd9d44ad27ddf0e2f5f2e"><div class="ttname"><a href="macros_8hpp.html#abef96b5dd35dd9d44ad27ddf0e2f5f2e">DELETE_COPY</a></div><div class="ttdeci">#define DELETE_COPY(className)</div><div class="ttdef"><b>Definition:</b> <a href="macros_8hpp_source.html#l00034">macros.hpp:34</a></div></div>
+<div class="ttc" id="amacros_8hpp_html_a4ba443bb7a0e5dbe8054a9ac37a5e000"><div class="ttname"><a href="macros_8hpp.html#a4ba443bb7a0e5dbe8054a9ac37a5e000">OP_API</a></div><div class="ttdeci">#define OP_API</div><div class="ttdef"><b>Definition:</b> <a href="macros_8hpp_source.html#l00019">macros.hpp:19</a></div></div>
+<div class="ttc" id="acommon_8hpp_html"><div class="ttname"><a href="common_8hpp.html">common.hpp</a></div></div>
+<div class="ttc" id="aclassop_1_1_hand_detector_html_af524a4f845d46cdf08204d9d86668ffe"><div class="ttname"><a href="classop_1_1_hand_detector.html#af524a4f845d46cdf08204d9d86668ffe">op::HandDetector::mHandRightPrevious</a></div><div class="ttdeci">std::vector&lt; Rectangle&lt; float &gt; &gt; mHandRightPrevious</div><div class="ttdef"><b>Definition:</b> <a href="hand_detector_8hpp_source.html#l00040">handDetector.hpp:40</a></div></div>
+<div class="ttc" id="anamespacecl_html_a8856ce875094624efdce0a49496d695e"><div class="ttname"><a href="namespacecl.html#a8856ce875094624efdce0a49496d695e">cl::array</a></div><div class="ttdeci">std::array&lt; T, N &gt; array</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l00594">cl2.hpp:594</a></div></div>
+<div class="ttc" id="aclassop_1_1_array_html"><div class="ttname"><a href="classop_1_1_array.html">op::Array&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclassop_1_1_hand_detector_html_a8a7f9d0cebfa8162b2d62644916fd5f4"><div class="ttname"><a href="classop_1_1_hand_detector.html#a8a7f9d0cebfa8162b2d62644916fd5f4">op::HandDetector::mCurrentId</a></div><div class="ttdeci">unsigned long long mCurrentId</div><div class="ttdef"><b>Definition:</b> <a href="hand_detector_8hpp_source.html#l00041">handDetector.hpp:41</a></div></div>
+<div class="ttc" id="aclassop_1_1_hand_detector_html_a57cb8552a34bd46e9b7dca5af8e5311c"><div class="ttname"><a href="classop_1_1_hand_detector.html#a57cb8552a34bd46e9b7dca5af8e5311c">op::HandDetector::mHandLeftPrevious</a></div><div class="ttdeci">std::vector&lt; Rectangle&lt; float &gt; &gt; mHandLeftPrevious</div><div class="ttdef"><b>Definition:</b> <a href="hand_detector_8hpp_source.html#l00039">handDetector.hpp:39</a></div></div>
+<div class="ttc" id="anamespaceop_html"><div class="ttname"><a href="namespaceop.html">op</a></div><div class="ttdef"><b>Definition:</b> <a href="camera_parameter_reader_8hpp_source.html#l00007">cameraParameterReader.hpp:7</a></div></div>
+<div class="ttc" id="aclassop_1_1_hand_detector_html_aaf3bc196c16fa76a63d8521966693684"><div class="ttname"><a href="classop_1_1_hand_detector.html#aaf3bc196c16fa76a63d8521966693684">op::HandDetector::mMutex</a></div><div class="ttdeci">std::mutex mMutex</div><div class="ttdef"><b>Definition:</b> <a href="hand_detector_8hpp_source.html#l00042">handDetector.hpp:42</a></div></div>
+<div class="ttc" id="apose_2enum_classes_8hpp_html"><div class="ttname"><a href="pose_2enum_classes_8hpp.html">enumClasses.hpp</a></div></div>
+<div class="ttc" id="aclassop_1_1_hand_detector_html"><div class="ttname"><a href="classop_1_1_hand_detector.html">op::HandDetector</a></div><div class="ttdef"><b>Definition:</b> <a href="hand_detector_8hpp_source.html#l00012">handDetector.hpp:12</a></div></div>
+<div class="ttc" id="anamespaceop_html_af5b3ce2a5d3de87cb31b9b67e96f261f"><div class="ttname"><a href="namespaceop.html#af5b3ce2a5d3de87cb31b9b67e96f261f">op::PoseModel</a></div><div class="ttdeci">PoseModel</div><div class="ttdef"><b>Definition:</b> <a href="pose_2enum_classes_8hpp_source.html#l00009">enumClasses.hpp:9</a></div></div>
+<div class="ttc" id="aclassop_1_1_hand_detector_html_a4d058446e66aff15d8702558fd256b73"><div class="ttname"><a href="classop_1_1_hand_detector.html#a4d058446e66aff15d8702558fd256b73">op::HandDetector::PosePart</a></div><div class="ttdeci">PosePart</div><div class="ttdef"><b>Definition:</b> <a href="hand_detector_8hpp_source.html#l00026">handDetector.hpp:26</a></div></div>
+<div class="ttc" id="anamespacecl_html_abff80bfb254d646f6afeb6638df41686"><div class="ttname"><a href="namespacecl.html#abff80bfb254d646f6afeb6638df41686">cl::string</a></div><div class="ttdeci">std::string string</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l00574">cl2.hpp:574</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_04ec20ba93cf69e04f5e13da89cb89cf.html">openpose</a></li><li class="navelem"><a class="el" href="dir_7dfd70670b900db883d48b0401503cd8.html">include</a></li><li class="navelem"><a class="el" href="dir_0a00af006e65c132eceb7754055f85f9.html">openpose</a></li><li class="navelem"><a class="el" href="dir_d31e98ec275d1a37ba8be7e3b1caf08d.html">hand</a></li><li class="navelem"><a class="el" href="hand_detector_8hpp.html">handDetector.hpp</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,799 @@
+\hypertarget{classcl_1_1_platform}{}\doxysection{cl\+::Platform 클래스 참조}
+\label{classcl_1_1_platform}\index{cl::Platform@{cl::Platform}}
+
+
+Class interface for cl\+\_\+platform\+\_\+id.  
+
+
+
+
+{\ttfamily \#include $<$cl2.\+hpp$>$}
+
+
+
+cl\+::Platform에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcl_1_1_platform__inherit__graph}
+\end{center}
+\end{figure}
+
+
+cl\+::Platform에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classcl_1_1_platform__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+typedef cl\+\_\+platform\+\_\+id \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1_platform_a616344e02c3723347c752c02b7015212}{Platform}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor -\/ initializes to N\+U\+LL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_platform_a339232a64068fe7157e124b82fb4b9fa}{Platform}} (const cl\+\_\+platform\+\_\+id \&platform, bool retain\+Object=false)
+\begin{DoxyCompactList}\small\item\em Constructor from cl\+\_\+platform\+\_\+id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_platform}{Platform}} \& \mbox{\hyperlink{classcl_1_1_platform_aea2f06c8796a53c641fa5e17800b2ead}{operator=}} (const cl\+\_\+platform\+\_\+id \&rhs)
+\begin{DoxyCompactList}\small\item\em Assignment operator from cl\+\_\+platform\+\_\+id. \end{DoxyCompactList}\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_platform_a5000dc4a51c43e9e9bf851c695cf16f2}{get\+Info}} (cl\+\_\+platform\+\_\+info name, \mbox{\hyperlink{namespacecl_abff80bfb254d646f6afeb6638df41686}{string}} $\ast$param) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Platform\+Info(). \end{DoxyCompactList}\item 
+{\footnotesize template$<$cl\+\_\+int name$>$ }\\\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$ detail\+::cl\+\_\+platform\+\_\+info, name $>$\+::param\+\_\+type \mbox{\hyperlink{classcl_1_1_platform_aa7d1ac92678763f18a40c7bb026b6fb1}{get\+Info}} (cl\+\_\+int $\ast$err=N\+U\+LL) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Platform\+Info() that returns by value. \end{DoxyCompactList}\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_platform_a73cf4b02df3beafae1a97a91ee3e9565}{get\+Devices}} (cl\+\_\+device\+\_\+type type, \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_device}{Device}} $>$ $\ast$devices) const
+\begin{DoxyCompactList}\small\item\em Gets a list of devices for this platform. \end{DoxyCompactList}\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_platform_a70313ea76e0e369c4dc951a7f47b531f}{unload\+Compiler}} ()
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Unload\+Compiler(). \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}{operator()}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}{operator()}} ()
+\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}{get}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}{get}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcl_1_1_platform}{Platform}} \mbox{\hyperlink{classcl_1_1_platform_a01bea413d721189214cc59cfbc5d092d}{get\+Default}} (cl\+\_\+int $\ast$err\+Result=N\+U\+LL)
+\item 
+static \mbox{\hyperlink{classcl_1_1_platform}{Platform}} \mbox{\hyperlink{classcl_1_1_platform_afcf93176bebefc3add081c2d93935453}{set\+Default}} (const \mbox{\hyperlink{classcl_1_1_platform}{Platform}} \&default\+\_\+platform)
+\item 
+static cl\+\_\+int \mbox{\hyperlink{classcl_1_1_platform_af15bd8dced161daee0c5289178c8a0e1}{get}} (\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_platform}{Platform}} $>$ $\ast$platforms)
+\begin{DoxyCompactList}\small\item\em Gets a list of available platforms. \end{DoxyCompactList}\item 
+static cl\+\_\+int \mbox{\hyperlink{classcl_1_1_platform_a2a60edf4cfdfda695919c2879a9ae64e}{get}} (\mbox{\hyperlink{classcl_1_1_platform}{Platform}} $\ast$platform)
+\begin{DoxyCompactList}\small\item\em Gets the first available platform. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classcl_1_1_platform}{Platform}} \mbox{\hyperlink{classcl_1_1_platform_a87f6baad09c31e9f2bc8755a61439d04}{get}} (cl\+\_\+int $\ast$err\+Result=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Gets the first available platform, returning it by value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}{retain}} () const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}{release}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcl_1_1_platform_a6b6a335f96885f91f89acf0c27cd3e03}{make\+Default}} ()
+\begin{DoxyCompactList}\small\item\em Create the default context. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classcl_1_1_platform_a55503b1e24d1db89621345122e3be967}{make\+Default\+Provided}} (const \mbox{\hyperlink{classcl_1_1_platform}{Platform}} \&p)
+\begin{DoxyCompactList}\small\item\em Create the default platform from a provided platform. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::once\+\_\+flag \mbox{\hyperlink{classcl_1_1_platform_a4a5483328aefc577fe82af4c264d06e8}{default\+\_\+initialized\+\_\+}}
+\item 
+static \mbox{\hyperlink{classcl_1_1_platform}{Platform}} \mbox{\hyperlink{classcl_1_1_platform_acc3bd50e5ea3d496b9f89cd343155c5c}{default\+\_\+}}
+\item 
+static cl\+\_\+int \mbox{\hyperlink{classcl_1_1_platform_ab219f1b23de95267c5c1be39133911c1}{default\+\_\+error\+\_\+}} = C\+L\+\_\+\+S\+U\+C\+C\+E\+SS
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Class interface for cl\+\_\+platform\+\_\+id. 
+
+\begin{DoxyNote}{주의}
+Copies of these objects are inexpensive, since they don\textquotesingle{}t \textquotesingle{}own\textquotesingle{} any underlying resources or data structures.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{참고}
+cl\+\_\+platform\+\_\+id 
+\end{DoxySeeAlso}
+
+
+cl2.\+hpp 파일의 2192 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 타입정의 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}\label{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}} 
+\index{cl::Platform@{cl::Platform}!cl\_type@{cl\_type}}
+\index{cl\_type@{cl\_type}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{cl\_type}{cl\_type}}
+{\footnotesize\ttfamily typedef cl\+\_\+platform\+\_\+id  \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+platform\+\_\+id  $>$\+::\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1637 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classcl_1_1_platform_a616344e02c3723347c752c02b7015212}\label{classcl_1_1_platform_a616344e02c3723347c752c02b7015212}} 
+\index{cl::Platform@{cl::Platform}!Platform@{Platform}}
+\index{Platform@{Platform}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{Platform()}{Platform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily cl\+::\+Platform\+::\+Platform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor -\/ initializes to N\+U\+LL. 
+
+
+
+cl2.\+hpp 파일의 2265 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2265 : detail::Wrapper<cl\_type>()  \{ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_platform_a616344e02c3723347c752c02b7015212_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_platform_a339232a64068fe7157e124b82fb4b9fa}\label{classcl_1_1_platform_a339232a64068fe7157e124b82fb4b9fa}} 
+\index{cl::Platform@{cl::Platform}!Platform@{Platform}}
+\index{Platform@{Platform}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{Platform()}{Platform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily cl\+::\+Platform\+::\+Platform (\begin{DoxyParamCaption}\item[{const cl\+\_\+platform\+\_\+id \&}]{platform,  }\item[{bool}]{retain\+Object = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor from cl\+\_\+platform\+\_\+id. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em retain\+Object} & will cause the constructor to retain its cl object. Defaults to false to maintain compatibility with earlier versions. This simply copies the platform ID value, which is an inexpensive operation. \\
+\hline
+\end{DoxyParams}
+
+
+cl2.\+hpp 파일의 2274 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2274                                                                                  : }
+\DoxyCodeLine{2275         detail::Wrapper<cl\_type>(platform, retainObject) \{ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}\label{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}} 
+\index{cl::Platform@{cl::Platform}!get@{get}}
+\index{get@{get}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+platform\+\_\+id  $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1702 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1702 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}\label{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}} 
+\index{cl::Platform@{cl::Platform}!get@{get}}
+\index{get@{get}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+platform\+\_\+id  $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1700 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1700 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_platform_a87f6baad09c31e9f2bc8755a61439d04}\label{classcl_1_1_platform_a87f6baad09c31e9f2bc8755a61439d04}} 
+\index{cl::Platform@{cl::Platform}!get@{get}}
+\index{get@{get}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcl_1_1_platform}{Platform}} cl\+::\+Platform\+::get (\begin{DoxyParamCaption}\item[{cl\+\_\+int $\ast$}]{err\+Result = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the first available platform, returning it by value. 
+
+\begin{DoxyReturn}{반환값}
+Returns a valid platform if one is available. If no platform is available will return a null platform. Throws an exception if no platforms are available or an error condition occurs. Wraps cl\+Get\+Platform\+I\+Ds(), returning the first result. 
+\end{DoxyReturn}
+
+
+cl2.\+hpp 파일의 2520 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2522     \{}
+\DoxyCodeLine{2523         cl\_int err;}
+\DoxyCodeLine{2524         \mbox{\hyperlink{classcl_1_1_platform_a616344e02c3723347c752c02b7015212}{Platform}} default\_platform = \mbox{\hyperlink{classcl_1_1_platform_a01bea413d721189214cc59cfbc5d092d}{Platform::getDefault}}(\&err);}
+\DoxyCodeLine{2525         \textcolor{keywordflow}{if} (errResult) \{}
+\DoxyCodeLine{2526             *errResult = err;}
+\DoxyCodeLine{2527         \}}
+\DoxyCodeLine{2528         \textcolor{keywordflow}{return} default\_platform;}
+\DoxyCodeLine{2529     \}    }
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_platform_a87f6baad09c31e9f2bc8755a61439d04_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_platform_a2a60edf4cfdfda695919c2879a9ae64e}\label{classcl_1_1_platform_a2a60edf4cfdfda695919c2879a9ae64e}} 
+\index{cl::Platform@{cl::Platform}!get@{get}}
+\index{get@{get}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily static cl\+\_\+int cl\+::\+Platform\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_platform}{Platform}} $\ast$}]{platform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the first available platform. 
+
+Wraps cl\+Get\+Platform\+I\+Ds(), returning the first result. 
+
+cl2.\+hpp 파일의 2501 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2503     \{}
+\DoxyCodeLine{2504         cl\_int err;}
+\DoxyCodeLine{2505         \mbox{\hyperlink{classcl_1_1_platform_a616344e02c3723347c752c02b7015212}{Platform}} default\_platform = \mbox{\hyperlink{classcl_1_1_platform_a01bea413d721189214cc59cfbc5d092d}{Platform::getDefault}}(\&err);}
+\DoxyCodeLine{2506         \textcolor{keywordflow}{if} (platform) \{}
+\DoxyCodeLine{2507             *platform = default\_platform;}
+\DoxyCodeLine{2508         \}}
+\DoxyCodeLine{2509         \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{2510     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_platform_a2a60edf4cfdfda695919c2879a9ae64e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_platform_af15bd8dced161daee0c5289178c8a0e1}\label{classcl_1_1_platform_af15bd8dced161daee0c5289178c8a0e1}} 
+\index{cl::Platform@{cl::Platform}!get@{get}}
+\index{get@{get}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily static cl\+\_\+int cl\+::\+Platform\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_platform}{Platform}} $>$ $\ast$}]{platforms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets a list of available platforms. 
+
+Wraps cl\+Get\+Platform\+I\+Ds(). 
+
+cl2.\+hpp 파일의 2466 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2468     \{}
+\DoxyCodeLine{2469         cl\_uint n = 0;}
+\DoxyCodeLine{2470 }
+\DoxyCodeLine{2471         \textcolor{keywordflow}{if}( platforms == NULL ) \{}
+\DoxyCodeLine{2472             \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(CL\_INVALID\_ARG\_VALUE, \_\_GET\_PLATFORM\_IDS\_ERR);}
+\DoxyCodeLine{2473         \}}
+\DoxyCodeLine{2474 }
+\DoxyCodeLine{2475         cl\_int err = ::clGetPlatformIDs(0, NULL, \&n);}
+\DoxyCodeLine{2476         \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{2477             \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(err, \_\_GET\_PLATFORM\_IDS\_ERR);}
+\DoxyCodeLine{2478         \}}
+\DoxyCodeLine{2479 }
+\DoxyCodeLine{2480         vector<cl\_platform\_id> ids(n);}
+\DoxyCodeLine{2481         err = ::clGetPlatformIDs(n, ids.data(), NULL);}
+\DoxyCodeLine{2482         \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{2483             \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(err, \_\_GET\_PLATFORM\_IDS\_ERR);}
+\DoxyCodeLine{2484         \}}
+\DoxyCodeLine{2485 }
+\DoxyCodeLine{2486         \textcolor{keywordflow}{if} (platforms) \{}
+\DoxyCodeLine{2487             platforms-\/>resize(ids.size());}
+\DoxyCodeLine{2488 }
+\DoxyCodeLine{2489             \textcolor{comment}{// Platforms don't reference count}}
+\DoxyCodeLine{2490             \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} i = 0; i < ids.size(); i++) \{}
+\DoxyCodeLine{2491                 (*platforms)[i] = \mbox{\hyperlink{classcl_1_1_platform_a616344e02c3723347c752c02b7015212}{Platform}}(ids[i]);}
+\DoxyCodeLine{2492             \}}
+\DoxyCodeLine{2493         \}}
+\DoxyCodeLine{2494         \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{2495     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classcl_1_1_platform_af15bd8dced161daee0c5289178c8a0e1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_platform_a01bea413d721189214cc59cfbc5d092d}\label{classcl_1_1_platform_a01bea413d721189214cc59cfbc5d092d}} 
+\index{cl::Platform@{cl::Platform}!getDefault@{getDefault}}
+\index{getDefault@{getDefault}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{getDefault()}{getDefault()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcl_1_1_platform}{Platform}} cl\+::\+Platform\+::get\+Default (\begin{DoxyParamCaption}\item[{cl\+\_\+int $\ast$}]{err\+Result = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+cl2.\+hpp 파일의 2287 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2289     \{}
+\DoxyCodeLine{2290         std::call\_once(\mbox{\hyperlink{classcl_1_1_platform_a4a5483328aefc577fe82af4c264d06e8}{default\_initialized\_}}, \mbox{\hyperlink{classcl_1_1_platform_a6b6a335f96885f91f89acf0c27cd3e03}{makeDefault}});}
+\DoxyCodeLine{2291         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{classcl_1_1_platform_ab219f1b23de95267c5c1be39133911c1}{default\_error\_}});}
+\DoxyCodeLine{2292         \textcolor{keywordflow}{if} (errResult != NULL) \{}
+\DoxyCodeLine{2293             *errResult = \mbox{\hyperlink{classcl_1_1_platform_ab219f1b23de95267c5c1be39133911c1}{default\_error\_}};}
+\DoxyCodeLine{2294         \}}
+\DoxyCodeLine{2295         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1_platform_acc3bd50e5ea3d496b9f89cd343155c5c}{default\_}};}
+\DoxyCodeLine{2296     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_platform_a01bea413d721189214cc59cfbc5d092d_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_platform_a01bea413d721189214cc59cfbc5d092d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_platform_a73cf4b02df3beafae1a97a91ee3e9565}\label{classcl_1_1_platform_a73cf4b02df3beafae1a97a91ee3e9565}} 
+\index{cl::Platform@{cl::Platform}!getDevices@{getDevices}}
+\index{getDevices@{getDevices}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{getDevices()}{getDevices()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Platform\+::get\+Devices (\begin{DoxyParamCaption}\item[{cl\+\_\+device\+\_\+type}]{type,  }\item[{\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{vector}}$<$ \mbox{\hyperlink{classcl_1_1_device}{Device}} $>$ $\ast$}]{devices }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a list of devices for this platform. 
+
+Wraps cl\+Get\+Device\+I\+Ds(). 
+
+cl2.\+hpp 파일의 2338 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2341     \{}
+\DoxyCodeLine{2342         cl\_uint n = 0;}
+\DoxyCodeLine{2343         \textcolor{keywordflow}{if}( devices == NULL ) \{}
+\DoxyCodeLine{2344             \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(CL\_INVALID\_ARG\_VALUE, \_\_GET\_DEVICE\_IDS\_ERR);}
+\DoxyCodeLine{2345         \}}
+\DoxyCodeLine{2346         cl\_int err = ::clGetDeviceIDs(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, type, 0, NULL, \&n);}
+\DoxyCodeLine{2347         \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{2348             \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(err, \_\_GET\_DEVICE\_IDS\_ERR);}
+\DoxyCodeLine{2349         \}}
+\DoxyCodeLine{2350 }
+\DoxyCodeLine{2351         vector<cl\_device\_id> ids(n);}
+\DoxyCodeLine{2352         err = ::clGetDeviceIDs(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, type, n, ids.data(), NULL);}
+\DoxyCodeLine{2353         \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{2354             \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(err, \_\_GET\_DEVICE\_IDS\_ERR);}
+\DoxyCodeLine{2355         \}}
+\DoxyCodeLine{2356 }
+\DoxyCodeLine{2357         \textcolor{comment}{// Cannot trivially assign because we need to capture intermediates }}
+\DoxyCodeLine{2358         \textcolor{comment}{// with safe construction}}
+\DoxyCodeLine{2359         \textcolor{comment}{// We must retain things we obtain from the API to avoid releasing}}
+\DoxyCodeLine{2360         \textcolor{comment}{// API-\/owned objects.}}
+\DoxyCodeLine{2361         \textcolor{keywordflow}{if} (devices) \{}
+\DoxyCodeLine{2362             devices-\/>resize(ids.size());}
+\DoxyCodeLine{2363 }
+\DoxyCodeLine{2364             \textcolor{comment}{// Assign to param, constructing with retain behaviour}}
+\DoxyCodeLine{2365             \textcolor{comment}{// to correctly capture each underlying CL object}}
+\DoxyCodeLine{2366             \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}} i = 0; i < ids.size(); i++) \{}
+\DoxyCodeLine{2367                 (*devices)[i] = Device(ids[i], \textcolor{keyword}{true});}
+\DoxyCodeLine{2368             \}}
+\DoxyCodeLine{2369         \}}
+\DoxyCodeLine{2370         \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{2371     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classcl_1_1_platform_a73cf4b02df3beafae1a97a91ee3e9565_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_platform_aa7d1ac92678763f18a40c7bb026b6fb1}\label{classcl_1_1_platform_aa7d1ac92678763f18a40c7bb026b6fb1}} 
+\index{cl::Platform@{cl::Platform}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$cl\+\_\+int name$>$ \\
+\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$detail\+::cl\+\_\+platform\+\_\+info, name$>$\+::param\+\_\+type cl\+::\+Platform\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wrapper for cl\+Get\+Platform\+Info() that returns by value. 
+
+
+
+cl2.\+hpp 파일의 2323 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2324     \{}
+\DoxyCodeLine{2325         \textcolor{keyword}{typename} detail::param\_traits<}
+\DoxyCodeLine{2326             detail::cl\_platform\_info, name>::param\_type param;}
+\DoxyCodeLine{2327         cl\_int result = \mbox{\hyperlink{classcl_1_1_platform_a5000dc4a51c43e9e9bf851c695cf16f2}{getInfo}}(name, \&param);}
+\DoxyCodeLine{2328         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{2329             *err = result;}
+\DoxyCodeLine{2330         \}}
+\DoxyCodeLine{2331         \textcolor{keywordflow}{return} param;}
+\DoxyCodeLine{2332     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_platform_aa7d1ac92678763f18a40c7bb026b6fb1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_platform_a5000dc4a51c43e9e9bf851c695cf16f2}\label{classcl_1_1_platform_a5000dc4a51c43e9e9bf851c695cf16f2}} 
+\index{cl::Platform@{cl::Platform}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Platform\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+platform\+\_\+info}]{name,  }\item[{\mbox{\hyperlink{namespacecl_abff80bfb254d646f6afeb6638df41686}{string}} $\ast$}]{param }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wrapper for cl\+Get\+Platform\+Info(). 
+
+
+
+cl2.\+hpp 파일의 2313 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2314     \{}
+\DoxyCodeLine{2315         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{2316             \mbox{\hyperlink{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480}{detail::getInfo}}(\&::clGetPlatformInfo, \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, name, param),}
+\DoxyCodeLine{2317             \_\_GET\_PLATFORM\_INFO\_ERR);}
+\DoxyCodeLine{2318     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_platform_a5000dc4a51c43e9e9bf851c695cf16f2_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classcl_1_1_platform_a5000dc4a51c43e9e9bf851c695cf16f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_platform_a6b6a335f96885f91f89acf0c27cd3e03}\label{classcl_1_1_platform_a6b6a335f96885f91f89acf0c27cd3e03}} 
+\index{cl::Platform@{cl::Platform}!makeDefault@{makeDefault}}
+\index{makeDefault@{makeDefault}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{makeDefault()}{makeDefault()}}
+{\footnotesize\ttfamily static void cl\+::\+Platform\+::make\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Create the default context. 
+
+This sets {\ttfamily default\+\_\+} and {\ttfamily default\+\_\+error\+\_\+}. It does not throw {\ttfamily cl\+::\+Error}. 
+
+cl2.\+hpp 파일의 2204 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2204                               \{}
+\DoxyCodeLine{2205         \textcolor{comment}{/* Throwing an exception from a call\_once invocation does not do}}
+\DoxyCodeLine{2206 \textcolor{comment}{        * what we wish, so we catch it and save the error.}}
+\DoxyCodeLine{2207 \textcolor{comment}{        */}}
+\DoxyCodeLine{2208 \textcolor{preprocessor}{\#if defined(CL\_HPP\_ENABLE\_EXCEPTIONS)}}
+\DoxyCodeLine{2209         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{2210 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{2211         \{}
+\DoxyCodeLine{2212             \textcolor{comment}{// If default wasn't passed ,generate one}}
+\DoxyCodeLine{2213             \textcolor{comment}{// Otherwise set it}}
+\DoxyCodeLine{2214             cl\_uint n = 0;}
+\DoxyCodeLine{2215 }
+\DoxyCodeLine{2216             cl\_int err = ::clGetPlatformIDs(0, NULL, \&n);}
+\DoxyCodeLine{2217             \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{2218                 \mbox{\hyperlink{classcl_1_1_platform_ab219f1b23de95267c5c1be39133911c1}{default\_error\_}} = err;}
+\DoxyCodeLine{2219                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{2220             \}}
+\DoxyCodeLine{2221             \textcolor{keywordflow}{if} (n == 0) \{}
+\DoxyCodeLine{2222                 \mbox{\hyperlink{classcl_1_1_platform_ab219f1b23de95267c5c1be39133911c1}{default\_error\_}} = CL\_INVALID\_PLATFORM;}
+\DoxyCodeLine{2223                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{2224             \}}
+\DoxyCodeLine{2225 }
+\DoxyCodeLine{2226             vector<cl\_platform\_id> ids(n);}
+\DoxyCodeLine{2227             err = ::clGetPlatformIDs(n, ids.data(), NULL);}
+\DoxyCodeLine{2228             \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{2229                 \mbox{\hyperlink{classcl_1_1_platform_ab219f1b23de95267c5c1be39133911c1}{default\_error\_}} = err;}
+\DoxyCodeLine{2230                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{2231             \}}
+\DoxyCodeLine{2232 }
+\DoxyCodeLine{2233             \mbox{\hyperlink{classcl_1_1_platform_acc3bd50e5ea3d496b9f89cd343155c5c}{default\_}} = \mbox{\hyperlink{classcl_1_1_platform_a616344e02c3723347c752c02b7015212}{Platform}}(ids[0]);}
+\DoxyCodeLine{2234         \}}
+\DoxyCodeLine{2235 \textcolor{preprocessor}{\#if defined(CL\_HPP\_ENABLE\_EXCEPTIONS)}}
+\DoxyCodeLine{2236         \textcolor{keywordflow}{catch} (cl::Error \&e) \{}
+\DoxyCodeLine{2237             \mbox{\hyperlink{classcl_1_1_platform_ab219f1b23de95267c5c1be39133911c1}{default\_error\_}} = e.err();}
+\DoxyCodeLine{2238         \}}
+\DoxyCodeLine{2239 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{2240     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_platform_a6b6a335f96885f91f89acf0c27cd3e03_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_platform_a6b6a335f96885f91f89acf0c27cd3e03_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_platform_a55503b1e24d1db89621345122e3be967}\label{classcl_1_1_platform_a55503b1e24d1db89621345122e3be967}} 
+\index{cl::Platform@{cl::Platform}!makeDefaultProvided@{makeDefaultProvided}}
+\index{makeDefaultProvided@{makeDefaultProvided}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{makeDefaultProvided()}{makeDefaultProvided()}}
+{\footnotesize\ttfamily static void cl\+::\+Platform\+::make\+Default\+Provided (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_platform}{Platform}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Create the default platform from a provided platform. 
+
+This sets {\ttfamily default\+\_\+}. It does not throw {\ttfamily cl\+::\+Error}. 
+
+cl2.\+hpp 파일의 2247 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2247                                                        \{}
+\DoxyCodeLine{2248        \mbox{\hyperlink{classcl_1_1_platform_acc3bd50e5ea3d496b9f89cd343155c5c}{default\_}} = p;}
+\DoxyCodeLine{2249     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_platform_a55503b1e24d1db89621345122e3be967_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}\label{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}} 
+\index{cl::Platform@{cl::Platform}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+platform\+\_\+id  $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1698 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1698 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}\label{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}} 
+\index{cl::Platform@{cl::Platform}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+platform\+\_\+id  $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1696 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1696 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_platform_aea2f06c8796a53c641fa5e17800b2ead}\label{classcl_1_1_platform_aea2f06c8796a53c641fa5e17800b2ead}} 
+\index{cl::Platform@{cl::Platform}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_platform}{Platform}}\& cl\+::\+Platform\+::operator= (\begin{DoxyParamCaption}\item[{const cl\+\_\+platform\+\_\+id \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator from cl\+\_\+platform\+\_\+id. 
+
+This simply copies the platform ID value, which is an inexpensive operation. 
+
+cl2.\+hpp 파일의 2281 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2282     \{}
+\DoxyCodeLine{2283         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a044bc05bb3eb90345cb9cf574b95a98f}{detail::Wrapper<cl\_type>::operator=}}(rhs);}
+\DoxyCodeLine{2284         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{2285     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classcl_1_1_platform_aea2f06c8796a53c641fa5e17800b2ead_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}\label{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}} 
+\index{cl::Platform@{cl::Platform}!release@{release}}
+\index{release@{release}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+platform\+\_\+id  $>$\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1719 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1720     \{}
+\DoxyCodeLine{1721         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{1722             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::release(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}});}
+\DoxyCodeLine{1723         \}}
+\DoxyCodeLine{1724         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1725             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1726         \}}
+\DoxyCodeLine{1727     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}\label{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}} 
+\index{cl::Platform@{cl::Platform}!retain@{retain}}
+\index{retain@{retain}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{retain()}{retain()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+platform\+\_\+id  $>$\+::retain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1709 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1710     \{}
+\DoxyCodeLine{1711         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{1712             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::retain(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}});}
+\DoxyCodeLine{1713         \}}
+\DoxyCodeLine{1714         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1715             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1716         \}}
+\DoxyCodeLine{1717     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_platform_afcf93176bebefc3add081c2d93935453}\label{classcl_1_1_platform_afcf93176bebefc3add081c2d93935453}} 
+\index{cl::Platform@{cl::Platform}!setDefault@{setDefault}}
+\index{setDefault@{setDefault}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{setDefault()}{setDefault()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcl_1_1_platform}{Platform}} cl\+::\+Platform\+::set\+Default (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_platform}{Platform}} \&}]{default\+\_\+platform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Modify the default platform to be used by subsequent operations. Will only set the default if no default was previously created. \begin{DoxyReturn}{반환값}
+updated default platform. Should be compared to the passed value to ensure that it was updated. 
+\end{DoxyReturn}
+
+
+cl2.\+hpp 파일의 2305 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2306     \{}
+\DoxyCodeLine{2307         std::call\_once(\mbox{\hyperlink{classcl_1_1_platform_a4a5483328aefc577fe82af4c264d06e8}{default\_initialized\_}}, \mbox{\hyperlink{classcl_1_1_platform_a55503b1e24d1db89621345122e3be967}{makeDefaultProvided}}, std::cref(default\_platform));}
+\DoxyCodeLine{2308         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{classcl_1_1_platform_ab219f1b23de95267c5c1be39133911c1}{default\_error\_}});}
+\DoxyCodeLine{2309         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1_platform_acc3bd50e5ea3d496b9f89cd343155c5c}{default\_}};}
+\DoxyCodeLine{2310     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_platform_afcf93176bebefc3add081c2d93935453_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_platform_a70313ea76e0e369c4dc951a7f47b531f}\label{classcl_1_1_platform_a70313ea76e0e369c4dc951a7f47b531f}} 
+\index{cl::Platform@{cl::Platform}!unloadCompiler@{unloadCompiler}}
+\index{unloadCompiler@{unloadCompiler}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{unloadCompiler()}{unloadCompiler()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Platform\+::unload\+Compiler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wrapper for cl\+Unload\+Compiler(). 
+
+
+
+cl2.\+hpp 파일의 2534 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2535     \{}
+\DoxyCodeLine{2536         return ::clUnloadPlatformCompiler(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}});}
+\DoxyCodeLine{2537     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classcl_1_1_platform_acc3bd50e5ea3d496b9f89cd343155c5c}\label{classcl_1_1_platform_acc3bd50e5ea3d496b9f89cd343155c5c}} 
+\index{cl::Platform@{cl::Platform}!default\_@{default\_}}
+\index{default\_@{default\_}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{default\_}{default\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cl2_8hpp_a43bdbc2602e055e27992c3f36aeb616a}{C\+L\+\_\+\+H\+P\+P\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+}} \mbox{\hyperlink{classcl_1_1_platform}{Platform}} cl\+::\+Platform\+::default\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+cl2.\+hpp 파일의 2196 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1_platform_ab219f1b23de95267c5c1be39133911c1}\label{classcl_1_1_platform_ab219f1b23de95267c5c1be39133911c1}} 
+\index{cl::Platform@{cl::Platform}!default\_error\_@{default\_error\_}}
+\index{default\_error\_@{default\_error\_}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{default\_error\_}{default\_error\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cl2_8hpp_a43bdbc2602e055e27992c3f36aeb616a}{C\+L\+\_\+\+H\+P\+P\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+}} cl\+\_\+int cl\+::\+Platform\+::default\+\_\+error\+\_\+ = C\+L\+\_\+\+S\+U\+C\+C\+E\+SS\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+cl2.\+hpp 파일의 2197 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1_platform_a4a5483328aefc577fe82af4c264d06e8}\label{classcl_1_1_platform_a4a5483328aefc577fe82af4c264d06e8}} 
+\index{cl::Platform@{cl::Platform}!default\_initialized\_@{default\_initialized\_}}
+\index{default\_initialized\_@{default\_initialized\_}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{default\_initialized\_}{default\_initialized\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cl2_8hpp_a43bdbc2602e055e27992c3f36aeb616a}{C\+L\+\_\+\+H\+P\+P\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+}} std\+::once\+\_\+flag cl\+::\+Platform\+::default\+\_\+initialized\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+cl2.\+hpp 파일의 2195 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}\label{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}} 
+\index{cl::Platform@{cl::Platform}!object\_@{object\_}}
+\index{object\_@{object\_}!cl::Platform@{cl::Platform}}
+\doxysubsubsection{\texorpdfstring{object\_}{object\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+platform\+\_\+id  $>$\+::object\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1640 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/gpu/\mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}\end{DoxyCompactItemize}

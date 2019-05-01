@@ -1,0 +1,12 @@
+<map id="cl::Image" name="cl::Image">
+<area shape="rect" id="node1" title="C++ base class for Image Memory objects." alt="" coords="423,593,541,788"/>
+<area shape="rect" id="node4" href="$classcl_1_1_image1_d.html" title="Class interface for 1D Image Memory objects." alt="" coords="5,851,103,1031"/>
+<area shape="rect" id="node5" href="$classcl_1_1_image1_d_array.html" title="Image interface for arrays of 1D images." alt="" coords="127,851,253,1031"/>
+<area shape="rect" id="node6" href="$classcl_1_1_image1_d_buffer.html" title="Image interface for 1D buffer images." alt="" coords="278,851,409,1031"/>
+<area shape="rect" id="node7" href="$classcl_1_1_image2_d.html" title="Class interface for 2D Image Memory objects." alt="" coords="433,836,531,1045"/>
+<area shape="rect" id="node8" href="$classcl_1_1_image2_d_array.html" title="Image interface for arrays of 2D images." alt="" coords="555,851,681,1031"/>
+<area shape="rect" id="node9" href="$classcl_1_1_image3_d.html" title="Class interface for 3D Image Memory objects." alt="" coords="705,851,803,1031"/>
+<area shape="rect" id="node10" href="$classcl_1_1_image_g_l.html" title="general image interface for GL interop. We abstract the 2D and 3D GL images into a single instance he..." alt="" coords="827,851,924,1031"/>
+<area shape="rect" id="node2" href="$classcl_1_1_memory.html" title="Class interface for cl_mem." alt="" coords="396,336,568,545"/>
+<area shape="rect" id="node3" href="$classcl_1_1detail_1_1_wrapper.html" title=" " alt="" coords="418,5,546,288"/>
+</map>

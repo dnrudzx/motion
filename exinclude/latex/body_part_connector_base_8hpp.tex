@@ -1,0 +1,42 @@
+\hypertarget{body_part_connector_base_8hpp}{}\doxysection{/home/ms/openpose/include/openpose/net/body\+Part\+Connector\+Base.hpp 파일 참조}
+\label{body_part_connector_base_8hpp}\index{/home/ms/openpose/include/openpose/net/bodyPartConnectorBase.hpp@{/home/ms/openpose/include/openpose/net/bodyPartConnectorBase.hpp}}
+{\ttfamily \#include $<$openpose/core/common.\+hpp$>$}\newline
+{\ttfamily \#include $<$openpose/pose/enum\+Classes.\+hpp$>$}\newline
+body\+Part\+Connector\+Base.\+hpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{body_part_connector_base_8hpp__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{body_part_connector_base_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{네임스페이스}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceop}{op}}
+\end{DoxyCompactItemize}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_a4bf1d1a0ea27d26d2dc68f17e9f62dfe}{op\+::connect\+Body\+Parts\+Cpu}} (Array$<$ T $>$ \&pose\+Keypoints, Array$<$ T $>$ \&pose\+Scores, const T $\ast$const heat\+Map\+Ptr, const T $\ast$const peaks\+Ptr, const Pose\+Model pose\+Model, const Point$<$ int $>$ \&heat\+Map\+Size, const int max\+Peaks, const T inter\+Min\+Above\+Threshold, const T inter\+Threshold, const int min\+Subset\+Cnt, const T min\+Subset\+Score, const T scale\+Factor=1.f, const bool maximize\+Positives=false)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_a3f1215716c0918e89eb1eb7c0e823545}{op\+::connect\+Body\+Parts\+Gpu}} (Array$<$ T $>$ \&pose\+Keypoints, Array$<$ T $>$ \&pose\+Scores, const T $\ast$const heat\+Map\+Gpu\+Ptr, const T $\ast$const peaks\+Ptr, const Pose\+Model pose\+Model, const Point$<$ int $>$ \&heat\+Map\+Size, const int max\+Peaks, const T inter\+Min\+Above\+Threshold, const T inter\+Threshold, const int min\+Subset\+Cnt, const T min\+Subset\+Score, const T scale\+Factor=1.f, const bool maximize\+Positives=false, Array$<$ T $>$ pair\+Scores\+Cpu=Array$<$ T $>$\{\}, T $\ast$pair\+Scores\+Gpu\+Ptr=nullptr, const unsigned int $\ast$const body\+Part\+Pairs\+Gpu\+Ptr=nullptr, const unsigned int $\ast$const map\+Idx\+Gpu\+Ptr=nullptr, const T $\ast$const peaks\+Gpu\+Ptr=nullptr)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_ae160a01bd5e82edcb2170965548669dd}{op\+::connect\+Body\+Parts\+Ocl}} (Array$<$ T $>$ \&pose\+Keypoints, Array$<$ T $>$ \&pose\+Scores, const T $\ast$const heat\+Map\+Gpu\+Ptr, const T $\ast$const peaks\+Ptr, const Pose\+Model pose\+Model, const Point$<$ int $>$ \&heat\+Map\+Size, const int max\+Peaks, const T inter\+Min\+Above\+Threshold, const T inter\+Threshold, const int min\+Subset\+Cnt, const T min\+Subset\+Score, const T scale\+Factor=1.f, const bool maximize\+Positives=false, Array$<$ T $>$ pair\+Scores\+Cpu=Array$<$ T $>$\{\}, T $\ast$pair\+Scores\+Gpu\+Ptr=nullptr, const unsigned int $\ast$const body\+Part\+Pairs\+Gpu\+Ptr=nullptr, const unsigned int $\ast$const map\+Idx\+Gpu\+Ptr=nullptr, const T $\ast$const peaks\+Gpu\+Ptr=nullptr, const int gpu\+ID=0)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ std\+::pair$<$ std\+::vector$<$ int $>$, T $>$ $>$ \mbox{\hyperlink{namespaceop_ae9cb91cf03ed561a31b9f4c950926731}{op\+::create\+People\+Vector}} (const T $\ast$const heat\+Map\+Ptr, const T $\ast$const peaks\+Ptr, const Pose\+Model pose\+Model, const Point$<$ int $>$ \&heat\+Map\+Size, const int max\+Peaks, const T inter\+Threshold, const T inter\+Min\+Above\+Threshold, const std\+::vector$<$ unsigned int $>$ \&body\+Part\+Pairs, const unsigned int number\+Body\+Parts, const unsigned int number\+Body\+Part\+Pairs, const Array$<$ T $>$ \&precomputed\+P\+A\+Fs=Array$<$ T $>$())
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_a8ed9ecd4c336511deb3cf44a8c1b1853}{op\+::remove\+People\+Below\+Thresholds}} (std\+::vector$<$ int $>$ \&valid\+Subset\+Indexes, int \&number\+People, const std\+::vector$<$ std\+::pair$<$ std\+::vector$<$ int $>$, T $>$$>$ \&subsets, const unsigned int number\+Body\+Parts, const int min\+Subset\+Cnt, const T min\+Subset\+Score, const int max\+Peaks, const bool maximize\+Positives)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_a3dbd17f2f656a2bc751441a42b5b9516}{op\+::people\+Vector\+To\+People\+Array}} (Array$<$ T $>$ \&pose\+Keypoints, Array$<$ T $>$ \&pose\+Scores, const T scale\+Factor, const std\+::vector$<$ std\+::pair$<$ std\+::vector$<$ int $>$, T $>$$>$ \&subsets, const std\+::vector$<$ int $>$ \&valid\+Subset\+Indexes, const T $\ast$const peaks\+Ptr, const int number\+People, const unsigned int number\+Body\+Parts, const unsigned int number\+Body\+Part\+Pairs)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ std\+::tuple$<$ T, T, int, int, int $>$ $>$ \mbox{\hyperlink{namespaceop_aaec4a34b015f898d28be2b9f2aba0d38}{op\+::paf\+Ptr\+Into\+Vector}} (const Array$<$ T $>$ \&pair\+Scores, const T $\ast$const peaks\+Ptr, const int max\+Peaks, const std\+::vector$<$ unsigned int $>$ \&body\+Part\+Pairs, const unsigned int number\+Body\+Part\+Pairs)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ std\+::pair$<$ std\+::vector$<$ int $>$, T $>$ $>$ \mbox{\hyperlink{namespaceop_a36f0207c6263e7174f4c79eba7c4df3f}{op\+::paf\+Vector\+Into\+People\+Vector}} (const std\+::vector$<$ std\+::tuple$<$ T, T, int, int, int $>$$>$ \&pair\+Scores, const T $\ast$const peaks\+Ptr, const int max\+Peaks, const std\+::vector$<$ unsigned int $>$ \&body\+Part\+Pairs, const unsigned int number\+Body\+Parts)
+\end{DoxyCompactItemize}

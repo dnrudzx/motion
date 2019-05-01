@@ -1,0 +1,4 @@
+<map id="cl::Sampler::operator=" name="cl::Sampler::operator=">
+<area shape="rect" id="node1" title="Move assignment to forward move to the superclass correctly. Required for MSVC." alt="" coords="5,13,156,39"/>
+<area shape="rect" id="node2" href="$classcl_1_1detail_1_1_wrapper.html#a044bc05bb3eb90345cb9cf574b95a98f" title=" " alt="" coords="204,5,332,47"/>
+</map>

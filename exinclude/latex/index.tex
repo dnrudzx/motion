@@ -1,0 +1,232 @@
+\hypertarget{index_intro}{}\doxysection{Introduction}\label{index_intro}
+For many large applications C++ is the language of choice and so it seems reasonable to define C++ bindings for Open\+CL.
+
+The interface is contained with a single C++ header file {\itshape \mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}} and all definitions are contained within the namespace {\itshape cl}. There is no additional requirement to include {\itshape cl.\+h} and to use either the C++ or original C bindings; it is enough to simply include {\itshape \mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}}.
+
+The bindings themselves are lightweight and correspond closely to the underlying C A\+PI. Using the C++ bindings introduces no additional execution overhead.
+
+There are numerous compatibility, portability and memory management fixes in the new header as well as additional Open\+CL 2.\+0 features. As a result the header is not directly backward compatible and for this reason we release it as \mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}} rather than a new version of cl.\+hpp.\hypertarget{index_compatibility}{}\doxysection{Compatibility}\label{index_compatibility}
+Due to the evolution of the underlying Open\+CL A\+PI the 2.\+0 C++ bindings include an updated approach to defining supported feature versions and the range of valid underlying Open\+CL runtime versions supported.
+
+The combination of preprocessor macros C\+L\+\_\+\+H\+P\+P\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+O\+P\+E\+N\+C\+L\+\_\+\+V\+E\+R\+S\+I\+ON and C\+L\+\_\+\+H\+P\+P\+\_\+\+M\+I\+N\+I\+M\+U\+M\+\_\+\+O\+P\+E\+N\+C\+L\+\_\+\+V\+E\+R\+S\+I\+ON control this range. These are three digit decimal values representing Open\+CL runime versions. The default for the target is 200, representing Open\+CL 2.\+0 and the minimum is also defined as 200. These settings would use 2.\+0 A\+PI calls only. If backward compatibility with a 1.\+2 runtime is required, the minimum version may be set to 120.
+
+Note that this is a compile-\/time setting, and so affects linking against a particular S\+DK version rather than the versioning of the loaded runtime.
+
+The earlier versions of the header included basic vector and string classes based loosely on S\+TL versions. These were difficult to maintain and very rarely used. For the 2.\+0 header we now assume the presence of the standard library unless requested otherwise. We use std\+::array, std\+::vector, std\+::shared\+\_\+ptr and std\+::string throughout to safely manage memory and reduce the chance of a recurrance of earlier memory management bugs.
+
+These classes are used through typedefs in the cl namespace\+: \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{cl\+::array}}, \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl\+::vector}}, \mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}} and \mbox{\hyperlink{namespacecl_abff80bfb254d646f6afeb6638df41686}{cl\+::string}}. In addition \mbox{\hyperlink{namespacecl_a6569925e399ff834fc45bde4a9d6f7a1}{cl\+::allocate\+\_\+pointer}} forwards to std\+::allocate\+\_\+shared by default. In all cases these standard library classes can be replaced with custom interface-\/compatible versions using the C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+\_\+\+S\+T\+D\+\_\+\+A\+R\+R\+AY, C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+\_\+\+S\+T\+D\+\_\+\+V\+E\+C\+T\+OR, C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+\_\+\+S\+T\+D\+\_\+\+U\+N\+I\+Q\+U\+E\+\_\+\+P\+TR and C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+\_\+\+S\+T\+D\+\_\+\+S\+T\+R\+I\+NG macros.
+
+The Open\+CL 1.\+x versions of the C++ bindings included a size\+\_\+t wrapper class to interface with kernel enqueue. This caused unpleasant interactions with the standard size\+\_\+t declaration and led to namespacing bugs. In the 2.\+0 version we have replaced this with a std\+::array-\/based interface. However, the old behaviour can be regained for backward compatibility using the C\+L\+\_\+\+H\+P\+P\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+I\+L\+I\+TY macro.
+
+Finally, the program construction interface used a clumsy vector-\/of-\/pairs design in the earlier versions. We have replaced that with a cleaner vector-\/of-\/vectors and vector-\/of-\/strings design. However, for backward compatibility old behaviour can be regained with the C\+L\+\_\+\+H\+P\+P\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+F\+R\+O\+M\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+I\+L\+I\+TY macro.
+
+In Open\+CL 2.\+0 Open\+CL C is not entirely backward compatibility with earlier versions. As a result a flag must be passed to the Open\+CL C compiled to request Open\+CL 2.\+0 compilation of kernels with 1.\+2 as the default in the absence of the flag. In some cases the C++ bindings automatically compile code for ease. For those cases the compilation defaults to Open\+CL C 2.\+0. If this is not wanted, the C\+L\+\_\+\+H\+P\+P\+\_\+\+C\+L\+\_\+1\+\_\+2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+I\+LD macro may be specified to assume 1.\+2 compilation. If more fine-\/grained decisions on a per-\/kernel bases are required then explicit build operations that take the flag should be used.\hypertarget{index_parameterization}{}\doxysection{Parameters}\label{index_parameterization}
+This header may be parameterized by a set of preprocessor macros.
+
+
+\begin{DoxyItemize}
+\item C\+L\+\_\+\+H\+P\+P\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+O\+P\+E\+N\+C\+L\+\_\+\+V\+E\+R\+S\+I\+ON
+
+Defines the target Open\+CL runtime version to build the header against. Defaults to 200, representing Open\+CL 2.\+0.
+\item C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+\_\+\+S\+T\+D\+\_\+\+S\+T\+R\+I\+NG
+
+Do not use the standard library string class. \mbox{\hyperlink{namespacecl_abff80bfb254d646f6afeb6638df41686}{cl\+::string}} is not defined and may be defined by the user before \mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}} is included.
+\item C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+\_\+\+S\+T\+D\+\_\+\+V\+E\+C\+T\+OR
+
+Do not use the standard library vector class. \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl\+::vector}} is not defined and may be defined by the user before \mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}} is included.
+\item C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+\_\+\+S\+T\+D\+\_\+\+A\+R\+R\+AY
+
+Do not use the standard library array class. \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{cl\+::array}} is not defined and may be defined by the user before \mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}} is included.
+\item C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+\_\+\+S\+T\+D\+\_\+\+U\+N\+I\+Q\+U\+E\+\_\+\+P\+TR
+
+Do not use the standard library unique\+\_\+ptr class. \mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}} and the \mbox{\hyperlink{namespacecl_a6569925e399ff834fc45bde4a9d6f7a1}{cl\+::allocate\+\_\+pointer}} functions are not defined and may be defined by the user before \mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}} is included.
+\item C\+L\+\_\+\+H\+P\+P\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+F\+I\+S\+S\+I\+ON
+
+Enables device fission for Open\+CL 1.\+2 platforms.
+\item C\+L\+\_\+\+H\+P\+P\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+NS
+
+Enable exceptions for use in the C++ bindings header. This is the preferred error handling mechanism but is not required.
+\item C\+L\+\_\+\+H\+P\+P\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+I\+L\+I\+TY
+
+Backward compatibility option to support cl.\+hpp-\/style size\+\_\+t class. Replaces the updated std\+::array derived version and removal of size\+\_\+t from the namespace. Note that in this case the new size\+\_\+t class is placed in the \mbox{\hyperlink{namespacecl_1_1compatibility}{cl\+::compatibility}} namespace and thus requires an additional using declaration for direct backward compatibility.
+\item C\+L\+\_\+\+H\+P\+P\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+C\+O\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N\+\_\+\+F\+R\+O\+M\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+C\+O\+M\+P\+A\+T\+I\+B\+I\+L\+I\+TY
+
+Enable older vector of pairs interface for construction of programs.
+\item C\+L\+\_\+\+H\+P\+P\+\_\+\+C\+L\+\_\+1\+\_\+2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+I\+LD
+
+Default to Open\+CL C 1.\+2 compilation rather than Open\+CL C 2.\+0 applies to use of \mbox{\hyperlink{classcl_1_1_program}{cl\+::\+Program}} construction and other program build variants.
+\end{DoxyItemize}\hypertarget{index_example}{}\doxysection{Example}\label{index_example}
+The following example shows a general use case for the C++ bindings, including support for the optional exception feature and also the supplied vector and string classes, see following sections for decriptions of these features.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define CL\_HPP\_ENABLE\_EXCEPTIONS}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define CL\_HPP\_TARGET\_OPENCL\_VERSION 200}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <CL/cl2.hpp>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{const} \textcolor{keywordtype}{int} numElements = 32;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{comment}{// Filter for a 2.0 platform and set it as the default}}
+\DoxyCodeLine{    std::vector<cl::Platform> platforms;}
+\DoxyCodeLine{    \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}{cl::Platform::get}}(\&platforms);}
+\DoxyCodeLine{    \mbox{\hyperlink{classcl_1_1_platform}{cl::Platform}} plat;}
+\DoxyCodeLine{    \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} \&p : platforms) \{}
+\DoxyCodeLine{        \mbox{\hyperlink{namespacecl_abff80bfb254d646f6afeb6638df41686}{std::string}} platver = p.getInfo<CL\_PLATFORM\_VERSION>();}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (platver.find(\textcolor{stringliteral}{"OpenCL 2."}) != std::string::npos) \{}
+\DoxyCodeLine{            plat = p;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (plat() == 0)  \{}
+\DoxyCodeLine{        std::cout << \textcolor{stringliteral}{"No OpenCL 2.0 platform found."};}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{classcl_1_1_platform}{cl::Platform}} newP = \mbox{\hyperlink{classcl_1_1_platform_afcf93176bebefc3add081c2d93935453}{cl::Platform::setDefault}}(plat);}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (newP != plat) \{}
+\DoxyCodeLine{        std::cout << \textcolor{stringliteral}{"Error setting default platform."};}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Use C++11 raw string literals for kernel source code}}
+\DoxyCodeLine{    \mbox{\hyperlink{namespacecl_abff80bfb254d646f6afeb6638df41686}{std::string}} kernel1\{R\textcolor{stringliteral}{"CLC(}}
+\DoxyCodeLine{\textcolor{stringliteral}{        global int globalA;}}
+\DoxyCodeLine{\textcolor{stringliteral}{        kernel void updateGlobal()}}
+\DoxyCodeLine{\textcolor{stringliteral}{        \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{          globalA = 75;}}
+\DoxyCodeLine{\textcolor{stringliteral}{        \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{    )CLC"\};}}
+\DoxyCodeLine{\textcolor{stringliteral}{    \mbox{\hyperlink{namespacecl_abff80bfb254d646f6afeb6638df41686}{std::string}} kernel2\{R}\textcolor{stringliteral}{"CLC(}}
+\DoxyCodeLine{\textcolor{stringliteral}{        typedef struct \{ global int *bar; \} Foo;}}
+\DoxyCodeLine{\textcolor{stringliteral}{        kernel void vectorAdd(global const Foo* aNum, global const int *inputA, global const int *inputB,}}
+\DoxyCodeLine{\textcolor{stringliteral}{                              global int *output, int val, write\_only pipe int outPipe, queue\_t childQueue)}}
+\DoxyCodeLine{\textcolor{stringliteral}{        \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{          output[get\_global\_id(0)] = inputA[get\_global\_id(0)] + inputB[get\_global\_id(0)] + val + *(aNum-\/>bar);}}
+\DoxyCodeLine{\textcolor{stringliteral}{          write\_pipe(outPipe, \&val);}}
+\DoxyCodeLine{\textcolor{stringliteral}{          queue\_t default\_queue = get\_default\_queue();}}
+\DoxyCodeLine{\textcolor{stringliteral}{          ndrange\_t ndrange = ndrange\_1D(get\_global\_size(0)/2, get\_global\_size(0)/2);}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{          // Have a child kernel write into third quarter of output}}
+\DoxyCodeLine{\textcolor{stringliteral}{          enqueue\_kernel(default\_queue, CLK\_ENQUEUE\_FLAGS\_WAIT\_KERNEL, ndrange,}}
+\DoxyCodeLine{\textcolor{stringliteral}{            \string^\{}}
+\DoxyCodeLine{\textcolor{stringliteral}{                output[get\_global\_size(0)*2 + get\_global\_id(0)] =}}
+\DoxyCodeLine{\textcolor{stringliteral}{                  inputA[get\_global\_size(0)*2 + get\_global\_id(0)] + inputB[get\_global\_size(0)*2 + get\_global\_id(0)] + globalA;}}
+\DoxyCodeLine{\textcolor{stringliteral}{            \});}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{          // Have a child kernel write into last quarter of output}}
+\DoxyCodeLine{\textcolor{stringliteral}{          enqueue\_kernel(childQueue, CLK\_ENQUEUE\_FLAGS\_WAIT\_KERNEL, ndrange,}}
+\DoxyCodeLine{\textcolor{stringliteral}{            \string^\{}}
+\DoxyCodeLine{\textcolor{stringliteral}{                output[get\_global\_size(0)*3 + get\_global\_id(0)] =}}
+\DoxyCodeLine{\textcolor{stringliteral}{                  inputA[get\_global\_size(0)*3 + get\_global\_id(0)] + inputB[get\_global\_size(0)*3 + get\_global\_id(0)] + globalA + 2;}}
+\DoxyCodeLine{\textcolor{stringliteral}{            \});}}
+\DoxyCodeLine{\textcolor{stringliteral}{        \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{    )CLC"\};}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{    }\textcolor{comment}{// New simpler string interface style}}
+\DoxyCodeLine{    std::vector<std::string> programStrings \{kernel1, kernel2\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{classcl_1_1_program}{cl::Program}} vectorAddProgram(programStrings);}
+\DoxyCodeLine{    \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{        vectorAddProgram.build(\textcolor{stringliteral}{"-\/cl-\/std=CL2.0"});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{keywordflow}{catch} (...) \{}
+\DoxyCodeLine{        \textcolor{comment}{// Print build info for all devices}}
+\DoxyCodeLine{        cl\_int buildErr = CL\_SUCCESS;}
+\DoxyCodeLine{        \textcolor{keyword}{auto} buildInfo = vectorAddProgram.getBuildInfo<CL\_PROGRAM\_BUILD\_LOG>(\&buildErr);}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} \&pair : buildInfo) \{}
+\DoxyCodeLine{            std::cerr << pair.second << std::endl << std::endl;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{ \textcolor{keywordtype}{int} *bar; \} Foo;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Get and run kernel that initializes the program-\/scope global}}
+\DoxyCodeLine{    \textcolor{comment}{// A test for kernels that take no arguments}}
+\DoxyCodeLine{    \textcolor{keyword}{auto} program2Kernel =}
+\DoxyCodeLine{        \mbox{\hyperlink{classcl_1_1_kernel_functor}{cl::KernelFunctor<>}}(vectorAddProgram, \textcolor{stringliteral}{"updateGlobal"});}
+\DoxyCodeLine{    program2Kernel(}
+\DoxyCodeLine{        \mbox{\hyperlink{classcl_1_1_enqueue_args}{cl::EnqueueArgs}}(}
+\DoxyCodeLine{        \mbox{\hyperlink{classcl_1_1_n_d_range}{cl::NDRange}}(1)));}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// SVM allocations}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{auto} anSVMInt = cl::allocate\_svm<int, cl::SVMTraitCoarse<>>();}
+\DoxyCodeLine{    *anSVMInt = 5;}
+\DoxyCodeLine{    \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl::SVMAllocator<Foo, cl::SVMTraitCoarse<cl::SVMTraitReadOnly<>}}>> svmAllocReadOnly;}
+\DoxyCodeLine{    \textcolor{keyword}{auto} fooPointer = cl::allocate\_pointer<Foo>(svmAllocReadOnly);}
+\DoxyCodeLine{    fooPointer-\/>bar = anSVMInt.get();}
+\DoxyCodeLine{    \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl::SVMAllocator<int, cl::SVMTraitCoarse<>}}> svmAlloc;}
+\DoxyCodeLine{    std::vector<int, cl::SVMAllocator<int, cl::SVMTraitCoarse<>>> inputA(numElements, 1, svmAlloc);}
+\DoxyCodeLine{    \mbox{\hyperlink{namespacecl_abd957be3ad58ee2932a99ed8bc6cc049}{cl::coarse\_svm\_vector<int>}} inputB(numElements, 2, svmAlloc);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{//}}
+\DoxyCodeLine{\textcolor{comment}{}}
+\DoxyCodeLine{    \textcolor{comment}{// Traditional cl\_mem allocations}}
+\DoxyCodeLine{    std::vector<int> output(numElements, 0xdeadbeef);}
+\DoxyCodeLine{    \mbox{\hyperlink{classcl_1_1_buffer}{cl::Buffer}} outputBuffer(begin(output), end(output), \textcolor{keyword}{false});}
+\DoxyCodeLine{    \mbox{\hyperlink{classcl_1_1_pipe}{cl::Pipe}} aPipe(\textcolor{keyword}{sizeof}(cl\_int), numElements / 2);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Default command queue, also passed in as a parameter}}
+\DoxyCodeLine{    \mbox{\hyperlink{classcl_1_1_device_command_queue}{cl::DeviceCommandQueue}} defaultDeviceQueue = \mbox{\hyperlink{classcl_1_1_device_command_queue_acf98d7e70d84afc31789a6f26a95d14b}{cl::DeviceCommandQueue::makeDefault}}(}
+\DoxyCodeLine{        \mbox{\hyperlink{classcl_1_1_context_ad180f6f7d8b5a95710ab72f96162b051}{cl::Context::getDefault}}(), \mbox{\hyperlink{classcl_1_1_device_a7428cf3cdccc824c414730ed65e40a0d}{cl::Device::getDefault}}());}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{auto} vectorAddKernel =}
+\DoxyCodeLine{        \mbox{\hyperlink{classcl_1_1_kernel_functor}{cl::KernelFunctor}}<}
+\DoxyCodeLine{            decltype(fooPointer)\&,}
+\DoxyCodeLine{            \textcolor{keywordtype}{int}*,}
+\DoxyCodeLine{            \mbox{\hyperlink{namespacecl_abd957be3ad58ee2932a99ed8bc6cc049}{cl::coarse\_svm\_vector<int>}}\&,}
+\DoxyCodeLine{            \mbox{\hyperlink{classcl_1_1_buffer}{cl::Buffer}},}
+\DoxyCodeLine{            int,}
+\DoxyCodeLine{            \mbox{\hyperlink{classcl_1_1_pipe}{cl::Pipe}}\&,}
+\DoxyCodeLine{            \mbox{\hyperlink{classcl_1_1_device_command_queue}{cl::DeviceCommandQueue}}}
+\DoxyCodeLine{            >(vectorAddProgram, \textcolor{stringliteral}{"vectorAdd"});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Ensure that the additional SVM pointer is available to the kernel}}
+\DoxyCodeLine{    \textcolor{comment}{// This one was not passed as a parameter}}
+\DoxyCodeLine{    vectorAddKernel.setSVMPointers(anSVMInt);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Hand control of coarse allocations to runtime}}
+\DoxyCodeLine{    \mbox{\hyperlink{namespacecl_a45d896e5d437b505648b399dbe1c3cac}{cl::enqueueUnmapSVM}}(anSVMInt);}
+\DoxyCodeLine{    \mbox{\hyperlink{namespacecl_a45d896e5d437b505648b399dbe1c3cac}{cl::enqueueUnmapSVM}}(fooPointer);}
+\DoxyCodeLine{    \mbox{\hyperlink{namespacecl_af9f49b386b20c55c04a9e6cd21849fd5}{cl::unmapSVM}}(inputB);}
+\DoxyCodeLine{    \mbox{\hyperlink{namespacecl_af9f49b386b20c55c04a9e6cd21849fd5}{cl::unmapSVM}}(output2);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{    vectorAddKernel(}
+\DoxyCodeLine{        \mbox{\hyperlink{classcl_1_1_enqueue_args}{cl::EnqueueArgs}}(}
+\DoxyCodeLine{            \mbox{\hyperlink{classcl_1_1_n_d_range}{cl::NDRange}}(numElements/2),}
+\DoxyCodeLine{            \mbox{\hyperlink{classcl_1_1_n_d_range}{cl::NDRange}}(numElements/2)),}
+\DoxyCodeLine{        fooPointer,}
+\DoxyCodeLine{        inputA.data(),}
+\DoxyCodeLine{        inputB,}
+\DoxyCodeLine{        outputBuffer,}
+\DoxyCodeLine{        3,}
+\DoxyCodeLine{        aPipe,}
+\DoxyCodeLine{        defaultDeviceQueue,}
+\DoxyCodeLine{       \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{namespacecl_a1197a833cdd6664f206b079f2bebd2eb}{cl::copy}}(outputBuffer, begin(output), end(output));}
+\DoxyCodeLine{    \textcolor{comment}{// Grab the SVM output vector using a map}}
+\DoxyCodeLine{    \mbox{\hyperlink{namespacecl_ae97dc5bb86e2c3c3935280a86cda301c}{cl::mapSVM}}(output2);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{classcl_1_1_device}{cl::Device}} d = \mbox{\hyperlink{classcl_1_1_device_a7428cf3cdccc824c414730ed65e40a0d}{cl::Device::getDefault}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"Output:\(\backslash\)n"};}
+\DoxyCodeLine{    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < numElements; ++i) \{}
+\DoxyCodeLine{        std::cout << \textcolor{stringliteral}{"\(\backslash\)t"} << output[i] << \textcolor{stringliteral}{"\(\backslash\)n"};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    std::cout << \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)n"};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ 

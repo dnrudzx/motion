@@ -1,0 +1,534 @@
+\hypertarget{classcl_1_1_s_v_m_allocator}{}\doxysection{cl\+::S\+V\+M\+Allocator$<$ T, S\+V\+M\+Trait $>$ 클래스 템플릿 참조}
+\label{classcl_1_1_s_v_m_allocator}\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+
+
+{\ttfamily \#include $<$cl2.\+hpp$>$}
+
+
+
+cl\+::S\+V\+M\+Allocator$<$ T, S\+V\+M\+Trait $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcl_1_1_s_v_m_allocator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcl_1_1_s_v_m_allocator_1_1rebind}{rebind}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+typedef T \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a80bd529e576d0ff30cc55ee9f0ec3f8c}{value\+\_\+type}}
+\item 
+typedef \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a80bd529e576d0ff30cc55ee9f0ec3f8c}{value\+\_\+type}} $\ast$ \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a6222e5ff48358bc0f826885bb2a4a4ec}{pointer}}
+\item 
+typedef const \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a80bd529e576d0ff30cc55ee9f0ec3f8c}{value\+\_\+type}} $\ast$ \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_af5daf4a4173794758e399e45a2f028a9}{const\+\_\+pointer}}
+\item 
+typedef \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a80bd529e576d0ff30cc55ee9f0ec3f8c}{value\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_aa9a3870b226f6286dbf1917ff1d8e03b}{reference}}
+\item 
+typedef const \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a80bd529e576d0ff30cc55ee9f0ec3f8c}{value\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a64a4984f03ddff3a757f200b4c4fb357}{const\+\_\+reference}}
+\item 
+typedef std\+::size\+\_\+t \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_afe51e51ed34089444241a43aab0950ef}{size\+\_\+type}}
+\item 
+typedef std\+::ptrdiff\+\_\+t \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_aed0caac86c149d127e6d686a764e2073}{difference\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a5851b239299b64a55bc63fa9af1bdd28}{S\+V\+M\+Allocator}} ()
+\item 
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a532a5219ffd5c855070a1e4f22832711}{S\+V\+M\+Allocator}} (\mbox{\hyperlink{classcl_1_1_context}{cl\+::\+Context}} context)
+\item 
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a927ffbac7ec2a7cb0aee2d24a9f986b1}{S\+V\+M\+Allocator}} (const \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}} \&other)
+\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_af103176d8c51fc469fb0b7d85a597a9f}{S\+V\+M\+Allocator}} (const \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}}$<$ U, S\+V\+M\+Trait $>$ \&other)
+\item 
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a4cfe945d163dbdd580451adbd2974dfc}{$\sim$\+S\+V\+M\+Allocator}} ()
+\item 
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a6222e5ff48358bc0f826885bb2a4a4ec}{pointer}} \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a10ae2172078bf1aa987a0e3ace96cbb7}{address}} (\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_aa9a3870b226f6286dbf1917ff1d8e03b}{reference}} r) \mbox{\hyperlink{cl2_8hpp_a7fcfde26c9e031daf0c6fbb637ed7ac0}{C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T\+\_\+}}
+\item 
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_af5daf4a4173794758e399e45a2f028a9}{const\+\_\+pointer}} \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_afcc4bd8a99bc004c286f49a7f3e84766}{address}} (\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a64a4984f03ddff3a757f200b4c4fb357}{const\+\_\+reference}} r) \mbox{\hyperlink{cl2_8hpp_a7fcfde26c9e031daf0c6fbb637ed7ac0}{C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T\+\_\+}}
+\item 
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a6222e5ff48358bc0f826885bb2a4a4ec}{pointer}} \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a44858d70971c7801aa62d7a64d18df00}{allocate}} (\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_afe51e51ed34089444241a43aab0950ef}{size\+\_\+type}} size, typename \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ void, S\+V\+M\+Trait $>$\+::\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_af5daf4a4173794758e399e45a2f028a9}{const\+\_\+pointer}}=0)
+\item 
+void \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a695f4693c4245c66285e7f4a0405cf84}{deallocate}} (\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a6222e5ff48358bc0f826885bb2a4a4ec}{pointer}} p, \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_afe51e51ed34089444241a43aab0950ef}{size\+\_\+type}})
+\item 
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_afe51e51ed34089444241a43aab0950ef}{size\+\_\+type}} \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_aec263261a88fb1ec64a3e5f9a4ef41a7}{max\+\_\+size}} () const \mbox{\hyperlink{cl2_8hpp_a7fcfde26c9e031daf0c6fbb637ed7ac0}{C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T\+\_\+}}
+\item 
+{\footnotesize template$<$class U , class... Args$>$ }\\void \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a57e823e939f67e1209450d996556c080}{construct}} (U $\ast$p, Args \&\&... args)
+\item 
+{\footnotesize template$<$class U $>$ }\\void \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a86498cce5cce2d8ac1c509862eb28977}{destroy}} (U $\ast$p)
+\item 
+bool \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_abaa89b1232891a728d3530dbd71e7cb6}{operator==}} (\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}} const \&rhs)
+\item 
+bool \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a72088f264071b2648aa80e20594d6398}{operator!=}} (\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}} const \&a)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1_context}{Context}} \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a324a1c36b10fa39d7c07bd1a4310b7be}{context\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename U , typename V $>$ }\\class \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a0146b33b7681b60e7678780ae05fb43f}{S\+V\+M\+Allocator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T, class S\+V\+M\+Trait$>$\newline
+class cl\+::\+S\+V\+M\+Allocator$<$ T, S\+V\+M\+Trait $>$}
+
+S\+T\+L-\/like allocator class for managing S\+VM objects provided for convenience.
+
+Note that while this behaves like an allocator for the purposes of constructing vectors and similar objects, care must be taken when using with smart pointers. The allocator should not be used to construct a unique\+\_\+ptr if we are using coarse-\/grained S\+VM mode because the coarse-\/grained management behaviour would behave incorrectly with respect to reference counting.
+
+Instead the allocator embeds a Deleter which may be used with unique\+\_\+ptr and is used with the allocate\+\_\+shared and allocate\+\_\+ptr supplied operations. 
+
+cl2.\+hpp 파일의 3387 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 타입정의 문서화}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_af5daf4a4173794758e399e45a2f028a9}\label{classcl_1_1_s_v_m_allocator_af5daf4a4173794758e399e45a2f028a9}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!const\_pointer@{const\_pointer}}
+\index{const\_pointer@{const\_pointer}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{const\_pointer}{const\_pointer}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+typedef const \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a80bd529e576d0ff30cc55ee9f0ec3f8c}{value\+\_\+type}}$\ast$ \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_af5daf4a4173794758e399e45a2f028a9}{const\+\_\+pointer}}}
+
+
+
+cl2.\+hpp 파일의 3394 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a64a4984f03ddff3a757f200b4c4fb357}\label{classcl_1_1_s_v_m_allocator_a64a4984f03ddff3a757f200b4c4fb357}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!const\_reference@{const\_reference}}
+\index{const\_reference@{const\_reference}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{const\_reference}{const\_reference}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+typedef const \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a80bd529e576d0ff30cc55ee9f0ec3f8c}{value\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a64a4984f03ddff3a757f200b4c4fb357}{const\+\_\+reference}}}
+
+
+
+cl2.\+hpp 파일의 3396 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_aed0caac86c149d127e6d686a764e2073}\label{classcl_1_1_s_v_m_allocator_aed0caac86c149d127e6d686a764e2073}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!difference\_type@{difference\_type}}
+\index{difference\_type@{difference\_type}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{difference\_type}{difference\_type}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+typedef std\+::ptrdiff\+\_\+t \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_aed0caac86c149d127e6d686a764e2073}{difference\+\_\+type}}}
+
+
+
+cl2.\+hpp 파일의 3398 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a6222e5ff48358bc0f826885bb2a4a4ec}\label{classcl_1_1_s_v_m_allocator_a6222e5ff48358bc0f826885bb2a4a4ec}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!pointer@{pointer}}
+\index{pointer@{pointer}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+typedef \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a80bd529e576d0ff30cc55ee9f0ec3f8c}{value\+\_\+type}}$\ast$ \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a6222e5ff48358bc0f826885bb2a4a4ec}{pointer}}}
+
+
+
+cl2.\+hpp 파일의 3393 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_aa9a3870b226f6286dbf1917ff1d8e03b}\label{classcl_1_1_s_v_m_allocator_aa9a3870b226f6286dbf1917ff1d8e03b}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!reference@{reference}}
+\index{reference@{reference}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+typedef \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a80bd529e576d0ff30cc55ee9f0ec3f8c}{value\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_aa9a3870b226f6286dbf1917ff1d8e03b}{reference}}}
+
+
+
+cl2.\+hpp 파일의 3395 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_afe51e51ed34089444241a43aab0950ef}\label{classcl_1_1_s_v_m_allocator_afe51e51ed34089444241a43aab0950ef}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{size\_type}{size\_type}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+typedef std\+::size\+\_\+t \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_afe51e51ed34089444241a43aab0950ef}{size\+\_\+type}}}
+
+
+
+cl2.\+hpp 파일의 3397 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a80bd529e576d0ff30cc55ee9f0ec3f8c}\label{classcl_1_1_s_v_m_allocator_a80bd529e576d0ff30cc55ee9f0ec3f8c}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+typedef T \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a80bd529e576d0ff30cc55ee9f0ec3f8c}{value\+\_\+type}}}
+
+
+
+cl2.\+hpp 파일의 3392 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a5851b239299b64a55bc63fa9af1bdd28}\label{classcl_1_1_s_v_m_allocator_a5851b239299b64a55bc63fa9af1bdd28}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!SVMAllocator@{SVMAllocator}}
+\index{SVMAllocator@{SVMAllocator}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{SVMAllocator()}{SVMAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 3409 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3409                    :}
+\DoxyCodeLine{3410         \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a324a1c36b10fa39d7c07bd1a4310b7be}{context\_}}(\mbox{\hyperlink{classcl_1_1_context_ad180f6f7d8b5a95710ab72f96162b051}{Context::getDefault}}())}
+\DoxyCodeLine{3411     \{}
+\DoxyCodeLine{3412     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a532a5219ffd5c855070a1e4f22832711}\label{classcl_1_1_s_v_m_allocator_a532a5219ffd5c855070a1e4f22832711}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!SVMAllocator@{SVMAllocator}}
+\index{SVMAllocator@{SVMAllocator}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{SVMAllocator()}{SVMAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_context}{cl\+::\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+cl2.\+hpp 파일의 3414 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3414                                              :}
+\DoxyCodeLine{3415         \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a324a1c36b10fa39d7c07bd1a4310b7be}{context\_}}(context)}
+\DoxyCodeLine{3416     \{}
+\DoxyCodeLine{3417     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a927ffbac7ec2a7cb0aee2d24a9f986b1}\label{classcl_1_1_s_v_m_allocator_a927ffbac7ec2a7cb0aee2d24a9f986b1}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!SVMAllocator@{SVMAllocator}}
+\index{SVMAllocator@{SVMAllocator}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{SVMAllocator()}{SVMAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 3420 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3420                                             :}
+\DoxyCodeLine{3421         \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a324a1c36b10fa39d7c07bd1a4310b7be}{context\_}}(other.context\_)}
+\DoxyCodeLine{3422     \{}
+\DoxyCodeLine{3423     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_af103176d8c51fc469fb0b7d85a597a9f}\label{classcl_1_1_s_v_m_allocator_af103176d8c51fc469fb0b7d85a597a9f}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!SVMAllocator@{SVMAllocator}}
+\index{SVMAllocator@{SVMAllocator}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{SVMAllocator()}{SVMAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}}$<$ U, S\+V\+M\+Trait $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 3426 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3426                                                          :}
+\DoxyCodeLine{3427         \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a324a1c36b10fa39d7c07bd1a4310b7be}{context\_}}(other.context\_)}
+\DoxyCodeLine{3428     \{}
+\DoxyCodeLine{3429     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a4cfe945d163dbdd580451adbd2974dfc}\label{classcl_1_1_s_v_m_allocator_a4cfe945d163dbdd580451adbd2974dfc}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!````~SVMAllocator@{$\sim$SVMAllocator}}
+\index{````~SVMAllocator@{$\sim$SVMAllocator}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$SVMAllocator()}{~SVMAllocator()}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::$\sim$\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 3431 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3432     \{}
+\DoxyCodeLine{3433     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_afcc4bd8a99bc004c286f49a7f3e84766}\label{classcl_1_1_s_v_m_allocator_afcc4bd8a99bc004c286f49a7f3e84766}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!address@{address}}
+\index{address@{address}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_af5daf4a4173794758e399e45a2f028a9}{const\+\_\+pointer}} \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a64a4984f03ddff3a757f200b4c4fb357}{const\+\_\+reference}}}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 3440 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3441     \{}
+\DoxyCodeLine{3442         \textcolor{keywordflow}{return} std::addressof(r);}
+\DoxyCodeLine{3443     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a10ae2172078bf1aa987a0e3ace96cbb7}\label{classcl_1_1_s_v_m_allocator_a10ae2172078bf1aa987a0e3ace96cbb7}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!address@{address}}
+\index{address@{address}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a6222e5ff48358bc0f826885bb2a4a4ec}{pointer}} \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_aa9a3870b226f6286dbf1917ff1d8e03b}{reference}}}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 3435 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3436     \{}
+\DoxyCodeLine{3437         \textcolor{keywordflow}{return} std::addressof(r);}
+\DoxyCodeLine{3438     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a44858d70971c7801aa62d7a64d18df00}\label{classcl_1_1_s_v_m_allocator_a44858d70971c7801aa62d7a64d18df00}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!allocate@{allocate}}
+\index{allocate@{allocate}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a6222e5ff48358bc0f826885bb2a4a4ec}{pointer}} \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::allocate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_afe51e51ed34089444241a43aab0950ef}{size\+\_\+type}}}]{size,  }\item[{typename \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ void, S\+V\+M\+Trait $>$\+::\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_af5daf4a4173794758e399e45a2f028a9}{const\+\_\+pointer}}}]{ = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Allocate an S\+VM pointer.
+
+If the allocator is coarse-\/grained, this will take ownership to allow containers to correctly construct data in place. 
+
+cl2.\+hpp 파일의 3451 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3454     \{}
+\DoxyCodeLine{3455         \textcolor{comment}{// Allocate memory with default alignment matching the size of the type}}
+\DoxyCodeLine{3456         \textcolor{keywordtype}{void}* voidPointer =}
+\DoxyCodeLine{3457             clSVMAlloc(}
+\DoxyCodeLine{3458             \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a324a1c36b10fa39d7c07bd1a4310b7be}{context\_}}(),}
+\DoxyCodeLine{3459             SVMTrait::getSVMMemFlags(),}
+\DoxyCodeLine{3460             size*\textcolor{keyword}{sizeof}(T),}
+\DoxyCodeLine{3461             0);}
+\DoxyCodeLine{3462         \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a6222e5ff48358bc0f826885bb2a4a4ec}{pointer}} retValue = reinterpret\_cast<pointer>(}
+\DoxyCodeLine{3463             voidPointer);}
+\DoxyCodeLine{3464 \textcolor{preprocessor}{\#if defined(CL\_HPP\_ENABLE\_EXCEPTIONS)}}
+\DoxyCodeLine{3465         \textcolor{keywordflow}{if} (!retValue) \{}
+\DoxyCodeLine{3466             std::bad\_alloc excep;}
+\DoxyCodeLine{3467             \textcolor{keywordflow}{throw} excep;}
+\DoxyCodeLine{3468         \}}
+\DoxyCodeLine{3469 \textcolor{preprocessor}{\#endif // \#if defined(CL\_HPP\_ENABLE\_EXCEPTIONS)}}
+\DoxyCodeLine{3470 }
+\DoxyCodeLine{3471         \textcolor{comment}{// If allocation was coarse-\/grained then map it}}
+\DoxyCodeLine{3472         \textcolor{keywordflow}{if} (!(SVMTrait::getSVMMemFlags() \& CL\_MEM\_SVM\_FINE\_GRAIN\_BUFFER)) \{}
+\DoxyCodeLine{3473             cl\_int err = \mbox{\hyperlink{namespacecl_abb2c4e45814ea569a27c39d37471b2a4}{enqueueMapSVM}}(retValue, CL\_TRUE, CL\_MAP\_READ | CL\_MAP\_WRITE, size*\textcolor{keyword}{sizeof}(T));}
+\DoxyCodeLine{3474             \textcolor{keywordflow}{if} (err != CL\_SUCCESS) \{}
+\DoxyCodeLine{3475                 std::bad\_alloc excep;}
+\DoxyCodeLine{3476                 \textcolor{keywordflow}{throw} excep;}
+\DoxyCodeLine{3477             \}}
+\DoxyCodeLine{3478         \}}
+\DoxyCodeLine{3479 }
+\DoxyCodeLine{3480         \textcolor{comment}{// If exceptions disabled, return null pointer from allocator}}
+\DoxyCodeLine{3481         \textcolor{keywordflow}{return} retValue;}
+\DoxyCodeLine{3482     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_s_v_m_allocator_a44858d70971c7801aa62d7a64d18df00_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a57e823e939f67e1209450d996556c080}\label{classcl_1_1_s_v_m_allocator_a57e823e939f67e1209450d996556c080}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!construct@{construct}}
+\index{construct@{construct}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{construct()}{construct()}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+template$<$class U , class... Args$>$ \\
+void \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::construct (\begin{DoxyParamCaption}\item[{U $\ast$}]{p,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 3507 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3508     \{}
+\DoxyCodeLine{3509         \textcolor{keyword}{new}(p)T(args...);}
+\DoxyCodeLine{3510     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a695f4693c4245c66285e7f4a0405cf84}\label{classcl_1_1_s_v_m_allocator_a695f4693c4245c66285e7f4a0405cf84}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+void \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::deallocate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a6222e5ff48358bc0f826885bb2a4a4ec}{pointer}}}]{p,  }\item[{\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_afe51e51ed34089444241a43aab0950ef}{size\+\_\+type}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 3484 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3485     \{}
+\DoxyCodeLine{3486         clSVMFree(\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a324a1c36b10fa39d7c07bd1a4310b7be}{context\_}}(), p);}
+\DoxyCodeLine{3487     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a86498cce5cce2d8ac1c509862eb28977}\label{classcl_1_1_s_v_m_allocator_a86498cce5cce2d8ac1c509862eb28977}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!destroy@{destroy}}
+\index{destroy@{destroy}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+template$<$class U $>$ \\
+void \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::destroy (\begin{DoxyParamCaption}\item[{U $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 3513 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3514     \{}
+\DoxyCodeLine{3515         p-\/>~U();}
+\DoxyCodeLine{3516     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_aec263261a88fb1ec64a3e5f9a4ef41a7}\label{classcl_1_1_s_v_m_allocator_aec263261a88fb1ec64a3e5f9a4ef41a7}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!max\_size@{max\_size}}
+\index{max\_size@{max\_size}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{max\_size()}{max\_size()}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_afe51e51ed34089444241a43aab0950ef}{size\+\_\+type}} \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the maximum possible allocation size. This is the minimum of the maximum sizes of all devices in the context. 
+
+cl2.\+hpp 파일의 3493 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3494     \{}
+\DoxyCodeLine{3495         \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_afe51e51ed34089444241a43aab0950ef}{size\_type}} maxSize = std::numeric\_limits<size\_type>::max() / \textcolor{keyword}{sizeof}(T);}
+\DoxyCodeLine{3496 }
+\DoxyCodeLine{3497         \textcolor{keywordflow}{for} (Device \&d : \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a324a1c36b10fa39d7c07bd1a4310b7be}{context\_}}.\mbox{\hyperlink{classcl_1_1_context_a979d15f9228089af2a657a523b1186e8}{getInfo}}<CL\_CONTEXT\_DEVICES>()) \{}
+\DoxyCodeLine{3498             maxSize = std::min(}
+\DoxyCodeLine{3499                 maxSize, }
+\DoxyCodeLine{3500                 static\_cast<size\_type>(d.getInfo<CL\_DEVICE\_MAX\_MEM\_ALLOC\_SIZE>()));}
+\DoxyCodeLine{3501         \}}
+\DoxyCodeLine{3502 }
+\DoxyCodeLine{3503         \textcolor{keywordflow}{return} maxSize;}
+\DoxyCodeLine{3504     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_s_v_m_allocator_aec263261a88fb1ec64a3e5f9a4ef41a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a72088f264071b2648aa80e20594d6398}\label{classcl_1_1_s_v_m_allocator_a72088f264071b2648aa80e20594d6398}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+bool \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$ const \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 3526 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3527     \{}
+\DoxyCodeLine{3528         \textcolor{keywordflow}{return} !\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_abaa89b1232891a728d3530dbd71e7cb6}{operator==}}(a);}
+\DoxyCodeLine{3529     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_s_v_m_allocator_a72088f264071b2648aa80e20594d6398_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_abaa89b1232891a728d3530dbd71e7cb6}\label{classcl_1_1_s_v_m_allocator_abaa89b1232891a728d3530dbd71e7cb6}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+bool \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$ const \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if the contexts match. 
+
+cl2.\+hpp 파일의 3521 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3522     \{}
+\DoxyCodeLine{3523         \textcolor{keywordflow}{return} (\mbox{\hyperlink{classcl_1_1_s_v_m_allocator_a324a1c36b10fa39d7c07bd1a4310b7be}{context\_}}==rhs.context\_);}
+\DoxyCodeLine{3524     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_s_v_m_allocator_abaa89b1232891a728d3530dbd71e7cb6_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friend, 그리고 관련된 함수 문서화}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a0146b33b7681b60e7678780ae05fb43f}\label{classcl_1_1_s_v_m_allocator_a0146b33b7681b60e7678780ae05fb43f}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!SVMAllocator@{SVMAllocator}}
+\index{SVMAllocator@{SVMAllocator}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{SVMAllocator}{SVMAllocator}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+template$<$typename U , typename V $>$ \\
+friend class \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{S\+V\+M\+Allocator}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+cl2.\+hpp 파일의 3407 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classcl_1_1_s_v_m_allocator_a324a1c36b10fa39d7c07bd1a4310b7be}\label{classcl_1_1_s_v_m_allocator_a324a1c36b10fa39d7c07bd1a4310b7be}} 
+\index{cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}!context\_@{context\_}}
+\index{context\_@{context\_}!cl::SVMAllocator$<$ T, SVMTrait $>$@{cl::SVMAllocator$<$ T, SVMTrait $>$}}
+\doxysubsubsection{\texorpdfstring{context\_}{context\_}}
+{\footnotesize\ttfamily template$<$typename T, class S\+V\+M\+Trait$>$ \\
+\mbox{\hyperlink{classcl_1_1_context}{Context}} \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ T, S\+V\+M\+Trait $>$\+::context\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+cl2.\+hpp 파일의 3389 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/gpu/\mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}\end{DoxyCompactItemize}

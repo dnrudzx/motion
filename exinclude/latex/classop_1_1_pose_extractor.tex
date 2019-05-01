@@ -1,0 +1,237 @@
+\hypertarget{classop_1_1_pose_extractor}{}\doxysection{op\+::Pose\+Extractor 클래스 참조}
+\label{classop_1_1_pose_extractor}\index{op::PoseExtractor@{op::PoseExtractor}}
+
+
+{\ttfamily \#include $<$pose\+Extractor.\+hpp$>$}
+
+
+
+op\+::Pose\+Extractor에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classop_1_1_pose_extractor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_pose_extractor_acd50fa337aef1d658b6fed3edc717ada}{Pose\+Extractor}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}} $>$ \&pose\+Extractor\+Net, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_keep_top_n_people}{Keep\+Top\+N\+People}} $>$ \&keep\+Top\+N\+People=nullptr, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_person_id_extractor}{Person\+Id\+Extractor}} $>$ \&person\+Id\+Extractor=nullptr, const std\+::shared\+\_\+ptr$<$ std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_person_tracker}{Person\+Tracker}} $>$$>$$>$ \&person\+Tracker=\{\}, const int number\+People\+Max=-\/1, const int tracking=-\/1)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_pose_extractor_a9f98eef4ac08cacefe74e002ac086582}{$\sim$\+Pose\+Extractor}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_pose_extractor_aab1cccc9ad99f6b007abaa14600ea6df}{initialization\+On\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_pose_extractor_a6c0abd998181d03d7890ec7abdee5efe}{forward\+Pass}} (const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$$>$ \&input\+Net\+Data, const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&input\+Data\+Size, const std\+::vector$<$ double $>$ \&scale\+Ratios, const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Net\+Output=\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$\{\}, const long long frame\+Id=-\/1ll)
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_a95f6235ab496ada0b8cbc4b614637ac0}{get\+Heat\+Maps\+Copy}} () const
+\item 
+std\+::vector$<$ std\+::vector$<$ std\+::array$<$ float, 3 $>$ $>$ $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_adc430a6b1b2bf4df75ebf088f97be8af}{get\+Candidates\+Copy}} () const
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_a487be38105b0d3f310142d99e0ca6b12}{get\+Pose\+Keypoints}} () const
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_aee77aa0ca773abe442a278d9e9e69376}{get\+Pose\+Scores}} () const
+\item 
+float \mbox{\hyperlink{classop_1_1_pose_extractor_ae798335b1606804c87220d3c72423dad}{get\+Scale\+Net\+To\+Output}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_pose_extractor_a291521decad2465df13dc769fe9cc4e5}{keep\+Top\+People}} (\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Keypoints, const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Scores) const
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_a9ac62424009ceaf3f7743da5aaf9e25c}{extract\+Ids}} (const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Keypoints, const cv\+::\+Mat \&cv\+Mat\+Input, const unsigned long long image\+Index=0ull)
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_abb7fb51c6300efd840a505142ee37364}{extract\+Ids\+Lock\+Thread}} (const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Keypoints, const cv\+::\+Mat \&cv\+Mat\+Input, const unsigned long long image\+Index, const long long frame\+Id)
+\item 
+void \mbox{\hyperlink{classop_1_1_pose_extractor_a0ac3679fd75bda7569562615b5fc813a}{track}} (\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Keypoints, \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \&pose\+Ids, const cv\+::\+Mat \&cv\+Mat\+Input, const unsigned long long image\+View\+Index=0ull)
+\item 
+void \mbox{\hyperlink{classop_1_1_pose_extractor_a52032cd719da90acc0259f77ee2c246c}{track\+Lock\+Thread}} (\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&pose\+Keypoints, \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \&pose\+Ids, const cv\+::\+Mat \&cv\+Mat\+Input, const unsigned long long image\+View\+Index, const long long frame\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_pose_extractor_a1c0f4c4958ee7aa178c01f856534b652}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_pose_extractor}{Pose\+Extractor}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classop_1_1_pose_extractor_ac9de4ba21db0a3cf05d90f3bc040e4d6}{m\+Number\+People\+Max}}
+\item 
+const int \mbox{\hyperlink{classop_1_1_pose_extractor_a930eb41712c692a71884713b330cbffe}{m\+Tracking}}
+\item 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}} $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_a4a1b9204baf9c672aad0b9449f733bf3}{sp\+Pose\+Extractor\+Net}}
+\item 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_keep_top_n_people}{Keep\+Top\+N\+People}} $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_ab72c571c7e947334f6d37a123ff6f43e}{sp\+Keep\+Top\+N\+People}}
+\item 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_person_id_extractor}{Person\+Id\+Extractor}} $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_a2b2bf1fbb3506a0d8ab07714dc489194}{sp\+Person\+Id\+Extractor}}
+\item 
+const std\+::shared\+\_\+ptr$<$ std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_person_tracker}{Person\+Tracker}} $>$ $>$ $>$ \mbox{\hyperlink{classop_1_1_pose_extractor_ade9ae2b3b7fd71679ee60740f99aaaa1}{sp\+Person\+Trackers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+pose\+Extractor.\+hpp 파일의 14 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_pose_extractor_acd50fa337aef1d658b6fed3edc717ada}\label{classop_1_1_pose_extractor_acd50fa337aef1d658b6fed3edc717ada}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!PoseExtractor@{PoseExtractor}}
+\index{PoseExtractor@{PoseExtractor}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{PoseExtractor()}{PoseExtractor()}}
+{\footnotesize\ttfamily op\+::\+Pose\+Extractor\+::\+Pose\+Extractor (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}} $>$ \&}]{pose\+Extractor\+Net,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_keep_top_n_people}{Keep\+Top\+N\+People}} $>$ \&}]{keep\+Top\+N\+People = {\ttfamily nullptr},  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_person_id_extractor}{Person\+Id\+Extractor}} $>$ \&}]{person\+Id\+Extractor = {\ttfamily nullptr},  }\item[{const std\+::shared\+\_\+ptr$<$ std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_person_tracker}{Person\+Tracker}} $>$$>$$>$ \&}]{person\+Tracker = {\ttfamily \{\}},  }\item[{const int}]{number\+People\+Max = {\ttfamily -\/1},  }\item[{const int}]{tracking = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_a9f98eef4ac08cacefe74e002ac086582}\label{classop_1_1_pose_extractor_a9f98eef4ac08cacefe74e002ac086582}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!````~PoseExtractor@{$\sim$PoseExtractor}}
+\index{````~PoseExtractor@{$\sim$PoseExtractor}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{$\sim$PoseExtractor()}{~PoseExtractor()}}
+{\footnotesize\ttfamily virtual op\+::\+Pose\+Extractor\+::$\sim$\+Pose\+Extractor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_pose_extractor_a1c0f4c4958ee7aa178c01f856534b652}\label{classop_1_1_pose_extractor_a1c0f4c4958ee7aa178c01f856534b652}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Pose\+Extractor\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_pose_extractor}{Pose\+Extractor}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_a9ac62424009ceaf3f7743da5aaf9e25c}\label{classop_1_1_pose_extractor_a9ac62424009ceaf3f7743da5aaf9e25c}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!extractIds@{extractIds}}
+\index{extractIds@{extractIds}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{extractIds()}{extractIds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$long long$>$ op\+::\+Pose\+Extractor\+::extract\+Ids (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Keypoints,  }\item[{const cv\+::\+Mat \&}]{cv\+Mat\+Input,  }\item[{const unsigned long long}]{image\+Index = {\ttfamily 0ull} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_abb7fb51c6300efd840a505142ee37364}\label{classop_1_1_pose_extractor_abb7fb51c6300efd840a505142ee37364}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!extractIdsLockThread@{extractIdsLockThread}}
+\index{extractIdsLockThread@{extractIdsLockThread}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{extractIdsLockThread()}{extractIdsLockThread()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$long long$>$ op\+::\+Pose\+Extractor\+::extract\+Ids\+Lock\+Thread (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Keypoints,  }\item[{const cv\+::\+Mat \&}]{cv\+Mat\+Input,  }\item[{const unsigned long long}]{image\+Index,  }\item[{const long long}]{frame\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_a6c0abd998181d03d7890ec7abdee5efe}\label{classop_1_1_pose_extractor_a6c0abd998181d03d7890ec7abdee5efe}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!forwardPass@{forwardPass}}
+\index{forwardPass@{forwardPass}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{forwardPass()}{forwardPass()}}
+{\footnotesize\ttfamily void op\+::\+Pose\+Extractor\+::forward\+Pass (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$$>$ \&}]{input\+Net\+Data,  }\item[{const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&}]{input\+Data\+Size,  }\item[{const std\+::vector$<$ double $>$ \&}]{scale\+Ratios,  }\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Net\+Output = {\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$~float~$>$\{\}},  }\item[{const long long}]{frame\+Id = {\ttfamily -\/1ll} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_adc430a6b1b2bf4df75ebf088f97be8af}\label{classop_1_1_pose_extractor_adc430a6b1b2bf4df75ebf088f97be8af}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!getCandidatesCopy@{getCandidatesCopy}}
+\index{getCandidatesCopy@{getCandidatesCopy}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{getCandidatesCopy()}{getCandidatesCopy()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$std\+::array$<$float, 3$>$ $>$ $>$ op\+::\+Pose\+Extractor\+::get\+Candidates\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_a95f6235ab496ada0b8cbc4b614637ac0}\label{classop_1_1_pose_extractor_a95f6235ab496ada0b8cbc4b614637ac0}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!getHeatMapsCopy@{getHeatMapsCopy}}
+\index{getHeatMapsCopy@{getHeatMapsCopy}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{getHeatMapsCopy()}{getHeatMapsCopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Pose\+Extractor\+::get\+Heat\+Maps\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_a487be38105b0d3f310142d99e0ca6b12}\label{classop_1_1_pose_extractor_a487be38105b0d3f310142d99e0ca6b12}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!getPoseKeypoints@{getPoseKeypoints}}
+\index{getPoseKeypoints@{getPoseKeypoints}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{getPoseKeypoints()}{getPoseKeypoints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Pose\+Extractor\+::get\+Pose\+Keypoints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_aee77aa0ca773abe442a278d9e9e69376}\label{classop_1_1_pose_extractor_aee77aa0ca773abe442a278d9e9e69376}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!getPoseScores@{getPoseScores}}
+\index{getPoseScores@{getPoseScores}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{getPoseScores()}{getPoseScores()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classop_1_1_array}{Array}}$<$float$>$ op\+::\+Pose\+Extractor\+::get\+Pose\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_ae798335b1606804c87220d3c72423dad}\label{classop_1_1_pose_extractor_ae798335b1606804c87220d3c72423dad}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!getScaleNetToOutput@{getScaleNetToOutput}}
+\index{getScaleNetToOutput@{getScaleNetToOutput}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{getScaleNetToOutput()}{getScaleNetToOutput()}}
+{\footnotesize\ttfamily float op\+::\+Pose\+Extractor\+::get\+Scale\+Net\+To\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_aab1cccc9ad99f6b007abaa14600ea6df}\label{classop_1_1_pose_extractor_aab1cccc9ad99f6b007abaa14600ea6df}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily void op\+::\+Pose\+Extractor\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_a291521decad2465df13dc769fe9cc4e5}\label{classop_1_1_pose_extractor_a291521decad2465df13dc769fe9cc4e5}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!keepTopPeople@{keepTopPeople}}
+\index{keepTopPeople@{keepTopPeople}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{keepTopPeople()}{keepTopPeople()}}
+{\footnotesize\ttfamily void op\+::\+Pose\+Extractor\+::keep\+Top\+People (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Keypoints,  }\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Scores }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_a0ac3679fd75bda7569562615b5fc813a}\label{classop_1_1_pose_extractor_a0ac3679fd75bda7569562615b5fc813a}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!track@{track}}
+\index{track@{track}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{track()}{track()}}
+{\footnotesize\ttfamily void op\+::\+Pose\+Extractor\+::track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Keypoints,  }\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \&}]{pose\+Ids,  }\item[{const cv\+::\+Mat \&}]{cv\+Mat\+Input,  }\item[{const unsigned long long}]{image\+View\+Index = {\ttfamily 0ull} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_a52032cd719da90acc0259f77ee2c246c}\label{classop_1_1_pose_extractor_a52032cd719da90acc0259f77ee2c246c}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!trackLockThread@{trackLockThread}}
+\index{trackLockThread@{trackLockThread}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{trackLockThread()}{trackLockThread()}}
+{\footnotesize\ttfamily void op\+::\+Pose\+Extractor\+::track\+Lock\+Thread (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ float $>$ \&}]{pose\+Keypoints,  }\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ long long $>$ \&}]{pose\+Ids,  }\item[{const cv\+::\+Mat \&}]{cv\+Mat\+Input,  }\item[{const unsigned long long}]{image\+View\+Index,  }\item[{const long long}]{frame\+Id }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_pose_extractor_ac9de4ba21db0a3cf05d90f3bc040e4d6}\label{classop_1_1_pose_extractor_ac9de4ba21db0a3cf05d90f3bc040e4d6}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!mNumberPeopleMax@{mNumberPeopleMax}}
+\index{mNumberPeopleMax@{mNumberPeopleMax}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{mNumberPeopleMax}{mNumberPeopleMax}}
+{\footnotesize\ttfamily const int op\+::\+Pose\+Extractor\+::m\+Number\+People\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pose\+Extractor.\+hpp 파일의 67 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_a930eb41712c692a71884713b330cbffe}\label{classop_1_1_pose_extractor_a930eb41712c692a71884713b330cbffe}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!mTracking@{mTracking}}
+\index{mTracking@{mTracking}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{mTracking}{mTracking}}
+{\footnotesize\ttfamily const int op\+::\+Pose\+Extractor\+::m\+Tracking\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pose\+Extractor.\+hpp 파일의 68 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_ab72c571c7e947334f6d37a123ff6f43e}\label{classop_1_1_pose_extractor_ab72c571c7e947334f6d37a123ff6f43e}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!spKeepTopNPeople@{spKeepTopNPeople}}
+\index{spKeepTopNPeople@{spKeepTopNPeople}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{spKeepTopNPeople}{spKeepTopNPeople}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classop_1_1_keep_top_n_people}{Keep\+Top\+N\+People}}$>$ op\+::\+Pose\+Extractor\+::sp\+Keep\+Top\+N\+People\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pose\+Extractor.\+hpp 파일의 70 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_a2b2bf1fbb3506a0d8ab07714dc489194}\label{classop_1_1_pose_extractor_a2b2bf1fbb3506a0d8ab07714dc489194}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!spPersonIdExtractor@{spPersonIdExtractor}}
+\index{spPersonIdExtractor@{spPersonIdExtractor}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{spPersonIdExtractor}{spPersonIdExtractor}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classop_1_1_person_id_extractor}{Person\+Id\+Extractor}}$>$ op\+::\+Pose\+Extractor\+::sp\+Person\+Id\+Extractor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pose\+Extractor.\+hpp 파일의 71 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_ade9ae2b3b7fd71679ee60740f99aaaa1}\label{classop_1_1_pose_extractor_ade9ae2b3b7fd71679ee60740f99aaaa1}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!spPersonTrackers@{spPersonTrackers}}
+\index{spPersonTrackers@{spPersonTrackers}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{spPersonTrackers}{spPersonTrackers}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classop_1_1_person_tracker}{Person\+Tracker}}$>$ $>$ $>$ op\+::\+Pose\+Extractor\+::sp\+Person\+Trackers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pose\+Extractor.\+hpp 파일의 72 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_pose_extractor_a4a1b9204baf9c672aad0b9449f733bf3}\label{classop_1_1_pose_extractor_a4a1b9204baf9c672aad0b9449f733bf3}} 
+\index{op::PoseExtractor@{op::PoseExtractor}!spPoseExtractorNet@{spPoseExtractorNet}}
+\index{spPoseExtractorNet@{spPoseExtractorNet}!op::PoseExtractor@{op::PoseExtractor}}
+\doxysubsubsection{\texorpdfstring{spPoseExtractorNet}{spPoseExtractorNet}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classop_1_1_pose_extractor_net}{Pose\+Extractor\+Net}}$>$ op\+::\+Pose\+Extractor\+::sp\+Pose\+Extractor\+Net\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pose\+Extractor.\+hpp 파일의 69 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/pose/\mbox{\hyperlink{pose_extractor_8hpp}{pose\+Extractor.\+hpp}}\end{DoxyCompactItemize}

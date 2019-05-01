@@ -1,0 +1,7 @@
+<map id="op::WebcamReader" name="op::WebcamReader">
+<area shape="rect" id="node1" title=" " alt="" coords="161,1204,327,1560"/>
+<area shape="rect" id="node2" href="$classop_1_1_video_capture_reader.html" title=" " alt="" coords="33,903,204,1141"/>
+<area shape="rect" id="node3" href="$classop_1_1_producer.html" title=" " alt="" coords="5,424,232,853"/>
+<area shape="rect" id="node4" href="$classop_1_1_camera_parameter_reader.html" title=" " alt="" coords="19,5,218,361"/>
+<area shape="rect" id="node5" href="$structop_1_1_point.html" title=" " alt="" coords="229,903,345,1141"/>
+</map>

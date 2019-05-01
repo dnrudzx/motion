@@ -1,0 +1,516 @@
+\hypertarget{classop_1_1_webcam_reader}{}\doxysection{op\+::Webcam\+Reader 클래스 참조}
+\label{classop_1_1_webcam_reader}\index{op::WebcamReader@{op::WebcamReader}}
+
+
+{\ttfamily \#include $<$webcam\+Reader.\+hpp$>$}
+
+
+
+op\+::Webcam\+Reader에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_webcam_reader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::Webcam\+Reader에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_webcam_reader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_webcam_reader_a15fa1b26adfb75c0f072dcdb44c8fc44}{Webcam\+Reader}} (const int webcam\+Index=0, const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&webcam\+Resolution=\mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$\{\}, const bool throw\+Exception\+If\+No\+Opened=true, const std\+::string \&camera\+Parameter\+Path=\char`\"{}\char`\"{}, const bool undistort\+Image=false)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_webcam_reader_aea29bfce4df5493d662ed3a892f364d2}{$\sim$\+Webcam\+Reader}} ()
+\item 
+std\+::string \mbox{\hyperlink{classop_1_1_webcam_reader_a58c315e577c12486e5ab1b941d4cce04}{get\+Next\+Frame\+Name}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_webcam_reader_a6a065fcf3d6dca624741adc0f77da11d}{is\+Opened}} () const
+\item 
+double \mbox{\hyperlink{classop_1_1_webcam_reader_a38ccbdf61f21fba0694362077cb6bdb1}{get}} (const int cap\+Property)
+\item 
+void \mbox{\hyperlink{classop_1_1_webcam_reader_ae66b26829cc2d6e3f02109d4431a7bc2}{set}} (const int cap\+Property, const double value)
+\item 
+void \mbox{\hyperlink{classop_1_1_video_capture_reader_a2f73e10efe7f9b24a6cb75af2167de58}{release}} ()
+\item 
+double \mbox{\hyperlink{classop_1_1_producer_a94d561f95384dfa0cd91113882869d06}{get}} (const \mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774}{Producer\+Property}} property)
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_af11f1bbfbd61b9534c02c3e4839e19b0}{set}} (const \mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774}{Producer\+Property}} property, const double value)
+\item 
+cv\+::\+Mat \mbox{\hyperlink{classop_1_1_producer_aacd96f08524772d8865bb187c881943e}{get\+Frame}} ()
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_producer_a3fbf3df1e02d326d7c954d78aa0dca0d}{get\+Frames}} ()
+\item 
+virtual std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_producer_adb33a11ca1ebe16a4f26f8c78a9a4087}{get\+Camera\+Matrices}} ()
+\item 
+virtual std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_producer_a6e35a05069c126bea452be08d599c4c4}{get\+Camera\+Extrinsics}} ()
+\item 
+virtual std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_producer_a04a9b2b0d953edc848f6e19c818be9b9}{get\+Camera\+Intrinsics}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_a024e55b4ec769cdbc40ee21613a6ef6f}{set\+Producer\+Fps\+Mode}} (const \mbox{\hyperlink{namespaceop_ac0230b669b296920c0cfc41b7587268f}{Producer\+Fps\+Mode}} fps\+Mode)
+\item 
+\mbox{\hyperlink{namespaceop_a54b73745852c270cfd891eed0f6f2332}{Producer\+Type}} \mbox{\hyperlink{classop_1_1_producer_a9a9424027e5bc8e0fba7c65eccc460e0}{get\+Type}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classop_1_1_video_capture_reader_ab85b68c93854dd7c2ad437477e819506}{reset\+Webcam}} (const int index, const bool throw\+Exception\+If\+No\+Opened)
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_a901c2ff1f56b551a058143ed884b1a5a}{check\+Frame\+Integrity}} (cv\+::\+Mat \&frame)
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_ac72a751759ae8b5a0a99552580f7fbad}{if\+Ended\+Reset\+Or\+Release}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_producer_afad3eadd16cca0de2c2be8b083c0d56d}{keep\+Desired\+Frame\+Rate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{classop_1_1_webcam_reader_a40d0631d11c5c043c9c6af3246a1498d}{get\+Raw\+Frame}} ()
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_webcam_reader_ad70083fad0422959bb380be75470fb36}{get\+Raw\+Frames}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_webcam_reader_afee1727f081a3eb5d748644c893e6533}{buffering\+Thread}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_webcam_reader_a183b75d17c737c6a753fbc67cb47e688}{reset}} ()
+\item 
+\mbox{\hyperlink{classop_1_1_webcam_reader_a90310dadefc626bbaecf1a6f2e947cf6}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_webcam_reader}{Webcam\+Reader}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classop_1_1_webcam_reader_a0d071a3bd2216de6ac5d2f1927c780ca}{m\+Index}}
+\item 
+const bool \mbox{\hyperlink{classop_1_1_webcam_reader_a972b44bba37f63e7b5045ea1a228cdd7}{m\+Webcam\+Started}}
+\item 
+long long \mbox{\hyperlink{classop_1_1_webcam_reader_a41b8ad2910b8bf1a12dde47ad5aef770}{m\+Frame\+Name\+Counter}}
+\item 
+bool \mbox{\hyperlink{classop_1_1_webcam_reader_a1e15c041ab9fc55c3a68bb4359bfa32e}{m\+Thread\+Opened}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{classop_1_1_webcam_reader_a61483c1fc4a8d479e27c250f8ec5e657}{m\+Buffer}}
+\item 
+std\+::mutex \mbox{\hyperlink{classop_1_1_webcam_reader_a0841580838bf508a4a2180bb7ae9d49f}{m\+Buffer\+Mutex}}
+\item 
+std\+::atomic$<$ bool $>$ \mbox{\hyperlink{classop_1_1_webcam_reader_a13eff494a06ce2b58d325d4bdefc116a}{m\+Close\+Thread}}
+\item 
+std\+::thread \mbox{\hyperlink{classop_1_1_webcam_reader_a6d6f940300dc051a339c5c2b82dc5116}{m\+Thread}}
+\item 
+double \mbox{\hyperlink{classop_1_1_webcam_reader_af38628721e939d7cd34f12277e4f0104}{m\+Last\+Norm}}
+\item 
+std\+::atomic$<$ int $>$ \mbox{\hyperlink{classop_1_1_webcam_reader_a40ce1f0296ec3c3d757cd5cb49b9c9c2}{m\+Disconnected\+Counter}}
+\item 
+\mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \mbox{\hyperlink{classop_1_1_webcam_reader_a36bfbe83587fc5c64255900ea12759da}{m\+Resolution}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\mbox{\hyperlink{classop_1_1_webcam_reader}{Webcam\+Reader}} is a wrapper of the cv\+::\+Video\+Capture class for webcam. It allows controlling a video (extracting frames, setting resolution \& fps, seeking to a particular frame, etc). 
+
+webcam\+Reader.\+hpp 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a15fa1b26adfb75c0f072dcdb44c8fc44}\label{classop_1_1_webcam_reader_a15fa1b26adfb75c0f072dcdb44c8fc44}} 
+\index{op::WebcamReader@{op::WebcamReader}!WebcamReader@{WebcamReader}}
+\index{WebcamReader@{WebcamReader}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{WebcamReader()}{WebcamReader()}}
+{\footnotesize\ttfamily op\+::\+Webcam\+Reader\+::\+Webcam\+Reader (\begin{DoxyParamCaption}\item[{const int}]{webcam\+Index = {\ttfamily 0},  }\item[{const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&}]{webcam\+Resolution = {\ttfamily \mbox{\hyperlink{structop_1_1_point}{Point}}$<$~int~$>$\{\}},  }\item[{const bool}]{throw\+Exception\+If\+No\+Opened = {\ttfamily true},  }\item[{const std\+::string \&}]{camera\+Parameter\+Path = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const bool}]{undistort\+Image = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor of \mbox{\hyperlink{classop_1_1_webcam_reader}{Webcam\+Reader}}. It opens the webcam as a wrapper of cv\+::\+Video\+Capture. It includes an argument to indicate the desired resolution. 
+\begin{DoxyParams}{매개변수}
+{\em webcam\+Index} & const int indicating the camera source (see the Open\+CV documentation about cv\+::\+Video\+Capture for more details), in the range \mbox{[}0, 9\mbox{]}. \\
+\hline
+{\em webcam\+Resolution} & const \mbox{\hyperlink{structop_1_1_point}{Point$<$int$>$}} parameter which specifies the desired camera resolution. \\
+\hline
+{\em throw\+Exception\+If\+No\+Opened} & Bool parameter which specifies whether to throw an exception if the camera cannot be opened. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_webcam_reader_aea29bfce4df5493d662ed3a892f364d2}\label{classop_1_1_webcam_reader_aea29bfce4df5493d662ed3a892f364d2}} 
+\index{op::WebcamReader@{op::WebcamReader}!````~WebcamReader@{$\sim$WebcamReader}}
+\index{````~WebcamReader@{$\sim$WebcamReader}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{$\sim$WebcamReader()}{~WebcamReader()}}
+{\footnotesize\ttfamily virtual op\+::\+Webcam\+Reader\+::$\sim$\+Webcam\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_webcam_reader_afee1727f081a3eb5d748644c893e6533}\label{classop_1_1_webcam_reader_afee1727f081a3eb5d748644c893e6533}} 
+\index{op::WebcamReader@{op::WebcamReader}!bufferingThread@{bufferingThread}}
+\index{bufferingThread@{bufferingThread}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{bufferingThread()}{bufferingThread()}}
+{\footnotesize\ttfamily void op\+::\+Webcam\+Reader\+::buffering\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_producer_a901c2ff1f56b551a058143ed884b1a5a}\label{classop_1_1_producer_a901c2ff1f56b551a058143ed884b1a5a}} 
+\index{op::WebcamReader@{op::WebcamReader}!checkFrameIntegrity@{checkFrameIntegrity}}
+\index{checkFrameIntegrity@{checkFrameIntegrity}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{checkFrameIntegrity()}{checkFrameIntegrity()}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::check\+Frame\+Integrity (\begin{DoxyParamCaption}\item[{cv\+::\+Mat \&}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Protected function which checks that the frames keeps their integry (some Open\+CV versions might return corrupted frames within a video or webcam with a size different to the standard resolution). If the frame is corrupted, it is set to an empty cv\+::\+Mat. 
+\begin{DoxyParams}{매개변수}
+{\em frame} & cv\+::\+Mat with the frame matrix to be checked and modified. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a90310dadefc626bbaecf1a6f2e947cf6}\label{classop_1_1_webcam_reader_a90310dadefc626bbaecf1a6f2e947cf6}} 
+\index{op::WebcamReader@{op::WebcamReader}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Webcam\+Reader\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_webcam_reader}{Webcam\+Reader}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a38ccbdf61f21fba0694362077cb6bdb1}\label{classop_1_1_webcam_reader_a38ccbdf61f21fba0694362077cb6bdb1}} 
+\index{op::WebcamReader@{op::WebcamReader}!get@{get}}
+\index{get@{get}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double op\+::\+Webcam\+Reader\+::get (\begin{DoxyParamCaption}\item[{const int}]{cap\+Property }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function is a wrapper of cv\+::\+Video\+Capture\+::get. It allows getting different properties of the \mbox{\hyperlink{classop_1_1_producer}{Producer}} (fps, width, height, etc.). See the Open\+CV documentation for all the available properties. 
+\begin{DoxyParams}{매개변수}
+{\em cap\+Property} & int indicating the property to be modified. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+double returning the property value. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_video_capture_reader_a64e5cbfb1c556d64cabcebc6eb94eaf1}{op\+::\+Video\+Capture\+Reader}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_producer_a94d561f95384dfa0cd91113882869d06}\label{classop_1_1_producer_a94d561f95384dfa0cd91113882869d06}} 
+\index{op::WebcamReader@{op::WebcamReader}!get@{get}}
+\index{get@{get}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double op\+::\+Producer\+::get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774}{Producer\+Property}}}]{property }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Extra attributes that Video\+Capture\+::get/set do not contain. 
+\begin{DoxyParams}{매개변수}
+{\em property} & Producer\+Property indicating the property to be modified. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_producer_a6e35a05069c126bea452be08d599c4c4}\label{classop_1_1_producer_a6e35a05069c126bea452be08d599c4c4}} 
+\index{op::WebcamReader@{op::WebcamReader}!getCameraExtrinsics@{getCameraExtrinsics}}
+\index{getCameraExtrinsics@{getCameraExtrinsics}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{getCameraExtrinsics()}{getCameraExtrinsics()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Producer\+::get\+Camera\+Extrinsics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+It retrieves and returns the camera extrinsic parameters from the frames producer. Virtual class because \mbox{\hyperlink{classop_1_1_flir_reader}{Flir\+Reader}} implements their own. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the camera extrinsic parameters. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_flir_reader_afb0ae89ef49073345b038fad8652cc37}{op\+::\+Flir\+Reader}}에서 재구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_a04a9b2b0d953edc848f6e19c818be9b9}\label{classop_1_1_producer_a04a9b2b0d953edc848f6e19c818be9b9}} 
+\index{op::WebcamReader@{op::WebcamReader}!getCameraIntrinsics@{getCameraIntrinsics}}
+\index{getCameraIntrinsics@{getCameraIntrinsics}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{getCameraIntrinsics()}{getCameraIntrinsics()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Producer\+::get\+Camera\+Intrinsics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+It retrieves and returns the camera intrinsic parameters from the frames producer. Virtual class because \mbox{\hyperlink{classop_1_1_flir_reader}{Flir\+Reader}} implements their own. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the camera intrinsic parameters. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_flir_reader_a4a6576da78857c0e532d59b442332e83}{op\+::\+Flir\+Reader}}에서 재구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_adb33a11ca1ebe16a4f26f8c78a9a4087}\label{classop_1_1_producer_adb33a11ca1ebe16a4f26f8c78a9a4087}} 
+\index{op::WebcamReader@{op::WebcamReader}!getCameraMatrices@{getCameraMatrices}}
+\index{getCameraMatrices@{getCameraMatrices}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{getCameraMatrices()}{getCameraMatrices()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Producer\+::get\+Camera\+Matrices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+It retrieves and returns the camera matrixes from the frames producer. Virtual class because \mbox{\hyperlink{classop_1_1_flir_reader}{Flir\+Reader}} implements their own. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the camera matrices. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_flir_reader_a7c3450fd4b5c6f81ade293ee95da7ba6}{op\+::\+Flir\+Reader}}에서 재구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_aacd96f08524772d8865bb187c881943e}\label{classop_1_1_producer_aacd96f08524772d8865bb187c881943e}} 
+\index{op::WebcamReader@{op::WebcamReader}!getFrame@{getFrame}}
+\index{getFrame@{getFrame}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{getFrame()}{getFrame()}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Producer\+::get\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Main function of \mbox{\hyperlink{classop_1_1_producer}{Producer}}, it retrieves and returns a new frame from the frames producer. \begin{DoxyReturn}{반환값}
+cv\+::\+Mat with the new frame. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_producer_a3fbf3df1e02d326d7c954d78aa0dca0d}\label{classop_1_1_producer_a3fbf3df1e02d326d7c954d78aa0dca0d}} 
+\index{op::WebcamReader@{op::WebcamReader}!getFrames@{getFrames}}
+\index{getFrames@{getFrames}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{getFrames()}{getFrames()}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Producer\+::get\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Analogous to get\+Frame, but it could return $>$ 1 frame. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the new frame(s). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a58c315e577c12486e5ab1b941d4cce04}\label{classop_1_1_webcam_reader_a58c315e577c12486e5ab1b941d4cce04}} 
+\index{op::WebcamReader@{op::WebcamReader}!getNextFrameName@{getNextFrameName}}
+\index{getNextFrameName@{getNextFrameName}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{getNextFrameName()}{getNextFrameName()}}
+{\footnotesize\ttfamily std\+::string op\+::\+Webcam\+Reader\+::get\+Next\+Frame\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function returns a unique frame name (e.\+g., the frame number for video, the frame counter for webcam, the image name for image directory reader, etc.). \begin{DoxyReturn}{반환값}
+std\+::string with an unique frame name. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_video_capture_reader_a06348fd9a290fc2ece2f3c2e4dc9bc70}{op\+::\+Video\+Capture\+Reader}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a40d0631d11c5c043c9c6af3246a1498d}\label{classop_1_1_webcam_reader_a40d0631d11c5c043c9c6af3246a1498d}} 
+\index{op::WebcamReader@{op::WebcamReader}!getRawFrame@{getRawFrame}}
+\index{getRawFrame@{getRawFrame}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{getRawFrame()}{getRawFrame()}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Webcam\+Reader\+::get\+Raw\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Function to be defined by its children class. It retrieves and returns a new frame from the frames producer. \begin{DoxyReturn}{반환값}
+cv\+::\+Mat with the new frame. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_video_capture_reader_af57cc02f86ee0c29ccb83f1f7c37bec2}{op\+::\+Video\+Capture\+Reader}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_ad70083fad0422959bb380be75470fb36}\label{classop_1_1_webcam_reader_ad70083fad0422959bb380be75470fb36}} 
+\index{op::WebcamReader@{op::WebcamReader}!getRawFrames@{getRawFrames}}
+\index{getRawFrames@{getRawFrames}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{getRawFrames()}{getRawFrames()}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Webcam\+Reader\+::get\+Raw\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Function to be defined by its children class. It retrieves and returns a new frame from the frames producer. It is equivalent to get\+Raw\+Frame when more than 1 image can be returned. \begin{DoxyReturn}{반환값}
+std\+::vector$<$cv\+::\+Mat$>$ with the new frames. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_video_capture_reader_a07abbb0001dd9972ab416eb619812043}{op\+::\+Video\+Capture\+Reader}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_producer_a9a9424027e5bc8e0fba7c65eccc460e0}\label{classop_1_1_producer_a9a9424027e5bc8e0fba7c65eccc460e0}} 
+\index{op::WebcamReader@{op::WebcamReader}!getType@{getType}}
+\index{getType@{getType}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceop_a54b73745852c270cfd891eed0f6f2332}{Producer\+Type}} op\+::\+Producer\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+This function returns the type of producer (video, webcam, ...). \begin{DoxyReturn}{반환값}
+Producer\+Type with the kind of producer. 
+\end{DoxyReturn}
+
+
+producer.\+hpp 파일의 82 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83         \{}
+\DoxyCodeLine{84             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_producer_a4ae382b91ed92aac41d348c0836dda9e}{mType}};}
+\DoxyCodeLine{85         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_producer_ac72a751759ae8b5a0a99552580f7fbad}\label{classop_1_1_producer_ac72a751759ae8b5a0a99552580f7fbad}} 
+\index{op::WebcamReader@{op::WebcamReader}!ifEndedResetOrRelease@{ifEndedResetOrRelease}}
+\index{ifEndedResetOrRelease@{ifEndedResetOrRelease}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{ifEndedResetOrRelease()}{ifEndedResetOrRelease()}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::if\+Ended\+Reset\+Or\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Protected function which checks that the frame producer has ended. If so, if resets or releases the producer according to m\+Repeat\+When\+Finished. \mbox{\Hypertarget{classop_1_1_webcam_reader_a6a065fcf3d6dca624741adc0f77da11d}\label{classop_1_1_webcam_reader_a6a065fcf3d6dca624741adc0f77da11d}} 
+\index{op::WebcamReader@{op::WebcamReader}!isOpened@{isOpened}}
+\index{isOpened@{isOpened}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{isOpened()}{isOpened()}}
+{\footnotesize\ttfamily bool op\+::\+Webcam\+Reader\+::is\+Opened (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function returns whether the \mbox{\hyperlink{classop_1_1_producer}{Producer}} instance is still opened and able to retrieve more frames. \begin{DoxyReturn}{반환값}
+bool indicating whether the \mbox{\hyperlink{classop_1_1_producer}{Producer}} is opened. 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classop_1_1_video_capture_reader_ab0c6519396faae82ec1b49262ed454a2}{op\+::\+Video\+Capture\+Reader}}(으)로부터 재구현되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_producer_afad3eadd16cca0de2c2be8b083c0d56d}\label{classop_1_1_producer_afad3eadd16cca0de2c2be8b083c0d56d}} 
+\index{op::WebcamReader@{op::WebcamReader}!keepDesiredFrameRate@{keepDesiredFrameRate}}
+\index{keepDesiredFrameRate@{keepDesiredFrameRate}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{keepDesiredFrameRate()}{keepDesiredFrameRate()}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::keep\+Desired\+Frame\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Protected function which forces the producer to get frames at the rate of get(\+C\+V\+\_\+\+C\+A\+P\+\_\+\+P\+R\+O\+P\+\_\+\+F\+P\+S). \mbox{\Hypertarget{classop_1_1_video_capture_reader_a2f73e10efe7f9b24a6cb75af2167de58}\label{classop_1_1_video_capture_reader_a2f73e10efe7f9b24a6cb75af2167de58}} 
+\index{op::WebcamReader@{op::WebcamReader}!release@{release}}
+\index{release@{release}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void op\+::\+Video\+Capture\+Reader\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+This function releases and closes the \mbox{\hyperlink{classop_1_1_producer}{Producer}}. After it is called, no more frames can be retrieved from \mbox{\hyperlink{classop_1_1_producer_a3fbf3df1e02d326d7c954d78aa0dca0d}{Producer\+::get\+Frames}}. 
+
+\mbox{\hyperlink{classop_1_1_producer_a7753ffb0daa486ab0f82873b3567f95e}{op\+::\+Producer}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a183b75d17c737c6a753fbc67cb47e688}\label{classop_1_1_webcam_reader_a183b75d17c737c6a753fbc67cb47e688}} 
+\index{op::WebcamReader@{op::WebcamReader}!reset@{reset}}
+\index{reset@{reset}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily bool op\+::\+Webcam\+Reader\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_video_capture_reader_ab85b68c93854dd7c2ad437477e819506}\label{classop_1_1_video_capture_reader_ab85b68c93854dd7c2ad437477e819506}} 
+\index{op::WebcamReader@{op::WebcamReader}!resetWebcam@{resetWebcam}}
+\index{resetWebcam@{resetWebcam}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{resetWebcam()}{resetWebcam()}}
+{\footnotesize\ttfamily void op\+::\+Video\+Capture\+Reader\+::reset\+Webcam (\begin{DoxyParamCaption}\item[{const int}]{index,  }\item[{const bool}]{throw\+Exception\+If\+No\+Opened }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_ae66b26829cc2d6e3f02109d4431a7bc2}\label{classop_1_1_webcam_reader_ae66b26829cc2d6e3f02109d4431a7bc2}} 
+\index{op::WebcamReader@{op::WebcamReader}!set@{set}}
+\index{set@{set}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void op\+::\+Webcam\+Reader\+::set (\begin{DoxyParamCaption}\item[{const int}]{cap\+Property,  }\item[{const double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function is a wrapper of cv\+::\+Video\+Capture\+::set. It allows setting different properties of the \mbox{\hyperlink{classop_1_1_producer}{Producer}} (fps, width, height, etc.). See the Open\+CV documentation for all the available properties. 
+\begin{DoxyParams}{매개변수}
+{\em cap\+Property} & int indicating the property to be modified. \\
+\hline
+{\em value} & double indicating the new value to be assigned. \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{classop_1_1_video_capture_reader_ab2929b7d2d002b58ebaf7b9b56999cca}{op\+::\+Video\+Capture\+Reader}}를 구현.
+
+\mbox{\Hypertarget{classop_1_1_producer_af11f1bbfbd61b9534c02c3e4839e19b0}\label{classop_1_1_producer_af11f1bbfbd61b9534c02c3e4839e19b0}} 
+\index{op::WebcamReader@{op::WebcamReader}!set@{set}}
+\index{set@{set}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_abc501c56c6cf6cf1989c84b1692cb774}{Producer\+Property}}}]{property,  }\item[{const double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Extra attributes that Video\+Capture\+::get/set do not contain. 
+\begin{DoxyParams}{매개변수}
+{\em property} & Producer\+Property indicating the property to be modified. \\
+\hline
+{\em value} & double indicating the new value to be assigned. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_producer_a024e55b4ec769cdbc40ee21613a6ef6f}\label{classop_1_1_producer_a024e55b4ec769cdbc40ee21613a6ef6f}} 
+\index{op::WebcamReader@{op::WebcamReader}!setProducerFpsMode@{setProducerFpsMode}}
+\index{setProducerFpsMode@{setProducerFpsMode}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{setProducerFpsMode()}{setProducerFpsMode()}}
+{\footnotesize\ttfamily void op\+::\+Producer\+::set\+Producer\+Fps\+Mode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_ac0230b669b296920c0cfc41b7587268f}{Producer\+Fps\+Mode}}}]{fps\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+This function sets whether the producer must keep the original fps frame rate or extract the frames as quick as possible. 
+\begin{DoxyParams}{매개변수}
+{\em fps\+Mode} & Producer\+Fps\+Mode parameter specifying the new value. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a61483c1fc4a8d479e27c250f8ec5e657}\label{classop_1_1_webcam_reader_a61483c1fc4a8d479e27c250f8ec5e657}} 
+\index{op::WebcamReader@{op::WebcamReader}!mBuffer@{mBuffer}}
+\index{mBuffer@{mBuffer}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{mBuffer}{mBuffer}}
+{\footnotesize\ttfamily cv\+::\+Mat op\+::\+Webcam\+Reader\+::m\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+webcam\+Reader.\+hpp 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a0841580838bf508a4a2180bb7ae9d49f}\label{classop_1_1_webcam_reader_a0841580838bf508a4a2180bb7ae9d49f}} 
+\index{op::WebcamReader@{op::WebcamReader}!mBufferMutex@{mBufferMutex}}
+\index{mBufferMutex@{mBufferMutex}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{mBufferMutex}{mBufferMutex}}
+{\footnotesize\ttfamily std\+::mutex op\+::\+Webcam\+Reader\+::m\+Buffer\+Mutex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+webcam\+Reader.\+hpp 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a13eff494a06ce2b58d325d4bdefc116a}\label{classop_1_1_webcam_reader_a13eff494a06ce2b58d325d4bdefc116a}} 
+\index{op::WebcamReader@{op::WebcamReader}!mCloseThread@{mCloseThread}}
+\index{mCloseThread@{mCloseThread}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{mCloseThread}{mCloseThread}}
+{\footnotesize\ttfamily std\+::atomic$<$bool$>$ op\+::\+Webcam\+Reader\+::m\+Close\+Thread\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+webcam\+Reader.\+hpp 파일의 48 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a40ce1f0296ec3c3d757cd5cb49b9c9c2}\label{classop_1_1_webcam_reader_a40ce1f0296ec3c3d757cd5cb49b9c9c2}} 
+\index{op::WebcamReader@{op::WebcamReader}!mDisconnectedCounter@{mDisconnectedCounter}}
+\index{mDisconnectedCounter@{mDisconnectedCounter}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{mDisconnectedCounter}{mDisconnectedCounter}}
+{\footnotesize\ttfamily std\+::atomic$<$int$>$ op\+::\+Webcam\+Reader\+::m\+Disconnected\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+webcam\+Reader.\+hpp 파일의 52 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a41b8ad2910b8bf1a12dde47ad5aef770}\label{classop_1_1_webcam_reader_a41b8ad2910b8bf1a12dde47ad5aef770}} 
+\index{op::WebcamReader@{op::WebcamReader}!mFrameNameCounter@{mFrameNameCounter}}
+\index{mFrameNameCounter@{mFrameNameCounter}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{mFrameNameCounter}{mFrameNameCounter}}
+{\footnotesize\ttfamily long long op\+::\+Webcam\+Reader\+::m\+Frame\+Name\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+webcam\+Reader.\+hpp 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a0d071a3bd2216de6ac5d2f1927c780ca}\label{classop_1_1_webcam_reader_a0d071a3bd2216de6ac5d2f1927c780ca}} 
+\index{op::WebcamReader@{op::WebcamReader}!mIndex@{mIndex}}
+\index{mIndex@{mIndex}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{mIndex}{mIndex}}
+{\footnotesize\ttfamily const int op\+::\+Webcam\+Reader\+::m\+Index\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+webcam\+Reader.\+hpp 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_af38628721e939d7cd34f12277e4f0104}\label{classop_1_1_webcam_reader_af38628721e939d7cd34f12277e4f0104}} 
+\index{op::WebcamReader@{op::WebcamReader}!mLastNorm@{mLastNorm}}
+\index{mLastNorm@{mLastNorm}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{mLastNorm}{mLastNorm}}
+{\footnotesize\ttfamily double op\+::\+Webcam\+Reader\+::m\+Last\+Norm\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+webcam\+Reader.\+hpp 파일의 51 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a36bfbe83587fc5c64255900ea12759da}\label{classop_1_1_webcam_reader_a36bfbe83587fc5c64255900ea12759da}} 
+\index{op::WebcamReader@{op::WebcamReader}!mResolution@{mResolution}}
+\index{mResolution@{mResolution}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{mResolution}{mResolution}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structop_1_1_point}{Point}}$<$int$>$ op\+::\+Webcam\+Reader\+::m\+Resolution\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+webcam\+Reader.\+hpp 파일의 53 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a6d6f940300dc051a339c5c2b82dc5116}\label{classop_1_1_webcam_reader_a6d6f940300dc051a339c5c2b82dc5116}} 
+\index{op::WebcamReader@{op::WebcamReader}!mThread@{mThread}}
+\index{mThread@{mThread}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{mThread}{mThread}}
+{\footnotesize\ttfamily std\+::thread op\+::\+Webcam\+Reader\+::m\+Thread\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+webcam\+Reader.\+hpp 파일의 49 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a1e15c041ab9fc55c3a68bb4359bfa32e}\label{classop_1_1_webcam_reader_a1e15c041ab9fc55c3a68bb4359bfa32e}} 
+\index{op::WebcamReader@{op::WebcamReader}!mThreadOpened@{mThreadOpened}}
+\index{mThreadOpened@{mThreadOpened}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{mThreadOpened}{mThreadOpened}}
+{\footnotesize\ttfamily bool op\+::\+Webcam\+Reader\+::m\+Thread\+Opened\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+webcam\+Reader.\+hpp 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_webcam_reader_a972b44bba37f63e7b5045ea1a228cdd7}\label{classop_1_1_webcam_reader_a972b44bba37f63e7b5045ea1a228cdd7}} 
+\index{op::WebcamReader@{op::WebcamReader}!mWebcamStarted@{mWebcamStarted}}
+\index{mWebcamStarted@{mWebcamStarted}!op::WebcamReader@{op::WebcamReader}}
+\doxysubsubsection{\texorpdfstring{mWebcamStarted}{mWebcamStarted}}
+{\footnotesize\ttfamily const bool op\+::\+Webcam\+Reader\+::m\+Webcam\+Started\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+webcam\+Reader.\+hpp 파일의 43 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/producer/\mbox{\hyperlink{webcam_reader_8hpp}{webcam\+Reader.\+hpp}}\end{DoxyCompactItemize}

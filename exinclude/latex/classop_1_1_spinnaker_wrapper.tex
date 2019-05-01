@@ -1,0 +1,137 @@
+\hypertarget{classop_1_1_spinnaker_wrapper}{}\doxysection{op\+::Spinnaker\+Wrapper 클래스 참조}
+\label{classop_1_1_spinnaker_wrapper}\index{op::SpinnakerWrapper@{op::SpinnakerWrapper}}
+
+
+{\ttfamily \#include $<$spinnaker\+Wrapper.\+hpp$>$}
+
+
+
+op\+::Spinnaker\+Wrapper에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classop_1_1_spinnaker_wrapper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_spinnaker_wrapper_a5d1ba90b4d1987423b330de2fdcdb702}{Spinnaker\+Wrapper}} (const std\+::string \&camera\+Parameter\+Path, const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&camera\+Resolution, const bool undistort\+Image, const int camera\+Index=-\/1)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_spinnaker_wrapper_a8ae3e45fba6f9d0943cbd9038e98b066}{$\sim$\+Spinnaker\+Wrapper}} ()
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_spinnaker_wrapper_a77a64d4ef798f2ea7cd54d9c170f7ea7}{get\+Raw\+Frames}} ()
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_spinnaker_wrapper_a09cd54c2e86d0372e1963d5491edc4b9}{get\+Camera\+Matrices}} () const
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_spinnaker_wrapper_a9109f03ff5b6e937960483786b7560e6}{get\+Camera\+Extrinsics}} () const
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_spinnaker_wrapper_a1aa8c4e15d440250c5c002be868fc2a6}{get\+Camera\+Intrinsics}} () const
+\item 
+\mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \mbox{\hyperlink{classop_1_1_spinnaker_wrapper_aad97f57040a953cbce0f20c6b3303202}{get\+Resolution}} () const
+\item 
+bool \mbox{\hyperlink{classop_1_1_spinnaker_wrapper_a51e869f56a6517bd55783ea039066d7d}{is\+Opened}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_spinnaker_wrapper_a6e66639ee75708486b3d9aa4598607c0}{release}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_spinnaker_wrapper_a48bb214918965756f54aa90ec94f4881}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_spinnaker_wrapper}{Spinnaker\+Wrapper}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ Impl\+Spinnaker\+Wrapper $>$ \mbox{\hyperlink{classop_1_1_spinnaker_wrapper_a287790a74cb925f087d20e4274c52325}{up\+Impl}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\mbox{\hyperlink{classop_1_1_spinnaker_wrapper}{Spinnaker\+Wrapper}} is a subclass of \mbox{\hyperlink{classop_1_1_spinnaker_wrapper}{Spinnaker\+Wrapper}}. It decouples the final interface (meant to imitates cv\+::\+Video\+Capture) from the Spinnaker S\+DK wrapper. 
+
+spinnaker\+Wrapper.\+hpp 파일의 12 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_spinnaker_wrapper_a5d1ba90b4d1987423b330de2fdcdb702}\label{classop_1_1_spinnaker_wrapper_a5d1ba90b4d1987423b330de2fdcdb702}} 
+\index{op::SpinnakerWrapper@{op::SpinnakerWrapper}!SpinnakerWrapper@{SpinnakerWrapper}}
+\index{SpinnakerWrapper@{SpinnakerWrapper}!op::SpinnakerWrapper@{op::SpinnakerWrapper}}
+\doxysubsubsection{\texorpdfstring{SpinnakerWrapper()}{SpinnakerWrapper()}}
+{\footnotesize\ttfamily op\+::\+Spinnaker\+Wrapper\+::\+Spinnaker\+Wrapper (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{camera\+Parameter\+Path,  }\item[{const \mbox{\hyperlink{structop_1_1_point}{Point}}$<$ int $>$ \&}]{camera\+Resolution,  }\item[{const bool}]{undistort\+Image,  }\item[{const int}]{camera\+Index = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor of \mbox{\hyperlink{classop_1_1_spinnaker_wrapper}{Spinnaker\+Wrapper}}. It opens all the available F\+L\+IR cameras camera\+Index = -\/1 means that all cameras are taken \mbox{\Hypertarget{classop_1_1_spinnaker_wrapper_a8ae3e45fba6f9d0943cbd9038e98b066}\label{classop_1_1_spinnaker_wrapper_a8ae3e45fba6f9d0943cbd9038e98b066}} 
+\index{op::SpinnakerWrapper@{op::SpinnakerWrapper}!````~SpinnakerWrapper@{$\sim$SpinnakerWrapper}}
+\index{````~SpinnakerWrapper@{$\sim$SpinnakerWrapper}!op::SpinnakerWrapper@{op::SpinnakerWrapper}}
+\doxysubsubsection{\texorpdfstring{$\sim$SpinnakerWrapper()}{~SpinnakerWrapper()}}
+{\footnotesize\ttfamily virtual op\+::\+Spinnaker\+Wrapper\+::$\sim$\+Spinnaker\+Wrapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_spinnaker_wrapper_a48bb214918965756f54aa90ec94f4881}\label{classop_1_1_spinnaker_wrapper_a48bb214918965756f54aa90ec94f4881}} 
+\index{op::SpinnakerWrapper@{op::SpinnakerWrapper}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::SpinnakerWrapper@{op::SpinnakerWrapper}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Spinnaker\+Wrapper\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_spinnaker_wrapper}{Spinnaker\+Wrapper}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_spinnaker_wrapper_a9109f03ff5b6e937960483786b7560e6}\label{classop_1_1_spinnaker_wrapper_a9109f03ff5b6e937960483786b7560e6}} 
+\index{op::SpinnakerWrapper@{op::SpinnakerWrapper}!getCameraExtrinsics@{getCameraExtrinsics}}
+\index{getCameraExtrinsics@{getCameraExtrinsics}!op::SpinnakerWrapper@{op::SpinnakerWrapper}}
+\doxysubsubsection{\texorpdfstring{getCameraExtrinsics()}{getCameraExtrinsics()}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Spinnaker\+Wrapper\+::get\+Camera\+Extrinsics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_spinnaker_wrapper_a1aa8c4e15d440250c5c002be868fc2a6}\label{classop_1_1_spinnaker_wrapper_a1aa8c4e15d440250c5c002be868fc2a6}} 
+\index{op::SpinnakerWrapper@{op::SpinnakerWrapper}!getCameraIntrinsics@{getCameraIntrinsics}}
+\index{getCameraIntrinsics@{getCameraIntrinsics}!op::SpinnakerWrapper@{op::SpinnakerWrapper}}
+\doxysubsubsection{\texorpdfstring{getCameraIntrinsics()}{getCameraIntrinsics()}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Spinnaker\+Wrapper\+::get\+Camera\+Intrinsics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_spinnaker_wrapper_a09cd54c2e86d0372e1963d5491edc4b9}\label{classop_1_1_spinnaker_wrapper_a09cd54c2e86d0372e1963d5491edc4b9}} 
+\index{op::SpinnakerWrapper@{op::SpinnakerWrapper}!getCameraMatrices@{getCameraMatrices}}
+\index{getCameraMatrices@{getCameraMatrices}!op::SpinnakerWrapper@{op::SpinnakerWrapper}}
+\doxysubsubsection{\texorpdfstring{getCameraMatrices()}{getCameraMatrices()}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Spinnaker\+Wrapper\+::get\+Camera\+Matrices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_spinnaker_wrapper_a77a64d4ef798f2ea7cd54d9c170f7ea7}\label{classop_1_1_spinnaker_wrapper_a77a64d4ef798f2ea7cd54d9c170f7ea7}} 
+\index{op::SpinnakerWrapper@{op::SpinnakerWrapper}!getRawFrames@{getRawFrames}}
+\index{getRawFrames@{getRawFrames}!op::SpinnakerWrapper@{op::SpinnakerWrapper}}
+\doxysubsubsection{\texorpdfstring{getRawFrames()}{getRawFrames()}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Mat$>$ op\+::\+Spinnaker\+Wrapper\+::get\+Raw\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_spinnaker_wrapper_aad97f57040a953cbce0f20c6b3303202}\label{classop_1_1_spinnaker_wrapper_aad97f57040a953cbce0f20c6b3303202}} 
+\index{op::SpinnakerWrapper@{op::SpinnakerWrapper}!getResolution@{getResolution}}
+\index{getResolution@{getResolution}!op::SpinnakerWrapper@{op::SpinnakerWrapper}}
+\doxysubsubsection{\texorpdfstring{getResolution()}{getResolution()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structop_1_1_point}{Point}}$<$int$>$ op\+::\+Spinnaker\+Wrapper\+::get\+Resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_spinnaker_wrapper_a51e869f56a6517bd55783ea039066d7d}\label{classop_1_1_spinnaker_wrapper_a51e869f56a6517bd55783ea039066d7d}} 
+\index{op::SpinnakerWrapper@{op::SpinnakerWrapper}!isOpened@{isOpened}}
+\index{isOpened@{isOpened}!op::SpinnakerWrapper@{op::SpinnakerWrapper}}
+\doxysubsubsection{\texorpdfstring{isOpened()}{isOpened()}}
+{\footnotesize\ttfamily bool op\+::\+Spinnaker\+Wrapper\+::is\+Opened (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_spinnaker_wrapper_a6e66639ee75708486b3d9aa4598607c0}\label{classop_1_1_spinnaker_wrapper_a6e66639ee75708486b3d9aa4598607c0}} 
+\index{op::SpinnakerWrapper@{op::SpinnakerWrapper}!release@{release}}
+\index{release@{release}!op::SpinnakerWrapper@{op::SpinnakerWrapper}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void op\+::\+Spinnaker\+Wrapper\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_spinnaker_wrapper_a287790a74cb925f087d20e4274c52325}\label{classop_1_1_spinnaker_wrapper_a287790a74cb925f087d20e4274c52325}} 
+\index{op::SpinnakerWrapper@{op::SpinnakerWrapper}!upImpl@{upImpl}}
+\index{upImpl@{upImpl}!op::SpinnakerWrapper@{op::SpinnakerWrapper}}
+\doxysubsubsection{\texorpdfstring{upImpl}{upImpl}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$Impl\+Spinnaker\+Wrapper$>$ op\+::\+Spinnaker\+Wrapper\+::up\+Impl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+spinnaker\+Wrapper.\+hpp 파일의 41 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/producer/\mbox{\hyperlink{spinnaker_wrapper_8hpp}{spinnaker\+Wrapper.\+hpp}}\end{DoxyCompactItemize}

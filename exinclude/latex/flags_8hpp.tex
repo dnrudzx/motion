@@ -1,0 +1,736 @@
+\hypertarget{flags_8hpp}{}\doxysection{/home/ms/openpose/include/openpose/flags.hpp 파일 참조}
+\label{flags_8hpp}\index{/home/ms/openpose/include/openpose/flags.hpp@{/home/ms/openpose/include/openpose/flags.hpp}}
+{\ttfamily \#include $<$gflags/gflags.\+h$>$}\newline
+flags.\+hpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{flags_8hpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{flags_8hpp_ae41e3e12fbfc16ffdb48516d3f0c96be}{D\+E\+F\+I\+N\+E\+\_\+int32}} (logging\+\_\+level, 3, \char`\"{}The logging level. Integer in the range \mbox{[}0, 255\mbox{]}. 0 will output any log() message, while\char`\"{} \char`\"{} 255 will not output any. Current Open\+Pose library messages are in the range 0-\/4\+: 1 for\char`\"{} \char`\"{} low priority messages and 4 for important ones.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_af4ef631dab577c13f59e10b626c580f6}{D\+E\+F\+I\+N\+E\+\_\+bool}} (disable\+\_\+multi\+\_\+thread, false, \char`\"{}It would slightly reduce the frame rate in order to highly reduce the lag. Mainly useful\char`\"{} \char`\"{} for 1) Cases where it is needed a low latency (e.\+g., webcam in real-\/time scenarios with\char`\"{} \char`\"{} low-\/range G\+PU devices); and 2) Debugging Open\+Pose when it is crashing to locate the\char`\"{} \char`\"{} error.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a2d8a3ae1f10dd657619e2a5d2dcb4b61}{D\+E\+F\+I\+N\+E\+\_\+int32}} (profile\+\_\+speed, 1000, \char`\"{}If P\+R\+O\+F\+I\+L\+E\+R\+\_\+\+E\+N\+A\+B\+L\+ED was set in C\+Make or Makefile.\+config files, Open\+Pose will show some\char`\"{} \char`\"{} runtime statistics at this frame number.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a807c2eb873d9e727f14d6c7ee6e02e11}{D\+E\+F\+I\+N\+E\+\_\+int32}} (camera, -\/1, \char`\"{}The camera index for cv\+::\+Video\+Capture. Integer in the range \mbox{[}0, 9\mbox{]}. Select a negative\char`\"{} \char`\"{} number (by default), to auto-\/detect and open the first available camera.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ab1d4b66fac361d1f3f450cd6bc5311d4}{D\+E\+F\+I\+N\+E\+\_\+string}} (camera\+\_\+resolution, \char`\"{}-\/1x-\/1\char`\"{}, \char`\"{}\+Set the camera resolution (either \`{}-\/-\/camera\`{} or \`{}-\/-\/flir\+\_\+camera\`{}). \`{}-\/1x-\/1\`{} will use the\char`\"{} \char`\"{} default 1280x720 for \`{}-\/-\/camera\`{}, or the maximum flir camera resolution available for\char`\"{} \char`\"{} \`{}-\/-\/flir\+\_\+camera\`{}\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a5690d1f0bce6904d9ccea011b0a0262f}{D\+E\+F\+I\+N\+E\+\_\+string}} (video, \char`\"{}\char`\"{}, \char`\"{}Use a video file instead of the camera. Use \`{}examples/media/video.\+avi\`{} for our default\char`\"{} \char`\"{} example video.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_add5d5807feef88090f8c9d11bf904ba8}{D\+E\+F\+I\+N\+E\+\_\+string}} (image\+\_\+dir, \char`\"{}\char`\"{}, \char`\"{}Process a directory of images. Use \`{}examples/media/\`{} for our default example folder with 20\char`\"{} \char`\"{} images. Read all standard formats (jpg, png, bmp, etc.).\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a245491f4f0bb36e5e8655877402f50eb}{D\+E\+F\+I\+N\+E\+\_\+bool}} (flir\+\_\+camera, false, \char`\"{}Whether to use F\+L\+IR (Point-\/Grey) stereo camera.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a513eca9e40da3a149e02c0c1fb6d10d3}{D\+E\+F\+I\+N\+E\+\_\+int32}} (flir\+\_\+camera\+\_\+index, -\/1, \char`\"{}Select -\/1 (default) to run on all detected flir cameras at once. Otherwise, select the flir\char`\"{} \char`\"{} camera index to run, where 0 corresponds to the detected flir camera with the lowest\char`\"{} \char`\"{} serial number, and \`{}n\`{} to the \`{}n\`{}-\/th lowest serial number camera.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a02962b73af4084b90494b777ff1826c1}{D\+E\+F\+I\+N\+E\+\_\+string}} (ip\+\_\+camera, \char`\"{}\char`\"{}, \char`\"{}String with the IP camera U\+R\+L. It supports protocols like R\+T\+SP and H\+T\+T\+P.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a99f9d7e0dcbf9f6ceddf589dc482d17a}{D\+E\+F\+I\+N\+E\+\_\+uint64}} (frame\+\_\+first, 0, \char`\"{}Start on desired frame number. Indexes are 0-\/based, i.\+e., the first frame has index 0.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ab7c61c5b25d4b3db1284761933c66aed}{D\+E\+F\+I\+N\+E\+\_\+uint64}} (frame\+\_\+step, 1, \char`\"{}Step or gap between processed frames. E.\+g., \`{}-\/-\/frame\+\_\+step 5\`{} would read and process frames\char`\"{} \char`\"{} 0, 5, 10, etc..\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a9fbfea8bf51a80ff2254f329366a19b8}{D\+E\+F\+I\+N\+E\+\_\+uint64}} (frame\+\_\+last, -\/1, \char`\"{}Finish on desired frame number. Select -\/1 to disable. Indexes are 0-\/based, e.\+g., if set to\char`\"{} \char`\"{} 10, it will process 11 frames (0-\/10).\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ae9ea69ae8e64ee99bb4516199f847980}{D\+E\+F\+I\+N\+E\+\_\+bool}} (frame\+\_\+flip, false, \char`\"{}Flip/mirror each frame (e.\+g., for real time webcam demonstrations).\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_adbd3e76b28ecc7415ccb782c3419a9de}{D\+E\+F\+I\+N\+E\+\_\+int32}} (frame\+\_\+rotate, 0, \char`\"{}Rotate each frame, 4 possible values\+: 0, 90, 180, 270.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ac0db13ec99b09bf9bd38582da33cff1d}{D\+E\+F\+I\+N\+E\+\_\+bool}} (frames\+\_\+repeat, false, \char`\"{}Repeat frames when finished.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_adf7a6ca551fbd934deb6784bfe37f897}{D\+E\+F\+I\+N\+E\+\_\+bool}} (process\+\_\+real\+\_\+time, false, \char`\"{}Enable to keep the original source frame rate (e.\+g., for video). If the processing time is\char`\"{} \char`\"{} too long, it will skip frames. If it is too fast, it will slow it down.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_abcc67acb9ca2d225394445eb6017bc4d}{D\+E\+F\+I\+N\+E\+\_\+string}} (camera\+\_\+parameter\+\_\+path, \char`\"{}models/camera\+Parameters/flir/\char`\"{}, \char`\"{}String with the folder where the camera parameters are located. If there\char`\"{} \char`\"{} is only 1 X\+ML file (for single video, webcam, or images from the same camera), you must\char`\"{} \char`\"{} specify the whole X\+ML file path (ending in .xml).\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_abada704ec59515bb12563262a3f21aeb}{D\+E\+F\+I\+N\+E\+\_\+bool}} (frame\+\_\+undistort, false, \char`\"{}If false (default), it will not undistort the image, if true, it will undistortionate them\char`\"{} \char`\"{} based on the camera parameters found in \`{}camera\+\_\+parameter\+\_\+path\`{}\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a456ac1650914494fbdacd53b55420e2b}{D\+E\+F\+I\+N\+E\+\_\+string}} (model\+\_\+folder, \char`\"{}models/\char`\"{}, \char`\"{}Folder path (absolute or relative) where the models (pose, face, ...) are located.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a81edc2bb181cd79c98bfae1520f8ab71}{D\+E\+F\+I\+N\+E\+\_\+string}} (prototxt\+\_\+path, \char`\"{}\char`\"{}, \char`\"{}The combination \`{}-\/-\/model\+\_\+folder\`{} + \`{}-\/-\/prototxt\+\_\+path\`{} represents the whole path to the\char`\"{} \char`\"{} prototxt file. If empty, it will use the default Open\+Pose Proto\+Txt file.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_acd0c383a2043852c83e284b669a5cf7e}{D\+E\+F\+I\+N\+E\+\_\+string}} (caffemodel\+\_\+path, \char`\"{}\char`\"{}, \char`\"{}The combination \`{}-\/-\/model\+\_\+folder\`{} + \`{}-\/-\/caffemodel\+\_\+path\`{} represents the whole path to the\char`\"{} \char`\"{} caffemodel file. If empty, it will use the default Open\+Pose Caffe\+Model file.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a4fff2a82464bb9e180e04f70f0d5cbad}{D\+E\+F\+I\+N\+E\+\_\+string}} (output\+\_\+resolution, \char`\"{}-\/1x-\/1\char`\"{}, \char`\"{}\+The image resolution (display and output). Use \textbackslash{}\char`\"{}-\/1x-\/1\textbackslash{}\char`\"{} to force the program to use the\char`\"{} \char`\"{} input image resolution.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a8bd040787ac075ae4cf483be01fe2c5f}{D\+E\+F\+I\+N\+E\+\_\+int32}} (num\+\_\+gpu, -\/1, \char`\"{}The number of G\+PU devices to use. If negative, it will use all the available G\+P\+Us in your\char`\"{} \char`\"{} machine.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a844330d264f5648ae7d99b76f72f391a}{D\+E\+F\+I\+N\+E\+\_\+int32}} (num\+\_\+gpu\+\_\+start, 0, \char`\"{}G\+PU device start number.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a547efed657b6e562d8d5f071124fcf17}{D\+E\+F\+I\+N\+E\+\_\+int32}} (keypoint\+\_\+scale, 0, \char`\"{}Scaling of the (x,y) coordinates of the final pose data array, i.\+e., the scale of the (x,y)\char`\"{} \char`\"{} coordinates that will be saved with the \`{}write\+\_\+json\`{} \& \`{}write\+\_\+keypoint\`{} flags.\char`\"{} \char`\"{} Select \`{}0\`{} to scale it to the original source resolution; \`{}1\`{}to scale it to the net output\char`\"{} \char`\"{} size (set with \`{}net\+\_\+resolution\`{}); \`{}2\`{} to scale it to the final output size (set with\char`\"{} \char`\"{} \`{}resolution\`{}); \`{}3\`{} to scale it in the range \mbox{[}0,1\mbox{]}, where (0,0) would be the top-\/left\char`\"{} \char`\"{} corner of the image, and (1,1) the bottom-\/right one; and 4 for range \mbox{[}-\/1,1\mbox{]}, where\char`\"{} \char`\"{} (-\/1,-\/1) would be the top-\/left corner of the image, and (1,1) the bottom-\/right one. Non\char`\"{} \char`\"{} related with \`{}scale\+\_\+number\`{} and \`{}scale\+\_\+gap\`{}.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ac5e8f82d85a3eb0ee72a64569395497c}{D\+E\+F\+I\+N\+E\+\_\+int32}} (number\+\_\+people\+\_\+max, -\/1, \char`\"{}This parameter will limit the maximum number of people detected, by keeping the people with\char`\"{} \char`\"{} top scores. The score is based in person area over the image, body part score, as well as\char`\"{} \char`\"{} joint score (between each pair of connected body parts). Useful if you know the exact\char`\"{} \char`\"{} number of people in the scene, so it can remove false positives (if all the people have\char`\"{} \char`\"{} been detected. However, it might also include false negatives by removing very small or\char`\"{} \char`\"{} highly occluded people. -\/1 will keep them all.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a4d830b4bcbd7998d8c6de665c0531ce9}{D\+E\+F\+I\+N\+E\+\_\+bool}} (maximize\+\_\+positives, false, \char`\"{}It reduces the thresholds to accept a person candidate. It highly increases both false and\char`\"{} \char`\"{} true positives. I.\+e., it maximizes average recall but could harm average precision.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ace91dac10649fcbe836a71459b2f2584}{D\+E\+F\+I\+N\+E\+\_\+double}} (fps\+\_\+max, -\/1., \char`\"{}Maximum processing frame rate. By default (-\/1), Open\+Pose will process frames as fast as\char`\"{} \char`\"{} possible. Example usage\+: If Open\+Pose is displaying images too quickly, this can reduce\char`\"{} \char`\"{} the speed so the user can analyze better each frame from the G\+U\+I.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_aa2bc11c618a37698d88f7ae100e1729f}{D\+E\+F\+I\+N\+E\+\_\+int32}} (body, 1, \char`\"{}Select 0 to disable body keypoint detection (e.\+g., for faster but less accurate face\char`\"{} \char`\"{} keypoint detection, custom hand detector, etc.), 1 (default) for body keypoint\char`\"{} \char`\"{} estimation, and 2 to disable its internal body pose estimation network but still\char`\"{} \char`\"{} still run the greedy association parsing algorithm\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ae84bfcaf1f813dac4080ffd7212ff9f8}{D\+E\+F\+I\+N\+E\+\_\+string}} (model\+\_\+pose, \char`\"{}B\+O\+D\+Y\+\_\+25\char`\"{}, \char`\"{}Model to be used. E.\+g., \`{}C\+O\+CO\`{} (18 keypoints), \`{}M\+PI\`{} (15 keypoints, $\sim$10\% faster), \char`\"{} \char`\"{}\`{}M\+P\+I\+\_\+4\+\_\+layers\`{} (15 keypoints, even faster but less accurate).\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_aa0cc9af40fd8fdee2d8c61da206913dc}{D\+E\+F\+I\+N\+E\+\_\+string}} (net\+\_\+resolution, \char`\"{}-\/1x368\char`\"{}, \char`\"{}\+Multiples of 16. If it is increased, the accuracy potentially increases. If it is\char`\"{} \char`\"{} decreased, the speed increases. For maximum speed-\/accuracy balance, it should keep the\char`\"{} \char`\"{} closest aspect ratio possible to the images or videos to be processed. Using \`{}-\/1\`{} in\char`\"{} \char`\"{} any of the dimensions, O\+P will choose the optimal aspect ratio depending on the user\textquotesingle{}s\char`\"{} \char`\"{} input value. E.\+g., the default \`{}-\/1x368\`{} is equivalent to \`{}656x368\`{} in 16\+:9 resolutions,\char`\"{} \char`\"{} e.\+g., full H\+D (1980x1080) and H\+D (1280x720) resolutions.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a6561fc0841b80f5c19a1c4bc549175e9}{D\+E\+F\+I\+N\+E\+\_\+int32}} (scale\+\_\+number, 1, \char`\"{}Number of scales to average.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_abecb5274ddd75ca51fb40064478b1ed3}{D\+E\+F\+I\+N\+E\+\_\+double}} (scale\+\_\+gap, 0.\+25, \char`\"{}Scale gap between scales. No effect unless scale\+\_\+number $>$ 1. Initial scale is always 1.\char`\"{} \char`\"{} If you want to change the initial scale, you actually want to multiply the\char`\"{} \char`\"{} \`{}net\+\_\+resolution\`{} by your desired initial scale.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a4670eb3cdedb3f3bac3886e2c21a7750}{D\+E\+F\+I\+N\+E\+\_\+bool}} (heatmaps\+\_\+add\+\_\+parts, false, \char`\"{}If true, it will fill \mbox{\hyperlink{structop_1_1_datum_a5429e97e0ab9b0e2209a3947af668381}{op\+::\+Datum\+::pose\+Heat\+Maps}} array with the body part heatmaps, and\char`\"{} \char`\"{} analogously face \& hand heatmaps to \mbox{\hyperlink{structop_1_1_datum_ae0c0f33a6b75c7f47e11112dd33f23c1}{op\+::\+Datum\+::face\+Heat\+Maps}} \& op\+::\+Datum\+::hand\+Heat\+Maps.\char`\"{} \char`\"{} If more than one \`{}add\+\_\+heatmaps\+\_\+X\`{} flag is enabled, it will place then in sequential\char`\"{} \char`\"{} memory order\+: body parts + bkg + P\+A\+Fs. It will follow the order on\char`\"{} \char`\"{} P\+O\+S\+E\+\_\+\+B\+O\+D\+Y\+\_\+\+P\+A\+R\+T\+\_\+\+M\+A\+P\+P\+I\+NG in \`{}src/openpose/pose/pose\+Parameters.\+cpp\`{}. Program speed will\char`\"{} \char`\"{} considerably decrease. Not required for Open\+Pose, enable it only if you intend to\char`\"{} \char`\"{} explicitly use this information later.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a2c805a3cd1797a9f67783ed5c9b7c5b1}{D\+E\+F\+I\+N\+E\+\_\+bool}} (heatmaps\+\_\+add\+\_\+bkg, false, \char`\"{}Same functionality as \`{}add\+\_\+heatmaps\+\_\+parts\`{}, but adding the heatmap corresponding to\char`\"{} \char`\"{} background.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ad9114bc8e1fc8f306e5296eaae5d542f}{D\+E\+F\+I\+N\+E\+\_\+bool}} (heatmaps\+\_\+add\+\_\+\+P\+A\+Fs, false, \char`\"{}Same functionality as \`{}add\+\_\+heatmaps\+\_\+parts\`{}, but adding the P\+A\+Fs.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_aa3c62563ce9d99c25d4a2977f253c6c7}{D\+E\+F\+I\+N\+E\+\_\+int32}} (heatmaps\+\_\+scale, 2, \char`\"{}Set 0 to scale \mbox{\hyperlink{structop_1_1_datum_a5429e97e0ab9b0e2209a3947af668381}{op\+::\+Datum\+::pose\+Heat\+Maps}} in the range \mbox{[}-\/1,1\mbox{]}, 1 for \mbox{[}0,1\mbox{]}; 2 for integer\char`\"{} \char`\"{} rounded \mbox{[}0,255\mbox{]}; and 3 for no scaling.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a9973307b6bd2af114083ba1badf4c297}{D\+E\+F\+I\+N\+E\+\_\+bool}} (part\+\_\+candidates, false, \char`\"{}Also enable \`{}write\+\_\+json\`{} in order to save this information. If true, it will fill the\char`\"{} \char`\"{} \mbox{\hyperlink{structop_1_1_datum_a55dd5354e09696ed6896923755f1c85b}{op\+::\+Datum\+::pose\+Candidates}} array with the body part candidates. Candidates refer to all\char`\"{} \char`\"{} the detected body parts, before being assembled into people. Note that the number of\char`\"{} \char`\"{} candidates is equal or higher than the number of final body parts (i.\+e., after being\char`\"{} \char`\"{} assembled into people). The empty body parts are filled with 0s. Program speed will\char`\"{} \char`\"{} slightly decrease. Not required for Open\+Pose, enable it only if you intend to explicitly\char`\"{} \char`\"{} use this information.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_af437a0d8f293cd02b992a94b268571a4}{D\+E\+F\+I\+N\+E\+\_\+double}} (upsampling\+\_\+ratio, 0., \char`\"{}Upsampling ratio between the \`{}net\+\_\+resolution\`{} and the output net results. A value less\char`\"{} \char`\"{} or equal than 0 (default) will use the network default value (recommended).\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a9142adc08a95c16a285c3abfd11ed94c}{D\+E\+F\+I\+N\+E\+\_\+bool}} (face, false, \char`\"{}Enables face keypoint detection. It will share some parameters from the body pose, e.\+g.\char`\"{} \char`\"{} \`{}model\+\_\+folder\`{}. Note that this will considerable slow down the performance and increse\char`\"{} \char`\"{} the required G\+PU memory. In addition, the greater number of people on the image, the\char`\"{} \char`\"{} slower Open\+Pose will be.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a71a0fc42dd98d1739571e4f7fed4873c}{D\+E\+F\+I\+N\+E\+\_\+int32}} (face\+\_\+detector, 0, \char`\"{}Kind of face rectangle detector. Select 0 (default) to select Open\+Pose body detector (most\char`\"{} \char`\"{} accurate one and fastest one if body is enabled), 1 to select Open\+CV face detector (not\char`\"{} \char`\"{} implemented for hands), 2 to indicate that it will be provided by the user, or 3 to\char`\"{} \char`\"{} also apply hand tracking (only for hand). Hand tracking might improve hand keypoint\char`\"{} \char`\"{} detection for webcam (if the frame rate is high enough, i.\+e., $>$7 F\+PS per G\+PU) and video.\char`\"{} \char`\"{} This is not person ID tracking, it simply looks for hands in positions at which hands were\char`\"{} \char`\"{} located in previous frames, but it does not guarantee the same person ID among frames.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a1da3324efb2a917d0714100dcdb13aba}{D\+E\+F\+I\+N\+E\+\_\+string}} (face\+\_\+net\+\_\+resolution, \char`\"{}368x368\char`\"{}, \char`\"{}\+Multiples of 16 and squared. Analogous to \`{}net\+\_\+resolution\`{} but applied to the face keypoint\char`\"{} \char`\"{} detector. 320x320 usually works fine while giving a substantial speed up when multiple\char`\"{} \char`\"{} faces on the image.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a064e35f07a2835d7b4b5d31f0f625865}{D\+E\+F\+I\+N\+E\+\_\+bool}} (hand, false, \char`\"{}Enables hand keypoint detection. It will share some parameters from the body pose, e.\+g.\char`\"{} \char`\"{} \`{}model\+\_\+folder\`{}. Analogously to \`{}-\/-\/face\`{}, it will also slow down the performance, increase\char`\"{} \char`\"{} the required G\+PU memory and its speed depends on the number of people.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ae7ff5e3adea9c5f572455ec30dd3fbff}{D\+E\+F\+I\+N\+E\+\_\+int32}} (hand\+\_\+detector, 0, \char`\"{}Kind of hand rectangle detector. Analogous to \`{}-\/-\/face\+\_\+detector\`{}.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a81e3bebeb0cec269b90097fb5856c96f}{D\+E\+F\+I\+N\+E\+\_\+string}} (hand\+\_\+net\+\_\+resolution, \char`\"{}368x368\char`\"{}, \char`\"{}\+Multiples of 16 and squared. Analogous to \`{}net\+\_\+resolution\`{} but applied to the hand keypoint\char`\"{} \char`\"{} detector.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ad696d262dc852c2f872470b90c25fafe}{D\+E\+F\+I\+N\+E\+\_\+int32}} (hand\+\_\+scale\+\_\+number, 1, \char`\"{}Analogous to \`{}scale\+\_\+number\`{} but applied to the hand keypoint detector. Our best results\char`\"{} \char`\"{} were found with \`{}hand\+\_\+scale\+\_\+number\`{} = 6 and \`{}hand\+\_\+scale\+\_\+range\`{} = 0.\+4.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a349e235659cc7b31dcf5db0d3d468fce}{D\+E\+F\+I\+N\+E\+\_\+double}} (hand\+\_\+scale\+\_\+range, 0.\+4, \char`\"{}Analogous purpose than \`{}scale\+\_\+gap\`{} but applied to the hand keypoint detector. Total range\char`\"{} \char`\"{} between smallest and biggest scale. The scales will be centered in ratio 1. E.\+g., if\char`\"{} \char`\"{} scale\+Range = 0.\+4 and scales\+Number = 2, then there will be 2 scales, 0.\+8 and 1.\+2.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_af12ef9f66fbf74e05c08b69caf54821e}{D\+E\+F\+I\+N\+E\+\_\+bool}} (3d, false, \char`\"{}\+Running Open\+Pose 3-\/\+D reconstruction demo\+: 1) Reading from a stereo camera system.\char`\"{} \char`\"{} 2) Performing 3-\/\+D reconstruction from the multiple views. 3) Displaying 3-\/\+D reconstruction\char`\"{} \char`\"{} results. Note that it will only display 1 person. If multiple people is present, it will\char`\"{} \char`\"{} fail.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_aef161395feb7536c1b1a30dd568a0016}{D\+E\+F\+I\+N\+E\+\_\+int32}} (3d\+\_\+min\+\_\+views, -\/1, \char`\"{}\+Minimum number of views required to reconstruct each keypoint. By default (-\/1), it will\char`\"{} \char`\"{} require all the cameras to see the keypoint in order to reconstruct it.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a13dcbbdf12e9e72eb29ccf25d7a7cd42}{D\+E\+F\+I\+N\+E\+\_\+int32}} (3d\+\_\+views, -\/1, \char`\"{}\+Complementary option for \`{}-\/-\/image\+\_\+dir\`{} or \`{}-\/-\/video\`{}. Open\+Pose will read as many images per\char`\"{} \char`\"{} iteration, allowing tasks such as stereo camera processing (\`{}-\/-\/3d\`{}). Note that\char`\"{} \char`\"{} \`{}-\/-\/camera\+\_\+parameter\+\_\+path\`{} must be set. Open\+Pose must find as many \`{}xml\`{} files in the\char`\"{} \char`\"{} parameter folder as this number indicates.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_aefe90773deaaa525b3b115d37b46e281}{D\+E\+F\+I\+N\+E\+\_\+bool}} (identification, false, \char`\"{}Experimental, not available yet. Whether to enable people identification across frames.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a38a9885095d976659bab4a4514a767e9}{D\+E\+F\+I\+N\+E\+\_\+int32}} (tracking, -\/1, \char`\"{}Experimental, not available yet. Whether to enable people tracking across frames. The\char`\"{} \char`\"{} value indicates the number of frames where tracking is run between each Open\+Pose keypoint\char`\"{} \char`\"{} detection. Select -\/1 (default) to disable it or 0 to run simultaneously Open\+Pose keypoint\char`\"{} \char`\"{} detector and tracking for potentially higher accurary than only Open\+Pose.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a2c213e3a0c01a36f52667d1707b49062}{D\+E\+F\+I\+N\+E\+\_\+int32}} (ik\+\_\+threads, 0, \char`\"{}Experimental, not available yet. Whether to enable inverse kinematics (IK) from 3-\/D\char`\"{} \char`\"{} keypoints to obtain 3-\/D joint angles. By default (0 threads), it is disabled. Increasing\char`\"{} \char`\"{} the number of threads will increase the speed but also the global system latency.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a9e0613f5d4a02b5b96b8db6851514ae8}{D\+E\+F\+I\+N\+E\+\_\+int32}} (part\+\_\+to\+\_\+show, 0, \char`\"{}Prediction channel to visualize (default\+: 0). 0 for all the body parts, 1-\/18 for each body\char`\"{} \char`\"{} part heat map, 19 for the background heat map, 20 for all the body part heat maps\char`\"{} \char`\"{} together, 21 for all the P\+A\+Fs, 22-\/40 for each body part pair P\+A\+F.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ad677c3dfae13a1ec9a3ee2fabe9e37a0}{D\+E\+F\+I\+N\+E\+\_\+bool}} (disable\+\_\+blending, false, \char`\"{}If enabled, it will render the results (keypoint skeletons or heatmaps) on a black\char`\"{} \char`\"{} background, instead of being rendered into the original image. Related\+: \`{}part\+\_\+to\+\_\+show\`{},\char`\"{} \char`\"{} \`{}alpha\+\_\+pose\`{}, and \`{}alpha\+\_\+pose\`{}.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ab3590dd1715b35b4fdd8724b0cfa99a4}{D\+E\+F\+I\+N\+E\+\_\+double}} (render\+\_\+threshold, 0.\+05, \char`\"{}Only estimated keypoints whose score confidences are higher than this threshold will be\char`\"{} \char`\"{} rendered. Generally, a high threshold ($>$ 0.\+5) will only render very clear body parts;\char`\"{} \char`\"{} while small thresholds ($\sim$0.\+1) will also output guessed and occluded keypoints, but also\char`\"{} \char`\"{} more false positives (i.\+e., wrong detections).\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a61f245285b5a4b77b1d923276fe6f995}{D\+E\+F\+I\+N\+E\+\_\+int32}} (render\+\_\+pose, -\/1, \char`\"{}Set to 0 for no rendering, 1 for C\+PU rendering (slightly faster), and 2 for G\+PU rendering\char`\"{} \char`\"{} (slower but greater functionality, e.\+g., \`{}alpha\+\_\+X\`{} flags). If -\/1, it will pick C\+PU if\char`\"{} \char`\"{} C\+P\+U\+\_\+\+O\+N\+LY is enabled, or G\+PU if C\+U\+DA is enabled. If rendering is enabled, it will render\char`\"{} \char`\"{} both \`{}output\+Data\`{} and \`{}cv\+Output\+Data\`{} with the original image and desired body part to be\char`\"{} \char`\"{} shown (i.\+e., keypoints, heat maps or P\+A\+Fs).\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a33562cf43d115a4d26f9958aa04c15ff}{D\+E\+F\+I\+N\+E\+\_\+double}} (alpha\+\_\+pose, 0.\+6, \char`\"{}Blending factor (range 0-\/1) for the body part rendering. 1 will show it completely, 0 will\char`\"{} \char`\"{} hide it. Only valid for G\+PU rendering.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_af9d388afd71b21640a573e6e8cad4c1a}{D\+E\+F\+I\+N\+E\+\_\+double}} (alpha\+\_\+heatmap, 0.\+7, \char`\"{}Blending factor (range 0-\/1) between heatmap and original frame. 1 will only show the\char`\"{} \char`\"{} heatmap, 0 will only show the frame. Only valid for G\+PU rendering.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a8dfdbe0ff3a68f46e440f379621f8f0a}{D\+E\+F\+I\+N\+E\+\_\+double}} (face\+\_\+render\+\_\+threshold, 0.\+4, \char`\"{}Analogous to \`{}render\+\_\+threshold\`{}, but applied to the face keypoints.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a796a3b14805d5e0b01b21b9bab844382}{D\+E\+F\+I\+N\+E\+\_\+int32}} (face\+\_\+render, -\/1, \char`\"{}Analogous to \`{}render\+\_\+pose\`{} but applied to the face. Extra option\+: -\/1 to use the same\char`\"{} \char`\"{} configuration that \`{}render\+\_\+pose\`{} is using.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a83309bdfd7daadfb89be65edf399ac9a}{D\+E\+F\+I\+N\+E\+\_\+double}} (face\+\_\+alpha\+\_\+pose, 0.\+6, \char`\"{}Analogous to \`{}alpha\+\_\+pose\`{} but applied to face.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a9b80aae5395b7d99c980198374bde9f2}{D\+E\+F\+I\+N\+E\+\_\+double}} (face\+\_\+alpha\+\_\+heatmap, 0.\+7, \char`\"{}Analogous to \`{}alpha\+\_\+heatmap\`{} but applied to face.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a0fe12ed9bee07b6120d595b3a1b85b15}{D\+E\+F\+I\+N\+E\+\_\+double}} (hand\+\_\+render\+\_\+threshold, 0.\+2, \char`\"{}Analogous to \`{}render\+\_\+threshold\`{}, but applied to the hand keypoints.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a46b9edf947872e29ea5cbd7a95bee719}{D\+E\+F\+I\+N\+E\+\_\+int32}} (hand\+\_\+render, -\/1, \char`\"{}Analogous to \`{}render\+\_\+pose\`{} but applied to the hand. Extra option\+: -\/1 to use the same\char`\"{} \char`\"{} configuration that \`{}render\+\_\+pose\`{} is using.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ac2cc95296b63a048521a2c41dce82b45}{D\+E\+F\+I\+N\+E\+\_\+double}} (hand\+\_\+alpha\+\_\+pose, 0.\+6, \char`\"{}Analogous to \`{}alpha\+\_\+pose\`{} but applied to hand.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_aea6dc9d3cb9ea69426d012d1f41fadf0}{D\+E\+F\+I\+N\+E\+\_\+double}} (hand\+\_\+alpha\+\_\+heatmap, 0.\+7, \char`\"{}Analogous to \`{}alpha\+\_\+heatmap\`{} but applied to hand.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_abd8fa8293ee3a05d4c5a2b6082460ab0}{D\+E\+F\+I\+N\+E\+\_\+bool}} (fullscreen, false, \char`\"{}Run in full-\/screen mode (press f during runtime to toggle).\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ab8ac5e6be119dc06f351810053ea8bcf}{D\+E\+F\+I\+N\+E\+\_\+bool}} (no\+\_\+gui\+\_\+verbose, false, \char`\"{}Do not write text on output images on G\+UI (e.\+g., number of current frame and people). It\char`\"{} \char`\"{} does not affect the pose rendering.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_ab598c69ed7164089afcdd4149c24a5eb}{D\+E\+F\+I\+N\+E\+\_\+int32}} (display, -\/1, \char`\"{}Display mode\+: -\/1 for automatic selection; 0 for no display (useful if there is no X server\char`\"{} \char`\"{} and/or to slightly speed up the processing if visual output is not required); 2 for 2-\/D\char`\"{} \char`\"{} display; 3 for 3-\/D display (if \`{}-\/-\/3d\`{} enabled); and 1 for both 2-\/\+D and 3-\/\+D display.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a87455dc2555757a087e99d8b52138835}{D\+E\+F\+I\+N\+E\+\_\+double}} (cli\+\_\+verbose, -\/1.f, \char`\"{}If -\/1, it will be disabled (default). If it is a positive integer number, it will print on\char`\"{} \char`\"{} the command line every \`{}verbose\`{} frames. If number in the range (0,1), it will print the\char`\"{} \char`\"{} progress every \`{}verbose\`{} times the total of frames.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a4a4d36b7f90a4d53a0fa29f86bbbb9aa}{D\+E\+F\+I\+N\+E\+\_\+string}} (write\+\_\+images, \char`\"{}\char`\"{}, \char`\"{}Directory to write rendered frames in \`{}write\+\_\+images\+\_\+format\`{} image format.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a91ba99b997951b09eab545a40c019f85}{D\+E\+F\+I\+N\+E\+\_\+string}} (write\+\_\+images\+\_\+format, \char`\"{}png\char`\"{}, \char`\"{}File extension and format for \`{}write\+\_\+images\`{}, e.\+g., png, jpg or bmp. Check the Open\+CV\char`\"{} \char`\"{} function cv\+::imwrite for all compatible extensions.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_abd5499ff7014225c02e6149bde93e3a3}{D\+E\+F\+I\+N\+E\+\_\+string}} (write\+\_\+video, \char`\"{}\char`\"{}, \char`\"{}Full file path to write rendered frames in motion J\+P\+EG video format. It might fail if the\char`\"{} \char`\"{} final path does not finish in \`{}.avi\`{}. It internally uses cv\+::\+Video\+Writer. Flag\char`\"{} \char`\"{} \`{}write\+\_\+video\+\_\+fps\`{} controls F\+P\+S. Alternatively, the video extension can be \`{}.mp4\`{},\char`\"{} \char`\"{} resulting in a file with a much smaller size and allowing \`{}-\/-\/write\+\_\+video\+\_\+with\+\_\+audio\`{}.\char`\"{} \char`\"{} However, that would require\+: 1) Ubuntu or Mac system, 2) F\+Fmpeg library installed\char`\"{} \char`\"{} (\`{}sudo apt-\/get install ffmpeg\`{}), 3) the creation temporarily of a folder with the same\char`\"{} \char`\"{} file path than the final video (without the extension) to storage the intermediate frames\char`\"{} \char`\"{} that will later be used to generate the final M\+P4 video.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_af4490397ad693c3d51835699a5dcddf3}{D\+E\+F\+I\+N\+E\+\_\+double}} (write\+\_\+video\+\_\+fps, -\/1., \char`\"{}Frame rate for the recorded video. By default, it will try to get the input frames producer\char`\"{} \char`\"{} frame rate (e.\+g., input video or webcam frame rate). If the input frames producer does not\char`\"{} \char`\"{} have a set F\+PS (e.\+g., image\+\_\+dir or webcam if Open\+CV not compiled with its support), set\char`\"{} \char`\"{} this value accordingly (e.\+g., to the frame rate displayed by the Open\+Pose G\+UI).\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_af50c82bf332c1a699f0615e7eb734c51}{D\+E\+F\+I\+N\+E\+\_\+bool}} (write\+\_\+video\+\_\+with\+\_\+audio, false, \char`\"{}If the input is video and the output is so too, it will save the video with audio. It\char`\"{} \char`\"{} requires the output video file path finishing in \`{}.mp4\`{} format (see \`{}write\+\_\+video\`{} for\char`\"{} \char`\"{} details).\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a85ed9ce7f145fad05a50344a6fdbee37}{D\+E\+F\+I\+N\+E\+\_\+string}} (write\+\_\+video\+\_\+3d, \char`\"{}\char`\"{}, \char`\"{}Analogous to \`{}-\/-\/write\+\_\+video\`{}, but applied to the 3\+D output.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a08c988c91c179c16944f9f703c24324b}{D\+E\+F\+I\+N\+E\+\_\+string}} (write\+\_\+video\+\_\+adam, \char`\"{}\char`\"{}, \char`\"{}Experimental, not available yet. Analogous to \`{}-\/-\/write\+\_\+video\`{}, but applied to Adam model.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a66ec3a67de281684d9ff60c7b80c9430}{D\+E\+F\+I\+N\+E\+\_\+string}} (write\+\_\+json, \char`\"{}\char`\"{}, \char`\"{}Directory to write Open\+Pose output in J\+S\+ON format. It includes body, hand, and face pose\char`\"{} \char`\"{} keypoints (2-\/D and 3-\/D), as well as pose candidates (if \`{}-\/-\/part\+\_\+candidates\`{} enabled).\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a4ebc35e01d48db77575a1cdd53ac0815}{D\+E\+F\+I\+N\+E\+\_\+string}} (write\+\_\+coco\+\_\+json, \char`\"{}\char`\"{}, \char`\"{}Full file path to write people pose data with J\+S\+ON C\+O\+CO validation format. If foot, face,\char`\"{} \char`\"{} hands, etc. J\+S\+ON is also desired (\`{}-\/-\/write\+\_\+coco\+\_\+json\+\_\+variants\`{}), they are saved with\char`\"{} \char`\"{} different file name suffix.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a80cdeb8d094d26ae5840a74ccff8613c}{D\+E\+F\+I\+N\+E\+\_\+int32}} (write\+\_\+coco\+\_\+json\+\_\+variants, 1, \char`\"{}Add 1 for body, add 2 for foot, 4 for face, and/or 8 for hands. Use 0 to use all the\char`\"{} \char`\"{} possible candidates. E.\+g., 7 would mean body+foot+face C\+O\+CO J\+S\+O\+N.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a17550ab833803b7862beaab957642af6}{D\+E\+F\+I\+N\+E\+\_\+int32}} (write\+\_\+coco\+\_\+json\+\_\+variant, 0, \char`\"{}Currently, this option is experimental and only makes effect on car J\+S\+ON generation. It\char`\"{} \char`\"{} selects the C\+O\+CO variant for coco\+Json\+Saver.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_af1f0085881667603ed4e0404d7140bdc}{D\+E\+F\+I\+N\+E\+\_\+string}} (write\+\_\+heatmaps, \char`\"{}\char`\"{}, \char`\"{}Directory to write body pose heatmaps in P\+NG format. At least 1 \`{}add\+\_\+heatmaps\+\_\+X\`{} flag\char`\"{} \char`\"{} must be enabled.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a2f9e6e0051bed47cae59d5450055a474}{D\+E\+F\+I\+N\+E\+\_\+string}} (write\+\_\+heatmaps\+\_\+format, \char`\"{}png\char`\"{}, \char`\"{}File extension and format for \`{}write\+\_\+heatmaps\`{}, analogous to \`{}write\+\_\+images\+\_\+format\`{}.\char`\"{} \char`\"{} For lossless compression, recommended \`{}png\`{} for integer \`{}heatmaps\+\_\+scale\`{} and \`{}float\`{} for\char`\"{} \char`\"{} floating values.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a8763644943c3413220cfe6bf8f385d44}{D\+E\+F\+I\+N\+E\+\_\+string}} (write\+\_\+keypoint, \char`\"{}\char`\"{}, \char`\"{}(Deprecated, use \`{}write\+\_\+json\`{}) Directory to write the people pose keypoint data. Set format\char`\"{} \char`\"{} with \`{}write\+\_\+keypoint\+\_\+format\`{}.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a488d04acd61a19fe00cd2e56844dd8c5}{D\+E\+F\+I\+N\+E\+\_\+string}} (write\+\_\+keypoint\+\_\+format, \char`\"{}yml\char`\"{}, \char`\"{}(Deprecated, use \`{}write\+\_\+json\`{}) File extension and format for \`{}write\+\_\+keypoint\`{}\+: json, xml,\char`\"{} \char`\"{} yaml \& yml. Json not available for Open\+CV $<$ 3.\+0, use \`{}write\+\_\+json\`{} instead.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a1f0ce14d63633af19e375d6fbcccc463}{D\+E\+F\+I\+N\+E\+\_\+string}} (write\+\_\+bvh, \char`\"{}\char`\"{}, \char`\"{}Experimental, not available yet. E.\+g., \`{}$\sim$/Desktop/mocap\+Result.\+bvh\`{}.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_abd20da73260490fba6e09a17c235fc4a}{D\+E\+F\+I\+N\+E\+\_\+string}} (udp\+\_\+host, \char`\"{}\char`\"{}, \char`\"{}Experimental, not available yet. IP for U\+DP communication. E.\+g., \`{}192.\+168.\+0.\+1\`{}.\char`\"{})
+\item 
+\mbox{\hyperlink{flags_8hpp_a7ffa026d9b667e5551909aba895f0dfb}{D\+E\+F\+I\+N\+E\+\_\+string}} (udp\+\_\+port, \char`\"{}8051\char`\"{}, \char`\"{}Experimental, not available yet. Port number for U\+DP communication.\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{함수 문서화}
+\mbox{\Hypertarget{flags_8hpp_af12ef9f66fbf74e05c08b69caf54821e}\label{flags_8hpp_af12ef9f66fbf74e05c08b69caf54821e}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{3d}]{,  }\item[{false}]{,  }\item[{\char`\"{}Running Open\+Pose 3-\/D reconstruction demo\+:}]{1 }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{flags_8hpp_ad677c3dfae13a1ec9a3ee2fabe9e37a0}\label{flags_8hpp_ad677c3dfae13a1ec9a3ee2fabe9e37a0}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{disable\+\_\+blending}]{,  }\item[{false}]{,  }\item[{\char`\"{}If}]{enabled,  }\item[{it will render the results(keypoint skeletons or heatmaps) on a black\char`\"{} \char`\"{}}]{background,  }\item[{instead of being rendered into the original image. Related\+:\`{}part\+\_\+to\+\_\+show\`{}}]{,  }\item[{\char`\"{} \char`\"{} \`{}alpha\+\_\+pose\`{}}]{,  }\item[{and \`{}alpha\+\_\+pose\`{}.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_af4ef631dab577c13f59e10b626c580f6}\label{flags_8hpp_af4ef631dab577c13f59e10b626c580f6}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [3/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{disable\+\_\+multi\+\_\+thread}]{,  }\item[{false}]{,  }\item[{\char`\"{}It would slightly reduce the frame rate in order to highly reduce the lag. Mainly useful\char`\"{} \char`\"{} for}]{1 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a9142adc08a95c16a285c3abfd11ed94c}\label{flags_8hpp_a9142adc08a95c16a285c3abfd11ed94c}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [4/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{face}]{,  }\item[{false}]{,  }\item[{\char`\"{}Enables face keypoint detection. It will share some parameters from the body}]{pose,  }\item[{e.\+g.\char`\"{} \char`\"{} \`{}model\+\_\+folder\`{}. Note that this will considerable slow down the performance and increse\char`\"{} \char`\"{} the required G\+PU memory. In}]{addition,  }\item[{the greater number of people on the}]{image,  }\item[{the\char`\"{} \char`\"{} slower Open\+Pose will be.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a245491f4f0bb36e5e8655877402f50eb}\label{flags_8hpp_a245491f4f0bb36e5e8655877402f50eb}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [5/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{flir\+\_\+camera}]{,  }\item[{false}]{,  }\item[{\char`\"{}Whether to use F\+L\+IR (Point-\/Grey) stereo camera.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ae9ea69ae8e64ee99bb4516199f847980}\label{flags_8hpp_ae9ea69ae8e64ee99bb4516199f847980}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [6/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{frame\+\_\+flip}]{,  }\item[{false}]{,  }\item[{\char`\"{}Flip/mirror each frame (e.\+g., for real time webcam demonstrations).\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_abada704ec59515bb12563262a3f21aeb}\label{flags_8hpp_abada704ec59515bb12563262a3f21aeb}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [7/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{frame\+\_\+undistort}]{,  }\item[{false}]{,  }\item[{\char`\"{}If false }]{default,  }\item[{it will not undistort the}]{image,  }\item[{if}]{true,  }\item[{it will undistortionate them\char`\"{} \char`\"{} based on the camera parameters found in \`{}camera\+\_\+parameter\+\_\+path\`{}\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ac0db13ec99b09bf9bd38582da33cff1d}\label{flags_8hpp_ac0db13ec99b09bf9bd38582da33cff1d}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [8/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{frames\+\_\+repeat}]{,  }\item[{false}]{,  }\item[{\char`\"{}Repeat frames when finished.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_abd8fa8293ee3a05d4c5a2b6082460ab0}\label{flags_8hpp_abd8fa8293ee3a05d4c5a2b6082460ab0}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [9/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{fullscreen}]{,  }\item[{false}]{,  }\item[{\char`\"{}Run in full-\/screen mode (press f during runtime to toggle).\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a064e35f07a2835d7b4b5d31f0f625865}\label{flags_8hpp_a064e35f07a2835d7b4b5d31f0f625865}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [10/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{hand}]{,  }\item[{false}]{,  }\item[{\char`\"{}Enables hand keypoint detection. It will share some parameters from the body}]{pose,  }\item[{e.\+g.\char`\"{} \char`\"{} \`{}model\+\_\+folder\`{}. Analogously to \`{}-\/-\/face\`{}}]{,  }\item[{it will also slow down the}]{performance,  }\item[{increase\char`\"{} \char`\"{} the required G\+PU memory and its speed depends on the number of people.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a2c805a3cd1797a9f67783ed5c9b7c5b1}\label{flags_8hpp_a2c805a3cd1797a9f67783ed5c9b7c5b1}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [11/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{heatmaps\+\_\+add\+\_\+bkg}]{,  }\item[{false}]{,  }\item[{\char`\"{}Same functionality as \`{}add\+\_\+heatmaps\+\_\+parts\`{}}]{,  }\item[{but adding the heatmap corresponding to\char`\"{} \char`\"{} background.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ad9114bc8e1fc8f306e5296eaae5d542f}\label{flags_8hpp_ad9114bc8e1fc8f306e5296eaae5d542f}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [12/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{heatmaps\+\_\+add\+\_\+\+P\+A\+Fs}]{,  }\item[{false}]{,  }\item[{\char`\"{}Same functionality as \`{}add\+\_\+heatmaps\+\_\+parts\`{}}]{,  }\item[{but adding the P\+A\+Fs.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a4670eb3cdedb3f3bac3886e2c21a7750}\label{flags_8hpp_a4670eb3cdedb3f3bac3886e2c21a7750}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [13/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{heatmaps\+\_\+add\+\_\+parts}]{,  }\item[{false}]{,  }\item[{\char`\"{}If}]{true,  }\item[{it will fill \mbox{\hyperlink{structop_1_1_datum_a5429e97e0ab9b0e2209a3947af668381}{op\+::\+Datum\+::pose\+Heat\+Maps}} array with the body part}]{heatmaps,  }\item[{and\char`\"{} \char`\"{} analogously face \&hand heatmaps to \mbox{\hyperlink{structop_1_1_datum_ae0c0f33a6b75c7f47e11112dd33f23c1}{op\+::\+Datum\+::face\+Heat\+Maps}} \&op\+::\+Datum\+::hand\+Heat\+Maps.\char`\"{} \char`\"{} If more than one \`{}add\+\_\+heatmaps\+\_\+X\`{} flag is}]{enabled,  }\item[{it will place then in sequential\char`\"{} \char`\"{} memory order\+:body parts+bkg+P\+A\+Fs. It will follow the order on\char`\"{} \char`\"{} P\+O\+S\+E\+\_\+\+B\+O\+D\+Y\+\_\+\+P\+A\+R\+T\+\_\+\+M\+A\+P\+P\+I\+NG in \`{}src/openpose/pose/pose\+Parameters.\+cpp\`{}. Program speed will\char`\"{} \char`\"{} considerably decrease. Not required for}]{Open\+Pose,  }\item[{enable it only if you intend to\char`\"{} \char`\"{} explicitly use this information later.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_aefe90773deaaa525b3b115d37b46e281}\label{flags_8hpp_aefe90773deaaa525b3b115d37b46e281}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [14/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{identification}]{,  }\item[{false}]{,  }\item[{\char`\"{}}]{Experimental,  }\item[{not available yet. Whether to enable people identification across frames.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a4d830b4bcbd7998d8c6de665c0531ce9}\label{flags_8hpp_a4d830b4bcbd7998d8c6de665c0531ce9}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [15/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{maximize\+\_\+positives}]{,  }\item[{false}]{,  }\item[{\char`\"{}It reduces the thresholds to accept a person candidate. It highly increases both false and\char`\"{} \char`\"{} true positives. I.}]{e.,  }\item[{it maximizes average recall but could harm average precision.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ab8ac5e6be119dc06f351810053ea8bcf}\label{flags_8hpp_ab8ac5e6be119dc06f351810053ea8bcf}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [16/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{no\+\_\+gui\+\_\+verbose}]{,  }\item[{false}]{,  }\item[{\char`\"{}Do not write text on output images on G\+UI (e.\+g., number of current frame and people). It\char`\"{} \char`\"{} does not affect the pose rendering.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a9973307b6bd2af114083ba1badf4c297}\label{flags_8hpp_a9973307b6bd2af114083ba1badf4c297}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [17/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{part\+\_\+candidates}]{,  }\item[{false}]{,  }\item[{\char`\"{}Also enable \`{}write\+\_\+json\`{} in order to save this information. If}]{true,  }\item[{it will fill the\char`\"{} \char`\"{} \mbox{\hyperlink{structop_1_1_datum_a55dd5354e09696ed6896923755f1c85b}{op\+::\+Datum\+::pose\+Candidates}} array with the body part candidates. Candidates refer to all\char`\"{} \char`\"{} the detected body}]{parts,  }\item[{before being assembled into people. Note that the number of\char`\"{} \char`\"{} candidates is equal or higher than the number of final body parts(i.\+e., after being\char`\"{} \char`\"{} assembled into people). The empty body parts are filled with 0s. Program speed will\char`\"{} \char`\"{} slightly decrease. Not required for}]{Open\+Pose,  }\item[{enable it only if you intend to explicitly\char`\"{} \char`\"{} use this information.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_adf7a6ca551fbd934deb6784bfe37f897}\label{flags_8hpp_adf7a6ca551fbd934deb6784bfe37f897}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [18/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{process\+\_\+real\+\_\+time}]{,  }\item[{false}]{,  }\item[{\char`\"{}Enable to keep the original source frame rate (e.\+g., for video). If the processing time is\char`\"{} \char`\"{} too long}]{,  }\item[{it will skip frames. If it is too}]{fast,  }\item[{it will slow it down.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_af50c82bf332c1a699f0615e7eb734c51}\label{flags_8hpp_af50c82bf332c1a699f0615e7eb734c51}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_bool@{DEFINE\_bool}}
+\index{DEFINE\_bool@{DEFINE\_bool}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_bool()}{DEFINE\_bool()}\hspace{0.1cm}{\footnotesize\ttfamily [19/19]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+bool (\begin{DoxyParamCaption}\item[{write\+\_\+video\+\_\+with\+\_\+audio}]{,  }\item[{false}]{,  }\item[{\char`\"{}If the input is video and the output is so}]{too,  }\item[{it will save the video with audio. It\char`\"{} \char`\"{} requires the output video file path finishing in \`{}.mp4\`{} format(see \`{}write\+\_\+video\`{} for\char`\"{} \char`\"{} details).\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_af9d388afd71b21640a573e6e8cad4c1a}\label{flags_8hpp_af9d388afd71b21640a573e6e8cad4c1a}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [1/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{alpha\+\_\+heatmap}]{,  }\item[{0.}]{7,  }\item[{\char`\"{}Blending factor (range 0-\/1) between heatmap and original frame. 1 will only show the\char`\"{} \char`\"{}}]{heatmap,  }\item[{0 will only show the frame. Only valid for G\+PU rendering.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a33562cf43d115a4d26f9958aa04c15ff}\label{flags_8hpp_a33562cf43d115a4d26f9958aa04c15ff}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [2/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{alpha\+\_\+pose}]{,  }\item[{0.}]{6,  }\item[{\char`\"{}Blending factor (range 0-\/1) for the body part rendering. 1 will show it}]{completely,  }\item[{0 will\char`\"{} \char`\"{} hide it. Only valid for G\+PU rendering.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a87455dc2555757a087e99d8b52138835}\label{flags_8hpp_a87455dc2555757a087e99d8b52138835}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [3/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{cli\+\_\+verbose}]{,  }\item[{-\/1.}]{f,  }\item[{\char`\"{}If -\/}]{1,  }\item[{it will be disabled(default). If it is a positive integer}]{number,  }\item[{it will print on\char`\"{} \char`\"{} the command line every \`{}verbose\`{} frames. If number in the }]{range0, 1,  }\item[{it will print the\char`\"{} \char`\"{} progress every \`{}verbose\`{} times the total of frames.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a9b80aae5395b7d99c980198374bde9f2}\label{flags_8hpp_a9b80aae5395b7d99c980198374bde9f2}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [4/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{face\+\_\+alpha\+\_\+heatmap}]{,  }\item[{0.}]{7,  }\item[{\char`\"{}Analogous to \`{}alpha\+\_\+heatmap\`{} but applied to face.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a83309bdfd7daadfb89be65edf399ac9a}\label{flags_8hpp_a83309bdfd7daadfb89be65edf399ac9a}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [5/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{face\+\_\+alpha\+\_\+pose}]{,  }\item[{0.}]{6,  }\item[{\char`\"{}Analogous to \`{}alpha\+\_\+pose\`{} but applied to face.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a8dfdbe0ff3a68f46e440f379621f8f0a}\label{flags_8hpp_a8dfdbe0ff3a68f46e440f379621f8f0a}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [6/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{face\+\_\+render\+\_\+threshold}]{,  }\item[{0.}]{4,  }\item[{\char`\"{}Analogous to \`{}render\+\_\+threshold\`{}}]{,  }\item[{but applied to the face keypoints.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ace91dac10649fcbe836a71459b2f2584}\label{flags_8hpp_ace91dac10649fcbe836a71459b2f2584}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [7/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{fps\+\_\+max}]{,  }\item[{-\/}]{1.,  }\item[{\char`\"{}Maximum processing frame rate. By default }]{-\/1,  }\item[{Open\+Pose will process frames as fast as\char`\"{} \char`\"{} possible. Example usage\+:\+If Open\+Pose is displaying images too}]{quickly,  }\item[{this can reduce\char`\"{} \char`\"{} the speed so the user can analyze better each frame from the G\+U\+I.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_aea6dc9d3cb9ea69426d012d1f41fadf0}\label{flags_8hpp_aea6dc9d3cb9ea69426d012d1f41fadf0}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [8/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{hand\+\_\+alpha\+\_\+heatmap}]{,  }\item[{0.}]{7,  }\item[{\char`\"{}Analogous to \`{}alpha\+\_\+heatmap\`{} but applied to hand.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ac2cc95296b63a048521a2c41dce82b45}\label{flags_8hpp_ac2cc95296b63a048521a2c41dce82b45}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [9/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{hand\+\_\+alpha\+\_\+pose}]{,  }\item[{0.}]{6,  }\item[{\char`\"{}Analogous to \`{}alpha\+\_\+pose\`{} but applied to hand.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a0fe12ed9bee07b6120d595b3a1b85b15}\label{flags_8hpp_a0fe12ed9bee07b6120d595b3a1b85b15}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [10/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{hand\+\_\+render\+\_\+threshold}]{,  }\item[{0.}]{2,  }\item[{\char`\"{}Analogous to \`{}render\+\_\+threshold\`{}}]{,  }\item[{but applied to the hand keypoints.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a349e235659cc7b31dcf5db0d3d468fce}\label{flags_8hpp_a349e235659cc7b31dcf5db0d3d468fce}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [11/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{hand\+\_\+scale\+\_\+range}]{,  }\item[{0.}]{4,  }\item[{\char`\"{}Analogous purpose than \`{}scale\+\_\+gap\`{} but applied to the hand keypoint detector. Total range\char`\"{} \char`\"{} between smallest and biggest scale. The scales will be centered in ratio 1. E.}]{g.,  }\item[{if\char`\"{} \char`\"{}}]{scale\+Range = {\ttfamily 0.4~and~scalesNumber~=~2},  }\item[{then there will be 2}]{scales,  }\item[{0.\+8 and 1.\+2.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ab3590dd1715b35b4fdd8724b0cfa99a4}\label{flags_8hpp_ab3590dd1715b35b4fdd8724b0cfa99a4}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [12/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{render\+\_\+threshold}]{,  }\item[{0.}]{05,  }\item[{\char`\"{}Only estimated keypoints whose score confidences are higher than this threshold will be\char`\"{} \char`\"{} rendered.}]{Generally,  }\item[{a high threshold($>$ 0.\+5) will only render very clear body parts;\char`\"{} \char`\"{} while small thresholds($\sim$0.\+1) will also output guessed and occluded}]{keypoints,  }\item[{but also\char`\"{} \char`\"{} more false positives(i.\+e., wrong detections).\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_abecb5274ddd75ca51fb40064478b1ed3}\label{flags_8hpp_abecb5274ddd75ca51fb40064478b1ed3}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [13/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{scale\+\_\+gap}]{,  }\item[{0.}]{25,  }\item[{\char`\"{}Scale gap between scales. No effect unless}]{scale\+\_\+number,  }\item[{1. Initial scale is always 1.\char`\"{} \char`\"{} If you want to change the initial}]{scale,  }\item[{you actually want to multiply the\char`\"{} \char`\"{} \`{}net\+\_\+resolution\`{} by your desired initial scale.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_af437a0d8f293cd02b992a94b268571a4}\label{flags_8hpp_af437a0d8f293cd02b992a94b268571a4}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [14/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{upsampling\+\_\+ratio}]{,  }\item[{0.}]{,  }\item[{\char`\"{}Upsampling ratio between the \`{}net\+\_\+resolution\`{} and the output net results. A value less\char`\"{} \char`\"{} or equal than 0 (default) will use the network default value (recommended).\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_af4490397ad693c3d51835699a5dcddf3}\label{flags_8hpp_af4490397ad693c3d51835699a5dcddf3}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_double@{DEFINE\_double}}
+\index{DEFINE\_double@{DEFINE\_double}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_double()}{DEFINE\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [15/15]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+double (\begin{DoxyParamCaption}\item[{write\+\_\+video\+\_\+fps}]{,  }\item[{-\/}]{1.,  }\item[{\char`\"{}Frame rate for the recorded video. By}]{default,  }\item[{it will try to get the input frames producer\char`\"{} \char`\"{} frame }]{ratee.\+g., input video or webcam frame rate). If the input frames producer does not\char`\"{} \char`\"{} have a set F\+P\+S(e.\+g., image\+\_\+dir or webcam if Open\+C\+V not compiled with its support,  }\item[{set\char`\"{} \char`\"{} this value accordingly(e.\+g., to the frame rate displayed by the Open\+Pose G\+UI).\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_aef161395feb7536c1b1a30dd568a0016}\label{flags_8hpp_aef161395feb7536c1b1a30dd568a0016}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [1/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{3d\+\_\+min\+\_\+views}]{,  }\item[{-\/}]{1,  }\item[{\char`\"{}Minimum number of views required to reconstruct each keypoint. By default }]{-\/1,  }\item[{it will\char`\"{} \char`\"{} require all the cameras to see the keypoint in order to reconstruct it.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a13dcbbdf12e9e72eb29ccf25d7a7cd42}\label{flags_8hpp_a13dcbbdf12e9e72eb29ccf25d7a7cd42}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [2/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{3d\+\_\+views}]{,  }\item[{-\/}]{1,  }\item[{\char`\"{}Complementary option for \`{}-\/-\/image\+\_\+dir\`{} or \`{}-\/-\/video\`{}. Open\+Pose will read as many images per\char`\"{} \char`\"{}}]{iteration,  }\item[{allowing tasks such as stereo camera processing(\`{}-\/-\/3d\`{}). Note that\char`\"{} \char`\"{} \`{}-\/-\/camera\+\_\+parameter\+\_\+path\`{} must be set. Open\+Pose must find as many \`{}xml\`{} files in the\char`\"{} \char`\"{} parameter folder as this number indicates.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_aa2bc11c618a37698d88f7ae100e1729f}\label{flags_8hpp_aa2bc11c618a37698d88f7ae100e1729f}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [3/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{body}]{,  }\item[{1}]{,  }\item[{\char`\"{}Select 0 to disable body keypoint detection }]{e.\+g., for faster but less accurate face\char`\"{} \char`\"{} keypoint detection, custom hand detector, etc.,  }\item[{1(default) for body keypoint\char`\"{} \char`\"{}}]{estimation,  }\item[{and 2 to disable its internal body pose estimation network but still\char`\"{} \char`\"{} still run the greedy association parsing algorithm\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a807c2eb873d9e727f14d6c7ee6e02e11}\label{flags_8hpp_a807c2eb873d9e727f14d6c7ee6e02e11}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [4/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{camera}]{,  }\item[{-\/}]{1,  }\item[{\char`\"{}The camera index for cv\+::\+Video\+Capture. Integer in the range . Select a negative\char`\"{} \char`\"{} number }]{(by default)\mbox{[}0, 9\mbox{]},  }\item[{to auto-\/detect and open the first available camera.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ab598c69ed7164089afcdd4149c24a5eb}\label{flags_8hpp_ab598c69ed7164089afcdd4149c24a5eb}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [5/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{display}]{,  }\item[{-\/}]{1,  }\item[{\char`\"{}Display mode\+: -\/1 for automatic selection; 0 for no display (useful if there is no X server\char`\"{} \char`\"{} and/or to slightly speed up the processing if visual output is not required); 2 for 2-\/D\char`\"{} \char`\"{} display; 3 for 3-\/D display (if \`{}-\/-\/3d\`{} enabled); and 1 for both 2-\/\+D and 3-\/\+D display.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a71a0fc42dd98d1739571e4f7fed4873c}\label{flags_8hpp_a71a0fc42dd98d1739571e4f7fed4873c}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [6/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{face\+\_\+detector}]{,  }\item[{0}]{,  }\item[{\char`\"{}Kind of face rectangle detector. Select 0 }]{default) to select Open\+Pose body detector (most\char`\"{} \char`\"{} accurate one and fastest one if body is enabled,  }\item[{1 to select Open\+CV face }]{detectornot\char`\"{} \char`\"{} implemented for hands,  }\item[{2 to indicate that it will be provided by the}]{user,  }\item[{or 3 to\char`\"{} \char`\"{} also apply hand tracking(only for hand). Hand tracking might improve hand keypoint\char`\"{} \char`\"{} detection for webcam(if the frame rate is high enough, i.\+e., $>$7 F\+PS per G\+PU) and video.\char`\"{} \char`\"{} This is not person ID}]{tracking,  }\item[{it simply looks for hands in positions at which hands were\char`\"{} \char`\"{} located in previous}]{frames,  }\item[{but it does not guarantee the same person ID among frames.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a796a3b14805d5e0b01b21b9bab844382}\label{flags_8hpp_a796a3b14805d5e0b01b21b9bab844382}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [7/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{face\+\_\+render}]{,  }\item[{-\/}]{1,  }\item[{\char`\"{}Analogous to \`{}render\+\_\+pose\`{} but applied to the face. Extra option\+: -\/1 to use the same\char`\"{} \char`\"{} configuration that \`{}render\+\_\+pose\`{} is using.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a513eca9e40da3a149e02c0c1fb6d10d3}\label{flags_8hpp_a513eca9e40da3a149e02c0c1fb6d10d3}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [8/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{flir\+\_\+camera\+\_\+index}]{,  }\item[{-\/}]{1,  }\item[{\char`\"{}Select -\/1 (default) to run on all detected flir cameras at once.}]{Otherwise,  }\item[{select the flir\char`\"{} \char`\"{} camera index to}]{run,  }\item[{where 0 corresponds to the detected flir camera with the lowest\char`\"{} \char`\"{} serial}]{number,  }\item[{and \`{}n\`{} to the \`{}n\`{}-\/th lowest serial number camera.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_adbd3e76b28ecc7415ccb782c3419a9de}\label{flags_8hpp_adbd3e76b28ecc7415ccb782c3419a9de}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [9/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{frame\+\_\+rotate}]{,  }\item[{0}]{,  }\item[{\char`\"{}Rotate each}]{frame,  }\item[{4 possible values\+:0}]{,  }\item[{90}]{,  }\item[{180}]{,  }\item[{270.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ae7ff5e3adea9c5f572455ec30dd3fbff}\label{flags_8hpp_ae7ff5e3adea9c5f572455ec30dd3fbff}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [10/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{hand\+\_\+detector}]{,  }\item[{0}]{,  }\item[{\char`\"{}Kind of hand rectangle detector. Analogous to \`{}-\/-\/face\+\_\+detector\`{}.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a46b9edf947872e29ea5cbd7a95bee719}\label{flags_8hpp_a46b9edf947872e29ea5cbd7a95bee719}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [11/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{hand\+\_\+render}]{,  }\item[{-\/}]{1,  }\item[{\char`\"{}Analogous to \`{}render\+\_\+pose\`{} but applied to the hand. Extra option\+: -\/1 to use the same\char`\"{} \char`\"{} configuration that \`{}render\+\_\+pose\`{} is using.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ad696d262dc852c2f872470b90c25fafe}\label{flags_8hpp_ad696d262dc852c2f872470b90c25fafe}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [12/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{hand\+\_\+scale\+\_\+number}]{,  }\item[{1}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_aa3c62563ce9d99c25d4a2977f253c6c7}\label{flags_8hpp_aa3c62563ce9d99c25d4a2977f253c6c7}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [13/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{heatmaps\+\_\+scale}]{,  }\item[{2}]{,  }\item[{\char`\"{}Set 0 to scale \mbox{\hyperlink{structop_1_1_datum_a5429e97e0ab9b0e2209a3947af668381}{op\+::\+Datum\+::pose\+Heat\+Maps}} in the}]{range\mbox{[}-\/1, 1\mbox{]},  }\item[{1 for ;2 for integer\char`\"{} \char`\"{} rounded ;and 3 for no scaling.\char`\"{}}]{\mbox{[}0, 1\mbox{]}\mbox{[}0, 255\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a2c213e3a0c01a36f52667d1707b49062}\label{flags_8hpp_a2c213e3a0c01a36f52667d1707b49062}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [14/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{ik\+\_\+threads}]{,  }\item[{0}]{,  }\item[{\char`\"{}}]{Experimental,  }\item[{not available yet. Whether to enable inverse }]{kinematicsI\+K) from 3-\/\+D\char`\"{} \char`\"{} keypoints to obtain 3-\/\+D joint angles. By default(0 threads,  }\item[{it is disabled. Increasing\char`\"{} \char`\"{} the number of threads will increase the speed but also the global system latency.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a547efed657b6e562d8d5f071124fcf17}\label{flags_8hpp_a547efed657b6e562d8d5f071124fcf17}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [15/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{keypoint\+\_\+scale}]{,  }\item[{0}]{,  }\item[{\char`\"{}Scaling of the (x,y) coordinates of the final pose data}]{array,  }\item[{i.}]{e.,  }\item[{the scale of the(x, y)\char`\"{} \char`\"{} coordinates that will be saved with the \`{}write\+\_\+json\`{} \&\`{}write\+\_\+keypoint\`{} flags.\char`\"{} \char`\"{} Select \`{}0\`{} to scale it to the original source resolution;\`{}1\`{}to scale it to the net output\char`\"{} \char`\"{} size(set with \`{}net\+\_\+resolution\`{});\`{}2\`{} to scale it to the final output size(set with\char`\"{} \char`\"{} \`{}resolution\`{});\`{}3\`{} to scale it in the}]{range\mbox{[}0, 1\mbox{]},  }\item[{where(0, 0) would be the top-\/left\char`\"{} \char`\"{} corner of the}]{image,  }\item[{and(1, 1) the bottom-\/right one;and 4 for}]{range\mbox{[}-\/1, 1\mbox{]},  }\item[{where\char`\"{} \char`\"{}(-\/1,-\/1) would be the top-\/left corner of the}]{image,  }\item[{and(1, 1) the bottom-\/right one. Non\char`\"{} \char`\"{} related with \`{}scale\+\_\+number\`{} and \`{}scale\+\_\+gap\`{}.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ae41e3e12fbfc16ffdb48516d3f0c96be}\label{flags_8hpp_ae41e3e12fbfc16ffdb48516d3f0c96be}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [16/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{logging\+\_\+level}]{,  }\item[{3}]{,  }\item[{\char`\"{}The logging level. Integer in the range . 0 will output any log()}]{message\mbox{[}0, 255\mbox{]},  }\item[{while\char`\"{} \char`\"{} 255 will not output any. Current Open\+Pose library messages are in the range 0-\/4\+:1 for\char`\"{} \char`\"{} low priority messages and 4 for important ones.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a8bd040787ac075ae4cf483be01fe2c5f}\label{flags_8hpp_a8bd040787ac075ae4cf483be01fe2c5f}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [17/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{num\+\_\+gpu}]{,  }\item[{-\/}]{1,  }\item[{\char`\"{}The number of G\+PU devices to use. If}]{negative,  }\item[{it will use all the available G\+P\+Us in your\char`\"{} \char`\"{} machine.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a844330d264f5648ae7d99b76f72f391a}\label{flags_8hpp_a844330d264f5648ae7d99b76f72f391a}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [18/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{num\+\_\+gpu\+\_\+start}]{,  }\item[{0}]{,  }\item[{\char`\"{}G\+PU device start number.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ac5e8f82d85a3eb0ee72a64569395497c}\label{flags_8hpp_ac5e8f82d85a3eb0ee72a64569395497c}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [19/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{number\+\_\+people\+\_\+max}]{,  }\item[{-\/}]{1,  }\item[{\char`\"{}This parameter will limit the maximum number of people}]{detected,  }\item[{by keeping the people with\char`\"{} \char`\"{} top scores. The score is based in person area over the}]{image,  }\item[{body part}]{score,  }\item[{as well as\char`\"{} \char`\"{} joint score(between each pair of connected body parts). Useful if you know the exact\char`\"{} \char`\"{} number of people in the}]{scene }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a9e0613f5d4a02b5b96b8db6851514ae8}\label{flags_8hpp_a9e0613f5d4a02b5b96b8db6851514ae8}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [20/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{part\+\_\+to\+\_\+show}]{,  }\item[{0}]{,  }\item[{\char`\"{}Prediction channel to visualize (default\+: 0). 0 for all the body}]{parts,  }\item[{1-\/18 for each body\char`\"{} \char`\"{} part heat}]{map,  }\item[{19 for the background heat}]{map,  }\item[{20 for all the body part heat maps\char`\"{} \char`\"{}}]{together,  }\item[{21 for all the}]{P\+A\+Fs,  }\item[{22-\/40 for each body part pair P\+A\+F.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a2d8a3ae1f10dd657619e2a5d2dcb4b61}\label{flags_8hpp_a2d8a3ae1f10dd657619e2a5d2dcb4b61}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [21/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{profile\+\_\+speed}]{,  }\item[{1000}]{,  }\item[{\char`\"{}If P\+R\+O\+F\+I\+L\+E\+R\+\_\+\+E\+N\+A\+B\+L\+ED was set in C\+Make or Makefile.\+config}]{files,  }\item[{Open\+Pose will show some\char`\"{} \char`\"{} runtime statistics at this frame number.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a61f245285b5a4b77b1d923276fe6f995}\label{flags_8hpp_a61f245285b5a4b77b1d923276fe6f995}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [22/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{render\+\_\+pose}]{,  }\item[{-\/}]{1,  }\item[{\char`\"{}Set to 0 for no}]{rendering,  }\item[{1 for C\+PU }]{renderingslightly faster,  }\item[{and 2 for G\+PU rendering\char`\"{} \char`\"{}(slower but greater functionality, e.\+g., \`{}alpha\+\_\+X\`{} flags). If -\/}]{1,  }\item[{it will pick C\+PU if\char`\"{} \char`\"{} C\+P\+U\+\_\+\+O\+N\+LY is}]{enabled,  }\item[{or G\+PU if C\+U\+DA is enabled. If rendering is}]{enabled,  }\item[{it will render\char`\"{} \char`\"{} both \`{}output\+Data\`{} and \`{}cv\+Output\+Data\`{} with the original image and desired body part to be\char`\"{} \char`\"{} shown(i.\+e., keypoints, heat maps or P\+A\+Fs).\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a6561fc0841b80f5c19a1c4bc549175e9}\label{flags_8hpp_a6561fc0841b80f5c19a1c4bc549175e9}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [23/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{scale\+\_\+number}]{,  }\item[{1}]{,  }\item[{\char`\"{}Number of scales to average.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a38a9885095d976659bab4a4514a767e9}\label{flags_8hpp_a38a9885095d976659bab4a4514a767e9}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [24/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{tracking}]{,  }\item[{-\/}]{1,  }\item[{\char`\"{}}]{Experimental,  }\item[{not available yet. Whether to enable people tracking across frames. The\char`\"{} \char`\"{} value indicates the number of frames where tracking is run between each Open\+Pose keypoint\char`\"{} \char`\"{} detection. Select -\/1(default) to disable it or 0 to run simultaneously Open\+Pose keypoint\char`\"{} \char`\"{} detector and tracking for potentially higher accurary than only Open\+Pose.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a17550ab833803b7862beaab957642af6}\label{flags_8hpp_a17550ab833803b7862beaab957642af6}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [25/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{write\+\_\+coco\+\_\+json\+\_\+variant}]{,  }\item[{0}]{,  }\item[{\char`\"{}}]{Currently,  }\item[{this option is experimental and only makes effect on car J\+S\+ON generation. It\char`\"{} \char`\"{} selects the C\+O\+CO variant for coco\+Json\+Saver.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a80cdeb8d094d26ae5840a74ccff8613c}\label{flags_8hpp_a80cdeb8d094d26ae5840a74ccff8613c}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_int32@{DEFINE\_int32}}
+\index{DEFINE\_int32@{DEFINE\_int32}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_int32()}{DEFINE\_int32()}\hspace{0.1cm}{\footnotesize\ttfamily [26/26]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+int32 (\begin{DoxyParamCaption}\item[{write\+\_\+coco\+\_\+json\+\_\+variants}]{,  }\item[{1}]{,  }\item[{\char`\"{}Add 1 for}]{body,  }\item[{add 2 for}]{foot,  }\item[{4 for}]{face,  }\item[{and/or 8 for hands. Use 0 to use all the\char`\"{} \char`\"{} possible candidates. E.}]{g.,  }\item[{7 would mean body+foot+face C\+O\+CO J\+S\+O\+N.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_acd0c383a2043852c83e284b669a5cf7e}\label{flags_8hpp_acd0c383a2043852c83e284b669a5cf7e}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [1/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{caffemodel\+\_\+path}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}The combination \`{}-\/-\/model\+\_\+folder\`{} + \`{}-\/-\/caffemodel\+\_\+path\`{} represents the whole path to the\char`\"{} \char`\"{} caffemodel file. If}]{empty,  }\item[{it will use the default Open\+Pose Caffe\+Model file.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_abcc67acb9ca2d225394445eb6017bc4d}\label{flags_8hpp_abcc67acb9ca2d225394445eb6017bc4d}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [2/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{camera\+\_\+parameter\+\_\+path}]{,  }\item[{\char`\"{}models/camera\+Parameters/flir/\char`\"{}}]{,  }\item[{\char`\"{}String with the folder where the camera parameters are located. If there\char`\"{} \char`\"{} is only 1 X\+ML file }]{for single video, webcam, or images from the same camera,  }\item[{you must\char`\"{} \char`\"{} specify the whole X\+ML file path(ending in .xml).\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ab1d4b66fac361d1f3f450cd6bc5311d4}\label{flags_8hpp_ab1d4b66fac361d1f3f450cd6bc5311d4}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [3/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{camera\+\_\+resolution}]{,  }\item[{\char`\"{}-\/1x-\/1\char`\"{}}]{,  }\item[{\char`\"{}Set the camera resolution (either \`{}-\/-\/camera\`{} or \`{}-\/-\/flir\+\_\+camera\`{}). \`{}-\/1x-\/1\`{} will use the\char`\"{} \char`\"{} default 1280x720 for \`{}-\/-\/camera\`{}}]{,  }\item[{or the maximum flir camera resolution available for\char`\"{} \char`\"{} \`{}-\/-\/flir\+\_\+camera\`{}\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a1da3324efb2a917d0714100dcdb13aba}\label{flags_8hpp_a1da3324efb2a917d0714100dcdb13aba}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [4/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{face\+\_\+net\+\_\+resolution}]{,  }\item[{\char`\"{}368x368\char`\"{}}]{,  }\item[{\char`\"{}Multiples of 16 and squared. Analogous to \`{}net\+\_\+resolution\`{} but applied to the face keypoint\char`\"{} \char`\"{} detector. 320x320 usually works fine while giving a substantial speed up when multiple\char`\"{} \char`\"{} faces on the image.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a81e3bebeb0cec269b90097fb5856c96f}\label{flags_8hpp_a81e3bebeb0cec269b90097fb5856c96f}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [5/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{hand\+\_\+net\+\_\+resolution}]{,  }\item[{\char`\"{}368x368\char`\"{}}]{,  }\item[{\char`\"{}Multiples of 16 and squared. Analogous to \`{}net\+\_\+resolution\`{} but applied to the hand keypoint\char`\"{} \char`\"{} detector.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_add5d5807feef88090f8c9d11bf904ba8}\label{flags_8hpp_add5d5807feef88090f8c9d11bf904ba8}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [6/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{image\+\_\+dir}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}Process a directory of images. Use \`{}examples/media/\`{} for our default example folder with 20\char`\"{} \char`\"{} images. Read all standard formats (jpg, png, bmp, etc.).\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a02962b73af4084b90494b777ff1826c1}\label{flags_8hpp_a02962b73af4084b90494b777ff1826c1}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [7/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{ip\+\_\+camera}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}String with the IP camera U\+R\+L. It supports protocols like R\+T\+SP and H\+T\+T\+P.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a456ac1650914494fbdacd53b55420e2b}\label{flags_8hpp_a456ac1650914494fbdacd53b55420e2b}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [8/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{model\+\_\+folder}]{,  }\item[{\char`\"{}models/\char`\"{}}]{,  }\item[{\char`\"{}Folder path (absolute or relative) where the models (pose, face, ...) are located.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ae84bfcaf1f813dac4080ffd7212ff9f8}\label{flags_8hpp_ae84bfcaf1f813dac4080ffd7212ff9f8}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [9/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{model\+\_\+pose}]{,  }\item[{\char`\"{}B\+O\+D\+Y\+\_\+25\char`\"{}}]{,  }\item[{\char`\"{}Model to be used. E.}]{g.,  }\item[{\`{}C\+O\+CO\`{}}]{18 keypoints,  }\item[{\`{}M\+PI\`{}}]{15 keypoints, $\sim$10\% faster,  }\item[{\char`\"{} \char`\"{}\`{}M\+P\+I\+\_\+4\+\_\+layers\`{}(15 keypoints, even faster but less accurate).\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_aa0cc9af40fd8fdee2d8c61da206913dc}\label{flags_8hpp_aa0cc9af40fd8fdee2d8c61da206913dc}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [10/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{net\+\_\+resolution}]{,  }\item[{\char`\"{}-\/1x368\char`\"{}}]{,  }\item[{\char`\"{}Multiples of 16. If it is}]{increased,  }\item[{the accuracy potentially increases. If it is\char`\"{} \char`\"{}}]{decreased,  }\item[{the speed increases. For maximum speed-\/accuracy}]{balance,  }\item[{it should keep the\char`\"{} \char`\"{} closest aspect ratio possible to the images or videos to be processed. Using \`{}-\/1\`{} in\char`\"{} \char`\"{} any of the}]{dimensions,  }\item[{OP will choose the optimal aspect ratio depending on the user \textquotesingle{}s\char`\"{} \char`\"{} input value. E.}]{g.,  }\item[{the default \`{}-\/1x368\`{} is equivalent to \`{}656x368\`{} in 16\+:9}]{resolutions,  }\item[{\char`\"{} \char`\"{} e.}]{g.,  }\item[{full HD(1980x1080) and H\+D(1280x720) resolutions.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a4fff2a82464bb9e180e04f70f0d5cbad}\label{flags_8hpp_a4fff2a82464bb9e180e04f70f0d5cbad}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [11/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{output\+\_\+resolution}]{,  }\item[{\char`\"{}-\/1x-\/1\char`\"{}}]{,  }\item[{\char`\"{}The image resolution (display and output). Use \textbackslash{}\char`\"{}-\/1x-\/1\textbackslash{}\char`\"{} to force the program to use the\char`\"{} \char`\"{} input image resolution.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a81edc2bb181cd79c98bfae1520f8ab71}\label{flags_8hpp_a81edc2bb181cd79c98bfae1520f8ab71}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [12/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{prototxt\+\_\+path}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}The combination \`{}-\/-\/model\+\_\+folder\`{} + \`{}-\/-\/prototxt\+\_\+path\`{} represents the whole path to the\char`\"{} \char`\"{} prototxt file. If}]{empty,  }\item[{it will use the default Open\+Pose Proto\+Txt file.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_abd20da73260490fba6e09a17c235fc4a}\label{flags_8hpp_abd20da73260490fba6e09a17c235fc4a}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [13/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{udp\+\_\+host}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}}]{Experimental,  }\item[{not available yet. IP for U\+DP communication. E.}]{g.,  }\item[{\`{}192.\+168.\+0.\+1\`{}.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a7ffa026d9b667e5551909aba895f0dfb}\label{flags_8hpp_a7ffa026d9b667e5551909aba895f0dfb}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [14/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{udp\+\_\+port}]{,  }\item[{\char`\"{}8051\char`\"{}}]{,  }\item[{\char`\"{}}]{Experimental,  }\item[{not available yet. Port number for U\+DP communication.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a5690d1f0bce6904d9ccea011b0a0262f}\label{flags_8hpp_a5690d1f0bce6904d9ccea011b0a0262f}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [15/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{video}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}Use a video file instead of the camera. Use \`{}examples/media/video.\+avi\`{} for our default\char`\"{} \char`\"{} example video.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a1f0ce14d63633af19e375d6fbcccc463}\label{flags_8hpp_a1f0ce14d63633af19e375d6fbcccc463}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [16/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{write\+\_\+bvh}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}}]{Experimental,  }\item[{not available yet. E.}]{g.,  }\item[{\`{}$\sim$/Desktop/mocap\+Result.\+bvh\`{}.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a4ebc35e01d48db77575a1cdd53ac0815}\label{flags_8hpp_a4ebc35e01d48db77575a1cdd53ac0815}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [17/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{write\+\_\+coco\+\_\+json}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}Full file path to write people pose data with J\+S\+ON C\+O\+CO validation format. If}]{foot,  }\item[{face}]{,  }\item[{\char`\"{} \char`\"{}}]{hands,  }\item[{etc. J\+S\+ON is also }]{desired\`{}-\/-\/write\+\_\+coco\+\_\+json\+\_\+variants\`{},  }\item[{they are saved with\char`\"{} \char`\"{} different file name suffix.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_af1f0085881667603ed4e0404d7140bdc}\label{flags_8hpp_af1f0085881667603ed4e0404d7140bdc}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [18/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{write\+\_\+heatmaps}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}Directory to write body pose heatmaps in P\+NG format. At least 1 \`{}add\+\_\+heatmaps\+\_\+X\`{} flag\char`\"{} \char`\"{} must be enabled.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a2f9e6e0051bed47cae59d5450055a474}\label{flags_8hpp_a2f9e6e0051bed47cae59d5450055a474}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [19/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{write\+\_\+heatmaps\+\_\+format}]{,  }\item[{\char`\"{}png\char`\"{}}]{,  }\item[{\char`\"{}File extension and format for \`{}write\+\_\+heatmaps\`{}}]{,  }\item[{analogous to \`{}write\+\_\+images\+\_\+format\`{}.\char`\"{} \char`\"{} For lossless}]{compression,  }\item[{recommended \`{}png\`{} for integer \`{}heatmaps\+\_\+scale\`{} and \`{}float\`{} for\char`\"{} \char`\"{} floating values.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a4a4d36b7f90a4d53a0fa29f86bbbb9aa}\label{flags_8hpp_a4a4d36b7f90a4d53a0fa29f86bbbb9aa}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [20/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{write\+\_\+images}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}Directory to write rendered frames in \`{}write\+\_\+images\+\_\+format\`{} image format.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a91ba99b997951b09eab545a40c019f85}\label{flags_8hpp_a91ba99b997951b09eab545a40c019f85}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [21/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{write\+\_\+images\+\_\+format}]{,  }\item[{\char`\"{}png\char`\"{}}]{,  }\item[{\char`\"{}File extension and format for \`{}write\+\_\+images\`{}}]{,  }\item[{e.}]{g.,  }\item[{png}]{,  }\item[{jpg or bmp. Check the Open\+CV\char`\"{} \char`\"{} function cv\+::imwrite for all compatible extensions.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a66ec3a67de281684d9ff60c7b80c9430}\label{flags_8hpp_a66ec3a67de281684d9ff60c7b80c9430}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [22/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{write\+\_\+json}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}Directory to write Open\+Pose output in J\+S\+ON format. It includes}]{body,  }\item[{hand}]{,  }\item[{and face pose\char`\"{} \char`\"{} }]{keypoints2-\/\+D and 3-\/D,  }\item[{as well as pose candidates(if \`{}-\/-\/part\+\_\+candidates\`{} enabled).\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a8763644943c3413220cfe6bf8f385d44}\label{flags_8hpp_a8763644943c3413220cfe6bf8f385d44}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [23/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{write\+\_\+keypoint}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}(Deprecated, use \`{}write\+\_\+json\`{}) Directory to write the people pose keypoint data. Set format\char`\"{} \char`\"{} with \`{}write\+\_\+keypoint\+\_\+format\`{}.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a488d04acd61a19fe00cd2e56844dd8c5}\label{flags_8hpp_a488d04acd61a19fe00cd2e56844dd8c5}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [24/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{write\+\_\+keypoint\+\_\+format}]{,  }\item[{\char`\"{}yml\char`\"{}}]{,  }\item[{\char`\"{}(Deprecated, use \`{}write\+\_\+json\`{}) File extension and format for \`{}write\+\_\+keypoint\`{}\+:}]{json,  }\item[{xml}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_abd5499ff7014225c02e6149bde93e3a3}\label{flags_8hpp_abd5499ff7014225c02e6149bde93e3a3}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [25/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{write\+\_\+video}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}Full file path to write rendered frames in motion J\+P\+EG video format. It might fail if the\char`\"{} \char`\"{} final path does not finish in \`{}.avi\`{}. It internally uses cv\+::\+Video\+Writer. Flag\char`\"{} \char`\"{} \`{}write\+\_\+video\+\_\+fps\`{} controls F\+P\+S.}]{Alternatively,  }\item[{the video extension can be \`{}.mp4\`{}}]{,  }\item[{\char`\"{} \char`\"{} resulting in a file with a much smaller size and allowing \`{}-\/-\/write\+\_\+video\+\_\+with\+\_\+audio\`{}.\char`\"{} \char`\"{}}]{However,  }\item[{that would require\+:1}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a85ed9ce7f145fad05a50344a6fdbee37}\label{flags_8hpp_a85ed9ce7f145fad05a50344a6fdbee37}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [26/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{write\+\_\+video\+\_\+3d}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}Analogous to \`{}-\/-\/write\+\_\+video\`{}}]{,  }\item[{but applied to the 3\+D output.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a08c988c91c179c16944f9f703c24324b}\label{flags_8hpp_a08c988c91c179c16944f9f703c24324b}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_string@{DEFINE\_string}}
+\index{DEFINE\_string@{DEFINE\_string}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_string()}{DEFINE\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [27/27]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+string (\begin{DoxyParamCaption}\item[{write\+\_\+video\+\_\+adam}]{,  }\item[{\char`\"{}\char`\"{}}]{,  }\item[{\char`\"{}}]{Experimental,  }\item[{not available yet. Analogous to \`{}-\/-\/write\+\_\+video\`{}}]{,  }\item[{but applied to Adam model.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a99f9d7e0dcbf9f6ceddf589dc482d17a}\label{flags_8hpp_a99f9d7e0dcbf9f6ceddf589dc482d17a}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_uint64@{DEFINE\_uint64}}
+\index{DEFINE\_uint64@{DEFINE\_uint64}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_uint64()}{DEFINE\_uint64()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+uint64 (\begin{DoxyParamCaption}\item[{frame\+\_\+first}]{,  }\item[{0}]{,  }\item[{\char`\"{}Start on desired frame number. Indexes are 0-\/}]{based,  }\item[{i.}]{e.,  }\item[{the first frame has index 0.\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_a9fbfea8bf51a80ff2254f329366a19b8}\label{flags_8hpp_a9fbfea8bf51a80ff2254f329366a19b8}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_uint64@{DEFINE\_uint64}}
+\index{DEFINE\_uint64@{DEFINE\_uint64}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_uint64()}{DEFINE\_uint64()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+uint64 (\begin{DoxyParamCaption}\item[{frame\+\_\+last}]{,  }\item[{-\/}]{1,  }\item[{\char`\"{}Finish on desired frame number. Select -\/1 to disable. Indexes are 0-\/}]{based,  }\item[{e.}]{g.,  }\item[{if set to\char`\"{} \char`\"{}}]{10,  }\item[{it will process 11 frames(0-\/10).\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flags_8hpp_ab7c61c5b25d4b3db1284761933c66aed}\label{flags_8hpp_ab7c61c5b25d4b3db1284761933c66aed}} 
+\index{flags.hpp@{flags.hpp}!DEFINE\_uint64@{DEFINE\_uint64}}
+\index{DEFINE\_uint64@{DEFINE\_uint64}!flags.hpp@{flags.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFINE\_uint64()}{DEFINE\_uint64()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily D\+E\+F\+I\+N\+E\+\_\+uint64 (\begin{DoxyParamCaption}\item[{frame\+\_\+step}]{,  }\item[{1}]{,  }\item[{\char`\"{}Step or gap between processed frames. E.}]{g.,  }\item[{\`{}-\/-\/frame\+\_\+step 5\`{} would read and process frames\char`\"{} \char`\"{}}]{0,  }\item[{5}]{,  }\item[{10}]{,  }\item[{etc..\char`\"{}}]{ }\end{DoxyParamCaption})}
+

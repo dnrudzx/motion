@@ -1,0 +1,985 @@
+\hypertarget{classop_1_1_array}{}\doxysection{op\+::Array$<$ T $>$ 클래스 템플릿 참조}
+\label{classop_1_1_array}\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+
+
+{\ttfamily \#include $<$array.\+hpp$>$}
+
+
+
+op\+::Array$<$ T $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classop_1_1_array__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_array_a793b9851c7490bc98d4dd52020c0cd3c}{Array}} (const int size)
+\item 
+\mbox{\hyperlink{classop_1_1_array_a48c1ba1f7017b5aa8e0451079dd3a6d3}{Array}} (const std\+::vector$<$ int $>$ \&sizes=\{\})
+\item 
+\mbox{\hyperlink{classop_1_1_array_ac833fdcb245fcc3135ce65227bb9e4b2}{Array}} (const int size, const T value)
+\item 
+\mbox{\hyperlink{classop_1_1_array_a959ede0df7e535d2d3ac40d098541c27}{Array}} (const std\+::vector$<$ int $>$ \&sizes, const T value)
+\item 
+\mbox{\hyperlink{classop_1_1_array_a9cd386050e94c29b3c4ee40cafcacc46}{Array}} (const int size, T $\ast$const data\+Ptr)
+\item 
+\mbox{\hyperlink{classop_1_1_array_a90895562def04a81db0b3e7eaa3722c7}{Array}} (const std\+::vector$<$ int $>$ \&sizes, T $\ast$const data\+Ptr)
+\item 
+\mbox{\hyperlink{classop_1_1_array_a416e95541761c557c50b79b5e1b33389}{Array}} (const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&array, const int index, const bool no\+Copy=false)
+\item 
+\mbox{\hyperlink{classop_1_1_array_a5a68cca98a3ebaf565f1e546eebd9f01}{Array}} (const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&array)
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \& \mbox{\hyperlink{classop_1_1_array_a9c8e006e0eea472485f37971330ecbab}{operator=}} (const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&array)
+\item 
+\mbox{\hyperlink{classop_1_1_array_a7a7d854d63815e10e158fe889d17a88e}{Array}} (\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&\&array)
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \& \mbox{\hyperlink{classop_1_1_array_ae388368128afac05369172198911e05d}{operator=}} (\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&\&array)
+\item 
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \mbox{\hyperlink{classop_1_1_array_ab0b95bf5488cccad3bce7413251b04de}{clone}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_array_a12e538b09e98bf0900163031602ed2ed}{reset}} (const int size)
+\item 
+void \mbox{\hyperlink{classop_1_1_array_a0ad0232daa69783cf2c8f7a0ff5b3b0c}{reset}} (const std\+::vector$<$ int $>$ \&sizes=\{\})
+\item 
+void \mbox{\hyperlink{classop_1_1_array_ac7183eb2f4e78a6941da3a2079b9ed32}{reset}} (const int size, const T value)
+\item 
+void \mbox{\hyperlink{classop_1_1_array_add2eeccd967cdf0900449649cb6f5afb}{reset}} (const std\+::vector$<$ int $>$ \&sizes, const T value)
+\item 
+void \mbox{\hyperlink{classop_1_1_array_a6bf43d039478797722cf9401ceb951e9}{set\+From}} (const cv\+::\+Mat \&cv\+Mat)
+\item 
+void \mbox{\hyperlink{classop_1_1_array_a28f09d11de753a741334ee8094296acb}{set\+To}} (const T value)
+\item 
+bool \mbox{\hyperlink{classop_1_1_array_aa173085fa7ec7c7af3a443c617edd97a}{empty}} () const
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classop_1_1_array_a4568f646a97fa8cea443b864d91a28df}{get\+Size}} () const
+\item 
+int \mbox{\hyperlink{classop_1_1_array_ab4123b36e0816793e206365397dd8f79}{get\+Size}} (const int index) const
+\item 
+std\+::string \mbox{\hyperlink{classop_1_1_array_a3f26a48c35cde008970078a66ff6e5c7}{print\+Size}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classop_1_1_array_a5eff0723f0bbd192248e602bfbb6956f}{get\+Number\+Dimensions}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classop_1_1_array_aee364306687e39e754117c98ad844157}{get\+Volume}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classop_1_1_array_a5ed838d2b9933b6a80906d0e0db39742}{get\+Volume}} (const int indexA, const int indexB=-\/1) const
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classop_1_1_array_a38de9c4ba539b8134fcac91287722044}{get\+Stride}} () const
+\item 
+int \mbox{\hyperlink{classop_1_1_array_ab033fba3d9140020dd89edb10fe8b109}{get\+Stride}} (const int index) const
+\item 
+T $\ast$ \mbox{\hyperlink{classop_1_1_array_af4715967fd2b028a97fd30257e697275}{get\+Ptr}} ()
+\item 
+const T $\ast$ \mbox{\hyperlink{classop_1_1_array_ac5e77d6926d1d344cf54c88036fc8a9c}{get\+Const\+Ptr}} () const
+\item 
+T $\ast$ \mbox{\hyperlink{classop_1_1_array_a85d749e637a7528325f86b80595a91d1}{get\+Pseudo\+Const\+Ptr}} () const
+\item 
+const cv\+::\+Mat \& \mbox{\hyperlink{classop_1_1_array_ac063cdb01a5b5322c122a40b8e46b5b5}{get\+Const\+Cv\+Mat}} () const
+\item 
+cv\+::\+Mat \& \mbox{\hyperlink{classop_1_1_array_ac817621e848601cf7d6571e75d8f6865}{get\+Cv\+Mat}} ()
+\item 
+T \& \mbox{\hyperlink{classop_1_1_array_aa40dc59e800d3c4cce623d560c0e0fad}{operator\mbox{[}$\,$\mbox{]}}} (const int index)
+\item 
+const T \& \mbox{\hyperlink{classop_1_1_array_a0e1d5ce14d11caa3b92306ee677af4cc}{operator\mbox{[}$\,$\mbox{]}}} (const int index) const
+\item 
+T \& \mbox{\hyperlink{classop_1_1_array_aada0f1bd6e9eb73b4f977e62da536f58}{operator\mbox{[}$\,$\mbox{]}}} (const std\+::vector$<$ int $>$ \&indexes)
+\item 
+const T \& \mbox{\hyperlink{classop_1_1_array_ac4e9514cfee78a3a0236c1a6265376d8}{operator\mbox{[}$\,$\mbox{]}}} (const std\+::vector$<$ int $>$ \&indexes) const
+\item 
+T \& \mbox{\hyperlink{classop_1_1_array_a6e0afd5f447efbfc29efbeac62716eff}{at}} (const int index)
+\item 
+const T \& \mbox{\hyperlink{classop_1_1_array_a4a24dfa0d0f1f3769bf3bfcea47e2220}{at}} (const int index) const
+\item 
+T \& \mbox{\hyperlink{classop_1_1_array_a8eebb6c34642cdf19ac74c7ed38d128b}{at}} (const std\+::vector$<$ int $>$ \&indexes)
+\item 
+const T \& \mbox{\hyperlink{classop_1_1_array_ae74dec8220582072f85fb3ec430238ce}{at}} (const std\+::vector$<$ int $>$ \&indexes) const
+\item 
+const std\+::string \mbox{\hyperlink{classop_1_1_array_af488c66ddac6cb75f7690ba8207599ed}{to\+String}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classop_1_1_array_ab1f6e05ef4afcef5b6dd8fcf256687d3}{get\+Index}} (const std\+::vector$<$ int $>$ \&indexes) const
+\item 
+int \mbox{\hyperlink{classop_1_1_array_a6faad450223e4bb6ffaa3a32ed7517d1}{get\+Index\+And\+Check}} (const std\+::vector$<$ int $>$ \&indexes) const
+\item 
+T \& \mbox{\hyperlink{classop_1_1_array_aea993c1b4e084043893e96f2b41df17f}{common\+At}} (const int index) const
+\item 
+void \mbox{\hyperlink{classop_1_1_array_aee4a32bd228f0327ff3a29d7530b5ec8}{reset\+Auxiliary}} (const std\+::vector$<$ int $>$ \&sizes, T $\ast$const data\+Ptr=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classop_1_1_array_a0c1a89bfb17aeaf2a5604993a514e969}{m\+Size}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classop_1_1_array_af537a2a4184fd444a0c171504229c716}{m\+Volume}}
+\item 
+std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classop_1_1_array_a6aacb0623df99e851f20260b32e37c34}{sp\+Data}}
+\item 
+T $\ast$ \mbox{\hyperlink{classop_1_1_array_a2af369ddb9636bd420f5dde8b2a9e592}{p\+Data}}
+\item 
+std\+::pair$<$ bool, cv\+::\+Mat $>$ \mbox{\hyperlink{classop_1_1_array_abd1e56b0845dcf9384b00df5d58565ae}{m\+Cv\+Mat\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T$>$\newline
+class op\+::\+Array$<$ T $>$}
+
+Array$<$\+T$>$\+: The Open\+Pose Basic Raw Data Container This template class implements a multidimensional data array. It is our basic data container, analogous to cv\+::\+Mat in Open\+CV, Tensor in Torch/\+Tensor\+Flow or Blob in Caffe. It wraps a cv\+::\+Mat and a std\+::shared\+\_\+ptr, both of them pointing to the same raw data. I.\+e. they both share the same memory, so we can read and modify this data in both formats with no performance impact. Hence, it keeps high performance while adding high-\/level functions. 
+
+array.\+hpp 파일의 20 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_array_a793b9851c7490bc98d4dd52020c0cd3c}\label{classop_1_1_array_a793b9851c7490bc98d4dd52020c0cd3c}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!Array@{Array}}
+\index{Array@{Array}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [1/9]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classop_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{const int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\hyperlink{classop_1_1_array}{Array}} constructor. Equivalent to default constructor + \mbox{\hyperlink{classop_1_1_array_a12e538b09e98bf0900163031602ed2ed}{reset(const int size)}}. 
+\begin{DoxyParams}{매개변수}
+{\em size} & Integer with the number of T element to be allocated. E.\+g., size = 5 is internally similar to {\ttfamily new T\mbox{[}5\mbox{]}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_array_a48c1ba1f7017b5aa8e0451079dd3a6d3}\label{classop_1_1_array_a48c1ba1f7017b5aa8e0451079dd3a6d3}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!Array@{Array}}
+\index{Array@{Array}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/9]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classop_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{sizes = {\ttfamily \{\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\hyperlink{classop_1_1_array}{Array}} constructor. Equivalent to default constructor + reset(const std\+::vector$<$int$>$\& size = \{\}). 
+\begin{DoxyParams}{매개변수}
+{\em sizes} & Vector with the size of each dimension. E.\+g., size = \{3, 5, 2\} is internally similar to {\ttfamily new T\mbox{[}3$\ast$5$\ast$2\mbox{]}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_array_ac833fdcb245fcc3135ce65227bb9e4b2}\label{classop_1_1_array_ac833fdcb245fcc3135ce65227bb9e4b2}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!Array@{Array}}
+\index{Array@{Array}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [3/9]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classop_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{const int}]{size,  }\item[{const T}]{value }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classop_1_1_array}{Array}} constructor. Equivalent to default constructor + \mbox{\hyperlink{classop_1_1_array_ac7183eb2f4e78a6941da3a2079b9ed32}{reset(const int size, const T value)}}. 
+\begin{DoxyParams}{매개변수}
+{\em size} & Integer with the number of T element to be allocated. E.\+g., size = 5 is internally similar to {\ttfamily new T\mbox{[}5\mbox{]}}. \\
+\hline
+{\em value} & Initial value for each component of the \mbox{\hyperlink{classop_1_1_array}{Array}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_array_a959ede0df7e535d2d3ac40d098541c27}\label{classop_1_1_array_a959ede0df7e535d2d3ac40d098541c27}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!Array@{Array}}
+\index{Array@{Array}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [4/9]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classop_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{sizes,  }\item[{const T}]{value }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classop_1_1_array}{Array}} constructor. Equivalent to default constructor + \mbox{\hyperlink{classop_1_1_array_add2eeccd967cdf0900449649cb6f5afb}{reset(const std\+::vector$<$int$>$\& size, const T value)}}. 
+\begin{DoxyParams}{매개변수}
+{\em sizes} & Vector with the size of each dimension. E.\+g., size = \{3, 5, 2\} is internally similar to\+: {\ttfamily new T\mbox{[}3$\ast$5$\ast$2\mbox{]}}. \\
+\hline
+{\em value} & Initial value for each component of the \mbox{\hyperlink{classop_1_1_array}{Array}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_array_a9cd386050e94c29b3c4ee40cafcacc46}\label{classop_1_1_array_a9cd386050e94c29b3c4ee40cafcacc46}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!Array@{Array}}
+\index{Array@{Array}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [5/9]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classop_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{const int}]{size,  }\item[{T $\ast$const}]{data\+Ptr }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classop_1_1_array}{Array}} constructor. Equivalent to default constructor, but it does not allocate memory, but rather use data\+Ptr. 
+\begin{DoxyParams}{매개변수}
+{\em size} & Integer with the number of T element to be allocated. E.\+g., size = 5 is internally similar to {\ttfamily new T\mbox{[}5\mbox{]}}. \\
+\hline
+{\em data\+Ptr} & Pointer to the memory to be used by the \mbox{\hyperlink{classop_1_1_array}{Array}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_array_a90895562def04a81db0b3e7eaa3722c7}\label{classop_1_1_array_a90895562def04a81db0b3e7eaa3722c7}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!Array@{Array}}
+\index{Array@{Array}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [6/9]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classop_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{sizes,  }\item[{T $\ast$const}]{data\+Ptr }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classop_1_1_array}{Array}} constructor. Equivalent to default constructor, but it does not allocate memory, but rather use data\+Ptr. 
+\begin{DoxyParams}{매개변수}
+{\em sizes} & Vector with the size of each dimension. E.\+g., size = \{3, 5, 2\} is internally similar to\+: {\ttfamily new T\mbox{[}3$\ast$5$\ast$2\mbox{]}}. \\
+\hline
+{\em data\+Ptr} & Pointer to the memory to be used by the \mbox{\hyperlink{classop_1_1_array}{Array}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_array_a416e95541761c557c50b79b5e1b33389}\label{classop_1_1_array_a416e95541761c557c50b79b5e1b33389}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!Array@{Array}}
+\index{Array@{Array}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [7/9]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classop_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&}]{array,  }\item[{const int}]{index,  }\item[{const bool}]{no\+Copy = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classop_1_1_array}{Array}} constructor. 
+\begin{DoxyParams}{매개변수}
+{\em array} & Array$<$\+T$>$ with the original data array to slice. \\
+\hline
+{\em index} & indicates the index of the array to extract. \\
+\hline
+{\em no\+Copy} & indicates whether to perform a copy. Copy will never go to undefined behavior, however, if no\+Copy == true, then\+:
+\begin{DoxyEnumerate}
+\item It is faster, as no data copy is involved, but...
+\item If the \mbox{\hyperlink{classop_1_1_array}{Array}} array goes out of scope, then the resulting \mbox{\hyperlink{classop_1_1_array}{Array}} will provoke an undefined behavior.
+\item If the returned \mbox{\hyperlink{classop_1_1_array}{Array}} is modified, the information in the \mbox{\hyperlink{classop_1_1_array}{Array}} array will also be. 
+\end{DoxyEnumerate}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Array$<$\+T$>$ with the same dimension than array expect the first dimension being 1. E.\+g., if array is \{p,k,m\}, the resulting Array$<$\+T$>$ is \{1,k,m\}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_array_a5a68cca98a3ebaf565f1e546eebd9f01}\label{classop_1_1_array_a5a68cca98a3ebaf565f1e546eebd9f01}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!Array@{Array}}
+\index{Array@{Array}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [8/9]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classop_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&}]{array }\end{DoxyParamCaption})}
+
+Copy constructor. It performs {\ttfamily fast copy}\+: For performance purpose, copying a Array$<$\+T$>$ or \mbox{\hyperlink{structop_1_1_datum}{Datum}} or cv\+::\+Mat just copies the reference, it still shares the same internal data. Modifying the copied element will modify the original one. Use \mbox{\hyperlink{classop_1_1_array_ab0b95bf5488cccad3bce7413251b04de}{clone()}} for a slower but real copy, similarly to cv\+::\+Mat and Array$<$\+T$>$. 
+\begin{DoxyParams}{매개변수}
+{\em array} & \mbox{\hyperlink{classop_1_1_array}{Array}} to be copied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_array_a7a7d854d63815e10e158fe889d17a88e}\label{classop_1_1_array_a7a7d854d63815e10e158fe889d17a88e}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!Array@{Array}}
+\index{Array@{Array}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [9/9]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::\mbox{\hyperlink{classop_1_1_array}{Array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&\&}]{array }\end{DoxyParamCaption})}
+
+Move constructor. It destroys the original \mbox{\hyperlink{classop_1_1_array}{Array}} to be moved. 
+\begin{DoxyParams}{매개변수}
+{\em array} & \mbox{\hyperlink{classop_1_1_array}{Array}} to be moved. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_array_a6e0afd5f447efbfc29efbeac62716eff}\label{classop_1_1_array_a6e0afd5f447efbfc29efbeac62716eff}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!at@{at}}
+\index{at@{at}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::at (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classop_1_1_array_a6e0afd5f447efbfc29efbeac62716eff}{at()}} function Same functionality as \mbox{\hyperlink{classop_1_1_array_aa40dc59e800d3c4cce623d560c0e0fad}{operator\mbox{[}$\,$\mbox{]}(const int index)}}, but it always check whether the indexes are within the data bounds. Otherwise, it will throw an error. 
+\begin{DoxyParams}{매개변수}
+{\em index} & The desired memory location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+A editable reference to the data on the desired index location. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 383 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{384         \{}
+\DoxyCodeLine{385             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_aea993c1b4e084043893e96f2b41df17f}{commonAt}}(index);}
+\DoxyCodeLine{386         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classop_1_1_array_a6e0afd5f447efbfc29efbeac62716eff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_array_a4a24dfa0d0f1f3769bf3bfcea47e2220}\label{classop_1_1_array_a4a24dfa0d0f1f3769bf3bfcea47e2220}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!at@{at}}
+\index{at@{at}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const T\& \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::at (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classop_1_1_array_a6e0afd5f447efbfc29efbeac62716eff}{at()}} function Same functionality as \mbox{\hyperlink{classop_1_1_array_a0e1d5ce14d11caa3b92306ee677af4cc}{operator\mbox{[}$\,$\mbox{]}(const int index) const}}, but it always check whether the indexes are within the data bounds. Otherwise, it will throw an error. 
+\begin{DoxyParams}{매개변수}
+{\em index} & The desired memory location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+A non-\/editable reference to the data on the desired index location. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 395 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{396         \{}
+\DoxyCodeLine{397             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_aea993c1b4e084043893e96f2b41df17f}{commonAt}}(index);}
+\DoxyCodeLine{398         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_array_a8eebb6c34642cdf19ac74c7ed38d128b}\label{classop_1_1_array_a8eebb6c34642cdf19ac74c7ed38d128b}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!at@{at}}
+\index{at@{at}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::at (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{indexes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classop_1_1_array_a6e0afd5f447efbfc29efbeac62716eff}{at()}} function Same functionality as \mbox{\hyperlink{classop_1_1_array_aada0f1bd6e9eb73b4f977e62da536f58}{operator\mbox{[}$\,$\mbox{]}(const std\+::vector$<$int$>$\& indexes)}}, but it always check whether the indexes are within the data bounds. Otherwise, it will throw an error. 
+\begin{DoxyParams}{매개변수}
+{\em indexes} & Vector with the desired memory location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+A editable reference to the data on the desired index location. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 407 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{408         \{}
+\DoxyCodeLine{409             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_a6e0afd5f447efbfc29efbeac62716eff}{at}}(\mbox{\hyperlink{classop_1_1_array_a6faad450223e4bb6ffaa3a32ed7517d1}{getIndexAndCheck}}(indexes));}
+\DoxyCodeLine{410         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_array_ae74dec8220582072f85fb3ec430238ce}\label{classop_1_1_array_ae74dec8220582072f85fb3ec430238ce}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!at@{at}}
+\index{at@{at}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const T\& \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::at (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{indexes }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\hyperlink{classop_1_1_array_a6e0afd5f447efbfc29efbeac62716eff}{at()}} function Same functionality as \mbox{\hyperlink{classop_1_1_array_ac4e9514cfee78a3a0236c1a6265376d8}{operator\mbox{[}$\,$\mbox{]}(const std\+::vector$<$int$>$\& indexes) const}}, but it always check whether the indexes are within the data bounds. Otherwise, it will throw an error. 
+\begin{DoxyParams}{매개변수}
+{\em indexes} & Vector with the desired memory location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+A non-\/editable reference to the data on the desired index location. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 419 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{420         \{}
+\DoxyCodeLine{421             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_a6e0afd5f447efbfc29efbeac62716eff}{at}}(\mbox{\hyperlink{classop_1_1_array_a6faad450223e4bb6ffaa3a32ed7517d1}{getIndexAndCheck}}(indexes));}
+\DoxyCodeLine{422         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_array_ab0b95bf5488cccad3bce7413251b04de}\label{classop_1_1_array_ab0b95bf5488cccad3bce7413251b04de}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!clone@{clone}}
+\index{clone@{clone}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$T$>$ \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Clone function. Similar to cv\+::\+Mat\+::clone and \mbox{\hyperlink{structop_1_1_datum_ad137a102ef753734a9413762d72e6d46}{Datum\+::clone}}. It performs a real but slow copy of the data, i.\+e., even if the copied element is modified, the original one is not. \begin{DoxyReturn}{반환값}
+The resulting \mbox{\hyperlink{classop_1_1_array}{Array}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_array_aea993c1b4e084043893e96f2b41df17f}\label{classop_1_1_array_aea993c1b4e084043893e96f2b41df17f}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!commonAt@{commonAt}}
+\index{commonAt@{commonAt}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{commonAt()}{commonAt()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::common\+At (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Auxiliar function that both \mbox{\hyperlink{classop_1_1_array_a6e0afd5f447efbfc29efbeac62716eff}{at(const int index)}} and \mbox{\hyperlink{classop_1_1_array_a4a24dfa0d0f1f3769bf3bfcea47e2220}{at(const int index) const }}use. 
+\begin{DoxyParams}{매개변수}
+{\em index} & The desired memory location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+A non-\/editable reference to the data on the desired index location. 
+\end{DoxyReturn}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classop_1_1_array_aea993c1b4e084043893e96f2b41df17f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_array_aa173085fa7ec7c7af3a443c617edd97a}\label{classop_1_1_array_aa173085fa7ec7c7af3a443c617edd97a}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check whether memory has been allocated. \begin{DoxyReturn}{반환값}
+True if no memory has been allocated, false otherwise. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 189 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{190         \{}
+\DoxyCodeLine{191             \textcolor{keywordflow}{return} (\mbox{\hyperlink{classop_1_1_array_af537a2a4184fd444a0c171504229c716}{mVolume}} == 0);}
+\DoxyCodeLine{192         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_array_ac063cdb01a5b5322c122a40b8e46b5b5}\label{classop_1_1_array_ac063cdb01a5b5322c122a40b8e46b5b5}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getConstCvMat@{getConstCvMat}}
+\index{getConstCvMat@{getConstCvMat}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getConstCvMat()}{getConstCvMat()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const cv\+::\+Mat\& \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Const\+Cv\+Mat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return a cv\+::\+Mat wrapper to the data. It forbids the data to be modified. Open\+CV only admits unsigned char, signed char, int, float \& double. If the T class is not supported by Open\+CV, it will throw an error. Note\+: Array$<$\+T$>$ does not return an editable cv\+::\+Mat because some Open\+CV functions reallocate memory and it would not longer point to the Array$<$\+T$>$ instance. If you want to perform some Open\+CV operation on the \mbox{\hyperlink{classop_1_1_array}{Array}} data, you can use\+: edited\+Cv\+Mat = array.\+get\+Const\+Cv\+Mat().\mbox{\hyperlink{classop_1_1_array_ab0b95bf5488cccad3bce7413251b04de}{clone()}}; // modify data array.\+set\+From(edited\+Cv\+Mat) \begin{DoxyReturn}{반환값}
+A const cv\+::\+Mat pointing to the data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_array_ac5e77d6926d1d344cf54c88036fc8a9c}\label{classop_1_1_array_ac5e77d6926d1d344cf54c88036fc8a9c}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getConstPtr@{getConstPtr}}
+\index{getConstPtr@{getConstPtr}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getConstPtr()}{getConstPtr()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const T$\ast$ \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Const\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Similar to \mbox{\hyperlink{classop_1_1_array_af4715967fd2b028a97fd30257e697275}{get\+Ptr()}}, but it forbids the data to be edited. \begin{DoxyReturn}{반환값}
+A raw const pointer to the data. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 280 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{281         \{}
+\DoxyCodeLine{282             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_a2af369ddb9636bd420f5dde8b2a9e592}{pData}}; \textcolor{comment}{// spData.get()}}
+\DoxyCodeLine{283         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_array_ac817621e848601cf7d6571e75d8f6865}\label{classop_1_1_array_ac817621e848601cf7d6571e75d8f6865}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getCvMat@{getCvMat}}
+\index{getCvMat@{getCvMat}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getCvMat()}{getCvMat()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+cv\+::\+Mat\& \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Cv\+Mat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Analogous to get\+Const\+Cv\+Mat, but in this case it returns a editable cv\+::\+Mat. Very important\+: Only allowed functions which do not provoke data reallocation. E.\+g., resizing functions will not work and they would provoke an undefined behaviour and/or execution crashes. \begin{DoxyReturn}{반환값}
+A cv\+::\+Mat pointing to the data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_array_ab1f6e05ef4afcef5b6dd8fcf256687d3}\label{classop_1_1_array_ab1f6e05ef4afcef5b6dd8fcf256687d3}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getIndex()}{getIndex()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+int \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Index (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{indexes }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Auxiliar function that both \mbox{\hyperlink{classop_1_1_array_aada0f1bd6e9eb73b4f977e62da536f58}{operator\mbox{[}$\,$\mbox{]}(const std\+::vector$<$int$>$\& indexes)}} and \mbox{\hyperlink{classop_1_1_array_ac4e9514cfee78a3a0236c1a6265376d8}{operator\mbox{[}$\,$\mbox{]}(const std\+::vector$<$int$>$\& indexes) const }}use. It turn the multi-\/dimensions indexes into the 1-\/dimension equivalent index. 
+\begin{DoxyParams}{매개변수}
+{\em indexes} & Vector with the desired memory location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+The equivalent 1-\/D index. 
+\end{DoxyReturn}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classop_1_1_array_ab1f6e05ef4afcef5b6dd8fcf256687d3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_array_a6faad450223e4bb6ffaa3a32ed7517d1}\label{classop_1_1_array_a6faad450223e4bb6ffaa3a32ed7517d1}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getIndexAndCheck@{getIndexAndCheck}}
+\index{getIndexAndCheck@{getIndexAndCheck}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getIndexAndCheck()}{getIndexAndCheck()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+int \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Index\+And\+Check (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{indexes }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Similar to \mbox{\hyperlink{classop_1_1_array_ab1f6e05ef4afcef5b6dd8fcf256687d3}{get\+Index(const std\+::vector$<$int$>$\& indexes) const}}, but used for \mbox{\hyperlink{classop_1_1_array_a8eebb6c34642cdf19ac74c7ed38d128b}{at(const std\+::vector$<$int$>$\& indexes)}} and \mbox{\hyperlink{classop_1_1_array_ae74dec8220582072f85fb3ec430238ce}{at(const std\+::vector$<$int$>$\& indexes) const}}. It also checks whether the index is within the allocated memory. 
+\begin{DoxyParams}{매개변수}
+{\em indexes} & Vector with the desired memory location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+The equivalent 1-\/D index. 
+\end{DoxyReturn}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classop_1_1_array_a6faad450223e4bb6ffaa3a32ed7517d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_array_a5eff0723f0bbd192248e602bfbb6956f}\label{classop_1_1_array_a5eff0723f0bbd192248e602bfbb6956f}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getNumberDimensions@{getNumberDimensions}}
+\index{getNumberDimensions@{getNumberDimensions}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getNumberDimensions()}{getNumberDimensions()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+size\+\_\+t \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Number\+Dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the total number of dimensions, equivalent to \mbox{\hyperlink{classop_1_1_array_a4568f646a97fa8cea443b864d91a28df}{get\+Size()}}.size(). \begin{DoxyReturn}{반환값}
+The number of dimensions. If no memory is allocated, it returns 0. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 223 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{224         \{}
+\DoxyCodeLine{225             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_a0c1a89bfb17aeaf2a5604993a514e969}{mSize}}.size();}
+\DoxyCodeLine{226         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_array_a85d749e637a7528325f86b80595a91d1}\label{classop_1_1_array_a85d749e637a7528325f86b80595a91d1}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getPseudoConstPtr@{getPseudoConstPtr}}
+\index{getPseudoConstPtr@{getPseudoConstPtr}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getPseudoConstPtr()}{getPseudoConstPtr()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Pseudo\+Const\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Similar to \mbox{\hyperlink{classop_1_1_array_ac5e77d6926d1d344cf54c88036fc8a9c}{get\+Const\+Ptr()}}, but it allows the data to be edited. This function is only implemented for Pybind11 usage. \begin{DoxyReturn}{반환값}
+A raw pointer to the data. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 290 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{291         \{}
+\DoxyCodeLine{292             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_a2af369ddb9636bd420f5dde8b2a9e592}{pData}}; \textcolor{comment}{// spData.get()}}
+\DoxyCodeLine{293         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_array_af4715967fd2b028a97fd30257e697275}\label{classop_1_1_array_af4715967fd2b028a97fd30257e697275}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getPtr@{getPtr}}
+\index{getPtr@{getPtr}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getPtr()}{getPtr()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return a raw pointer to the data. Similar to\+: std\+::shared\+\_\+ptr\+::get(). Note\+: if you modify the pointer data, you will directly modify it in the Array$<$\+T$>$ instance too. If you know you do not want to modify the data, then use \mbox{\hyperlink{classop_1_1_array_ac5e77d6926d1d344cf54c88036fc8a9c}{get\+Const\+Ptr()}} instead. \begin{DoxyReturn}{반환값}
+A raw pointer to the data. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 271 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{272         \{}
+\DoxyCodeLine{273             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_a2af369ddb9636bd420f5dde8b2a9e592}{pData}}; \textcolor{comment}{// spData.get()}}
+\DoxyCodeLine{274         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_array_a4568f646a97fa8cea443b864d91a28df}\label{classop_1_1_array_a4568f646a97fa8cea443b864d91a28df}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getSize@{getSize}}
+\index{getSize@{getSize}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+std\+::vector$<$int$>$ \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return a vector with the size of each dimension allocated. \begin{DoxyReturn}{반환값}
+A std\+::vector$<$int$>$ with the size of each dimension. If no memory has been allocated, it will return an empty std\+::vector. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 199 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{200         \{}
+\DoxyCodeLine{201             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_a0c1a89bfb17aeaf2a5604993a514e969}{mSize}};}
+\DoxyCodeLine{202         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_array_ab4123b36e0816793e206365397dd8f79}\label{classop_1_1_array_ab4123b36e0816793e206365397dd8f79}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getSize@{getSize}}
+\index{getSize@{getSize}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+int \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Size (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption}) const}
+
+Return a vector with the size of the desired dimension. 
+\begin{DoxyParams}{매개변수}
+{\em index} & Dimension to check its size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+Size of the desired dimension. It will return 0 if the requested dimension is higher than the number of dimensions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_array_a38de9c4ba539b8134fcac91287722044}\label{classop_1_1_array_a38de9c4ba539b8134fcac91287722044}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getStride@{getStride}}
+\index{getStride@{getStride}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getStride()}{getStride()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+std\+::vector$<$int$>$ \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Stride (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the stride or step size of the array. E.\+g., given and Array$<$\+T$>$ of size 5x3, \mbox{\hyperlink{classop_1_1_array_a38de9c4ba539b8134fcac91287722044}{get\+Stride()}} would return the following vector\+: \{5x3sizeof(\+T), 3sizeof(\+T), sizeof(\+T)\}. \mbox{\Hypertarget{classop_1_1_array_ab033fba3d9140020dd89edb10fe8b109}\label{classop_1_1_array_ab033fba3d9140020dd89edb10fe8b109}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getStride@{getStride}}
+\index{getStride@{getStride}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getStride()}{getStride()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+int \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Stride (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption}) const}
+
+Return the stride or step size of the array at the index-\/th dimension. E.\+g., given and Array$<$\+T$>$ of size 5x3, get\+Stride(2) would return sizeof(\+T). \mbox{\Hypertarget{classop_1_1_array_aee364306687e39e754117c98ad844157}\label{classop_1_1_array_aee364306687e39e754117c98ad844157}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getVolume@{getVolume}}
+\index{getVolume@{getVolume}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getVolume()}{getVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+size\+\_\+t \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the total number of elements allocated, equivalent to multiply all the components from \mbox{\hyperlink{classop_1_1_array_a4568f646a97fa8cea443b864d91a28df}{get\+Size()}}. E.\+g., for a Array$<$\+T$>$ of size = \{2,5,3\}, the volume or total number of elements is\+: 2x5x3 = 30. \begin{DoxyReturn}{반환값}
+The total volume of the allocated data. If no memory is allocated, it returns 0. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 233 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{234         \{}
+\DoxyCodeLine{235             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_af537a2a4184fd444a0c171504229c716}{mVolume}};}
+\DoxyCodeLine{236         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_array_a5ed838d2b9933b6a80906d0e0db39742}\label{classop_1_1_array_a5ed838d2b9933b6a80906d0e0db39742}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!getVolume@{getVolume}}
+\index{getVolume@{getVolume}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getVolume()}{getVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+size\+\_\+t \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::get\+Volume (\begin{DoxyParamCaption}\item[{const int}]{indexA,  }\item[{const int}]{indexB = {\ttfamily -\/1} }\end{DoxyParamCaption}) const}
+
+Similar to \mbox{\hyperlink{classop_1_1_array_aee364306687e39e754117c98ad844157}{get\+Volume()}}, but in this case it just returns the volume between the desired dimensions. E.\+g., for a Array$<$\+T$>$ of size = \{2,5,3\}, the volume or total number of elements for get\+Volume(1,2) is 5x3 = 15. 
+\begin{DoxyParams}{매개변수}
+{\em indexA} & Dimension where to start. \\
+\hline
+{\em indexB} & Dimension where to stop. If indexB == -\/1, then it will take up to the last dimension. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+The total volume of the allocated data between the desired dimensions. If the index are out of bounds, it throws an error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_array_ae388368128afac05369172198911e05d}\label{classop_1_1_array_ae388368128afac05369172198911e05d}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$T$>$\& \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&\&}]{array }\end{DoxyParamCaption})}
+
+Move assignment. Similar to \mbox{\hyperlink{classop_1_1_array_a7a7d854d63815e10e158fe889d17a88e}{Array$<$\+T$>$(\+Array$<$\+T$>$\&\& array)}}. 
+\begin{DoxyParams}{매개변수}
+{\em array} & \mbox{\hyperlink{classop_1_1_array}{Array}} to be moved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+The resulting \mbox{\hyperlink{classop_1_1_array}{Array}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_array_a9c8e006e0eea472485f37971330ecbab}\label{classop_1_1_array_a9c8e006e0eea472485f37971330ecbab}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classop_1_1_array}{Array}}$<$T$>$\& \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classop_1_1_array}{Array}}$<$ T $>$ \&}]{array }\end{DoxyParamCaption})}
+
+Copy assignment. Similar to \mbox{\hyperlink{classop_1_1_array_a5a68cca98a3ebaf565f1e546eebd9f01}{Array$<$\+T$>$(const Array$<$\+T$>$\& array)}}. 
+\begin{DoxyParams}{매개변수}
+{\em array} & \mbox{\hyperlink{classop_1_1_array}{Array}} to be copied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+The resulting \mbox{\hyperlink{classop_1_1_array}{Array}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_array_aa40dc59e800d3c4cce623d560c0e0fad}\label{classop_1_1_array_aa40dc59e800d3c4cce623d560c0e0fad}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{[}\mbox{]} operator Similar to the \mbox{[}\mbox{]} operator for raw pointer data. If debug mode is enabled, then it will check that the desired index is in the data range, and it will throw an exception otherwise (similar to the at operator). 
+\begin{DoxyParams}{매개변수}
+{\em index} & The desired memory location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+A editable reference to the data on the desired index location. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 326 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{327         \{}
+\DoxyCodeLine{328 \textcolor{preprocessor}{            \#ifdef NDEBUG}}
+\DoxyCodeLine{329                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_a2af369ddb9636bd420f5dde8b2a9e592}{pData}}[index]; \textcolor{comment}{// spData.get()[index]}}
+\DoxyCodeLine{330 \textcolor{preprocessor}{            \#else}}
+\DoxyCodeLine{331                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_a6e0afd5f447efbfc29efbeac62716eff}{at}}(index);}
+\DoxyCodeLine{332 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{333         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classop_1_1_array_aa40dc59e800d3c4cce623d560c0e0fad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_array_a0e1d5ce14d11caa3b92306ee677af4cc}\label{classop_1_1_array_a0e1d5ce14d11caa3b92306ee677af4cc}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const T\& \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{[}\mbox{]} operator Same functionality as \mbox{\hyperlink{classop_1_1_array_aa40dc59e800d3c4cce623d560c0e0fad}{operator\mbox{[}$\,$\mbox{]}(const int index)}}, but it forbids modifying the value. Otherwise, const functions would not be able to call the \mbox{[}\mbox{]} operator. 
+\begin{DoxyParams}{매개변수}
+{\em index} & The desired memory location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+A non-\/editable reference to the data on the desired index location. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 342 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{343         \{}
+\DoxyCodeLine{344 \textcolor{preprocessor}{            \#ifdef NDEBUG}}
+\DoxyCodeLine{345                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_a2af369ddb9636bd420f5dde8b2a9e592}{pData}}[index]; \textcolor{comment}{// spData.get()[index]}}
+\DoxyCodeLine{346 \textcolor{preprocessor}{            \#else}}
+\DoxyCodeLine{347                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_a6e0afd5f447efbfc29efbeac62716eff}{at}}(index);}
+\DoxyCodeLine{348 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{349         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_array_aada0f1bd6e9eb73b4f977e62da536f58}\label{classop_1_1_array_aada0f1bd6e9eb73b4f977e62da536f58}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{indexes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{[}\mbox{]} operator Same functionality as \mbox{\hyperlink{classop_1_1_array_aa40dc59e800d3c4cce623d560c0e0fad}{operator\mbox{[}$\,$\mbox{]}(const int index)}}, but it lets the user introduce the multi-\/dimensional index. E.\+g., given a (10 x 10 x 10) array, array\mbox{[}11\mbox{]} is equivalent to array\mbox{[}\{1,1,0\}\mbox{]} 
+\begin{DoxyParams}{매개변수}
+{\em indexes} & Vector with the desired memory location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+A editable reference to the data on the desired index location. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 359 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{360         \{}
+\DoxyCodeLine{361             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_aa40dc59e800d3c4cce623d560c0e0fad}{operator[]}}(\mbox{\hyperlink{classop_1_1_array_ab1f6e05ef4afcef5b6dd8fcf256687d3}{getIndex}}(indexes));}
+\DoxyCodeLine{362         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_array_ac4e9514cfee78a3a0236c1a6265376d8}\label{classop_1_1_array_ac4e9514cfee78a3a0236c1a6265376d8}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const T\& \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{indexes }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{[}\mbox{]} operator Same functionality as \mbox{\hyperlink{classop_1_1_array_aada0f1bd6e9eb73b4f977e62da536f58}{operator\mbox{[}$\,$\mbox{]}(const std\+::vector$<$int$>$\& indexes)}}, but it forbids modifying the value. Otherwise, const functions would not be able to call the \mbox{[}\mbox{]} operator. 
+\begin{DoxyParams}{매개변수}
+{\em indexes} & Vector with the desired memory location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+A non-\/editable reference to the data on the desired index location. 
+\end{DoxyReturn}
+
+
+array.\+hpp 파일의 371 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{372         \{}
+\DoxyCodeLine{373             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_array_aa40dc59e800d3c4cce623d560c0e0fad}{operator[]}}(\mbox{\hyperlink{classop_1_1_array_ab1f6e05ef4afcef5b6dd8fcf256687d3}{getIndex}}(indexes));}
+\DoxyCodeLine{374         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_array_a3f26a48c35cde008970078a66ff6e5c7}\label{classop_1_1_array_a3f26a48c35cde008970078a66ff6e5c7}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!printSize@{printSize}}
+\index{printSize@{printSize}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{printSize()}{printSize()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+std\+::string \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::print\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return a string with the size of each dimension allocated. \begin{DoxyReturn}{반환값}
+A std\+::stringwith the size of each dimension. If no memory has been allocated, it will return an empty string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classop_1_1_array_a12e538b09e98bf0900163031602ed2ed}\label{classop_1_1_array_a12e538b09e98bf0900163031602ed2ed}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!reset@{reset}}
+\index{reset@{reset}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::reset (\begin{DoxyParamCaption}\item[{const int}]{size }\end{DoxyParamCaption})}
+
+Data allocation function. It allocates the required space for the memory (it does not initialize that memory). 
+\begin{DoxyParams}{매개변수}
+{\em size} & Integer with the number of T element to be allocated. E.\+g., size = 5 is internally similar to {\ttfamily new T\mbox{[}5\mbox{]}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_array_ac7183eb2f4e78a6941da3a2079b9ed32}\label{classop_1_1_array_ac7183eb2f4e78a6941da3a2079b9ed32}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!reset@{reset}}
+\index{reset@{reset}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::reset (\begin{DoxyParamCaption}\item[{const int}]{size,  }\item[{const T}]{value }\end{DoxyParamCaption})}
+
+Data allocation function. Similar to \mbox{\hyperlink{classop_1_1_array_a12e538b09e98bf0900163031602ed2ed}{reset(const int size)}}, but initializing the data to the value specified by the second argument. 
+\begin{DoxyParams}{매개변수}
+{\em size} & Integer with the number of T element to be allocated. E.\+g., size = 5 is internally similar to {\ttfamily new T\mbox{[}5\mbox{]}}. \\
+\hline
+{\em value} & Initial value for each component of the \mbox{\hyperlink{classop_1_1_array}{Array}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_array_add2eeccd967cdf0900449649cb6f5afb}\label{classop_1_1_array_add2eeccd967cdf0900449649cb6f5afb}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!reset@{reset}}
+\index{reset@{reset}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::reset (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{sizes,  }\item[{const T}]{value }\end{DoxyParamCaption})}
+
+Data allocation function. Similar to \mbox{\hyperlink{classop_1_1_array_a0ad0232daa69783cf2c8f7a0ff5b3b0c}{reset(const std\+::vector$<$int$>$\& size)}}, but initializing the data to the value specified by the second argument. 
+\begin{DoxyParams}{매개변수}
+{\em sizes} & Vector with the size of each dimension. E.\+g., size = \{3, 5, 2\} is internally similar to {\ttfamily new T\mbox{[}3$\ast$5$\ast$2\mbox{]}}. \\
+\hline
+{\em value} & Initial value for each component of the \mbox{\hyperlink{classop_1_1_array}{Array}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_array_a0ad0232daa69783cf2c8f7a0ff5b3b0c}\label{classop_1_1_array_a0ad0232daa69783cf2c8f7a0ff5b3b0c}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!reset@{reset}}
+\index{reset@{reset}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::reset (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{sizes = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+Data allocation function. Similar to \mbox{\hyperlink{classop_1_1_array_a12e538b09e98bf0900163031602ed2ed}{reset(const int size)}}, but it allocates a multi-\/dimensional array of dimensions each of the values of the argument. 
+\begin{DoxyParams}{매개변수}
+{\em sizes} & Vector with the size of each dimension. E.\+g., size = \{3, 5, 2\} is internally similar to {\ttfamily new T\mbox{[}3$\ast$5$\ast$2\mbox{]}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_array_aee4a32bd228f0327ff3a29d7530b5ec8}\label{classop_1_1_array_aee4a32bd228f0327ff3a29d7530b5ec8}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!resetAuxiliary@{resetAuxiliary}}
+\index{resetAuxiliary@{resetAuxiliary}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{resetAuxiliary()}{resetAuxiliary()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::reset\+Auxiliary (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{sizes,  }\item[{T $\ast$const}]{data\+Ptr = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_array_a6bf43d039478797722cf9401ceb951e9}\label{classop_1_1_array_a6bf43d039478797722cf9401ceb951e9}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!setFrom@{setFrom}}
+\index{setFrom@{setFrom}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setFrom()}{setFrom()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::set\+From (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{cv\+Mat }\end{DoxyParamCaption})}
+
+Data allocation function. It internally allocates memory and copies the data of the argument to the \mbox{\hyperlink{classop_1_1_array}{Array}} allocated memory. 
+\begin{DoxyParams}{매개변수}
+{\em cv\+Mat} & cv\+::\+Mat to be copied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_array_a28f09d11de753a741334ee8094296acb}\label{classop_1_1_array_a28f09d11de753a741334ee8094296acb}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!setTo@{setTo}}
+\index{setTo@{setTo}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setTo()}{setTo()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::set\+To (\begin{DoxyParamCaption}\item[{const T}]{value }\end{DoxyParamCaption})}
+
+Data allocation function. It internally assigns all the allocated memory to the value indicated by the argument. 
+\begin{DoxyParams}{매개변수}
+{\em value} & Value for each component of the \mbox{\hyperlink{classop_1_1_array}{Array}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classop_1_1_array_af488c66ddac6cb75f7690ba8207599ed}\label{classop_1_1_array_af488c66ddac6cb75f7690ba8207599ed}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!toString@{toString}}
+\index{toString@{toString}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const std\+::string \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+It returns a string with the whole array data. Useful for debugging. The format is\+: values separated by a space, and a enter for each dimension. E.\+g., For the \mbox{\hyperlink{classop_1_1_array}{Array}}\{2, 2, 3\}, it will print\+: \mbox{\hyperlink{classop_1_1_array_af488c66ddac6cb75f7690ba8207599ed}{Array$<$\+T$>$\+::to\+String()}}\+: x1 x2 x3 x4 x5 x6
+
+x7 x8 x9 x10 x11 x12 \begin{DoxyReturn}{반환값}
+A string with the array values in the above format. 
+\end{DoxyReturn}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_array_abd1e56b0845dcf9384b00df5d58565ae}\label{classop_1_1_array_abd1e56b0845dcf9384b00df5d58565ae}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!mCvMatData@{mCvMatData}}
+\index{mCvMatData@{mCvMatData}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mCvMatData}{mCvMatData}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+std\+::pair$<$bool, cv\+::\+Mat$>$ \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::m\+Cv\+Mat\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+array.\+hpp 파일의 443 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_array_a0c1a89bfb17aeaf2a5604993a514e969}\label{classop_1_1_array_a0c1a89bfb17aeaf2a5604993a514e969}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!mSize@{mSize}}
+\index{mSize@{mSize}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mSize}{mSize}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+std\+::vector$<$int$>$ \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::m\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+array.\+hpp 파일의 439 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_array_af537a2a4184fd444a0c171504229c716}\label{classop_1_1_array_af537a2a4184fd444a0c171504229c716}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!mVolume@{mVolume}}
+\index{mVolume@{mVolume}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mVolume}{mVolume}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+size\+\_\+t \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::m\+Volume\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+array.\+hpp 파일의 440 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_array_a2af369ddb9636bd420f5dde8b2a9e592}\label{classop_1_1_array_a2af369ddb9636bd420f5dde8b2a9e592}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!pData@{pData}}
+\index{pData@{pData}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pData}{pData}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::p\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+array.\+hpp 파일의 442 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_array_a6aacb0623df99e851f20260b32e37c34}\label{classop_1_1_array_a6aacb0623df99e851f20260b32e37c34}} 
+\index{op::Array$<$ T $>$@{op::Array$<$ T $>$}!spData@{spData}}
+\index{spData@{spData}!op::Array$<$ T $>$@{op::Array$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{spData}{spData}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+std\+::shared\+\_\+ptr$<$T$>$ \mbox{\hyperlink{classop_1_1_array}{op\+::\+Array}}$<$ T $>$\+::sp\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+array.\+hpp 파일의 441 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/core/\mbox{\hyperlink{array_8hpp}{array.\+hpp}}\end{DoxyCompactItemize}

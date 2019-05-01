@@ -1,0 +1,7 @@
+<map id="cl::Memory::getInfo" name="cl::Memory::getInfo">
+<area shape="rect" id="node1" title="Wrapper for clGetMemObjectInfo() that returns by value." alt="" coords="5,31,140,57"/>
+<area shape="rect" id="node2" href="$classcl_1_1_memory.html#ab86d24b2a4f9a7090148fb8e77d73135" title="Wrapper for clGetMemObjectInfo()." alt="" coords="188,31,323,57"/>
+<area shape="rect" id="node3" href="$namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="371,5,509,32"/>
+<area shape="rect" id="node4" href="$namespacecl_1_1detail.html#a5954b0e110a023571c1bed2be1efb480" title=" " alt="" coords="381,56,499,83"/>
+<area shape="rect" id="node5" href="$namespacecl_1_1detail.html#a5fa0595cfd70a34a662283c683f58bb1" title=" " alt="" coords="557,56,715,83"/>
+</map>

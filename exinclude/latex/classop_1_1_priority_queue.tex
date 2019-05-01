@@ -1,0 +1,1066 @@
+\hypertarget{classop_1_1_priority_queue}{}\doxysection{op\+::Priority\+Queue$<$ T\+Datums, T\+Queue $>$ 클래스 템플릿 참조}
+\label{classop_1_1_priority_queue}\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+
+
+{\ttfamily \#include $<$priority\+Queue.\+hpp$>$}
+
+
+
+op\+::Priority\+Queue$<$ T\+Datums, T\+Queue $>$에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_priority_queue__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::Priority\+Queue$<$ T\+Datums, T\+Queue $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classop_1_1_priority_queue__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_priority_queue_acecdd3c5789942777652b66d08578d93}{Priority\+Queue}} (const long long max\+Size=256)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_priority_queue_a469b458b035822f01b212c089d4245bc}{$\sim$\+Priority\+Queue}} ()
+\item 
+T\+Datums \mbox{\hyperlink{classop_1_1_priority_queue_a8e468dfaed310e54987cbb8cb1cef909}{front}} () const
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_a8d218f599b84194909691c72ee0de8d0}{force\+Emplace}} (T\+Datums \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_a7905841f953be7099847cc7b5b17ae0c}{try\+Emplace}} (T\+Datums \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_a8a5d53c7b66fd0ef34b3e276f586e355}{wait\+And\+Emplace}} (T\+Datums \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_ad124d414b7c2680e5312ee163d18410f}{force\+Push}} (const T\+Datums \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_a35f0547f6020f22e49835b147b7ec52e}{try\+Push}} (const T\+Datums \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_ab28c5805dd23117c8d6d82d59617bb95}{wait\+And\+Push}} (const T\+Datums \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_a80c6e2dda17afa82aae83aeadad1f7e0}{try\+Pop}} (T\+Datums \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_a5e52b4ab7e310373e3d1f1d42cfe4549}{try\+Pop}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_a2c7b3d0fa6502c644c3083dd68332542}{wait\+And\+Pop}} (T\+Datums \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_a84da9e045acec02e3900153eea2bd92d}{wait\+And\+Pop}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_a74d9b247804a226cf9a0758b25bd3ba9}{empty}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_queue_base_a68b51dafaba93179fcef78731aaf1703}{stop}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_queue_base_a32ac0e4b14a310aee62ce817e86c0356}{stop\+Pusher}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_queue_base_adc5df8a039d360831db06e3c610bf015}{add\+Popper}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_queue_base_a1ccdec39ea65a83edc54661acc283134}{add\+Pusher}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_a9f529f94ff3b98e3ac11d796caa31239}{is\+Running}} () const
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_a17a52df2e912a346c412418c62268425}{is\+Full}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classop_1_1_queue_base_a8fd69ac0ffcda02d0d26102e2ebd2841}{size}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_queue_base_a247f435c95709f3246d352eee4f757af}{clear}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long long \mbox{\hyperlink{classop_1_1_queue_base_a7b3f810bb6e729be3afe3313c4b2f31b}{get\+Max\+Size}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mutex \mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{m\+Mutex}}
+\item 
+long long \mbox{\hyperlink{classop_1_1_queue_base_a04f7160c199f90b8f8e91ddfd40e92fb}{m\+Poppers}}
+\item 
+long long \mbox{\hyperlink{classop_1_1_queue_base_a7c382bb98f5b769cde37b06d67cb0530}{m\+Pushers}}
+\item 
+long long \mbox{\hyperlink{classop_1_1_queue_base_a1d55f40e032cd5d43d63ba02040b3117}{m\+Max\+Poppers\+Pushers}}
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_a77bf3592bbb6ac586cd4c2b0aea98e62}{m\+Pop\+Is\+Stopped}}
+\item 
+bool \mbox{\hyperlink{classop_1_1_queue_base_af2c0f21c6b4f4639661b59aa247ae407}{m\+Push\+Is\+Stopped}}
+\item 
+std\+::condition\+\_\+variable \mbox{\hyperlink{classop_1_1_queue_base_a8b5e59161a0b175d12955b552a90a47f}{m\+Condition\+Variable}}
+\item 
+T\+Queue \mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{m\+T\+Queue}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classop_1_1_priority_queue_a36e18ce5e2bcfd481528b562b2d61309}{pop}} (T\+Datums \&t\+Datums)
+\item 
+\mbox{\hyperlink{classop_1_1_priority_queue_a1c6e139c27a9e0320d5a1551566e7593}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_priority_queue}{Priority\+Queue}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T\+Datums, typename T\+Queue = std\+::priority\+\_\+queue$<$\+T\+Datums, std\+::vector$<$\+T\+Datums$>$, std\+::greater$<$\+T\+Datums$>$$>$$>$\newline
+class op\+::\+Priority\+Queue$<$ T\+Datums, T\+Queue $>$}
+
+
+
+priority\+Queue.\+hpp 파일의 11 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_priority_queue_acecdd3c5789942777652b66d08578d93}\label{classop_1_1_priority_queue_acecdd3c5789942777652b66d08578d93}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!PriorityQueue@{PriorityQueue}}
+\index{PriorityQueue@{PriorityQueue}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{PriorityQueue()}{PriorityQueue()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+\mbox{\hyperlink{classop_1_1_priority_queue}{op\+::\+Priority\+Queue}}$<$ T\+Datums, T\+Queue $>$\+::\mbox{\hyperlink{classop_1_1_priority_queue}{Priority\+Queue}} (\begin{DoxyParamCaption}\item[{const long long}]{max\+Size = {\ttfamily 256} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+priority\+Queue.\+hpp 파일의 36 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36                                                                          :}
+\DoxyCodeLine{37         QueueBase<TDatums, TQueue>\{maxSize\}}
+\DoxyCodeLine{38     \{}
+\DoxyCodeLine{39         \textcolor{comment}{// Check TDatums = underlying value type of TQueue}}
+\DoxyCodeLine{40         \textcolor{keyword}{typedef} \textcolor{keyword}{typename} TQueue::value\_type underlyingValueType;}
+\DoxyCodeLine{41         static\_assert(std::is\_same<TDatums, underlyingValueType>::value,}
+\DoxyCodeLine{42                       \textcolor{stringliteral}{"Error: The type of the queue must be the same as the type of the container"});}
+\DoxyCodeLine{43     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_priority_queue_a469b458b035822f01b212c089d4245bc}\label{classop_1_1_priority_queue_a469b458b035822f01b212c089d4245bc}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!````~PriorityQueue@{$\sim$PriorityQueue}}
+\index{````~PriorityQueue@{$\sim$PriorityQueue}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$PriorityQueue()}{~PriorityQueue()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+\mbox{\hyperlink{classop_1_1_priority_queue}{op\+::\+Priority\+Queue}}$<$ T\+Datums, T\+Queue $>$\+::$\sim$\mbox{\hyperlink{classop_1_1_priority_queue}{Priority\+Queue}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+priority\+Queue.\+hpp 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47     \{}
+\DoxyCodeLine{48     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_queue_base_adc5df8a039d360831db06e3c610bf015}\label{classop_1_1_queue_base_adc5df8a039d360831db06e3c610bf015}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!addPopper@{addPopper}}
+\index{addPopper@{addPopper}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{addPopper()}{addPopper()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+void \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::add\+Popper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 342 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{343     \{}
+\DoxyCodeLine{344         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{345         \{}
+\DoxyCodeLine{346             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{347             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{348             \mbox{\hyperlink{classop_1_1_queue_base_a04f7160c199f90b8f8e91ddfd40e92fb}{mPoppers}}++;}
+\DoxyCodeLine{349             \mbox{\hyperlink{classop_1_1_queue_base_a95b3f0cf4564bf1102d3fa83ca908d4a}{updateMaxPoppersPushers}}();}
+\DoxyCodeLine{350         \}}
+\DoxyCodeLine{351         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{352         \{}
+\DoxyCodeLine{353             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{354         \}}
+\DoxyCodeLine{355     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classop_1_1_queue_base_adc5df8a039d360831db06e3c610bf015_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a1ccdec39ea65a83edc54661acc283134}\label{classop_1_1_queue_base_a1ccdec39ea65a83edc54661acc283134}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!addPusher@{addPusher}}
+\index{addPusher@{addPusher}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{addPusher()}{addPusher()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+void \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::add\+Pusher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 358 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{359     \{}
+\DoxyCodeLine{360         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{361         \{}
+\DoxyCodeLine{362             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{363             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{364             \mbox{\hyperlink{classop_1_1_queue_base_a7c382bb98f5b769cde37b06d67cb0530}{mPushers}}++;}
+\DoxyCodeLine{365             \mbox{\hyperlink{classop_1_1_queue_base_a95b3f0cf4564bf1102d3fa83ca908d4a}{updateMaxPoppersPushers}}();}
+\DoxyCodeLine{366         \}}
+\DoxyCodeLine{367         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{368         \{}
+\DoxyCodeLine{369             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{370         \}}
+\DoxyCodeLine{371     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classop_1_1_queue_base_a1ccdec39ea65a83edc54661acc283134_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a247f435c95709f3246d352eee4f757af}\label{classop_1_1_queue_base_a247f435c95709f3246d352eee4f757af}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!clear@{clear}}
+\index{clear@{clear}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+void \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 419 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{420     \{}
+\DoxyCodeLine{421         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{422         \{}
+\DoxyCodeLine{423             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{424             \textcolor{keywordflow}{while} (!\mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.empty())}
+\DoxyCodeLine{425                 \mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.pop();}
+\DoxyCodeLine{426         \}}
+\DoxyCodeLine{427         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{428         \{}
+\DoxyCodeLine{429             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{430         \}}
+\DoxyCodeLine{431     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{classop_1_1_queue_base_a247f435c95709f3246d352eee4f757af_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_priority_queue_a1c6e139c27a9e0320d5a1551566e7593}\label{classop_1_1_priority_queue_a1c6e139c27a9e0320d5a1551566e7593}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue  = std\+::priority\+\_\+queue$<$\+T\+Datums, std\+::vector$<$\+T\+Datums$>$, std\+::greater$<$\+T\+Datums$>$$>$$>$ \\
+\mbox{\hyperlink{classop_1_1_priority_queue}{op\+::\+Priority\+Queue}}$<$ T\+Datums, T\+Queue $>$\+::D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_priority_queue}{Priority\+Queue}}$<$ T\+Datums, T\+Queue $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_queue_base_a74d9b247804a226cf9a0758b25bd3ba9}\label{classop_1_1_queue_base_a74d9b247804a226cf9a0758b25bd3ba9}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!empty@{empty}}
+\index{empty@{empty}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 286 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{287     \{}
+\DoxyCodeLine{288         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{289         \{}
+\DoxyCodeLine{290             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{291             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.empty();}
+\DoxyCodeLine{292         \}}
+\DoxyCodeLine{293         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{294         \{}
+\DoxyCodeLine{295             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{296             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{297         \}}
+\DoxyCodeLine{298     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{classop_1_1_queue_base_a74d9b247804a226cf9a0758b25bd3ba9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a8d218f599b84194909691c72ee0de8d0}\label{classop_1_1_queue_base_a8d218f599b84194909691c72ee0de8d0}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!forceEmplace@{forceEmplace}}
+\index{forceEmplace@{forceEmplace}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{forceEmplace()}{forceEmplace()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::force\+Emplace (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 124 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{125     \{}
+\DoxyCodeLine{126         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{127         \{}
+\DoxyCodeLine{128             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{129             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.size() >= \mbox{\hyperlink{classop_1_1_queue_base_a7b3f810bb6e729be3afe3313c4b2f31b}{getMaxSize}}())}
+\DoxyCodeLine{130                 \mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.pop();}
+\DoxyCodeLine{131             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_a0f6ad3817e2eb8e785f0a166ad96fba1}{emplace}}(tDatums);}
+\DoxyCodeLine{132         \}}
+\DoxyCodeLine{133         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{134         \{}
+\DoxyCodeLine{135             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{136             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{137         \}}
+\DoxyCodeLine{138     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classop_1_1_queue_base_a8d218f599b84194909691c72ee0de8d0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_ad124d414b7c2680e5312ee163d18410f}\label{classop_1_1_queue_base_ad124d414b7c2680e5312ee163d18410f}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!forcePush@{forcePush}}
+\index{forcePush@{forcePush}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{forcePush()}{forcePush()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::force\+Push (\begin{DoxyParamCaption}\item[{const T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 174 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{175     \{}
+\DoxyCodeLine{176         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{177         \{}
+\DoxyCodeLine{178             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{179             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.size() >= \mbox{\hyperlink{classop_1_1_queue_base_a7b3f810bb6e729be3afe3313c4b2f31b}{getMaxSize}}())}
+\DoxyCodeLine{180                 \mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.pop();}
+\DoxyCodeLine{181             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_a3b3b9b33fa492cc97ca964b566043a54}{push}}(tDatums);}
+\DoxyCodeLine{182         \}}
+\DoxyCodeLine{183         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{184         \{}
+\DoxyCodeLine{185             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{186             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{187         \}}
+\DoxyCodeLine{188     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classop_1_1_queue_base_ad124d414b7c2680e5312ee163d18410f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_priority_queue_a8e468dfaed310e54987cbb8cb1cef909}\label{classop_1_1_priority_queue_a8e468dfaed310e54987cbb8cb1cef909}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!front@{front}}
+\index{front@{front}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+T\+Datums \mbox{\hyperlink{classop_1_1_priority_queue}{op\+::\+Priority\+Queue}}$<$ T\+Datums, T\+Queue $>$\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_queue_base_aad7a6a666dcf70834d9d18ae6d92cb2c}{op\+::\+Queue\+Base$<$ T\+Datums, T\+Queue $>$}}를 구현.
+
+
+
+priority\+Queue.\+hpp 파일의 51 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52     \{}
+\DoxyCodeLine{53         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{54         \{}
+\DoxyCodeLine{55             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{this-\/>\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{56             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.top();}
+\DoxyCodeLine{57         \}}
+\DoxyCodeLine{58         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{59         \{}
+\DoxyCodeLine{60             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{61             \textcolor{keywordflow}{return} TDatums\{\};}
+\DoxyCodeLine{62         \}}
+\DoxyCodeLine{63     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classop_1_1_priority_queue_a8e468dfaed310e54987cbb8cb1cef909_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a7b3f810bb6e729be3afe3313c4b2f31b}\label{classop_1_1_queue_base_a7b3f810bb6e729be3afe3313c4b2f31b}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!getMaxSize@{getMaxSize}}
+\index{getMaxSize@{getMaxSize}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{getMaxSize()}{getMaxSize()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+unsigned long long \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::get\+Max\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 434 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{435     \{}
+\DoxyCodeLine{436         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{437         \{}
+\DoxyCodeLine{438             \textcolor{keywordflow}{return} (\mbox{\hyperlink{classop_1_1_queue_base_aa1e73632f3b9284cf9893029d43cde26}{mMaxSize}} > 0 ? \mbox{\hyperlink{classop_1_1_queue_base_aa1e73632f3b9284cf9893029d43cde26}{mMaxSize}} : \mbox{\hyperlink{namespaceop_a9f4b99449c0c73e2c89ee1a1eff007c7}{fastMax}}(1ll, \mbox{\hyperlink{classop_1_1_queue_base_a1d55f40e032cd5d43d63ba02040b3117}{mMaxPoppersPushers}}));}
+\DoxyCodeLine{439         \}}
+\DoxyCodeLine{440         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{441         \{}
+\DoxyCodeLine{442             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{443             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{444         \}}
+\DoxyCodeLine{445     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classop_1_1_queue_base_a7b3f810bb6e729be3afe3313c4b2f31b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a17a52df2e912a346c412418c62268425}\label{classop_1_1_queue_base_a17a52df2e912a346c412418c62268425}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!isFull@{isFull}}
+\index{isFull@{isFull}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{isFull()}{isFull()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::is\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 389 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{390     \{}
+\DoxyCodeLine{391         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{392         \{}
+\DoxyCodeLine{393             \textcolor{comment}{// No mutex required because the size() and getMaxSize() are already thread-\/safe}}
+\DoxyCodeLine{394             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_a8fd69ac0ffcda02d0d26102e2ebd2841}{size}}() == \mbox{\hyperlink{classop_1_1_queue_base_a7b3f810bb6e729be3afe3313c4b2f31b}{getMaxSize}}();}
+\DoxyCodeLine{395         \}}
+\DoxyCodeLine{396         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{397         \{}
+\DoxyCodeLine{398             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{399             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{400         \}}
+\DoxyCodeLine{401     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classop_1_1_queue_base_a17a52df2e912a346c412418c62268425_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a9f529f94ff3b98e3ac11d796caa31239}\label{classop_1_1_queue_base_a9f529f94ff3b98e3ac11d796caa31239}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 374 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{375     \{}
+\DoxyCodeLine{376         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{377         \{}
+\DoxyCodeLine{378             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{379             \textcolor{keywordflow}{return} !(\mbox{\hyperlink{classop_1_1_queue_base_af2c0f21c6b4f4639661b59aa247ae407}{mPushIsStopped}} \&\& (\mbox{\hyperlink{classop_1_1_queue_base_a77bf3592bbb6ac586cd4c2b0aea98e62}{mPopIsStopped}} || \mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.empty()));}
+\DoxyCodeLine{380         \}}
+\DoxyCodeLine{381         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{382         \{}
+\DoxyCodeLine{383             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{384             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{385         \}}
+\DoxyCodeLine{386     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classop_1_1_queue_base_a9f529f94ff3b98e3ac11d796caa31239_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_priority_queue_a36e18ce5e2bcfd481528b562b2d61309}\label{classop_1_1_priority_queue_a36e18ce5e2bcfd481528b562b2d61309}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!pop@{pop}}
+\index{pop@{pop}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_priority_queue}{op\+::\+Priority\+Queue}}$<$ T\+Datums, T\+Queue $>$\+::pop (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_queue_base_a5b28915cc58e040aca673bdfdf7c8be3}{op\+::\+Queue\+Base$<$ T\+Datums, T\+Queue $>$}}를 구현.
+
+
+
+priority\+Queue.\+hpp 파일의 66 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67     \{}
+\DoxyCodeLine{68         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{69         \{}
+\DoxyCodeLine{70             \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classop_1_1_queue_base_a77bf3592bbb6ac586cd4c2b0aea98e62}{mPopIsStopped}} || this-\/>\mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.empty())}
+\DoxyCodeLine{71                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73             tDatums = \{std::move(this-\/>\mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.top())\};}
+\DoxyCodeLine{74             this-\/>\mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.pop();}
+\DoxyCodeLine{75             this-\/>\mbox{\hyperlink{classop_1_1_queue_base_a8b5e59161a0b175d12955b552a90a47f}{mConditionVariable}}.notify\_one();}
+\DoxyCodeLine{76             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{77         \}}
+\DoxyCodeLine{78         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{79         \{}
+\DoxyCodeLine{80             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{81             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{82         \}}
+\DoxyCodeLine{83     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{classop_1_1_priority_queue_a36e18ce5e2bcfd481528b562b2d61309_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a8fd69ac0ffcda02d0d26102e2ebd2841}\label{classop_1_1_queue_base_a8fd69ac0ffcda02d0d26102e2ebd2841}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!size@{size}}
+\index{size@{size}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+size\+\_\+t \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 404 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{405     \{}
+\DoxyCodeLine{406         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{407         \{}
+\DoxyCodeLine{408             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{409             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.size();}
+\DoxyCodeLine{410         \}}
+\DoxyCodeLine{411         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{412         \{}
+\DoxyCodeLine{413             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{414             \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{415         \}}
+\DoxyCodeLine{416     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{classop_1_1_queue_base_a8fd69ac0ffcda02d0d26102e2ebd2841_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a68b51dafaba93179fcef78731aaf1703}\label{classop_1_1_queue_base_a68b51dafaba93179fcef78731aaf1703}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!stop@{stop}}
+\index{stop@{stop}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+void \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 301 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{302     \{}
+\DoxyCodeLine{303         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{304         \{}
+\DoxyCodeLine{305             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{306             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{307             \mbox{\hyperlink{classop_1_1_queue_base_a77bf3592bbb6ac586cd4c2b0aea98e62}{mPopIsStopped}} = \{\textcolor{keyword}{true}\};}
+\DoxyCodeLine{308             \mbox{\hyperlink{classop_1_1_queue_base_af2c0f21c6b4f4639661b59aa247ae407}{mPushIsStopped}} = \{\textcolor{keyword}{true}\};}
+\DoxyCodeLine{309             \textcolor{keywordflow}{while} (!\mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.empty())}
+\DoxyCodeLine{310                 \mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.pop();}
+\DoxyCodeLine{311             \mbox{\hyperlink{classop_1_1_queue_base_a8b5e59161a0b175d12955b552a90a47f}{mConditionVariable}}.notify\_all();}
+\DoxyCodeLine{312         \}}
+\DoxyCodeLine{313         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{314         \{}
+\DoxyCodeLine{315             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{316         \}}
+\DoxyCodeLine{317     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classop_1_1_queue_base_a68b51dafaba93179fcef78731aaf1703_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a32ac0e4b14a310aee62ce817e86c0356}\label{classop_1_1_queue_base_a32ac0e4b14a310aee62ce817e86c0356}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!stopPusher@{stopPusher}}
+\index{stopPusher@{stopPusher}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{stopPusher()}{stopPusher()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+void \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::stop\+Pusher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 320 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{321     \{}
+\DoxyCodeLine{322         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{323         \{}
+\DoxyCodeLine{324             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{325             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{326             \mbox{\hyperlink{classop_1_1_queue_base_a7c382bb98f5b769cde37b06d67cb0530}{mPushers}}-\/-\/;}
+\DoxyCodeLine{327             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_queue_base_a7c382bb98f5b769cde37b06d67cb0530}{mPushers}} == 0)}
+\DoxyCodeLine{328             \{}
+\DoxyCodeLine{329                 \mbox{\hyperlink{classop_1_1_queue_base_af2c0f21c6b4f4639661b59aa247ae407}{mPushIsStopped}} = \{\textcolor{keyword}{true}\};}
+\DoxyCodeLine{330                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.empty())}
+\DoxyCodeLine{331                     \mbox{\hyperlink{classop_1_1_queue_base_a77bf3592bbb6ac586cd4c2b0aea98e62}{mPopIsStopped}} = \{\textcolor{keyword}{true}\};}
+\DoxyCodeLine{332                 \mbox{\hyperlink{classop_1_1_queue_base_a8b5e59161a0b175d12955b552a90a47f}{mConditionVariable}}.notify\_all();}
+\DoxyCodeLine{333             \}}
+\DoxyCodeLine{334         \}}
+\DoxyCodeLine{335         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{336         \{}
+\DoxyCodeLine{337             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{338         \}}
+\DoxyCodeLine{339     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classop_1_1_queue_base_a32ac0e4b14a310aee62ce817e86c0356_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a7905841f953be7099847cc7b5b17ae0c}\label{classop_1_1_queue_base_a7905841f953be7099847cc7b5b17ae0c}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!tryEmplace@{tryEmplace}}
+\index{tryEmplace@{tryEmplace}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{tryEmplace()}{tryEmplace()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::try\+Emplace (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 141 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{142     \{}
+\DoxyCodeLine{143         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{144         \{}
+\DoxyCodeLine{145             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{146             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.size() >= \mbox{\hyperlink{classop_1_1_queue_base_a7b3f810bb6e729be3afe3313c4b2f31b}{getMaxSize}}())}
+\DoxyCodeLine{147                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{148             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_a0f6ad3817e2eb8e785f0a166ad96fba1}{emplace}}(tDatums);}
+\DoxyCodeLine{149         \}}
+\DoxyCodeLine{150         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{151         \{}
+\DoxyCodeLine{152             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{153             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{154         \}}
+\DoxyCodeLine{155     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classop_1_1_queue_base_a7905841f953be7099847cc7b5b17ae0c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a5e52b4ab7e310373e3d1f1d42cfe4549}\label{classop_1_1_queue_base_a5e52b4ab7e310373e3d1f1d42cfe4549}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!tryPop@{tryPop}}
+\index{tryPop@{tryPop}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{tryPop()}{tryPop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::try\+Pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 239 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{240     \{}
+\DoxyCodeLine{241         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{242         \{}
+\DoxyCodeLine{243             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{244             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_abb6816e084f0a414b0a1370229d9aee4}{pop}}();}
+\DoxyCodeLine{245         \}}
+\DoxyCodeLine{246         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{247         \{}
+\DoxyCodeLine{248             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{249             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{250         \}}
+\DoxyCodeLine{251     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classop_1_1_queue_base_a5e52b4ab7e310373e3d1f1d42cfe4549_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a80c6e2dda17afa82aae83aeadad1f7e0}\label{classop_1_1_queue_base_a80c6e2dda17afa82aae83aeadad1f7e0}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!tryPop@{tryPop}}
+\index{tryPop@{tryPop}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{tryPop()}{tryPop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::try\+Pop (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 224 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{225     \{}
+\DoxyCodeLine{226         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{227         \{}
+\DoxyCodeLine{228             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{229             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_abb6816e084f0a414b0a1370229d9aee4}{pop}}(tDatums);}
+\DoxyCodeLine{230         \}}
+\DoxyCodeLine{231         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{232         \{}
+\DoxyCodeLine{233             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{234             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{235         \}}
+\DoxyCodeLine{236     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classop_1_1_queue_base_a80c6e2dda17afa82aae83aeadad1f7e0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a35f0547f6020f22e49835b147b7ec52e}\label{classop_1_1_queue_base_a35f0547f6020f22e49835b147b7ec52e}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!tryPush@{tryPush}}
+\index{tryPush@{tryPush}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{tryPush()}{tryPush()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::try\+Push (\begin{DoxyParamCaption}\item[{const T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 191 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{192     \{}
+\DoxyCodeLine{193         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{194         \{}
+\DoxyCodeLine{195             \textcolor{keyword}{const} std::lock\_guard<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{196             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.size() >= \mbox{\hyperlink{classop_1_1_queue_base_a7b3f810bb6e729be3afe3313c4b2f31b}{getMaxSize}}())}
+\DoxyCodeLine{197                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{198             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_a3b3b9b33fa492cc97ca964b566043a54}{push}}(tDatums);}
+\DoxyCodeLine{199         \}}
+\DoxyCodeLine{200         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{201         \{}
+\DoxyCodeLine{202             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{203             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{204         \}}
+\DoxyCodeLine{205     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classop_1_1_queue_base_a35f0547f6020f22e49835b147b7ec52e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a8a5d53c7b66fd0ef34b3e276f586e355}\label{classop_1_1_queue_base_a8a5d53c7b66fd0ef34b3e276f586e355}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!waitAndEmplace@{waitAndEmplace}}
+\index{waitAndEmplace@{waitAndEmplace}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{waitAndEmplace()}{waitAndEmplace()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::wait\+And\+Emplace (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 158 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{159     \{}
+\DoxyCodeLine{160         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{161         \{}
+\DoxyCodeLine{162             std::unique\_lock<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{163             \mbox{\hyperlink{classop_1_1_queue_base_a8b5e59161a0b175d12955b552a90a47f}{mConditionVariable}}.wait(lock, [\textcolor{keyword}{this}]\{\textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.size() < \mbox{\hyperlink{classop_1_1_queue_base_a7b3f810bb6e729be3afe3313c4b2f31b}{getMaxSize}}() || \mbox{\hyperlink{classop_1_1_queue_base_af2c0f21c6b4f4639661b59aa247ae407}{mPushIsStopped}}; \});}
+\DoxyCodeLine{164             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_a0f6ad3817e2eb8e785f0a166ad96fba1}{emplace}}(tDatums);}
+\DoxyCodeLine{165         \}}
+\DoxyCodeLine{166         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{167         \{}
+\DoxyCodeLine{168             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{169             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{170         \}}
+\DoxyCodeLine{171     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classop_1_1_queue_base_a8a5d53c7b66fd0ef34b3e276f586e355_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a84da9e045acec02e3900153eea2bd92d}\label{classop_1_1_queue_base_a84da9e045acec02e3900153eea2bd92d}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!waitAndPop@{waitAndPop}}
+\index{waitAndPop@{waitAndPop}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{waitAndPop()}{waitAndPop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::wait\+And\+Pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 270 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{271     \{}
+\DoxyCodeLine{272         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{273         \{}
+\DoxyCodeLine{274             std::unique\_lock<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{275             \mbox{\hyperlink{classop_1_1_queue_base_a8b5e59161a0b175d12955b552a90a47f}{mConditionVariable}}.wait(lock, [\textcolor{keyword}{this}]\{\textcolor{keywordflow}{return} !\mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.empty() || \mbox{\hyperlink{classop_1_1_queue_base_a77bf3592bbb6ac586cd4c2b0aea98e62}{mPopIsStopped}}; \});}
+\DoxyCodeLine{276             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_abb6816e084f0a414b0a1370229d9aee4}{pop}}();}
+\DoxyCodeLine{277         \}}
+\DoxyCodeLine{278         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{279         \{}
+\DoxyCodeLine{280             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{281             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{282         \}}
+\DoxyCodeLine{283     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classop_1_1_queue_base_a84da9e045acec02e3900153eea2bd92d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_a2c7b3d0fa6502c644c3083dd68332542}\label{classop_1_1_queue_base_a2c7b3d0fa6502c644c3083dd68332542}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!waitAndPop@{waitAndPop}}
+\index{waitAndPop@{waitAndPop}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{waitAndPop()}{waitAndPop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::wait\+And\+Pop (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 254 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{255     \{}
+\DoxyCodeLine{256         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{257         \{}
+\DoxyCodeLine{258             std::unique\_lock<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{259             \mbox{\hyperlink{classop_1_1_queue_base_a8b5e59161a0b175d12955b552a90a47f}{mConditionVariable}}.wait(lock, [\textcolor{keyword}{this}]\{\textcolor{keywordflow}{return} !\mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.empty() || \mbox{\hyperlink{classop_1_1_queue_base_a77bf3592bbb6ac586cd4c2b0aea98e62}{mPopIsStopped}}; \});}
+\DoxyCodeLine{260             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_abb6816e084f0a414b0a1370229d9aee4}{pop}}(tDatums);}
+\DoxyCodeLine{261         \}}
+\DoxyCodeLine{262         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{263         \{}
+\DoxyCodeLine{264             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{265             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{266         \}}
+\DoxyCodeLine{267     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classop_1_1_queue_base_a2c7b3d0fa6502c644c3083dd68332542_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_queue_base_ab28c5805dd23117c8d6d82d59617bb95}\label{classop_1_1_queue_base_ab28c5805dd23117c8d6d82d59617bb95}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!waitAndPush@{waitAndPush}}
+\index{waitAndPush@{waitAndPush}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{waitAndPush()}{waitAndPush()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::wait\+And\+Push (\begin{DoxyParamCaption}\item[{const T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 208 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{209     \{}
+\DoxyCodeLine{210         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{211         \{}
+\DoxyCodeLine{212             std::unique\_lock<std::mutex> lock\{\mbox{\hyperlink{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}{mMutex}}\};}
+\DoxyCodeLine{213             \mbox{\hyperlink{classop_1_1_queue_base_a8b5e59161a0b175d12955b552a90a47f}{mConditionVariable}}.wait(lock, [\textcolor{keyword}{this}]\{\textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}{mTQueue}}.size() < \mbox{\hyperlink{classop_1_1_queue_base_a7b3f810bb6e729be3afe3313c4b2f31b}{getMaxSize}}() || \mbox{\hyperlink{classop_1_1_queue_base_af2c0f21c6b4f4639661b59aa247ae407}{mPushIsStopped}}; \});}
+\DoxyCodeLine{214             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_queue_base_a3b3b9b33fa492cc97ca964b566043a54}{push}}(tDatums);}
+\DoxyCodeLine{215         \}}
+\DoxyCodeLine{216         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{217         \{}
+\DoxyCodeLine{218             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{219             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{220         \}}
+\DoxyCodeLine{221     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classop_1_1_queue_base_ab28c5805dd23117c8d6d82d59617bb95_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_queue_base_a8b5e59161a0b175d12955b552a90a47f}\label{classop_1_1_queue_base_a8b5e59161a0b175d12955b552a90a47f}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!mConditionVariable@{mConditionVariable}}
+\index{mConditionVariable@{mConditionVariable}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{mConditionVariable}{mConditionVariable}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+std\+::condition\+\_\+variable \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::m\+Condition\+Variable\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 66 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_queue_base_a1d55f40e032cd5d43d63ba02040b3117}\label{classop_1_1_queue_base_a1d55f40e032cd5d43d63ba02040b3117}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!mMaxPoppersPushers@{mMaxPoppersPushers}}
+\index{mMaxPoppersPushers@{mMaxPoppersPushers}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{mMaxPoppersPushers}{mMaxPoppersPushers}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+long long \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::m\+Max\+Poppers\+Pushers\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 63 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}\label{classop_1_1_queue_base_a22c5e2964e9d9c18a9f02b8d2e0f30b4}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!mMutex@{mMutex}}
+\index{mMutex@{mMutex}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{mMutex}{mMutex}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+std\+::mutex \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::m\+Mutex\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 60 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_queue_base_a77bf3592bbb6ac586cd4c2b0aea98e62}\label{classop_1_1_queue_base_a77bf3592bbb6ac586cd4c2b0aea98e62}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!mPopIsStopped@{mPopIsStopped}}
+\index{mPopIsStopped@{mPopIsStopped}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{mPopIsStopped}{mPopIsStopped}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::m\+Pop\+Is\+Stopped\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 64 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_queue_base_a04f7160c199f90b8f8e91ddfd40e92fb}\label{classop_1_1_queue_base_a04f7160c199f90b8f8e91ddfd40e92fb}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!mPoppers@{mPoppers}}
+\index{mPoppers@{mPoppers}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{mPoppers}{mPoppers}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+long long \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::m\+Poppers\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 61 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_queue_base_a7c382bb98f5b769cde37b06d67cb0530}\label{classop_1_1_queue_base_a7c382bb98f5b769cde37b06d67cb0530}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!mPushers@{mPushers}}
+\index{mPushers@{mPushers}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{mPushers}{mPushers}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+long long \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::m\+Pushers\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 62 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_queue_base_af2c0f21c6b4f4639661b59aa247ae407}\label{classop_1_1_queue_base_af2c0f21c6b4f4639661b59aa247ae407}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!mPushIsStopped@{mPushIsStopped}}
+\index{mPushIsStopped@{mPushIsStopped}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{mPushIsStopped}{mPushIsStopped}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+bool \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::m\+Push\+Is\+Stopped\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 65 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}\label{classop_1_1_queue_base_a49c1d6740f2ce7f26eae606f109b5738}} 
+\index{op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}!mTQueue@{mTQueue}}
+\index{mTQueue@{mTQueue}!op::PriorityQueue$<$ TDatums, TQueue $>$@{op::PriorityQueue$<$ TDatums, TQueue $>$}}
+\doxysubsubsection{\texorpdfstring{mTQueue}{mTQueue}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Queue $>$ \\
+T\+Queue \mbox{\hyperlink{classop_1_1_queue_base}{op\+::\+Queue\+Base}}$<$ T\+Datums, T\+Queue $>$\+::m\+T\+Queue\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+queue\+Base.\+hpp 파일의 67 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/thread/\mbox{\hyperlink{priority_queue_8hpp}{priority\+Queue.\+hpp}}\end{DoxyCompactItemize}

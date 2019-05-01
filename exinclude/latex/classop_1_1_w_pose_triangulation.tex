@@ -1,0 +1,368 @@
+\hypertarget{classop_1_1_w_pose_triangulation}{}\doxysection{op\+::W\+Pose\+Triangulation$<$ T\+Datums $>$ 클래스 템플릿 참조}
+\label{classop_1_1_w_pose_triangulation}\index{op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}}
+
+
+{\ttfamily \#include $<$w\+Pose\+Triangulation.\+hpp$>$}
+
+
+
+op\+::W\+Pose\+Triangulation$<$ T\+Datums $>$에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classop_1_1_w_pose_triangulation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::W\+Pose\+Triangulation$<$ T\+Datums $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classop_1_1_w_pose_triangulation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_w_pose_triangulation_a439c75d19eae34fdd20f2f1c4ee18e48}{W\+Pose\+Triangulation}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_pose_triangulation}{Pose\+Triangulation}} $>$ \&pose\+Triangulation)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_w_pose_triangulation_ae88fe6766fbcca1a682306af99684fa3}{$\sim$\+W\+Pose\+Triangulation}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_w_pose_triangulation_a5711329db1768eb77d2d96575c9fb668}{initialization\+On\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_w_pose_triangulation_a495b29e03933d750827acc0531c72c78}{work}} (T\+Datums \&t\+Datums)
+\item 
+void \mbox{\hyperlink{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}{initialization\+On\+Thread\+No\+Exception}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}{check\+And\+Work}} (T\+Datums \&t\+Datums)
+\item 
+bool \mbox{\hyperlink{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}{is\+Running}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}} ()
+\item 
+virtual void \mbox{\hyperlink{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}{try\+Stop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_w_pose_triangulation_aeb8694bce5749fb633fb3c863a824ef9}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_w_pose_triangulation}{W\+Pose\+Triangulation}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_pose_triangulation}{Pose\+Triangulation}} $>$ \mbox{\hyperlink{classop_1_1_w_pose_triangulation_a088708946902bcc6c2506494e9fb2057}{sp\+Pose\+Triangulation}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T\+Datums$>$\newline
+class op\+::\+W\+Pose\+Triangulation$<$ T\+Datums $>$}
+
+
+
+w\+Pose\+Triangulation.\+hpp 파일의 11 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_w_pose_triangulation_a439c75d19eae34fdd20f2f1c4ee18e48}\label{classop_1_1_w_pose_triangulation_a439c75d19eae34fdd20f2f1c4ee18e48}} 
+\index{op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}!WPoseTriangulation@{WPoseTriangulation}}
+\index{WPoseTriangulation@{WPoseTriangulation}!op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{WPoseTriangulation()}{WPoseTriangulation()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_pose_triangulation}{op\+::\+W\+Pose\+Triangulation}}$<$ T\+Datums $>$\+::\mbox{\hyperlink{classop_1_1_w_pose_triangulation}{W\+Pose\+Triangulation}} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_pose_triangulation}{Pose\+Triangulation}} $>$ \&}]{pose\+Triangulation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+w\+Pose\+Triangulation.\+hpp 파일의 38 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                                                                                                              :}
+\DoxyCodeLine{39         \mbox{\hyperlink{classop_1_1_w_pose_triangulation_a088708946902bcc6c2506494e9fb2057}{spPoseTriangulation}}\{poseTriangulation\}}
+\DoxyCodeLine{40     \{}
+\DoxyCodeLine{41     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_pose_triangulation_ae88fe6766fbcca1a682306af99684fa3}\label{classop_1_1_w_pose_triangulation_ae88fe6766fbcca1a682306af99684fa3}} 
+\index{op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}!````~WPoseTriangulation@{$\sim$WPoseTriangulation}}
+\index{````~WPoseTriangulation@{$\sim$WPoseTriangulation}!op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$WPoseTriangulation()}{~WPoseTriangulation()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_pose_triangulation}{op\+::\+W\+Pose\+Triangulation}}$<$ T\+Datums $>$\+::$\sim$\mbox{\hyperlink{classop_1_1_w_pose_triangulation}{W\+Pose\+Triangulation}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+w\+Pose\+Triangulation.\+hpp 파일의 44 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45     \{}
+\DoxyCodeLine{46     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}\label{classop_1_1_worker_a6e4e84bd2052919bc48df1ec4b913ecf}} 
+\index{op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}!checkAndWork@{checkAndWork}}
+\index{checkAndWork@{checkAndWork}!op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{checkAndWork()}{checkAndWork()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+bool \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::check\+And\+Work (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 82 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83     \{}
+\DoxyCodeLine{84         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{85         \{}
+\DoxyCodeLine{86             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}})}
+\DoxyCodeLine{87                 \mbox{\hyperlink{classop_1_1_worker_a9acadd6df7af03b31b9e354ae815f781}{work}}(tDatums);}
+\DoxyCodeLine{88             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}};}
+\DoxyCodeLine{89         \}}
+\DoxyCodeLine{90         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{91         \{}
+\DoxyCodeLine{92             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{93             \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{errorWorker}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{94             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_pose_triangulation_aeb8694bce5749fb633fb3c863a824ef9}\label{classop_1_1_w_pose_triangulation_aeb8694bce5749fb633fb3c863a824ef9}} 
+\index{op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+\mbox{\hyperlink{classop_1_1_w_pose_triangulation}{op\+::\+W\+Pose\+Triangulation}}$<$ T\+Datums $>$\+::D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_w_pose_triangulation}{W\+Pose\+Triangulation}}$<$ T\+Datums $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_w_pose_triangulation_a5711329db1768eb77d2d96575c9fb668}\label{classop_1_1_w_pose_triangulation_a5711329db1768eb77d2d96575c9fb668}} 
+\index{op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_w_pose_triangulation}{op\+::\+W\+Pose\+Triangulation}}$<$ T\+Datums $>$\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}{op\+::\+Worker$<$ T\+Datums $>$}}를 구현.
+
+
+
+w\+Pose\+Triangulation.\+hpp 파일의 49 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50     \{}
+\DoxyCodeLine{51         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{52         \{}
+\DoxyCodeLine{53             \mbox{\hyperlink{classop_1_1_w_pose_triangulation_a088708946902bcc6c2506494e9fb2057}{spPoseTriangulation}}-\/>initializationOnThread();}
+\DoxyCodeLine{54         \}}
+\DoxyCodeLine{55         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{56         \{}
+\DoxyCodeLine{57             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{58         \}}
+\DoxyCodeLine{59     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classop_1_1_w_pose_triangulation_a5711329db1768eb77d2d96575c9fb668_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}\label{classop_1_1_worker_a5df10dd8a245df1a6d8df18978490899}} 
+\index{op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}!initializationOnThreadNoException@{initializationOnThreadNoException}}
+\index{initializationOnThreadNoException@{initializationOnThreadNoException}!op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{initializationOnThreadNoException()}{initializationOnThreadNoException()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::initialization\+On\+Thread\+No\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69     \{}
+\DoxyCodeLine{70         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{71         \{}
+\DoxyCodeLine{72             this-\/>\mbox{\hyperlink{classop_1_1_worker_aa5be4df9d4d8302728c653870e7d2a23}{initializationOnThread}}();}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{75         \{}
+\DoxyCodeLine{76             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{77             \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{errorWorker}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{78         \}}
+\DoxyCodeLine{79     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}\label{classop_1_1_worker_a567902b58e492421a6ad771e730ddf53}} 
+\index{op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+bool \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 20 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21         \{}
+\DoxyCodeLine{22             \textcolor{keywordflow}{return} \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}};}
+\DoxyCodeLine{23         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}\label{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}} 
+\index{op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}!stop@{stop}}
+\index{stop@{stop}!op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+worker.\+hpp 파일의 25 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26         \{}
+\DoxyCodeLine{27             \mbox{\hyperlink{classop_1_1_worker_a67add6c65de049c45a08376429d32993}{mIsRunning}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{28         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}\label{classop_1_1_worker_ad689b232d68f3b3e0b41f9e219b01134}} 
+\index{op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}!tryStop@{tryStop}}
+\index{tryStop@{tryStop}!op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{tryStop()}{tryStop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums$>$ \\
+virtual void \mbox{\hyperlink{classop_1_1_worker}{op\+::\+Worker}}$<$ T\+Datums $>$\+::try\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_w_queue_orderer_a01bc7495ec992cc9c54a040534cb3634}{op\+::\+W\+Queue\+Orderer$<$ T\+Datums $>$}}에서 재구현되었습니다.
+
+
+
+worker.\+hpp 파일의 32 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33         \{}
+\DoxyCodeLine{34             \mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{35         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_w_pose_triangulation_a495b29e03933d750827acc0531c72c78}\label{classop_1_1_w_pose_triangulation_a495b29e03933d750827acc0531c72c78}} 
+\index{op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}!work@{work}}
+\index{work@{work}!op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{work()}{work()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+void \mbox{\hyperlink{classop_1_1_w_pose_triangulation}{op\+::\+W\+Pose\+Triangulation}}$<$ T\+Datums $>$\+::work (\begin{DoxyParamCaption}\item[{T\+Datums \&}]{t\+Datums }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classop_1_1_worker_a9acadd6df7af03b31b9e354ae815f781}{op\+::\+Worker$<$ T\+Datums $>$}}를 구현.
+
+
+
+w\+Pose\+Triangulation.\+hpp 파일의 62 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63     \{}
+\DoxyCodeLine{64         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{65         \{}
+\DoxyCodeLine{66             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceop_a02164ca0af9e838190f584f5d1d8465e}{checkNoNullNorEmpty}}(tDatums))}
+\DoxyCodeLine{67             \{}
+\DoxyCodeLine{68                 \textcolor{comment}{// Debugging log}}
+\DoxyCodeLine{69                 \mbox{\hyperlink{namespaceop_a4eb991aa18818196d35c66455a437a32}{dLog}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{70                 \textcolor{comment}{// Profiling speed}}
+\DoxyCodeLine{71                 \textcolor{keyword}{const} \textcolor{keyword}{auto} profilerKey = \mbox{\hyperlink{classop_1_1_profiler_aea2c89bcd0a661a53f47e59b9bec2be7}{Profiler::timerInit}}(\_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{72                 \textcolor{comment}{// 3-\/D triangulation and reconstruction}}
+\DoxyCodeLine{73                 std::vector<cv::Mat> cameraMatrices;}
+\DoxyCodeLine{74                 std::vector<Array<float>> poseKeypointVector;}
+\DoxyCodeLine{75                 std::vector<Array<float>> faceKeypointVector;}
+\DoxyCodeLine{76                 std::vector<Array<float>> leftHandKeypointVector;}
+\DoxyCodeLine{77                 std::vector<Array<float>> rightHandKeypointVector;}
+\DoxyCodeLine{78                 std::vector<Point<int>> imageSizes;}
+\DoxyCodeLine{79                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}\& tDatumPtr : *tDatums)}
+\DoxyCodeLine{80                 \{}
+\DoxyCodeLine{81                     poseKeypointVector.emplace\_back(tDatumPtr-\/>poseKeypoints);}
+\DoxyCodeLine{82                     faceKeypointVector.emplace\_back(tDatumPtr-\/>faceKeypoints);}
+\DoxyCodeLine{83                     leftHandKeypointVector.emplace\_back(tDatumPtr-\/>handKeypoints[0]);}
+\DoxyCodeLine{84                     rightHandKeypointVector.emplace\_back(tDatumPtr-\/>handKeypoints[1]);}
+\DoxyCodeLine{85                     cameraMatrices.emplace\_back(tDatumPtr-\/>cameraMatrix);}
+\DoxyCodeLine{86                     imageSizes.emplace\_back(}
+\DoxyCodeLine{87                         Point<int>\{tDatumPtr-\/>cvInputData.cols, tDatumPtr-\/>cvInputData.rows\});}
+\DoxyCodeLine{88                 \}}
+\DoxyCodeLine{89                 \textcolor{comment}{// Pose 3-\/D reconstruction}}
+\DoxyCodeLine{90                 \textcolor{keyword}{auto} poseKeypoints3Ds = \mbox{\hyperlink{classop_1_1_w_pose_triangulation_a088708946902bcc6c2506494e9fb2057}{spPoseTriangulation}}-\/>reconstructArray(}
+\DoxyCodeLine{91                     \{poseKeypointVector, faceKeypointVector, leftHandKeypointVector, rightHandKeypointVector\},}
+\DoxyCodeLine{92                     cameraMatrices, imageSizes);}
+\DoxyCodeLine{93                 \textcolor{comment}{// Assign to all tDatums}}
+\DoxyCodeLine{94                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}\& tDatumPtr : *tDatums)}
+\DoxyCodeLine{95                 \{}
+\DoxyCodeLine{96                     tDatumPtr-\/>poseKeypoints3D = poseKeypoints3Ds[0];}
+\DoxyCodeLine{97                     tDatumPtr-\/>faceKeypoints3D = poseKeypoints3Ds[1];}
+\DoxyCodeLine{98                     tDatumPtr-\/>handKeypoints3D[0] = poseKeypoints3Ds[2];}
+\DoxyCodeLine{99                     tDatumPtr-\/>handKeypoints3D[1] = poseKeypoints3Ds[3];}
+\DoxyCodeLine{100                 \}}
+\DoxyCodeLine{101                 \textcolor{comment}{// Profiling speed}}
+\DoxyCodeLine{102                 \mbox{\hyperlink{classop_1_1_profiler_affff5b0b992e05276b2a699f97ad525d}{Profiler::timerEnd}}(profilerKey);}
+\DoxyCodeLine{103                 \mbox{\hyperlink{classop_1_1_profiler_a58b930a54a98bbc91af074395852da76}{Profiler::printAveragedTimeMsOnIterationX}}(profilerKey, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{104                 \textcolor{comment}{// Debugging log}}
+\DoxyCodeLine{105                 \mbox{\hyperlink{namespaceop_a4eb991aa18818196d35c66455a437a32}{dLog}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{106             \}}
+\DoxyCodeLine{107         \}}
+\DoxyCodeLine{108         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{109         \{}
+\DoxyCodeLine{110             this-\/>\mbox{\hyperlink{classop_1_1_worker_ae45ac828f6e8f6055203c224e50f145b}{stop}}();}
+\DoxyCodeLine{111             tDatums = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{112             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{113         \}}
+\DoxyCodeLine{114     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classop_1_1_w_pose_triangulation_a495b29e03933d750827acc0531c72c78_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_w_pose_triangulation_a088708946902bcc6c2506494e9fb2057}\label{classop_1_1_w_pose_triangulation_a088708946902bcc6c2506494e9fb2057}} 
+\index{op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}!spPoseTriangulation@{spPoseTriangulation}}
+\index{spPoseTriangulation@{spPoseTriangulation}!op::WPoseTriangulation$<$ TDatums $>$@{op::WPoseTriangulation$<$ TDatums $>$}}
+\doxysubsubsection{\texorpdfstring{spPoseTriangulation}{spPoseTriangulation}}
+{\footnotesize\ttfamily template$<$typename T\+Datums $>$ \\
+const std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classop_1_1_pose_triangulation}{Pose\+Triangulation}}$>$ \mbox{\hyperlink{classop_1_1_w_pose_triangulation}{op\+::\+W\+Pose\+Triangulation}}$<$ T\+Datums $>$\+::sp\+Pose\+Triangulation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+w\+Pose\+Triangulation.\+hpp 파일의 23 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/3d/\mbox{\hyperlink{w_pose_triangulation_8hpp}{w\+Pose\+Triangulation.\+hpp}}\end{DoxyCompactItemize}

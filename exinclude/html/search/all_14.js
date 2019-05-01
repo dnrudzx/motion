@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['ucharcvmattofloatptr',['uCharCvMatToFloatPtr',['../namespaceop.html#aa497ecc2e06a583b2c08ae14e5f3891a',1,'op']]],
+  ['ucharround',['uCharRound',['../namespaceop.html#a61240e5fbd4ea84a2cfdc89407bcb1ae',1,'op']]],
+  ['udphost',['udpHost',['../structop_1_1_wrapper_struct_output.html#a92040f009e2f9344037d93d6442ce117',1,'op::WrapperStructOutput']]],
+  ['udpport',['udpPort',['../structop_1_1_wrapper_struct_output.html#aec3a7ec85be0779930427ba3e806ea2c',1,'op::WrapperStructOutput']]],
+  ['udpsender',['UdpSender',['../classop_1_1_udp_sender.html',1,'op::UdpSender'],['../classop_1_1_udp_sender.html#a80fb12e5d4357e5dbb37c8a7b660c67c',1,'op::UdpSender::UdpSender()']]],
+  ['udpsender_2ehpp',['udpSender.hpp',['../udp_sender_8hpp.html',1,'']]],
+  ['uintround',['uIntRound',['../namespaceop.html#a8525e440d6ac1b558e72637dc4f4e3c4',1,'op']]],
+  ['ulonglonground',['uLongLongRound',['../namespaceop.html#a757a5cc88734e7be9e910e7d8213c282',1,'op']]],
+  ['ulonground',['ulongRound',['../namespaceop.html#aaafe2e235a1a3a146bb026b71c521c7b',1,'op']]],
+  ['undistort',['undistort',['../classop_1_1_camera_parameter_reader.html#ab40c8cc103643d184465d526a6b6ac9d',1,'op::CameraParameterReader']]],
+  ['undistortimage',['undistortImage',['../structop_1_1_wrapper_struct_input.html#ae7183e10862dbdbed422f042f1a71ed1',1,'op::WrapperStructInput']]],
+  ['unitybinding_2ehpp',['unityBinding.hpp',['../unity_binding_8hpp.html',1,'']]],
+  ['unloadcompiler',['unloadCompiler',['../classcl_1_1_platform.html#a70313ea76e0e369c4dc951a7f47b531f',1,'cl::Platform']]],
+  ['unmapsvm',['unmapSVM',['../namespacecl.html#af9f49b386b20c55c04a9e6cd21849fd5',1,'cl']]],
+  ['unrollarraytoucharcvmat',['unrollArrayToUCharCvMat',['../namespaceop.html#ab8b9daed84e741afb7191fde8ed95b5e',1,'op']]],
+  ['unsignedchar',['UnsignedChar',['../namespaceop.html#af72fe4ed32846c12f41b049d3d0e1bdaaa93f121640d609f8772397a0f40f40d6',1,'op']]],
+  ['unused',['UNUSED',['../macros_8hpp.html#af57a843cfdae82e064838c20b3b54851',1,'macros.hpp']]],
+  ['update',['update',['../classop_1_1_gui.html#a8e9a67dd507598654a5db06273d50c94',1,'op::Gui::update()'],['../classop_1_1_gui3_d.html#af10162684889706894f13a308970ba32',1,'op::Gui3D::update()'],['../classop_1_1_array_cpu_gpu.html#af9f32307732772c708ff45c52b4e7dd0',1,'op::ArrayCpuGpu::Update()']]],
+  ['updatemaxpopperspushers',['updateMaxPoppersPushers',['../classop_1_1_queue_base.html#a95b3f0cf4564bf1102d3fa83ca908d4a',1,'op::QueueBase']]],
+  ['updatetracker',['updateTracker',['../classop_1_1_hand_detector.html#a58513169f01ab7c705979f1f2a88b571',1,'op::HandDetector']]],
+  ['upimpl',['upImpl',['../classop_1_1_face_extractor_caffe.html#aea41569aa786be1dcf6eaf983df7bf9a',1,'op::FaceExtractorCaffe::upImpl()'],['../classop_1_1_video_saver.html#a33a7b9e28d87b04c5fce5bd1aa13af2f',1,'op::VideoSaver::upImpl()'],['../classop_1_1_hand_extractor_caffe.html#a0f3439342082b87d225a2e71cd174733',1,'op::HandExtractorCaffe::upImpl()'],['../classop_1_1_net_caffe.html#ae00c594034f9037c17707060e19d3d5f',1,'op::NetCaffe::upImpl()'],['../classop_1_1_net_open_cv.html#a8b2c0c31d43e2184215023a066ae5798',1,'op::NetOpenCv::upImpl()'],['../classop_1_1_nms_caffe.html#adf43370e45b5e376e7eb9bb3754b1447',1,'op::NmsCaffe::upImpl()'],['../classop_1_1_spinnaker_wrapper.html#a287790a74cb925f087d20e4274c52325',1,'op::SpinnakerWrapper::upImpl()']]],
+  ['upofstream',['upOfstream',['../classop_1_1_json_ofstream.html#af8f90068f79b6001c1b720015f1a1c0d',1,'op::JsonOfstream']]],
+  ['upsamplingratio',['upsamplingRatio',['../structop_1_1_wrapper_struct_pose.html#a25ee056d914f1cdc990a8a7956810313',1,'op::WrapperStructPose']]],
+  ['userevent',['UserEvent',['../classcl_1_1_user_event.html',1,'cl::UserEvent'],['../classcl_1_1_user_event.html#a4255beef279789245d402a00830c841f',1,'cl::UserEvent::UserEvent(const Context &amp;context, cl_int *err=NULL)'],['../classcl_1_1_user_event.html#a1ee5bc016d511a4fec5f23b50a70821a',1,'cl::UserEvent::UserEvent()']]]
+];

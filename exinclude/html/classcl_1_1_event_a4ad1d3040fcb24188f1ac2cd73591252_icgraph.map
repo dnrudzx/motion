@@ -1,0 +1,4 @@
+<map id="cl::Event::getInfo" name="cl::Event::getInfo">
+<area shape="rect" id="node1" title="Wrapper for clGetEventInfo()." alt="" coords="176,5,299,32"/>
+<area shape="rect" id="node2" href="$classcl_1_1_event.html#ad3a362e550fbfa5f18e679357f1cdba8" title="Wrapper for clGetEventInfo() that returns by value." alt="" coords="5,5,128,32"/>
+</map>

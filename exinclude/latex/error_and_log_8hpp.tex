@@ -1,0 +1,75 @@
+\hypertarget{error_and_log_8hpp}{}\doxysection{/home/ms/openpose/include/openpose/utilities/error\+And\+Log.hpp 파일 참조}
+\label{error_and_log_8hpp}\index{/home/ms/openpose/include/openpose/utilities/errorAndLog.hpp@{/home/ms/openpose/include/openpose/utilities/errorAndLog.hpp}}
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$openpose/core/macros.\+hpp$>$}\newline
+{\ttfamily \#include $<$openpose/utilities/enum\+Classes.\+hpp$>$}\newline
+error\+And\+Log.\+hpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{error_and_log_8hpp__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{error_and_log_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{네임스페이스}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceop}{op}}
+\item 
+ \mbox{\hyperlink{namespaceop_1_1_configure_error}{op\+::\+Configure\+Error}}
+\item 
+ \mbox{\hyperlink{namespaceop_1_1_configure_log}{op\+::\+Configure\+Log}}
+\end{DoxyCompactItemize}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a7eb0121791185c13a6c3dd88994e0eab}{op\+::set\+Main\+Thread}} ()
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} std\+::string \mbox{\hyperlink{namespaceop_a5a3db1a0d272d8fb5ea723845beee150}{op\+::get\+Thread\+Id}} ()
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} bool \mbox{\hyperlink{namespaceop_ad5e1c975a1b7dce9b02bc8cdf3d45a01}{op\+::get\+If\+In\+Main\+Thread\+Or\+Empty}} ()
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} bool \mbox{\hyperlink{namespaceop_abdedc8f1fd2f723dae5bb8ff20b93a93}{op\+::get\+If\+Not\+In\+Main\+Thread\+Or\+Empty}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \mbox{\hyperlink{namespaceop_af548fe1a2ad2b392a25afe9b0b87b8dd}{op\+::t\+To\+String}} (const T \&message)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{op\+::error}} (const std\+::string \&message, const int line=-\/1, const std\+::string \&function=\char`\"{}\char`\"{}, const std\+::string \&file=\char`\"{}\char`\"{})
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_a42d364d9fbd1a719341bd7187d97cf18}{op\+::error}} (const T \&message, const int line=-\/1, const std\+::string \&function=\char`\"{}\char`\"{}, const std\+::string \&file=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a865a4cd0ba3b596667dc7242756837bd}{op\+::check\+Worker\+Errors}} ()
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a61af88aac41ef77ab4e8816023fe32f0}{op\+::error\+Worker}} (const std\+::string \&message, const int line=-\/1, const std\+::string \&function=\char`\"{}\char`\"{}, const std\+::string \&file=\char`\"{}\char`\"{})
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_a96d1720ea5d160cfd4c8404060a9bebd}{op\+::error\+Worker}} (const T \&message, const int line=-\/1, const std\+::string \&function=\char`\"{}\char`\"{}, const std\+::string \&file=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a825f15fdf9dc9cb7473c20f970f15b60}{op\+::error\+Destructor}} (const std\+::string \&message, const int line=-\/1, const std\+::string \&function=\char`\"{}\char`\"{}, const std\+::string \&file=\char`\"{}\char`\"{})
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_a758b08be140e27dd2642d286a383be54}{op\+::error\+Destructor}} (const T \&message, const int line=-\/1, const std\+::string \&function=\char`\"{}\char`\"{}, const std\+::string \&file=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{op\+::log}} (const std\+::string \&message, const Priority priority=Priority\+::\+Max, const int line=-\/1, const std\+::string \&function=\char`\"{}\char`\"{}, const std\+::string \&file=\char`\"{}\char`\"{})
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_ad671f60788fdc2f4a04beda1dc3728c5}{op\+::log}} (const T \&message, const Priority priority=Priority\+::\+Max, const int line=-\/1, const std\+::string \&function=\char`\"{}\char`\"{}, const std\+::string \&file=\char`\"{}\char`\"{})
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_a4eb991aa18818196d35c66455a437a32}{op\+::d\+Log}} (const T \&message, const Priority priority=Priority\+::\+Max, const int line=-\/1, const std\+::string \&function=\char`\"{}\char`\"{}, const std\+::string \&file=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} std\+::vector$<$ Error\+Mode $>$ \mbox{\hyperlink{namespaceop_1_1_configure_error_ae8dbbccc9a2ca8a4670716ac5fdd8d53}{op\+::\+Configure\+Error\+::get\+Error\+Modes}} ()
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_1_1_configure_error_a96e56b0ddbe2cb17443b93aaba05d672}{op\+::\+Configure\+Error\+::set\+Error\+Modes}} (const std\+::vector$<$ Error\+Mode $>$ \&error\+Modes)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} Priority \mbox{\hyperlink{namespaceop_1_1_configure_log_a0e5c3fad2ace3eb129dd1d97afd59558}{op\+::\+Configure\+Log\+::get\+Priority\+Threshold}} ()
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} const std\+::vector$<$ Log\+Mode $>$ \& \mbox{\hyperlink{namespaceop_1_1_configure_log_a5ab07ae8c026e4f7782a113778d9082d}{op\+::\+Configure\+Log\+::get\+Log\+Modes}} ()
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_1_1_configure_log_a149393c3c87c82a5cf14417c6b430d30}{op\+::\+Configure\+Log\+::set\+Priority\+Threshold}} (const Priority priority\+Threshold)
+\item 
+\mbox{\hyperlink{macros_8hpp_a4ba443bb7a0e5dbe8054a9ac37a5e000}{O\+P\+\_\+\+A\+PI}} void \mbox{\hyperlink{namespaceop_1_1_configure_log_a2f41e9a74bbda434ef16189c32a13aba}{op\+::\+Configure\+Log\+::set\+Log\+Modes}} (const std\+::vector$<$ Log\+Mode $>$ \&logging\+Modes)
+\end{DoxyCompactItemize}

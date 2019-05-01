@@ -1,0 +1,86 @@
+\hypertarget{structcl_1_1detail_1_1_reference_handler_3_01cl__device__id_01_4}{}\doxysection{cl\+::detail\+::Reference\+Handler$<$ cl\+\_\+device\+\_\+id $>$ 구조체 템플릿 참조}
+\label{structcl_1_1detail_1_1_reference_handler_3_01cl__device__id_01_4}\index{cl::detail::ReferenceHandler$<$ cl\_device\_id $>$@{cl::detail::ReferenceHandler$<$ cl\_device\_id $>$}}
+
+
+{\ttfamily \#include $<$cl2.\+hpp$>$}
+
+
+
+cl\+::detail\+::Reference\+Handler$<$ cl\+\_\+device\+\_\+id $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{structcl_1_1detail_1_1_reference_handler_3_01cl__device__id_01_4__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static cl\+\_\+int \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__device__id_01_4_ae3392ce2c4055446680bde82e60c976c}{retain}} (cl\+\_\+device\+\_\+id device)
+\item 
+static cl\+\_\+int \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__device__id_01_4_a70614c8eeee136fb4887bae35216d620}{release}} (cl\+\_\+device\+\_\+id device)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$$>$\newline
+struct cl\+::detail\+::\+Reference\+Handler$<$ cl\+\_\+device\+\_\+id $>$}
+
+Open\+CL 1.\+2 devices do have retain/release. 
+
+cl2.\+hpp 파일의 1465 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{structcl_1_1detail_1_1_reference_handler_3_01cl__device__id_01_4_a70614c8eeee136fb4887bae35216d620}\label{structcl_1_1detail_1_1_reference_handler_3_01cl__device__id_01_4_a70614c8eeee136fb4887bae35216d620}} 
+\index{cl::detail::ReferenceHandler$<$ cl\_device\_id $>$@{cl::detail::ReferenceHandler$<$ cl\_device\_id $>$}!release@{release}}
+\index{release@{release}!cl::detail::ReferenceHandler$<$ cl\_device\_id $>$@{cl::detail::ReferenceHandler$<$ cl\_device\_id $>$}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily static cl\+\_\+int \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler}{cl\+::detail\+::\+Reference\+Handler}}$<$ cl\+\_\+device\+\_\+id $>$\+::release (\begin{DoxyParamCaption}\item[{cl\+\_\+device\+\_\+id}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Retain the device. 
+\begin{DoxyParams}{매개변수}
+{\em device} & A valid device created using create\+Sub\+Devices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+C\+L\+\_\+\+S\+U\+C\+C\+E\+SS if the function executed successfully. C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+E\+V\+I\+CE if device was not a valid subdevice C\+L\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+E\+S\+O\+U\+R\+C\+ES C\+L\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+H\+O\+S\+T\+\_\+\+M\+E\+M\+O\+RY 
+\end{DoxyReturn}
+
+
+cl2.\+hpp 파일의 1487 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1488     \{ return ::clReleaseDevice(device); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structcl_1_1detail_1_1_reference_handler_3_01cl__device__id_01_4_ae3392ce2c4055446680bde82e60c976c}\label{structcl_1_1detail_1_1_reference_handler_3_01cl__device__id_01_4_ae3392ce2c4055446680bde82e60c976c}} 
+\index{cl::detail::ReferenceHandler$<$ cl\_device\_id $>$@{cl::detail::ReferenceHandler$<$ cl\_device\_id $>$}!retain@{retain}}
+\index{retain@{retain}!cl::detail::ReferenceHandler$<$ cl\_device\_id $>$@{cl::detail::ReferenceHandler$<$ cl\_device\_id $>$}}
+\doxysubsubsection{\texorpdfstring{retain()}{retain()}}
+{\footnotesize\ttfamily static cl\+\_\+int \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler}{cl\+::detail\+::\+Reference\+Handler}}$<$ cl\+\_\+device\+\_\+id $>$\+::retain (\begin{DoxyParamCaption}\item[{cl\+\_\+device\+\_\+id}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Retain the device. 
+\begin{DoxyParams}{매개변수}
+{\em device} & A valid device created using create\+Sub\+Devices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+C\+L\+\_\+\+S\+U\+C\+C\+E\+SS if the function executed successfully. C\+L\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+E\+V\+I\+CE if device was not a valid subdevice C\+L\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+R\+E\+S\+O\+U\+R\+C\+ES C\+L\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+H\+O\+S\+T\+\_\+\+M\+E\+M\+O\+RY 
+\end{DoxyReturn}
+
+
+cl2.\+hpp 파일의 1476 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1477     \{ return ::clRetainDevice(device); \}}
+
+\end{DoxyCode}
+
+
+이 구조체에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/gpu/\mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}\end{DoxyCompactItemize}

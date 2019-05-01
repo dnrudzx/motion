@@ -1,0 +1,723 @@
+\hypertarget{cl2_8hpp}{}\doxysection{/home/ms/openpose/include/openpose/gpu/cl2.hpp 파일 참조}
+\label{cl2_8hpp}\index{/home/ms/openpose/include/openpose/gpu/cl2.hpp@{/home/ms/openpose/include/openpose/gpu/cl2.hpp}}
+
+
+C++ bindings for Open\+CL 1.\+0 (rev 48), Open\+CL 1.\+1 (rev 33), Open\+CL 1.\+2 (rev 15) and Open\+CL 2.\+0 (rev 29)  
+
+
+{\ttfamily \#include $<$C\+L/opencl.\+h$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+cl2.\+hpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cl2_8hpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler}{cl\+::detail\+::\+Reference\+Handler$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{cl\+::detail\+::param\+\_\+traits$<$ enum\+\_\+type, Name $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_get_info_functor0}{cl\+::detail\+::\+Get\+Info\+Functor0$<$ Func, Arg0 $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_get_info_functor1}{cl\+::detail\+::\+Get\+Info\+Functor1$<$ Func, Arg0, Arg1 $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler}{cl\+::detail\+::\+Reference\+Handler$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__device__id_01_4}{cl\+::detail\+::\+Reference\+Handler$<$ cl\+\_\+device\+\_\+id $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__platform__id_01_4}{cl\+::detail\+::\+Reference\+Handler$<$ cl\+\_\+platform\+\_\+id $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__context_01_4}{cl\+::detail\+::\+Reference\+Handler$<$ cl\+\_\+context $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__command__queue_01_4}{cl\+::detail\+::\+Reference\+Handler$<$ cl\+\_\+command\+\_\+queue $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__mem_01_4}{cl\+::detail\+::\+Reference\+Handler$<$ cl\+\_\+mem $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__sampler_01_4}{cl\+::detail\+::\+Reference\+Handler$<$ cl\+\_\+sampler $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__program_01_4}{cl\+::detail\+::\+Reference\+Handler$<$ cl\+\_\+program $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__kernel_01_4}{cl\+::detail\+::\+Reference\+Handler$<$ cl\+\_\+kernel $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_reference_handler_3_01cl__event_01_4}{cl\+::detail\+::\+Reference\+Handler$<$ cl\+\_\+event $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4}{cl\+::detail\+::\+Wrapper$<$ cl\+\_\+device\+\_\+id $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1_image_format}{cl\+::\+Image\+Format}}
+\begin{DoxyCompactList}\small\item\em Adds constructors and member functions for cl\+\_\+image\+\_\+format. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_device}{cl\+::\+Device}}
+\begin{DoxyCompactList}\small\item\em Class interface for cl\+\_\+device\+\_\+id. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_platform}{cl\+::\+Platform}}
+\begin{DoxyCompactList}\small\item\em Class interface for cl\+\_\+platform\+\_\+id. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_context}{cl\+::\+Context}}
+\begin{DoxyCompactList}\small\item\em Class interface for cl\+\_\+context. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_event}{cl\+::\+Event}}
+\begin{DoxyCompactList}\small\item\em Class interface for cl\+\_\+event. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_user_event}{cl\+::\+User\+Event}}
+\begin{DoxyCompactList}\small\item\em Class interface for user events (a subset of cl\+\_\+event\textquotesingle{}s). \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_memory}{cl\+::\+Memory}}
+\begin{DoxyCompactList}\small\item\em Class interface for cl\+\_\+mem. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1detail_1_1_s_v_m_trait_null}{cl\+::detail\+::\+S\+V\+M\+Trait\+Null}}
+\item 
+class \mbox{\hyperlink{classcl_1_1_s_v_m_trait_read_write}{cl\+::\+S\+V\+M\+Trait\+Read\+Write$<$ Trait $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1_s_v_m_trait_read_only}{cl\+::\+S\+V\+M\+Trait\+Read\+Only$<$ Trait $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1_s_v_m_trait_write_only}{cl\+::\+S\+V\+M\+Trait\+Write\+Only$<$ Trait $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1_s_v_m_trait_coarse}{cl\+::\+S\+V\+M\+Trait\+Coarse$<$ Trait $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1_s_v_m_trait_fine}{cl\+::\+S\+V\+M\+Trait\+Fine$<$ Trait $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1_s_v_m_trait_atomic}{cl\+::\+S\+V\+M\+Trait\+Atomic$<$ Trait $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator$<$ T, S\+V\+M\+Trait $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1_s_v_m_allocator_1_1rebind}{cl\+::\+S\+V\+M\+Allocator$<$ T, S\+V\+M\+Trait $>$\+::rebind$<$ U $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1_s_v_m_allocator_3_01void_00_01_s_v_m_trait_01_4}{cl\+::\+S\+V\+M\+Allocator$<$ void, S\+V\+M\+Trait $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1_s_v_m_allocator_3_01void_00_01_s_v_m_trait_01_4_1_1rebind}{cl\+::\+S\+V\+M\+Allocator$<$ void, S\+V\+M\+Trait $>$\+::rebind$<$ U $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1detail_1_1_deleter}{cl\+::detail\+::\+Deleter$<$ Alloc $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1_buffer}{cl\+::\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Class interface for \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \mbox{\hyperlink{classcl_1_1_memory}{Memory}} Objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_buffer_g_l}{cl\+::\+Buffer\+GL}}
+\begin{DoxyCompactList}\small\item\em Class interface for GL \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \mbox{\hyperlink{classcl_1_1_memory}{Memory}} Objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_buffer_render_g_l}{cl\+::\+Buffer\+Render\+GL}}
+\begin{DoxyCompactList}\small\item\em Class interface for GL Render \mbox{\hyperlink{classcl_1_1_buffer}{Buffer}} \mbox{\hyperlink{classcl_1_1_memory}{Memory}} Objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_image}{cl\+::\+Image}}
+\begin{DoxyCompactList}\small\item\em C++ base class for \mbox{\hyperlink{classcl_1_1_image}{Image}} \mbox{\hyperlink{classcl_1_1_memory}{Memory}} objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_image1_d}{cl\+::\+Image1D}}
+\begin{DoxyCompactList}\small\item\em Class interface for 1D \mbox{\hyperlink{classcl_1_1_image}{Image}} \mbox{\hyperlink{classcl_1_1_memory}{Memory}} objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_image1_d_buffer}{cl\+::\+Image1\+D\+Buffer}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcl_1_1_image}{Image}} interface for 1D buffer images. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_image1_d_array}{cl\+::\+Image1\+D\+Array}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcl_1_1_image}{Image}} interface for arrays of 1D images. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_image2_d}{cl\+::\+Image2D}}
+\begin{DoxyCompactList}\small\item\em Class interface for 2D \mbox{\hyperlink{classcl_1_1_image}{Image}} \mbox{\hyperlink{classcl_1_1_memory}{Memory}} objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_image2_d_array}{cl\+::\+Image2\+D\+Array}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcl_1_1_image}{Image}} interface for arrays of 2D images. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_image3_d}{cl\+::\+Image3D}}
+\begin{DoxyCompactList}\small\item\em Class interface for 3D \mbox{\hyperlink{classcl_1_1_image}{Image}} \mbox{\hyperlink{classcl_1_1_memory}{Memory}} objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_image_g_l}{cl\+::\+Image\+GL}}
+\begin{DoxyCompactList}\small\item\em general image interface for GL interop. We abstract the 2D and 3D GL images into a single instance here that wraps all GL sourced images on the grounds that setup information was performed by Open\+CL anyway. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_pipe}{cl\+::\+Pipe}}
+\begin{DoxyCompactList}\small\item\em Class interface for \mbox{\hyperlink{classcl_1_1_pipe}{Pipe}} \mbox{\hyperlink{classcl_1_1_memory}{Memory}} Objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_sampler}{cl\+::\+Sampler}}
+\begin{DoxyCompactList}\small\item\em Class interface for cl\+\_\+sampler. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_n_d_range}{cl\+::\+N\+D\+Range}}
+\begin{DoxyCompactList}\small\item\em Class interface for specifying \mbox{\hyperlink{classcl_1_1_n_d_range}{N\+D\+Range}} values. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcl_1_1_local_space_arg}{cl\+::\+Local\+Space\+Arg}}
+\begin{DoxyCompactList}\small\item\em Local address wrapper for use with \mbox{\hyperlink{classcl_1_1_kernel_a3ec081fb9656b0780d808563256dfeff}{Kernel\+::set\+Arg}} \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_kernel_argument_handler}{cl\+::detail\+::\+Kernel\+Argument\+Handler$<$ T, Enable $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_kernel_argument_handler_3_01_t_00_01typename_01std_1_1enable__if_3_9std_10affa824618af864313998f2e6bcf08f}{cl\+::detail\+::\+Kernel\+Argument\+Handler$<$ T, typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+base\+\_\+of$<$ cl\+::\+Memory, T $>$\+::value $>$\+::type $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_kernel_argument_handler_3_01_t_00_01typename_01std_1_1enable__if_3_01std_cb5bfaca8096193f715a7bbe8a3fa84f}{cl\+::detail\+::\+Kernel\+Argument\+Handler$<$ T, typename std\+::enable\+\_\+if$<$ std\+::is\+\_\+base\+\_\+of$<$ cl\+::\+Memory, T $>$\+::value $>$\+::type $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_kernel_argument_handler_3_01_local_space_arg_00_01void_01_4}{cl\+::detail\+::\+Kernel\+Argument\+Handler$<$ Local\+Space\+Arg, void $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1_kernel}{cl\+::\+Kernel}}
+\begin{DoxyCompactList}\small\item\em Class interface for cl\+\_\+kernel. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_program}{cl\+::\+Program}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcl_1_1_program}{Program}} interface that implements cl\+\_\+program. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_command_queue}{cl\+::\+Command\+Queue}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcl_1_1_command_queue}{Command\+Queue}} interface for cl\+\_\+command\+\_\+queue. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classcl_1_1_device_command_queue}{cl\+::\+Device\+Command\+Queue}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcl_1_1_device_command_queue}{Device\+Command\+Queue}} interface for device cl\+\_\+command\+\_\+queues. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structcl_1_1detail_1_1_kernel_argument_handler_3_01cl_1_1_device_command_queue_00_01void_01_4}{cl\+::detail\+::\+Kernel\+Argument\+Handler$<$ cl\+::\+Device\+Command\+Queue, void $>$}}
+\item 
+class \mbox{\hyperlink{classcl_1_1_enqueue_args}{cl\+::\+Enqueue\+Args}}
+\item 
+class \mbox{\hyperlink{classcl_1_1_kernel_functor}{cl\+::\+Kernel\+Functor$<$ Ts $>$}}
+\item 
+struct \mbox{\hyperlink{structcl_1_1compatibility_1_1make__kernel}{cl\+::compatibility\+::make\+\_\+kernel$<$ Ts $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{네임스페이스}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacecl}{cl}}
+\begin{DoxyCompactList}\small\item\em The Open\+CL C++ bindings are defined within this namespace. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacecl_1_1detail}{cl\+::detail}}
+\item 
+ \mbox{\hyperlink{namespacecl_1_1compatibility}{cl\+::compatibility}}
+\end{DoxyCompactItemize}
+\doxysubsection*{매크로}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a37ea07405ca286c1570612b42d43b345}{C\+L\+\_\+\+H\+P\+P\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+O\+P\+E\+N\+C\+L\+\_\+\+V\+E\+R\+S\+I\+ON}}~200
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a2053025c576bcf48e249dd20e884a560}{C\+L\+\_\+\+H\+P\+P\+\_\+\+M\+I\+N\+I\+M\+U\+M\+\_\+\+O\+P\+E\+N\+C\+L\+\_\+\+V\+E\+R\+S\+I\+ON}}~200
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a83e58027079a192080c2690ec9918612}{C\+L\+\_\+\+U\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+O\+P\+E\+N\+C\+L\+\_\+2\+\_\+0\+\_\+\+A\+P\+IS}}
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a7fcfde26c9e031daf0c6fbb637ed7ac0}{C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a43bdbc2602e055e27992c3f36aeb616a}{C\+L\+\_\+\+H\+P\+P\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+}}~\+\_\+\+\_\+attribute\+\_\+\+\_\+((weak))
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a728359ddaf60ae8d916bab10bf7ae7e7}{C\+L\+\_\+\+E\+X\+T\+\_\+\+P\+R\+E\+F\+I\+X\+\_\+\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a6efde763d2d8686911e04372386b910a}{C\+L\+\_\+\+E\+X\+T\+\_\+\+S\+U\+F\+F\+I\+X\+\_\+\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a8e521f2193ebd30528756480e0b81478}{C\+L\+\_\+\+E\+X\+T\+\_\+\+P\+R\+E\+F\+I\+X\+\_\+\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+2\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a30c99bec4258e0d1095128c2a0c6a191}{C\+L\+\_\+\+E\+X\+T\+\_\+\+S\+U\+F\+F\+I\+X\+\_\+\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+2\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a193b43da2ce23c54788f9b4d4f0f4740}{C\+L\+\_\+\+C\+A\+L\+L\+B\+A\+CK}}
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a038b6bbadd706770d242412fd00fd2f4}{C\+L\+\_\+\+H\+P\+P\+\_\+\+I\+N\+I\+T\+\_\+\+C\+L\+\_\+\+E\+X\+T\+\_\+\+F\+C\+N\+\_\+\+P\+T\+R\+\_\+}}(name)
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a0347821869ad5e477df344dbf9d240dd}{C\+L\+\_\+\+H\+P\+P\+\_\+\+I\+N\+I\+T\+\_\+\+C\+L\+\_\+\+E\+X\+T\+\_\+\+F\+C\+N\+\_\+\+P\+T\+R\+\_\+\+P\+L\+A\+T\+F\+O\+R\+M\+\_\+}}(platform,  name)
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a4b595bd14a1dc7ba998f62924cad8f1e}{C\+L\+\_\+\+H\+P\+P\+\_\+\+E\+R\+R\+\_\+\+S\+T\+R\+\_\+}}(x)~N\+U\+LL
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a3c07afe8e5aab6eedbeee41eb683ca27}{C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+1\+\_\+0\+\_\+}}(F)
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a1684a5b5156344ea8144959b5ed90670}{C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+1\+\_\+1\+\_\+}}(F)
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a5303b6c0e9bcace6a68fa22471110608}{C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+1\+\_\+2\+\_\+}}(F)
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_abb735d6080a161ccd484c8da77a0fc3b}{C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+2\+\_\+0\+\_\+}}(F)
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_ab66a37111cb5d8c20e89938dd790ad9b}{C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+F\+I\+S\+S\+I\+O\+N\+\_\+}}(F)
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a6ac86f0f6dbdb396f05157126344f799}{C\+L\+\_\+\+H\+P\+P\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+}}(token,  param\+\_\+name,  T)
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a7f63e8a787b3c0eef4fe1287ab50f620}{C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+1\+\_\+0\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+I\+N\+\_\+2\+\_\+0\+\_\+}}(F)~F(cl\+\_\+device\+\_\+info, C\+L\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES, cl\+\_\+command\+\_\+queue\+\_\+properties)
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a3d4442f92a22b926272febf3ad1d0113}{C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+1\+\_\+1\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+I\+N\+\_\+2\+\_\+0\+\_\+}}(F)~F(cl\+\_\+device\+\_\+info, C\+L\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+H\+O\+S\+T\+\_\+\+U\+N\+I\+F\+I\+E\+D\+\_\+\+M\+E\+M\+O\+RY, cl\+\_\+bool)
+\item 
+\#define \mbox{\hyperlink{cl2_8hpp_a653491a41cc7fd568c2b9cabb4814ac7}{C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+1\+\_\+2\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+I\+N\+\_\+2\+\_\+0\+\_\+}}(F)~F(cl\+\_\+image\+\_\+info, C\+L\+\_\+\+I\+M\+A\+G\+E\+\_\+\+B\+U\+F\+F\+ER, \mbox{\hyperlink{classcl_1_1_buffer}{cl\+::\+Buffer}})
+\end{DoxyCompactItemize}
+\doxysubsection*{타입정의}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{cl\+::size\+\_\+type}} = size\+\_\+t
+\item 
+{\footnotesize template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ }\\using \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl\+::vector}} = std\+::vector$<$ T, Alloc $>$
+\item 
+using \mbox{\hyperlink{namespacecl_abff80bfb254d646f6afeb6638df41686}{cl\+::string}} = std\+::string
+\item 
+{\footnotesize template$<$class T , class D $>$ }\\using \mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}} = std\+::unique\+\_\+ptr$<$ T, D $>$
+\item 
+{\footnotesize template$<$class T , size\+\_\+type N$>$ }\\using \mbox{\hyperlink{namespacecl_a8856ce875094624efdce0a49496d695e}{cl\+::array}} = std\+::array$<$ T, N $>$
+\item 
+using \mbox{\hyperlink{namespacecl_1_1detail_aab488f551c8b1feb4f4b3f6893c358db}{cl\+::detail\+::size\+\_\+t\+\_\+array}} = array$<$ size\+\_\+type, 3 $>$
+\item 
+using \mbox{\hyperlink{namespacecl_a0982464a83dd2f129b737d17d9ff9b19}{cl\+::\+Build\+Log\+Type}} = vector$<$ std\+::pair$<$ \mbox{\hyperlink{classcl_1_1_device}{cl\+::\+Device}}, typename detail\+::param\+\_\+traits$<$ detail\+::cl\+\_\+program\+\_\+build\+\_\+info, C\+L\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+L\+OG $>$\+::param\+\_\+type $>$ $>$
+\item 
+{\footnotesize template$<$class T $>$ }\\using \mbox{\hyperlink{namespacecl_abd957be3ad58ee2932a99ed8bc6cc049}{cl\+::coarse\+\_\+svm\+\_\+vector}} = vector$<$ T, \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ int, \mbox{\hyperlink{classcl_1_1_s_v_m_trait_coarse}{cl\+::\+S\+V\+M\+Trait\+Coarse}}$<$$>$ $>$$>$
+\begin{DoxyCompactList}\small\item\em Vector alias to simplify contruction of coarse-\/grained S\+VM containers. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\using \mbox{\hyperlink{namespacecl_a048aa194c540d1a3178054256db082b9}{cl\+::fine\+\_\+svm\+\_\+vector}} = vector$<$ T, \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ int, \mbox{\hyperlink{classcl_1_1_s_v_m_trait_fine}{cl\+::\+S\+V\+M\+Trait\+Fine}}$<$$>$ $>$$>$
+\begin{DoxyCompactList}\small\item\em Vector alias to simplify contruction of fine-\/grained S\+VM containers. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\using \mbox{\hyperlink{namespacecl_aebc48a598e41f0cb98397460ca04ffb6}{cl\+::atomic\+\_\+svm\+\_\+vector}} = vector$<$ T, \mbox{\hyperlink{classcl_1_1_s_v_m_allocator}{cl\+::\+S\+V\+M\+Allocator}}$<$ int, \mbox{\hyperlink{classcl_1_1_s_v_m_trait_atomic}{cl\+::\+S\+V\+M\+Trait\+Atomic}}$<$$>$ $>$$>$
+\begin{DoxyCompactList}\small\item\em Vector alias to simplify contruction of fine-\/grained S\+VM containers that support platform atomics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{열거형 타입}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacecl_a6b1e69bec24f2a7f89eb17c265060e0d}{cl\+::\+Queue\+Properties}} \+: cl\+\_\+command\+\_\+queue\+\_\+properties \{ \mbox{\hyperlink{namespacecl_a6b1e69bec24f2a7f89eb17c265060e0da6adf97f83acf6453d4a6a4b1070f3754}{cl\+::\+Queue\+Properties\+::\+None}} = 0, 
+\mbox{\hyperlink{namespacecl_a6b1e69bec24f2a7f89eb17c265060e0da1a226c2f1347809a185b8567ba1fc5a7}{cl\+::\+Queue\+Properties\+::\+Profiling}} = C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+F\+I\+L\+I\+N\+G\+\_\+\+E\+N\+A\+B\+LE, 
+\mbox{\hyperlink{namespacecl_a6b1e69bec24f2a7f89eb17c265060e0da126667d3723cdd75c5386d245727e1e8}{cl\+::\+Queue\+Properties\+::\+Out\+Of\+Order}} = C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+O\+R\+D\+E\+R\+\_\+\+E\+X\+E\+C\+\_\+\+M\+O\+D\+E\+\_\+\+E\+N\+A\+B\+LE
+ \}
+\item 
+enum \mbox{\hyperlink{namespacecl_a000ce6769841b11cf56253f7a0344277}{cl\+::\+Device\+Queue\+Properties}} \+: cl\+\_\+command\+\_\+queue\+\_\+properties \{ \mbox{\hyperlink{namespacecl_a000ce6769841b11cf56253f7a0344277a6adf97f83acf6453d4a6a4b1070f3754}{cl\+::\+Device\+Queue\+Properties\+::\+None}} = 0, 
+\mbox{\hyperlink{namespacecl_a000ce6769841b11cf56253f7a0344277a1a226c2f1347809a185b8567ba1fc5a7}{cl\+::\+Device\+Queue\+Properties\+::\+Profiling}} = C\+L\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+F\+I\+L\+I\+N\+G\+\_\+\+E\+N\+A\+B\+LE
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+static cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{cl\+::detail\+::err\+Handler}} (cl\+\_\+int err, const char $\ast$err\+Str=N\+U\+LL)
+\item 
+{\footnotesize template$<$typename Functor , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a5fa0595cfd70a34a662283c683f58bb1}{cl\+::detail\+::get\+Info\+Helper}} (Functor f, cl\+\_\+uint name, T $\ast$param, long)
+\item 
+{\footnotesize template$<$typename Func $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a0900b1581dac237cebb4dbc385471316}{cl\+::detail\+::get\+Info\+Helper}} (Func f, cl\+\_\+uint name, vector$<$ vector$<$ unsigned char $>$$>$ $\ast$param, int)
+\item 
+{\footnotesize template$<$typename Func , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a1fd04ddf2303bc88b61ecc84478f6c89}{cl\+::detail\+::get\+Info\+Helper}} (Func f, cl\+\_\+uint name, vector$<$ T $>$ $\ast$param, long)
+\item 
+{\footnotesize template$<$typename Func , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a66d6678a19540f0202f534a25b00b06f}{cl\+::detail\+::get\+Info\+Helper}} (Func f, cl\+\_\+uint name, vector$<$ T $>$ $\ast$param, int, typename T\+::cl\+\_\+type=0)
+\item 
+{\footnotesize template$<$typename Func $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a06a46d0b30e2a0653391e74f31d684c6}{cl\+::detail\+::get\+Info\+Helper}} (Func f, cl\+\_\+uint name, string $\ast$param, long)
+\item 
+{\footnotesize template$<$typename Func , size\+\_\+type N$>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_ae190233f2424c5bba4be566ccf8abcc5}{cl\+::detail\+::get\+Info\+Helper}} (Func f, cl\+\_\+uint name, array$<$ size\+\_\+type, N $>$ $\ast$param, long)
+\item 
+{\footnotesize template$<$typename Func , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_abcfe70e7b9beebd31b874fc0e59ab147}{cl\+::detail\+::get\+Info\+Helper}} (Func f, cl\+\_\+uint name, T $\ast$param, int, typename T\+::cl\+\_\+type=0)
+\item 
+{\footnotesize template$<$typename Func , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480}{cl\+::detail\+::get\+Info}} (Func f, cl\+\_\+uint name, T $\ast$param)
+\item 
+{\footnotesize template$<$typename Func , typename Arg0 , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a7d4625d32a9763da801a3f1c2a75ab99}{cl\+::detail\+::get\+Info}} (Func f, const Arg0 \&arg0, cl\+\_\+uint name, T $\ast$param)
+\item 
+{\footnotesize template$<$typename Func , typename Arg0 , typename Arg1 , typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a590a1c0214938e7466f69fae3312c342}{cl\+::detail\+::get\+Info}} (Func f, const Arg0 \&arg0, const Arg1 \&arg1, cl\+\_\+uint name, T $\ast$param)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{namespacecl_1_1detail_a321341cec361a9557f21a4ea8cd43d0e}{cl\+::detail\+::operator==}} (const Wrapper$<$ T $>$ \&lhs, const Wrapper$<$ T $>$ \&rhs)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{namespacecl_1_1detail_abed4bef503f35ab1dd6a784ea8fce69d}{cl\+::detail\+::operator!=}} (const Wrapper$<$ T $>$ \&lhs, const Wrapper$<$ T $>$ \&rhs)
+\item 
+static cl\+\_\+int \mbox{\hyperlink{namespacecl_1_1detail_a6a077d9c416f9487b92a70a011a80949}{cl\+::detail\+::build\+Err\+Handler}} (cl\+\_\+int err, const char $\ast$err\+Str, const Build\+Log\+Type \&build\+Logs)
+\item 
+static cl\+\_\+int \mbox{\hyperlink{namespacecl_a8ff4f85ea643dc06aa63bb0155dab69c}{cl\+::\+Wait\+For\+Events}} (const vector$<$ Event $>$ \&events)
+\begin{DoxyCompactList}\small\item\em Blocks the calling thread until every event specified is complete. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_a1197a833cdd6664f206b079f2bebd2eb}{cl\+::copy}} (Iterator\+Type start\+Iterator, Iterator\+Type end\+Iterator, \mbox{\hyperlink{classcl_1_1_buffer}{cl\+::\+Buffer}} \&buffer)
+\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_a05791e9d5da23b21abd6e319fb262c9f}{cl\+::copy}} (const \mbox{\hyperlink{classcl_1_1_buffer}{cl\+::\+Buffer}} \&buffer, Iterator\+Type start\+Iterator, Iterator\+Type end\+Iterator)
+\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_a2f71ed9a316daf59c03c0f3ba62f1bd3}{cl\+::copy}} (const Command\+Queue \&queue, Iterator\+Type start\+Iterator, Iterator\+Type end\+Iterator, \mbox{\hyperlink{classcl_1_1_buffer}{cl\+::\+Buffer}} \&buffer)
+\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_a02c4368c6ce7a1a99132eafd5dc96fa9}{cl\+::copy}} (const Command\+Queue \&queue, const \mbox{\hyperlink{classcl_1_1_buffer}{cl\+::\+Buffer}} \&buffer, Iterator\+Type start\+Iterator, Iterator\+Type end\+Iterator)
+\item 
+{\footnotesize template$<$typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_abb2c4e45814ea569a27c39d37471b2a4}{cl\+::enqueue\+Map\+S\+VM}} (T $\ast$ptr, cl\+\_\+bool blocking, cl\+\_\+map\+\_\+flags flags, size\+\_\+type size, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+{\footnotesize template$<$class T , class Alloc , class... Args$>$ }\\\mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}}$<$ T, detail\+::\+Deleter$<$ Alloc $>$ $>$ \mbox{\hyperlink{namespacecl_a6569925e399ff834fc45bde4a9d6f7a1}{cl\+::allocate\+\_\+pointer}} (const Alloc \&alloc\+\_\+, Args \&\&... args)
+\item 
+{\footnotesize template$<$class T , class S\+V\+M\+Trait , class... Args$>$ }\\\mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}}$<$ T, detail\+::\+Deleter$<$ S\+V\+M\+Allocator$<$ T, S\+V\+M\+Trait $>$ $>$ $>$ \mbox{\hyperlink{namespacecl_a24d9355adee80659f1ad585bbf5dbd96}{cl\+::allocate\+\_\+svm}} (Args... args)
+\item 
+{\footnotesize template$<$class T , class S\+V\+M\+Trait , class... Args$>$ }\\\mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}}$<$ T, detail\+::\+Deleter$<$ S\+V\+M\+Allocator$<$ T, S\+V\+M\+Trait $>$ $>$ $>$ \mbox{\hyperlink{namespacecl_a5366e0b64e9e2ee2d9ca50914a4eb25d}{cl\+::allocate\+\_\+svm}} (const \mbox{\hyperlink{classcl_1_1_context}{cl\+::\+Context}} \&c, Args... args)
+\item 
+Local\+Space\+Arg \mbox{\hyperlink{namespacecl_a2f9d06d8196d7a2f4cf196d5bb7e5dd0}{cl\+::\+Local}} (size\+\_\+type size)
+\begin{DoxyCompactList}\small\item\em Helper function for generating \mbox{\hyperlink{structcl_1_1_local_space_arg}{Local\+Space\+Arg}} objects. \end{DoxyCompactList}\item 
+Program \mbox{\hyperlink{namespacecl_afe680d09fa4ee6c58f6829179cf4dfd7}{cl\+::link\+Program}} (Program input1, Program input2, const char $\ast$options=N\+U\+LL, void(\mbox{\hyperlink{cl2_8hpp_a193b43da2ce23c54788f9b4d4f0f4740}{C\+L\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} $\ast$notify\+Fptr)(cl\+\_\+program, void $\ast$)=N\+U\+LL, void $\ast$data=N\+U\+LL, cl\+\_\+int $\ast$err=N\+U\+LL)
+\item 
+Program \mbox{\hyperlink{namespacecl_a9e9c0fe106eba01e2955aca99ca9ef74}{cl\+::link\+Program}} (vector$<$ Program $>$ input\+Programs, const char $\ast$options=N\+U\+LL, void(\mbox{\hyperlink{cl2_8hpp_a193b43da2ce23c54788f9b4d4f0f4740}{C\+L\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} $\ast$notify\+Fptr)(cl\+\_\+program, void $\ast$)=N\+U\+LL, void $\ast$data=N\+U\+LL, cl\+\_\+int $\ast$err=N\+U\+LL)
+\item 
+Queue\+Properties \mbox{\hyperlink{namespacecl_a8cf7512fbd326bde84ecfaf1aa9500d0}{cl\+::operator$\vert$}} (Queue\+Properties lhs, Queue\+Properties rhs)
+\item 
+Device\+Queue\+Properties \mbox{\hyperlink{namespacecl_a26fae57f73cf3e22afddc2d00eaffbef}{cl\+::operator$\vert$}} (Device\+Queue\+Properties lhs, Device\+Queue\+Properties rhs)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_a2f62d7a5c92ad30e9343983a77915a8f}{cl\+::enqueue\+Read\+Buffer}} (const Buffer \&buffer, cl\+\_\+bool blocking, size\+\_\+type offset, size\+\_\+type size, void $\ast$ptr, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_af6744ad8849f9e3a26d85fdd7dde5b4a}{cl\+::enqueue\+Write\+Buffer}} (const Buffer \&buffer, cl\+\_\+bool blocking, size\+\_\+type offset, size\+\_\+type size, const void $\ast$ptr, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+void $\ast$ \mbox{\hyperlink{namespacecl_a798fcdcc07d43a534b245900a3f9bf75}{cl\+::enqueue\+Map\+Buffer}} (const Buffer \&buffer, cl\+\_\+bool blocking, cl\+\_\+map\+\_\+flags flags, size\+\_\+type offset, size\+\_\+type size, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL, cl\+\_\+int $\ast$err=N\+U\+LL)
+\item 
+{\footnotesize template$<$typename T , class D $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_a7aa80934f265ff5c97b715419aa38566}{cl\+::enqueue\+Map\+S\+VM}} (\mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}}$<$ T, D $>$ ptr, cl\+\_\+bool blocking, cl\+\_\+map\+\_\+flags flags, size\+\_\+type size, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+{\footnotesize template$<$typename T , class Alloc $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_a8037dc6274012b061edabe1550a2c0ee}{cl\+::enqueue\+Map\+S\+VM}} (\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl\+::vector}}$<$ T, Alloc $>$ container, cl\+\_\+bool blocking, cl\+\_\+map\+\_\+flags flags, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_ac71dfebe7bdaba6a9dfc76b57e48804f}{cl\+::enqueue\+Unmap\+Mem\+Object}} (const Memory \&memory, void $\ast$mapped\+\_\+ptr, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+{\footnotesize template$<$typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_a45d896e5d437b505648b399dbe1c3cac}{cl\+::enqueue\+Unmap\+S\+VM}} (T $\ast$ptr, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+{\footnotesize template$<$typename T , class D $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_aa1c4d75a33c1d658ca4abae23376f733}{cl\+::enqueue\+Unmap\+S\+VM}} (\mbox{\hyperlink{namespacecl_ae65ac4732da5652cb62af5002ea568c1}{cl\+::pointer}}$<$ T, D $>$ \&ptr, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+{\footnotesize template$<$typename T , class Alloc $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_a5c0670097b79b7f6fd2762bae83328f4}{cl\+::enqueue\+Unmap\+S\+VM}} (\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl\+::vector}}$<$ T, Alloc $>$ \&container, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_adc1277d56ee9510bdc9e4552ccfd6c93}{cl\+::enqueue\+Copy\+Buffer}} (const Buffer \&src, const Buffer \&dst, size\+\_\+type src\+\_\+offset, size\+\_\+type dst\+\_\+offset, size\+\_\+type size, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+{\footnotesize template$<$typename T , class Alloc $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_ae97dc5bb86e2c3c3935280a86cda301c}{cl\+::map\+S\+VM}} (\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl\+::vector}}$<$ T, Alloc $>$ \&container)
+\item 
+{\footnotesize template$<$typename T , class Alloc $>$ }\\cl\+\_\+int \mbox{\hyperlink{namespacecl_af9f49b386b20c55c04a9e6cd21849fd5}{cl\+::unmap\+S\+VM}} (\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl\+::vector}}$<$ T, Alloc $>$ \&container)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_af05e92b70071d8b6869080ae02ac807d}{cl\+::enqueue\+Read\+Buffer\+Rect}} (const Buffer \&buffer, cl\+\_\+bool blocking, const array$<$ size\+\_\+type, 3 $>$ \&buffer\+\_\+offset, const array$<$ size\+\_\+type, 3 $>$ \&host\+\_\+offset, const array$<$ size\+\_\+type, 3 $>$ \&region, size\+\_\+type buffer\+\_\+row\+\_\+pitch, size\+\_\+type buffer\+\_\+slice\+\_\+pitch, size\+\_\+type host\+\_\+row\+\_\+pitch, size\+\_\+type host\+\_\+slice\+\_\+pitch, void $\ast$ptr, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_aca10d37fe92b6ee56b9b277f18064db9}{cl\+::enqueue\+Write\+Buffer\+Rect}} (const Buffer \&buffer, cl\+\_\+bool blocking, const array$<$ size\+\_\+type, 3 $>$ \&buffer\+\_\+offset, const array$<$ size\+\_\+type, 3 $>$ \&host\+\_\+offset, const array$<$ size\+\_\+type, 3 $>$ \&region, size\+\_\+type buffer\+\_\+row\+\_\+pitch, size\+\_\+type buffer\+\_\+slice\+\_\+pitch, size\+\_\+type host\+\_\+row\+\_\+pitch, size\+\_\+type host\+\_\+slice\+\_\+pitch, const void $\ast$ptr, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_aac389b8df07a4ed9809413eae7f7689e}{cl\+::enqueue\+Copy\+Buffer\+Rect}} (const Buffer \&src, const Buffer \&dst, const array$<$ size\+\_\+type, 3 $>$ \&src\+\_\+origin, const array$<$ size\+\_\+type, 3 $>$ \&dst\+\_\+origin, const array$<$ size\+\_\+type, 3 $>$ \&region, size\+\_\+type src\+\_\+row\+\_\+pitch, size\+\_\+type src\+\_\+slice\+\_\+pitch, size\+\_\+type dst\+\_\+row\+\_\+pitch, size\+\_\+type dst\+\_\+slice\+\_\+pitch, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_aca98dae2e67f001b26a37d60ccc8fd79}{cl\+::enqueue\+Read\+Image}} (const Image \&image, cl\+\_\+bool blocking, const array$<$ size\+\_\+type, 3 $>$ \&origin, const array$<$ size\+\_\+type, 3 $>$ \&region, size\+\_\+type row\+\_\+pitch, size\+\_\+type slice\+\_\+pitch, void $\ast$ptr, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_ac7b430ef533bd2f3d89092172a39eb9a}{cl\+::enqueue\+Write\+Image}} (const Image \&image, cl\+\_\+bool blocking, const array$<$ size\+\_\+type, 3 $>$ \&origin, const array$<$ size\+\_\+type, 3 $>$ \&region, size\+\_\+type row\+\_\+pitch, size\+\_\+type slice\+\_\+pitch, const void $\ast$ptr, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_a30c5c9c18b1773b185a8cdbca81955e0}{cl\+::enqueue\+Copy\+Image}} (const Image \&src, const Image \&dst, const array$<$ size\+\_\+type, 3 $>$ \&src\+\_\+origin, const array$<$ size\+\_\+type, 3 $>$ \&dst\+\_\+origin, const array$<$ size\+\_\+type, 3 $>$ \&region, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_af5bf3de7bf64abe6c5d0a05fadb121b1}{cl\+::enqueue\+Copy\+Image\+To\+Buffer}} (const Image \&src, const Buffer \&dst, const array$<$ size\+\_\+type, 3 $>$ \&src\+\_\+origin, const array$<$ size\+\_\+type, 3 $>$ \&region, size\+\_\+type dst\+\_\+offset, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_a781572813b27377d2b72155d3b700160}{cl\+::enqueue\+Copy\+Buffer\+To\+Image}} (const Buffer \&src, const Image \&dst, size\+\_\+type src\+\_\+offset, const array$<$ size\+\_\+type, 3 $>$ \&dst\+\_\+origin, const array$<$ size\+\_\+type, 3 $>$ \&region, const vector$<$ Event $>$ $\ast$events=N\+U\+LL, Event $\ast$event=N\+U\+LL)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_aec3275453ec57a74dfa7a34653cfa194}{cl\+::flush}} (void)
+\item 
+cl\+\_\+int \mbox{\hyperlink{namespacecl_a10f66d5f5f17570f71d7cbf467c0930f}{cl\+::finish}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{변수}
+\begin{DoxyCompactItemize}
+\item 
+static const N\+D\+Range \mbox{\hyperlink{namespacecl_afbb06364f32694f32b6944a3794d8af7}{cl\+::\+Null\+Range}}
+\begin{DoxyCompactList}\small\item\em A zero-\/dimensional range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+C++ bindings for Open\+CL 1.\+0 (rev 48), Open\+CL 1.\+1 (rev 33), Open\+CL 1.\+2 (rev 15) and Open\+CL 2.\+0 (rev 29) 
+
+\begin{DoxyAuthor}{작성자}
+Lee Howes and Bruce Merry
+\end{DoxyAuthor}
+Derived from the Open\+CL 1.\+x C++ bindings written by Benedict R. Gaster, Laurent Morichetti and Lee Howes With additions and fixes from\+: Brian Cole, March 3rd 2010 and April 2012 Matt Gruenke, April 2012. Bruce Merry, February 2013. Tom Deakin and Simon Mc\+Intosh-\/\+Smith, July 2013 James Price, 2015-\/
+
+\begin{DoxyVersion}{버전}
+2.\+0.\+10 
+\end{DoxyVersion}
+\begin{DoxyDate}{날짜}
+2016-\/07-\/20
+\end{DoxyDate}
+Optional extension support \begin{DoxyVerb}  cl_ext_device_fission
+  #define CL_HPP_USE_CL_DEVICE_FISSION
+  cl_khr_d3d10_sharing
+  #define CL_HPP_USE_DX_INTEROP
+  cl_khr_sub_groups
+  #define CL_HPP_USE_CL_SUB_GROUPS_KHR
+\end{DoxyVerb}
+
+
+Doxygen documentation for this header is available here\+: \begin{DoxyVerb}http://khronosgroup.github.io/OpenCL-CLHPP/
+\end{DoxyVerb}
+
+
+The latest version of this header can be found on the Git\+Hub releases page\+: \begin{DoxyVerb}https://github.com/KhronosGroup/OpenCL-CLHPP/releases
+\end{DoxyVerb}
+
+
+Bugs and patches can be submitted to the Git\+Hub repository\+: \begin{DoxyVerb}https://github.com/KhronosGroup/OpenCL-CLHPP
+\end{DoxyVerb}
+ 
+
+\doxysubsection{매크로 문서화}
+\mbox{\Hypertarget{cl2_8hpp_a193b43da2ce23c54788f9b4d4f0f4740}\label{cl2_8hpp_a193b43da2ce23c54788f9b4d4f0f4740}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_CALLBACK@{CL\_CALLBACK}}
+\index{CL\_CALLBACK@{CL\_CALLBACK}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_CALLBACK}{CL\_CALLBACK}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+C\+A\+L\+L\+B\+A\+CK}
+
+
+
+cl2.\+hpp 파일의 536 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a728359ddaf60ae8d916bab10bf7ae7e7}\label{cl2_8hpp_a728359ddaf60ae8d916bab10bf7ae7e7}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_EXT\_PREFIX\_\_VERSION\_1\_1\_DEPRECATED@{CL\_EXT\_PREFIX\_\_VERSION\_1\_1\_DEPRECATED}}
+\index{CL\_EXT\_PREFIX\_\_VERSION\_1\_1\_DEPRECATED@{CL\_EXT\_PREFIX\_\_VERSION\_1\_1\_DEPRECATED}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_EXT\_PREFIX\_\_VERSION\_1\_1\_DEPRECATED}{CL\_EXT\_PREFIX\_\_VERSION\_1\_1\_DEPRECATED}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+E\+X\+T\+\_\+\+P\+R\+E\+F\+I\+X\+\_\+\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}
+
+
+
+cl2.\+hpp 파일의 522 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a8e521f2193ebd30528756480e0b81478}\label{cl2_8hpp_a8e521f2193ebd30528756480e0b81478}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_EXT\_PREFIX\_\_VERSION\_1\_2\_DEPRECATED@{CL\_EXT\_PREFIX\_\_VERSION\_1\_2\_DEPRECATED}}
+\index{CL\_EXT\_PREFIX\_\_VERSION\_1\_2\_DEPRECATED@{CL\_EXT\_PREFIX\_\_VERSION\_1\_2\_DEPRECATED}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_EXT\_PREFIX\_\_VERSION\_1\_2\_DEPRECATED}{CL\_EXT\_PREFIX\_\_VERSION\_1\_2\_DEPRECATED}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+E\+X\+T\+\_\+\+P\+R\+E\+F\+I\+X\+\_\+\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+2\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}
+
+
+
+cl2.\+hpp 파일의 529 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a6efde763d2d8686911e04372386b910a}\label{cl2_8hpp_a6efde763d2d8686911e04372386b910a}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_EXT\_SUFFIX\_\_VERSION\_1\_1\_DEPRECATED@{CL\_EXT\_SUFFIX\_\_VERSION\_1\_1\_DEPRECATED}}
+\index{CL\_EXT\_SUFFIX\_\_VERSION\_1\_1\_DEPRECATED@{CL\_EXT\_SUFFIX\_\_VERSION\_1\_1\_DEPRECATED}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_EXT\_SUFFIX\_\_VERSION\_1\_1\_DEPRECATED}{CL\_EXT\_SUFFIX\_\_VERSION\_1\_1\_DEPRECATED}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+E\+X\+T\+\_\+\+S\+U\+F\+F\+I\+X\+\_\+\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}
+
+
+
+cl2.\+hpp 파일의 525 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a30c99bec4258e0d1095128c2a0c6a191}\label{cl2_8hpp_a30c99bec4258e0d1095128c2a0c6a191}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_EXT\_SUFFIX\_\_VERSION\_1\_2\_DEPRECATED@{CL\_EXT\_SUFFIX\_\_VERSION\_1\_2\_DEPRECATED}}
+\index{CL\_EXT\_SUFFIX\_\_VERSION\_1\_2\_DEPRECATED@{CL\_EXT\_SUFFIX\_\_VERSION\_1\_2\_DEPRECATED}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_EXT\_SUFFIX\_\_VERSION\_1\_2\_DEPRECATED}{CL\_EXT\_SUFFIX\_\_VERSION\_1\_2\_DEPRECATED}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+E\+X\+T\+\_\+\+S\+U\+F\+F\+I\+X\+\_\+\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+2\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}
+
+
+
+cl2.\+hpp 파일의 532 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a6ac86f0f6dbdb396f05157126344f799}\label{cl2_8hpp_a6ac86f0f6dbdb396f05157126344f799}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_DECLARE\_PARAM\_TRAITS\_@{CL\_HPP\_DECLARE\_PARAM\_TRAITS\_}}
+\index{CL\_HPP\_DECLARE\_PARAM\_TRAITS\_@{CL\_HPP\_DECLARE\_PARAM\_TRAITS\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_DECLARE\_PARAM\_TRAITS\_}{CL\_HPP\_DECLARE\_PARAM\_TRAITS\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+T\+R\+A\+I\+T\+S\+\_\+(\begin{DoxyParamCaption}\item[{}]{token,  }\item[{}]{param\+\_\+name,  }\item[{}]{T }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{struct }token;                                        \(\backslash\)}
+\DoxyCodeLine{template<>                                           \(\backslash\)}
+\DoxyCodeLine{struct param\_traits<detail:: token,param\_name>       \(\backslash\)}
+\DoxyCodeLine{\{                                                    \(\backslash\)}
+\DoxyCodeLine{    enum \{ value = param\_name \};                     \(\backslash\)}
+\DoxyCodeLine{    typedef T param\_type;                            \(\backslash\)}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+
+
+cl2.\+hpp 파일의 1304 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a43bdbc2602e055e27992c3f36aeb616a}\label{cl2_8hpp_a43bdbc2602e055e27992c3f36aeb616a}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_DEFINE\_STATIC\_MEMBER\_@{CL\_HPP\_DEFINE\_STATIC\_MEMBER\_}}
+\index{CL\_HPP\_DEFINE\_STATIC\_MEMBER\_@{CL\_HPP\_DEFINE\_STATIC\_MEMBER\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_DEFINE\_STATIC\_MEMBER\_}{CL\_HPP\_DEFINE\_STATIC\_MEMBER\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+~\+\_\+\+\_\+attribute\+\_\+\+\_\+((weak))}
+
+
+
+cl2.\+hpp 파일의 516 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a4b595bd14a1dc7ba998f62924cad8f1e}\label{cl2_8hpp_a4b595bd14a1dc7ba998f62924cad8f1e}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_ERR\_STR\_@{CL\_HPP\_ERR\_STR\_}}
+\index{CL\_HPP\_ERR\_STR\_@{CL\_HPP\_ERR\_STR\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_ERR\_STR\_}{CL\_HPP\_ERR\_STR\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+E\+R\+R\+\_\+\+S\+T\+R\+\_\+(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~N\+U\+LL}
+
+
+
+cl2.\+hpp 파일의 750 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a038b6bbadd706770d242412fd00fd2f4}\label{cl2_8hpp_a038b6bbadd706770d242412fd00fd2f4}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_INIT\_CL\_EXT\_FCN\_PTR\_@{CL\_HPP\_INIT\_CL\_EXT\_FCN\_PTR\_}}
+\index{CL\_HPP\_INIT\_CL\_EXT\_FCN\_PTR\_@{CL\_HPP\_INIT\_CL\_EXT\_FCN\_PTR\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_INIT\_CL\_EXT\_FCN\_PTR\_}{CL\_HPP\_INIT\_CL\_EXT\_FCN\_PTR\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+I\+N\+I\+T\+\_\+\+C\+L\+\_\+\+E\+X\+T\+\_\+\+F\+C\+N\+\_\+\+P\+T\+R\+\_\+(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (!pfn\_\#\#name) \{    \(\backslash\)}
+\DoxyCodeLine{    pfn\_\#\#name = (PFN\_\#\#name) \(\backslash\)}
+\DoxyCodeLine{    clGetExtensionFunctionAddress(\#name); \(\backslash\)}
+\DoxyCodeLine{    if (!pfn\_\#\#name) \{    \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+cl2.\+hpp 파일의 678 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a0347821869ad5e477df344dbf9d240dd}\label{cl2_8hpp_a0347821869ad5e477df344dbf9d240dd}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_INIT\_CL\_EXT\_FCN\_PTR\_PLATFORM\_@{CL\_HPP\_INIT\_CL\_EXT\_FCN\_PTR\_PLATFORM\_}}
+\index{CL\_HPP\_INIT\_CL\_EXT\_FCN\_PTR\_PLATFORM\_@{CL\_HPP\_INIT\_CL\_EXT\_FCN\_PTR\_PLATFORM\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_INIT\_CL\_EXT\_FCN\_PTR\_PLATFORM\_}{CL\_HPP\_INIT\_CL\_EXT\_FCN\_PTR\_PLATFORM\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+I\+N\+I\+T\+\_\+\+C\+L\+\_\+\+E\+X\+T\+\_\+\+F\+C\+N\+\_\+\+P\+T\+R\+\_\+\+P\+L\+A\+T\+F\+O\+R\+M\+\_\+(\begin{DoxyParamCaption}\item[{}]{platform,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (!pfn\_\#\#name) \{    \(\backslash\)}
+\DoxyCodeLine{    pfn\_\#\#name = (PFN\_\#\#name) \(\backslash\)}
+\DoxyCodeLine{    clGetExtensionFunctionAddressForPlatform(platform, \#name); \(\backslash\)}
+\DoxyCodeLine{    if (!pfn\_\#\#name) \{    \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+cl2.\+hpp 파일의 686 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a2053025c576bcf48e249dd20e884a560}\label{cl2_8hpp_a2053025c576bcf48e249dd20e884a560}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_MINIMUM\_OPENCL\_VERSION@{CL\_HPP\_MINIMUM\_OPENCL\_VERSION}}
+\index{CL\_HPP\_MINIMUM\_OPENCL\_VERSION@{CL\_HPP\_MINIMUM\_OPENCL\_VERSION}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_MINIMUM\_OPENCL\_VERSION}{CL\_HPP\_MINIMUM\_OPENCL\_VERSION}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+M\+I\+N\+I\+M\+U\+M\+\_\+\+O\+P\+E\+N\+C\+L\+\_\+\+V\+E\+R\+S\+I\+ON~200}
+
+
+
+cl2.\+hpp 파일의 450 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a7fcfde26c9e031daf0c6fbb637ed7ac0}\label{cl2_8hpp_a7fcfde26c9e031daf0c6fbb637ed7ac0}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_NOEXCEPT\_@{CL\_HPP\_NOEXCEPT\_}}
+\index{CL\_HPP\_NOEXCEPT\_@{CL\_HPP\_NOEXCEPT\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_NOEXCEPT\_}{CL\_HPP\_NOEXCEPT\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T\+\_\+}
+
+
+
+cl2.\+hpp 파일의 510 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_ab66a37111cb5d8c20e89938dd790ad9b}\label{cl2_8hpp_ab66a37111cb5d8c20e89938dd790ad9b}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_PARAM\_NAME\_DEVICE\_FISSION\_@{CL\_HPP\_PARAM\_NAME\_DEVICE\_FISSION\_}}
+\index{CL\_HPP\_PARAM\_NAME\_DEVICE\_FISSION\_@{CL\_HPP\_PARAM\_NAME\_DEVICE\_FISSION\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_PARAM\_NAME\_DEVICE\_FISSION\_}{CL\_HPP\_PARAM\_NAME\_DEVICE\_FISSION\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+F\+I\+S\+S\+I\+O\+N\+\_\+(\begin{DoxyParamCaption}\item[{}]{F }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{F(cl\_device\_info, CL\_DEVICE\_PARENT\_DEVICE\_EXT, cl\_device\_id) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_PARTITION\_TYPES\_EXT, \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl::vector<cl\_device\_partition\_property\_ext>}}) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_AFFINITY\_DOMAINS\_EXT, \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl::vector<cl\_device\_partition\_property\_ext>}}) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_REFERENCE\_COUNT\_EXT , cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_PARTITION\_STYLE\_EXT, \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl::vector<cl\_device\_partition\_property\_ext>}})}
+
+\end{DoxyCode}
+
+
+cl2.\+hpp 파일의 1294 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a3c07afe8e5aab6eedbeee41eb683ca27}\label{cl2_8hpp_a3c07afe8e5aab6eedbeee41eb683ca27}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_PARAM\_NAME\_INFO\_1\_0\_@{CL\_HPP\_PARAM\_NAME\_INFO\_1\_0\_}}
+\index{CL\_HPP\_PARAM\_NAME\_INFO\_1\_0\_@{CL\_HPP\_PARAM\_NAME\_INFO\_1\_0\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_PARAM\_NAME\_INFO\_1\_0\_}{CL\_HPP\_PARAM\_NAME\_INFO\_1\_0\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+1\+\_\+0\+\_\+(\begin{DoxyParamCaption}\item[{}]{F }\end{DoxyParamCaption})}
+
+
+
+cl2.\+hpp 파일의 1105 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a7f63e8a787b3c0eef4fe1287ab50f620}\label{cl2_8hpp_a7f63e8a787b3c0eef4fe1287ab50f620}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_PARAM\_NAME\_INFO\_1\_0\_DEPRECATED\_IN\_2\_0\_@{CL\_HPP\_PARAM\_NAME\_INFO\_1\_0\_DEPRECATED\_IN\_2\_0\_}}
+\index{CL\_HPP\_PARAM\_NAME\_INFO\_1\_0\_DEPRECATED\_IN\_2\_0\_@{CL\_HPP\_PARAM\_NAME\_INFO\_1\_0\_DEPRECATED\_IN\_2\_0\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_PARAM\_NAME\_INFO\_1\_0\_DEPRECATED\_IN\_2\_0\_}{CL\_HPP\_PARAM\_NAME\_INFO\_1\_0\_DEPRECATED\_IN\_2\_0\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+1\+\_\+0\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+I\+N\+\_\+2\+\_\+0\+\_\+(\begin{DoxyParamCaption}\item[{}]{F }\end{DoxyParamCaption})~F(cl\+\_\+device\+\_\+info, C\+L\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES, cl\+\_\+command\+\_\+queue\+\_\+properties)}
+
+
+
+cl2.\+hpp 파일의 1326 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a1684a5b5156344ea8144959b5ed90670}\label{cl2_8hpp_a1684a5b5156344ea8144959b5ed90670}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_PARAM\_NAME\_INFO\_1\_1\_@{CL\_HPP\_PARAM\_NAME\_INFO\_1\_1\_}}
+\index{CL\_HPP\_PARAM\_NAME\_INFO\_1\_1\_@{CL\_HPP\_PARAM\_NAME\_INFO\_1\_1\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_PARAM\_NAME\_INFO\_1\_1\_}{CL\_HPP\_PARAM\_NAME\_INFO\_1\_1\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+1\+\_\+1\+\_\+(\begin{DoxyParamCaption}\item[{}]{F }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{F(cl\_context\_info, CL\_CONTEXT\_NUM\_DEVICES, cl\_uint)\(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_PREFERRED\_VECTOR\_WIDTH\_HALF, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_NATIVE\_VECTOR\_WIDTH\_CHAR, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_NATIVE\_VECTOR\_WIDTH\_SHORT, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_NATIVE\_VECTOR\_WIDTH\_INT, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_NATIVE\_VECTOR\_WIDTH\_LONG, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_NATIVE\_VECTOR\_WIDTH\_FLOAT, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_NATIVE\_VECTOR\_WIDTH\_DOUBLE, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_NATIVE\_VECTOR\_WIDTH\_HALF, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_DOUBLE\_FP\_CONFIG, cl\_device\_fp\_config) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_HALF\_FP\_CONFIG, cl\_device\_fp\_config) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_OPENCL\_C\_VERSION, \textcolor{keywordtype}{string}) \(\backslash\)}
+\DoxyCodeLine{    \(\backslash\)}
+\DoxyCodeLine{    F(cl\_mem\_info, CL\_MEM\_ASSOCIATED\_MEMOBJECT, \mbox{\hyperlink{classcl_1_1_memory}{cl::Memory}}) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_mem\_info, CL\_MEM\_OFFSET, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}}) \(\backslash\)}
+\DoxyCodeLine{    \(\backslash\)}
+\DoxyCodeLine{    F(cl\_kernel\_work\_group\_info, CL\_KERNEL\_PREFERRED\_WORK\_GROUP\_SIZE\_MULTIPLE, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}}) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_kernel\_work\_group\_info, CL\_KERNEL\_PRIVATE\_MEM\_SIZE, cl\_ulong) \(\backslash\)}
+\DoxyCodeLine{    \(\backslash\)}
+\DoxyCodeLine{    F(cl\_event\_info, CL\_EVENT\_CONTEXT, \mbox{\hyperlink{classcl_1_1_context}{cl::Context}})}
+
+\end{DoxyCode}
+
+
+cl2.\+hpp 파일의 1226 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a3d4442f92a22b926272febf3ad1d0113}\label{cl2_8hpp_a3d4442f92a22b926272febf3ad1d0113}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_PARAM\_NAME\_INFO\_1\_1\_DEPRECATED\_IN\_2\_0\_@{CL\_HPP\_PARAM\_NAME\_INFO\_1\_1\_DEPRECATED\_IN\_2\_0\_}}
+\index{CL\_HPP\_PARAM\_NAME\_INFO\_1\_1\_DEPRECATED\_IN\_2\_0\_@{CL\_HPP\_PARAM\_NAME\_INFO\_1\_1\_DEPRECATED\_IN\_2\_0\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_PARAM\_NAME\_INFO\_1\_1\_DEPRECATED\_IN\_2\_0\_}{CL\_HPP\_PARAM\_NAME\_INFO\_1\_1\_DEPRECATED\_IN\_2\_0\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+1\+\_\+1\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+I\+N\+\_\+2\+\_\+0\+\_\+(\begin{DoxyParamCaption}\item[{}]{F }\end{DoxyParamCaption})~F(cl\+\_\+device\+\_\+info, C\+L\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+H\+O\+S\+T\+\_\+\+U\+N\+I\+F\+I\+E\+D\+\_\+\+M\+E\+M\+O\+RY, cl\+\_\+bool)}
+
+
+
+cl2.\+hpp 파일의 1329 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a5303b6c0e9bcace6a68fa22471110608}\label{cl2_8hpp_a5303b6c0e9bcace6a68fa22471110608}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_PARAM\_NAME\_INFO\_1\_2\_@{CL\_HPP\_PARAM\_NAME\_INFO\_1\_2\_}}
+\index{CL\_HPP\_PARAM\_NAME\_INFO\_1\_2\_@{CL\_HPP\_PARAM\_NAME\_INFO\_1\_2\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_PARAM\_NAME\_INFO\_1\_2\_}{CL\_HPP\_PARAM\_NAME\_INFO\_1\_2\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+1\+\_\+2\+\_\+(\begin{DoxyParamCaption}\item[{}]{F }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{F(cl\_program\_info, CL\_PROGRAM\_NUM\_KERNELS, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}}) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_program\_info, CL\_PROGRAM\_KERNEL\_NAMES, \textcolor{keywordtype}{string}) \(\backslash\)}
+\DoxyCodeLine{    \(\backslash\)}
+\DoxyCodeLine{    F(cl\_program\_build\_info, CL\_PROGRAM\_BINARY\_TYPE, cl\_program\_binary\_type) \(\backslash\)}
+\DoxyCodeLine{    \(\backslash\)}
+\DoxyCodeLine{    F(cl\_kernel\_info, CL\_KERNEL\_ATTRIBUTES, \textcolor{keywordtype}{string}) \(\backslash\)}
+\DoxyCodeLine{    \(\backslash\)}
+\DoxyCodeLine{    F(cl\_kernel\_arg\_info, CL\_KERNEL\_ARG\_ADDRESS\_QUALIFIER, cl\_kernel\_arg\_address\_qualifier) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_kernel\_arg\_info, CL\_KERNEL\_ARG\_ACCESS\_QUALIFIER, cl\_kernel\_arg\_access\_qualifier) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_kernel\_arg\_info, CL\_KERNEL\_ARG\_TYPE\_NAME, \textcolor{keywordtype}{string}) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_kernel\_arg\_info, CL\_KERNEL\_ARG\_NAME, \textcolor{keywordtype}{string}) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_kernel\_arg\_info, CL\_KERNEL\_ARG\_TYPE\_QUALIFIER, cl\_kernel\_arg\_type\_qualifier) \(\backslash\)}
+\DoxyCodeLine{    \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_PARENT\_DEVICE, \mbox{\hyperlink{classcl_1_1_device}{cl::Device}}) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_PARTITION\_PROPERTIES, \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl::vector<cl\_device\_partition\_property>}}) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_PARTITION\_TYPE, \mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{cl::vector<cl\_device\_partition\_property>}})  \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_REFERENCE\_COUNT, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_PREFERRED\_INTEROP\_USER\_SYNC, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}}) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_PARTITION\_AFFINITY\_DOMAIN, cl\_device\_affinity\_domain) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_BUILT\_IN\_KERNELS, \textcolor{keywordtype}{string}) \(\backslash\)}
+\DoxyCodeLine{    \(\backslash\)}
+\DoxyCodeLine{    F(cl\_image\_info, CL\_IMAGE\_ARRAY\_SIZE, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}}) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_image\_info, CL\_IMAGE\_NUM\_MIP\_LEVELS, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_image\_info, CL\_IMAGE\_NUM\_SAMPLES, cl\_uint)}
+
+\end{DoxyCode}
+
+
+cl2.\+hpp 파일의 1248 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a653491a41cc7fd568c2b9cabb4814ac7}\label{cl2_8hpp_a653491a41cc7fd568c2b9cabb4814ac7}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_PARAM\_NAME\_INFO\_1\_2\_DEPRECATED\_IN\_2\_0\_@{CL\_HPP\_PARAM\_NAME\_INFO\_1\_2\_DEPRECATED\_IN\_2\_0\_}}
+\index{CL\_HPP\_PARAM\_NAME\_INFO\_1\_2\_DEPRECATED\_IN\_2\_0\_@{CL\_HPP\_PARAM\_NAME\_INFO\_1\_2\_DEPRECATED\_IN\_2\_0\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_PARAM\_NAME\_INFO\_1\_2\_DEPRECATED\_IN\_2\_0\_}{CL\_HPP\_PARAM\_NAME\_INFO\_1\_2\_DEPRECATED\_IN\_2\_0\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+1\+\_\+2\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+I\+N\+\_\+2\+\_\+0\+\_\+(\begin{DoxyParamCaption}\item[{}]{F }\end{DoxyParamCaption})~F(cl\+\_\+image\+\_\+info, C\+L\+\_\+\+I\+M\+A\+G\+E\+\_\+\+B\+U\+F\+F\+ER, \mbox{\hyperlink{classcl_1_1_buffer}{cl\+::\+Buffer}})}
+
+
+
+cl2.\+hpp 파일의 1332 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_abb735d6080a161ccd484c8da77a0fc3b}\label{cl2_8hpp_abb735d6080a161ccd484c8da77a0fc3b}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_PARAM\_NAME\_INFO\_2\_0\_@{CL\_HPP\_PARAM\_NAME\_INFO\_2\_0\_}}
+\index{CL\_HPP\_PARAM\_NAME\_INFO\_2\_0\_@{CL\_HPP\_PARAM\_NAME\_INFO\_2\_0\_}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_PARAM\_NAME\_INFO\_2\_0\_}{CL\_HPP\_PARAM\_NAME\_INFO\_2\_0\_}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+F\+O\+\_\+2\+\_\+0\+\_\+(\begin{DoxyParamCaption}\item[{}]{F }\end{DoxyParamCaption})}
+
+{\bfseries 값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{F(cl\_device\_info, CL\_DEVICE\_QUEUE\_ON\_HOST\_PROPERTIES, cl\_command\_queue\_properties) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_QUEUE\_ON\_DEVICE\_PROPERTIES, cl\_command\_queue\_properties) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_QUEUE\_ON\_DEVICE\_PREFERRED\_SIZE, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_QUEUE\_ON\_DEVICE\_MAX\_SIZE, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_MAX\_ON\_DEVICE\_QUEUES, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_MAX\_ON\_DEVICE\_EVENTS, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_MAX\_PIPE\_ARGS, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_PIPE\_MAX\_ACTIVE\_RESERVATIONS, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_PIPE\_MAX\_PACKET\_SIZE, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_SVM\_CAPABILITIES, cl\_device\_svm\_capabilities) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_PREFERRED\_PLATFORM\_ATOMIC\_ALIGNMENT, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_PREFERRED\_GLOBAL\_ATOMIC\_ALIGNMENT, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_device\_info, CL\_DEVICE\_PREFERRED\_LOCAL\_ATOMIC\_ALIGNMENT, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_command\_queue\_info, CL\_QUEUE\_SIZE, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_mem\_info, CL\_MEM\_USES\_SVM\_POINTER, cl\_bool) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_program\_build\_info, CL\_PROGRAM\_BUILD\_GLOBAL\_VARIABLE\_TOTAL\_SIZE, \mbox{\hyperlink{namespacecl_a35ea2a6f4cc42e6b4082daab0e4dc449}{size\_type}}) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_pipe\_info, CL\_PIPE\_PACKET\_SIZE, cl\_uint) \(\backslash\)}
+\DoxyCodeLine{    F(cl\_pipe\_info, CL\_PIPE\_MAX\_PACKETS, cl\_uint)}
+
+\end{DoxyCode}
+
+
+cl2.\+hpp 파일의 1274 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a37ea07405ca286c1570612b42d43b345}\label{cl2_8hpp_a37ea07405ca286c1570612b42d43b345}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_HPP\_TARGET\_OPENCL\_VERSION@{CL\_HPP\_TARGET\_OPENCL\_VERSION}}
+\index{CL\_HPP\_TARGET\_OPENCL\_VERSION@{CL\_HPP\_TARGET\_OPENCL\_VERSION}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_HPP\_TARGET\_OPENCL\_VERSION}{CL\_HPP\_TARGET\_OPENCL\_VERSION}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+H\+P\+P\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+O\+P\+E\+N\+C\+L\+\_\+\+V\+E\+R\+S\+I\+ON~200}
+
+
+
+cl2.\+hpp 파일의 441 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{cl2_8hpp_a83e58027079a192080c2690ec9918612}\label{cl2_8hpp_a83e58027079a192080c2690ec9918612}} 
+\index{cl2.hpp@{cl2.hpp}!CL\_USE\_DEPRECATED\_OPENCL\_2\_0\_APIS@{CL\_USE\_DEPRECATED\_OPENCL\_2\_0\_APIS}}
+\index{CL\_USE\_DEPRECATED\_OPENCL\_2\_0\_APIS@{CL\_USE\_DEPRECATED\_OPENCL\_2\_0\_APIS}!cl2.hpp@{cl2.hpp}}
+\doxysubsubsection{\texorpdfstring{CL\_USE\_DEPRECATED\_OPENCL\_2\_0\_APIS}{CL\_USE\_DEPRECATED\_OPENCL\_2\_0\_APIS}}
+{\footnotesize\ttfamily \#define C\+L\+\_\+\+U\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+O\+P\+E\+N\+C\+L\+\_\+2\+\_\+0\+\_\+\+A\+P\+IS}
+
+
+
+cl2.\+hpp 파일의 471 번째 라인에서 정의되었습니다.
+

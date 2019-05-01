@@ -1,0 +1,614 @@
+\hypertarget{classcl_1_1_image_g_l}{}\doxysection{cl\+::Image\+GL 클래스 참조}
+\label{classcl_1_1_image_g_l}\index{cl::ImageGL@{cl::ImageGL}}
+
+
+general image interface for GL interop. We abstract the 2D and 3D GL images into a single instance here that wraps all GL sourced images on the grounds that setup information was performed by Open\+CL anyway.  
+
+
+
+
+{\ttfamily \#include $<$cl2.\+hpp$>$}
+
+
+
+cl\+::Image\+G\+L에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcl_1_1_image_g_l__inherit__graph}
+\end{center}
+\end{figure}
+
+
+cl\+::Image\+G\+L에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcl_1_1_image_g_l__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+typedef cl\+\_\+mem \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1_image_g_l_a57fafd5d3fb26b8e0b616f75fb4bf4b8}{Image\+GL}} (const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&context, cl\+\_\+mem\+\_\+flags flags, cl\+\_\+\+G\+Lenum target, cl\+\_\+\+G\+Lint miplevel, cl\+\_\+\+G\+Luint texobj, cl\+\_\+int $\ast$err=N\+U\+LL)
+\item 
+\mbox{\hyperlink{classcl_1_1_image_g_l_a47bcf79def1c749c816e1b229f8996a1}{Image\+GL}} ()
+\item 
+\mbox{\hyperlink{classcl_1_1_image_g_l_afc06fdce130a034e8dca89ac910a93ab}{Image\+GL}} (const cl\+\_\+mem \&image, bool retain\+Object=false)
+\begin{DoxyCompactList}\small\item\em Constructor from cl\+\_\+mem -\/ takes ownership. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}} \& \mbox{\hyperlink{classcl_1_1_image_g_l_a171b30e347bf5130fc0aa00d69f2b1d5}{operator=}} (const cl\+\_\+mem \&rhs)
+\item 
+\mbox{\hyperlink{classcl_1_1_image_g_l_a0d65fbe2960edcd3b2ba6f857d98b813}{Image\+GL}} (const \mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}} \&img)
+\begin{DoxyCompactList}\small\item\em Copy constructor to forward copy to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}} \& \mbox{\hyperlink{classcl_1_1_image_g_l_ad1f85fdf551d1503c41a1ee88eada0ae}{operator=}} (const \mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}} \&img)
+\begin{DoxyCompactList}\small\item\em Copy assignment to forward copy to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_image_g_l_a838ca2ca2a61984f58fc4b4bba8ff225}{Image\+GL}} (\mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}} \&\&img) \mbox{\hyperlink{cl2_8hpp_a7fcfde26c9e031daf0c6fbb637ed7ac0}{C\+L\+\_\+\+H\+P\+P\+\_\+\+N\+O\+E\+X\+C\+E\+P\+T\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Move constructor to forward move to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}} \& \mbox{\hyperlink{classcl_1_1_image_g_l_a071bab7f0d9fd09641b139243097a157}{operator=}} (\mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}} \&\&img)
+\begin{DoxyCompactList}\small\item\em Move assignment to forward move to the superclass correctly. Required for M\+S\+VC. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_image_a7bf98f36e2e0bd8627377cfdfc260259}{get\+Image\+Info}} (cl\+\_\+image\+\_\+info name, T $\ast$param) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Image\+Info(). \end{DoxyCompactList}\item 
+{\footnotesize template$<$cl\+\_\+int name$>$ }\\\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$ detail\+::cl\+\_\+image\+\_\+info, name $>$\+::param\+\_\+type \mbox{\hyperlink{classcl_1_1_image_a6c19e6b799c523fe5229a7a8f3da7431}{get\+Image\+Info}} (cl\+\_\+int $\ast$err=N\+U\+LL) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Image\+Info() that returns by value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\cl\+\_\+int \mbox{\hyperlink{classcl_1_1_memory_ab86d24b2a4f9a7090148fb8e77d73135}{get\+Info}} (cl\+\_\+mem\+\_\+info name, T $\ast$param) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Mem\+Object\+Info(). \end{DoxyCompactList}\item 
+{\footnotesize template$<$cl\+\_\+int name$>$ }\\\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$ detail\+::cl\+\_\+mem\+\_\+info, name $>$\+::param\+\_\+type \mbox{\hyperlink{classcl_1_1_memory_a71a7dacb458fb6a8993c586f5c9fab6f}{get\+Info}} (cl\+\_\+int $\ast$err=N\+U\+LL) const
+\begin{DoxyCompactList}\small\item\em Wrapper for cl\+Get\+Mem\+Object\+Info() that returns by value. \end{DoxyCompactList}\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1_memory_a15e14fda4062d21ad354126a599a6111}{set\+Destructor\+Callback}} (void(\mbox{\hyperlink{cl2_8hpp_a193b43da2ce23c54788f9b4d4f0f4740}{C\+L\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} $\ast$pfn\+\_\+notify)(cl\+\_\+mem, void $\ast$), void $\ast$user\+\_\+data=N\+U\+LL)
+\begin{DoxyCompactList}\small\item\em Registers a callback function to be called when the memory object is no longer needed. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}{operator()}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}{operator()}} ()
+\item 
+const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}{get}} () const
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}{get}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}{retain}} () const
+\item 
+cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}{release}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+general image interface for GL interop. We abstract the 2D and 3D GL images into a single instance here that wraps all GL sourced images on the grounds that setup information was performed by Open\+CL anyway. 
+
+cl2.\+hpp 파일의 5178 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 타입정의 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}\label{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}} 
+\index{cl::ImageGL@{cl::ImageGL}!cl\_type@{cl\_type}}
+\index{cl\_type@{cl\_type}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{cl\_type}{cl\_type}}
+{\footnotesize\ttfamily typedef cl\+\_\+mem  \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1637 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classcl_1_1_image_g_l_a57fafd5d3fb26b8e0b616f75fb4bf4b8}\label{classcl_1_1_image_g_l_a57fafd5d3fb26b8e0b616f75fb4bf4b8}} 
+\index{cl::ImageGL@{cl::ImageGL}!ImageGL@{ImageGL}}
+\index{ImageGL@{ImageGL}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{ImageGL()}{ImageGL()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily cl\+::\+Image\+G\+L\+::\+Image\+GL (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_context}{Context}} \&}]{context,  }\item[{cl\+\_\+mem\+\_\+flags}]{flags,  }\item[{cl\+\_\+\+G\+Lenum}]{target,  }\item[{cl\+\_\+\+G\+Lint}]{miplevel,  }\item[{cl\+\_\+\+G\+Luint}]{texobj,  }\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 5181 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5188     \{}
+\DoxyCodeLine{5189         cl\_int \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{5190         \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} = ::clCreateFromGLTexture(}
+\DoxyCodeLine{5191             context(), }
+\DoxyCodeLine{5192             flags, }
+\DoxyCodeLine{5193             target,}
+\DoxyCodeLine{5194             miplevel,}
+\DoxyCodeLine{5195             texobj,}
+\DoxyCodeLine{5196             \&\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}});}
+\DoxyCodeLine{5197 }
+\DoxyCodeLine{5198         \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(\mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}, \_\_CREATE\_GL\_TEXTURE\_ERR);}
+\DoxyCodeLine{5199         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{5200             *err = \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}};}
+\DoxyCodeLine{5201         \}}
+\DoxyCodeLine{5202     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classcl_1_1_image_g_l_a57fafd5d3fb26b8e0b616f75fb4bf4b8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_image_g_l_a47bcf79def1c749c816e1b229f8996a1}\label{classcl_1_1_image_g_l_a47bcf79def1c749c816e1b229f8996a1}} 
+\index{cl::ImageGL@{cl::ImageGL}!ImageGL@{ImageGL}}
+\index{ImageGL@{ImageGL}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{ImageGL()}{ImageGL()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily cl\+::\+Image\+G\+L\+::\+Image\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 5204 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5204 : \mbox{\hyperlink{classcl_1_1_image_ad9a2f4b6a5ccbb7056613946bc6ee0b7}{Image}}() \{ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_image_g_l_afc06fdce130a034e8dca89ac910a93ab}\label{classcl_1_1_image_g_l_afc06fdce130a034e8dca89ac910a93ab}} 
+\index{cl::ImageGL@{cl::ImageGL}!ImageGL@{ImageGL}}
+\index{ImageGL@{ImageGL}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{ImageGL()}{ImageGL()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily cl\+::\+Image\+G\+L\+::\+Image\+GL (\begin{DoxyParamCaption}\item[{const cl\+\_\+mem \&}]{image,  }\item[{bool}]{retain\+Object = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor from cl\+\_\+mem -\/ takes ownership. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em retain\+Object} & will cause the constructor to retain its cl object. Defaults to false to maintain compatibility with earlier versions. See \mbox{\hyperlink{classcl_1_1_memory}{Memory}} for further details. \\
+\hline
+\end{DoxyParams}
+
+
+cl2.\+hpp 파일의 5213 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5213                                                                      : }
+\DoxyCodeLine{5214         \mbox{\hyperlink{classcl_1_1_image_ad9a2f4b6a5ccbb7056613946bc6ee0b7}{Image}}(image, retainObject) \{ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_image_g_l_a0d65fbe2960edcd3b2ba6f857d98b813}\label{classcl_1_1_image_g_l_a0d65fbe2960edcd3b2ba6f857d98b813}} 
+\index{cl::ImageGL@{cl::ImageGL}!ImageGL@{ImageGL}}
+\index{ImageGL@{ImageGL}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{ImageGL()}{ImageGL()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily cl\+::\+Image\+G\+L\+::\+Image\+GL (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}} \&}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor to forward copy to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 5225 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5225 : \mbox{\hyperlink{classcl_1_1_image_ad9a2f4b6a5ccbb7056613946bc6ee0b7}{Image}}(img) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_image_g_l_a838ca2ca2a61984f58fc4b4bba8ff225}\label{classcl_1_1_image_g_l_a838ca2ca2a61984f58fc4b4bba8ff225}} 
+\index{cl::ImageGL@{cl::ImageGL}!ImageGL@{ImageGL}}
+\index{ImageGL@{ImageGL}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{ImageGL()}{ImageGL()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily cl\+::\+Image\+G\+L\+::\+Image\+GL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}} \&\&}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move constructor to forward move to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 5239 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5239 : \mbox{\hyperlink{classcl_1_1_image_ad9a2f4b6a5ccbb7056613946bc6ee0b7}{Image}}(std::move(img)) \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}\label{classcl_1_1detail_1_1_wrapper_a4e9571071a0b51bb2fada511a1ebc964}} 
+\index{cl::ImageGL@{cl::ImageGL}!get@{get}}
+\index{get@{get}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1702 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1702 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}\label{classcl_1_1detail_1_1_wrapper_a1b785e6bbf238183338a22800a6fe1d1}} 
+\index{cl::ImageGL@{cl::ImageGL}!get@{get}}
+\index{get@{get}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1700 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1700 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_image_a7bf98f36e2e0bd8627377cfdfc260259}\label{classcl_1_1_image_a7bf98f36e2e0bd8627377cfdfc260259}} 
+\index{cl::ImageGL@{cl::ImageGL}!getImageInfo@{getImageInfo}}
+\index{getImageInfo@{getImageInfo}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{getImageInfo()}{getImageInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+cl\+\_\+int cl\+::\+Image\+::get\+Image\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+image\+\_\+info}]{name,  }\item[{T $\ast$}]{param }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Wrapper for cl\+Get\+Image\+Info(). 
+
+
+
+cl2.\+hpp 파일의 4221 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4222     \{}
+\DoxyCodeLine{4223         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{4224             \mbox{\hyperlink{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480}{detail::getInfo}}(\&::clGetImageInfo, \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, name, param),}
+\DoxyCodeLine{4225             \_\_GET\_IMAGE\_INFO\_ERR);}
+\DoxyCodeLine{4226     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_image_a7bf98f36e2e0bd8627377cfdfc260259_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_image_a7bf98f36e2e0bd8627377cfdfc260259_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_image_a6c19e6b799c523fe5229a7a8f3da7431}\label{classcl_1_1_image_a6c19e6b799c523fe5229a7a8f3da7431}} 
+\index{cl::ImageGL@{cl::ImageGL}!getImageInfo@{getImageInfo}}
+\index{getImageInfo@{getImageInfo}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{getImageInfo()}{getImageInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$cl\+\_\+int name$>$ \\
+\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$detail\+::cl\+\_\+image\+\_\+info, name$>$\+::param\+\_\+type cl\+::\+Image\+::get\+Image\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Wrapper for cl\+Get\+Image\+Info() that returns by value. 
+
+
+
+cl2.\+hpp 파일의 4231 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4232     \{}
+\DoxyCodeLine{4233         \textcolor{keyword}{typename} detail::param\_traits<}
+\DoxyCodeLine{4234             detail::cl\_image\_info, name>::param\_type param;}
+\DoxyCodeLine{4235         cl\_int result = \mbox{\hyperlink{classcl_1_1_image_a7bf98f36e2e0bd8627377cfdfc260259}{getImageInfo}}(name, \&param);}
+\DoxyCodeLine{4236         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{4237             *err = result;}
+\DoxyCodeLine{4238         \}}
+\DoxyCodeLine{4239         \textcolor{keywordflow}{return} param;}
+\DoxyCodeLine{4240     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_image_a6c19e6b799c523fe5229a7a8f3da7431_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_memory_a71a7dacb458fb6a8993c586f5c9fab6f}\label{classcl_1_1_memory_a71a7dacb458fb6a8993c586f5c9fab6f}} 
+\index{cl::ImageGL@{cl::ImageGL}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$cl\+\_\+int name$>$ \\
+\mbox{\hyperlink{structcl_1_1detail_1_1param__traits}{detail\+::param\+\_\+traits}}$<$detail\+::cl\+\_\+mem\+\_\+info, name$>$\+::param\+\_\+type cl\+::\+Memory\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+int $\ast$}]{err = {\ttfamily NULL} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Wrapper for cl\+Get\+Mem\+Object\+Info() that returns by value. 
+
+
+
+cl2.\+hpp 파일의 3233 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3234     \{}
+\DoxyCodeLine{3235         \textcolor{keyword}{typename} detail::param\_traits<}
+\DoxyCodeLine{3236             detail::cl\_mem\_info, name>::param\_type param;}
+\DoxyCodeLine{3237         cl\_int result = \mbox{\hyperlink{classcl_1_1_memory_ab86d24b2a4f9a7090148fb8e77d73135}{getInfo}}(name, \&param);}
+\DoxyCodeLine{3238         \textcolor{keywordflow}{if} (err != NULL) \{}
+\DoxyCodeLine{3239             *err = result;}
+\DoxyCodeLine{3240         \}}
+\DoxyCodeLine{3241         \textcolor{keywordflow}{return} param;}
+\DoxyCodeLine{3242     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_memory_a71a7dacb458fb6a8993c586f5c9fab6f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_memory_ab86d24b2a4f9a7090148fb8e77d73135}\label{classcl_1_1_memory_ab86d24b2a4f9a7090148fb8e77d73135}} 
+\index{cl::ImageGL@{cl::ImageGL}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+cl\+\_\+int cl\+::\+Memory\+::get\+Info (\begin{DoxyParamCaption}\item[{cl\+\_\+mem\+\_\+info}]{name,  }\item[{T $\ast$}]{param }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Wrapper for cl\+Get\+Mem\+Object\+Info(). 
+
+
+
+cl2.\+hpp 파일의 3223 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3224     \{}
+\DoxyCodeLine{3225         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{3226             \mbox{\hyperlink{namespacecl_1_1detail_a5954b0e110a023571c1bed2be1efb480}{detail::getInfo}}(\&::clGetMemObjectInfo, \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}, name, param),}
+\DoxyCodeLine{3227             \_\_GET\_MEM\_OBJECT\_INFO\_ERR);}
+\DoxyCodeLine{3228     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_memory_ab86d24b2a4f9a7090148fb8e77d73135_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classcl_1_1_memory_ab86d24b2a4f9a7090148fb8e77d73135_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}\label{classcl_1_1detail_1_1_wrapper_a5aa32c6d3304d4ee9fb63491a72b0d58}} 
+\index{cl::ImageGL@{cl::ImageGL}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1698 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1698 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}\label{classcl_1_1detail_1_1_wrapper_a89adf70432169d0b0a82bc6696a9aad1}} 
+\index{cl::ImageGL@{cl::ImageGL}!operator()@{operator()}}
+\index{operator()@{operator()}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}}\& \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1696 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1696 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_image_g_l_a171b30e347bf5130fc0aa00d69f2b1d5}\label{classcl_1_1_image_g_l_a171b30e347bf5130fc0aa00d69f2b1d5}} 
+\index{cl::ImageGL@{cl::ImageGL}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}}\& cl\+::\+Image\+G\+L\+::operator= (\begin{DoxyParamCaption}\item[{const cl\+\_\+mem \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cl2.\+hpp 파일의 5216 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5217     \{}
+\DoxyCodeLine{5218         \mbox{\hyperlink{classcl_1_1_image_af9fda827ebfbbe8b92a5cefc5225cd69}{Image::operator=}}(rhs);}
+\DoxyCodeLine{5219         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{5220     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_image_g_l_a171b30e347bf5130fc0aa00d69f2b1d5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_image_g_l_ad1f85fdf551d1503c41a1ee88eada0ae}\label{classcl_1_1_image_g_l_ad1f85fdf551d1503c41a1ee88eada0ae}} 
+\index{cl::ImageGL@{cl::ImageGL}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}}\& cl\+::\+Image\+G\+L\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}} \&}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy assignment to forward copy to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 5230 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5231     \{}
+\DoxyCodeLine{5232         \mbox{\hyperlink{classcl_1_1_image_af9fda827ebfbbe8b92a5cefc5225cd69}{Image::operator=}}(img);}
+\DoxyCodeLine{5233         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{5234     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_image_g_l_ad1f85fdf551d1503c41a1ee88eada0ae_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1_image_g_l_a071bab7f0d9fd09641b139243097a157}\label{classcl_1_1_image_g_l_a071bab7f0d9fd09641b139243097a157}} 
+\index{cl::ImageGL@{cl::ImageGL}!operator=@{operator=}}
+\index{operator=@{operator=}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}}\& cl\+::\+Image\+G\+L\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcl_1_1_image_g_l}{Image\+GL}} \&\&}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move assignment to forward move to the superclass correctly. Required for M\+S\+VC. 
+
+
+
+cl2.\+hpp 파일의 5244 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5245     \{}
+\DoxyCodeLine{5246         \mbox{\hyperlink{classcl_1_1_image_af9fda827ebfbbe8b92a5cefc5225cd69}{Image::operator=}}(std::move(img));}
+\DoxyCodeLine{5247         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{5248     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_image_g_l_a071bab7f0d9fd09641b139243097a157_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}\label{classcl_1_1detail_1_1_wrapper_a207374e201c6c33c01bdc7ee09e92d76}} 
+\index{cl::ImageGL@{cl::ImageGL}!release@{release}}
+\index{release@{release}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1719 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1720     \{}
+\DoxyCodeLine{1721         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{1722             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::release(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}});}
+\DoxyCodeLine{1723         \}}
+\DoxyCodeLine{1724         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1725             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1726         \}}
+\DoxyCodeLine{1727     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}\label{classcl_1_1detail_1_1_wrapper_adfdff8a6c98ca62fedc6a9ffced47a06}} 
+\index{cl::ImageGL@{cl::ImageGL}!retain@{retain}}
+\index{retain@{retain}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{retain()}{retain()}}
+{\footnotesize\ttfamily cl\+\_\+int \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::retain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1709 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1710     \{}
+\DoxyCodeLine{1711         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{1712             \textcolor{keywordflow}{return} ReferenceHandler<cl\_type>::retain(\mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}});}
+\DoxyCodeLine{1713         \}}
+\DoxyCodeLine{1714         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1715             \textcolor{keywordflow}{return} CL\_SUCCESS;}
+\DoxyCodeLine{1716         \}}
+\DoxyCodeLine{1717     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcl_1_1_memory_a15e14fda4062d21ad354126a599a6111}\label{classcl_1_1_memory_a15e14fda4062d21ad354126a599a6111}} 
+\index{cl::ImageGL@{cl::ImageGL}!setDestructorCallback@{setDestructorCallback}}
+\index{setDestructorCallback@{setDestructorCallback}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{setDestructorCallback()}{setDestructorCallback()}}
+{\footnotesize\ttfamily cl\+\_\+int cl\+::\+Memory\+::set\+Destructor\+Callback (\begin{DoxyParamCaption}\item[{void(\mbox{\hyperlink{cl2_8hpp_a193b43da2ce23c54788f9b4d4f0f4740}{C\+L\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} $\ast$pfn\+\_\+notify)(cl\+\_\+mem, void $\ast$)}]{,  }\item[{void $\ast$}]{user\+\_\+data = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Registers a callback function to be called when the memory object is no longer needed. 
+
+Wraps cl\+Set\+Mem\+Object\+Destructor\+Callback().
+
+Repeated calls to this function, for a given cl\+\_\+mem value, will append to the list of functions called (in reverse order) when memory object\textquotesingle{}s resources are freed and the memory object is deleted.
+
+\begin{DoxyNote}{주의}
+The registered callbacks are associated with the underlying cl\+\_\+mem value -\/ not the \mbox{\hyperlink{classcl_1_1_memory}{Memory}} class instance. 
+\end{DoxyNote}
+
+
+cl2.\+hpp 파일의 3258 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3261     \{}
+\DoxyCodeLine{3262         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacecl_1_1detail_a55595b6b20a48d4e36ddd4553ab092a4}{detail::errHandler}}(}
+\DoxyCodeLine{3263             ::clSetMemObjectDestructorCallback(}
+\DoxyCodeLine{3264                 \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}{object\_}},}
+\DoxyCodeLine{3265                 pfn\_notify,}
+\DoxyCodeLine{3266                 user\_data), }
+\DoxyCodeLine{3267             \_\_SET\_MEM\_OBJECT\_DESTRUCTOR\_CALLBACK\_ERR);}
+\DoxyCodeLine{3268     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcl_1_1_memory_a15e14fda4062d21ad354126a599a6111_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}\label{classcl_1_1detail_1_1_wrapper_a1292547dd0c591aa972e25b793481583}} 
+\index{cl::ImageGL@{cl::ImageGL}!object\_@{object\_}}
+\index{object\_@{object\_}!cl::ImageGL@{cl::ImageGL}}
+\doxysubsubsection{\texorpdfstring{object\_}{object\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper_a83841267bac5ad4411ec8935f78315d8}{cl\+\_\+type}} \mbox{\hyperlink{classcl_1_1detail_1_1_wrapper}{cl\+::detail\+::\+Wrapper}}$<$ cl\+\_\+mem  $>$\+::object\+\_\+\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+cl2.\+hpp 파일의 1640 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/gpu/\mbox{\hyperlink{cl2_8hpp}{cl2.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,253 @@
+\hypertarget{classop_1_1_renderer}{}\doxysection{op\+::Renderer 클래스 참조}
+\label{classop_1_1_renderer}\index{op::Renderer@{op::Renderer}}
+
+
+{\ttfamily \#include $<$renderer.\+hpp$>$}
+
+
+
+op\+::Renderer에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classop_1_1_renderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+op\+::Renderer에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classop_1_1_renderer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_renderer_a00caf604fad781dfcf3bc311ef6a6623}{Renderer}} (const float render\+Threshold, const float alpha\+Keypoint, const float alpha\+Heat\+Map, const bool blend\+Original\+Frame=true, const unsigned int element\+To\+Render=0u, const unsigned int number\+Elements\+To\+Render=0u)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_renderer_abd45555a9864e799309b72902b6cec30}{$\sim$\+Renderer}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_a298a5a58bab80b7252db7d3386a0ed8a}{increase\+Element\+To\+Render}} (const int increment)
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_afd48a9cb0be184303dce2969fa2f8e02}{set\+Element\+To\+Render}} (const int element\+To\+Render)
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_a9d46c28d88225af94468c757ab1b26c1}{set\+Element\+To\+Render}} (const \mbox{\hyperlink{namespaceop_a37a23e10d9cbc428c793c3df1d62993e}{Element\+To\+Render}} element\+To\+Render)
+\item 
+bool \mbox{\hyperlink{classop_1_1_renderer_ad2ac64e018f2b925d0c8d45883928b68}{get\+Blend\+Original\+Frame}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_aa8339054ed113d99ca70208d0cee5aa9}{set\+Blend\+Original\+Frame}} (const bool blend\+Original\+Frame)
+\item 
+float \mbox{\hyperlink{classop_1_1_renderer_a3cf2d07dc9df42db4648398367c72dbb}{get\+Alpha\+Keypoint}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_a039e88897ed844551cadb115ea98e9ef}{set\+Alpha\+Keypoint}} (const float alpha\+Keypoint)
+\item 
+float \mbox{\hyperlink{classop_1_1_renderer_ab776e07b5b2f3a3b0aca0ce95d67796b}{get\+Alpha\+Heat\+Map}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_abaea1725725ff775aed0c120b2ba3d1f}{set\+Alpha\+Heat\+Map}} (const float alpha\+Heat\+Map)
+\item 
+bool \mbox{\hyperlink{classop_1_1_renderer_a44e13a965a9b0fca119ea897ad1348e0}{get\+Show\+Googly\+Eyes}} () const
+\item 
+void \mbox{\hyperlink{classop_1_1_renderer_ab226d47f554735fa3e0372ce429747c3}{set\+Show\+Googly\+Eyes}} (const bool show\+Googly\+Eyes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{classop_1_1_renderer_adc4cd0a62008325c5c7df6df2f95a167}{m\+Render\+Threshold}}
+\item 
+std\+::atomic$<$ bool $>$ \mbox{\hyperlink{classop_1_1_renderer_a88449a7c29a48e157cd6b16089825be7}{m\+Blend\+Original\+Frame}}
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ unsigned int $>$ $>$ \mbox{\hyperlink{classop_1_1_renderer_aca8ebf0c0a50b87f0be82afa090155a0}{sp\+Element\+To\+Render}}
+\item 
+std\+::shared\+\_\+ptr$<$ const unsigned int $>$ \mbox{\hyperlink{classop_1_1_renderer_a3e04644546dd9990a16d0b6861b60553}{sp\+Number\+Elements\+To\+Render}}
+\item 
+std\+::atomic$<$ bool $>$ \mbox{\hyperlink{classop_1_1_renderer_ace2490fa3c5a87443e4d1e64007cd1ff}{m\+Show\+Googly\+Eyes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_renderer_a74bc7a1b54a244225957b88eb96b4a0b}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_renderer}{Renderer}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classop_1_1_renderer_a0cb00c953b0f1ddf7592a1cadab624ab}{m\+Alpha\+Keypoint}}
+\item 
+float \mbox{\hyperlink{classop_1_1_renderer_a591d47bb86df7bb1278838f38033f0b2}{m\+Alpha\+Heat\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+renderer.\+hpp 파일의 10 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_renderer_a00caf604fad781dfcf3bc311ef6a6623}\label{classop_1_1_renderer_a00caf604fad781dfcf3bc311ef6a6623}} 
+\index{op::Renderer@{op::Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{Renderer()}{Renderer()}}
+{\footnotesize\ttfamily op\+::\+Renderer\+::\+Renderer (\begin{DoxyParamCaption}\item[{const float}]{render\+Threshold,  }\item[{const float}]{alpha\+Keypoint,  }\item[{const float}]{alpha\+Heat\+Map,  }\item[{const bool}]{blend\+Original\+Frame = {\ttfamily true},  }\item[{const unsigned int}]{element\+To\+Render = {\ttfamily 0u},  }\item[{const unsigned int}]{number\+Elements\+To\+Render = {\ttfamily 0u} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classop_1_1_renderer_abd45555a9864e799309b72902b6cec30}\label{classop_1_1_renderer_abd45555a9864e799309b72902b6cec30}} 
+\index{op::Renderer@{op::Renderer}!````~Renderer@{$\sim$Renderer}}
+\index{````~Renderer@{$\sim$Renderer}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Renderer()}{~Renderer()}}
+{\footnotesize\ttfamily virtual op\+::\+Renderer\+::$\sim$\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_renderer_a74bc7a1b54a244225957b88eb96b4a0b}\label{classop_1_1_renderer_a74bc7a1b54a244225957b88eb96b4a0b}} 
+\index{op::Renderer@{op::Renderer}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily op\+::\+Renderer\+::\+D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_renderer}{Renderer}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_renderer_ab776e07b5b2f3a3b0aca0ce95d67796b}\label{classop_1_1_renderer_ab776e07b5b2f3a3b0aca0ce95d67796b}} 
+\index{op::Renderer@{op::Renderer}!getAlphaHeatMap@{getAlphaHeatMap}}
+\index{getAlphaHeatMap@{getAlphaHeatMap}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{getAlphaHeatMap()}{getAlphaHeatMap()}}
+{\footnotesize\ttfamily float op\+::\+Renderer\+::get\+Alpha\+Heat\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_renderer_a3cf2d07dc9df42db4648398367c72dbb}\label{classop_1_1_renderer_a3cf2d07dc9df42db4648398367c72dbb}} 
+\index{op::Renderer@{op::Renderer}!getAlphaKeypoint@{getAlphaKeypoint}}
+\index{getAlphaKeypoint@{getAlphaKeypoint}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{getAlphaKeypoint()}{getAlphaKeypoint()}}
+{\footnotesize\ttfamily float op\+::\+Renderer\+::get\+Alpha\+Keypoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_renderer_ad2ac64e018f2b925d0c8d45883928b68}\label{classop_1_1_renderer_ad2ac64e018f2b925d0c8d45883928b68}} 
+\index{op::Renderer@{op::Renderer}!getBlendOriginalFrame@{getBlendOriginalFrame}}
+\index{getBlendOriginalFrame@{getBlendOriginalFrame}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{getBlendOriginalFrame()}{getBlendOriginalFrame()}}
+{\footnotesize\ttfamily bool op\+::\+Renderer\+::get\+Blend\+Original\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_renderer_a44e13a965a9b0fca119ea897ad1348e0}\label{classop_1_1_renderer_a44e13a965a9b0fca119ea897ad1348e0}} 
+\index{op::Renderer@{op::Renderer}!getShowGooglyEyes@{getShowGooglyEyes}}
+\index{getShowGooglyEyes@{getShowGooglyEyes}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{getShowGooglyEyes()}{getShowGooglyEyes()}}
+{\footnotesize\ttfamily bool op\+::\+Renderer\+::get\+Show\+Googly\+Eyes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classop_1_1_renderer_a298a5a58bab80b7252db7d3386a0ed8a}\label{classop_1_1_renderer_a298a5a58bab80b7252db7d3386a0ed8a}} 
+\index{op::Renderer@{op::Renderer}!increaseElementToRender@{increaseElementToRender}}
+\index{increaseElementToRender@{increaseElementToRender}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{increaseElementToRender()}{increaseElementToRender()}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::increase\+Element\+To\+Render (\begin{DoxyParamCaption}\item[{const int}]{increment }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_renderer_abaea1725725ff775aed0c120b2ba3d1f}\label{classop_1_1_renderer_abaea1725725ff775aed0c120b2ba3d1f}} 
+\index{op::Renderer@{op::Renderer}!setAlphaHeatMap@{setAlphaHeatMap}}
+\index{setAlphaHeatMap@{setAlphaHeatMap}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{setAlphaHeatMap()}{setAlphaHeatMap()}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::set\+Alpha\+Heat\+Map (\begin{DoxyParamCaption}\item[{const float}]{alpha\+Heat\+Map }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_renderer_a039e88897ed844551cadb115ea98e9ef}\label{classop_1_1_renderer_a039e88897ed844551cadb115ea98e9ef}} 
+\index{op::Renderer@{op::Renderer}!setAlphaKeypoint@{setAlphaKeypoint}}
+\index{setAlphaKeypoint@{setAlphaKeypoint}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{setAlphaKeypoint()}{setAlphaKeypoint()}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::set\+Alpha\+Keypoint (\begin{DoxyParamCaption}\item[{const float}]{alpha\+Keypoint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_renderer_aa8339054ed113d99ca70208d0cee5aa9}\label{classop_1_1_renderer_aa8339054ed113d99ca70208d0cee5aa9}} 
+\index{op::Renderer@{op::Renderer}!setBlendOriginalFrame@{setBlendOriginalFrame}}
+\index{setBlendOriginalFrame@{setBlendOriginalFrame}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{setBlendOriginalFrame()}{setBlendOriginalFrame()}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::set\+Blend\+Original\+Frame (\begin{DoxyParamCaption}\item[{const bool}]{blend\+Original\+Frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_renderer_a9d46c28d88225af94468c757ab1b26c1}\label{classop_1_1_renderer_a9d46c28d88225af94468c757ab1b26c1}} 
+\index{op::Renderer@{op::Renderer}!setElementToRender@{setElementToRender}}
+\index{setElementToRender@{setElementToRender}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{setElementToRender()}{setElementToRender()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::set\+Element\+To\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceop_a37a23e10d9cbc428c793c3df1d62993e}{Element\+To\+Render}}}]{element\+To\+Render }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_renderer_afd48a9cb0be184303dce2969fa2f8e02}\label{classop_1_1_renderer_afd48a9cb0be184303dce2969fa2f8e02}} 
+\index{op::Renderer@{op::Renderer}!setElementToRender@{setElementToRender}}
+\index{setElementToRender@{setElementToRender}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{setElementToRender()}{setElementToRender()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::set\+Element\+To\+Render (\begin{DoxyParamCaption}\item[{const int}]{element\+To\+Render }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classop_1_1_renderer_ab226d47f554735fa3e0372ce429747c3}\label{classop_1_1_renderer_ab226d47f554735fa3e0372ce429747c3}} 
+\index{op::Renderer@{op::Renderer}!setShowGooglyEyes@{setShowGooglyEyes}}
+\index{setShowGooglyEyes@{setShowGooglyEyes}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{setShowGooglyEyes()}{setShowGooglyEyes()}}
+{\footnotesize\ttfamily void op\+::\+Renderer\+::set\+Show\+Googly\+Eyes (\begin{DoxyParamCaption}\item[{const bool}]{show\+Googly\+Eyes }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_renderer_a591d47bb86df7bb1278838f38033f0b2}\label{classop_1_1_renderer_a591d47bb86df7bb1278838f38033f0b2}} 
+\index{op::Renderer@{op::Renderer}!mAlphaHeatMap@{mAlphaHeatMap}}
+\index{mAlphaHeatMap@{mAlphaHeatMap}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{mAlphaHeatMap}{mAlphaHeatMap}}
+{\footnotesize\ttfamily float op\+::\+Renderer\+::m\+Alpha\+Heat\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+renderer.\+hpp 파일의 50 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_renderer_a0cb00c953b0f1ddf7592a1cadab624ab}\label{classop_1_1_renderer_a0cb00c953b0f1ddf7592a1cadab624ab}} 
+\index{op::Renderer@{op::Renderer}!mAlphaKeypoint@{mAlphaKeypoint}}
+\index{mAlphaKeypoint@{mAlphaKeypoint}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{mAlphaKeypoint}{mAlphaKeypoint}}
+{\footnotesize\ttfamily float op\+::\+Renderer\+::m\+Alpha\+Keypoint\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+renderer.\+hpp 파일의 49 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_renderer_a88449a7c29a48e157cd6b16089825be7}\label{classop_1_1_renderer_a88449a7c29a48e157cd6b16089825be7}} 
+\index{op::Renderer@{op::Renderer}!mBlendOriginalFrame@{mBlendOriginalFrame}}
+\index{mBlendOriginalFrame@{mBlendOriginalFrame}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{mBlendOriginalFrame}{mBlendOriginalFrame}}
+{\footnotesize\ttfamily std\+::atomic$<$bool$>$ op\+::\+Renderer\+::m\+Blend\+Original\+Frame\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+renderer.\+hpp 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_renderer_adc4cd0a62008325c5c7df6df2f95a167}\label{classop_1_1_renderer_adc4cd0a62008325c5c7df6df2f95a167}} 
+\index{op::Renderer@{op::Renderer}!mRenderThreshold@{mRenderThreshold}}
+\index{mRenderThreshold@{mRenderThreshold}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{mRenderThreshold}{mRenderThreshold}}
+{\footnotesize\ttfamily const float op\+::\+Renderer\+::m\+Render\+Threshold\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+renderer.\+hpp 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_renderer_ace2490fa3c5a87443e4d1e64007cd1ff}\label{classop_1_1_renderer_ace2490fa3c5a87443e4d1e64007cd1ff}} 
+\index{op::Renderer@{op::Renderer}!mShowGooglyEyes@{mShowGooglyEyes}}
+\index{mShowGooglyEyes@{mShowGooglyEyes}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{mShowGooglyEyes}{mShowGooglyEyes}}
+{\footnotesize\ttfamily std\+::atomic$<$bool$>$ op\+::\+Renderer\+::m\+Show\+Googly\+Eyes\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+renderer.\+hpp 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_renderer_aca8ebf0c0a50b87f0be82afa090155a0}\label{classop_1_1_renderer_aca8ebf0c0a50b87f0be82afa090155a0}} 
+\index{op::Renderer@{op::Renderer}!spElementToRender@{spElementToRender}}
+\index{spElementToRender@{spElementToRender}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{spElementToRender}{spElementToRender}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::atomic$<$unsigned int$>$ $>$ op\+::\+Renderer\+::sp\+Element\+To\+Render\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+renderer.\+hpp 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_renderer_a3e04644546dd9990a16d0b6861b60553}\label{classop_1_1_renderer_a3e04644546dd9990a16d0b6861b60553}} 
+\index{op::Renderer@{op::Renderer}!spNumberElementsToRender@{spNumberElementsToRender}}
+\index{spNumberElementsToRender@{spNumberElementsToRender}!op::Renderer@{op::Renderer}}
+\doxysubsubsection{\texorpdfstring{spNumberElementsToRender}{spNumberElementsToRender}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$const unsigned int$>$ op\+::\+Renderer\+::sp\+Number\+Elements\+To\+Render\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+renderer.\+hpp 파일의 45 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/core/\mbox{\hyperlink{renderer_8hpp}{renderer.\+hpp}}\end{DoxyCompactItemize}

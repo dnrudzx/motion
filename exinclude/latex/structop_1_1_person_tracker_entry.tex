@@ -1,0 +1,102 @@
+\hypertarget{structop_1_1_person_tracker_entry}{}\doxysection{op\+::Person\+Tracker\+Entry 구조체 참조}
+\label{structop_1_1_person_tracker_entry}\index{op::PersonTrackerEntry@{op::PersonTrackerEntry}}
+
+
+{\ttfamily \#include $<$person\+Tracker.\+hpp$>$}
+
+
+
+op\+::Person\+Tracker\+Entry에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{structop_1_1_person_tracker_entry__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ cv\+::\+Point2f $>$ \mbox{\hyperlink{structop_1_1_person_tracker_entry_afcbefe6fae9c5795a923fedfbb7cd759}{get\+Predicted}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ cv\+::\+Point2f $>$ \mbox{\hyperlink{structop_1_1_person_tracker_entry_a086269259c4901aa14ba53b9b4541dd6}{keypoints}}
+\item 
+std\+::vector$<$ cv\+::\+Point2f $>$ \mbox{\hyperlink{structop_1_1_person_tracker_entry_a8cf40cb33498051588b5589d18c76fc9}{last\+Keypoints}}
+\item 
+std\+::vector$<$ char $>$ \mbox{\hyperlink{structop_1_1_person_tracker_entry_a15338c47eea3d2f6d7b69b9c7d391c02}{status}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+person\+Tracker.\+hpp 파일의 10 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{structop_1_1_person_tracker_entry_afcbefe6fae9c5795a923fedfbb7cd759}\label{structop_1_1_person_tracker_entry_afcbefe6fae9c5795a923fedfbb7cd759}} 
+\index{op::PersonTrackerEntry@{op::PersonTrackerEntry}!getPredicted@{getPredicted}}
+\index{getPredicted@{getPredicted}!op::PersonTrackerEntry@{op::PersonTrackerEntry}}
+\doxysubsubsection{\texorpdfstring{getPredicted()}{getPredicted()}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Point2f$>$ op\+::\+Person\+Tracker\+Entry\+::get\+Predicted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+person\+Tracker.\+hpp 파일의 15 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16         \{}
+\DoxyCodeLine{17             std::vector<cv::Point2f> predictedKeypoints(\mbox{\hyperlink{structop_1_1_person_tracker_entry_a086269259c4901aa14ba53b9b4541dd6}{keypoints}});}
+\DoxyCodeLine{18             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{structop_1_1_person_tracker_entry_a8cf40cb33498051588b5589d18c76fc9}{lastKeypoints}}.size())}
+\DoxyCodeLine{19                 \textcolor{keywordflow}{return} predictedKeypoints;}
+\DoxyCodeLine{20             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i=0; i<\mbox{\hyperlink{structop_1_1_person_tracker_entry_a086269259c4901aa14ba53b9b4541dd6}{keypoints}}.size(); i++)}
+\DoxyCodeLine{21             \{}
+\DoxyCodeLine{22                 predictedKeypoints[i] = cv::Point2f\{predictedKeypoints[i].x + (\mbox{\hyperlink{structop_1_1_person_tracker_entry_a086269259c4901aa14ba53b9b4541dd6}{keypoints}}[i].x-\/\mbox{\hyperlink{structop_1_1_person_tracker_entry_a8cf40cb33498051588b5589d18c76fc9}{lastKeypoints}}[i].x),}
+\DoxyCodeLine{23                                                     predictedKeypoints[i].y + (\mbox{\hyperlink{structop_1_1_person_tracker_entry_a086269259c4901aa14ba53b9b4541dd6}{keypoints}}[i].y-\/\mbox{\hyperlink{structop_1_1_person_tracker_entry_a8cf40cb33498051588b5589d18c76fc9}{lastKeypoints}}[i].y)\};}
+\DoxyCodeLine{24             \}}
+\DoxyCodeLine{25             \textcolor{keywordflow}{return} predictedKeypoints;}
+\DoxyCodeLine{26         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{structop_1_1_person_tracker_entry_a086269259c4901aa14ba53b9b4541dd6}\label{structop_1_1_person_tracker_entry_a086269259c4901aa14ba53b9b4541dd6}} 
+\index{op::PersonTrackerEntry@{op::PersonTrackerEntry}!keypoints@{keypoints}}
+\index{keypoints@{keypoints}!op::PersonTrackerEntry@{op::PersonTrackerEntry}}
+\doxysubsubsection{\texorpdfstring{keypoints}{keypoints}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Point2f$>$ op\+::\+Person\+Tracker\+Entry\+::keypoints}
+
+
+
+person\+Tracker.\+hpp 파일의 12 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_person_tracker_entry_a8cf40cb33498051588b5589d18c76fc9}\label{structop_1_1_person_tracker_entry_a8cf40cb33498051588b5589d18c76fc9}} 
+\index{op::PersonTrackerEntry@{op::PersonTrackerEntry}!lastKeypoints@{lastKeypoints}}
+\index{lastKeypoints@{lastKeypoints}!op::PersonTrackerEntry@{op::PersonTrackerEntry}}
+\doxysubsubsection{\texorpdfstring{lastKeypoints}{lastKeypoints}}
+{\footnotesize\ttfamily std\+::vector$<$cv\+::\+Point2f$>$ op\+::\+Person\+Tracker\+Entry\+::last\+Keypoints}
+
+
+
+person\+Tracker.\+hpp 파일의 13 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{structop_1_1_person_tracker_entry_a15338c47eea3d2f6d7b69b9c7d391c02}\label{structop_1_1_person_tracker_entry_a15338c47eea3d2f6d7b69b9c7d391c02}} 
+\index{op::PersonTrackerEntry@{op::PersonTrackerEntry}!status@{status}}
+\index{status@{status}!op::PersonTrackerEntry@{op::PersonTrackerEntry}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily std\+::vector$<$char$>$ op\+::\+Person\+Tracker\+Entry\+::status}
+
+
+
+person\+Tracker.\+hpp 파일의 14 번째 라인에서 정의되었습니다.
+
+
+
+이 구조체에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/tracking/\mbox{\hyperlink{person_tracker_8hpp}{person\+Tracker.\+hpp}}\end{DoxyCompactItemize}

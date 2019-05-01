@@ -1,0 +1,902 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: cl::Event 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classcl_1_1_event.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 타입</a> &#124;
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pub-static-methods">정적 Public 멤버 함수</a> &#124;
+<a href="#pro-methods">Protected 멤버 함수</a> &#124;
+<a href="#pro-attribs">Protected 속성</a> &#124;
+<a href="classcl_1_1_event-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">cl::Event 클래스 참조</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Class interface for cl_event.  
+ <a href="classcl_1_1_event.html#details">더 자세히 ...</a></p>
+
+<p><code>#include &lt;<a class="el" href="cl2_8hpp_source.html">cl2.hpp</a>&gt;</code></p>
+<div class="dynheader">
+cl::Event에 대한 상속 다이어그램 : </div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_event__inherit__graph.png" border="0" usemap="#cl_1_1_event_inherit__map" alt="Inheritance graph"/></div>
+<map name="cl_1_1_event_inherit__map" id="cl_1_1_event_inherit__map">
+<area shape="rect" title="Class interface for cl_event." alt="" coords="5,336,135,545"/>
+<area shape="rect" href="$classcl_1_1_user_event.html" title="Class interface for user events (a subset of cl_event&#39;s)." alt="" coords="18,593,122,700"/>
+<area shape="rect" href="$classcl_1_1detail_1_1_wrapper.html" title=" " alt="" coords="6,5,134,288"/>
+</map>
+</div>
+<div class="dynheader">
+cl::Event에 대한 협력 다이어그램:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_event__coll__graph.png" border="0" usemap="#cl_1_1_event_coll__map" alt="Collaboration graph"/></div>
+<map name="cl_1_1_event_coll__map" id="cl_1_1_event_coll__map">
+<area shape="rect" title="Class interface for cl_event." alt="" coords="5,336,135,545"/>
+<area shape="rect" href="$classcl_1_1detail_1_1_wrapper.html" title=" " alt="" coords="6,5,134,288"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 타입</h2></td></tr>
+<tr class="memitem:a83841267bac5ad4411ec8935f78315d8"><td class="memItemLeft" align="right" valign="top">typedef cl_event&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#a83841267bac5ad4411ec8935f78315d8">cl_type</a></td></tr>
+<tr class="separator:a83841267bac5ad4411ec8935f78315d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a90e01689f7b394fc003d66c48a7f6f95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_event.html#a90e01689f7b394fc003d66c48a7f6f95">Event</a> ()</td></tr>
+<tr class="memdesc:a90e01689f7b394fc003d66c48a7f6f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor - initializes to NULL.  <a href="#a90e01689f7b394fc003d66c48a7f6f95">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a90e01689f7b394fc003d66c48a7f6f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b035b8ff20d92d0b42f2f0dc8657621"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_event.html#a3b035b8ff20d92d0b42f2f0dc8657621">Event</a> (const cl_event &amp;event, bool retainObject=false)</td></tr>
+<tr class="memdesc:a3b035b8ff20d92d0b42f2f0dc8657621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor from cl_event - takes ownership.  <a href="#a3b035b8ff20d92d0b42f2f0dc8657621">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a3b035b8ff20d92d0b42f2f0dc8657621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b9f7abf39de587ee78d0b47699d5f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcl_1_1_event.html">Event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_event.html#aa3b9f7abf39de587ee78d0b47699d5f6">operator=</a> (const cl_event &amp;rhs)</td></tr>
+<tr class="memdesc:aa3b9f7abf39de587ee78d0b47699d5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator from cl_event - takes ownership.  <a href="#aa3b9f7abf39de587ee78d0b47699d5f6">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:aa3b9f7abf39de587ee78d0b47699d5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad1d3040fcb24188f1ac2cd73591252"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4ad1d3040fcb24188f1ac2cd73591252"><td class="memTemplItemLeft" align="right" valign="top">cl_int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcl_1_1_event.html#a4ad1d3040fcb24188f1ac2cd73591252">getInfo</a> (cl_event_info name, T *param) const</td></tr>
+<tr class="memdesc:a4ad1d3040fcb24188f1ac2cd73591252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for clGetEventInfo().  <a href="#a4ad1d3040fcb24188f1ac2cd73591252">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a4ad1d3040fcb24188f1ac2cd73591252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a362e550fbfa5f18e679357f1cdba8"><td class="memTemplParams" colspan="2">template&lt;cl_int name&gt; </td></tr>
+<tr class="memitem:ad3a362e550fbfa5f18e679357f1cdba8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structcl_1_1detail_1_1param__traits.html">detail::param_traits</a>&lt; detail::cl_event_info, name &gt;::param_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcl_1_1_event.html#ad3a362e550fbfa5f18e679357f1cdba8">getInfo</a> (cl_int *err=NULL) const</td></tr>
+<tr class="memdesc:ad3a362e550fbfa5f18e679357f1cdba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for clGetEventInfo() that returns by value.  <a href="#ad3a362e550fbfa5f18e679357f1cdba8">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ad3a362e550fbfa5f18e679357f1cdba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f5ef317602809c4a99d6f244f758b5f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3f5ef317602809c4a99d6f244f758b5f"><td class="memTemplItemLeft" align="right" valign="top">cl_int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcl_1_1_event.html#a3f5ef317602809c4a99d6f244f758b5f">getProfilingInfo</a> (cl_profiling_info name, T *param) const</td></tr>
+<tr class="memdesc:a3f5ef317602809c4a99d6f244f758b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for clGetEventProfilingInfo().  <a href="#a3f5ef317602809c4a99d6f244f758b5f">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a3f5ef317602809c4a99d6f244f758b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76c11fecb0af5a0972903ee0f644193"><td class="memTemplParams" colspan="2">template&lt;cl_int name&gt; </td></tr>
+<tr class="memitem:ab76c11fecb0af5a0972903ee0f644193"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structcl_1_1detail_1_1param__traits.html">detail::param_traits</a>&lt; detail::cl_profiling_info, name &gt;::param_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcl_1_1_event.html#ab76c11fecb0af5a0972903ee0f644193">getProfilingInfo</a> (cl_int *err=NULL) const</td></tr>
+<tr class="memdesc:ab76c11fecb0af5a0972903ee0f644193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for clGetEventProfilingInfo() that returns by value.  <a href="#ab76c11fecb0af5a0972903ee0f644193">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ab76c11fecb0af5a0972903ee0f644193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f83064c2024df649667071e81fb847"><td class="memItemLeft" align="right" valign="top">cl_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_event.html#a51f83064c2024df649667071e81fb847">wait</a> () const</td></tr>
+<tr class="memdesc:a51f83064c2024df649667071e81fb847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks the calling thread until this event completes.  <a href="#a51f83064c2024df649667071e81fb847">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a51f83064c2024df649667071e81fb847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4730c3b113e65efcf88aea0c9da13f52"><td class="memItemLeft" align="right" valign="top">cl_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_event.html#a4730c3b113e65efcf88aea0c9da13f52">setCallback</a> (cl_int type, void(<a class="el" href="cl2_8hpp.html#a193b43da2ce23c54788f9b4d4f0f4740">CL_CALLBACK</a> *pfn_notify)(cl_event, cl_int, void *), void *user_data=NULL)</td></tr>
+<tr class="memdesc:a4730c3b113e65efcf88aea0c9da13f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a user callback function for a specific command execution status.  <a href="#a4730c3b113e65efcf88aea0c9da13f52">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a4730c3b113e65efcf88aea0c9da13f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89adf70432169d0b0a82bc6696a9aad1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classcl_1_1detail_1_1_wrapper.html#a83841267bac5ad4411ec8935f78315d8">cl_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#a89adf70432169d0b0a82bc6696a9aad1">operator()</a> () const</td></tr>
+<tr class="separator:a89adf70432169d0b0a82bc6696a9aad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa32c6d3304d4ee9fb63491a72b0d58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#a83841267bac5ad4411ec8935f78315d8">cl_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#a5aa32c6d3304d4ee9fb63491a72b0d58">operator()</a> ()</td></tr>
+<tr class="separator:a5aa32c6d3304d4ee9fb63491a72b0d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b785e6bbf238183338a22800a6fe1d1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classcl_1_1detail_1_1_wrapper.html#a83841267bac5ad4411ec8935f78315d8">cl_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#a1b785e6bbf238183338a22800a6fe1d1">get</a> () const</td></tr>
+<tr class="separator:a1b785e6bbf238183338a22800a6fe1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9571071a0b51bb2fada511a1ebc964"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#a83841267bac5ad4411ec8935f78315d8">cl_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#a4e9571071a0b51bb2fada511a1ebc964">get</a> ()</td></tr>
+<tr class="separator:a4e9571071a0b51bb2fada511a1ebc964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+정적 Public 멤버 함수</h2></td></tr>
+<tr class="memitem:ae84b90e930f72c1019435dd7cefa2fbd"><td class="memItemLeft" align="right" valign="top">static cl_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1_event.html#ae84b90e930f72c1019435dd7cefa2fbd">waitForEvents</a> (const <a class="el" href="namespacecl.html#a01a0973ddf4c1799772079a09d7156cb">vector</a>&lt; <a class="el" href="classcl_1_1_event.html">Event</a> &gt; &amp;events)</td></tr>
+<tr class="memdesc:ae84b90e930f72c1019435dd7cefa2fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks the calling thread until every event specified is complete.  <a href="#ae84b90e930f72c1019435dd7cefa2fbd">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ae84b90e930f72c1019435dd7cefa2fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 멤버 함수</h2></td></tr>
+<tr class="memitem:adfdff8a6c98ca62fedc6a9ffced47a06"><td class="memItemLeft" align="right" valign="top">cl_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#adfdff8a6c98ca62fedc6a9ffced47a06">retain</a> () const</td></tr>
+<tr class="separator:adfdff8a6c98ca62fedc6a9ffced47a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207374e201c6c33c01bdc7ee09e92d76"><td class="memItemLeft" align="right" valign="top">cl_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#a207374e201c6c33c01bdc7ee09e92d76">release</a> () const</td></tr>
+<tr class="separator:a207374e201c6c33c01bdc7ee09e92d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 속성</h2></td></tr>
+<tr class="memitem:a1292547dd0c591aa972e25b793481583"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#a83841267bac5ad4411ec8935f78315d8">cl_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">object_</a></td></tr>
+<tr class="separator:a1292547dd0c591aa972e25b793481583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock"><p>Class interface for cl_event. </p>
+<dl class="section note"><dt>주의</dt><dd>Copies of these objects are shallow, meaning that the copy will refer to the same underlying cl_event as the original. For details, see clRetainEvent() and clReleaseEvent().</dd></dl>
+<dl class="section see"><dt>참고</dt><dd>cl_event </dd></dl>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l02978">2978</a> 번째 라인에서 정의되었습니다.</p>
+</div><h2 class="groupheader">멤버 타입정의 문서화</h2>
+<a id="a83841267bac5ad4411ec8935f78315d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83841267bac5ad4411ec8935f78315d8">&#9670;&nbsp;</a></span>cl_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef cl_event  <a class="el" href="classcl_1_1detail_1_1_wrapper.html">cl::detail::Wrapper</a>&lt; cl_event  &gt;::<a class="el" href="classcl_1_1detail_1_1_wrapper.html#a83841267bac5ad4411ec8935f78315d8">cl_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l01637">1637</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<h2 class="groupheader">생성자 &amp; 소멸자 문서화</h2>
+<a id="a90e01689f7b394fc003d66c48a7f6f95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e01689f7b394fc003d66c48a7f6f95">&#9670;&nbsp;</a></span>Event() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cl::Event::Event </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor - initializes to NULL. </p>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l02982">2982</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l02982"></a><span class="lineno"> 2982</span>&#160;: detail::Wrapper&lt;cl_type&gt;() { }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a3b035b8ff20d92d0b42f2f0dc8657621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b035b8ff20d92d0b42f2f0dc8657621">&#9670;&nbsp;</a></span>Event() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cl::Event::Event </td>
+          <td>(</td>
+          <td class="paramtype">const cl_event &amp;&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>retainObject</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor from cl_event - takes ownership. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">retainObject</td><td>will cause the constructor to retain its cl object. Defaults to false to maintain compatibility with earlier versions. This effectively transfers ownership of a refcount on the cl_event into the new <a class="el" href="classcl_1_1_event.html" title="Class interface for cl_event.">Event</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l02992">2992</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l02992"></a><span class="lineno"> 2992</span>&#160;                                                                     : </div><div class="line"><a name="l02993"></a><span class="lineno"> 2993</span>&#160;        detail::Wrapper&lt;cl_type&gt;(event, retainObject) { }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">멤버 함수 문서화</h2>
+<a id="a4e9571071a0b51bb2fada511a1ebc964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9571071a0b51bb2fada511a1ebc964">&#9670;&nbsp;</a></span>get() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#a83841267bac5ad4411ec8935f78315d8">cl_type</a> <a class="el" href="classcl_1_1detail_1_1_wrapper.html">cl::detail::Wrapper</a>&lt; cl_event  &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l01702">1702</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">object_</a>; }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a1b785e6bbf238183338a22800a6fe1d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b785e6bbf238183338a22800a6fe1d1">&#9670;&nbsp;</a></span>get() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classcl_1_1detail_1_1_wrapper.html#a83841267bac5ad4411ec8935f78315d8">cl_type</a> <a class="el" href="classcl_1_1detail_1_1_wrapper.html">cl::detail::Wrapper</a>&lt; cl_event  &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l01700">1700</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">object_</a>; }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a4ad1d3040fcb24188f1ac2cd73591252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad1d3040fcb24188f1ac2cd73591252">&#9670;&nbsp;</a></span>getInfo() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cl_int cl::Event::getInfo </td>
+          <td>(</td>
+          <td class="paramtype">cl_event_info&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wrapper for clGetEventInfo(). </p>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03008">3008</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03009"></a><span class="lineno"> 3009</span>&#160;    {</div><div class="line"><a name="l03010"></a><span class="lineno"> 3010</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4">detail::errHandler</a>(</div><div class="line"><a name="l03011"></a><span class="lineno"> 3011</span>&#160;            <a class="code" href="namespacecl_1_1detail.html#a5954b0e110a023571c1bed2be1efb480">detail::getInfo</a>(&amp;::clGetEventInfo, <a class="code" href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">object_</a>, name, param),</div><div class="line"><a name="l03012"></a><span class="lineno"> 3012</span>&#160;            __GET_EVENT_INFO_ERR);</div><div class="line"><a name="l03013"></a><span class="lineno"> 3013</span>&#160;    }</div></div><!-- fragment --><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252_cgraph.png" border="0" usemap="#classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252_cgraph" alt=""/></div>
+<map name="classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252_cgraph" id="classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252_cgraph">
+<area shape="rect" title="Wrapper for clGetEventInfo()." alt="" coords="5,31,128,57"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="176,5,315,32"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a5954b0e110a023571c1bed2be1efb480" title=" " alt="" coords="186,56,305,83"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a5fa0595cfd70a34a662283c683f58bb1" title=" " alt="" coords="363,56,520,83"/>
+</map>
+</div>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252_icgraph.png" border="0" usemap="#classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252_icgraph" alt=""/></div>
+<map name="classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252_icgraph" id="classcl_1_1_event_a4ad1d3040fcb24188f1ac2cd73591252_icgraph">
+<area shape="rect" title="Wrapper for clGetEventInfo()." alt="" coords="176,5,299,32"/>
+<area shape="rect" href="classcl_1_1_event.html#ad3a362e550fbfa5f18e679357f1cdba8" title="Wrapper for clGetEventInfo() that returns by value." alt="" coords="5,5,128,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad3a362e550fbfa5f18e679357f1cdba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a362e550fbfa5f18e679357f1cdba8">&#9670;&nbsp;</a></span>getInfo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;cl_int name&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcl_1_1detail_1_1param__traits.html">detail::param_traits</a>&lt;detail::cl_event_info, name&gt;::param_type cl::Event::getInfo </td>
+          <td>(</td>
+          <td class="paramtype">cl_int *&#160;</td>
+          <td class="paramname"><em>err</em> = <code>NULL</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wrapper for clGetEventInfo() that returns by value. </p>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03018">3018</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03019"></a><span class="lineno"> 3019</span>&#160;    {</div><div class="line"><a name="l03020"></a><span class="lineno"> 3020</span>&#160;        <span class="keyword">typename</span> detail::param_traits&lt;</div><div class="line"><a name="l03021"></a><span class="lineno"> 3021</span>&#160;            detail::cl_event_info, name&gt;::param_type param;</div><div class="line"><a name="l03022"></a><span class="lineno"> 3022</span>&#160;        cl_int result = <a class="code" href="classcl_1_1_event.html#a4ad1d3040fcb24188f1ac2cd73591252">getInfo</a>(name, &amp;param);</div><div class="line"><a name="l03023"></a><span class="lineno"> 3023</span>&#160;        <span class="keywordflow">if</span> (err != NULL) {</div><div class="line"><a name="l03024"></a><span class="lineno"> 3024</span>&#160;            *err = result;</div><div class="line"><a name="l03025"></a><span class="lineno"> 3025</span>&#160;        }</div><div class="line"><a name="l03026"></a><span class="lineno"> 3026</span>&#160;        <span class="keywordflow">return</span> param;</div><div class="line"><a name="l03027"></a><span class="lineno"> 3027</span>&#160;    }</div></div><!-- fragment --><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_event_ad3a362e550fbfa5f18e679357f1cdba8_cgraph.png" border="0" usemap="#classcl_1_1_event_ad3a362e550fbfa5f18e679357f1cdba8_cgraph" alt=""/></div>
+<map name="classcl_1_1_event_ad3a362e550fbfa5f18e679357f1cdba8_cgraph" id="classcl_1_1_event_ad3a362e550fbfa5f18e679357f1cdba8_cgraph">
+<area shape="rect" title="Wrapper for clGetEventInfo() that returns by value." alt="" coords="5,31,128,57"/>
+<area shape="rect" href="classcl_1_1_event.html#a4ad1d3040fcb24188f1ac2cd73591252" title="Wrapper for clGetEventInfo()." alt="" coords="176,31,299,57"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="347,5,485,32"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a5954b0e110a023571c1bed2be1efb480" title=" " alt="" coords="357,56,475,83"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a5fa0595cfd70a34a662283c683f58bb1" title=" " alt="" coords="533,56,691,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab76c11fecb0af5a0972903ee0f644193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab76c11fecb0af5a0972903ee0f644193">&#9670;&nbsp;</a></span>getProfilingInfo() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;cl_int name&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcl_1_1detail_1_1param__traits.html">detail::param_traits</a>&lt;detail::cl_profiling_info, name&gt;::param_type cl::Event::getProfilingInfo </td>
+          <td>(</td>
+          <td class="paramtype">cl_int *&#160;</td>
+          <td class="paramname"><em>err</em> = <code>NULL</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wrapper for clGetEventProfilingInfo() that returns by value. </p>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03041">3041</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03042"></a><span class="lineno"> 3042</span>&#160;    {</div><div class="line"><a name="l03043"></a><span class="lineno"> 3043</span>&#160;        <span class="keyword">typename</span> detail::param_traits&lt;</div><div class="line"><a name="l03044"></a><span class="lineno"> 3044</span>&#160;            detail::cl_profiling_info, name&gt;::param_type param;</div><div class="line"><a name="l03045"></a><span class="lineno"> 3045</span>&#160;        cl_int result = <a class="code" href="classcl_1_1_event.html#a3f5ef317602809c4a99d6f244f758b5f">getProfilingInfo</a>(name, &amp;param);</div><div class="line"><a name="l03046"></a><span class="lineno"> 3046</span>&#160;        <span class="keywordflow">if</span> (err != NULL) {</div><div class="line"><a name="l03047"></a><span class="lineno"> 3047</span>&#160;            *err = result;</div><div class="line"><a name="l03048"></a><span class="lineno"> 3048</span>&#160;        }</div><div class="line"><a name="l03049"></a><span class="lineno"> 3049</span>&#160;        <span class="keywordflow">return</span> param;</div><div class="line"><a name="l03050"></a><span class="lineno"> 3050</span>&#160;    }</div></div><!-- fragment --><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_event_ab76c11fecb0af5a0972903ee0f644193_cgraph.png" border="0" usemap="#classcl_1_1_event_ab76c11fecb0af5a0972903ee0f644193_cgraph" alt=""/></div>
+<map name="classcl_1_1_event_ab76c11fecb0af5a0972903ee0f644193_cgraph" id="classcl_1_1_event_ab76c11fecb0af5a0972903ee0f644193_cgraph">
+<area shape="rect" title="Wrapper for clGetEventProfilingInfo() that returns by value." alt="" coords="5,31,175,57"/>
+<area shape="rect" href="classcl_1_1_event.html#a3f5ef317602809c4a99d6f244f758b5f" title="Wrapper for clGetEventProfilingInfo()." alt="" coords="223,31,392,57"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="440,5,579,32"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a5954b0e110a023571c1bed2be1efb480" title=" " alt="" coords="450,56,569,83"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a5fa0595cfd70a34a662283c683f58bb1" title=" " alt="" coords="627,56,784,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3f5ef317602809c4a99d6f244f758b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f5ef317602809c4a99d6f244f758b5f">&#9670;&nbsp;</a></span>getProfilingInfo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cl_int cl::Event::getProfilingInfo </td>
+          <td>(</td>
+          <td class="paramtype">cl_profiling_info&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wrapper for clGetEventProfilingInfo(). </p>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03031">3031</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03032"></a><span class="lineno"> 3032</span>&#160;    {</div><div class="line"><a name="l03033"></a><span class="lineno"> 3033</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4">detail::errHandler</a>(<a class="code" href="namespacecl_1_1detail.html#a5954b0e110a023571c1bed2be1efb480">detail::getInfo</a>(</div><div class="line"><a name="l03034"></a><span class="lineno"> 3034</span>&#160;            &amp;::clGetEventProfilingInfo, <a class="code" href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">object_</a>, name, param),</div><div class="line"><a name="l03035"></a><span class="lineno"> 3035</span>&#160;            __GET_EVENT_PROFILE_INFO_ERR);</div><div class="line"><a name="l03036"></a><span class="lineno"> 3036</span>&#160;    }</div></div><!-- fragment --><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f_cgraph.png" border="0" usemap="#classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f_cgraph" alt=""/></div>
+<map name="classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f_cgraph" id="classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f_cgraph">
+<area shape="rect" title="Wrapper for clGetEventProfilingInfo()." alt="" coords="5,31,175,57"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="223,5,361,32"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a5954b0e110a023571c1bed2be1efb480" title=" " alt="" coords="233,56,351,83"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a5fa0595cfd70a34a662283c683f58bb1" title=" " alt="" coords="409,56,567,83"/>
+</map>
+</div>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f_icgraph.png" border="0" usemap="#classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f_icgraph" alt=""/></div>
+<map name="classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f_icgraph" id="classcl_1_1_event_a3f5ef317602809c4a99d6f244f758b5f_icgraph">
+<area shape="rect" title="Wrapper for clGetEventProfilingInfo()." alt="" coords="223,5,392,32"/>
+<area shape="rect" href="classcl_1_1_event.html#ab76c11fecb0af5a0972903ee0f644193" title="Wrapper for clGetEventProfilingInfo() that returns by value." alt="" coords="5,5,175,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5aa32c6d3304d4ee9fb63491a72b0d58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aa32c6d3304d4ee9fb63491a72b0d58">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#a83841267bac5ad4411ec8935f78315d8">cl_type</a>&amp; <a class="el" href="classcl_1_1detail_1_1_wrapper.html">cl::detail::Wrapper</a>&lt; cl_event  &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l01698">1698</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">object_</a>; }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a89adf70432169d0b0a82bc6696a9aad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89adf70432169d0b0a82bc6696a9aad1">&#9670;&nbsp;</a></span>operator()() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classcl_1_1detail_1_1_wrapper.html#a83841267bac5ad4411ec8935f78315d8">cl_type</a>&amp; <a class="el" href="classcl_1_1detail_1_1_wrapper.html">cl::detail::Wrapper</a>&lt; cl_event  &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l01696">1696</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">object_</a>; }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="aa3b9f7abf39de587ee78d0b47699d5f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b9f7abf39de587ee78d0b47699d5f6">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1_event.html">Event</a>&amp; cl::Event::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const cl_event &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assignment operator from cl_event - takes ownership. </p>
+<p>This effectively transfers ownership of a refcount on the rhs and calls clReleaseEvent() on the value previously held by this instance. </p>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03000">3000</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03001"></a><span class="lineno"> 3001</span>&#160;    {</div><div class="line"><a name="l03002"></a><span class="lineno"> 3002</span>&#160;        <a class="code" href="classcl_1_1detail_1_1_wrapper.html#a044bc05bb3eb90345cb9cf574b95a98f">detail::Wrapper&lt;cl_type&gt;::operator=</a>(rhs);</div><div class="line"><a name="l03003"></a><span class="lineno"> 3003</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l03004"></a><span class="lineno"> 3004</span>&#160;    }</div></div><!-- fragment --><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_event_aa3b9f7abf39de587ee78d0b47699d5f6_cgraph.png" border="0" usemap="#classcl_1_1_event_aa3b9f7abf39de587ee78d0b47699d5f6_cgraph" alt=""/></div>
+<map name="classcl_1_1_event_aa3b9f7abf39de587ee78d0b47699d5f6_cgraph" id="classcl_1_1_event_aa3b9f7abf39de587ee78d0b47699d5f6_cgraph">
+<area shape="rect" title="Assignment operator from cl_event &#45; takes ownership." alt="" coords="5,13,143,39"/>
+<area shape="rect" href="$classcl_1_1detail_1_1_wrapper.html#a044bc05bb3eb90345cb9cf574b95a98f" title=" " alt="" coords="191,5,319,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a207374e201c6c33c01bdc7ee09e92d76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a207374e201c6c33c01bdc7ee09e92d76">&#9670;&nbsp;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cl_int <a class="el" href="classcl_1_1detail_1_1_wrapper.html">cl::detail::Wrapper</a>&lt; cl_event  &gt;::release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l01719">1719</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;    {</div><div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">object_</a> != <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;            <span class="keywordflow">return</span> ReferenceHandler&lt;cl_type&gt;::release(<a class="code" href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">object_</a>);</div><div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;        }</div><div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;        <span class="keywordflow">else</span> {</div><div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160;            <span class="keywordflow">return</span> CL_SUCCESS;</div><div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;        }</div><div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="adfdff8a6c98ca62fedc6a9ffced47a06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfdff8a6c98ca62fedc6a9ffced47a06">&#9670;&nbsp;</a></span>retain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cl_int <a class="el" href="classcl_1_1detail_1_1_wrapper.html">cl::detail::Wrapper</a>&lt; cl_event  &gt;::retain </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l01709">1709</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;    {</div><div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">object_</a> != <span class="keyword">nullptr</span>) {</div><div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;            <span class="keywordflow">return</span> ReferenceHandler&lt;cl_type&gt;::retain(<a class="code" href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">object_</a>);</div><div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;        }</div><div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;        <span class="keywordflow">else</span> {</div><div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;            <span class="keywordflow">return</span> CL_SUCCESS;</div><div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;        }</div><div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a4730c3b113e65efcf88aea0c9da13f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4730c3b113e65efcf88aea0c9da13f52">&#9670;&nbsp;</a></span>setCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cl_int cl::Event::setCallback </td>
+          <td>(</td>
+          <td class="paramtype">cl_int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(<a class="el" href="cl2_8hpp.html#a193b43da2ce23c54788f9b4d4f0f4740">CL_CALLBACK</a> *pfn_notify)(cl_event, cl_int, void *)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a user callback function for a specific command execution status. </p>
+<p>Wraps clSetEventCallback(). </p>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03068">3068</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03072"></a><span class="lineno"> 3072</span>&#160;    {</div><div class="line"><a name="l03073"></a><span class="lineno"> 3073</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4">detail::errHandler</a>(</div><div class="line"><a name="l03074"></a><span class="lineno"> 3074</span>&#160;            ::clSetEventCallback(</div><div class="line"><a name="l03075"></a><span class="lineno"> 3075</span>&#160;                <a class="code" href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">object_</a>,</div><div class="line"><a name="l03076"></a><span class="lineno"> 3076</span>&#160;                type,</div><div class="line"><a name="l03077"></a><span class="lineno"> 3077</span>&#160;                pfn_notify,</div><div class="line"><a name="l03078"></a><span class="lineno"> 3078</span>&#160;                user_data), </div><div class="line"><a name="l03079"></a><span class="lineno"> 3079</span>&#160;            __SET_EVENT_CALLBACK_ERR);</div><div class="line"><a name="l03080"></a><span class="lineno"> 3080</span>&#160;    }</div></div><!-- fragment --><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_event_a4730c3b113e65efcf88aea0c9da13f52_cgraph.png" border="0" usemap="#classcl_1_1_event_a4730c3b113e65efcf88aea0c9da13f52_cgraph" alt=""/></div>
+<map name="classcl_1_1_event_a4730c3b113e65efcf88aea0c9da13f52_cgraph" id="classcl_1_1_event_a4730c3b113e65efcf88aea0c9da13f52_cgraph">
+<area shape="rect" title="Registers a user callback function for a specific command execution status." alt="" coords="5,5,156,32"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="204,5,343,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a51f83064c2024df649667071e81fb847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51f83064c2024df649667071e81fb847">&#9670;&nbsp;</a></span>wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cl_int cl::Event::wait </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Blocks the calling thread until this event completes. </p>
+<p>Wraps clWaitForEvents(). </p>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03056">3056</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03057"></a><span class="lineno"> 3057</span>&#160;    {</div><div class="line"><a name="l03058"></a><span class="lineno"> 3058</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4">detail::errHandler</a>(</div><div class="line"><a name="l03059"></a><span class="lineno"> 3059</span>&#160;            ::clWaitForEvents(1, &amp;<a class="code" href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">object_</a>),</div><div class="line"><a name="l03060"></a><span class="lineno"> 3060</span>&#160;            __WAIT_FOR_EVENTS_ERR);</div><div class="line"><a name="l03061"></a><span class="lineno"> 3061</span>&#160;    }</div></div><!-- fragment --><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_event_a51f83064c2024df649667071e81fb847_cgraph.png" border="0" usemap="#classcl_1_1_event_a51f83064c2024df649667071e81fb847_cgraph" alt=""/></div>
+<map name="classcl_1_1_event_a51f83064c2024df649667071e81fb847_cgraph" id="classcl_1_1_event_a51f83064c2024df649667071e81fb847_cgraph">
+<area shape="rect" title="Blocks the calling thread until this event completes." alt="" coords="5,5,112,32"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="160,5,299,32"/>
+</map>
+</div>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_event_a51f83064c2024df649667071e81fb847_icgraph.png" border="0" usemap="#classcl_1_1_event_a51f83064c2024df649667071e81fb847_icgraph" alt=""/></div>
+<map name="classcl_1_1_event_a51f83064c2024df649667071e81fb847_icgraph" id="classcl_1_1_event_a51f83064c2024df649667071e81fb847_icgraph">
+<area shape="rect" title="Blocks the calling thread until this event completes." alt="" coords="121,5,228,32"/>
+<area shape="rect" href="namespacecl.html#a2f71ed9a316daf59c03c0f3ba62f1bd3" title=" " alt="" coords="5,5,73,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae84b90e930f72c1019435dd7cefa2fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae84b90e930f72c1019435dd7cefa2fbd">&#9670;&nbsp;</a></span>waitForEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static cl_int cl::Event::waitForEvents </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacecl.html#a01a0973ddf4c1799772079a09d7156cb">vector</a>&lt; <a class="el" href="classcl_1_1_event.html">Event</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>events</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Blocks the calling thread until every event specified is complete. </p>
+<p>Wraps clWaitForEvents(). </p>
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l03088">3088</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l03089"></a><span class="lineno"> 3089</span>&#160;    {</div><div class="line"><a name="l03090"></a><span class="lineno"> 3090</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4">detail::errHandler</a>(</div><div class="line"><a name="l03091"></a><span class="lineno"> 3091</span>&#160;            ::clWaitForEvents(</div><div class="line"><a name="l03092"></a><span class="lineno"> 3092</span>&#160;                (cl_uint) events.size(), (events.size() &gt; 0) ? (cl_event*)&amp;events.front() : NULL),</div><div class="line"><a name="l03093"></a><span class="lineno"> 3093</span>&#160;            __WAIT_FOR_EVENTS_ERR);</div><div class="line"><a name="l03094"></a><span class="lineno"> 3094</span>&#160;    }</div></div><!-- fragment --><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classcl_1_1_event_ae84b90e930f72c1019435dd7cefa2fbd_cgraph.png" border="0" usemap="#classcl_1_1_event_ae84b90e930f72c1019435dd7cefa2fbd_cgraph" alt=""/></div>
+<map name="classcl_1_1_event_ae84b90e930f72c1019435dd7cefa2fbd_cgraph" id="classcl_1_1_event_ae84b90e930f72c1019435dd7cefa2fbd_cgraph">
+<area shape="rect" title="Blocks the calling thread until every event specified is complete." alt="" coords="5,5,172,32"/>
+<area shape="rect" href="namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4" title=" " alt="" coords="220,5,359,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">멤버 데이터 문서화</h2>
+<a id="a1292547dd0c591aa972e25b793481583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1292547dd0c591aa972e25b793481583">&#9670;&nbsp;</a></span>object_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcl_1_1detail_1_1_wrapper.html#a83841267bac5ad4411ec8935f78315d8">cl_type</a> <a class="el" href="classcl_1_1detail_1_1_wrapper.html">cl::detail::Wrapper</a>&lt; cl_event  &gt;::object_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="cl2_8hpp_source.html">cl2.hpp</a> 파일의 <a class="el" href="cl2_8hpp_source.html#l01640">1640</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.:<ul>
+<li>/home/ms/openpose/include/openpose/gpu/<a class="el" href="cl2_8hpp_source.html">cl2.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="anamespacecl_1_1detail_html_a55595b6b20a48d4e36ddd4553ab092a4"><div class="ttname"><a href="namespacecl_1_1detail.html#a55595b6b20a48d4e36ddd4553ab092a4">cl::detail::errHandler</a></div><div class="ttdeci">static cl_int errHandler(cl_int err, const char *errStr=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l00767">cl2.hpp:767</a></div></div>
+<div class="ttc" id="aclasscl_1_1detail_1_1_wrapper_html_a044bc05bb3eb90345cb9cf574b95a98f"><div class="ttname"><a href="classcl_1_1detail_1_1_wrapper.html#a044bc05bb3eb90345cb9cf574b95a98f">cl::detail::Wrapper::operator=</a></div><div class="ttdeci">Wrapper&lt; cl_type &gt; &amp; operator=(const Wrapper&lt; cl_type &gt; &amp;rhs)</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l01669">cl2.hpp:1669</a></div></div>
+<div class="ttc" id="aclasscl_1_1_event_html_a3f5ef317602809c4a99d6f244f758b5f"><div class="ttname"><a href="classcl_1_1_event.html#a3f5ef317602809c4a99d6f244f758b5f">cl::Event::getProfilingInfo</a></div><div class="ttdeci">cl_int getProfilingInfo(cl_profiling_info name, T *param) const</div><div class="ttdoc">Wrapper for clGetEventProfilingInfo().</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l03031">cl2.hpp:3031</a></div></div>
+<div class="ttc" id="anamespacecl_1_1detail_html_a5954b0e110a023571c1bed2be1efb480"><div class="ttname"><a href="namespacecl_1_1detail.html#a5954b0e110a023571c1bed2be1efb480">cl::detail::getInfo</a></div><div class="ttdeci">cl_int getInfo(Func f, cl_uint name, T *param)</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l01416">cl2.hpp:1416</a></div></div>
+<div class="ttc" id="aclasscl_1_1detail_1_1_wrapper_html_a1292547dd0c591aa972e25b793481583"><div class="ttname"><a href="classcl_1_1detail_1_1_wrapper.html#a1292547dd0c591aa972e25b793481583">cl::detail::Wrapper&lt; cl_event &gt;::object_</a></div><div class="ttdeci">cl_type object_</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l01640">cl2.hpp:1640</a></div></div>
+<div class="ttc" id="aclasscl_1_1_event_html_a4ad1d3040fcb24188f1ac2cd73591252"><div class="ttname"><a href="classcl_1_1_event.html#a4ad1d3040fcb24188f1ac2cd73591252">cl::Event::getInfo</a></div><div class="ttdeci">cl_int getInfo(cl_event_info name, T *param) const</div><div class="ttdoc">Wrapper for clGetEventInfo().</div><div class="ttdef"><b>Definition:</b> <a href="cl2_8hpp_source.html#l03008">cl2.hpp:3008</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecl.html">cl</a></li><li class="navelem"><a class="el" href="classcl_1_1_event.html">Event</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+\hypertarget{keypoint_8hpp}{}\doxysection{/home/ms/openpose/include/openpose/utilities/keypoint.hpp 파일 참조}
+\label{keypoint_8hpp}\index{/home/ms/openpose/include/openpose/utilities/keypoint.hpp@{/home/ms/openpose/include/openpose/utilities/keypoint.hpp}}
+{\ttfamily \#include $<$openpose/core/common.\+hpp$>$}\newline
+keypoint.\+hpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keypoint_8hpp__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{keypoint_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{네임스페이스}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceop}{op}}
+\end{DoxyCompactItemize}
+\doxysubsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespaceop_ac968b1c98c60b74be78225be27805706}{op\+::get\+Distance}} (const Array$<$ T $>$ \&keypoints, const int person, const int elementA, const int elementB)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_a1f931e210eb575a084b8e6f462b0b382}{op\+::average\+Keypoints}} (Array$<$ T $>$ \&keypointsA, const Array$<$ T $>$ \&keypointsB, const int personA)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_ac5fc565b24e499e306ca170b9139eeb6}{op\+::scale\+Keypoints}} (Array$<$ T $>$ \&keypoints, const T scale)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_aae9e38fa6c56e188b4f649732f0d4cd3}{op\+::scale\+Keypoints2d}} (Array$<$ T $>$ \&keypoints, const T scaleX, const T scaleY)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_a6b9adf8f7e698e566414c9f44f0c85f1}{op\+::scale\+Keypoints2d}} (Array$<$ T $>$ \&keypoints, const T scaleX, const T scaleY, const T offsetX, const T offsetY)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespaceop_aa7803aa62abc21471e7d966bd674a81a}{op\+::render\+Keypoints\+Cpu}} (Array$<$ T $>$ \&frame\+Array, const Array$<$ T $>$ \&keypoints, const std\+::vector$<$ unsigned int $>$ \&pairs, const std\+::vector$<$ T $>$ colors, const T thickness\+Circle\+Ratio, const T thickness\+Line\+Ratio\+W\+R\+T\+Circle, const std\+::vector$<$ T $>$ \&pose\+Scales, const T threshold)
+\item 
+{\footnotesize template$<$typename T $>$ }\\Rectangle$<$ T $>$ \mbox{\hyperlink{namespaceop_a5b2ae3f48eab928e35c9e3da51899054}{op\+::get\+Keypoints\+Rectangle}} (const Array$<$ T $>$ \&keypoints, const int person, const T threshold)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespaceop_a1110f4c0017c43ea1d0896a3225c55f8}{op\+::get\+Average\+Score}} (const Array$<$ T $>$ \&keypoints, const int person)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespaceop_a1dd5dde18458975a36bdbd6dd38720a2}{op\+::get\+Keypoints\+Area}} (const Array$<$ T $>$ \&keypoints, const int person, const T threshold)
+\item 
+{\footnotesize template$<$typename T $>$ }\\int \mbox{\hyperlink{namespaceop_ace4af20d19066df9ec502c5a09097c24}{op\+::get\+Biggest\+Person}} (const Array$<$ T $>$ \&keypoints, const T threshold)
+\item 
+{\footnotesize template$<$typename T $>$ }\\int \mbox{\hyperlink{namespaceop_aa9366cf1b4ac3494965749eeb5537da1}{op\+::get\+Non\+Zero\+Keypoints}} (const Array$<$ T $>$ \&keypoints, const int person, const T threshold)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespaceop_acf638f00b0a825c05683f8e23942a9d5}{op\+::get\+Distance\+Average}} (const Array$<$ T $>$ \&keypoints, const int personA, const int personB, const T threshold)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespaceop_aa053f4b0533d9e981aa171a1ef57fc30}{op\+::get\+Distance\+Average}} (const Array$<$ T $>$ \&keypointsA, const int personA, const Array$<$ T $>$ \&keypointsB, const int personB, const T threshold)
+\item 
+{\footnotesize template$<$typename T $>$ }\\Array$<$ T $>$ \mbox{\hyperlink{namespaceop_a75411d98f69051860379730e16103178}{op\+::get\+Keypoints\+Person}} (const Array$<$ T $>$ \&keypoints, const int person, const bool no\+Copy=false)
+\item 
+{\footnotesize template$<$typename T $>$ }\\float \mbox{\hyperlink{namespaceop_a6913c67141fcbbba84fc88ac8a45aa0f}{op\+::get\+Keypoints\+Roi}} (const Array$<$ T $>$ \&keypoints, const int personA, const int personB, const T threshold)
+\item 
+{\footnotesize template$<$typename T $>$ }\\float \mbox{\hyperlink{namespaceop_ac9af122ccd8dcdafb11e37b6633245b4}{op\+::get\+Keypoints\+Roi}} (const Array$<$ T $>$ \&keypointsA, const int personA, const Array$<$ T $>$ \&keypointsB, const int personB, const T threshold)
+\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="cl::NDRange::dimensions" name="cl::NDRange::dimensions">
+<area shape="rect" id="node1" title="Queries the number of dimensions in the range." alt="" coords="425,13,597,39"/>
+<area shape="rect" id="node2" href="$classcl_1_1_command_queue.html#a0e6d2ed1031239edaf9134a15ad1a816" title=" " alt="" coords="183,5,377,47"/>
+<area shape="rect" id="node3" href="$classcl_1_1_kernel_functor.html#a03d94b7e13205bc28d0d8ee391e02a0a" title=" " alt="" coords="5,5,135,47"/>
+</map>

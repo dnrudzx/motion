@@ -1,0 +1,532 @@
+\hypertarget{classop_1_1_thread}{}\doxysection{op\+::Thread$<$ T\+Datums, T\+Worker $>$ 클래스 템플릿 참조}
+\label{classop_1_1_thread}\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+
+
+{\ttfamily \#include $<$thread.\+hpp$>$}
+
+
+
+op\+::Thread$<$ T\+Datums, T\+Worker $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classop_1_1_thread__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classop_1_1_thread_a9d3408a329a475da22a8e2a0bdf5f68d}{Thread}} (const std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ bool $>$$>$ \&is\+Running\+Shared\+Ptr=nullptr)
+\item 
+\mbox{\hyperlink{classop_1_1_thread_a6ae463dc996ca6941a303b0c41288063}{Thread}} (\mbox{\hyperlink{classop_1_1_thread}{Thread}} \&\&t)
+\item 
+\mbox{\hyperlink{classop_1_1_thread}{Thread}} \& \mbox{\hyperlink{classop_1_1_thread_a16d1835e2bd7c5ae988f4bc225b3ca09}{operator=}} (\mbox{\hyperlink{classop_1_1_thread}{Thread}} \&\&t)
+\item 
+virtual \mbox{\hyperlink{classop_1_1_thread_a151e4e647917f2351cc05a8861588e2a}{$\sim$\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_thread_a0617df4103c25bb04ee2c75f05ea2978}{add}} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_sub_thread}{Sub\+Thread}}$<$ T\+Datums, T\+Worker $>$$>$$>$ \&sub\+Threads)
+\item 
+void \mbox{\hyperlink{classop_1_1_thread_a820b9416b96c69cb1fc6773b9a53a47a}{add}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_sub_thread}{Sub\+Thread}}$<$ T\+Datums, T\+Worker $>$$>$ \&sub\+Thread)
+\item 
+void \mbox{\hyperlink{classop_1_1_thread_ad6c3721793d0f65ffe755ab74534afed}{exec}} (const std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ bool $>$$>$ \&is\+Running\+Shared\+Ptr)
+\item 
+void \mbox{\hyperlink{classop_1_1_thread_ac898abffd6ed18456b97ef1b72935ec6}{start\+In\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_thread_a92e5dd0f60a0485e7d0fad3e82bb74f3}{stop\+And\+Join}} ()
+\item 
+bool \mbox{\hyperlink{classop_1_1_thread_a3ed032f4c42ef1797873122aa96a055d}{is\+Running}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classop_1_1_thread_aa93d67605d43adaaee67e04fcc2f2b4f}{initialization\+On\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_thread_a383e40e4f9a5b0402d3328018e550e5b}{thread\+Function}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_thread_a2ab1d2788d62331abd569029afaea36b}{stop}} ()
+\item 
+void \mbox{\hyperlink{classop_1_1_thread_a29cd38373fc35266e43e3464b561c909}{join}} ()
+\item 
+\mbox{\hyperlink{classop_1_1_thread_ab49220fadcee263a539c0f5333c04e74}{D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY}} (\mbox{\hyperlink{classop_1_1_thread}{Thread}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ bool $>$ $>$ \mbox{\hyperlink{classop_1_1_thread_a6f1ececc5f819e056992d0e504422334}{sp\+Is\+Running}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_sub_thread}{Sub\+Thread}}$<$ T\+Datums, T\+Worker $>$ $>$ $>$ \mbox{\hyperlink{classop_1_1_thread_a992b6699049e51cd4b044a3c2b747a2b}{m\+Sub\+Threads}}
+\item 
+std\+::thread \mbox{\hyperlink{classop_1_1_thread_a3bc64f58b4d4aa3c74ea446d2edd7c7c}{m\+Thread}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\subsubsection*{template$<$typename T\+Datums, typename T\+Worker = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums$>$$>$$>$\newline
+class op\+::\+Thread$<$ T\+Datums, T\+Worker $>$}
+
+
+
+thread.\+hpp 파일의 12 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{classop_1_1_thread_a9d3408a329a475da22a8e2a0bdf5f68d}\label{classop_1_1_thread_a9d3408a329a475da22a8e2a0bdf5f68d}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!Thread@{Thread}}
+\index{Thread@{Thread}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{Thread()}{Thread()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker $>$ \\
+\mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::\mbox{\hyperlink{classop_1_1_thread}{Thread}} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ bool $>$$>$ \&}]{is\+Running\+Shared\+Ptr = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+thread.\+hpp 파일의 66 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                                                                                              :}
+\DoxyCodeLine{67         \mbox{\hyperlink{classop_1_1_thread_a6f1ececc5f819e056992d0e504422334}{spIsRunning}}\{(isRunningSharedPtr != \textcolor{keyword}{nullptr} ? isRunningSharedPtr : std::make\_shared<std::atomic<bool>>(\textcolor{keyword}{false}))\}}
+\DoxyCodeLine{68     \{}
+\DoxyCodeLine{69     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_thread_a6ae463dc996ca6941a303b0c41288063}\label{classop_1_1_thread_a6ae463dc996ca6941a303b0c41288063}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!Thread@{Thread}}
+\index{Thread@{Thread}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{Thread()}{Thread()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker $>$ \\
+\mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::\mbox{\hyperlink{classop_1_1_thread}{Thread}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_thread}{Thread}}$<$ T\+Datums, T\+Worker $>$ \&\&}]{t }\end{DoxyParamCaption})}
+
+
+
+thread.\+hpp 파일의 72 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72                                                                  :}
+\DoxyCodeLine{73         \mbox{\hyperlink{classop_1_1_thread_a6f1ececc5f819e056992d0e504422334}{spIsRunning}}\{std::make\_shared<std::atomic<bool>>(t.spIsRunning-\/>load())\}}
+\DoxyCodeLine{74     \{}
+\DoxyCodeLine{75         std::swap(\mbox{\hyperlink{classop_1_1_thread_a992b6699049e51cd4b044a3c2b747a2b}{mSubThreads}}, t.mSubThreads);}
+\DoxyCodeLine{76         std::swap(\mbox{\hyperlink{classop_1_1_thread_a3bc64f58b4d4aa3c74ea446d2edd7c7c}{mThread}}, t.mThread);}
+\DoxyCodeLine{77     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_thread_a151e4e647917f2351cc05a8861588e2a}\label{classop_1_1_thread_a151e4e647917f2351cc05a8861588e2a}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!````~Thread@{$\sim$Thread}}
+\index{````~Thread@{$\sim$Thread}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Thread()}{~Thread()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker $>$ \\
+\mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::$\sim$\mbox{\hyperlink{classop_1_1_thread}{Thread}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+thread.\+hpp 파일의 89 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{90     \{}
+\DoxyCodeLine{91         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{92         \{}
+\DoxyCodeLine{93             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{94             \mbox{\hyperlink{classop_1_1_thread_a92e5dd0f60a0485e7d0fad3e82bb74f3}{stopAndJoin}}();}
+\DoxyCodeLine{95             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{96         \}}
+\DoxyCodeLine{97         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{98         \{}
+\DoxyCodeLine{99             \mbox{\hyperlink{namespaceop_a825f15fdf9dc9cb7473c20f970f15b60}{errorDestructor}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{100         \}}
+\DoxyCodeLine{101     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classop_1_1_thread_a151e4e647917f2351cc05a8861588e2a_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{classop_1_1_thread_a820b9416b96c69cb1fc6773b9a53a47a}\label{classop_1_1_thread_a820b9416b96c69cb1fc6773b9a53a47a}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!add@{add}}
+\index{add@{add}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::add (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_sub_thread}{Sub\+Thread}}$<$ T\+Datums, T\+Worker $>$$>$ \&}]{sub\+Thread }\end{DoxyParamCaption})}
+
+
+
+thread.\+hpp 파일의 111 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112     \{}
+\DoxyCodeLine{113         \mbox{\hyperlink{classop_1_1_thread_a0617df4103c25bb04ee2c75f05ea2978}{add}}(\mbox{\hyperlink{namespacecl_a01a0973ddf4c1799772079a09d7156cb}{std::vector}}<std::shared\_ptr<SubThread<TDatums, TWorker>>>\{subThread\});}
+\DoxyCodeLine{114     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_thread_a0617df4103c25bb04ee2c75f05ea2978}\label{classop_1_1_thread_a0617df4103c25bb04ee2c75f05ea2978}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!add@{add}}
+\index{add@{add}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::add (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classop_1_1_sub_thread}{Sub\+Thread}}$<$ T\+Datums, T\+Worker $>$$>$$>$ \&}]{sub\+Threads }\end{DoxyParamCaption})}
+
+
+
+thread.\+hpp 파일의 104 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{105     \{}
+\DoxyCodeLine{106         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}\& subThread : subThreads)}
+\DoxyCodeLine{107             \mbox{\hyperlink{classop_1_1_thread_a992b6699049e51cd4b044a3c2b747a2b}{mSubThreads}}.emplace\_back(subThread);}
+\DoxyCodeLine{108     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_thread_ab49220fadcee263a539c0f5333c04e74}\label{classop_1_1_thread_ab49220fadcee263a539c0f5333c04e74}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!DELETE\_COPY@{DELETE\_COPY}}
+\index{DELETE\_COPY@{DELETE\_COPY}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{DELETE\_COPY()}{DELETE\_COPY()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums$>$$>$$>$ \\
+\mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::D\+E\+L\+E\+T\+E\+\_\+\+C\+O\+PY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_thread}{Thread}}$<$ T\+Datums, T\+Worker $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classop_1_1_thread_ad6c3721793d0f65ffe755ab74534afed}\label{classop_1_1_thread_ad6c3721793d0f65ffe755ab74534afed}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!exec@{exec}}
+\index{exec@{exec}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{exec()}{exec()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::exec (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ std\+::atomic$<$ bool $>$$>$ \&}]{is\+Running\+Shared\+Ptr }\end{DoxyParamCaption})}
+
+
+
+thread.\+hpp 파일의 117 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118     \{}
+\DoxyCodeLine{119         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{120         \{}
+\DoxyCodeLine{121             \mbox{\hyperlink{classop_1_1_thread_a92e5dd0f60a0485e7d0fad3e82bb74f3}{stopAndJoin}}();}
+\DoxyCodeLine{122             \mbox{\hyperlink{classop_1_1_thread_a6f1ececc5f819e056992d0e504422334}{spIsRunning}} = isRunningSharedPtr;}
+\DoxyCodeLine{123             *\mbox{\hyperlink{classop_1_1_thread_a6f1ececc5f819e056992d0e504422334}{spIsRunning}} = \{\textcolor{keyword}{true}\};}
+\DoxyCodeLine{124             \mbox{\hyperlink{classop_1_1_thread_a383e40e4f9a5b0402d3328018e550e5b}{threadFunction}}();}
+\DoxyCodeLine{125         \}}
+\DoxyCodeLine{126         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{127         \{}
+\DoxyCodeLine{128             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{129         \}}
+\DoxyCodeLine{130     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classop_1_1_thread_ad6c3721793d0f65ffe755ab74534afed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_thread_aa93d67605d43adaaee67e04fcc2f2b4f}\label{classop_1_1_thread_aa93d67605d43adaaee67e04fcc2f2b4f}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!initializationOnThread@{initializationOnThread}}
+\index{initializationOnThread@{initializationOnThread}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{initializationOnThread()}{initializationOnThread()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::initialization\+On\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+thread.\+hpp 파일의 163 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{164     \{}
+\DoxyCodeLine{165         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{166         \{}
+\DoxyCodeLine{167             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{168             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}\& subThread : \mbox{\hyperlink{classop_1_1_thread_a992b6699049e51cd4b044a3c2b747a2b}{mSubThreads}})}
+\DoxyCodeLine{169                 subThread-\/>initializationOnThread();}
+\DoxyCodeLine{170         \}}
+\DoxyCodeLine{171         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{172         \{}
+\DoxyCodeLine{173             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{174         \}}
+\DoxyCodeLine{175     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{classop_1_1_thread_aa93d67605d43adaaee67e04fcc2f2b4f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_thread_a3ed032f4c42ef1797873122aa96a055d}\label{classop_1_1_thread_a3ed032f4c42ef1797873122aa96a055d}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums$>$$>$$>$ \\
+bool \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+thread.\+hpp 파일의 36 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37         \{}
+\DoxyCodeLine{38             \textcolor{keywordflow}{return} *\mbox{\hyperlink{classop_1_1_thread_a6f1ececc5f819e056992d0e504422334}{spIsRunning}};}
+\DoxyCodeLine{39         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_thread_a29cd38373fc35266e43e3464b561c909}\label{classop_1_1_thread_a29cd38373fc35266e43e3464b561c909}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!join@{join}}
+\index{join@{join}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::join (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+thread.\+hpp 파일의 221 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{222     \{}
+\DoxyCodeLine{223         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{224         \{}
+\DoxyCodeLine{225             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classop_1_1_thread_a3bc64f58b4d4aa3c74ea446d2edd7c7c}{mThread}}.joinable())}
+\DoxyCodeLine{226                 \mbox{\hyperlink{classop_1_1_thread_a3bc64f58b4d4aa3c74ea446d2edd7c7c}{mThread}}.join();}
+\DoxyCodeLine{227         \}}
+\DoxyCodeLine{228         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{229         \{}
+\DoxyCodeLine{230             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{231         \}}
+\DoxyCodeLine{232     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classop_1_1_thread_a29cd38373fc35266e43e3464b561c909_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_thread_a16d1835e2bd7c5ae988f4bc225b3ca09}\label{classop_1_1_thread_a16d1835e2bd7c5ae988f4bc225b3ca09}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker $>$ \\
+\mbox{\hyperlink{classop_1_1_thread}{Thread}}$<$ T\+Datums, T\+Worker $>$ \& \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classop_1_1_thread}{Thread}}$<$ T\+Datums, T\+Worker $>$ \&\&}]{t }\end{DoxyParamCaption})}
+
+
+
+thread.\+hpp 파일의 80 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81     \{}
+\DoxyCodeLine{82         std::swap(\mbox{\hyperlink{classop_1_1_thread_a992b6699049e51cd4b044a3c2b747a2b}{mSubThreads}}, t.mSubThreads);}
+\DoxyCodeLine{83         std::swap(\mbox{\hyperlink{classop_1_1_thread_a3bc64f58b4d4aa3c74ea446d2edd7c7c}{mThread}}, t.mThread);}
+\DoxyCodeLine{84         \mbox{\hyperlink{classop_1_1_thread_a6f1ececc5f819e056992d0e504422334}{spIsRunning}} = \{std::make\_shared<std::atomic<bool>>(t.spIsRunning-\/>load())\};}
+\DoxyCodeLine{85         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{86     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classop_1_1_thread_ac898abffd6ed18456b97ef1b72935ec6}\label{classop_1_1_thread_ac898abffd6ed18456b97ef1b72935ec6}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!startInThread@{startInThread}}
+\index{startInThread@{startInThread}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{startInThread()}{startInThread()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::start\+In\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+thread.\+hpp 파일의 133 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{134     \{}
+\DoxyCodeLine{135         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{136         \{}
+\DoxyCodeLine{137             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{138             \mbox{\hyperlink{classop_1_1_thread_a92e5dd0f60a0485e7d0fad3e82bb74f3}{stopAndJoin}}();}
+\DoxyCodeLine{139             *\mbox{\hyperlink{classop_1_1_thread_a6f1ececc5f819e056992d0e504422334}{spIsRunning}} = \{\textcolor{keyword}{true}\};}
+\DoxyCodeLine{140             \mbox{\hyperlink{classop_1_1_thread_a3bc64f58b4d4aa3c74ea446d2edd7c7c}{mThread}} = \{std::thread\{\&\mbox{\hyperlink{classop_1_1_thread_a383e40e4f9a5b0402d3328018e550e5b}{Thread::threadFunction}}, \textcolor{keyword}{this}\}\};}
+\DoxyCodeLine{141         \}}
+\DoxyCodeLine{142         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{143         \{}
+\DoxyCodeLine{144             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{145         \}}
+\DoxyCodeLine{146     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classop_1_1_thread_ac898abffd6ed18456b97ef1b72935ec6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_thread_a2ab1d2788d62331abd569029afaea36b}\label{classop_1_1_thread_a2ab1d2788d62331abd569029afaea36b}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!stop@{stop}}
+\index{stop@{stop}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+thread.\+hpp 파일의 208 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{209     \{}
+\DoxyCodeLine{210         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{211         \{}
+\DoxyCodeLine{212             *\mbox{\hyperlink{classop_1_1_thread_a6f1ececc5f819e056992d0e504422334}{spIsRunning}} = \{\textcolor{keyword}{false}\};}
+\DoxyCodeLine{213         \}}
+\DoxyCodeLine{214         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{215         \{}
+\DoxyCodeLine{216             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{217         \}}
+\DoxyCodeLine{218     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{classop_1_1_thread_a2ab1d2788d62331abd569029afaea36b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_thread_a92e5dd0f60a0485e7d0fad3e82bb74f3}\label{classop_1_1_thread_a92e5dd0f60a0485e7d0fad3e82bb74f3}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!stopAndJoin@{stopAndJoin}}
+\index{stopAndJoin@{stopAndJoin}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{stopAndJoin()}{stopAndJoin()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::stop\+And\+Join (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+thread.\+hpp 파일의 149 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{150     \{}
+\DoxyCodeLine{151         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{152         \{}
+\DoxyCodeLine{153             \mbox{\hyperlink{classop_1_1_thread_a2ab1d2788d62331abd569029afaea36b}{stop}}();}
+\DoxyCodeLine{154             \mbox{\hyperlink{classop_1_1_thread_a29cd38373fc35266e43e3464b561c909}{join}}();}
+\DoxyCodeLine{155         \}}
+\DoxyCodeLine{156         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{157         \{}
+\DoxyCodeLine{158             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{159         \}}
+\DoxyCodeLine{160     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classop_1_1_thread_a92e5dd0f60a0485e7d0fad3e82bb74f3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classop_1_1_thread_a383e40e4f9a5b0402d3328018e550e5b}\label{classop_1_1_thread_a383e40e4f9a5b0402d3328018e550e5b}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!threadFunction@{threadFunction}}
+\index{threadFunction@{threadFunction}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{threadFunction()}{threadFunction()}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker $>$ \\
+void \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::thread\+Function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+thread.\+hpp 파일의 178 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{179     \{}
+\DoxyCodeLine{180         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{181         \{}
+\DoxyCodeLine{182             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{183             \mbox{\hyperlink{classop_1_1_thread_aa93d67605d43adaaee67e04fcc2f2b4f}{initializationOnThread}}();}
+\DoxyCodeLine{184 }
+\DoxyCodeLine{185             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{186             \textcolor{keywordflow}{while} (\mbox{\hyperlink{classop_1_1_thread_a3ed032f4c42ef1797873122aa96a055d}{isRunning}}())}
+\DoxyCodeLine{187             \{}
+\DoxyCodeLine{188                 \textcolor{keywordtype}{bool} allSubThreadsClosed = \textcolor{keyword}{true};}
+\DoxyCodeLine{189                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}\& subThread : \mbox{\hyperlink{classop_1_1_thread_a992b6699049e51cd4b044a3c2b747a2b}{mSubThreads}})}
+\DoxyCodeLine{190                     allSubThreadsClosed \&= !subThread-\/>work();}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192                 \textcolor{keywordflow}{if} (allSubThreadsClosed)}
+\DoxyCodeLine{193                 \{}
+\DoxyCodeLine{194                     \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{195                     \mbox{\hyperlink{classop_1_1_thread_a2ab1d2788d62331abd569029afaea36b}{stop}}();}
+\DoxyCodeLine{196                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{197                 \}}
+\DoxyCodeLine{198             \}}
+\DoxyCodeLine{199             \mbox{\hyperlink{namespaceop_a9912b2bfa3dbe427b4e72dd34c605df2}{log}}(\textcolor{stringliteral}{""}, \mbox{\hyperlink{namespaceop_adc43fb9031418e7f8112816a3b535d14a28d0edd045e05cf5af64e35ae0c4c6ef}{Priority::Low}}, \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{200         \}}
+\DoxyCodeLine{201         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::exception\& e)}
+\DoxyCodeLine{202         \{}
+\DoxyCodeLine{203             \mbox{\hyperlink{namespaceop_a5f092bd36c716a894cb035e1ead2aca3}{error}}(e.what(), \_\_LINE\_\_, \_\_FUNCTION\_\_, \_\_FILE\_\_);}
+\DoxyCodeLine{204         \}}
+\DoxyCodeLine{205     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classop_1_1_thread_a383e40e4f9a5b0402d3328018e550e5b_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classop_1_1_thread_a383e40e4f9a5b0402d3328018e550e5b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{classop_1_1_thread_a992b6699049e51cd4b044a3c2b747a2b}\label{classop_1_1_thread_a992b6699049e51cd4b044a3c2b747a2b}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!mSubThreads@{mSubThreads}}
+\index{mSubThreads@{mSubThreads}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mSubThreads}{mSubThreads}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums$>$$>$$>$ \\
+std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classop_1_1_sub_thread}{Sub\+Thread}}$<$T\+Datums, T\+Worker$>$ $>$ $>$ \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::m\+Sub\+Threads\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+thread.\+hpp 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_thread_a3bc64f58b4d4aa3c74ea446d2edd7c7c}\label{classop_1_1_thread_a3bc64f58b4d4aa3c74ea446d2edd7c7c}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!mThread@{mThread}}
+\index{mThread@{mThread}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{mThread}{mThread}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums$>$$>$$>$ \\
+std\+::thread \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::m\+Thread\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+thread.\+hpp 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{classop_1_1_thread_a6f1ececc5f819e056992d0e504422334}\label{classop_1_1_thread_a6f1ececc5f819e056992d0e504422334}} 
+\index{op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}!spIsRunning@{spIsRunning}}
+\index{spIsRunning@{spIsRunning}!op::Thread$<$ TDatums, TWorker $>$@{op::Thread$<$ TDatums, TWorker $>$}}
+\doxysubsubsection{\texorpdfstring{spIsRunning}{spIsRunning}}
+{\footnotesize\ttfamily template$<$typename T\+Datums , typename T\+Worker  = std\+::shared\+\_\+ptr$<$\+Worker$<$\+T\+Datums$>$$>$$>$ \\
+std\+::shared\+\_\+ptr$<$std\+::atomic$<$bool$>$ $>$ \mbox{\hyperlink{classop_1_1_thread}{op\+::\+Thread}}$<$ T\+Datums, T\+Worker $>$\+::sp\+Is\+Running\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+thread.\+hpp 파일의 42 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/ms/openpose/include/openpose/thread/\mbox{\hyperlink{thread_8hpp}{thread.\+hpp}}\end{DoxyCompactItemize}
