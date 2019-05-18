@@ -2,8 +2,54 @@ import numpy as np
 import cv2
 import math
 
-def keypoints(num):
+
+#코의 대한 x, y 값의 배열을 얻을 수 있다
+def NOSE(num):
     NO = np.zeros((1,3))
+
+    count = 0
+    #npy 파일을 불러오고 거기서 nose의 값만 가져와 새로운 배열을 만든다
+    while True:
+        try:
+            arr = np.load("../test/array_"+ num +"%d.npy"% count)
+        except FileNotFoundError:
+            break
+    
+        if count == 0:
+            for i in range(3):
+                NO[0, i] = arr[0, 0, i]   
+               
+        else:
+            try:
+                NO = np.insert(NO, count, a[0, 0], axis=0)        
+            except IndexError:
+                NO = np.insert(NO, count, 0, axis=0)        
+        count += 1
+    #코 배열을 가져와 x값을 x배열에 넣는다
+    #값이 0 이면 0을 넣어주고 x값이 가로 크기/2 보다 크면 머리가 왼쪽으로 오게 바꿔준다
+    x = []
+        for i in range(0, len(NO)):
+            if NO[i,0] == 0:
+                x = np.insert(x, i, 0)
+                continue
+            else:
+                x = np.insert(x, i, int(NO[i,0]))
+
+        #코 배열을 가져와 y값을 y배열에 넣는다
+        y = []
+        for i in range(0, len(NO)):
+            if NO[i,1] == 0:
+                y = np.insert(y, i, 0)
+                continue
+            y = np.insert(y, i, abs(NO[i,1]))
+
+    return x , y
+
+
+
+
+
+    '''
     NE = np.zeros((1,3))
     RS = np.zeros((1,3))
     RE = np.zeros((1,3))
@@ -18,68 +64,4 @@ def keypoints(num):
     LH = np.zeros((1,3))
     LK = np.zeros((1,3))
     LA = np.zeros((1,3))
-
-
-    count = 0
-
-    while True:
-        try:
-            arr = np.load("../test/array_"+ num +"%d.npy"% count)
-        except FileNotFoundError:
-            break
-    
-        if count == 0:
-            for i in range(3):
-                NO[0, i] = arr[0, 0, i]   
-                NE[0, i] = arr[0, 1, i]
-                RS[0, i] = arr[0, 2, i]
-                RE[0, i] = arr[0, 3, i]
-                RW[0, i] = arr[0, 4, i]
-                LS[0, i] = arr[0, 5, i]
-                LE[0, i] = arr[0, 6, i]
-                LW[0, i] = arr[0, 7, i]
-                MI[0, i] = arr[0, 8, i]
-                RH[0, i] = arr[0, 9, i]
-                RK[0, i] = arr[0, 10, i]
-                RA[0, i] = arr[0, 11, i]
-                LH[0, i] = arr[0, 12, i]
-                LK[0, i] = arr[0, 13, i]
-                LA[0, i] = arr[0, 14, i]
-
-        else:
-            try:
-                NO = np.insert(NO, count, a[0, 0], axis=0)        
-                NE = np.insert(NE, count, a[0, 1], axis=0)
-                RS = np.insert(RS, count, a[0, 2], axis=0)
-                RE = np.insert(RE, count, a[0, 3], axis=0)
-                RW = np.insert(RW, count, a[0, 4], axis=0)
-                LS = np.insert(LS, count, a[0, 5], axis=0)
-                LE = np.insert(LE, count, a[0, 6], axis=0)
-                LW = np.insert(LW, count, a[0, 7], axis=0)
-                MI = np.insert(MI, count, a[0, 8], axis=0)
-                RH = np.insert(RH, count, a[0, 9], axis=0)
-                RK = np.insert(RK, count, a[0, 10], axis=0)
-                RA = np.insert(RA, count, a[0, 11], axis=0)
-                LH = np.insert(LH, count, a[0, 12], axis=0)
-                LK = np.insert(LK, count, a[0, 13], axis=0)
-                LA = np.insert(LA, count, a[0, 14], axis=0)
-
-            except IndexError:
-                NO = np.insert(NO, count, 0, axis=0)        
-                NE = np.insert(NE, count, 0, axis=0)
-                RS = np.insert(RS, count, 0, axis=0)
-                RE = np.insert(RE, count, 0, axis=0)
-                RW = np.insert(RW, count, 0, axis=0)
-                LS = np.insert(LS, count, 0, axis=0)
-                LE = np.insert(LE, count, 0, axis=0)
-                LW = np.insert(LW, count, 0, axis=0)
-                MI = np.insert(MI, count, 0, axis=0)
-                RH = np.insert(RH, count, 0, axis=0)
-                RK = np.insert(RK, count, 0, axis=0)
-                RA = np.insert(RA, count, 0, axis=0)
-                LH = np.insert(LH, count, 0, axis=0)
-                LK = np.insert(LK, count, 0, axis=0)
-                LA = np.insert(LA, count, 0, axis=0)
-        count += 1
-
-    return NO, NE
+    '''
