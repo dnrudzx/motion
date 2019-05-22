@@ -1,79 +1,112 @@
-
 import numpy as np
-import matplotlib.pyplot as plt
 import cv2
 import math
-import comphead as head
+import keypoint as key
+import comphead as cp
 
+#최대 값과 최소값을 구해준다
+def Max(y):
 
-NO1, NE1 = head.headkeypoints("1")
-maxX, maxY = head.Framescale('/home/ms/frame/frame_10.jpg')
-x, y = head.NoseKeypoint(NO1, maxX, maxY)
-x2, y2 = head.NeckKeypoint(NE1, maxX, maxY)
+    count = 0
+    maxY = 0
+    minY = 0
 
-NO2, NE2 = head.headkeypoints("2")
-maxX2, maxY2 = head.Framescale('/home/ms/frame/frame_20.jpg')
-x3, y3 = head.NoseKeypoint(NO2, maxX2, maxY2)
-x4, y4 = head.NeckKeypoint(NE2, maxX2, maxY2)
+    for i in range(len(y)):
+        if y[count] > maxY :
+            maxY = y[count]
+            count += 1
 
-def Brange(y, y2, y3, y4):
-    
+        if y[count] < minY :
+            minY = y[count]
+            count += 1
 
+    return maxY , minY
 
-#간단하게 머리 비교하기
-def sHead(Angle, Angle2):
-    a = Angle
-    c = Angle2
+#기존 동영상의 목 높이와 비교 동영상의 목 높이, 손높이를 넣으면 정상과 낮음을 알려줌
+#Ok의 프레임 번호,Low의 프레임 번호, 옳고 틀린지에 대한 문자열 반환
+def isbodyrange(y, y2, minY):
+    b_maxY, b_minY = Max(y)
+    p_maxY, p_minY = Max(y2)
 
-    maxA = minA = a[0]
+    b_height = b_maxY - minY
+    p_height = p_maxY - minY
 
-    for i in range(len(a)):
-        if a[i] == 0:
+    #원본 동영상 가동 거리와 비교 동영상 가동범위의 높이를 비교해 비슷한 비율로 만듬
+    p_rangeMin = p_maxY - (((b_maxY - b_minY) * p_height ) / b_height)
+
+    Ok = []
+    Low = []
+    bodyrangestr = ""
+
+    for i in range(len(y2)):
+        if y2[i] == 0 :
+            bodyrangestr += " "
             continue
-        elif maxA< a[i]:
-            maxA = a[i]
-        elif minA > a[i]:
-            minA = a[i]
-
-    tooH = []
-    tooL = []
-    ok = []
-    count = 0
-
-    for i in c:
-        if maxA < i:
-            tooL.append(count)
-            count += 1
-        elif minA > i:
-            tooH.append(count)
-            count += 1
+        elif y2[i] < p_rangeMin :
+            Low.append(i)
+            bodyrangestr += "더 내려가 주세요."
         else:
-            ok.append(count)
-            count += 1
+            Ok.append(i)
+            bodyrangestr += "잘 하고 있습니다."
 
-    return tooH, tooL, ok
+    return Ok, Low, bodyrangestr
 
-#높은지 낮은지 정상적인지 판단된 프레임을 프린트 해줌
-def head_point_out(tooH, tooL, ok):
-    allstr = ""
-    allarray = []
+#손목 높이를 비교하는데 왼쪽 오른쪽의 값이 더 많은 쪽을 골라서
+#골라진 쪽에 어꺠 x, y 손목 x, y 순으로 리턴값을 반환한다
+def arm_right_left():
+    RS_x, RS_y = key.keypoint("2", 2)
+    RW_x, RW_y = key.keypoint("2", 4)
+    LS_x, LS_y = key.keypoint("2", 5)
+    LW_x, LW_y = key.keypoint("2", 6)
 
-    count = 0
-    for i in range(len(tooH)+len(tooL)+len(ok)):
-        path = ('/home/ms/frame/frame_2'+ str(i) +'.jpg')
+    count_left = 0
+    count_right = 0
 
-        print(allstr)
-        image = cv2.imread(path)
-        cv2.imshow("Moon", image)
-        cv2.waitKey(20)
+    for i in range(len(RS_x)):
+        if RS_x[i] == 0:
+            count_right += 1
+        if RS_y[i] == 0:
+            count_right += 1
+        if RW_x[i] == 0:
+            count_right += 1
+        if RW_y[i] == 0:
+            count_right += 1
+        if LS_x[i] == 0:
+            count_left += 1
+        if LS_y[i] == 0:
+            count_left += 1
+        if LW_x[i] == 0:
+            count_left += 1
+        if LW_y[i] == 0:
+            count_left += 1
         
-        #하나의 문자열로 합치는 과
-        if i in tooH:
-            allstr += "머리를 너무 높이 들었습니다. 머리를 내려주세요 \n"
-        elif i in tooL:
-            allstr +="머리를 너무 내렸습니다. 머리를 올려주세요 \n"
-        else:
-            allstr +="머리 높이가 정확합니다! \n"
+    if count_left < count_right :
+        return LS_x, LS_y, LW_x, LW_y
+    else :
+        return RS_x, RS_y, RW_x, RW_y
 
-    cv2.destroyAllWindows()
-    return allstr
+
+def armheight(Angle, Angle2):
+    maxA = 0
+    minA = 0
+    for i in range(len(Angle)):
+        if Angle[i] > maxA :
+            maxA = Angle[i]
+        elif Angle[i] < minA :
+            minA = Angle[i]
+    
+    Ok = []
+    Fal = []
+    armstr = ""
+
+    for i in range(len(Angle2):
+        if Angle2 == 0:
+            continue
+        elif maxA > Angle2[i] and minA < Angle2[i]:
+            Ok.append(i)
+            armstr += "정상입니다."
+        else:
+            Fal.append(i)
+            armstr += "어깨와 손목을 수직으로 만들어 주세요."
+
+    return Ok, Fal, armstr
