@@ -1,15 +1,9 @@
-
+import keypoint as kp
 import numpy as np
-import matplotlib.pyplot as plt
 import cv2
 import math
-'''
-def pprint(arr):
-    print("type:{}".format(type(arr)))
-    print("shape: {}, dimension: {}, dtype:{}".format(arr.shape, arr.ndim, arr.dtype))
-    print("Array's Data:\n", arr)
-'''
 
+'''
 #
 def Framescale(filename):
     image = cv2.imread(filename)
@@ -108,7 +102,7 @@ NO2, NE2 = headkeypoints("2")
 maxX2, maxY2 = Framescale('/home/ms/frame/frame_20.jpg')
 x3, y3 = NoseKeypoint(NO2, maxX2, maxY2)
 x4, y4 = NeckKeypoint(NE2, maxX2, maxY2)
-
+'''
 #코와 목의 각도 구하기
 def getDegree(x1, y1, x2, y2):
     PI = 3.14
@@ -209,20 +203,24 @@ def head_point_out(tooH, tooL, ok):
 
     count = 0
     for i in range(len(tooH)+len(tooL)+len(ok)):
-        path = ('/home/ms/frame/frame_2'+ str(i) +'.jpg')
 
-        print(allstr)
-        image = cv2.imread(path)
-        cv2.imshow("Moon", image)
-        cv2.waitKey(20)
-        
-        #하나의 문자열로 합치는 과
-        if i in tooH:
-            allstr += "머리를 너무 높이 들었습니다. 머리를 내려주세요 \n"
+    	print(len(tooH)+len(tooL)+len(ok))
+
+    	path = ('/home/ms/frame/frame_2'+ str(i) +'.jpg')
+
+    	print(allstr)
+    	image = cv2.imread(path)
+    	cv2.imshow("Moon", image)
+    	cv2.waitKey(20)
+
+
+    	#하나의 문자열로 합치는 과
+    	if i in tooH:
+        	allstr += "머리를 너무 높이 들었습니다. 머리를 내려주세요 \n"
         elif i in tooL:
-            allstr +="머리를 너무 내렸습니다. 머리를 올려주세요 \n"
+        	allstr +="머리를 너무 내렸습니다. 머리를 올려주세요 \n"
         else:
-            allstr +="머리 높이가 정확합니다! \n"
+        	allstr +="머리 높이가 정확합니다! \n"
 
     cv2.destroyAllWindows()
     return allstr

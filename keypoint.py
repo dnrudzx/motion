@@ -2,36 +2,38 @@ import numpy as np
 import cv2
 import math
 
-
 #동영상 번호와 원하는 포인트 부분의 번호를 입력하면 
 #입력한 포인트의 대한 x, y 값의 배열을 얻을 수 있다
+
 def keypoint(num, point):
-    if point < 0 && point > 14 :
-        print("The range of points is wrong.")
-        break
+    if (point < 0) and (point > 14) :
+        return "The range of points is wrong."
+
     Key = np.zeros((1,3))
 
-    count = 0
     try:
-    image = cv2.imread("/home/ms/frame/frame_"+ str(num) +"0.jpg")        
+    	image = cv2.imread("/home/ms/frame/frame_"+ str(num) +"0.jpg")        
     except FileNotFoundError:
-        print("File not found")
-        break
+        return "frame File not found"
+
 
     height, width, channel = image.shape
+    #Nose , count = 0  
+    count = 0
+    Nose = 0
     #npy 파일을 불러오고 거기서 nose의 값만 가져와 새로운 배열을 만든다
     while True:
+        
         try:
             arr = np.load("/home/ms/test/array_"+ str(num) +"%d.npy"% count)
+            test += 1
         except FileNotFoundError:
-            print("File not found")
             break
 
         #코의 값 중 유효값한 값을 가져옴
-        Nose = 0
 
-        if arr[0, 0, 0] != 0 && Nose == 0 :
-            Nose = int(arr[0,0,0])
+        if Nose == 0:
+            Nose = int(arr[0, 0, 0])
         #---    
         if count == 0:
             for i in range(3):
@@ -67,3 +69,4 @@ def keypoint(num, point):
 
     return x , y
 
+#print(keypoint("1", 0))
