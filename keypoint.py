@@ -28,7 +28,6 @@ def keypoint(num, point):
         
         try:
             arr = np.load("/home/ms/test/array_"+ str(num) +"%d.npy"% count)
-            test += 1
         except FileNotFoundError:
             break
 
