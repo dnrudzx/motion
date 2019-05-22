@@ -219,34 +219,18 @@ def head_point_out(tooH, tooL, ok):
     	image = cv2.imread(path)
     	cv2.imshow("Moon", image)
     	cv2.waitKey(20)
-
-    	#하나의 문자열로 합치는 과
-
     	if i in tooH:
-    		allstr += "머리를 너무 높이 들었습니다. 머리를 내려주세요 "
+    		allarray.insert(count, "머리를 너무 높이 들었습니다. 머리를 내려주세요 ")
+    		count += 1
     	elif i in tooL:
-    		allstr += "머리를 너무 내렸습니다. 머리를 올려주세요 "
+    		allarray.insert(count, "머리를 너무 내렸습니다. 머리를 올려주세요 ")
+    		count += 1
     	else:
-    		allstr += "머리 높이가 정확합니다!"
-    cv2.destroyAllWindows()
-    return allstr
-    
-    '''
-        #배열로 문자열 합치는 과정
-        # 
-        if i in tooH:
-            allarray.insert(count, "머리를 너무 높이 들었습니다. 머리를 내려주세요 ")
-            count += 1
-        elif i in tooL:
-            allarray.insert(count, "머리를 너무 내렸습니다. 머리를 올려주세요 ")
-            count += 1
-        else:
-            allarray.insert(count, "머리 높이가 정확합니다! ")
-            count += 1
+    		allarray.insert(count, "머리 높이가 정확합니다! ")
+    		count += 1
     
     cv2.destroyAllWindows()
     return allarray
-   ''' 
 
 #for i in range(len(a)):
 #    print(abs(int(a[i])-int(b[i])))

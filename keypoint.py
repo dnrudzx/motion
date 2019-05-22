@@ -8,13 +8,21 @@ import math
 # 7: 왼쪽 손목 8: 중앙 엉덩이 9: 오른쪽 엉덩이  10:오른쪽 무릅 11: 오른쪽 발목 
 # 12: 왼쪽 엉덩이 13: 왼쪽 무릅 14: 왼쪽 발목
 def keypoint(num, point):
+    if str(num) == "1":
+        frame_path = "/home/ms/frame/frame_1"
+        array_path = "/home/ms/test/array_1"
+    elif str(num) == "2":
+        frame_path = "/home/ms/frame/frame_2"
+        array_path = "/home/ms/test/array_2"
+
+
     if (point < 0) and (point > 14) :
         return "The range of points is wrong."
 
     Key = np.zeros((1,3))
 
     try:
-    	image = cv2.imread("/home/ms/frame/frame_"+ str(num) +"0.jpg")        
+    	image = cv2.imread(frame_path +"0.jpg")        
     except FileNotFoundError:
         return "frame File not found"
 
@@ -27,7 +35,7 @@ def keypoint(num, point):
     while True:
         
         try:
-            arr = np.load("/home/ms/test/array_"+ str(num) +"%d.npy"% count)
+            arr = np.load(array_path +"%d.npy"% count)
         except FileNotFoundError:
             break
 
