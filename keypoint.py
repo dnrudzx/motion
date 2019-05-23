@@ -12,13 +12,9 @@ def keypoint(num, point):
         frame_path = "/home/ms/frame/frame_1"
         array_path = "/home/ms/test/array_1"
     elif str(num) == "2":
-<<<<<<< HEAD
-        frame_path = "/home/ms/frame/frame_1"
-        array_path = "/home/ms/test/array_1"
-=======
         frame_path = "/home/ms/frame/frame_2"
         array_path = "/home/ms/test/array_2"
->>>>>>> origin/master
+
 
 
     if (point < 0) and (point > 14) :
@@ -27,11 +23,7 @@ def keypoint(num, point):
     Key = np.zeros((1,3))
 
     try:
-<<<<<<< HEAD
-    	image = cv2.imread(base_frame_path +"0.jpg")        
-=======
     	image = cv2.imread(frame_path +"0.jpg")        
->>>>>>> origin/master
     except FileNotFoundError:
         return "frame File not found"
 
@@ -45,10 +37,6 @@ def keypoint(num, point):
         
         try:
             arr = np.load(array_path +"%d.npy"% count)
-<<<<<<< HEAD
-            test += 1
-=======
->>>>>>> origin/master
         except FileNotFoundError:
             break
 
