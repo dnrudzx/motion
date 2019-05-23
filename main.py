@@ -31,10 +31,6 @@ Ok, Low, bodyarray = br.isbodyrange(y2, y4, bminY, pminY)
 arm_bAngle = cp.getDegree(BS_x, BS_y, BW_x, BW_y)
 arm_pAngle = cp.getDegree(PS_x, PS_y, PW_x, PW_y)
 
-for i in range(len(arm_pAngle)):
+armOb = cp.armframe(y4)
 
-    print(arm_pAngle[i])
-    print(arm_bAngle[i])
-    print('\n')
-
-Ok, Fal, armarray = br.armheight(arm_bAngle, arm_pAngle)
+Ok, Fal, armarray = br.armheight(arm_bAngle, arm_pAngle, armOb)

@@ -86,9 +86,50 @@ def arm_right_left(num):
     else :
         return RS_x, RS_y, RW_x, RW_y
 
+#팔 비교 대상을 구별하기위해 y-10안에 들어오는 프레임값을 반환
+#비교할 어깨의 y 값을 넣음
+def armframe(p_Y):
+    pmaxY = 0
 
-def armheight(Angle, Angle2):
+    for i in range(len(p_Y)):
+        if pmaxY < p_Y[i]:
+            pmaxY = p_Y[i]
+
+    armOb = []
+    for i in range(len(p_Y)):
+        if (pmaxY - 10) <= p_Y[i]:
+            armOb.append(i)
+
+    return armOb
+
+#팔을 폈을떄 수직으로 되있는지 판단한다
+#원동 동영상 각도와 비교 동영상 각도, 비교 대상 프레임을 넣어준다
+def armheight(Angle, Angle2, armOb):
     
+    maxA = 0
+
+    for i in range(len(Angle)):
+        if maxA < Angle[i]:
+            maxA = Angle[i]
+
+    Ok = []
+    Fal = []
+    armarray1 = []
+
+    for i in range(len(Angle2)):
+        if i in armOb:
+            if (maxA * 0.9) > Angle2[i] or (maxA2 * 1.1) < Angle2[i]:
+                armarray1.insert(i, "팔을 수직으로 만들어 주세요.")
+                Fal.append(i)
+            else:
+                armarray1.insert(i, "팔이 수직입니다. ")
+                Ok.append(i)
+        else:
+            armarray1.insert(i, " ")
+
+    return Ok, Fal, armarray1
+
+    '''
     maxA = 0
     minA = 0
     for i in range(len(Angle)):
@@ -112,3 +153,4 @@ def armheight(Angle, Angle2):
             armarray.insert(i, "어깨와 손목을 수직으로 만들어 주세요.")
 
     return Ok, Fal, armarray
+    '''
