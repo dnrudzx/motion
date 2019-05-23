@@ -107,9 +107,17 @@ x4, y4 = NeckKeypoint(NE2, maxX2, maxY2)
 def getDegree(x1, y1, x2, y2):
     PI = 3.14
     Angle = []
-    for i in range(0, len(x1)):
-        Angle.append(math.atan2(abs(y1[i] - y2[i]), abs(x1[i] - x2[i])) * 180 / PI)
-    
+    if len(x1)<len(x2):
+    	leng = x2
+    else:
+    	leng = x1
+
+    for i in range(len(leng)):
+    	if y1[i] == 0 and y2[i] == 0 and x1[i] == 0 and x2[i]:
+    		Angle.append(0)
+    		continue
+    	Angle.append(math.atan2(abs(y1[i] - y2[i]), abs(x1[i] - x2[i])) * 180 / PI)
+
     return Angle 
 
 '''
@@ -203,7 +211,6 @@ def head_point_out(tooH, tooL, ok):
 
     count = 0
     for i in range(len(tooH)+len(tooL)+len(ok)):
-
     	print(len(tooH)+len(tooL)+len(ok))
 
     	path = ('/home/ms/frame/frame_2'+ str(i) +'.jpg')
@@ -212,34 +219,18 @@ def head_point_out(tooH, tooL, ok):
     	image = cv2.imread(path)
     	cv2.imshow("Moon", image)
     	cv2.waitKey(20)
-
-
-    	#하나의 문자열로 합치는 과
     	if i in tooH:
-        	allstr += "머리를 너무 높이 들었습니다. 머리를 내려주세요 \n"
-        elif i in tooL:
-        	allstr +="머리를 너무 내렸습니다. 머리를 올려주세요 \n"
-        else:
-        	allstr +="머리 높이가 정확합니다! \n"
-
-    cv2.destroyAllWindows()
-    return allstr
-    '''
-        #배열로 문자열 합치는 과정
-        # 
-        if i in tooH:
-            allarray.insert(count, "머리를 너무 높이 들었습니다. 머리를 내려주세요 ")
-            count += 1
-        elif i in tooL:
-            allarray.insert(count, "머리를 너무 내렸습니다. 머리를 올려주세요 ")
-            count += 1
-        else:
-            allarray.insert(count, "머리 높이가 정확합니다! ")
-            count += 1
+    		allarray.insert(count, "머리를 너무 높이 들었습니다. 머리를 내려주세요 ")
+    		count += 1
+    	elif i in tooL:
+    		allarray.insert(count, "머리를 너무 내렸습니다. 머리를 올려주세요 ")
+    		count += 1
+    	else:
+    		allarray.insert(count, "머리 높이가 정확합니다! ")
+    		count += 1
     
     cv2.destroyAllWindows()
     return allarray
-   ''' 
 
 #for i in range(len(a)):
 #    print(abs(int(a[i])-int(b[i])))
