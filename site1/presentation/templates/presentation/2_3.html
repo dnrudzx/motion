@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>view-video</title>
+</head>
+<body>
+
+<h3>selected Pose : {{  selected_pose  }}</h3>
+<h3>selected Mode : {{  mode  }}</h3>
+<h3>오른쪽이나 왼쪽 끝을 보고 있는 동영상을 업로드하세요</h3>
+<form action ="../2_4/" method="post" enctype="multipart/form-data" novalidate>
+	{% csrf_token %}
+	<input type="file" name="document">
+	<button type="submit">upload file</button>
+</form>
+
+</body>
+</html>

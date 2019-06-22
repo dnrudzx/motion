@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>view-video</title>
+</head>
+<body onload="print_speech()">
+<h3>selected Pose : {{  selected_pose  }}</h3>
+<h3>selected Mode : {{  mode  }}</h3>
+
+<video id="video1"width="30%" src="../{{ video }}" muted autoplay></video>
+<div style="border:5px solid #dedede; width:600px; height:250px; line-height:50px; color:#666;font-size:20px; text-align:center;" id="speech">
+</div>
+<!--
+<input type="button" id="button1" onclick="button1_click();" value="다시보기"/>
+-->
+
+</body>
+</html>
+
+<script type="text/javascript">
+	var list = decodeURIComponent("{{speech}}");
+	var list = list.split("[");
+	var list = list[1].split("]");
+	var list = list[0].split(",");
+
+	var list2 = decodeURIComponent("{{speech_body}}");
+	var list2 = list2.split("[");
+	var list2 = list2[1].split("]");
+	var list2 = list2[0].split(",");
+
+	var list3 = decodeURIComponent("{{speech_arm}}");
+	var list3 = list3.split("[");
+	var list3 = list3[1].split("]");
+	var list3 = list3[0].split(",");
+
+	var i = 0;
+	function print_speech(){
+		var speech = document.getElementById("speech");
+
+		speech.innerHTML = list[i] + "</br>" + list2[i] + "</br>" + list3[i] + "<span style='font-size:50px;'></span>";
+		i++;
+		if(list[i]==null){
+			i--;
+		}
+		setTimeout("print_speech()",40);
+	}
+
+		function button1_click(){
+		$("#video1").get(0).play();
+		i=0;
+	}
+</script>

@@ -118,7 +118,7 @@ def armheight(Angle, Angle2, armOb):
 
     for i in range(len(Angle2)):
         if i in armOb:
-            if (maxA * 0.9) > Angle2[i] or (maxA2 * 1.1) < Angle2[i]:
+            if (maxA * 0.9) > Angle2[i] or (maxA * 1.1) < Angle2[i]:
                 armarray1.insert(i, "팔을 수직으로 만들어 주세요.")
                 Fal.append(i)
             else:
