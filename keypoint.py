@@ -15,17 +15,17 @@ def keypoint(name, point):
         frame_path = "/home/ms/frame/frame_2"
         array_path = "/home/ms/test/array_2"
     elif str(name) == "bsitup":
-        frame_path = "/home/ms/frame/situp_frame/bframe_"
+        frame_path = "/home/ms/frame/situp_frame/Bframe_"
         array_path = "/home/ms/test/situp_array/barray_"
     elif str(name) == "psitup":
         frame_path = "home/ms/frame/situp_frame/pframe_"
         array_path = "/home/ms/test/situp_array/parray_"
-    elif str(name) == "bclimber":
-        frame_path = "/home/ms/test/climber_frame/bframe_"
-        array_path = "/home/ms/test/climber_array/barray_"
+    elif name == "bclimber":
+        frame_path = "/home/ms/frame/climber_frame/Bframe_"
+        array_path = "/home/ms/test/climber_array/Barray_"
     elif str(name) == "pclimber":
-        frame_path = "/home/ms/test/climber_frame/bframe_"
-        array_path = "/home/ms/test/climber_array/barray_"
+        frame_path = "/home/ms/frame/climber_frame/Pframe_"
+        array_path = "/home/ms/test/climber_array/Parray_"
 
 
 
@@ -90,6 +90,57 @@ def keypoint(name, point):
             continue
         y = np.insert(y, i, abs(height - Key[i,1]))
 
-    return x , y
+    Rx = []
+    Ry = []
 
+    xavg = keyavg(x)
+    yavg = keyavg(y)
+
+    for i in range(len(x)):
+    	if x[i] == 0:
+    		Rx.append(x[i])
+    		continue
+    	elif i == 0:
+    		Rx.append(x[i])
+    		continue
+    	elif i == (len(x)-1):
+    		Rx.append(x[i])
+    		break
+    	elif x[i-1] != 0 and x[i+1] != 0 and (xavg * 2.0) < (abs(x[i]-x[i-1])) and (xavg * 2.0) < (abs(x[i+1]-x[i])):
+    		Rx.append(0)
+    	else:
+    		Rx.append(x[i])
+
+    for i in range(len(y)):
+    	if y[i] == 0:
+    		Ry.append(y[i])
+    		continue
+    	elif i == 0:
+    		Ry.append(y[i])
+    		continue
+    	elif i == (len(y)-1):
+    		Ry.append(y[i])
+    		break
+    	elif y[i-1] != 0 and y[i+1] != 0 and (yavg * 2.0) < (abs(y[i]-y[i-1])) and (yavg * 2.0) < (abs(y[i+1]-y[i])):
+    		Ry.append(0)
+    	else:
+    		Ry.append(y[i])
+
+    return Rx , Ry
+
+def keyavg(x):
+	Rx = []
+	result = 0
+
+	for i in range(len(x)):
+		if x[i] == 0:
+			continue
+		elif i == len(x)-1:
+			break
+		elif x[i+1] != 0:
+			Rx.append(abs(x[i+1] - x[i]))
+	for i in Rx:
+		result += i
+		
+	return result/(len(Rx))
 #print(keypoint("1", 0))

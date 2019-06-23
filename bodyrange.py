@@ -7,19 +7,18 @@ import comphead as cp
 #최대 값과 최소값을 구해준다
 def Max(y):
 
-    maxY = 0
-    minY = 0
+	maxY = y[0]
+	minY = y[0]
 
-    print(len(y))
+	for i in range(len(y)):
+		if y[i] == 0:
+			continue
+		elif y[i] > maxY :
+			maxY = y[i]
+		elif y[i] < minY :
+			minY = y[i]
 
-    for i in range(len(y)):
-        if y[i] > maxY :
-            maxY = y[i]
-
-        elif y[i] < minY :
-            minY = y[i]
-
-    return maxY , minY
+	return maxY , minY
 
 #기존 동영상의 목 높이와 비교 동영상의 목 높이, 손높이를 넣으면 정상과 낮음을 알려줌
 #Ok의 프레임 번호,Low의 프레임 번호, 옳고 틀린지에 대한 문자열 반환
@@ -82,9 +81,9 @@ def arm_right_left(num):
             count_left += 1
         
     if count_left < count_right :
-        return LS_x, LS_y, LW_x, LW_y
+    	return LS_x, LS_y, LW_x, LW_y
     else :
-        return RS_x, RS_y, RW_x, RW_y
+    	return RS_x, RS_y, RW_x, RW_y
 
 #팔 비교 대상을 구별하기위해 y-10안에 들어오는 프레임값을 반환
 #비교할 어깨의 y 값을 넣음

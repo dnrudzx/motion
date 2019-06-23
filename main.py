@@ -33,29 +33,49 @@ P_arOk, P_arFal, P_ararmarray = br.armheight(arm_bAngle, arm_pAngle, armOb)
 
 print(armarray)
 '''
-#마운팅 클라이밍 목 비교
-C_x, C_y = key.keypoint("bclimber", 0)
-C_x2, C_y2 = key.keypoint("bclimber", 1)
-C_x3, C_y3 = key.keypoint("pclimber", 0)
-C_x4, C_y4 = key.keypoint("pclimber", 1)
+def climber():
+	'''
+	#마운팅 클라이밍 목 비교
+	C_x, C_y = key.keypoint("bclimber", 0)
+	C_x2, C_y2 = key.keypoint("bclimber", 1)
+	C_x3, C_y3 = key.keypoint("pclimber", 0)
+	C_x4, C_y4 = key.keypoint("pclimber", 1)
 
-C_a = cp.getDegree(C_x, C_y, C_x2, C_y2)
-C_b = cp.getDegree(C_x3, C_y3, C_x4,C_y4)
-C_c, C_d, C_e = cp.sHead(C_a, C_b)
+	C_a = cp.getDegree(C_x, C_y, C_x2, C_y2)
+	C_b = cp.getDegree(C_x3, C_y3, C_x4,C_y4)
+	C_c, C_d, C_e = cp.sHead(C_a, C_b)
 
-cp.head_point_out(C_c,C_d,C_e)
+	C_head = cp.head_point_out(C_c,C_d,C_e)
+	'''
 
-#마운팅 클라이밍 팔 수직 비교
-C_BS_x, C_BS_y, C_BW_x, C_BW_y = br.arm_right_left("bclimber")
-C_PS_x, C_PS_y, C_PW_x, C_PW_y = br.arm_right_left("pclimber")
+	#마운팅 클라이밍 팔 수직 비교
+	C_BS_x, C_BS_y, C_BW_x, C_BW_y = br.arm_right_left("bclimber")
+	C_PS_x, C_PS_y, C_PW_x, C_PW_y = br.arm_right_left("pclimber")
 
-C_arm_bAngle = cp.getDegree(C_BS_x, C_BS_y, C_BW_x, C_BW_y)
-C_arm_pAngle = cp.getDegree(C_PS_x, C_PS_y, C_PW_x, C_PW_y)
+	C_arm_bAngle = cp.getDegree(C_BS_x, C_BS_y, C_BW_x, C_BW_y)
+	C_arm_pAngle = cp.getDegree(C_PS_x, C_PS_y, C_PW_x, C_PW_y)
 
-C_aOK, C_aFal, C_aarray = cb.C_armheight(C_arm_bAngle, C_arm_pAngle)
+	C_aOK, C_aFal, C_aarray = cb.C_armheight(C_arm_bAngle, C_arm_pAngle)
 
-#마운팅 클라이밍의 무릅 가동 범위 확인
-C_isOK, C_isFal, C_isarray = cb.ispullknee()
+	#마운팅 클라이밍의 무릅 가동 범위 확인
+	C_isOK, C_isFal, C_isarray = cb.ispullknee()
 
-#마운팅 클라이밍의 엉덩이 높이 확인
-C_HIOK, C_HIFal, C_HIarray = cb.Hipheight()
+	#마운팅 클라이밍의 엉덩이 높이 확인
+	C_HIOK, C_HIFal, C_HIarray = cb.Hipheight()
+
+	C_all = C_head + C_aarray + C_isarray + C_HIarray
+
+	print(C_all)
+	print("long head")
+	print(C_c, C_d)
+	print("long suzic")
+	print(C_aFal)
+	print("long range")
+	print(C_isFal)
+	print("long hip")
+	print(C_HIFal)
+
+
+	return C_all
+
+climber()

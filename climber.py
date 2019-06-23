@@ -5,59 +5,65 @@ import keypoint as key
 import comphead as cp
 import bodyrange as br
 
+
 #평균값을 구함 0은 제외한다
 def avg(x):
     num = 0
     result = 0
+
     for val in x:
         if val != 0:
             result += val
             num += 1
-    return result/num
+
+    return (result/num)
 #무릅의 비교할 프레임을 구한다
 def Kneeframe(PX):
-    pminX = 0
+    pminX = PX[0]
+    KneeOb = []
 
     for i in range(len(PX)):
-        if pminX < PX[i]:
-            pminX = PX[i]
+    	if PX[i] == 0:
+    		continue
+    	elif pminX > PX[i]:
+    		pminX = PX[i]
 
     armOb = []
     for i in range(len(PX)):
-        if (pminX + 10) >= PX[i]:
-            KneeOb.append(i)
-
+    	if PX[i] == 0:
+    		continue
+    	elif (pminX + 10) >= PX[i]:
+    		KneeOb.append(i)
     return KneeOb
 
 #기존 동영상의 무릅 x축의 최대값과 최소값을 구한뒤
 #그 값을 가지고 가동범위를 구함 
 def ispullknee():
-    bRK_x, bRK_y = key.keypoint(bsitup, 10)
-    bLK_x, bLK_y = key.keypoint(bsitup, 13)
-    bMH_x, bMH_y = key.keypoint(bsitup, 8)
-    bNE_x, bNE_y = key.keypoint(bsitup, 1)
-    pRK_x, pRK_y = key.keypoint(psitup, 10)
-    pLK_x, pLK_y = key.keypoint(psitup, 13)
-    pMH_x, pMH_y = key.keypoint(psitup, 8)
-    pNE_x, pNE_y = key.keypoint(psitup, 1)
+    bRK_x, bRK_y = key.keypoint("bclimber", 10)
+    bLK_x, bLK_y = key.keypoint("bclimber", 13)
+    bMH_x, bMH_y = key.keypoint("bclimber", 8)
+    bNE_x, bNE_y = key.keypoint("bclimber", 1)
+    pRK_x, pRK_y = key.keypoint("pclimber", 10)
+    pLK_x, pLK_y = key.keypoint("pclimber", 13)
+    pMH_x, pMH_y = key.keypoint("pclimber", 8)
+    pNE_x, pNE_y = key.keypoint("pclimber", 1)
     b_maxRX, b_minRX = br.Max(bRK_x)
     b_maxLX, b_minLX = br.Max(bLK_x)
     p_maxRX, p_minRX = br.Max(pRK_x)
     p_maxLX, p_minLX = br.Max(pLK_x)
-
-    count = 0
     
     bMH = avg(bMH_x)
     pMH = avg(pMH_x)
     bNE = avg(bNE_x)
     pNE = avg(pNE_x)
 
-    bRratio = (bMH - b_minRX)/(bMH - bNE) * 100
-    bLratio = (bMH - b_minLX)/(bMH - bNE) * 100
 
-    pRratio = (pMH - pNE) * bRratio
-    pLratio = (pMH - pNE) * bLratio
+    bRratio = (bMH - b_minRX)/(bMH - bNE)
+    bLratio = (bMH - b_minLX)/(bMH - bNE)
 
+    pRratio = pMH - ((pMH - pNE) * bRratio)
+    pLratio = pMH - ((pMH - pNE) * bLratio)
+    
     if bRratio < bLratio :
         if pRratio > pLratio :
             temp = pRratio
@@ -72,35 +78,36 @@ def ispullknee():
     Kneearray = []
 
     for i in range(len(pRK_x)):
-        if i in pRKOB:
-            if (pRratio * 0.9) > pRK_x[i]:
-                Kneearray.insert(i, "무릅을 %d 만큼 너무 많이 당겼습니다." % ((pRratio) - pRK_x[i]))
-                false.append(i)
-            elif (pRratio * 1.1) < pRK_x[i]:
-                Kneearray.insert(i, "무릅을 %d 만큼 더 당겨주세요." % (pRK_x[i] - (pRratio)))
-                false.append(i)
-            else:
-                Kneearray.insert(i, "정상 범위 입니다. ")
-                Ok.append(i)
-        else:
-            Kneearray.insert(i, " ")
-    return OK, false, Kneearray
+    	if pRK_x[i] == 0:
+    		Kneearray.insert(i, " ")
+    	if i in pRKOB:
+    		if (pRratio * 0.9) > pRK_x[i]:
+    			Kneearray.insert(i, "무릅을 %d 만큼 너무 많이 당겼습니다." % ((pRratio) - pRK_x[i]))
+    			false.append(i)
+    		elif (pRratio * 1.1) < pRK_x[i]:
+    			Kneearray.insert(i, "무릅을 %d 만큼 더 당겨주세요." % (pRK_x[i] - (pRratio)))
+    			false.append(i)
+    		else:
+    			Kneearray.insert(i, "정상 범위 입니다. ")
+    			Ok.append(i)
+    	else:
+    		Kneearray.insert(i, " ")
+
+    return Ok, false, Kneearray
 
 
 def C_armheight(Angle, Angle2):
-    
-    maxA = 0
-
-    for i in range(len(Angle)):
-        if maxA < Angle[i]:
-            maxA = Angle[i]
+    avgA = avg(Angle)
 
     Ok = []
     Fal = []
     Carmarray = []
 
     for i in range(len(Angle2)):
-        if (maxA * 0.9) > Angle2[i] or (maxA * 1.1) < Angle2[i]:
+        if Angle2[0] == 0:
+        	Carmarray.insert(i, " ")
+        	Fal.append(i)
+        elif (avgA * 0.9) > Angle2[i] or (avgA * 1.1) < Angle2[i]:
             Carmarray.insert(i, "팔을 수직으로 만들어 주세요.")
             Fal.append(i)
         else:
@@ -110,24 +117,53 @@ def C_armheight(Angle, Angle2):
     return Ok, Fal, Carmarray
 
 def Hipheight():
-    bMH_x, bMH_y = key.keypoint(bsitup, 8)
-    pMH_x, pMH_y = key.keypoint(psitup, 8)
+    bMH_x, bMH_y = key.keypoint("bclimber", 8)
+    bNE_x, bNE_y = key.keypoint("bclimber", 1)
+    pMH_x, pMH_y = key.keypoint("pclimber", 8)
+    pNE_x, pNE_y = key.keypoint("pclimber", 1)
 
     bHip = avg(bMH_y)
+    pHip = avg(pMH_y)
+    bmaxY, bminY = br.Max(bMH_y)
 
+    maxcha = bmaxY - bHip
+    mincha = bHip - bminY 
+    
+    bangle = cp.getDegree(bNE_x, bNE_y, bMH_x, bMH_y)
+    pangle = cp.getDegree(pNE_x, pNE_y, pMH_x, pMH_y)
+    
+    bwaist = avg(bangle)
+    pwaist = avg(pangle)
+
+    pheight = []
+    for i in range(len(bangle)):
+    	if bangle[i] == 0:
+    		continue
+    	elif (bwaist * 0.95) < pangle[i] and (bwaist * 1.05) > pangle[i]:
+    		pheight.append(i)
+    ph = 0
+    count = 0
+    for i in range(len(pMH_y)):
+    	if i in pheight:
+    		ph += pMH_y[i]
+    		count += 1
+    ph /=count
     Ok = []
     Fal = []
     array = []
 
+    cou = 0
     for i in range(len(pMH_y)):
-        if (bHip * 0.9) > pMH_y[i]:
-            array.insert(i, "엉덩이가 %d 만큼 낮습니다."% ((bHip) - pMH_y[i])
-            Fal.append(i)
-        elif (bHip * 1.1) < pMH_y[i]:
-            array.insert(i, "엉덩이가 %d 만큼 높습니다."% (pMH_y[i] - (bHip)))
-            Fal.append(i)
-        else:
-            array.insert(i, "정상 범위 입니다. ")
-            Ok.append(i)
+    	if pMH_y[i] == 0:
+    		array.insert(i, "")
+    	elif(ph - mincha) > pMH_y[i]:
+    		array.insert(i, "엉덩이가 %d 만큼 낮습니다."% ((ph - mincha) - pMH_y[i]))
+    		Fal.append(i)
+    	elif (ph + maxcha) < pMH_y[i]:
+    		array.insert(i, "엉덩이가 %d 만큼 높습니다."% (pMH_y[i] - (ph - mincha)))
+    		Fal.append(i)
+    	else:
+    		array.insert(i, "정상 범위 입니다. ")
+    		Ok.append(i)
 
-    return OK,Fal,array
+    return Ok,Fal,array

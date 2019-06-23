@@ -113,7 +113,7 @@ def getDegree(x1, y1, x2, y2):
     	leng = x1
 
     for i in range(len(leng)):
-    	if y1[i] == 0 and y2[i] == 0 and x1[i] == 0 and x2[i]:
+    	if y1[i] == 0 or y2[i] == 0 or x1[i] == 0 or x2[i] == 0:
     		Angle.append(0)
     		continue
     	Angle.append(math.atan2(abs(y1[i] - y2[i]), abs(x1[i] - x2[i])) * 180 / PI)
@@ -210,15 +210,15 @@ def head_point_out(tooH, tooL, ok):
     allarray = []
 
     count = 0
-    for i in range(len(tooH)+len(tooL)+len(ok)):
-    	print(len(tooH)+len(tooL)+len(ok))
 
+    for i in range(len(tooH)+len(tooL)+len(ok)):
+    	'''
     	path = ('/home/ms/frame/frame_2'+ str(i) +'.jpg')
 
-    	print(allstr)
     	image = cv2.imread(path)
     	cv2.imshow("Moon", image)
     	cv2.waitKey(20)
+    	'''
     	if i in tooH:
     		allarray.insert(count, "머리를 너무 높이 들었습니다. 머리를 내려주세요 ")
     		count += 1
