@@ -7,13 +7,26 @@ import math
 # 0: 코, 1: 목 2:오른쪽 어꺠 3: 오른쪽 팔꿈치 4:오른쪽 손목 5: 왼쪽 어꺠 6: 왼쪽 팔꿈치 
 # 7: 왼쪽 손목 8: 중앙 엉덩이 9: 오른쪽 엉덩이  10:오른쪽 무릅 11: 오른쪽 발목 
 # 12: 왼쪽 엉덩이 13: 왼쪽 무릅 14: 왼쪽 발목
-def keypoint(num, point):
-    if str(num) == "1":
+def keypoint(name, point):
+    if str(name) == "bpush":
         frame_path = "/home/ms/frame/frame_1"
         array_path = "/home/ms/test/array_1"
-    elif str(num) == "2":
+    elif str(name) == "ppush":
         frame_path = "/home/ms/frame/frame_2"
         array_path = "/home/ms/test/array_2"
+    elif str(name) == "bsitup":
+        frame_path = "/home/ms/frame/situp_frame/bframe_"
+        array_path = "/home/ms/test/situp_array/barray_"
+    elif str(name) == "psitup":
+        frame_path = "home/ms/frame/situp_frame/pframe_"
+        array_path = "/home/ms/test/situp_array/parray_"
+    elif str(name) == "bclimber":
+        frame_path = "/home/ms/test/climber_frame/bframe_"
+        array_path = "/home/ms/test/climber_array/barray_"
+    elif str(name) == "pclimber":
+        frame_path = "/home/ms/test/climber_frame/bframe_"
+        array_path = "/home/ms/test/climber_array/barray_"
+
 
 
 
