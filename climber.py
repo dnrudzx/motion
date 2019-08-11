@@ -66,6 +66,8 @@ def ispullknee():
     bNE = avg(bNE_x)
     pNE = avg(pNE_x)
 
+    cm = key.height("pclimber")
+
 
     bRratio = (bMH - b_minRX)/(bMH - bNE)
     bLratio = (bMH - b_minLX)/(bMH - bNE)
@@ -91,10 +93,10 @@ def ispullknee():
     		RKneearray.insert(i, " ")
     	if i in pRKOB:
     		if (pRratio * 0.9) > pRK_x[i]:
-    			RKneearray.insert(i, "무릅을 %d 만큼 너무 많이 당겼습니다." % ((pRratio) - pRK_x[i]))
+    			RKneearray.insert(i, "무릅을 %dcm 만큼 너무 많이 당겼습니다." % ((pRratio) - pRK_x[i])*cm)
     			false.append(i)
     		elif (pRratio * 1.1) < pRK_x[i]:
-    			RKneearray.insert(i, "무릅을 %d 만큼 더 당겨주세요." % (pRK_x[i] - (pRratio)))
+    			RKneearray.insert(i, "무릅을 %dcm 만큼 더 당겨주세요." % (pRK_x[i] - (pRratio))*cm)
     			false.append(i)
     		else:
     			RKneearray.insert(i, "정상 범위 입니다. ")
@@ -107,10 +109,10 @@ def ispullknee():
     		RKneearray.insert(i, " ")
     	if i in pLKOB:
     		if (pLratio * 0.9) > pLK_x[i]:
-    			RKneearray.insert(i, "무릅을 %d 만큼 너무 많이 당겼습니다." % ((pRratio) - pRK_x[i]))
+    			RKneearray.insert(i, "무릅을 %d 만큼 너무 많이 당겼습니다." % ((pRratio) - pRK_x[i])*cm)
     			false.append(i)
     		elif (pLratio * 1.1) < pLK_x[i]:
-    			RKneearray.insert(i, "무릅을 %d 만큼 더 당겨주세요." % (pRK_x[i] - (pRratio)))
+    			RKneearray.insert(i, "무릅을 %d 만큼 더 당겨주세요." % (pRK_x[i] - (pRratio))*cm)
     			false.append(i)
     		else:
     			RKneearray.insert(i, "정상 범위 입니다. ")
@@ -149,7 +151,10 @@ def Hipheight():
 
     bHip = avg(bMH_y)
     pHip = avg(pMH_y)
+
     bmaxY, bminY = br.Max(bMH_y)
+
+    cm = key.height("pclimber")
 
     maxcha = bmaxY - bHip
     mincha = bHip - bminY 
@@ -159,10 +164,25 @@ def Hipheight():
     
     bwaist = avg(bangle)
     pwaist = avg(pangle)
-
-   
-    
+    '''
+    pheight = []
+    for i in range(len(bangle)):
+    	if bangle[i] == 0:
+    		continue
+    	elif (bwaist * 0.95) < pangle[i] and (bwaist * 1.05) > pangle[i]:
+    		pheight.append(i)
+    ph = 0
+    count = 0
+    for i in range(len(pMH_y)):
+    	if i in pheight:
+    		ph += pMH_y[i]
+    		count += 1
     ph /=count
+    '''
+    for i in range(len(pMH_y)):
+        if pMH_y[i] != 0:
+            ph = pMH_y[i]
+            break
     Ok = []
     Fal = []
     array = []
@@ -172,10 +192,10 @@ def Hipheight():
     	if pMH_y[i] == 0:
     		array.insert(i, "")
     	elif(ph - mincha) > pMH_y[i]:
-    		array.insert(i, "엉덩이가 %d 만큼 낮습니다."% ((ph - mincha) - pMH_y[i]))
+    		array.insert(i, "엉덩이가 %fcm 만큼 낮습니다."% (((ph - mincha) - pMH_y[i])*cm))
     		Fal.append(i)
     	elif (ph + maxcha) < pMH_y[i]:
-    		array.insert(i, "엉덩이가 %d 만큼 높습니다."% (pMH_y[i] - (ph + mincha)))
+    		array.insert(i, "엉덩이가 %fcm 만큼 높습니다."% ((pMH_y[i] - (ph + mincha))*cm))
     		Fal.append(i)
     	else:
     		array.insert(i, "정상 범위 입니다. ")

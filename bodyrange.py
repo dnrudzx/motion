@@ -6,16 +6,9 @@ import comphead as cp
 
 #최대 값과 최소값을 구해준다
 def Max(y):
-	count = 0
-	
-	while True:
-		if y[count] != 0:
-			maxY = y[count]
-			minY = y[count]
-			break
-		else:
-			count += 1
 
+	maxY = y[0]
+	minY = y[0]
 
 	for i in range(len(y)):
 		if y[i] == 0:
@@ -32,6 +25,8 @@ def Max(y):
 def isbodyrange(y, y2, BminY, PminY):
     b_maxY, b_minY = Max(y)
     p_maxY, p_minY = Max(y2)
+
+    cm = key.height("ppush")
 
     b_height = b_maxY - BminY
     p_height = p_maxY - PminY
@@ -51,7 +46,7 @@ def isbodyrange(y, y2, BminY, PminY):
             continue
         elif y2[i] < p_rangeMin :
             Low.append(i)
-            bodyarray.insert(i, "더 내려가 주세요.")
+            bodyarray.insert(i, "%cm 더 내려가 주세요."%(p_rangeMin - y2[i])*cm)
         else:
             Ok.append(i)
             bodyarray.insert(i, "잘 하고 있습니다.")

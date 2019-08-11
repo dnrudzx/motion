@@ -49,15 +49,15 @@ def climber():
 
 	C_head = cp.head_point_out(C_c,C_d,C_e)
 	'''
-	'''
+	
 	#마운팅 클라이밍 팔 수직 비교
-	C_BS_x, C_BS_y, C_BW_x, C_BW_y = br.arm_right_left("bclimber")
-	C_PS_x, C_PS_y, C_PW_x, C_PW_y = br.arm_right_left("pclimber")
+	# C_BS_x, C_BS_y, C_BW_x, C_BW_y = br.arm_right_left("bclimber")
+	# C_PS_x, C_PS_y, C_PW_x, C_PW_y = br.arm_right_left("pclimber")
 
-	C_arm_bAngle = cp.getDegree(C_BS_x, C_BS_y, C_BW_x, C_BW_y)
-	C_arm_pAngle = cp.getDegree(C_PS_x, C_PS_y, C_PW_x, C_PW_y)
+	# C_arm_bAngle = cp.getDegree(C_BS_x, C_BS_y, C_BW_x, C_BW_y)
+	# C_arm_pAngle = cp.getDegree(C_PS_x, C_PS_y, C_PW_x, C_PW_y)
 
-	C_aOK, C_aFal, C_aarray = cb.C_armheight(C_arm_bAngle, C_arm_pAngle)
+	# C_aOK, C_aFal, C_aarray = cb.C_armheight(C_arm_bAngle, C_arm_pAngle)
 	'''
 	#마운팅 클라이밍의 무릅 가동 범위 확인
 	# C_isOK, C_isFal, C_isarray = cb.ispullknee()
@@ -67,20 +67,17 @@ def climber():
 
 	C_all = C_aarray + C_isarray + C_HIarray
 
-	print(C_all)
-	'''
-	'''
-	print("long head")
-	print(C_c, C_d)
-	'''
-	'''
-	print("long suzic")
-	print(C_aFal)
-	print("long range")
-	print(C_isFal)
-	print("long hip")
-	print(C_HIFal)
-	'''
+	print(C_HIarray)
+
+	# print("long head")
+	# print(C_c, C_d)
+
+	# print("long suzic")
+	# print(C_aFal)
+	# print("long range")
+	# print(C_isFal)
+	# print("long hip")
+	# print(C_HIFal)
 
 	# print(len(C_isFal)/len(C_isarray))
 	# print(len(C_isarray))
@@ -94,5 +91,9 @@ def climber():
 # L_fOK, L_fFal, L_farray = lu.isfloor()
 # print(L_fOK,L_fFal,L_farray)
 
-a,b,c,d,e,f = lu.overknee()
-print(a,b,c,d,e,f,)
+# a,b,c,d,e,f = lu.overknee()
+# print(a,b,c,d,e,f)
+
+C_HIOK, C_HIFal, C_HIarray = cb.Hipheight()
+
+print(C_HIarray)
