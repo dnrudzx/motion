@@ -14,13 +14,13 @@ def keypoint(name, point):
     elif str(name) == "ppush":
         frame_path = "/home/ms/frame/frame_2"
         array_path = "/home/ms/test/array_2"
-    elif str(name) == "bsitup":
-        frame_path = "/home/ms/frame/situp_frame/Bframe_"
-        array_path = "/home/ms/test/situp_array/barray_"
-    elif str(name) == "psitup":
-        frame_path = "home/ms/frame/situp_frame/pframe_"
-        array_path = "/home/ms/test/situp_array/parray_"
-    elif name == "bclimber":
+    elif str(name) == "blunge":
+        frame_path = "/home/ms/frame/lunge_frame/Bframe_"
+        array_path = "/home/ms/test/lunge_array/Barray_"
+    elif str(name) == "plunge":
+        frame_path = "/home/ms/frame/lunge_frame/Pframe_"
+        array_path = "/home/ms/test/lunge_array/Parray_"
+    elif str(name) == "bclimber":
         frame_path = "/home/ms/frame/climber_frame/Bframe_"
         array_path = "/home/ms/test/climber_array/Barray_"
     elif str(name) == "pclimber":
@@ -30,7 +30,7 @@ def keypoint(name, point):
 
 
 
-    if (point < 0) and (point > 14) :
+    if (point < 0) and (point > 25) :
         return "The range of points is wrong."
 
     Key = np.zeros((1,3))
@@ -42,9 +42,10 @@ def keypoint(name, point):
 
 
     height, width, channel = image.shape
-    #Nose , count = 0  
+
     count = 0
     Nose = 0
+    Neck = 0
     #npy 파일을 불러오고 거기서 nose의 값만 가져와 새로운 배열을 만든다
     while True:
         
@@ -54,13 +55,14 @@ def keypoint(name, point):
             break
 
         #코의 값 중 유효값한 값을 가져옴
-
-        if Nose == 0:
+        if Nose == 0 and int(arr[0, 0, 0]) !=0 :
             Nose = int(arr[0, 0, 0])
+        if Neck == 0 and int(arr[0, 1, 0]) !=0 :
+        	Neck = int(arr[0, 1, 0])
         #---    
         if count == 0:
             for i in range(3):
-                Key[0, i] = arr[0, point, i]   
+                Key[0, i] = arr[0, point, i]
                
         else:
             try:
@@ -68,7 +70,6 @@ def keypoint(name, point):
             except IndexError:
                 Key = np.insert(Key, count, 0, axis=0)        
         count += 1
-
     #코 배열을 가져와 x값을 x배열에 넣는다
     #값이 0 이면 0을 넣어주고 x값이 가로 크기/2 보다 크면 머리가 왼쪽으로 오게 바꿔준다
     x = []
@@ -76,7 +77,7 @@ def keypoint(name, point):
         if Key[i,0] == 0:
             x = np.insert(x, i, 0)
             continue
-        elif (width/2)<Nose:
+        elif Neck<Nose:
             x = np.insert(x, i, abs(width - Key[i,0]))
         else:
             x = np.insert(x, i, int(Key[i,0]))
@@ -144,3 +145,4 @@ def keyavg(x):
 		
 	return result/(len(Rx))
 #print(keypoint("1", 0))
+

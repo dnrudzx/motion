@@ -2,6 +2,8 @@ import comphead as cp
 import keypoint as key
 import bodyrange as br
 import climber as cb
+import lunge as lu
+
 '''
 x, y = key.keypoint("1", 0)
 x2, y2 = key.keypoint("1", 1)
@@ -58,7 +60,7 @@ def climber():
 	C_aOK, C_aFal, C_aarray = cb.C_armheight(C_arm_bAngle, C_arm_pAngle)
 	'''
 	#마운팅 클라이밍의 무릅 가동 범위 확인
-	C_isOK, C_isFal, C_isarray = cb.ispullknee()
+	# C_isOK, C_isFal, C_isarray = cb.ispullknee()
 	'''
 	#마운팅 클라이밍의 엉덩이 높이 확인
 	C_HIOK, C_HIFal, C_HIarray = cb.Hipheight()
@@ -80,8 +82,17 @@ def climber():
 	print(C_HIFal)
 	'''
 
-	print(len(C_isFal)/len(C_isarray))
-	print(len(C_isarray))
-	return C_isarray
+	# print(len(C_isFal)/len(C_isarray))
+	# print(len(C_isarray))
+	# return C_isarray
 
-climber()
+# climber()
+
+# L_isOK, L_isFal, L_isarray = lu.lunge_waist()
+# print(L_isOK,L_isFal,L_isarray)
+
+# L_fOK, L_fFal, L_farray = lu.isfloor()
+# print(L_fOK,L_fFal,L_farray)
+
+a,b,c,d,e,f = lu.overknee()
+print(a,b,c,d,e,f,)

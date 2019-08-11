@@ -6,9 +6,16 @@ import comphead as cp
 
 #최대 값과 최소값을 구해준다
 def Max(y):
+	count = 0
+	
+	while True:
+		if y[count] != 0:
+			maxY = y[count]
+			minY = y[count]
+			break
+		else:
+			count += 1
 
-	maxY = y[0]
-	minY = y[0]
 
 	for i in range(len(y)):
 		if y[i] == 0:
@@ -128,7 +135,14 @@ def armheight(Angle, Angle2, armOb):
 
     return Ok, Fal, armarray1
 
-    '''
+def iswaist():
+	bNE_x, bNE_y = key.keypoint("bpush", 2)
+	bNE_x, bRS_y = key.keypoint("bpush", 2)
+	bNE_x, bRS_y = key.keypoint("bpush", 2)
+	pNE_x, pNE_y = key.keypoint("ppush", 2)
+
+
+'''
     maxA = 0
     minA = 0
     for i in range(len(Angle)):
@@ -152,4 +166,4 @@ def armheight(Angle, Angle2, armOb):
             armarray.insert(i, "어깨와 손목을 수직으로 만들어 주세요.")
 
     return Ok, Fal, armarray
-    '''
+'''
