@@ -1,8 +1,42 @@
 import keypoint as kp
 import numpy as np
+import bodyrange as br
 import cv2
 import math
 
+
+#목의 높이를 받아와 두영상이 비슷한지 확인한다.
+#y1은 비교 동영상, y2는 비교할 동영상
+def same(y1, y2):
+    
+    Ymax1, Ymin1 = br.Max(y1)
+    Ymax2, Ymin2 = br.Max(y2)
+
+    result = []
+    # for i in range(len(y2)):
+    #     result.append(((y2[i]/Ymax2) *100))
+    # return result
+    # for i in range(len(y1)):
+    #     result.append(((y1[i]/Ymax1) *100))
+    # return result
+
+    result = {}
+    for i in range(len(y2)):
+        if y2[i] == 0 :
+            result[i] = 0
+            continue
+        else :
+            y2per = ((y2[i]/Ymax2) *100)
+
+            for x in range(len(y1)):
+                if y1[x] == 0:
+                    continue
+                y1per = ((y1[x]/Ymax1) *100)
+                if (y2per * 1.2) > y1per and (y2per * 0.8) < y1per :
+                    result[i] = x
+                    break
+
+    return result
 '''
 #
 def Framescale(filename):

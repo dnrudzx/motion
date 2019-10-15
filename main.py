@@ -4,37 +4,38 @@ import bodyrange as br
 import climber as cb
 import lunge as lu
 
-'''
-x, y = key.keypoint("1", 0)
-x2, y2 = key.keypoint("1", 1)
-x3, y3 = key.keypoint("2", 0)
-x4, y4 = key.keypoint("2", 1)
 
-a = cp.getDegree(x, y, x2, y2)
-b = cp.getDegree(x3, y3, x4, y4)
-c, d, e = cp.sHead(a, b)
+x, y = key.keypoint("bpush", 0)
+x2, y2 = key.keypoint("bpush", 1)
+x3, y3 = key.keypoint("ppush", 0)
+x4, y4 = key.keypoint("ppush", 1)
+
+print(cp.same(y2, y4))
+
+# a = cp.getDegree(x, y, x2, y2)
+# b = cp.getDegree(x3, y3, x4, y4)
+# c, d, e = cp.sHead(a, b)
+
+# print(cp.head_point_out(c,d,e))
+
+# BS_x, BS_y, BW_x, BW_y = br.arm_right_left("1")
+# PS_x, PS_y, PW_x, PW_y = br.arm_right_left("2")
 
 
-cp.head_point_out(c,d,e)
+# bmaxY, bminY = br.Max(BW_y)
+# pmaxY, pminY = br.Max(PW_y)
+# # neck range
+# Ok, Low, bodyarray = br.isbodyrange(y2, y4, bminY, pminY)
 
-BS_x, BS_y, BW_x, BW_y = br.arm_right_left("1")
-PS_x, PS_y, PW_x, PW_y = br.arm_right_left("2")
+# arm_bAngle = cp.getDegree(BS_x, BS_y, BW_x, BW_y)
+# arm_pAngle = cp.getDegree(PS_x, PS_y, PW_x, PW_y)
 
+# armOb = br.armframe(y4)
 
-bmaxY, bminY = br.Max(BW_y)
-pmaxY, pminY = br.Max(PW_y)
-# neck range
-Ok, Low, bodyarray = br.isbodyrange(y2, y4, bminY, pminY)
+# P_arOk, P_arFal, P_ararmarray = br.armheight(arm_bAngle, arm_pAngle, armOb)
 
-arm_bAngle = cp.getDegree(BS_x, BS_y, BW_x, BW_y)
-arm_pAngle = cp.getDegree(PS_x, PS_y, PW_x, PW_y)
+# print(armarray)
 
-armOb = br.armframe(y4)
-
-P_arOk, P_arFal, P_ararmarray = br.armheight(arm_bAngle, arm_pAngle, armOb)
-
-print(armarray)
-'''
 def climber():
 	'''
 	#마운팅 클라이밍 목 비교
@@ -63,11 +64,11 @@ def climber():
 	# C_isOK, C_isFal, C_isarray = cb.ispullknee()
 	'''
 	#마운팅 클라이밍의 엉덩이 높이 확인
-	C_HIOK, C_HIFal, C_HIarray = cb.Hipheight()
+	# C_HIOK, C_HIFal, C_HIarray = cb.Hipheight()
 
-	C_all = C_aarray + C_isarray + C_HIarray
+	# C_all = C_aarray + C_isarray + C_HIarray
 
-	print(C_HIarray)
+	# print(C_HIarray)
 
 	# print("long head")
 	# print(C_c, C_d)
@@ -94,6 +95,4 @@ def climber():
 # a,b,c,d,e,f = lu.overknee()
 # print(a,b,c,d,e,f)
 
-C_HIOK, C_HIFal, C_HIarray = cb.Hipheight()
-
-print(C_HIarray)
+# br.iswaist()

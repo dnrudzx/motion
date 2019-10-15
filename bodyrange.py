@@ -3,6 +3,7 @@ import cv2
 import math
 import keypoint as key
 import comphead as cp
+import climber as cb
 
 #최대 값과 최소값을 구해준다
 def Max(y):
@@ -130,12 +131,82 @@ def armheight(Angle, Angle2, armOb):
 
     return Ok, Fal, armarray1
 
-def iswaist():
-	bNE_x, bNE_y = key.keypoint("bpush", 2)
-	bNE_x, bRS_y = key.keypoint("bpush", 2)
-	bNE_x, bRS_y = key.keypoint("bpush", 2)
-	pNE_x, pNE_y = key.keypoint("ppush", 2)
+def dotdist(bNE_x, bNE_y,bMH_x, bMH_y,bLA_x, bLA_y):
+	bl_dis = []
+	for i in range(len(bNE_x)):
+		if bNE_x[i] == 0 or bNE_y[i] == 0 or bMH_x [i]== 0 or bMH_y[i] == 0 or bLA_x[i] == 0 or bLA_y[i] == 0:
+			bl_dis.insert(i, 0)
+		else:
+			area = abs ( (bNE_x[i] - bMH_x[i]) * (bLA_y[i] -  bMH_y[i]) - (bNE_y[i] - bMH_y[i]) * (bLA_x[i] - bMH_x[i]) )
+			AB = ( (bNE_x[i] - bLA_x[i]) ** 2 + (bNE_y[i] - bLA_y[i]) ** 2 ) ** 0.5
+			bl_dis.insert(i,area/AB)
+	return bl_dis
 
+def iswaist():
+	bNE_x, bNE_y = key.keypoint("bpush", 1)
+	bMH_x, bMH_y = key.keypoint("bpush", 8)
+	bRA_x, bRA_y = key.keypoint("bpush", 11)
+	bLA_x, bLA_y = key.keypoint("bpush", 14)
+	pNE_x, pNE_y = key.keypoint("ppush", 1)
+	pMH_x, pMH_y = key.keypoint("ppush", 8)
+	pRA_x, pRA_y = key.keypoint("ppush", 11)
+	pLA_x, pLA_y = key.keypoint("ppush", 14)
+
+	cm = key.height("ppush")
+
+	br_dis = []
+	bl_dis = []
+	pr_dis = []
+	pl_dis = []
+
+	br_dis = dotdist(bNE_x, bNE_y,bMH_x, bMH_y,bRA_x, bRA_y)
+	bl_dis = dotdist(bNE_x, bNE_y,bMH_x, bMH_y,bLA_x, bLA_y)
+	pr_dis = dotdist(pNE_x, pNE_y,pMH_x, pMH_y,pRA_x, pRA_y)
+	pl_dis = dotdist(pNE_x, pNE_y,pMH_x, pMH_y,pLA_x, pLA_y)
+
+	br_avg = cb.avg(br_dis)
+	bl_avg = cb.avg(bl_dis)
+
+	allavg = (br_avg+bl_avg)/2
+
+	y_avg1 = 0
+	y_avg2 = 0
+
+	for i in range(len(pNE_y)):
+		if pNE_y[i] == 0 or pRA_y[i] == 0:
+			continue
+		else:
+			y_avg1.append((pNE_y[i]+pRA_y[i])/2)
+
+	for i in range(len(pNE_y)):
+		if pNE_y[i] == 0 or pLA_y[i] == 0:
+			continue
+		else:
+			y_avg2.append((pNE_y[i]+pLA_y[i])/2)
+
+	y_a = cb.avg(y_avg1)
+	y_b = cb.avg(y_avg2)
+
+	all_y = (y_a + y_b)/2
+
+	Ok = []
+	Fal = []
+	waistarray = []
+
+	for i in range(len(pr_dis)):
+		if pr_dis[i] == 0 or pl_dis[i] == 0:
+			waistarray.insert(i, " ")
+		elif pr_dis[i] == 0 and (allavg * 1.2) < pl_dis[i] and pMH_y>all_y:
+			waistarray.insert(i, "허리 각도가 %f입니다. 허리를 펴주세요." % pangle[i])
+			false.append(i)
+		elif (bwaist * 0.85) > pangle[i]:
+			waistarray.insert(i, "허리 각도가 %d입니다. 허리를 펴주세요." % pangle[i])
+			false.append(i)
+		else:
+			waistarray.insert(i, "정상 범위 입니다. ")
+			Ok.append(i)
+
+	return Ok, false, waist_array
 
 '''
     maxA = 0

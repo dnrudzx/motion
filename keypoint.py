@@ -48,7 +48,7 @@ def keypoint(name, point):
     count = 0
     Nose = 0
     Neck = 0
-    #npy 파일을 불러오고 거기서 nose의 값만 가져와 새로운 배열을 만든다
+    #npy 파일을 불러오고 거기서 원하는 point 값만 가져와 새로운 배열을 만든다
     while True:
         
         try:
@@ -56,11 +56,11 @@ def keypoint(name, point):
         except FileNotFoundError:
             break
 
-        #코의 값 중 유효한 x값을 가져옴
+        #방향을 같게 하기 위해 코와 목의 값 중 유효한 동영상의 x값을 가져옴
         if Nose == 0 and int(arr[0, 0, 0]) !=0 and Neck == 0 and int(arr[0, 1, 0]) !=0:
             Nose = int(arr[0, 0, 0])
             Neck = int(arr[0, 1, 0])
-        #---    
+        #
         if count == 0:
             for i in range(3):
                 Key[0, i] = arr[0, point, i]
@@ -71,17 +71,18 @@ def keypoint(name, point):
             except IndexError:
                 Key = np.insert(Key, count, 0, axis=0)        
         count += 1
-    #코 배열을 가져와 x값을 x배열에 넣는다
-    #값이 0 이면 0을 넣어주고 x값이 가로 크기/2 보다 크면 머리가 왼쪽으로 오게 바꿔준다
+    #원하는 point 값을 가져와 x축만의 배열을 만들어 준다.
+    #코와 목 값을 가져와 방향을 정한다.
     x = []
     for i in range(0, len(Key)):
         if Key[i,0] == 0:
             x = np.insert(x, i, 0)
             continue
-        elif Neck<Nose:
-            x = np.insert(x, i, abs(width - Key[i,0]))
         else:
-            x = np.insert(x, i, int(Key[i,0]))
+            if Neck<Nose:
+                x = np.insert(x, i, abs(width - Key[i,0]))
+            else:
+                x = np.insert(x, i, int(Key[i,0]))
 
         #코 배열을 가져와 y값을 y배열에 넣는다
         #동영상 포인트값을 가져올때 상하 반전되어 가져오기 때문에 최대 y 값에서 y값을 뺴준다.
@@ -108,7 +109,7 @@ def keypoint(name, point):
     	elif i == (len(x)-1):
     		Rx.append(x[i])
     		break
-    	elif x[i-1] != 0 and x[i+1] != 0 and (xavg * 2.0) < (abs(x[i]-x[i-1])) and (xavg * 2.0) < (abs(x[i+1]-x[i])):
+    	elif x[i+1] != 0 and (xavg * 2.0) < (abs(x[i+1]-x[i])):
     		Rx.append(0)
     	else:
     		Rx.append(x[i])
@@ -123,13 +124,13 @@ def keypoint(name, point):
     	elif i == (len(y)-1):
     		Ry.append(y[i])
     		break
-    	elif y[i-1] != 0 and y[i+1] != 0 and (yavg * 2.0) < (abs(y[i]-y[i-1])) and (yavg * 2.0) < (abs(y[i+1]-y[i])):
+    	elif y[i+1] != 0 and (yavg * 2.0) < (abs(y[i+1]-y[i])):
     		Ry.append(0)
     	else:
     		Ry.append(y[i])
 
     return Rx , Ry
-
+#point값이 튀였는지 여부를 확인하기 위해서 평균 변화량을 구함
 def keyavg(x):
 	Rx = []
 	result = 0

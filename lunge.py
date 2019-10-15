@@ -24,12 +24,13 @@ def lunge_waist():
     waist_array = []
 
     for i in range(len(pangle)):
+        print(pangle[i])
         if pangle[i] == 0:
             waist_array.insert(i, " ")
-        elif (bwaist * 1.15) < pangle[i]:
+        elif (bwaist * 1.1) < pangle[i]:
             waist_array.insert(i, "허리 각도가 %d입니다. 허리를 펴주세요." % pangle[i])
             false.append(i)
-        elif (bwaist * 0.85) > pangle[i]:
+        elif (bwaist * 0.9) > pangle[i]:
             waist_array.insert(i, "허리 각도가 %d입니다. 허리를 펴주세요." % pangle[i])
             false.append(i)
         else:
@@ -71,6 +72,7 @@ def overknee():
     pRB_x, pRB_y = key.keypoint("plunge", 22)
 
     cm = key.height("plunge")
+    print(cm)
 
     Max_plk, Min_plk = br.Max(pLK_x)
     Max_prk, Min_prk = br.Max(pRK_x)
@@ -98,7 +100,7 @@ def overknee():
             L_over_array.insert(i, " ")
             if i in Lrange:
                 if Min_plb > pLK_x[i]:
-                    L_over_array.insert(i, " 왼쪽 무릎이 %dcm 만큼 너무 나아갔습니다." % (Min_plb - pLK_x[i])*cm)
+                    L_over_array.insert(i, " 왼쪽 무릎이 %fcm 만큼 너무 나아갔습니다." % abs(Min_plb - pLK_x[i])*cm)
                     L_false.append(i)
                 else:
                     L_over_array.insert(i, " 왼쪽 무릅을 바닥에 닿게하지 마세요.")
@@ -115,7 +117,7 @@ def overknee():
             R_over_array.insert(i, " ")
             if i in Rrange:
                 if Min_prb > pRK_x[i]:
-                    R_over_array.insert(i, "오른쪽 무릎이 %dcm 만큼 너무 나아갔습니다." % (Min_prb - pRK_x[i])*cm)
+                    R_over_array.insert(i, "오른쪽 무릎이 %dcm 만큼 너무 나아갔습니다." % abs(Min_prb - pRK_x[i])*cm)
                     R_false.append(i)
                 else:
                     R_over_array.insert(i, "오른쪽 무릅을 바닥에 닿게하지 마세요.")
